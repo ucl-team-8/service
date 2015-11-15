@@ -50,7 +50,7 @@ class Schedule(db.Model):
 class GPS(db.Model):
     __tablename__ = 'gps'
     id = db.Column(db.Integer, primary_key=True)
-    device = db.Column(db.Integer)
+    gps_car_id = db.Column(db.String(5))
     event_type = db.Column(db.String(1))
     tiploc = db.Column(db.String(20))
     event_time = db.Column(db.DateTime)
