@@ -49,8 +49,8 @@ class Schedule(db.Model):
 
 class GPS(db.Model):
     __tablename__ = 'gps'
-    id = db.Column(Integer, primary_key=True)
-    device = db.Column(db.Integer(5))
+    id = db.Column(db.Integer, primary_key=True)
+    device = db.Column(db.Integer)
     event_type = db.Column(db.String(1))
     tiploc = db.Column(db.String(10))
     event_time = db.Column(db.DateTime)
@@ -67,8 +67,8 @@ class GPS(db.Model):
 
 class UnitToGPSMapping(db.Model):
     __tablename__ = 'unit_to_gps_mapping'
-    unit = db.Column(String(4), primary_key=true)
-    gps_car_id = db.Column(Integer(5))
+    unit = db.Column(db.String(4), primary_key=True)
+    gps_car_id = db.Column(db.Integer)
 
     def __init__(self, unit, gps_car_id):
         self.unit = unit
