@@ -40,7 +40,7 @@ activate file
 
 ```
 echo "export APP_SETTINGS='config.DevelopmentConfig'" >> venv/bin/activate
-echo "export DATABASE_URL = 'postgres://atos:atos@localhost/atos'" >> venv/bin/activate
+echo "export DATABASE_URL='postgres://atos:atos@localhost/atos'" >> venv/bin/activate
 ```
 
 login heroku
@@ -54,3 +54,28 @@ In your git repo, add git remote to heroku
 ```
 heroku git:remote -a atos-service
 ```
+
+activate your virtual environment
+
+```
+source venv/bin/activate
+```
+
+install requirements from requirements.txt
+
+```
+pip install -r requirements.txt
+```
+
+## Updating models
+
+Since the migration files are included in the repo, when updating the models, include the migration script and other collaborators just run
+
+```
+python manage.py db upgrade
+```
+
+once the latest version of the repo is pulled
+
+
+
