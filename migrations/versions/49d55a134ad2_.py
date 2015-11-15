@@ -1,13 +1,13 @@
 """empty message
 
-Revision ID: 27ee1ff60ebe
+Revision ID: 49d55a134ad2
 Revises: None
-Create Date: 2015-11-15 15:58:16.683617
+Create Date: 2015-11-15 16:27:12.751466
 
 """
 
 # revision identifiers, used by Alembic.
-revision = '27ee1ff60ebe'
+revision = '49d55a134ad2'
 down_revision = None
 
 from alembic import op
@@ -20,7 +20,7 @@ def upgrade():
     sa.Column('id', sa.Integer(), nullable=False),
     sa.Column('device', sa.Integer(), nullable=True),
     sa.Column('event_type', sa.String(length=1), nullable=True),
-    sa.Column('tiploc', sa.String(length=10), nullable=True),
+    sa.Column('tiploc', sa.String(length=20), nullable=True),
     sa.Column('event_time', sa.DateTime(), nullable=True),
     sa.PrimaryKeyConstraint('id')
     )
@@ -36,7 +36,7 @@ def upgrade():
     op.create_table('trust',
     sa.Column('id', sa.Integer(), nullable=False),
     sa.Column('headcode', sa.String(length=4), nullable=True),
-    sa.Column('location', sa.String(length=10), nullable=True),
+    sa.Column('location', sa.String(length=20), nullable=True),
     sa.Column('loc_seq', sa.Integer(), nullable=True),
     sa.Column('arrival_report', sa.DateTime(), nullable=True),
     sa.Column('dep_report', sa.DateTime(), nullable=True),
@@ -48,7 +48,7 @@ def upgrade():
     )
     op.create_table('unit_to_gps_mapping',
     sa.Column('unit', sa.String(length=4), nullable=False),
-    sa.Column('gps_car_id', sa.Integer(), nullable=True),
+    sa.Column('gps_car_id', sa.String(length=5), nullable=True),
     sa.PrimaryKeyConstraint('unit')
     )
     ### end Alembic commands ###
