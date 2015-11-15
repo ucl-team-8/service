@@ -5,7 +5,7 @@ class Trust(db.Model):
     __tablename__ = 'trust'
     id = db.Column(db.Integer, primary_key=True)
     headcode = db.Column(db.String(4))
-    location = db.Column(db.String(10))
+    location = db.Column(db.String(20))
     loc_seq = db.Column(db.Integer)
     arrival_report = db.Column(db.DateTime)
     dep_report = db.Column(db.DateTime)
@@ -26,7 +26,7 @@ class Trust(db.Model):
         self.category = category
 
     def __repr__(self):
-        return '<id {}>'.format(self.id)
+        return '<Trust id={0}>'.format(self.id, self.headcode)
 
 class Schedule(db.Model):
     __tablename__ = 'schedule'
@@ -45,14 +45,14 @@ class Schedule(db.Model):
         self.CIF_uid = CIF_uid
 
     def __repr__(self):
-        return '<id {}>'.format(self.id)
+        return '<Schedule id={0}>'.format(self.id)
 
 class GPS(db.Model):
     __tablename__ = 'gps'
     id = db.Column(db.Integer, primary_key=True)
     device = db.Column(db.Integer)
     event_type = db.Column(db.String(1))
-    tiploc = db.Column(db.String(10))
+    tiploc = db.Column(db.String(20))
     event_time = db.Column(db.DateTime)
 
     def __init__(self, device, event_type, tiploc, event_time):
@@ -62,17 +62,17 @@ class GPS(db.Model):
         self.event_time = event_time
 
     def __repr__(self):
-        return '<id {}>'.format(self.id)
+        return '<GPS id={0}>'.format(self.id)
 
 
 class UnitToGPSMapping(db.Model):
     __tablename__ = 'unit_to_gps_mapping'
     unit = db.Column(db.String(4), primary_key=True)
-    gps_car_id = db.Column(db.Integer)
+    gps_car_id = db.Column(db.String(5))
 
     def __init__(self, unit, gps_car_id):
         self.unit = unit
         self.gps_car_id = gps_car_id
 
     def __repr__(self):
-        return '<unit {}>'.format(self.unit)
+        return '<UnitToGPSMapping unit={0}, gps_car_id={1}>'.format(self.unit, self.gps_car_id)
