@@ -52,5 +52,5 @@ heroku login
 In your git repo, add git remote to heroku
 
 ```
-heroky git:remote -a atos-service
+heroku git:remote -a atos-service
 ```
