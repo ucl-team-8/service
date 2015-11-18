@@ -1,14 +1,14 @@
 from flask import Flask
 from flask.ext.sqlalchemy import SQLAlchemy
 import datetime
+import csv
 import os
 
 parentdir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.sys.path.insert(0,parentdir)
 from models import *
 
-#TO DO: If the csv is not valid, do not store the values in db
-#TO DO: Fix date (which is currently 1900)
+#TO DO: Can we please change csv header names?
 #TO DO: Check the columns in schedule where len(unit) == 5 and where cif_uid is empty
 
 def open_file(filename):
@@ -18,46 +18,62 @@ def open_file(filename):
     except IOError:
         return None
 
+def set_date(time_string, separator):
+    if time_string == '':
+        return None
+
+    date = datetime.datetime.strptime(time_string, '%H'+separator+'%M'+separator+'%S')
+    today = datetime.date.today()
+    return date.replace(day = today.day, month = today.month, year = today.year)
+
 def store_schedule(file):
-    file.readline()  #Skip the first line with headings
-    for row in file:
-        values = row.split(',')
-        if len(values[0]) > 4: #Some columns contain weird unit values and no cif_uid
-            return
-        date = datetime.datetime.strptime(values[3], "%H:%M:%S")
-        schedule = Schedule(values[0], values[1], values[2], date, values[4].rstrip('\r\n'))
-        db.session.add(schedule)
-        db.session.commit()
+    try:
+        reader = csv.DictReader(file)
+        for row in reader:
+            if len(row['Unit']) > 4: #Some columns contain weird unit values and no cif_uid
+                continue
+
+            date = set_date(row['origin_dep_dt'], ':')
+            schedule = Schedule(row['Unit'], row['headcode'], row['origin_loc'], date, row['cif_uid'])
+            db.session.add(schedule)
+            db.session.commit()
+    except KeyError:
+        print "cvs file is not in correct format"
+    except:
+        print "Unexpected error: " + sys.exc_info()[0]
 
 def store_trust(file):
-    file.readline()
-    for row in file:
-        values = row.split(',')
-        if values[3] != "":
-            values[3] = datetime.datetime.strptime(values[3], "%H.%M.%S")
-        else:
-            values[3] = None
-        if values[4] != "":
-            values[4]= datetime.datetime.strptime(values[4], "%H.%M.%S")
-        else:
-            values[4] = None
-        values[6] = datetime.datetime.strptime(values[6], "%H.%M.%S")
+    try:
+        reader = csv.DictReader(file)
+        for row in reader:
+            arrival_report = set_date(row['Act Arrival Report'], '.')
+            departure_report = set_date(row['Act Dep Report'], '.')
+            origin_depart_time = set_date(row['Origin depart time'], '.')
 
-        trust = Trust(values[0], values[1], int(values[2]), values[3], values[4],
-        bool(values[5]), values[6], values[7], values[8].rstrip('\r\n'))
-        db.session.add(trust)
-        db.session.commit()
+            trust = Trust(row['Headcode'], row['Event location'], int(row['Loc Seq']), arrival_report,
+            departure_report, bool(row['Is a planned stop?']), origin_depart_time, row['CIF Uid'], row['Category'])
+
+            db.session.add(trust)
+            db.session.commit()
+    except KeyError:
+        print "cvs file is not in correct format"
+    except:
+        print "Unexpected error: " + sys.exc_info()[0]
 
 def store_unit_to_gps(file):
-    file.readline()
-    for row in file:
-        values = row.split(',')
-        unit_to_gps = UnitToGPSMapping(values[0], values[1].rstrip('\r\n'))
+    try:
+        reader = csv.DictReader(file)
+        for row in reader:
+            unit_to_gps = UnitToGPSMapping(row['Unit'], row['GPS car id'])
 
-        db.session.add(unit_to_gps)
-        db.session.commit()
+            db.session.add(unit_to_gps)
+            db.session.commit()
+    except KeyError:
+        print "cvs file is not in correct format"
+    except:
+        print "Unexpected error: " + sys.exc_info()[0]
 
-def import_schedule(filename, table_name):
+def import_file(filename, table_name):
     f = open_file(filename)
     if f == None:
         print "File does not exist"
@@ -73,3 +89,8 @@ def import_schedule(filename, table_name):
         print "Not a valid table name"
 
     f.close()
+
+
+import_file('schedule.csv', 'schedule')
+import_file('unit_to_gps.csv', 'unit_to_gps')
+import_file('trust.csv', 'trust')
