@@ -39,9 +39,7 @@ def store_schedule(file):
             db.session.add(schedule)
             db.session.commit()
     except KeyError:
-        print "cvs file is not in correct format"
-    except:
-        print "Unexpected error: " + sys.exc_info()[0]
+        print "csv file is not in correct format"
 
 def store_trust(file):
     try:
@@ -57,9 +55,7 @@ def store_trust(file):
             db.session.add(trust)
             db.session.commit()
     except KeyError:
-        print "cvs file is not in correct format"
-    except:
-        print "Unexpected error: " + sys.exc_info()[0]
+        print "csv file is not in correct format"
 
 def store_unit_to_gps(file):
     try:
@@ -70,9 +66,7 @@ def store_unit_to_gps(file):
             db.session.add(unit_to_gps)
             db.session.commit()
     except KeyError:
-        print "cvs file is not in correct format"
-    except:
-        print "Unexpected error: " + sys.exc_info()[0]
+        print "csv file is not in correct format"
 
 def import_file(filename, table_name):
     f = open_file(filename)
