@@ -1,5 +1,6 @@
 from flask import Flask
 from flask.ext.sqlalchemy import SQLAlchemy
+import xml.etree.ElementTree as ET
 import datetime
 import csv
 import os
@@ -8,8 +9,9 @@ parentdir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.sys.path.insert(0,parentdir)
 from models import *
 
-#TO DO: Can we please change csv header names?
-#TO DO: Check the columns in schedule where len(unit) == 5 and where cif_uid is empty
+# TODO: Can we please change csv header names?
+# TODO: Check the columns in schedule where len(unit) == 5 and where cif_uid is empty
+# TODO: Use bulk inserts
 
 def open_file(filename):
     try:
@@ -38,9 +40,7 @@ def store_schedule(file):
             db.session.add(schedule)
             db.session.commit()
     except KeyError:
-        print "cvs file is not in correct format"
-    except:
-        print "Unexpected error: " + sys.exc_info()[0]
+        print "csv file is not in correct format"
 
 def store_trust(file):
     try:
@@ -56,9 +56,7 @@ def store_trust(file):
             db.session.add(trust)
             db.session.commit()
     except KeyError:
-        print "cvs file is not in correct format"
-    except:
-        print "Unexpected error: " + sys.exc_info()[0]
+        print "csv file is not in correct format"
 
 def store_unit_to_gps(file):
     try:
@@ -69,9 +67,35 @@ def store_unit_to_gps(file):
             db.session.add(unit_to_gps)
             db.session.commit()
     except KeyError:
-        print "cvs file is not in correct format"
-    except:
-        print "Unexpected error: " + sys.exc_info()[0]
+        print "csv file is not in correct format"
+
+def translate_columns(gps_column_translation, x):
+    """
+    It 'translates' column names given a <original column> => <new column>
+    dictionary, and a dictionary to be translated.
+    """
+    d = dict()
+    for column_from, column_to in gps_column_translation.items():
+        if column_from in x:
+            d[column_to] = x[column_from]
+    return d
+
+gps_column_translation = {
+    'device': 'gps_car_id',
+    'eventType': 'event_type',
+    'eventTime': 'event_time',
+    'tiploc': 'tiploc'
+}
+
+def store_gps(file):
+    root = ET.parse(file).getroot()
+    gps_events = [gps_event.attrib for gps_event in root]
+    rows = [translate_columns(gps_column_translation, gps_event) for gps_event in gps_events]
+    for row in rows:
+        row['event_time'] = datetime.datetime.strptime(row['event_time'], "%Y-%m-%dT%H:%M:%S")
+        gps = GPS(**row)
+        db.session.add(gps)
+        db.session.commit()
 
 def import_file(filename, table_name):
     f = open_file(filename)
@@ -85,6 +109,8 @@ def import_file(filename, table_name):
         store_trust(f)
     elif table_name == "unit_to_gps":
         store_unit_to_gps(f)
+    elif table_name == "gps":
+        store_gps(f)
     else:
         print "Not a valid table name"
 
@@ -94,3 +120,4 @@ def import_file(filename, table_name):
 import_file('schedule.csv', 'schedule')
 import_file('unit_to_gps.csv', 'unit_to_gps')
 import_file('trust.csv', 'trust')
+import_file('gpsData.xml', 'gps')
