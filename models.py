@@ -55,12 +55,6 @@ class GPS(db.Model):
     tiploc = db.Column(db.String(20))
     event_time = db.Column(db.DateTime)
 
-    def __init__(self, device, event_type, tiploc, event_time):
-        self.device = device
-        self.event_type = event_type
-        self.tiploc = tiploc
-        self.event_time = event_time
-
     def __repr__(self):
         return '<GPS id={0}>'.format(self.id)
 
