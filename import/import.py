@@ -14,6 +14,8 @@ from models import *
 # TODO: Check the columns in schedule where len(unit) == 5 and where cif_uid is empty
 # TODO: Use bulk inserts
 
+BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE = range(8)
+
 def open_file(filename):
     try:
         f = open(os.path.dirname(os.path.realpath(__file__)) + '/' + filename, 'rb')
@@ -41,7 +43,16 @@ def update_progress(lengths):
     lengths['finished'] += 1
     progress = int((lengths['finished']/lengths['total_length'])*100)
     percentage = (progress/5)
-    sys.stdout.write('\r[{0}{1}] {2}%'.format('#'*percentage, ' '*(20 - percentage),progress))
+
+    colour = ""
+    if(progress < 33):
+        colour = RED
+    elif(progress < 66):
+        colour = YELLOW
+    else:
+        colour = GREEN
+
+    sys.stdout.write('\x1b[1;%dm' % (30+colour) + '\r[{0}{1}] {2}%'.format('#'*percentage, ' '*(20 - percentage), progress) + '\x1b[0m')
     sys.stdout.flush()
 
 def set_date(time_string, separator):
