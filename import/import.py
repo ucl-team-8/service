@@ -28,6 +28,12 @@ def set_date(time_string, separator):
     today = datetime.date.today()
     return date.replace(day = today.day, month = today.month, year = today.year)
 
+def delete_data():
+    db.session.query(Trust).delete()
+    db.session.query(Schedule).delete()
+    db.session.query(GPS).delete()
+    db.session.query(UnitToGPSMapping).delete()
+
 def store_schedule(file):
     try:
         reader = csv.DictReader(file)
@@ -116,8 +122,11 @@ def import_file(filename, table_name):
 
     f.close()
 
+def main():
+    delete_data()
+    import_file('schedule.csv', 'schedule')
+    import_file('unit_to_gps.csv', 'unit_to_gps')
+    import_file('trust.csv', 'trust')
+    import_file('gpsData.xml', 'gps')
 
-import_file('schedule.csv', 'schedule')
-import_file('unit_to_gps.csv', 'unit_to_gps')
-import_file('trust.csv', 'trust')
-import_file('gpsData.xml', 'gps')
+main()
