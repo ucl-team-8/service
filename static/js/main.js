@@ -12,7 +12,7 @@ d3.json("/events/trust.json", function(err, { result: trustData }) {
 
     let services = d3.nest()
         .key(d => d.gps_car_id).sortKeys(d3.ascending)
-        .key(d => d.CIF_uid).sortKeys(d3.ascending)
+        .key(d => d.CIF_uid)
         .sortValues((a, b) => d3.ascending(a.loc_seq, b.loc_seq))
         .entries(trustData);
 
@@ -21,15 +21,22 @@ d3.json("/events/trust.json", function(err, { result: trustData }) {
         .sortKeys(d3.ascending)
         .entries(gpsData);
 
-    let unit = units[2];
+    let unit = units[52];
+    let unitServices = _.find(services, d => d.key == unit.key).values;
+
+    console.log(unitServices);
+
+    let timeFormat = d3.time.format("%H:%M");
+    let stopNames = unit.values.map(d => d.tiploc);
 
     let width = 200;
-    let height = 800;
+    let height = stopNames.length * 18;
 
-    let y = d3.time.scale()
-        .domain(d3.extent(unit.values, d => d.event_time))
-        .range([0, height])
-        .nice();
+    let y = d3.scale.quantile()
+        .domain(unit.values.map(d => d.event_time))
+        .range(d3.range(stopNames.length).map(d => d * 18));
+
+    let scaleY = d => y(d.event_time)
 
     let svg = d3.select("body").append("svg")
         .attr("width", width)
@@ -37,14 +44,45 @@ d3.json("/events/trust.json", function(err, { result: trustData }) {
       .append("g")
         .attr("class", "unit-diagram");
 
-    let stops = svg.selectAll("circle")
+    let stops = svg.selectAll(".stop")
         .data(unit.values)
-      .enter()
-        .append("circle")
-        .attr("class", "stop")
+      .enter().append("g")
+        .attr("class", "stop");
+
+    stops.append("circle")
         .attr("cx", width / 2)
-        .attr("cy", d => y(d.event_time))
-        .attr("r", 4)
+        .attr("cy", scaleY)
+        .attr("r", 4);
+
+    let labels = stops.append("text")
+        .attr("y", scaleY)
+        .attr("x", width / 2 + 8)
+        .attr("dy", ".35em");
+
+    labels.append("tspan")
+        .attr("class", "event_type")
+        .text(d => d.event_type);
+
+    labels.append("tspan")
+        .attr("class", "tiploc")
+        .text(d => " " + d.tiploc);
+
+    stops.append("text")
+        .attr("class", "time")
+        .attr("y", scaleY)
+        .attr("x", width / 2 - 8)
+        .attr("dy", ".35em")
+        .text(d => timeFormat(d.event_time));
+
+    let service = unitServices[0];
+
+    debugger;
+
+    // function(gpsStops, trustStop) => index of station
+
+    function getIndexOfStop(unitStops, serviceStop) {
+
+    }
 
     // debugger;
 
@@ -60,5 +98,5 @@ function trustDatatypes(d) {
 }
 
 function gpsDatatypes(d) {
-  d.event_time         = new Date(d.event_time);
+  d.event_time = new Date(d.event_time);
 }
