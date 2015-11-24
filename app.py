@@ -10,7 +10,7 @@ from models import *
 
 @app.route("/")
 def hello():
-    return "Hello World!"
+    return render_template('visualisation.html')
 
 def convert_to_dicts(records):
     return [record.as_dict() for record in records]
