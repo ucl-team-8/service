@@ -28,6 +28,10 @@ class Trust(db.Model):
     def __repr__(self):
         return '<Trust id={0}>'.format(self.id, self.headcode)
 
+    def as_dict(self):
+       return {c.name: getattr(self, c.name) for c in self.__table__.columns}
+
+
 class Schedule(db.Model):
     __tablename__ = 'schedule'
     id = db.Column(db.Integer, primary_key=True)
@@ -47,6 +51,10 @@ class Schedule(db.Model):
     def __repr__(self):
         return '<Schedule id={0}>'.format(self.id)
 
+    def as_dict(self):
+       return {c.name: getattr(self, c.name) for c in self.__table__.columns}
+
+
 class GPS(db.Model):
     __tablename__ = 'gps'
     id = db.Column(db.Integer, primary_key=True)
@@ -57,6 +65,9 @@ class GPS(db.Model):
 
     def __repr__(self):
         return '<GPS id={0}>'.format(self.id)
+
+    def as_dict(self):
+       return {c.name: getattr(self, c.name) for c in self.__table__.columns}
 
 
 class UnitToGPSMapping(db.Model):
@@ -70,3 +81,6 @@ class UnitToGPSMapping(db.Model):
 
     def __repr__(self):
         return '<UnitToGPSMapping unit={0}, gps_car_id={1}>'.format(self.unit, self.gps_car_id)
+
+    def as_dict(self):
+       return {c.name: getattr(self, c.name) for c in self.__table__.columns}
