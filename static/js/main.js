@@ -32,11 +32,11 @@ d3.json("/events/trust.json", function(err, { result: trustData }) {
     let width = 200;
     let height = stopNames.length * 18;
 
-    let y = d3.scale.quantile()
-        .domain(unit.values.map(d => d.event_time))
-        .range(d3.range(stopNames.length).map(d => d * 18));
+    let y = d3.scale.ordinal()
+        .domain(d3.range(stopNames.length))
+        .rangeRoundBands([0, height], .1);
 
-    let scaleY = d => y(d.event_time)
+    let scaleY = (d,i) => y(i)
 
     let svg = d3.select("body").append("svg")
         .attr("width", width)
@@ -76,7 +76,7 @@ d3.json("/events/trust.json", function(err, { result: trustData }) {
 
     let service = unitServices[0];
 
-    debugger;
+    // debugger;
 
     // function(gpsStops, trustStop) => index of station
 
