@@ -12,13 +12,14 @@ d3.json("/events/trust.json", function(err, { result: trustData }) {
 
     let services = d3.nest()
         .key(d => d.gps_car_id).sortKeys(d3.ascending)
-        .key(d => d.CIF_uid)
-        .sortValues((a, b) => d3.ascending(a.loc_seq, b.loc_seq))
+        .key(d => d.headcode)
+        .sortValues((a, b) => d3.ascending(a.seq, b.seq))
         .entries(trustData);
 
     let units = d3.nest()
         .key(d => d.gps_car_id)
         .sortKeys(d3.ascending)
+        .sortValues((a,b) => d3.ascending(a.event_time, b.event_time))
         .entries(gpsData);
 
     let unit = units[52];
@@ -26,10 +27,10 @@ d3.json("/events/trust.json", function(err, { result: trustData }) {
 
     console.log(unitServices);
 
-    let timeFormat = d3.time.format("%H:%M");
+    let timeFormat = d3.time.format("%H:%M:%S");
     let stopNames = unit.values.map(d => d.tiploc);
 
-    let width = 200;
+    let width = 600;
     let height = stopNames.length * 18;
 
     let y = d3.scale.ordinal()
@@ -40,11 +41,13 @@ d3.json("/events/trust.json", function(err, { result: trustData }) {
 
     let svg = d3.select("body").append("svg")
         .attr("width", width)
-        .attr("height", height)
-      .append("g")
-        .attr("class", "unit-diagram");
+        .attr("height", height);
 
-    let stops = svg.selectAll(".stop")
+    let unitDiagram = svg.append("g")
+        .attr("class", "unit-diagram")
+        .attr("transform", "translate(0,0)");
+
+    let stops = unitDiagram.selectAll(".stop")
         .data(unit.values)
       .enter().append("g")
         .attr("class", "stop");
@@ -74,15 +77,51 @@ d3.json("/events/trust.json", function(err, { result: trustData }) {
         .attr("dy", ".35em")
         .text(d => timeFormat(d.event_time));
 
-    let service = unitServices[0];
+    let indexFromTime = d3.scale.quantile()
+        .domain(unit.values.map(d => d.event_time))
+        .range(d3.range(stopNames.length));
 
-    // debugger;
-
-    // function(gpsStops, trustStop) => index of station
-
-    function getIndexOfStop(unitStops, serviceStop) {
-
+    function getIndexOfStop(d) {
+      try {
+        return indexFromTime(d.event_time);
+      } catch(e) {
+        console.log("Could not detect time for:", d);
+      }
     }
+
+    let mergedServices = _.flatten(unitServices.map(d => d.values));
+
+    let serviceDiagram = svg.append("g")
+        .attr("class", "service-diagram")
+        .attr("transform", "translate(150,0)");
+
+    let serviceStops = serviceDiagram.selectAll(".stop")
+        .data(mergedServices)
+      .enter().append("g")
+        .attr("class", "stop");
+
+    serviceStops.append("circle")
+        .attr("cx", width / 2)
+        .attr("cy", d => y(getIndexOfStop(d)))
+        .attr("r", 4)
+        .style("fill", d => {
+          // check if the two match
+          return "none";
+        });
+
+    serviceStops.append("text")
+        .attr("class", "time")
+        .attr("y", d => y(getIndexOfStop(d)))
+        .attr("x", width / 2 - 8)
+        .attr("dy", ".35em")
+        .text(d => timeFormat(d.event_time));
+
+    serviceStops.append("text")
+        .attr("class", "tiploc")
+        .attr("y", d => y(getIndexOfStop(d)))
+        .attr("x", width / 2 + 8)
+        .attr("dy", ".35em")
+        .text(d => d.tiploc);
 
     // debugger;
 
@@ -90,11 +129,14 @@ d3.json("/events/trust.json", function(err, { result: trustData }) {
   });
 });
 
+function match(gpsEvents, event) {
+
+}
+
 function trustDatatypes(d) {
-  if (d.dep_report) d.dep_report = new Date(d.dep_report);
-  if (d.arrival_report) d.arrival_report = new Date(d.arrival_report);
-  d.origin_depart_time = new Date(d.origin_depart_time);
-  d.location = d.location.trim(); // TODO: trim this in import
+  d.event_time = new Date(d.event_time);
+  d.origin_depart_time = new Date(d.origin_departure);
+  d.tiploc = d.tiploc.trim(); // TODO: trim this in import
 }
 
 function gpsDatatypes(d) {
