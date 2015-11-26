@@ -1,5 +1,6 @@
 from flask import Flask, render_template, jsonify
 from flask.ext.sqlalchemy import SQLAlchemy
+from sqlalchemy.sql import func
 import os
 
 app = Flask(__name__)
@@ -32,7 +33,7 @@ def trust():
 
 @app.route("/events/gps.json")
 def gps():
-    records = db.session.query(GPS).all()
+    records = db.session.query(GPS).filter(func.length(GPS.gps_car_id) == 5)
     return jsonify(result=convert_to_dicts(records))
 
 if __name__ == "__main__":
