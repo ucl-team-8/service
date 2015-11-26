@@ -18,7 +18,8 @@ def convert_to_dicts(records):
 @app.route("/events/trust.json")
 def trust():
     records = db.session.query(Trust, Schedule, UnitToGPSMapping).\
-              filter(Trust.CIF_uid==Schedule.CIF_uid).\
+              filter(Trust.headcode==Schedule.headcode).\
+              filter(Trust.origin_departure==Schedule.origin_departure).\
               filter(Schedule.unit==UnitToGPSMapping.unit)
 
     def extract_dict(record):
