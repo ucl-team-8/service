@@ -2,6 +2,8 @@ import d3 from "d3";
 import _ from "lodash";
 import moment from "moment";
 
+let notMatched = [];
+
 d3.json("/events/trust.json", function(err, { result: trustData }) {
   d3.json("/events/gps.json", function(err, { result: gpsData }) {
 
@@ -150,6 +152,7 @@ d3.json("/events/trust.json", function(err, { result: trustData }) {
     match(unit.values, mergedServices[10]);
 
     console.log(unit);
+    console.log("Couldn't match:", _.uniq(notMatched));
   });
 });
 
@@ -169,7 +172,7 @@ function match(gpsEvents, trustEvent) {
   } else if (sameStop.length > 0) {
     return sameStop[0];
   } else {
-    console.error("Couldn't match:", trustEvent.tiploc, trustEvent.event_time, trustEvent);
+    notMatched.push(trustEvent);
     return _.sortBy(closest, event => findAbsTimeDifference(event, trustEvent))[0];
   }
 }
