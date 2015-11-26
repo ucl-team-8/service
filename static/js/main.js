@@ -28,13 +28,13 @@ d3.json("/events/trust.json", function(err, { result: trustData }) {
     console.log(unitServices);
 
     let timeFormat = d3.time.format("%H:%M:%S");
-    let stopNames = unit.values.map(d => d.tiploc);
+    let totalUnitStops = unit.values.length;
 
     let width = 600;
-    let height = stopNames.length * 18;
+    let height = totalUnitStops * 18;
 
     let y = d3.scale.ordinal()
-        .domain(d3.range(stopNames.length))
+        .domain(d3.range(totalUnitStops))
         .rangeRoundBands([0, height], .1);
 
     let scaleY = (d,i) => y(i)
@@ -53,13 +53,13 @@ d3.json("/events/trust.json", function(err, { result: trustData }) {
         .attr("class", "stop");
 
     stops.append("circle")
-        .attr("cx", width / 2)
+        .attr("cx", 100)
         .attr("cy", scaleY)
-        .attr("r", 4);
+        .attr("r", radius);
 
     let labels = stops.append("text")
         .attr("y", scaleY)
-        .attr("x", width / 2 + 8)
+        .attr("x", 100 + 8)
         .attr("dy", ".35em");
 
     labels.append("tspan")
@@ -73,20 +73,35 @@ d3.json("/events/trust.json", function(err, { result: trustData }) {
     stops.append("text")
         .attr("class", "time")
         .attr("y", scaleY)
-        .attr("x", width / 2 - 8)
+        .attr("x", 100 - 8)
         .attr("dy", ".35em")
         .text(d => timeFormat(d.event_time));
 
     let indexFromTime = d3.scale.quantile()
         .domain(unit.values.map(d => d.event_time))
-        .range(d3.range(stopNames.length));
+        .range(d3.range(totalUnitStops));
 
     function getIndexOfStop(d) {
       try {
-        return indexFromTime(d.event_time);
+        // return indexFromTime(d.event_time);
+        let m = match(unit.values, d);
+        return unit.values.indexOf(m);
       } catch(e) {
         console.log("Could not detect time for:", d);
       }
+    }
+
+    function radius(d) {
+      if (d.event_type == "A" || d.event_type == "D") {
+        return 4;
+      } else {
+        return 1;
+      }
+    }
+
+    function matches(trustEvent) {
+      let gpsEvent = unit.values[getIndexOfStop(trustEvent)];
+      return gpsEvent.tiploc == trustEvent.tiploc;
     }
 
     let mergedServices = _.flatten(unitServices.map(d => d.values));
@@ -101,9 +116,12 @@ d3.json("/events/trust.json", function(err, { result: trustData }) {
         .attr("class", "stop");
 
     serviceStops.append("circle")
-        .attr("cx", width / 2)
+        .attr("class", d => {
+          return matches(d) ? "good" : "bad";
+        })
+        .attr("cx", 100)
         .attr("cy", d => y(getIndexOfStop(d)))
-        .attr("r", 4)
+        .attr("r", radius)
         .style("fill", d => {
           // check if the two match
           return "none";
@@ -112,25 +130,48 @@ d3.json("/events/trust.json", function(err, { result: trustData }) {
     serviceStops.append("text")
         .attr("class", "time")
         .attr("y", d => y(getIndexOfStop(d)))
-        .attr("x", width / 2 - 8)
+        .attr("x", 100 - 8)
         .attr("dy", ".35em")
         .text(d => timeFormat(d.event_time));
 
-    serviceStops.append("text")
-        .attr("class", "tiploc")
+    let serviceLabels = serviceStops.append("text")
         .attr("y", d => y(getIndexOfStop(d)))
-        .attr("x", width / 2 + 8)
-        .attr("dy", ".35em")
-        .text(d => d.tiploc);
+        .attr("x", 100 + 8)
+        .attr("dy", ".35em");
 
-    // debugger;
+    serviceLabels.append("tspan")
+        .attr("class", "event_type")
+        .text(d => d.event_type);
+
+    serviceLabels.append("tspan")
+        .attr("class", "tiploc")
+        .text(d => " " + d.tiploc);
+
+    match(unit.values, mergedServices[10]);
 
     console.log(unit);
   });
 });
 
-function match(gpsEvents, event) {
+function findAbsTimeDifference(eventA, eventB) {
+  let diff = (new Date(eventA.event_time)) - (new Date(eventB.event_time));
+  return Math.abs(diff);
+}
 
+function match(gpsEvents, trustEvent) {
+  let tolerance = 10 * 60 * 1000;
+  // let closest = _.sortByOrder(gpsEvents, [gpsEvent => findAbsTimeDifference(gpsEvent, trustEvent), "event_type"], ["asc", "asc"]);
+  let closest = gpsEvents.filter(event => findAbsTimeDifference(event, trustEvent) < tolerance);
+  let sameStop = closest.filter(event => event.tiploc == trustEvent.tiploc);
+  let sameType = _.findWhere(sameStop, { event_type: trustEvent.event_type });
+  if (sameType) {
+    return sameType;
+  } else if (sameStop.length > 0) {
+    return sameStop[0];
+  } else {
+    console.error("Couldn't match:", trustEvent.tiploc, trustEvent.event_time, trustEvent);
+    return _.sortBy(closest, event => findAbsTimeDifference(event, trustEvent))[0];
+  }
 }
 
 function trustDatatypes(d) {
