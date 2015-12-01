@@ -13,6 +13,10 @@ from models import *
 def hello():
     return render_template('visualisation.html')
 
+@app.route("/basic-algorithm")
+def basic_algorithm():
+    return render_template("basic-algorithm.html")
+
 def convert_to_dicts(records):
     return [record.as_dict() for record in records]
 

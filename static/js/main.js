@@ -4,157 +4,189 @@ import moment from "moment";
 
 let notMatched = [];
 
-d3.json("/events/trust.json", function(err, { result: trustData }) {
-  d3.json("/events/gps.json", function(err, { result: gpsData }) {
+let index = 0;
+var selectElement = document.getElementById("select_unit");
+selectElement.onchange = function() {
+  index = parseInt(this.value);
+  while(this.firstChild) {
+    this.removeChild(this.firstChild);
+  }
+  var svg = document.getElementById("visualisation_svg");
+  svg.parentNode.removeChild(svg);
+  draw();
+}
+draw()
 
-    if (err) console.error(err);
+function draw() {
+  d3.json("/events/trust.json", function(err, { result: trustData }) {
+    d3.json("/events/gps.json", function(err, { result: gpsData }) {
 
-    trustData.forEach(trustDatatypes);
-    gpsData.forEach(gpsDatatypes);
+      if (err) console.error(err);
 
-    let services = d3.nest()
-        .key(d => d.gps_car_id).sortKeys(d3.ascending)
-        .key(d => d.headcode)
-        .sortValues((a, b) => d3.ascending(a.seq, b.seq))
-        .entries(trustData);
+      trustData.forEach(trustDatatypes);
+      gpsData.forEach(gpsDatatypes);
 
-    let units = d3.nest()
-        .key(d => d.gps_car_id)
-        .sortKeys(d3.ascending)
-        .sortValues((a,b) => d3.ascending(a.event_time, b.event_time))
-        .entries(gpsData);
+      let services = d3.nest()
+          .key(d => d.gps_car_id).sortKeys(d3.ascending)
+          .key(d => d.headcode)
+          .sortValues((a, b) => d3.ascending(a.seq, b.seq))
+          .entries(trustData);
 
-    let unit = units[52];
-    let unitServices = _.find(services, d => d.key == unit.key).values;
+      let units = d3.nest()
+          .key(d => d.gps_car_id)
+          .sortKeys(d3.ascending)
+          .sortValues((a,b) => d3.ascending(a.event_time, b.event_time))
+          .entries(gpsData);
 
-    console.log(unitServices);
+      let unit = units[index];
+      let unitServices = _.find(services, d => d.key == unit.key).values;
 
-    let timeFormat = d3.time.format("%H:%M:%S");
-    let totalUnitStops = unit.values.length;
+      console.log(unitServices);
 
-    let width = 600;
-    let height = totalUnitStops * 18;
+      let unitChoice = d3.select("#select_unit")
 
-    let y = d3.scale.ordinal()
-        .domain(d3.range(totalUnitStops))
-        .rangeRoundBands([0, height], .1);
-
-    let scaleY = (d,i) => y(i)
-
-    let svg = d3.select("body").append("svg")
-        .attr("width", width)
-        .attr("height", height);
-
-    let unitDiagram = svg.append("g")
-        .attr("class", "unit-diagram")
-        .attr("transform", "translate(0,0)");
-
-    let stops = unitDiagram.selectAll(".stop")
-        .data(unit.values)
-      .enter().append("g")
-        .attr("class", "stop");
-
-    stops.append("circle")
-        .attr("cx", 100)
-        .attr("cy", scaleY)
-        .attr("r", radius);
-
-    let labels = stops.append("text")
-        .attr("y", scaleY)
-        .attr("x", 100 + 8)
-        .attr("dy", ".35em");
-
-    labels.append("tspan")
-        .attr("class", "event_type")
-        .text(d => d.event_type);
-
-    labels.append("tspan")
-        .attr("class", "tiploc")
-        .text(d => " " + d.tiploc);
-
-    stops.append("text")
-        .attr("class", "time")
-        .attr("y", scaleY)
-        .attr("x", 100 - 8)
-        .attr("dy", ".35em")
-        .text(d => timeFormat(d.event_time));
-
-    let indexFromTime = d3.scale.quantile()
-        .domain(unit.values.map(d => d.event_time))
-        .range(d3.range(totalUnitStops));
-
-    function getIndexOfStop(d) {
-      try {
-        // return indexFromTime(d.event_time);
-        let m = match(unit.values, d);
-        return unit.values.indexOf(m);
-      } catch(e) {
-        console.log("Could not detect time for:", d);
+      for(var i = 0; i < units.length; i++) {
+        let choice = unitChoice.append("option")
+          .attr("value", i)
+          .text(units[i].key);
+        if(i == index) {
+          choice.attr("selected", "selected");
+        }
       }
-    }
 
-    function radius(d) {
-      if (d.event_type == "A" || d.event_type == "D") {
-        return 4;
-      } else {
-        return 1;
+      let timeFormat = d3.time.format("%H:%M:%S");
+      let totalUnitStops = unit.values.length;
+
+      let width = 600;
+      let height = totalUnitStops * 18;
+
+      let y = d3.scale.ordinal()
+          .domain(d3.range(totalUnitStops))
+          .rangeRoundBands([0, height], .1);
+
+      let scaleY = (d,i) => y(i)
+
+      let svg = d3.select("body").append("svg")
+          .attr("width", width)
+          .attr("height", height)
+          .attr("id", "visualisation_svg");
+
+      let unitDiagram = svg.append("g")
+          .attr("class", "unit-diagram")
+          .attr("transform", "translate(0,0)");
+
+      let stops = unitDiagram.selectAll(".stop")
+          .data(unit.values)
+        .enter().append("g")
+          .attr("class", "stop");
+
+      stops.append("circle")
+          .attr("cx", 100)
+          .attr("cy", (d,i) => y(i))
+          .attr("r", radius);
+
+      let labels = stops.append("text")
+          .attr("y", scaleY)
+          .attr("x", 100 + 8)
+          .attr("dy", ".35em");
+
+      labels.append("tspan")
+          .attr("class", "event_type")
+          .text(d => d.event_type);
+
+      labels.append("tspan")
+          .attr("class", "tiploc")
+          .text(d => " " + d.tiploc);
+
+      stops.append("text")
+          .attr("class", "time")
+          .attr("y", scaleY)
+          .attr("x", 100 - 8)
+          .attr("dy", ".35em")
+          .text(d => timeFormat(d.event_time));
+
+      let indexFromTime = d3.scale.quantile()
+          .domain(unit.values.map(d => d.event_time))
+          .range(d3.range(totalUnitStops));
+
+      function getIndexOfStop(d) {
+        try {
+          // return indexFromTime(d.event_time);
+          let m = match(unit.values, d);
+          return unit.values.indexOf(m);
+        } catch(e) {
+          console.log("Could not detect time for:", d);
+        }
       }
-    }
 
-    function matches(trustEvent) {
-      let gpsEvent = unit.values[getIndexOfStop(trustEvent)];
-      return gpsEvent.tiploc == trustEvent.tiploc;
-    }
+      function radius(d) {
+        if (d.event_type == "A" || d.event_type == "D") {
+          return 4;
+        } else {
+          return 1;
+        }
+      }
 
-    let mergedServices = _.flatten(unitServices.map(d => d.values));
+      function matches(trustEvent) {
+        let gpsEvent = unit.values[getIndexOfStop(trustEvent)];
+        try {
+          return gpsEvent.tiploc == trustEvent.tiploc;
+        }
+        catch(e) {
+          return false;
+        }
+      }
 
-    let serviceDiagram = svg.append("g")
-        .attr("class", "service-diagram")
-        .attr("transform", "translate(150,0)");
+      let mergedServices = _.flatten(unitServices.map(d => d.values));
 
-    let serviceStops = serviceDiagram.selectAll(".stop")
-        .data(mergedServices)
-      .enter().append("g")
-        .attr("class", "stop");
+      let serviceDiagram = svg.append("g")
+          .attr("class", "service-diagram")
+          .attr("transform", "translate(150,0)");
 
-    serviceStops.append("circle")
-        .attr("class", d => {
-          return matches(d) ? "good" : "bad";
-        })
-        .attr("cx", 100)
-        .attr("cy", d => y(getIndexOfStop(d)))
-        .attr("r", radius)
-        .style("fill", d => {
-          // check if the two match
-          return "none";
-        });
+      let serviceStops = serviceDiagram.selectAll(".stop")
+          .data(mergedServices)
+        .enter().append("g")
+          .attr("class", "stop");
 
-    serviceStops.append("text")
-        .attr("class", "time")
-        .attr("y", d => y(getIndexOfStop(d)))
-        .attr("x", 100 - 8)
-        .attr("dy", ".35em")
-        .text(d => timeFormat(d.event_time));
+      serviceStops.append("circle")
+          .attr("class", d => {
+            return matches(d) ? "good" : "bad";
+          })
+          .attr("cx", 100)
+          .attr("cy", d => y(getIndexOfStop(d)))
+          .attr("r", radius)
+          .style("fill", d => {
+            // check if the two match
+            return "none";
+          });
 
-    let serviceLabels = serviceStops.append("text")
-        .attr("y", d => y(getIndexOfStop(d)))
-        .attr("x", 100 + 8)
-        .attr("dy", ".35em");
+      serviceStops.append("text")
+          .attr("class", "time")
+          .attr("y", d => y(getIndexOfStop(d)))
+          .attr("x", 100 - 8)
+          .attr("dy", ".35em")
+          .text(d => timeFormat(d.event_time));
 
-    serviceLabels.append("tspan")
-        .attr("class", "event_type")
-        .text(d => d.event_type);
+      let serviceLabels = serviceStops.append("text")
+          .attr("y", d => y(getIndexOfStop(d)))
+          .attr("x", 100 + 8)
+          .attr("dy", ".35em");
 
-    serviceLabels.append("tspan")
-        .attr("class", "tiploc")
-        .text(d => " " + d.tiploc);
+      serviceLabels.append("tspan")
+          .attr("class", "event_type")
+          .text(d => d.event_type);
 
-    match(unit.values, mergedServices[10]);
+      serviceLabels.append("tspan")
+          .attr("class", "tiploc")
+          .text(d => " " + d.tiploc);
 
-    console.log(unit);
-    console.log("Couldn't match:", _.uniq(notMatched));
+      match(unit.values, mergedServices[10]);
+
+      console.log(unit);
+      console.log("Couldn't match:", _.uniq(notMatched));
+    });
   });
-});
+}
 
 function findAbsTimeDifference(eventA, eventB) {
   let diff = (new Date(eventA.event_time)) - (new Date(eventB.event_time));
