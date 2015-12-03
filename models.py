@@ -61,3 +61,15 @@ class UnitToGPSMapping(db.Model):
 
     def as_dict(self):
        return {c.name: getattr(self, c.name) for c in self.__table__.columns}
+
+class GeographicalLocation(db.Model):
+    __tablename__ = 'geographical_location'
+    tiploc = db.Column(db.String(20), primary_key=True)
+    easting = db.Column(db.Integer)
+    northing = db.Column(db.Integer)
+
+    def __repr__(self):
+        return '<GeographicalLocation tiploc={0}, easting={1}, northing={2}>'.format(self.tiploc, self.easting, self.northing)
+
+    def as_dict(self):
+       return {c.name: getattr(self, c.name) for c in self.__table__.columns}

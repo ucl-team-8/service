@@ -173,11 +173,34 @@ def store_unit_to_gps(file, lengths):
     except KeyError:
         print "csv file is not in correct format"
 
+def parseLocation(file):
+    headings = next(file).replace('\r','').replace('\n', '').split('\t')
+    locations = []
+    for row in file:
+        row = row.replace('\r','').replace('\n', '').split('\t')
+        dictionary = {}
+        for i, val in enumerate(row):
+            dictionary[headings[i]] = val
+        locations.append(dictionary)
+    return locations
+
+def store_locations(file, lengths):
+    locations = parseLocation(file)
+    for row in locations:
+        update_progress(lengths)
+        if 'P2X' in row and row['P2X'].isdigit():
+            location = GeographicalLocation(tiploc=row['Tiploc'],
+                easting=int(row['P2X']),
+                northing=int(row['P2Y']))
+            db.session.add(location)
+            db.session.commit()
+
 def delete_data():
     db.session.query(Trust).delete()
     db.session.query(Schedule).delete()
     db.session.query(GPS).delete()
     db.session.query(UnitToGPSMapping).delete()
+    db.session.query(GeographicalLocation).delete()
 
 
 def open_files(files):
@@ -185,6 +208,7 @@ def open_files(files):
     files['unit_to_gps'] = open_file('unit_to_gps.csv')
     files['trust'] = open_file('trustData.xml')
     files['gpsData'] = open_file('gpsData.xml')
+    files['location'] = open_file('location.TXT')
 
 def close_files(files):
     for key, file in files.items():
@@ -200,6 +224,7 @@ def main():
     store_unit_to_gps(files['unit_to_gps'], lengths)
     store_trust(files['trust'], lengths)
     store_gps(files['gpsData'], lengths)
+    store_locations(files['location'], lengths)
 
     close_files(files)
     lengths['finished'] = lengths['total_length']
