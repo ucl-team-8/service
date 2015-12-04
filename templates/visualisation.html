@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      .stop circle {
+        fill: none;
+        stroke: rgba(0,0,0,.3);
+        stroke-width: 2px;
+      }
+      .stop {
+        font-family: sans-serif;
+        font-size: 10px;
+        color: black;
+      }
+
+      .header {
+        font-family: sans-serif;
+        font-size: 14px;
+      }
+
+      .tiploc {
+        font-weight: bold;
+      }
+
+      .event_type {
+        fill: #999;
+      }
+
+      .stop .time {
+        fill: #888;
+        text-anchor: end;
+      }
+
+      .good, .bad {
+        stroke-width: 0 !important;
+      }
+
+      .good {
+        fill: rgba(40,200,40,.75) !important;
+      }
+
+      .bad {
+        fill: rgba(200,40,40,.75) !important;
+      }
+
+      #select_unit {
+        position: fixed;
+      }
+    </style>
+  </head>
+  <body>
+    <select id="select_unit"></select>
+    <script src="/static/js/jspm_packages/system.js"></script>
+    <script src="/static/js/config.js"></script>
+    <script>
+      System.import('/static/js/main.js');
+    </script>
+  </body>
+</html>

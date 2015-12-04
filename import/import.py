@@ -14,7 +14,8 @@ from models import *
 # TODO: Check the columns in schedule where len(unit) == 5 and where cif_uid is empty
 # TODO: Use bulk inserts
 
-BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE = range(8)
+
+# File handling
 
 def open_file(filename):
     try:
@@ -22,6 +23,9 @@ def open_file(filename):
         return f
     except IOError:
         return None
+
+
+# Progress bar
 
 def file_length(file):
     for i, l in enumerate(file):
@@ -43,17 +47,11 @@ def update_progress(lengths):
     lengths['finished'] += 1
     progress = int((lengths['finished']/lengths['total_length'])*100)
     percentage = (progress/5)
-
-    colour = ""
-    if(progress < 33):
-        colour = RED
-    elif(progress < 66):
-        colour = YELLOW
-    else:
-        colour = GREEN
-
-    sys.stdout.write('\x1b[1;%dm' % (30+colour) + '\r[{0}{1}] {2}%'.format('#'*percentage, ' '*(20 - percentage), progress) + '\x1b[0m')
+    sys.stdout.write('\r[{0}{1}] {2}%'.format('#'*percentage, ' '*(20 - percentage),progress))
     sys.stdout.flush()
+
+
+# Date handling
 
 def set_date(time_string, separator):
     if time_string == '':
@@ -61,13 +59,82 @@ def set_date(time_string, separator):
 
     date = datetime.datetime.strptime(time_string, '%H'+separator+'%M'+separator+'%S')
     today = datetime.date.today()
-    return date.replace(day = today.day, month = today.month, year = today.year)
+    return date.replace(day=17, month=3, year=2015)
 
-def delete_data():
-    db.session.query(Trust).delete()
-    db.session.query(Schedule).delete()
-    db.session.query(GPS).delete()
-    db.session.query(UnitToGPSMapping).delete()
+
+# Extracting data from files
+
+def map_columns(column_map, x):
+    """
+    It 'translates' column names given a <original column> => <new column>
+    dictionary, and a dictionary to be translated.
+    """
+    d = dict()
+    for column_from, column_to in column_map.items():
+        if column_from in x:
+            d[column_to] = x[column_from]
+    return d
+
+trust_column_map = {
+    'headcode': 'headcode',
+    'origLoc': 'origin_location',
+    'origDep': 'origin_departure',
+    'tiploc': 'tiploc',
+    'seq': 'seq',
+    'eventType': 'event_type',
+    'eventTime': 'event_time',
+    'plannedPass': 'planned_pass'
+}
+
+gps_column_map = {
+    'device': 'gps_car_id',
+    'eventType': 'event_type',
+    'eventTime': 'event_time',
+    'tiploc': 'tiploc'
+}
+
+def parse_xml(file):
+    root = ET.parse(file).getroot()
+    return [event.attrib for event in root]
+
+def parse_trust(file):
+    events = parse_xml(file)
+    rows = [map_columns(trust_column_map, event) for event in events]
+    for row in rows:
+        row['origin_departure'] = datetime.datetime.strptime(row['origin_departure'], "%Y-%m-%dT%H:%M:%S")
+        row['event_time'] = datetime.datetime.strptime(row['event_time'], "%Y-%m-%dT%H:%M:%S")
+        row['planned_pass'] = bool(row['planned_pass'])
+        try:
+            row['seq'] = int(row['seq'])
+        except ValueError:
+            row['seq'] = None
+    return rows
+
+def parse_gps(file):
+    events = parse_xml(file)
+    rows = [map_columns(gps_column_map, event) for event in events]
+    for row in rows:
+        row['event_time'] = datetime.datetime.strptime(row['event_time'], "%Y-%m-%dT%H:%M:%S")
+    return rows
+
+
+# Storing data in database
+
+def store_trust(file, lengths):
+    rows = parse_trust(file)
+    for row in rows:
+        update_progress(lengths)
+        trust = Trust(**row)
+        db.session.add(trust)
+        db.session.commit()
+
+def store_gps(file, lengths):
+    rows = parse_gps(file)
+    for row in rows:
+        update_progress(lengths)
+        gps = GPS(**row)
+        db.session.add(gps)
+        db.session.commit()
 
 def store_schedule(file, lengths):
     try:
@@ -78,25 +145,15 @@ def store_schedule(file, lengths):
                 continue
 
             date = set_date(row['origin_dep_dt'], ':')
-            schedule = Schedule(row['Unit'], row['headcode'], row['origin_loc'], date, row['cif_uid'])
+
+            schedule = Schedule(
+                unit=row['Unit'],
+                headcode=row['headcode'],
+                origin_location=row['origin_loc'],
+                origin_departure=date,
+                cif_uid=row['cif_uid'])
+
             db.session.add(schedule)
-            db.session.commit()
-    except KeyError:
-        print "csv file is not in correct format"
-
-def store_trust(file, lengths):
-    try:
-        reader = csv.DictReader(file)
-        for row in reader:
-            update_progress(lengths)
-            arrival_report = set_date(row['Act Arrival Report'], '.')
-            departure_report = set_date(row['Act Dep Report'], '.')
-            origin_depart_time = set_date(row['Origin depart time'], '.')
-
-            trust = Trust(row['Headcode'], row['Event location'], int(row['Loc Seq']), arrival_report,
-            departure_report, bool(row['Is a planned stop?']), origin_depart_time, row['CIF Uid'], row['Category'])
-
-            db.session.add(trust)
             db.session.commit()
     except KeyError:
         print "csv file is not in correct format"
@@ -106,52 +163,56 @@ def store_unit_to_gps(file, lengths):
         reader = csv.DictReader(file)
         for row in reader:
             update_progress(lengths)
-            unit_to_gps = UnitToGPSMapping(row['Unit'], row['GPS car id'])
+
+            unit_to_gps = UnitToGPSMapping(
+                unit=row['Unit'],
+                gps_car_id=row['GPS car id'])
 
             db.session.add(unit_to_gps)
             db.session.commit()
     except KeyError:
         print "csv file is not in correct format"
 
-def translate_columns(gps_column_translation, x):
-    """
-    It 'translates' column names given a <original column> => <new column>
-    dictionary, and a dictionary to be translated.
-    """
-    d = dict()
-    for column_from, column_to in gps_column_translation.items():
-        if column_from in x:
-            d[column_to] = x[column_from]
-    return d
+def parseLocation(file):
+    headings = next(file).replace('\r','').replace('\n', '').split('\t')
+    locations = []
+    for row in file:
+        row = row.replace('\r','').replace('\n', '').split('\t')
+        dictionary = {}
+        for i, val in enumerate(row):
+            dictionary[headings[i]] = val
+        locations.append(dictionary)
+    return locations
 
-gps_column_translation = {
-    'device': 'gps_car_id',
-    'eventType': 'event_type',
-    'eventTime': 'event_time',
-    'tiploc': 'tiploc'
-}
-
-def store_gps(file, lengths):
-    root = ET.parse(file).getroot()
-    gps_events = [gps_event.attrib for gps_event in root]
-    rows = [translate_columns(gps_column_translation, gps_event) for gps_event in gps_events]
-    for row in rows:
+def store_locations(file, lengths):
+    locations = parseLocation(file)
+    for row in locations:
         update_progress(lengths)
-        row['event_time'] = datetime.datetime.strptime(row['event_time'], "%Y-%m-%dT%H:%M:%S")
-        gps = GPS(**row)
-        db.session.add(gps)
-        db.session.commit()
+        if 'P2X' in row and row['P2X'].isdigit():
+            location = GeographicalLocation(tiploc=row['Tiploc'],
+                easting=int(row['P2X']),
+                northing=int(row['P2Y']))
+            db.session.add(location)
+            db.session.commit()
+
+def delete_data():
+    db.session.query(Trust).delete()
+    db.session.query(Schedule).delete()
+    db.session.query(GPS).delete()
+    db.session.query(UnitToGPSMapping).delete()
+    db.session.query(GeographicalLocation).delete()
+
 
 def open_files(files):
     files['schedule'] = open_file('schedule.csv')
     files['unit_to_gps'] = open_file('unit_to_gps.csv')
-    files['trust'] = open_file('trust.csv')
+    files['trust'] = open_file('trustData.xml')
     files['gpsData'] = open_file('gpsData.xml')
+    files['location'] = open_file('location.TXT')
 
 def close_files(files):
     for key, file in files.items():
         file.close()
-
 
 
 def main():
@@ -163,6 +224,7 @@ def main():
     store_unit_to_gps(files['unit_to_gps'], lengths)
     store_trust(files['trust'], lengths)
     store_gps(files['gpsData'], lengths)
+    store_locations(files['location'], lengths)
 
     close_files(files)
     lengths['finished'] = lengths['total_length']
