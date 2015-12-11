@@ -208,7 +208,7 @@ def open_files(files):
     files['unit_to_gps'] = open_file('unit_to_gps.csv')
     files['trust'] = open_file('trustData.xml')
     files['gpsData'] = open_file('gpsData.xml')
-    files['location'] = open_file('location.TXT')
+    # files['location'] = open_file('location.TXT')
 
 def close_files(files):
     for key, file in files.items():
@@ -224,7 +224,7 @@ def main():
     store_unit_to_gps(files['unit_to_gps'], lengths)
     store_trust(files['trust'], lengths)
     store_gps(files['gpsData'], lengths)
-    store_locations(files['location'], lengths)
+    # store_locations(files['location'], lengths)
 
     close_files(files)
     lengths['finished'] = lengths['total_length']
