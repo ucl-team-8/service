@@ -12,7 +12,6 @@ parentdir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.sys.path.insert(0,parentdir)
 from models import *
 
-# TODO: Can we please change csv header names?
 # TODO: Check the columns in schedule where len(unit) == 5 and where cif_uid is empty
 # TODO: Use bulk inserts
 
