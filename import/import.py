@@ -204,12 +204,11 @@ def delete_data():
 
 
 def open_files(files):
-    files['schedule'] = open_file('schedule.csv')
-    files['unit_to_gps'] = open_file('unit_to_gps.csv')
-    files['trust'] = open_file('trustData.xml')
-    files['gpsData'] = open_file('gpsData.xml')
-    #For sensitive location data
-    # files['location'] = open_file('location.TXT')
+    files['schedule'] = open_file('../data/schedule.csv')
+    files['unit_to_gps'] = open_file('../data/unit_to_gps.csv')
+    files['trust'] = open_file('../data/trustData.xml')
+    files['gpsData'] = open_file('../data/gpsData.xml')
+    files['locations'] = open_file('../data/locations.tsv')
 
 def close_files(files):
     for key, file in files.items():
