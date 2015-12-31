@@ -179,6 +179,16 @@ def parse_schedule(file):
         row['origin_departure'] = parse_date(row['origin_departure'], ':')
     return rows
 
+unit_to_gps_column_map = {
+    'Unit': 'unit',
+    'GPS car id': 'gps_car_id'
+}
+
+def parse_unit_to_gps(file):
+    reader = csv.DictReader(file)
+    rows = [map_columns(unit_to_gps_column_map, row) for row in reader]
+    return rows
+
 # Storing data in database
 
 def store_trust(file, lengths):
@@ -214,19 +224,12 @@ def store_schedule(file, lengths):
         db.session.commit()
 
 def store_unit_to_gps(file, lengths):
-    try:
-        reader = csv.DictReader(file)
-        for row in reader:
-            update_progress(lengths)
-
-            unit_to_gps = UnitToGPSMapping(
-                unit=row['Unit'],
-                gps_car_id=row['GPS car id'])
-
-            db.session.add(unit_to_gps)
-            db.session.commit()
-    except KeyError:
-        print "csv file is not in correct format"
+    rows = parse_unit_to_gps(file)
+    for row in rows:
+        update_progress(lengths)
+        unit_to_gps = UnitToGPSMapping(**row)
+        db.session.add(unit_to_gps)
+        db.session.commit()
 
 def delete_data():
     db.session.query(Trust).delete()
