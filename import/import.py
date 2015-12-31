@@ -34,25 +34,27 @@ def open_file(filename):
 
 # Progress bar
 
+total_rows = 0
+total_done = 0
+
 def file_length(file):
     for i, l in enumerate(file):
             pass
     return i + 1
 
-def calculate_lengths(files):
-    open_files(files)
-    lengths = {'total_length': 0.0}
+def calculate_lengths():
+    global total_rows
+    total_rows = 0
+    files = open_files()
     for key, file in files.items():
-        lengths[key] = file_length(file)
-        lengths['total_length'] += lengths[key]
+        total_rows += file_length(file)
 
-    lengths['finished'] = 0.0
     close_files(files)
-    return lengths
 
-def update_progress(lengths):
-    lengths['finished'] += 1
-    progress = int((lengths['finished']/lengths['total_length'])*100)
+def increment_progress():
+    global total_rows, total_done
+    total_done += 1
+    progress = int((float(total_done)/total_rows)*100)
     percentage = (progress/5)
     sys.stdout.write('\r[{0}{1}] {2}%'.format('#'*percentage, ' '*(20 - percentage),progress))
     sys.stdout.flush()
@@ -191,42 +193,49 @@ def parse_unit_to_gps(file):
 
 # Storing data in database
 
-def store_trust(file, lengths):
+def store_table(rows, model):
+    for row in rows:
+        increment_progress()
+        item = model(**row)
+        db.session.add(item)
+        db.session.commit()
+
+def store_trust(file):
     rows = parse_trust(file)
     for row in rows:
-        update_progress(lengths)
+        increment_progress()
         trust = Trust(**row)
         db.session.add(trust)
         db.session.commit()
 
-def store_gps(file, lengths):
+def store_gps(file):
     rows = parse_gps(file)
     for row in rows:
-        update_progress(lengths)
+        increment_progress()
         gps = GPS(**row)
         db.session.add(gps)
         db.session.commit()
 
-def store_locations(file, lengths):
+def store_locations(file):
     rows = parse_locations(file)
     for row in rows:
-        update_progress(lengths)
+        increment_progress()
         location = GeographicalLocation(**row)
         db.session.add(location)
         db.session.commit()
 
-def store_schedule(file, lengths):
+def store_schedule(file):
     rows = parse_schedule(file)
     for row in rows:
-        update_progress(lengths)
+        increment_progress()
         schedule = Schedule(**row)
         db.session.add(schedule)
         db.session.commit()
 
-def store_unit_to_gps(file, lengths):
+def store_unit_to_gps(file):
     rows = parse_unit_to_gps(file)
     for row in rows:
-        update_progress(lengths)
+        increment_progress()
         unit_to_gps = UnitToGPSMapping(**row)
         db.session.add(unit_to_gps)
         db.session.commit()
@@ -239,12 +248,14 @@ def delete_data():
     db.session.query(GeographicalLocation).delete()
 
 
-def open_files(files):
-    files['schedule'] = open_file('../data/schedule.csv')
-    files['unit_to_gps'] = open_file('../data/unit_to_gps.csv')
-    files['trust'] = open_file('../data/trustData.xml')
-    files['gpsData'] = open_file('../data/gpsData.xml')
-    files['locations'] = open_file('../data/locations.tsv')
+def open_files():
+    return {
+        'schedule': open_file('../data/schedule.csv'),
+        'unit_to_gps': open_file('../data/unit_to_gps.csv'),
+        'trust': open_file('../data/trustData.xml'),
+        'gpsData': open_file('../data/gpsData.xml'),
+        'locations': open_file('../data/locations.tsv')
+    }
 
 def close_files(files):
     for key, file in files.items():
@@ -252,19 +263,20 @@ def close_files(files):
 
 
 def main():
-    files = dict()
-    lengths = calculate_lengths(files)
-    open_files(files)
+    calculate_lengths()
+    files = open_files()
+
+    print("Deleting all existing data...")
     delete_data()
-    store_schedule(files['schedule'], lengths)
-    store_unit_to_gps(files['unit_to_gps'], lengths)
-    store_trust(files['trust'], lengths)
-    store_gps(files['gpsData'], lengths)
-    store_locations(files['locations'], lengths)
+
+    print("Importing data...")
+    store_schedule(files['schedule'])
+    store_unit_to_gps(files['unit_to_gps'])
+    store_trust(files['trust'])
+    store_gps(files['gpsData'])
+    store_locations(files['locations'])
 
     close_files(files)
-    lengths['finished'] = lengths['total_length']
-    update_progress(lengths)
     sys.stdout.write("\nSuccessfully added all files to db\n")
 
 if __name__ == "__main__":
