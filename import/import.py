@@ -124,6 +124,11 @@ schedule_column_map = {
     'cif_uid': 'cif_uid'
 }
 
+unit_to_gps_column_map = {
+    'Unit': 'unit',
+    'GPS car id': 'gps_car_id'
+}
+
 def parse_xml(file):
     root = ET.parse(file).getroot()
     return [event.attrib for event in root]
@@ -181,11 +186,6 @@ def parse_schedule(file):
     for row in rows:
         row['origin_departure'] = parse_date(row['origin_departure'], ':')
     return rows
-
-unit_to_gps_column_map = {
-    'Unit': 'unit',
-    'GPS car id': 'gps_car_id'
-}
 
 def parse_unit_to_gps(file):
     reader = csv.DictReader(file)
