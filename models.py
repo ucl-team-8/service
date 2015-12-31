@@ -65,8 +65,17 @@ class UnitToGPSMapping(db.Model):
 class GeographicalLocation(db.Model):
     __tablename__ = 'geographical_location'
     tiploc = db.Column(db.String(20), primary_key=True)
+    stanox = db.Column(db.String(10))
+    crs = db.Column(db.String(10))
+    description = db.Column(db.String(50))
     easting = db.Column(db.Integer)
     northing = db.Column(db.Integer)
+    latitude = db.Column(db.Float(precision=32))
+    longitude = db.Column(db.Float(precision=32))
+    type = db.Column(db.String(20))
+    is_cif_stop = db.Column(db.Boolean())
+    cif_stop_count = db.Column(db.Integer)
+    cif_pass_count = db.Column(db.Integer)
 
     def __repr__(self):
         return '<GeographicalLocation tiploc={0}, easting={1}, northing={2}>'.format(self.tiploc, self.easting, self.northing)
