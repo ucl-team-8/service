@@ -183,10 +183,12 @@ def parse_locations(file):
 
 def store_rows(rows, model):
     db.session.bulk_insert_mappings(model, rows)
+    db.session.commit()
 
 def delete_data():
     for model in [Trust, Schedule, GPS, UnitToGPSMapping, GeographicalLocation]:
         db.session.query(model).delete()
+    db.session.commit()
 
 def open_files():
     return {
