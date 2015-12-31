@@ -6,6 +6,8 @@ import sys
 import csv
 import os
 
+from latlon_converter import ENtoLL84
+
 parentdir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.sys.path.insert(0,parentdir)
 from models import *
@@ -14,6 +16,12 @@ from models import *
 # TODO: Check the columns in schedule where len(unit) == 5 and where cif_uid is empty
 # TODO: Use bulk inserts
 
+
+def convert_to(datatype, value, *args, **kwargs):
+    try:
+        return datatype(value, *args, **kwargs)
+    except:
+        return None
 
 # File handling
 
@@ -93,6 +101,19 @@ gps_column_map = {
     'tiploc': 'tiploc'
 }
 
+locations_column_map = {
+    'Tiploc': 'tiploc',
+    'Stanox': 'stanox',
+    'CRS': 'crs',
+    'Description': 'description',
+    'P2X': 'easting',
+    'P2Y': 'northing',
+    'Type': 'type',
+    'IsCIFStop': 'is_cif_stop',
+    'CIFStopCount': 'cif_stop_count',
+    'CIFPassCount': 'cif_pass_count'
+}
+
 def parse_xml(file):
     root = ET.parse(file).getroot()
     return [event.attrib for event in root]
@@ -103,11 +124,8 @@ def parse_trust(file):
     for row in rows:
         row['origin_departure'] = datetime.datetime.strptime(row['origin_departure'], "%Y-%m-%dT%H:%M:%S")
         row['event_time'] = datetime.datetime.strptime(row['event_time'], "%Y-%m-%dT%H:%M:%S")
-        row['planned_pass'] = bool(row['planned_pass'])
-        try:
-            row['seq'] = int(row['seq'])
-        except ValueError:
-            row['seq'] = None
+        row['planned_pass'] = convert_to(bool, row['planned_pass'])
+        row['seq'] = convert_to(int, row['seq'])
     return rows
 
 def parse_gps(file):
@@ -115,6 +133,35 @@ def parse_gps(file):
     rows = [map_columns(gps_column_map, event) for event in events]
     for row in rows:
         row['event_time'] = datetime.datetime.strptime(row['event_time'], "%Y-%m-%dT%H:%M:%S")
+    return rows
+
+def parse_locations(file):
+    items = csv.DictReader(file, delimiter="\t")
+    rows = [map_columns(locations_column_map, item) for item in items]
+    for row in rows:
+
+        if row['stanox'] == "0":
+            # stanox 0 is not a valid stanox
+            row['stanox'] = None
+
+        row['is_cif_stop'] = convert_to(bool, row['is_cif_stop'])
+
+        row['cif_stop_count'] = convert_to(int, row['cif_stop_count'])
+        if row['cif_stop_count'] == 0: row['cif_stop_count'] = None
+
+        row['cif_pass_count'] = convert_to(int, row['cif_pass_count'])
+        if row['cif_pass_count'] == 0: row['cif_pass_count'] = None
+
+        row['easting'] = convert_to(int, row['easting'])
+        row['northing'] = convert_to(int, row['northing'])
+
+        (e, n) = (row['easting'], row['northing'])
+
+        if e and n and e != 0 and n != 0:
+            (longitude, latitude) = ENtoLL84(row['easting'], row['northing'])
+            row['longitude'] = longitude
+            row['latitude'] = latitude
+
     return rows
 
 
@@ -134,6 +181,14 @@ def store_gps(file, lengths):
         update_progress(lengths)
         gps = GPS(**row)
         db.session.add(gps)
+        db.session.commit()
+
+def store_locations(file, lengths):
+    rows = parse_locations(file)
+    for row in rows:
+        update_progress(lengths)
+        location = GeographicalLocation(**row)
+        db.session.add(location)
         db.session.commit()
 
 def store_schedule(file, lengths):
@@ -173,28 +228,6 @@ def store_unit_to_gps(file, lengths):
     except KeyError:
         print "csv file is not in correct format"
 
-def parseLocation(file):
-    headings = next(file).replace('\r','').replace('\n', '').split('\t')
-    locations = []
-    for row in file:
-        row = row.replace('\r','').replace('\n', '').split('\t')
-        dictionary = {}
-        for i, val in enumerate(row):
-            dictionary[headings[i]] = val
-        locations.append(dictionary)
-    return locations
-
-def store_locations(file, lengths):
-    locations = parseLocation(file)
-    for row in locations:
-        update_progress(lengths)
-        if 'P2X' in row and row['P2X'].isdigit():
-            location = GeographicalLocation(tiploc=row['Tiploc'],
-                easting=int(row['P2X']),
-                northing=int(row['P2Y']))
-            db.session.add(location)
-            db.session.commit()
-
 def delete_data():
     db.session.query(Trust).delete()
     db.session.query(Schedule).delete()
@@ -224,8 +257,7 @@ def main():
     store_unit_to_gps(files['unit_to_gps'], lengths)
     store_trust(files['trust'], lengths)
     store_gps(files['gpsData'], lengths)
-    #For sensitive location data
-    # store_locations(files['location'], lengths)
+    store_locations(files['locations'], lengths)
 
     close_files(files)
     lengths['finished'] = lengths['total_length']
