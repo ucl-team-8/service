@@ -2,6 +2,7 @@ from flask import Flask
 from flask.ext.sqlalchemy import SQLAlchemy
 import xml.etree.ElementTree as ET
 import datetime
+import math
 import sys
 import csv
 import os
@@ -54,7 +55,7 @@ def calculate_lengths():
 def increment_progress():
     global total_rows, total_done
     total_done += 1
-    progress = int((float(total_done)/total_rows)*100)
+    progress = int(math.ceil((float(total_done)/total_rows)*100))
     percentage = (progress/5)
     sys.stdout.write('\r[{0}{1}] {2}%'.format('#'*percentage, ' '*(20 - percentage),progress))
     sys.stdout.flush()
