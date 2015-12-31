@@ -172,6 +172,9 @@ def parse_locations(file):
             (longitude, latitude) = ENtoLL84(row['easting'], row['northing'])
             row['longitude'] = longitude
             row['latitude'] = latitude
+        else:
+            row['easting'] = None
+            row['northing'] = None
 
     return rows
 
