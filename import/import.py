@@ -60,7 +60,7 @@ def update_progress(lengths):
 
 # Date handling
 
-def set_date(time_string, separator):
+def parse_date(time_string, separator):
     if time_string == '':
         return None
 
@@ -113,6 +113,14 @@ locations_column_map = {
     'CIFPassCount': 'cif_pass_count'
 }
 
+schedule_column_map = {
+    'Unit': 'unit',
+    'headcode': 'headcode',
+    'origin_loc': 'origin_location',
+    'origin_dep_dt': 'origin_departure',
+    'cif_uid': 'cif_uid'
+}
+
 def parse_xml(file):
     root = ET.parse(file).getroot()
     return [event.attrib for event in root]
@@ -163,6 +171,13 @@ def parse_locations(file):
 
     return rows
 
+def parse_schedule(file):
+    reader = csv.DictReader(file)
+    rows = [map_columns(schedule_column_map, row) for row in reader]
+    rows = filter(lambda row: len(row['unit']) <= 4, rows)
+    for row in rows:
+        row['origin_departure'] = parse_date(row['origin_departure'], ':')
+    return rows
 
 # Storing data in database
 
@@ -191,26 +206,12 @@ def store_locations(file, lengths):
         db.session.commit()
 
 def store_schedule(file, lengths):
-    try:
-        reader = csv.DictReader(file)
-        for row in reader:
-            update_progress(lengths)
-            if len(row['Unit']) > 4: #Some columns contain weird unit values and no cif_uid
-                continue
-
-            date = set_date(row['origin_dep_dt'], ':')
-
-            schedule = Schedule(
-                unit=row['Unit'],
-                headcode=row['headcode'],
-                origin_location=row['origin_loc'],
-                origin_departure=date,
-                cif_uid=row['cif_uid'])
-
-            db.session.add(schedule)
-            db.session.commit()
-    except KeyError:
-        print "csv file is not in correct format"
+    rows = parse_schedule(file)
+    for row in rows:
+        update_progress(lengths)
+        schedule = Schedule(**row)
+        db.session.add(schedule)
+        db.session.commit()
 
 def store_unit_to_gps(file, lengths):
     try:
