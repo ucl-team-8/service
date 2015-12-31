@@ -264,4 +264,5 @@ def main():
     update_progress(lengths)
     sys.stdout.write("\nSuccessfully added all files to db\n")
 
-main()
+if __name__ == "__main__":
+    main()
