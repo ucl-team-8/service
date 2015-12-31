@@ -14,8 +14,6 @@ os.sys.path.insert(0,parentdir)
 from models import *
 
 # TODO: Check the columns in schedule where len(unit) == 5 and where cif_uid is empty
-# TODO: Use bulk inserts
-
 
 def convert_to(datatype, value, *args, **kwargs):
     try:
@@ -26,39 +24,8 @@ def convert_to(datatype, value, *args, **kwargs):
 # File handling
 
 def open_file(filename):
-    try:
-        f = open(os.path.dirname(os.path.realpath(__file__)) + '/' + filename, 'rb')
-        return f
-    except IOError:
-        return None
-
-
-# Progress bar
-
-total_rows = 0
-total_done = 0
-
-def file_length(file):
-    for i, l in enumerate(file):
-            pass
-    return i + 1
-
-def calculate_lengths():
-    global total_rows
-    total_rows = 0
-    files = open_files()
-    for key, file in files.items():
-        total_rows += file_length(file)
-
-    close_files(files)
-
-def increment_progress():
-    global total_rows, total_done
-    total_done += 1
-    progress = int(math.ceil((float(total_done)/total_rows)*100))
-    percentage = (progress/5)
-    sys.stdout.write('\r[{0}{1}] {2}%'.format('#'*percentage, ' '*(20 - percentage),progress))
-    sys.stdout.flush()
+    f = open(os.path.dirname(os.path.realpath(__file__)) + '/' + filename, 'rb')
+    return f
 
 
 # Date handling
@@ -74,6 +41,10 @@ def parse_date(time_string, separator):
 
 # Extracting data from files
 
+def parse_xml(file):
+    root = ET.parse(file).getroot()
+    return [event.attrib for event in root]
+
 def map_columns(column_map, x):
     """
     It 'translates' column names given a <original column> => <new column>
@@ -84,6 +55,8 @@ def map_columns(column_map, x):
         if column_from in x:
             d[column_to] = x[column_from]
     return d
+
+# TRUST
 
 trust_column_map = {
     'headcode': 'headcode',
@@ -96,12 +69,63 @@ trust_column_map = {
     'plannedPass': 'planned_pass'
 }
 
+def parse_trust(file):
+    events = parse_xml(file)
+    rows = [map_columns(trust_column_map, event) for event in events]
+    for row in rows:
+        row['origin_departure'] = datetime.datetime.strptime(row['origin_departure'], "%Y-%m-%dT%H:%M:%S")
+        row['event_time'] = datetime.datetime.strptime(row['event_time'], "%Y-%m-%dT%H:%M:%S")
+        row['planned_pass'] = convert_to(bool, row['planned_pass'])
+        row['seq'] = convert_to(int, row['seq'])
+    return rows
+
+# GPS
+
 gps_column_map = {
     'device': 'gps_car_id',
     'eventType': 'event_type',
     'eventTime': 'event_time',
     'tiploc': 'tiploc'
 }
+
+def parse_gps(file):
+    events = parse_xml(file)
+    rows = [map_columns(gps_column_map, event) for event in events]
+    for row in rows:
+        row['event_time'] = datetime.datetime.strptime(row['event_time'], "%Y-%m-%dT%H:%M:%S")
+    return rows
+
+# Schedule
+
+schedule_column_map = {
+    'Unit': 'unit',
+    'headcode': 'headcode',
+    'origin_loc': 'origin_location',
+    'origin_dep_dt': 'origin_departure',
+    'cif_uid': 'cif_uid'
+}
+
+def parse_schedule(file):
+    reader = csv.DictReader(file)
+    rows = [map_columns(schedule_column_map, row) for row in reader]
+    rows = filter(lambda row: len(row['unit']) <= 4, rows)
+    for row in rows:
+        row['origin_departure'] = parse_date(row['origin_departure'], ':')
+    return rows
+
+# Unit to GPS
+
+unit_to_gps_column_map = {
+    'Unit': 'unit',
+    'GPS car id': 'gps_car_id'
+}
+
+def parse_unit_to_gps(file):
+    reader = csv.DictReader(file)
+    rows = [map_columns(unit_to_gps_column_map, row) for row in reader]
+    return rows
+
+# Locations
 
 locations_column_map = {
     'Tiploc': 'tiploc',
@@ -115,40 +139,6 @@ locations_column_map = {
     'CIFStopCount': 'cif_stop_count',
     'CIFPassCount': 'cif_pass_count'
 }
-
-schedule_column_map = {
-    'Unit': 'unit',
-    'headcode': 'headcode',
-    'origin_loc': 'origin_location',
-    'origin_dep_dt': 'origin_departure',
-    'cif_uid': 'cif_uid'
-}
-
-unit_to_gps_column_map = {
-    'Unit': 'unit',
-    'GPS car id': 'gps_car_id'
-}
-
-def parse_xml(file):
-    root = ET.parse(file).getroot()
-    return [event.attrib for event in root]
-
-def parse_trust(file):
-    events = parse_xml(file)
-    rows = [map_columns(trust_column_map, event) for event in events]
-    for row in rows:
-        row['origin_departure'] = datetime.datetime.strptime(row['origin_departure'], "%Y-%m-%dT%H:%M:%S")
-        row['event_time'] = datetime.datetime.strptime(row['event_time'], "%Y-%m-%dT%H:%M:%S")
-        row['planned_pass'] = convert_to(bool, row['planned_pass'])
-        row['seq'] = convert_to(int, row['seq'])
-    return rows
-
-def parse_gps(file):
-    events = parse_xml(file)
-    rows = [map_columns(gps_column_map, event) for event in events]
-    for row in rows:
-        row['event_time'] = datetime.datetime.strptime(row['event_time'], "%Y-%m-%dT%H:%M:%S")
-    return rows
 
 def parse_locations(file):
     items = csv.DictReader(file, delimiter="\t")
@@ -179,35 +169,15 @@ def parse_locations(file):
 
     return rows
 
-def parse_schedule(file):
-    reader = csv.DictReader(file)
-    rows = [map_columns(schedule_column_map, row) for row in reader]
-    rows = filter(lambda row: len(row['unit']) <= 4, rows)
-    for row in rows:
-        row['origin_departure'] = parse_date(row['origin_departure'], ':')
-    return rows
-
-def parse_unit_to_gps(file):
-    reader = csv.DictReader(file)
-    rows = [map_columns(unit_to_gps_column_map, row) for row in reader]
-    return rows
 
 # Storing data in database
 
-def store_table(rows, model):
-    for row in rows:
-        increment_progress()
-        item = model(**row)
-        db.session.add(item)
-    db.session.commit()
+def store_rows(rows, model):
+    db.session.bulk_insert_mappings(model, rows)
 
 def delete_data():
-    db.session.query(Trust).delete()
-    db.session.query(Schedule).delete()
-    db.session.query(GPS).delete()
-    db.session.query(UnitToGPSMapping).delete()
-    db.session.query(GeographicalLocation).delete()
-
+    for model in [Trust, Schedule, GPS, UnitToGPSMapping, GeographicalLocation]:
+        db.session.query(model).delete()
 
 def open_files():
     return {
@@ -224,21 +194,28 @@ def close_files(files):
 
 
 def main():
-    calculate_lengths()
-    files = open_files()
-
-    print("Deleting all existing data...")
+    print("\nDeleting all existing data...\n")
     delete_data()
 
-    print("Importing data...")
-    store_table(parse_trust(files['trust']), Trust)
-    store_table(parse_gps(files['gpsData']), GPS)
-    store_table(parse_schedule(files['schedule']), Schedule)
-    store_table(parse_unit_to_gps(files['unit_to_gps']), UnitToGPSMapping)
-    store_table(parse_locations(files['locations']), GeographicalLocation)
+    files = open_files()
+
+    print("Importing TRUST data...")
+    store_rows(parse_trust(files['trust']), Trust)
+
+    print("Importing GPS data...")
+    store_rows(parse_gps(files['gpsData']), GPS)
+
+    print("Importing Schedule data...")
+    store_rows(parse_schedule(files['schedule']), Schedule)
+
+    print("Importing Unit to GPS data...")
+    store_rows(parse_unit_to_gps(files['unit_to_gps']), UnitToGPSMapping)
+
+    print("Importing Locations data...")
+    store_rows(parse_locations(files['locations']), GeographicalLocation)
 
     close_files(files)
-    sys.stdout.write("\nSuccessfully added all files to db\n")
+    print("\nSuccessfully imported all data.\n")
 
 if __name__ == "__main__":
     main()
