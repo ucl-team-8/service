@@ -158,10 +158,7 @@ def parse_locations(file):
         row['is_cif_stop'] = convert_to(bool, row['is_cif_stop'])
 
         row['cif_stop_count'] = convert_to(int, row['cif_stop_count'])
-        if row['cif_stop_count'] == 0: row['cif_stop_count'] = None
-
         row['cif_pass_count'] = convert_to(int, row['cif_pass_count'])
-        if row['cif_pass_count'] == 0: row['cif_pass_count'] = None
 
         row['easting'] = convert_to(int, row['easting'])
         row['northing'] = convert_to(int, row['northing'])
