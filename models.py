@@ -73,7 +73,7 @@ class GeographicalLocation(db.Model):
     latitude = db.Column(db.Float(precision=32))
     longitude = db.Column(db.Float(precision=32))
     type = db.Column(db.String(20))
-    is_cif_stop = db.Column(db.Boolean())
+    is_cif_stop = db.Column(db.Boolean)
     cif_stop_count = db.Column(db.Integer)
     cif_pass_count = db.Column(db.Integer)
 
