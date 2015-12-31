@@ -199,7 +199,7 @@ def store_table(rows, model):
         increment_progress()
         item = model(**row)
         db.session.add(item)
-        db.session.commit()
+    db.session.commit()
 
 def delete_data():
     db.session.query(Trust).delete()
