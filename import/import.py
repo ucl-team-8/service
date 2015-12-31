@@ -30,13 +30,16 @@ def open_file(filename):
 
 # Date handling
 
-def parse_date(time_string, separator):
-    if time_string == '':
+def parse_date(date_string, date_format, time_only=False):
+    if date_string == '':
         return None
 
-    date = datetime.datetime.strptime(time_string, '%H'+separator+'%M'+separator+'%S')
-    today = datetime.date.today()
-    return date.replace(day=17, month=3, year=2015)
+    date = datetime.datetime.strptime(date_string, date_format)
+
+    if time_only:
+        return date.replace(day=17, month=3, year=2015)
+    else:
+        return date
 
 
 # Extracting data from files
@@ -73,8 +76,8 @@ def parse_trust(file):
     events = parse_xml(file)
     rows = [map_columns(trust_column_map, event) for event in events]
     for row in rows:
-        row['origin_departure'] = datetime.datetime.strptime(row['origin_departure'], "%Y-%m-%dT%H:%M:%S")
-        row['event_time'] = datetime.datetime.strptime(row['event_time'], "%Y-%m-%dT%H:%M:%S")
+        row['origin_departure'] = parse_date(row['origin_departure'], "%Y-%m-%dT%H:%M:%S")
+        row['event_time'] = parse_date(row['event_time'], "%Y-%m-%dT%H:%M:%S")
         row['planned_pass'] = convert_to(bool, row['planned_pass'])
         row['seq'] = convert_to(int, row['seq'])
     return rows
@@ -92,7 +95,7 @@ def parse_gps(file):
     events = parse_xml(file)
     rows = [map_columns(gps_column_map, event) for event in events]
     for row in rows:
-        row['event_time'] = datetime.datetime.strptime(row['event_time'], "%Y-%m-%dT%H:%M:%S")
+        row['event_time'] = parse_date(row['event_time'], "%Y-%m-%dT%H:%M:%S")
     return rows
 
 # Schedule
@@ -110,7 +113,7 @@ def parse_schedule(file):
     rows = [map_columns(schedule_column_map, row) for row in reader]
     rows = filter(lambda row: len(row['unit']) <= 4, rows)
     for row in rows:
-        row['origin_departure'] = parse_date(row['origin_departure'], ':')
+        row['origin_departure'] = parse_date(row['origin_departure'], '%H:%M:%S', time_only=True)
     return rows
 
 # Unit to GPS
