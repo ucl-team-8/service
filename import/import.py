@@ -200,46 +200,6 @@ def store_table(rows, model):
         db.session.add(item)
         db.session.commit()
 
-def store_trust(file):
-    rows = parse_trust(file)
-    for row in rows:
-        increment_progress()
-        trust = Trust(**row)
-        db.session.add(trust)
-        db.session.commit()
-
-def store_gps(file):
-    rows = parse_gps(file)
-    for row in rows:
-        increment_progress()
-        gps = GPS(**row)
-        db.session.add(gps)
-        db.session.commit()
-
-def store_locations(file):
-    rows = parse_locations(file)
-    for row in rows:
-        increment_progress()
-        location = GeographicalLocation(**row)
-        db.session.add(location)
-        db.session.commit()
-
-def store_schedule(file):
-    rows = parse_schedule(file)
-    for row in rows:
-        increment_progress()
-        schedule = Schedule(**row)
-        db.session.add(schedule)
-        db.session.commit()
-
-def store_unit_to_gps(file):
-    rows = parse_unit_to_gps(file)
-    for row in rows:
-        increment_progress()
-        unit_to_gps = UnitToGPSMapping(**row)
-        db.session.add(unit_to_gps)
-        db.session.commit()
-
 def delete_data():
     db.session.query(Trust).delete()
     db.session.query(Schedule).delete()
@@ -270,11 +230,11 @@ def main():
     delete_data()
 
     print("Importing data...")
-    store_schedule(files['schedule'])
-    store_unit_to_gps(files['unit_to_gps'])
-    store_trust(files['trust'])
-    store_gps(files['gpsData'])
-    store_locations(files['locations'])
+    store_table(parse_trust(files['trust']), Trust)
+    store_table(parse_gps(files['gpsData']), GPS)
+    store_table(parse_schedule(files['schedule']), Schedule)
+    store_table(parse_unit_to_gps(files['unit_to_gps']), UnitToGPSMapping)
+    store_table(parse_locations(files['locations']), GeographicalLocation)
 
     close_files(files)
     sys.stdout.write("\nSuccessfully added all files to db\n")
