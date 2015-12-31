@@ -148,9 +148,12 @@ def parse_locations(file):
     rows = [map_columns(locations_column_map, item) for item in items]
     for row in rows:
 
-        if row['stanox'] == "0":
+        if row['stanox'] == "0" or row['stanox'] == "":
             # stanox 0 is not a valid stanox
             row['stanox'] = None
+
+        if row['crs'] == "":
+            row['crs'] = None
 
         row['is_cif_stop'] = convert_to(bool, row['is_cif_stop'])
 
