@@ -20,6 +20,7 @@ System.config({
     "d3": "github:mbostock/d3@3.5.9",
     "fetch": "github:github/fetch@0.10.1",
     "jquery": "github:components/jquery@2.1.4",
+    "leaflet": "github:Leaflet/Leaflet@0.7.7",
     "lodash": "npm:lodash@3.10.1",
     "moment": "npm:moment@2.10.6",
     "q": "npm:q@1.4.1",
