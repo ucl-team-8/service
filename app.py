@@ -1,6 +1,6 @@
 from flask import Flask, render_template, jsonify
 from flask.ext.sqlalchemy import SQLAlchemy
-from sqlalchemy.sql import func
+from sqlalchemy.sql import func, and_
 import os
 
 app = Flask(__name__)
@@ -17,20 +17,32 @@ def hello():
 def basic_algorithm():
     return render_template("basic-algorithm.html")
 
-def convert_to_dicts(records):
-    return [record.as_dict() for record in records]
-
 @app.route("/events/trust.json")
 def trust():
     records = db.session.query(Trust, Schedule, UnitToGPSMapping).\
-              filter(Trust.headcode==Schedule.headcode).\
-              filter(Trust.origin_departure==Schedule.origin_departure).\
-              filter(Schedule.unit==UnitToGPSMapping.unit)
+              outerjoin(Schedule, and_(Trust.headcode==Schedule.headcode,
+                                       Trust.origin_departure==Schedule.origin_departure)).\
+              outerjoin(UnitToGPSMapping, Schedule.unit==UnitToGPSMapping.unit)
 
     def extract_dict(record):
         trust, schedule, mapping = record
         result = trust.as_dict()
-        result['gps_car_id'] = mapping.gps_car_id
+        if mapping:
+            result['gps_car_id'] = mapping.gps_car_id
+        return result
+
+    return jsonify(result=map(extract_dict, records))
+
+@app.route("/data/schedule.json")
+def schedule():
+    records = db.session.query(Schedule, UnitToGPSMapping).\
+              outerjoin(UnitToGPSMapping, Schedule.unit==UnitToGPSMapping.unit)
+
+    def extract_dict(record):
+        schedule, mapping = record
+        result = schedule.as_dict()
+        if mapping:
+            result['gps_car_id'] = mapping.gps_car_id
         return result
 
     return jsonify(result=map(extract_dict, records))
@@ -38,7 +50,12 @@ def trust():
 @app.route("/events/gps.json")
 def gps():
     records = db.session.query(GPS).filter(func.length(GPS.gps_car_id) == 5)
-    return jsonify(result=convert_to_dicts(records))
+
+    def extract_dict(record):
+        result = record.as_dict()
+        return result
+
+    return jsonify(result=map(extract_dict, records))
 
 if __name__ == "__main__":
     app.run()
