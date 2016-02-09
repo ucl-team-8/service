@@ -57,7 +57,6 @@ function draw() {
 
     let unitChoice = d3.select("#select_unit")
 
-    debugger;
     for(var i = 0; i < units.length; i++) {
       let choice = unitChoice.append("option")
         .attr("value", i)
