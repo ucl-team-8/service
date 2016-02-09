@@ -1,6 +1,5 @@
 import d3 from "d3";
 import _ from "lodash";
-import moment from "moment";
 
 let notMatched = [];
 var data = window.data || {};
