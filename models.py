@@ -85,10 +85,23 @@ class GeographicalLocation(db.Model):
 
 class DiagramService(db.Model):
     __tablename__ = 'diagram_service'
-    unit = db.Column(db.String(20))
     id = db.Column(db.Integer, primary_key=true)
+    unit = db.Column(db.String(20))
     cif_uid = db.Column(db.String(20))
     date_runs_from = db.Column(db.String(6))
     date_runs_to = db.Column(db.String(6))
     days_run = db.Column(db.String(7))
     train_category = db.Column(db.String(2))
+    train_class = db.Columns(db.String(1))
+
+class DiagramStop(db.Model):
+    __tablename__ = 'diagram_stop'
+    id = db.Column(db.Integer, primary_key=true)
+    diagram_service_id = db.Column(db.Integer, db.ForeignKey('diagram_service.id'))
+    station_type = db.Column(db.String(2)) # LO (origin), LI (intermediate), LT (terminating) and LR (changes en route)
+    tiploc = db.Column(db.String(20))
+    arrive_time = db.Column(db.DateTime) # these are the scheduled times (not public)
+    depart_time = db.Column(db.DateTime)
+    pass_time = db.Column(db.DateTime)
+    engineering_allowance = db.Column(db.Integer)
+    pathing_allowance = db.Column(db.Integer)
