@@ -17,8 +17,8 @@ selectElement.onchange = function() {
   svg.parentNode.removeChild(svg);
 
   draw();
-}
-draw()
+};
+draw();
 
 
 function loadData() {
@@ -55,7 +55,7 @@ function draw() {
         .sortValues((a,b) => d3.ascending(a.event_time, b.event_time))
         .entries(gpsData);
 
-    let unitChoice = d3.select("#select_unit")
+    let unitChoice = d3.select("#select_unit");
 
     for(var i = 0; i < units.length; i++) {
       let choice = unitChoice.append("option")
@@ -86,9 +86,9 @@ function draw() {
 
     let y = d3.scale.ordinal()
         .domain(d3.range(totalUnitStops))
-        .rangeRoundBands([0, height], .1);
+        .rangeRoundBands([0, height], 0.1);
 
-    let scaleY = (d,i) => y(i)
+    let scaleY = (d,i) => y(i);
 
     let svg = d3.select("body").append("svg")
         .attr("width", width)
