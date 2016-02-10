@@ -82,3 +82,13 @@ class GeographicalLocation(db.Model):
 
     def as_dict(self):
        return {c.name: getattr(self, c.name) for c in self.__table__.columns}
+
+class DiagramService(db.Model):
+    __tablename__ = 'diagram_service'
+    unit = db.Column(db.String(20))
+    id = db.Column(db.Integer, primary_key=true)
+    cif_uid = db.Column(db.String(20))
+    date_runs_from = db.Column(db.String(6))
+    date_runs_to = db.Column(db.String(6))
+    days_run = db.Column(db.String(7))
+    train_category = db.Column(db.String(2))
