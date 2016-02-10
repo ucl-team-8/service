@@ -97,7 +97,7 @@ class DiagramService(db.Model):
 class DiagramStop(db.Model):
     __tablename__ = 'diagram_stop'
     id = db.Column(db.Integer, primary_key=True)
-    diagram_service_id = db.Column(db.Integer, db.ForeignKey('diagram_service.id'))
+    diagram_service_id = db.Column(db.Integer, db.ForeignKey('diagram_service.id'), nullable=False)
     station_type = db.Column(db.String(2)) # LO (origin), LI (intermediate), LT (terminating) and LR (changes en route)
     tiploc = db.Column(db.String(20))
     arrive_time = db.Column(db.DateTime) # these are the scheduled times (not public)
