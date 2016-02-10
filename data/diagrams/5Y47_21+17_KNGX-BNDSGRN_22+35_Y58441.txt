@@ -1,0 +1,11 @@
+BSRY584411505181510021111100 PEE5Y47    121704001 E  410 125EP                  
+BX         GRY                                                                  
+LOKNGX    2117 00004  FL1    TB                                                 
+LIKNGXBEL           2119 00000000   FL                                          
+LIHLWYSJ            2120H00000000   GL                                          
+LIFNPK              2124H00000000GL SL2                                         
+LIFRMPKRS 2134H2135      00000000   CL    OP                                    
+LIHRNS451 2215 2215      00000000         OP                                    
+LIALEXNDP           2217 000000004                                              
+LIBOWERRL 2222 2230      00000000         RM                                    
+LTBNDSGRN 2235 0000      TF                                                     

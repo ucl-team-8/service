@@ -1,0 +1,33 @@
+BSNY582801507131508281111100 PXX1D202440121702001 E  410 125EP    B R TC        
+BX         GRY                                                                  
+LOKNGX    1535 15350  FL2    TB                                                 
+LIKNGXBEL           1537 00000000   FL                                          
+LIFNPK              1539H000000005                                              
+LIALEXNDP           1541H00000000   FL                                          
+LIPOTRSBR           1546 000000003                                              
+LIWLWYNGC           1550 00000000                                               
+LIWLMRGRN           1551H00000000                                               
+LISTEVNGE 1554 1555H     155415553        T                                     
+LIHITCHIN           1600 00000000   FL                                          
+LISNDY              1606 00000000   FL                                          
+LIHNTNGDN           1613 00000000   FL FL               1                       
+LIHOLME             1619 00000000                         1                     
+LIPBRO              1624 00000000DF                                             
+LITALNGTN           1628H00000000                                               
+LISOKEJN            1635H00000000                         1                     
+LIGTHM    1640 1641H     164016412        T                                     
+LICLPLLP            1648H00000000                                               
+LINEWANG            1651 000000001                                              
+LINWRKFC            1651H00000000                         1                     
+LIRTFD              1701H00000000                                               
+LIDONCLCJ           1708 00000000                         1                     
+LIDONC    1712H1714H     171317148        T K                                   
+LIADWICK            1719 000000002                                              
+LIADWICKJ           1719H00000000                     1                         
+LISKIRBYJ           1723H00000000                                               
+LIHAREPKJ           1727 00000000                                               
+LIWKFLDWG 1731 1733      173117332        T           1                         
+LIHOLBJCN           1743H00000000                                               
+LIWHRDJN            1744 00000000   C                   1                       
+LILEEDSWJ           1745H00000000   C                                           
+LTLEEDS   1747 17496     TF                                                     

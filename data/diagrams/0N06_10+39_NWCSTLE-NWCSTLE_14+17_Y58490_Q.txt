@@ -1,0 +1,37 @@
+BSNY584901506011512111111100 PZZ0N06    121704001 D      075Q                   
+BX         GRY                                                                  
+LONWCSTLE 1039 0000SL SL     TB                                                 
+LIKEBGNJN           1050H00000000                                               
+LIKEBGEJN           1051 00000000                                               
+LIGRNSFDJ           1051H00000000                                               
+LIPKLNJN            1054 00000000                                               
+LIPELAW             1058 00000000                                               
+LIBRWHBWJ           1102 00000000                     1 4                       
+LISNDRLND           1114 000000001                                              
+LISEAHAM            1123 000000001                                              
+LIHORD148           1130 00000000                                               
+LIHRTLEPL           1138 00000000                                               
+LIGREATHM           1145H00000000                                               
+LIBLNGHM            1148H000000001                                              
+LISTOCTON           1155H000000001                                              
+LIHRTBJN            1157H00000000                       3H                      
+LISTOCCJN           1202 00000000                                               
+LIEGLSCLF           1204 000000001                      8                       
+LINLRTN   1228H1231H     00000000         OPRM          3                       
+LIEGLSCLF2          1251H000000002                                              
+LISTOCCJN2          1253 00000000                                               
+LIHRTBJN 2          1254 00000000                                               
+LISTOCTON2          1256 000000002                                              
+LIBLNGHM 2          1303 000000002                                              
+LIGREATHM2          1305H00000000                                               
+LIHRTLEPL2          1310H000000002                                              
+LIHORD137           1319 00000000                                               
+LISEAHAM 2          1325H000000002                    2 2H                      
+LISNDRLND2          1339 000000002                      5                       
+LIBRWHBWJ2          1351 00000000                                               
+LIPELAW  2          1355 00000000                                               
+LIPKLNJN 2          1358 00000000                                               
+LIGRNSFDJ2          1400H00000000                                               
+LIKEBGEJN2          1401 00000000                       12                      
+LIKEBGNJN2          1413H00000000   USL                                         
+LTNWCSTLE21417 0000SL    TF                                                     

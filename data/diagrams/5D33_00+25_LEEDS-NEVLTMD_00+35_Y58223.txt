@@ -1,0 +1,6 @@
+BSNY582231506021512120111110 PEE5D33    121704001 HST    125                    
+BX         GRY                                                                  
+LOLEEDS   0025 00008         TB                                                 
+LIMRLNJN            0028 00000000   GL                                          
+LINEVLWJN           0031 00000000                                               
+LTNEVLTMD 0035 0000      TF                                                     

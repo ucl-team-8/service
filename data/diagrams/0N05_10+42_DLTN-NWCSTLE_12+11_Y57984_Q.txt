@@ -1,0 +1,16 @@
+BSNY579841506011508141111100 PZZ0N05    121704001 D      075Q                   
+BX         GRY                                                                  
+LODLTN    1042 00002         TB                                                 
+LIDINSDAL           1049 000000002                      5H                      
+LIEGLSCLF           1102 000000002                                              
+LISTOCCJN           1103H00000000                                               
+LIHRTBJN            1104H00000000                                               
+LINORTONS           1109H00000000                                               
+LINORTONW           1110H00000000                     2                         
+LIFYHLSJN           1128H00000000   SL                                          
+LITURSDLJ 1132H1135      00000000         OPA                                   
+LIDRHM              1144 00000000DM                   3                         
+LIBRTLYJN           1154 00000000                       1H                      
+LIKEBGSJN           1159 00000000   SL                                          
+LIKEBGNJN           1159H00000000                                               
+LTNWCSTLE 1211 0000SL    TF                                                     

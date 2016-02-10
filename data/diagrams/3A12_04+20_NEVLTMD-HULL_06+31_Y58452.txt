@@ -1,0 +1,28 @@
+BSNY584521507211509180111100 PEE3A12    121704001 HST    125                    
+BX         GRY                                                                  
+LONEVLTMD 0420 0000          TB                                                 
+LINEVLWJN           0422 00000000   FL                                          
+LIMRLNJN            0427 00000000                                               
+LILEEDS   0430 0442      000000009  E     S                                     
+LILEEDSWJ           0443 00000000   DM                                          
+LIESJLEDS           0444 00000000                                               
+LISTRTJN            0447 00000000                                               
+LIMETHLYJ           0451 00000000                       1                       
+LIALTFTJN           0453 00000000                                               
+LITRNRSLA           0500 00000000                       1                       
+LICLDBDGJ           0504 00000000                       2                       
+LICRFTNWJ           0509H00000000                       1                       
+LIHAREPKJ           0513 00000000                                               
+LIHEMSWTH 0519 0527      00000000         OPA                                   
+LISKIRBYJ           0532 00000000                                               
+LIADWICKJ           0535 00000000                                               
+LIADWICK            0535H000000001                      1                       
+LIDONC    0541 0547      000000001        OPRM                                  
+LIBTLYJN            0550 00000000                                               
+LIHTFLASF           0554 00000000                                               
+LITHORNEJ           0555H00000000                       2                       
+LIGOOLE             0606 000000001                                              
+LIGLBRDYK           0612 00000000                                               
+LIBROUGH            0618 00000000                     2                         
+LIHESSLRD           0627H00000000                                               
+LTHULL    0631 00007     TF                                                     

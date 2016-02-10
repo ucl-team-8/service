@@ -1,0 +1,6 @@
+BSNY579961505181512111111100 FZZ0B02    121704001 D      075                    
+BX         GRY                                                                  
+LOEDINBUR 2037 0000MR NL     TB                                                 
+LIABHLJN            2038H00000000                                               
+LICRGNTYJ 2040H2041      00000000         OP                                    
+LTCRGNTNY 2046 0000      TF                                                     

@@ -1,0 +1,22 @@
+BSRY579891505181512111111100 PZZ0D16    121704001 D      075Q                   
+BX         GRY                                                                  
+LODONC    1438 00003A ESL    TB                                                 
+LIDONCPCJ           1441 00000000                                               
+LIDONCBCJ           1442 00000000                                               
+LIBESSCRJ           1444 00000000                       1H                      
+LIGBROTJ            1504H00000000                                               
+LIGBGHLRD           1506H00000000                     1                         
+LIPYEWIPJ           1524H00000000                                               
+LIBOUTHMJ           1526H00000000                     1                         
+LINWRKCEJ           1543H00000000                                               
+LINEWANG  1545H1549H     00000000GL       OPRMA                                 
+LINWRKCEJ2          1551H00000000                     1                         
+LIBOUTHMJ2          1608H00000000                                               
+LIPYEWIPJ2          1610H00000000                     1 1H                      
+LIGBGHLRD2          1630 00000000                                               
+LIGBROTJ 2          1632 00000000                       2                       
+LIBESSCRJ2          1652 00000000                                               
+LIDONCBCJ2          1654 00000000   ESL                                         
+LIDONCPCJ2          1656H00000000                                               
+LIDONCUDY 1659H1704H     00000000   ESL   OPA                                   
+LTDONC   21711 00002     TF                                                     

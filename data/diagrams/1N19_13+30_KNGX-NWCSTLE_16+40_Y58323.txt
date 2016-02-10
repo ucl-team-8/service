@@ -1,0 +1,40 @@
+BSRY583231506011508281111100 PXX1N194400121700001 E  410 125EP    B R TC        
+BX         GRY                                                                  
+LOKNGX    1330 13300  FL2    TB                                                 
+LIKNGXBEL           1332 00000000   FL                                          
+LIFNPK              1334H000000005                                              
+LIALEXNDP           1336H00000000   FL                                          
+LIPOTRSBR           1341 000000003                                              
+LIWLWYNGC           1345 00000000                                               
+LIWLMRGRN           1346H00000000                                               
+LISTEVNGE           1348H000000003                                              
+LIHITCHIN           1350H00000000   FL                                          
+LISNDY              1356H00000000   FL                                          
+LIHNTNGDN           1403H00000000   FL FL                                       
+LIHOLME             1408H00000000                         1                     
+LIPBRO    1414H1416H     141514164        T                                     
+LITALNGTN           1423H00000000                                               
+LISOKEJN            1430H00000000                         1                     
+LIGTHM              1434H000000002                                              
+LICLPLLP            1439H00000000                                               
+LINEWANG  1443 1444H     144314441        T                                     
+LINWRKFC            1446 00000000                         1                     
+LIRTFD              1457 00000000                                               
+LIDONCLCJ           1503H00000000                         1                     
+LIDONC    1508 1511      150815114        T                                     
+LISHFTHLJ           1515 00000000                                               
+LITEMPLHJ           1519H00000000                                               
+LIHAMBLNJ           1522 00000000                                               
+LICOLTONJ           1526 00000000                         2                     
+LIYORK    1532 1535      153215359  AL    T K            H                      
+LISKELTON           1538H00000000   FL                                          
+LITOLERTN           1543 00000000   FL                                          
+LITHIRSK            1549 00000000   FL                                          
+LINLRTN   1553H1555      15541555         T                                     
+LIDLTN    1606 1608      160616084B       T                                     
+LIFYHLSJN           1617 00000000                                               
+LITURSDLJ           1618H00000000                                               
+LIDRHM    1624 1625H     162416252        T           3                         
+LIBRTLYJN           1635 00000000                                               
+LIKEBGSJN           1638 00000000                                               
+LTNWCSTLE 1640 16423     TF                                                     

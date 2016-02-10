@@ -1,0 +1,19 @@
+BSRY584891505251508141111100 PZZ0N04    121704001 D      075Q                   
+BX         GRY                                                                  
+LONWCSTLE 0704 0000SL SL     TB                                                 
+LIKEBGSJN           0716 00000000                       2                       
+LIBRTLYJN           0722 00000000                                               
+LIDRHM              0729 000000001                                              
+LITURSDLJ           0737 00000000   SL                                          
+LIFYHLSJN           0739 00000000                                               
+LINORTONW           0757 00000000                       1                       
+LINORTONS           0759 00000000                                               
+LIHRTBJN            0804 00000000                       4                       
+LISTOCCJN           0809 00000000                                               
+LIEGLSCLF           0811 000000001                      12                      
+LINLRTN   0840H0847      00000000         OPRM          4                       
+LIEGLSCLF2          0908H000000002                                              
+LIEGLSCDL 0909H0932      00000000         OPRM                                  
+LIEGLSCLF3          0933 000000001                                              
+LIDINSDAL           0942 000000001                                              
+LTDLTN    0948 00002     TF                                                     

@@ -1,0 +1,23 @@
+BSNY582351506011512111111100 FZZ0P03    121704001 D      075Q                   
+BX         GRY                                                                  
+LOKNGX    1025 0000LH FL2    TB                                                 
+LIKNGXBEL           1027 00000000   FL                                          
+LIHLWYSJ            1029 00000000   GL                                          
+LIFNPK              1033 00000000GL SL2                                         
+LIALEXNDP           1037 000000004                      12                      
+LIGORDONH           1055 000000003                      6                       
+LIHFDN              1111 000000002                                              
+LIMOLEJN            1113 00000000                                               
+LIBRAGJN            1118 00000000                       2                       
+LILNGYJN            1122 00000000   SL                                          
+LISTEVNGE 1124 1132      000000004  DSL   OPRM                                  
+LILNGYJN 2          1133H00000000                       15                      
+LIBRAGJN 2          1150H00000000                       1                       
+LIMOLEJN 2          1156H00000000                       1                       
+LIHFDN   2          1159H000000001                      6                       
+LIGORDONH2          1215H000000002                      6                       
+LIALEXNDP2          1227H000000001  SL2   X                                     
+LIFNPK   2          1236H000000001                      1                       
+LIHLWYSJ 2          1239H00000000   FL                1                         
+LIKNGXBEL2          1242 00000000   FL2                                         
+LTKNGX   21244 0000LH    TF                                                     

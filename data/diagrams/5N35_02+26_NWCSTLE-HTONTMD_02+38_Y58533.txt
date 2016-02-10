@@ -1,0 +1,5 @@
+BSNY585331507211508140111100 PEE5N35    121704001 HST    125                    
+BX         GRY                                                                  
+LONWCSTLE 0226 00002  SL 2   TB                                                 
+LIHTONSJN           0234 00000000                                               
+LTHTONTMD 0238 0000      TF                                                     

@@ -1,0 +1,14 @@
+BSNY585451505181512111111100 PEE5D26    121704001 E  410 125EP                  
+BX         GRY                                                                  
+LOSKPT    2124 00002       4HTB                                                 
+LIKEIGHLY           2136H000000001                      8                       
+LISHPY              2150 000000001                                              
+LISHPYDJN           2151 00000000                       1H                      
+LIAPERLYJ           2155H00000000                     2                         
+LIARMLJCN           2202H00000000   US                   H                      
+LIWHRDJN            2204 00000000   C                                           
+LILEEDSWJ           2204H00000000   C                                           
+LILEEDS   2206 2216      000000008        OP                                    
+LIMRLNJN            2219 00000000   GL                                          
+LINEVLWJN           2222 00000000                                               
+LTNEVLTMD 2226 0000      TF                                                     

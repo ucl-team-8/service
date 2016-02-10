@@ -1,0 +1,8 @@
+BSNY585421506151508281111100 PEE5E06    121704001 E  410 125EP                  
+BX         GRY                                                                  
+LOPLMDCMD 0600 0000          TB                                                 
+LIPLMD779 0605 0605H     00000000         OP                                    
+LILRKFLDJ           0609H00000000   SL                   H                      
+LIEGLNSTJ           0612 00000000   1D                                          
+LIGLGCBSJ           0613 00000000   2A                                          
+LTGLGC    0615 00002     TF                                                     

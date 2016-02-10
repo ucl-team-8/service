@@ -1,0 +1,26 @@
+BSNY579581506151512111111100 PZZ0L01    121704001 D      075Q                   
+BX         GRY                                                                  
+LOCRGNTNY 0930 0000          TB                                                 
+LIPORTOBL           0935 00000000                                               
+LINIDRIWJ           0939 00000000                     2                         
+LICRLORTJ           0950 00000000                                               
+LISLATFDJ           0952 00000000                       8                       
+LIMDCLDRJ           1008H00000000                                               
+LICOBB712           1016 00000000                                               
+LIACHNGRY           1018 00000000                                               
+LICRSTRSE           1023H00000000                       2                       
+LICRSTRS            1028 000000001                      4                       
+LILANARKJ           1035 00000000                                               
+LILAWJDPL 1047 1058      00000000         OPA                                   
+LILAWJ              1100 00000000                                               
+LISHILDMR           1105 00000000                                               
+LIMOTHRWL           1107 000000002                                              
+LIUDNGTNJ           1110 00000000                                               
+LINWTLEJ            1112 00000000                                               
+LINWTLWJ            1113 00000000                                               
+LIRTHGNEJ           1114H00000000   FL                                          
+LISHFD              1116 00000000                                               
+LILRKFLDJ           1117 00000000                     2  H                      
+LIEGLNSTJ           1121 00000000   1D                                          
+LIGLGCBSJ           1122 00000000   2A                  5                       
+LTGLGC    1129 00006     TF                                                     

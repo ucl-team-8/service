@@ -1,0 +1,7 @@
+BSNY581011507131512111111100 PEE5S23    121704001 E  410 125EP                  
+BX         GRY                                                                  
+LOGLGC    2152 00001  A1     TB                                                 
+LIGLGCBSJ           2154 00000000   1U                                          
+LIEGLNSTJ           2154H00000000   US                                          
+LILRKFLDJ 2157 2157H     00000000         OP            5                       
+LTPLMDCMD 2207 0000      TF                                                     

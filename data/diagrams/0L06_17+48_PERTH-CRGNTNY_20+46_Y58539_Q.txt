@@ -1,0 +1,24 @@
+BSNY585391507271512111111100 PZZ0L06    121704001 D      075Q                   
+BX         GRY                                                                  
+LOPERTH   1748 00002       2 TB                                                 
+LIHILTONJ           1753 00000000                                               
+LINBRG              1805 00000000                                               
+LILADYBNK           1815 000000002                    1                         
+LITHRNTNJ           1827 00000000                                               
+LIGLNRTHS 1830 1832      000000002        OPA                                   
+LICWDNBTH           1847 000000001                                              
+LIDNFRMLE           1855 000000001                                              
+LIIVRKTGL 1900 1950H     00000000         OPA           1                       
+LIIVRKTHG           1953H000000001                                              
+LIDLMYJN            2001H00000000                     1                         
+LIHAYMRWJ           2010H00000000                     1                         
+LIGORGIEJ           2012H00000000                                               
+LICRLORTJ           2013H00000000                     2                         
+LINIDRIWJ           2024H00000000                                               
+LIPORTOBL           2027H00000000                                               
+LICRGNTYJ           2029H00000000                                               
+LIABHLJN            2030H00000000   NL                                          
+LIEDINBUR 2032 2037      00000000MR NL NL OPRM                                  
+LIABHLJN 2          2038H00000000                                               
+LICRGNTYJ22040H2041      00000000         OP                                    
+LTCRGNTNY 2046 0000      TF                                                     

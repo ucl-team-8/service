@@ -1,0 +1,6 @@
+BSNY579721507271508281111100 PEE5E09    121704001 HST    125                    
+BX         GRY                                                                  
+LOCRGNTNY 0859 0000          TB                                                 
+LICRGNTYJ           0903 00000000                                               
+LIABHLJN            0905H00000000   SL                                          
+LTEDINBUR 0907 00008  SL TF                                                     

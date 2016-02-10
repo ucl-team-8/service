@@ -1,0 +1,6 @@
+BSNY580841505181512111111100 PEE5S28    121704001 HST    125                    
+BX         GRY                                                                  
+LOEDINBUR 2257 000019 NL     TB                                                 
+LIABHLJN            2259 00000000                                               
+LICRGNTYJ 2301 2301H     00000000         OP                                    
+LTCRGNTNY 2305 0000      TF                                                     

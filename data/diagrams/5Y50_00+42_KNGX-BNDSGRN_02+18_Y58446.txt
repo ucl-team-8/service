@@ -1,0 +1,11 @@
+BSNY584461507211508290111110 PEE5Y50    121704001 E  410 125EP                  
+BX         GRY                                                                  
+LOKNGX    0042 00006  SL2    TB                                                 
+LIKNGXBEL           0044 00000000   SL                                          
+LIHLWYSJ            0045H00000000   GL                                          
+LIFNPK              0049H00000000GL SL2                                         
+LIFRMPKRS 0058H0059      00000000   CL    OP                                    
+LIHRNS451 0139 0142      00000000         OP                                    
+LIALEXNDP           0144 000000004                                              
+LIBOWERRL 0149 0213      00000000         RM                                    
+LTBNDSGRN 0218 0000      TF                                                     

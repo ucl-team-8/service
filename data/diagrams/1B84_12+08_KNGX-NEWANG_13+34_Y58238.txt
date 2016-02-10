@@ -1,0 +1,20 @@
+BSRY582381506011508281111100 PXX1B842280121702001 HST    125EP    B R C         
+BX         GRY                                                                  
+LOKNGX    1208 12082  FL1    TB                                                 
+LIKNGXBEL           1210 00000000   FL                   H                      
+LIFNPK              1212H000000005                                              
+LIALEXNDP           1214H00000000   FL                                          
+LIPOTRSBR           1219H000000003                                              
+LIWLWYNGC           1223H00000000                                               
+LIWLMRGRN           1225H00000000                                               
+LISTEVNGE 1228 1229H     122812293        T                                     
+LIHITCHIN           1234 00000000   FL                                          
+LISNDY              1240 00000000   FL                                          
+LIHNTNGDN           1247 00000000   FL FL                                       
+LIHOLME             1252 00000000                         1                     
+LIPBRO    1258H1300H     125913004        T                                     
+LITALNGTN           1307H00000000                                               
+LISOKEJN            1315 00000000                         1                     
+LIGTHM    1320 1322      132013222        T                                     
+LICLPLLP            1329 00000000                        H                      
+LTNEWANG  1334 13363     TF                                                     
