@@ -94,15 +94,27 @@ class DiagramService(db.Model):
     train_category = db.Column(db.String(2))
     train_class = db.Column(db.String(1))
 
+    def __repr__(self):
+        return '<DiagramService unit={0}'.format(self.unit)
+
+    def as_dict(self):
+       return {c.name: getattr(self, c.name) for c in self.__table__.columns}
+
 class DiagramStop(db.Model):
     __tablename__ = 'diagram_stop'
     id = db.Column(db.Integer, primary_key=True)
     diagram_service_id = db.Column(db.Integer, db.ForeignKey('diagram_service.id'), nullable=False)
     diagram_service = db.relationship('DiagramService', backref='diagram_stop')
-    station_type = db.Column(db.String(2)) # LO (origin), LI (intermediate), LT (terminating) and LR (changes en route)
+    station_type = db.Column(db.String(2)) # LO (origin), LI (intermediate), LT (terminating) and CR (changes en route)
     tiploc = db.Column(db.String(20))
     arrive_time = db.Column(db.DateTime) # these are the scheduled times (not public)
     depart_time = db.Column(db.DateTime)
     pass_time = db.Column(db.DateTime)
     engineering_allowance = db.Column(db.Integer)
     pathing_allowance = db.Column(db.Integer)
+
+    def __repr__(self):
+        return '<DiagramStop diagram_service_id={0}, tiploc={1}'.format(self.diagram_service_id, self.tiploc)
+
+    def as_dict(self):
+       return {c.name: getattr(self, c.name) for c in self.__table__.columns}
