@@ -1,5 +1,4 @@
 from app import db
-from sqlalchemy.dialects.postgresql import JSON
 
 class Trust(db.Model):
     __tablename__ = 'trust'
@@ -107,9 +106,9 @@ class DiagramStop(db.Model):
     diagram_service = db.relationship('DiagramService', backref='diagram_stop')
     station_type = db.Column(db.String(2)) # LO (origin), LI (intermediate), LT (terminating) and CR (changes en route)
     tiploc = db.Column(db.String(20))
-    arrive_time = db.Column(db.DateTime) # these are the scheduled times (not public)
-    depart_time = db.Column(db.DateTime)
-    pass_time = db.Column(db.DateTime)
+    arrive_time = db.Column(db.Time) # these are the scheduled times (not public)
+    depart_time = db.Column(db.Time)
+    pass_time = db.Column(db.Time)
     engineering_allowance = db.Column(db.Integer)
     pathing_allowance = db.Column(db.Integer)
 
