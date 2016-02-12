@@ -1,0 +1,25 @@
+BSRY579901505181512111111100 PZZ0D17    121704001 D      075Q                   
+BX         GRY                                                                  
+LODONC    1858 00002  ESL    TB                                                 
+LIDONCPCJ           1901 00000000                                               
+LIDONCBCJ           1902 00000000                                               
+LIBESSCRJ           1903 00000000                                               
+LIGBROTJ            1921 00000000                                               
+LIGBGHLRD           1923 00000000                     1                         
+LIPYEWIPJ           1941 00000000                                               
+LIBOUTHMJ           1943 00000000                     1                         
+LINWRKCEJ           2000 00000000                                               
+LINEWANG  2002 2009      00000000GL       OPRMA         2                       
+LINWRKCEJ2          2013 00000000                       1                       
+LIBOUTHMJ2          2030 00000000                     1 1                       
+LIWHOLMSJ           2033 00000000                                               
+LILINCLNC 2036 2040      000000003A       OPRM                                  
+LIWHOLMSJ2          2043 00000000                                               
+LIPYEWIPJ2          2045 00000000                     1                         
+LIGBGHLRD2          2103 00000000                                               
+LIGBROTJ 2          2105 00000000                                               
+LIBESSCRJ2          2122 00000000                                               
+LIDONCBCJ2          2124 00000000   ESL                                         
+LIDONCPCJ2          2126H00000000                                               
+LIDONCUDY 2129H2145      00000000   ESL   OPA                                   
+LTDONC   22151 00002     TF                                                     

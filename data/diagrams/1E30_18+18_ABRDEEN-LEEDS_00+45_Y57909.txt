@@ -1,0 +1,66 @@
+BSNY579091507271507311111100 PXX1E305800121701001 HST    125      B R C         
+BX         GRY                                                                  
+LOABRDEEN 1818 18185         TB                                                 
+LIABRDFJN           1819 00000000                                               
+LICRGISTH           1820H00000000                                               
+LINWHL              1829 00000000                                               
+LISHVN    1834H1836H     18351836         T K                                   
+LICAARMNT           1842H00000000                                               
+LILRNCKRK           1848H00000000                                               
+LICRAIGO            1853 00000000                                               
+LIMONTRSE 1857 1859      185718591        T X                                   
+LIUSAN              1902 00000000                                               
+LIINVKLOR           1906H00000000                                               
+LIARBROTH 1913H1915H     191419151        T                                     
+LICNST              1921 00000000                                               
+LICMPRDNJ           1928H00000000                                               
+LIDUNDETB 1931 1933      193119331        T K                                   
+LIDUNDCJ            1934 00000000                                               
+LITAYBDGS           1939 00000000                                               
+LILEUCHRS 1945 1947      194519471        T                                     
+LICUPAR             1953 00000000                                               
+LILADYBNK           1957H000000001                                              
+LITHRNTNJ           2004 00000000                                               
+LITHRNTSJ           2004H00000000                                               
+LIKCLD    2009 2011      200920111        T                                     
+LIBISLND            2018 00000000                                               
+LIIVRKTHG 2025H2027H     202620271        T K                                   
+LIDLMYJN            2034 00000000                     3                         
+LIHAYMRWJ           2042 00000000   UN                                          
+LIHAYMRKT 2044 2046      204420461        T                                     
+LIPRNCSTG           2048 00000000   Z                                           
+LIEDINBUR 2050 2100      2050210019 NL Z  T                                     
+LIABHLJN            2101H00000000                                               
+LICRGNTYJ           2103 00000000                                               
+LIPORTOBL           2104 00000000                                               
+LIMNKTNHJ           2106 00000000                                               
+LIPPAN              2108 00000000                                               
+LIDREMJ             2112H00000000                                               
+LIDUNBAR  2120 2123      21202123         T                                     
+LIOXWLCO            2126 00000000                                               
+LIGTHS              2132H00000000                                               
+LIRESTON            2136H00000000                     2                         
+LIREST402           2143H00000000                                               
+LIBRWCKUT 2146H2148H     214721481        T K                                   
+LIBELFORD           2158H00000000                                               
+LIALNMOTH 2208H2211H     220922111        T                                     
+LIMRPTHRP 2225H2228H     222622281        T           2                         
+LIHTONSJN           2241 00000000                                               
+LINWCSTLE 2243H2246H     224422464        T                                     
+LIKEBGSJN           2248H00000000                                               
+LIBRTLYJN           2252H00000000                                               
+LIDRHM    2258H2300H     225923001        T                                     
+LITURSDLJ           2307 00000000                                               
+LIFYHLSJN           2308H00000000                     3                         
+LIDLTN    2320 2322      232023221        T           15                        
+LINLRTN   2347H2350H     23480000   FL    D                                     
+LITHIRSK            2356H00000000   FL                                          
+LITOLERTN           0002H00000000   FL                6                         
+LISKELTON           0012H00000000                                               
+LIYORK    0015 0018      001500185  LSL   T                                     
+LICOLTONJ           0023 00000000   LSL               3                         
+LICHFN              0029H00000000TL                                             
+LIMCKLFLD           0033H000000002                                              
+LICSGT              0037 000000002                        2                     
+LINEVLWJN           0041H00000000                                               
+LTLEEDS   0045 00478     TF                                                     

@@ -1,0 +1,20 @@
+BSRY580011505181512111111100 PZZ0L07    121704001 D      075Q                   
+BX         GRY                                                                  
+LOEDINBUR 1038 0000MR NL     TB                                                 
+LIABHLJN            1039H00000000                        H                      
+LICRGNTYJ           1041 00000000                                               
+LIPORTOBL           1043H00000000                                               
+LINIDRIWJ           1047H00000000                     2  H                      
+LICRLORTJ           1059 00000000                        H                      
+LIGORGIEJ           1100H00000000                                               
+LIHAYMRCJ 1103 1110      00000000         OPRM                                  
+LIGORGIEJ2          1111H00000000                                               
+LICRLORTJ2          1112H00000000                                               
+LINIDRIWJ2          1121H00000000                                               
+LINIDRISJ           1123 00000000                                               
+LINCRAGHA 1124 1134      00000000         OPRM                                  
+LINIDRISJ2          1135 00000000                                               
+LIPORTOBL2          1139 00000000                        H                      
+LICRGNTYJ2          1142 00000000                       5H                      
+LIABHLJN 2          1148H00000000   NL                                          
+LTEDINBUR21150 0000MR NL TF                                                     

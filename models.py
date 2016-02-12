@@ -1,5 +1,4 @@
 from app import db
-from sqlalchemy.dialects.postgresql import JSON
 
 class Trust(db.Model):
     __tablename__ = 'trust'
@@ -79,6 +78,42 @@ class GeographicalLocation(db.Model):
 
     def __repr__(self):
         return '<GeographicalLocation tiploc={0}, easting={1}, northing={2}>'.format(self.tiploc, self.easting, self.northing)
+
+    def as_dict(self):
+       return {c.name: getattr(self, c.name) for c in self.__table__.columns}
+
+class DiagramService(db.Model):
+    __tablename__ = 'diagram_service'
+    id = db.Column(db.Integer, primary_key=True)
+    unit = db.Column(db.String(20))
+    cif_uid = db.Column(db.String(20))
+    date_runs_from = db.Column(db.DateTime)
+    date_runs_to = db.Column(db.DateTime)
+    days_run = db.Column(db.String(7))
+    train_category = db.Column(db.String(2))
+    train_class = db.Column(db.String(1))
+
+    def __repr__(self):
+        return '<DiagramService unit={0}'.format(self.unit)
+
+    def as_dict(self):
+       return {c.name: getattr(self, c.name) for c in self.__table__.columns}
+
+class DiagramStop(db.Model):
+    __tablename__ = 'diagram_stop'
+    id = db.Column(db.Integer, primary_key=True)
+    diagram_service_id = db.Column(db.Integer, db.ForeignKey('diagram_service.id'), nullable=False)
+    diagram_service = db.relationship('DiagramService', backref='diagram_stop')
+    station_type = db.Column(db.String(2)) # LO (origin), LI (intermediate), LT (terminating) and CR (changes en route)
+    tiploc = db.Column(db.String(20))
+    arrive_time = db.Column(db.Time) # these are the scheduled times (not public)
+    depart_time = db.Column(db.Time)
+    pass_time = db.Column(db.Time)
+    engineering_allowance = db.Column(db.Integer)
+    pathing_allowance = db.Column(db.Integer)
+
+    def __repr__(self):
+        return '<DiagramStop diagram_service_id={0}, tiploc={1}'.format(self.diagram_service_id, self.tiploc)
 
     def as_dict(self):
        return {c.name: getattr(self, c.name) for c in self.__table__.columns}

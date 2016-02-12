@@ -1,0 +1,9 @@
+BSRY584171506011508281111100 PEE5Y08    121704001 HST    125EP                  
+BX         GRY                                                                  
+LOKNGX    0940 00007  FL1    TB                                                 
+LIKNGXBEL           0942 00000000   FL                                          
+LIHLWYSJ            0944 00000000   GL                  2                       
+LIFNPK              0950 00000000GL SL2                                         
+LIALEXNDP           0955 000000004                                              
+LIBOWERRL 1000 1008      00000000         OPRM                                  
+LTBNDSGRN 1013 0000      TF                                                     

@@ -1,0 +1,24 @@
+BSRY582301505181507311111100 PXX1B811120121703001 HST    125      B R C         
+BX         GRY                                                                  
+LOLINCLNC 0730 07303         TB                                                 
+LIWHOLMSJ           0732 00000000                                               
+LIBOUTHMJ           0733 00000000                     1   1                     
+LINWRKCEJ           0752H00000000                                               
+LINEWANG  0754H0757      075507573        T                                     
+LICLPLLP            0802H00000000                                               
+LIGTHM              0808 000000001                        1                     
+LISOKEJN            0812 00000000   FL                                          
+LITALNGTN           0819 00000000                                               
+LIPBRO    0825H0827H     082608273        T                                     
+LICNNGSJN           0835 00000000                                               
+LIHNTNGDN           0839H00000000   FL FL                                       
+LISNDY              0847 00000000   FL                                          
+LIHITCHIN           0853 00000000   FL                                          
+LISTEVNGE 0856 0858      085608582        T              H2                     
+LIWLMRGRN           0904H00000000                     1  H                      
+LIWLWYNGC           0908 00000000                        H                      
+LIPOTRSBR           0912H000000002                                              
+LIALEXNDP           0917H00000000   FL                1                         
+LIFNPK              0920 000000004                                              
+LIKNGXBEL           0922 00000000   FL2                                         
+LTKNGX    0924 09265     TF                                                     

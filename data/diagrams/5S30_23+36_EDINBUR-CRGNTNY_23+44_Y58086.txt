@@ -1,0 +1,6 @@
+BSNY580861506011512111111100 PEE5S30    121704001 E  410 125EP                  
+BX         GRY                                                                  
+LOEDINBUR 2336 00008  SL     TB                                                 
+LIABHLJN            2337H00000000                                               
+LICRGNTYJ 2339H2340      00000000         OP                                    
+LTCRGNTNY 2344 0000      TF                                                     

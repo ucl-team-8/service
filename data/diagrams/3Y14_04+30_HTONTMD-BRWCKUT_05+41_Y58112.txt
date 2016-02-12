@@ -1,0 +1,10 @@
+BSNY581121507281508210111100 PEE3Y14    121704001 E  410 125EP                  
+BX         GRY                                                                  
+LOHTONTMD 0430 0000          TB                                                 
+LIHTONSJN           0434 00000000   SL                                          
+LINWCSTLE 0440 0450      000000003        OP                                    
+LIHTONSJN2          0453 00000000                                               
+LIMRPTHRP           0502H000000001                                              
+LIALNMOTH           0513H000000001                                              
+LIBELFORD           0522H00000000                     10                        
+LTBRWCKUT 0541H00002     TF                                                     

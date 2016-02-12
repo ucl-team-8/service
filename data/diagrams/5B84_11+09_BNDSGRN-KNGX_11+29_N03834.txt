@@ -1,0 +1,8 @@
+BSNN038341506161509040111100 3EE5B84    121704001 E  410 125EP                  
+BX         GRY                                                                  
+LOBNDSGRN 1109 0000          TB                                                 
+LIALEXNDP           1113 00000000   SL2                                         
+LIFNPK              1116H000000001                      4                       
+LIHLWYSJ            1123H00000000   SL                  2                       
+LIKNGXBEL           1127 00000000   SL2                                         
+LTKNGX    1129 00005     TF                                                     

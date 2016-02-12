@@ -1,0 +1,28 @@
+BSRY580981505181512111111100 FZZ0L02    121704001 D      075Q                   
+BX         GRY                                                                  
+LOGLGC    1244 00006  A1     TB                                                 
+LIGLGCBSJ           1246 00000000   1U                                          
+LIEGLNSTJ           1247 00000000   UF                  1                       
+LILRKFLDJ           1250 00000000   FL                                          
+LISHFD              1251 00000000                                               
+LIRTHGNEJ           1252H00000000                       2                       
+LINWTLWJ            1256 00000000                       1H                      
+LINWTLEJ            1258H00000000                                               
+LIUDNGTNJ           1300 00000000                       4                       
+LIMOTHRWL           1307 000000001                      4                       
+LISHILDMR           1313 00000000                                               
+LILAWJ              1315 00000000                                               
+LILANARKJ           1321 00000000                                               
+LICRSTUPL 1325 1349H     00000000         OPA            H                      
+LICRSTRS            1351 000000002                                              
+LICRSTRSE           1353H00000000                                               
+LIACHNGRY           1359 00000000                                               
+LICOBB713           1401H00000000                                               
+LIMDCLDRJ           1408H00000000                                               
+LISLATFDJ           1418H00000000                     4                         
+LICRLORTJ           1424H00000000                                               
+LINIDRIWJ           1433H00000000                                               
+LIPORTOBL           1436H00000000                                               
+LICRGNTYJ           1438 00000000                       1H                      
+LIABHLJN            1440H00000000   NL                                          
+LTEDINBUR 1442 0000MR NL TF                                                     

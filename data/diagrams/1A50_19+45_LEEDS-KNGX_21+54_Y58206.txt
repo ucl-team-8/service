@@ -1,0 +1,33 @@
+BSRY582061506011508281111100 PXX1A501740121702001 E  410 125EP    B R TC        
+BX         GRY                                                                  
+LOLEEDS   1945 19456  D      TB                                                 
+LILEEDSWJ           1946 00000000   D                                           
+LIWHRDJN            1946H00000000                                               
+LIHOLBJCN           1947 00000000                                               
+LIWKFLDWG 1956H1958      195719581        T K                                   
+LIHAREPKJ           2002H00000000                                               
+LISKIRBYJ           2006 00000000                                               
+LIADWICKJ           2009 00000000                                               
+LIADWICK            2009H000000001                      1                       
+LIDONC    2015 2017      201520171        T K                                   
+LIDONCLCJ           2021 00000000                                               
+LIRTFD              2028 00000000                         1                     
+LINWRKFC            2038 00000000                                               
+LINEWANG            2038H000000002                                              
+LICLPLLP            2041 00000000                                               
+LIGTHM              2046 000000001                                              
+LISOKEJN            2049 00000000   FL                                          
+LITALNGTN           2056 00000000                         1                     
+LIPBRO    2103H2105H     210421053        T                                     
+LICNNGSJN           2113 00000000                                               
+LIHNTNGDN           2117 00000000   FL FL                                       
+LISNDY              2124 00000000   FL                    2                     
+LIHITCHIN           2132 00000000   FL                                          
+LISTEVNGE           2134 000000002                                              
+LIWLMRGRN           2136 00000000                     1                         
+LIWLWYNGC           2139 00000000                                               
+LIPOTRSBR           2143 000000002                                              
+LIALEXNDP           2147H00000000   FL                                          
+LIFNPK              2149 000000004                    1                         
+LIKNGXBEL           2152 00000000   FL1                                         
+LTKNGX    2154 21566     TF                                                     

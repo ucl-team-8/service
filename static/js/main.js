@@ -1,6 +1,5 @@
 import d3 from "d3";
 import _ from "lodash";
-import moment from "moment";
 
 let notMatched = [];
 var data = window.data || {};
@@ -9,14 +8,17 @@ let index = 0;
 var selectElement = document.getElementById("select_unit");
 selectElement.onchange = function() {
   index = parseInt(this.value);
+  // Remove all list elements
   while(this.firstChild) {
     this.removeChild(this.firstChild);
   }
+  // Remove svg
   var svg = document.getElementById("visualisation_svg");
   svg.parentNode.removeChild(svg);
+
   draw();
-}
-draw()
+};
+draw();
 
 
 function loadData() {
@@ -38,7 +40,6 @@ function loadData() {
 function draw() {
 
   loadData().then(function({trustData, gpsData}) {
-
     trustData.forEach(trustDatatypes);
     gpsData.forEach(gpsDatatypes);
 
@@ -54,7 +55,7 @@ function draw() {
         .sortValues((a,b) => d3.ascending(a.event_time, b.event_time))
         .entries(gpsData);
 
-    let unitChoice = d3.select("#select_unit")
+    let unitChoice = d3.select("#select_unit");
 
     for(var i = 0; i < units.length; i++) {
       let choice = unitChoice.append("option")
@@ -85,9 +86,9 @@ function draw() {
 
     let y = d3.scale.ordinal()
         .domain(d3.range(totalUnitStops))
-        .rangeRoundBands([0, height], .1);
+        .rangeRoundBands([0, height], 0.1);
 
-    let scaleY = (d,i) => y(i)
+    let scaleY = (d,i) => y(i);
 
     let svg = d3.select("body").append("svg")
         .attr("width", width)
@@ -217,6 +218,7 @@ function findAbsTimeDifference(eventA, eventB) {
 }
 
 function match(gpsEvents, trustEvent) {
+  // 10 Minutes
   let tolerance = 10 * 60 * 1000;
   // let closest = _.sortByOrder(gpsEvents, [gpsEvent => findAbsTimeDifference(gpsEvent, trustEvent), "event_type"], ["asc", "asc"]);
   let closest = gpsEvents.filter(event => findAbsTimeDifference(event, trustEvent) < tolerance);

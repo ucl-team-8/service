@@ -1,0 +1,7 @@
+BSRY584241505181510021111100 PEE5Y23    121704001 E  410 125EP                  
+BX         GRY                                                                  
+LOKNGX    2218 00005  FL1    TB                                                 
+LIKNGXBEL           2220 00000000   FL                  1                       
+LIHLWYSJ            2222 00000000   GL                                          
+LIFNPK              2226 00000000GL SL2                                         
+LTFRMPKRS 2235 0000      TF                                                     

@@ -1,0 +1,26 @@
+BSNY579231507301507300001000 PEE3A00    121704001 E  410 125EP                  
+BX         GRY                                                                  
+LOBNDSGRN 0100 0000        3 TB                                                 
+LIALEXNDP           0107 00000000   SL2                 5                       
+LIFNPK              0117 000000002                                              
+LIHLWYSJ            0120 00000000   SL                2 6                       
+LIKNGXBEL           0130 00000000   SL2                                         
+LIKNGX    0132 0246      000000006        OP                                    
+LIKNGXBEL2          0248 00000000   SL                                          
+LIFNPK   2          0252 000000007  SL1                                         
+LIALEXNDP2          0255H000000004  SL                                          
+LIPOTRSBR           0302H000000004                                              
+LIWLWYNGC           0309H00000000   FL                                          
+LIWLMRGRN           0311 00000000   SL                                          
+LISTEVNGE           0314 000000004                    3                         
+LIHITCHIN           0320H000000002  FL                                          
+LISNDY              0326H00000000   SL                2                         
+LIHNTNGDN           0341H00000000   SL SL                                       
+LIHOLME             0349H00000000   FL                1H                        
+LIPBRO              0357 000000004  SL                2                         
+LIHELPSTN           0404H00000000                                               
+LITALNGTN           0408H00000000                       5                       
+LISOKEJN            0425 00000000                                               
+LIGTHM              0429 000000002                      4                       
+LICLPLLP            0438 00000000                     20                        
+LTNEWANG  0502 00003     TF                                                     

@@ -1,0 +1,20 @@
+BSNY584841507131508281111100 PXX1A001000121702001 E  410 125EP    B R C         
+BX         GRY                                                                  
+LONEWANG  0535 05353         TB                                                 
+LICLPLLP            0540 00000000                                               
+LIGTHM    0546 0547H     054605471        T                                     
+LISOKEJN            0552H00000000   FL                                          
+LITALNGTN           0559H00000000                         1                     
+LIPBRO    0607 0610      060706103        T                                     
+LICNNGSJN           0617H00000000                                               
+LIHNTNGDN           0621H00000000   FL FL                                       
+LISNDY              0628H00000000   FL                    1H                    
+LIHITCHIN           0636 00000000   FL                                          
+LISTEVNGE           0638 000000002                                              
+LIWLMRGRN           0640 00000000                     1                         
+LIWLWYNGC           0643 00000000                                               
+LIPOTRSBR           0647 000000002                                              
+LIALEXNDP           0651H00000000   FL                                          
+LIFNPK              0653 000000004                    1                         
+LIKNGXBEL           0656 00000000   FL2                                         
+LTKNGX    0658 07001     TF                                                     

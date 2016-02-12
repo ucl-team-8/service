@@ -17,6 +17,10 @@ def hello():
 def basic_algorithm():
     return render_template("basic-algorithm.html")
 
+@app.route("/layerTwo")
+def layerTwo():
+    return render_template("layerTwo.html")
+
 @app.route("/events/trust.json")
 def trust():
     records = db.session.query(Trust, Schedule, UnitToGPSMapping).\

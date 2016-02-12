@@ -1,0 +1,29 @@
+BSRY585521505181508281111100 PXX1Y843300121700001 HST    125      B R CT        
+BX         GRY                                                                  
+LOYORK    1203 12036         TB                                                 
+LICOLTONJ           1208 00000000                                               
+LIHAMBLNJ           1212 00000000                                               
+LITEMPLHJ           1215 00000000                                               
+LISHFTHLJ           1219H00000000                                               
+LIDONC    1223H1225H     122412253A       T K                                   
+LIDONCLCJ           1229H00000000                                               
+LIRTFD    1238H1240      123912401        T               1                     
+LINWRKFC            1252H00000000                                               
+LINEWANG  1253H1255      125412552        T                                     
+LICLPLLP            1259H00000000                                               
+LIGTHM    1305H1307      130613071        T                                     
+LISOKEJN            1312H00000000   FL                                          
+LITALNGTN           1319H00000000                                               
+LIPBRO    1326 1328      132613283        T                                     
+LICNNGSJN           1335H00000000                                               
+LIHNTNGDN           1340 00000000   FL FL                                       
+LISNDY              1347H00000000   FL                                          
+LIHITCHIN           1353H00000000   FL                                          
+LISTEVNGE 1356H1358H     135713582        T                                     
+LIWLMRGRN           1402H00000000                     1                         
+LIWLWYNGC           1405H00000000                                               
+LIPOTRSBR           1409H000000002                        1                     
+LIALEXNDP           1415H00000000   FL                    1                     
+LIFNPK              1418 000000004                    1                         
+LIKNGXBEL           1421 00000000   FL1                                         
+LTKNGX    1423 14256     TF                                                     
