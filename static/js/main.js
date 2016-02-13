@@ -82,13 +82,13 @@ function draw() {
     let totalUnitStops = unit.values.length;
 
     let width = 600;
-    let height = totalUnitStops * 18;
+    let height = totalUnitStops * 60;
 
-    let y = d3.scale.ordinal()
-        .domain(d3.range(totalUnitStops))
-        .rangeRoundBands([0, height], 0.1);
+    let y = d3.time.scale()
+        .domain(d3.extent(unit.values, d => d.event_time))
+        .range([0, height]);
 
-    let scaleY = (d,i) => y(i);
+    let scaleY = (d,i) => y(d.event_time);
 
     let svg = d3.select("body").append("svg")
         .attr("width", width)
@@ -106,7 +106,7 @@ function draw() {
 
     stops.append("circle")
         .attr("cx", 100)
-        .attr("cy", (d,i) => y(i))
+        .attr("cy", scaleY)
         .attr("r", radius);
 
     let labels = stops.append("text")
