@@ -70,11 +70,7 @@ function combineScales(collections) {
   let output = [];
   while (domainEnd = getNextStop(domainStart, scales)) {
     let sameTime = getMaxAtSameTime(domainStart, scales);
-    if (sameTime) output.push({
-      domain: sameTime.domain,
-      numberOfEvents: sameTime.numberOfEvents,
-      pixelsPerMinute: Infinity
-    });
+    if (sameTime) output.push(sameTime);
     let candidates = getScalesCovering([domainStart, domainEnd], scales);
     let pixelsPerMinute = _.max(candidates.map(d => d.pixelsPerMinute));
     output.push({
@@ -112,18 +108,21 @@ function scaleFromScales(gap, scales) {
 
   let domain = [];
   let range = [];
+  let exceptions = {};
   let y = 0;
 
   domain.push(scales[0].domain[0]);
   range.push(0);
 
   scales.forEach(scale => {
+    let domainStart = scale.domain[0];
     let domainEnd = scale.domain[1];
     let dy;
     if (scale.pixelsPerMinute === Infinity) {
       dy = gap * (scale.numberOfEvents - 1);
+      exceptions[+domainStart] = y;
     } else {
-      let minutes = (scale.domain[1] - scale.domain[0]) / (1000 * 60);
+      let minutes = (domainEnd - domainStart) / (1000 * 60);
       dy = minutes * scale.pixelsPerMinute;
     }
     domain.push(domainEnd);
@@ -132,7 +131,8 @@ function scaleFromScales(gap, scales) {
 
   return {
     domain,
-    range
+    range,
+    exceptions
   };
 }
 
@@ -145,8 +145,7 @@ function fixOverlapping(gap, points) {
       .map(d => d.values);
   overlapping.forEach(points => {
     for (let i = 1; i < points.length; i++) {
-      let index = points.length - i;
-      points[index].y -= i * gap;
+      points[i].y += i * gap;
     }
   });
   return points;
@@ -156,6 +155,8 @@ export default function(collections) {
 
   let gap = 10,
       pixelsPerMinute = 1;
+
+  let exceptions = {};
 
   let noOverlap = d3.time.scale();
 
@@ -171,11 +172,13 @@ export default function(collections) {
     return noOverlap;
   };
 
-  noOverlap.entries = function(entries, accessor) {
+  noOverlap.entries = function(entries, accessor = (d) => d) {
     let points = entries.map(entry => {
+      let time = accessor(entry);
+      let y = (+time in exceptions) ? exceptions[+time] : noOverlap(time);
       return {
         data: entry,
-        y: noOverlap(accessor(entry))
+        y
       }
     });
     return fixOverlapping(gap, points);
@@ -185,8 +188,9 @@ export default function(collections) {
     collections.map(events => events.sort());
     let pass = collections.map(d => calcScales(pixelsPerMinute, gap, d)).map(compactScales);
     let scales = combineScales(pass);
-    let { domain, range } = scaleFromScales(gap, scales);
+    let { domain, range, exceptions:ex } = scaleFromScales(gap, scales);
     noOverlap.domain(domain).range(range);
+    exceptions = ex;
     return noOverlap;
   };
 
