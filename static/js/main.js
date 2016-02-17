@@ -179,8 +179,6 @@ function draw() {
         .attr("class", "service-diagram")
         .attr("transform", "translate(150,0)");
 
-    debugger;
-
     let serviceStops = serviceDiagram.selectAll(".stop")
         .data(noOverlapY.entries(mergedServices, d => d.event_time))
       .enter().append("g")
