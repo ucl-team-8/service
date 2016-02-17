@@ -102,7 +102,5 @@ class SimulateRealTime(threading.Thread):
             self.checkEmptyRecords()
             self.getNextRecordAndSleep(current, next)
 
-
-
 temp = SimulateRealTime(100)
 temp.start()
