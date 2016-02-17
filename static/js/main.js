@@ -223,7 +223,7 @@ function match(gpsEvents, trustEvent) {
   // let closest = _.sortByOrder(gpsEvents, [gpsEvent => findAbsTimeDifference(gpsEvent, trustEvent), "event_type"], ["asc", "asc"]);
   let closest = gpsEvents.filter(event => findAbsTimeDifference(event, trustEvent) < tolerance);
   let sameStop = closest.filter(event => event.tiploc == trustEvent.tiploc);
-  let sameType = _.findWhere(sameStop, { event_type: trustEvent.event_type });
+  let sameType = _.find(sameStop, { event_type: trustEvent.event_type });
   if (sameType) {
     return sameType;
   } else if (sameStop.length > 0) {
