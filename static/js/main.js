@@ -1,5 +1,6 @@
 import d3 from "d3";
 import _ from "lodash";
+import noOverlap from "./no-overlap";
 
 let notMatched = [];
 var data = window.data || {};
@@ -88,7 +89,17 @@ function draw() {
         .domain(d3.extent(unit.values, d => d.event_time))
         .range([0, height]);
 
-    let scaleY = (d,i) => y(d.event_time);
+    let collectionsOfTimes = _.union(
+      [unit.values.map(d => d.event_time)],
+      unitServices.map(d => d.values.map(d => d.event_time))
+    );
+
+    let noOverlapY = noOverlap()
+        .gap(12)
+        .pixelsPerMinute(5)
+        .build(collectionsOfTimes);
+
+    // let scaleY = (d,i) => y(d.event_time);
 
     let svg = d3.select("body").append("svg")
         .attr("width", width)
@@ -100,34 +111,35 @@ function draw() {
         .attr("transform", "translate(0,0)");
 
     let stops = unitDiagram.selectAll(".stop")
-        .data(unit.values)
+        .data(noOverlapY.entries(unit.values, d => d.event_time))
       .enter().append("g")
-        .attr("class", "stop");
+        .attr("class", "stop")
+        .attr("transform", d => `translate(0, ${d.y})`);
 
     stops.append("circle")
         .attr("cx", 100)
-        .attr("cy", scaleY)
+        .attr("cy", 0)
         .attr("r", radius);
 
     let labels = stops.append("text")
-        .attr("y", scaleY)
+        .attr("y", 0)
         .attr("x", 100 + 8)
         .attr("dy", ".35em");
 
     labels.append("tspan")
         .attr("class", "event_type")
-        .text(d => d.event_type);
+        .text(d => d.data.event_type);
 
     labels.append("tspan")
         .attr("class", "tiploc")
-        .text(d => " " + d.tiploc);
+        .text(d => " " + d.data.tiploc);
 
     stops.append("text")
         .attr("class", "time")
-        .attr("y", scaleY)
+        .attr("y", 0)
         .attr("x", 100 - 8)
         .attr("dy", ".35em")
-        .text(d => timeFormat(d.event_time));
+        .text(d => timeFormat(d.data.event_time));
 
     let indexFromTime = d3.scale.quantile()
         .domain(unit.values.map(d => d.event_time))
@@ -144,7 +156,7 @@ function draw() {
     }
 
     function radius(d) {
-      if (d.event_type == "A" || d.event_type == "D") {
+      if (d.data.event_type == "A" || d.data.event_type == "D") {
         return 4;
       } else {
         return 1;
@@ -167,17 +179,20 @@ function draw() {
         .attr("class", "service-diagram")
         .attr("transform", "translate(150,0)");
 
+    debugger;
+
     let serviceStops = serviceDiagram.selectAll(".stop")
-        .data(mergedServices)
+        .data(noOverlapY.entries(mergedServices, d => d.event_time))
       .enter().append("g")
-        .attr("class", "stop");
+        .attr("class", "stop")
+        .attr("transform", d => `translate(0, ${d.y})`);
 
     serviceStops.append("circle")
         .attr("class", d => {
-          return matches(d) ? "good" : "bad";
+          return matches(d.data) ? "good" : "bad";
         })
         .attr("cx", 100)
-        .attr("cy", d => y(getIndexOfStop(d)))
+        .attr("cy", 0)
         .attr("r", radius)
         .style("fill", d => {
           // check if the two match
@@ -186,23 +201,23 @@ function draw() {
 
     serviceStops.append("text")
         .attr("class", "time")
-        .attr("y", d => y(getIndexOfStop(d)))
+        .attr("y", 0)
         .attr("x", 100 - 8)
         .attr("dy", ".35em")
-        .text(d => timeFormat(d.event_time));
+        .text(d => timeFormat(d.data.event_time));
 
     let serviceLabels = serviceStops.append("text")
-        .attr("y", d => y(getIndexOfStop(d)))
+        .attr("y", 0)
         .attr("x", 100 + 8)
         .attr("dy", ".35em");
 
     serviceLabels.append("tspan")
         .attr("class", "event_type")
-        .text(d => d.event_type);
+        .text(d => d.data.event_type);
 
     serviceLabels.append("tspan")
         .attr("class", "tiploc")
-        .text(d => " " + d.tiploc);
+        .text(d => " " + d.data.tiploc);
 
     match(unit.values, mergedServices[10]);
 
