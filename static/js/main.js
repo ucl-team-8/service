@@ -112,7 +112,7 @@ function draw() {
         .attr("transform", "translate(0,0)");
 
     let stops = unitDiagram.selectAll(".stop")
-        .data(noOverlapY.entries(unit.values, d => d.event_time))
+        .data(noOverlapY.positions(unit.values, d => d.event_time))
       .enter().append("g")
         .attr("class", "stop")
         .attr("transform", d => `translate(0, ${d.y})`);
@@ -181,7 +181,7 @@ function draw() {
         .attr("transform", "translate(150,0)");
 
     let serviceStops = serviceDiagram.selectAll(".stop")
-        .data(noOverlapY.entries(mergedServices, d => d.event_time))
+        .data(noOverlapY.positions(mergedServices, d => d.event_time))
       .enter().append("g")
         .attr("class", "stop")
         .attr("transform", d => `translate(0, ${d.y})`);

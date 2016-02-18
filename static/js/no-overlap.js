@@ -181,12 +181,12 @@ export default function(collections) {
     return noOverlap;
   };
 
-  noOverlap.entries = function(entries, accessor = (d) => d) {
-    let points = entries.map(entry => {
-      let time = accessor(entry);
+  noOverlap.positions = function(events, accessor = (d) => d) {
+    let points = events.map(event => {
+      let time = accessor(event);
       let y = (+time in exceptions) ? exceptions[+time] : noOverlap(time);
       return {
-        data: entry,
+        data: event,
         y
       }
     });
