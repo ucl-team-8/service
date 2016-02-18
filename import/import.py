@@ -14,8 +14,6 @@ parentdir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.sys.path.insert(0,parentdir)
 from models import *
 
-# TODO: Check the columns in schedule where len(unit) == 5 and where cif_uid is empty
-
 
 def convert_to(datatype, value, *args, **kwargs):
     try:

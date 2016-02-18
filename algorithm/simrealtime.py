@@ -1,7 +1,7 @@
 # Creates a new thread that continues fetching the data from a database
 # then uses a threadpool every time it 'receives a new event'
 
-# TODO: Change print statement to actually adding the events
+# TODO: Update perform action
 # TODO: Fix out of bounds error for the last event
 
 from flask import Flask
