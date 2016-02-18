@@ -20,8 +20,10 @@ What follows below is a huge mess of code to construct this polylinear scale.
 function calcScales(minPixelsPerMinute, minGap, maxGap, events) {
   return consecutivePairs(events).map(([a,b]) => {
     let minutes = (b - a) / (1000 * 60);
+    let min = (minGap == 0) ? 0 : minGap / minutes;
+    let max = (maxGap == Infinity) ? Infinity : maxGap / minutes;
     // pixelsPerMinute is Infinity when the two events happened at the exact same time
-    let pixelsPerMinute = Math.min(Math.max(minGap / minutes, minPixelsPerMinute), maxGap / minutes);
+    let pixelsPerMinute = Math.min(Math.max(min, minPixelsPerMinute), max);
     return {
       domain: [a, b],
       pixelsPerMinute
