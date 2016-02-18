@@ -1,18 +1,19 @@
 # File with all of the globals
-from flask.ext.sqlalchemy import SQLAlchemy
-from flask import Flask
+# TODO: How do you get cif_uid from headcode?
+import db_queries
 import threading
-import os
-
-parentdir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-os.sys.path.insert(0, parentdir)
-
-from models import *
+import datetime
 
 # Currently only stored in memory, will also store in
 # database
 global segments
 segments = []
+
+# This is to how many matches in matching
+# the algorithm looks back at when trying
+# to match a trust report to a gps report
+global backmatches
+backmatches = 5
 
 # Lock for accessing segment
 global lock
@@ -35,25 +36,30 @@ class Segment:
         string += ', matching= {0}'.format(self.matching)
         return string
 
-    def getUnitFromCarId(self, gps_car_id):
-        result = db.session.query(UnitToGPSMapping).filter(
-            UnitToGPSMapping.gps_car_id == gps_car_id)
-        try:
-            return result[0].as_dict()['unit']
-        except:
-            return ''
-
     def gps(self, gps_report):
         self.gps_car_id = gps_report['gps_car_id']
-        self.unit = self.getUnitFromCarId(gps_report['gps_car_id'])
+        self.unit = db_queries.getUnitFromCarId(gps_report['gps_car_id'])
         self.matching.append({
             'gps': gps_report,
             'trust': None,
-            'dist_err': None,
+            'dist_error': None,
+            'time_error': None
+        })
+
+    def trust(self, trust_report):
+        self.headcode = trust_report['headcode']
+        self.matching.append({
+            'gps': None,
+            'trust': trust_report,
+            'dist_error': None,
             'time_error': None
         })
 
 
 # Time in seconds and distance in km
 global tolerance
-tolerance = {'time': 10 * 60 * 60, 'distance': 10}
+tolerance = {
+    'time': datetime.timedelta(minutes=10),
+    'distance': 10,
+    'minutes': 10
+}
