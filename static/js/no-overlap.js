@@ -196,7 +196,7 @@ export default function(collections) {
   noOverlap.build = function(collections) {
     collections.map(events => events.sort());
     let pass = collections.map(d => calcScales(pixelsPerMinute, minGap, maxGap, d)).map(compactScales);
-    let scales = combineScales(pass);
+    let scales = compactScales(combineScales(pass));
     let { domain, range, exceptions:ex } = scaleFromScales(minGap, scales);
     noOverlap.domain(domain).range(range);
     exceptions = ex;
