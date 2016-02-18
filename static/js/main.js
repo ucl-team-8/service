@@ -95,7 +95,8 @@ function draw() {
     );
 
     let noOverlapY = noOverlap()
-        .gap(12)
+        .minGap(12)
+        .maxGap(50)
         .pixelsPerMinute(5)
         .build(collectionsOfTimes);
 

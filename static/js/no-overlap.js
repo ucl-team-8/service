@@ -17,14 +17,14 @@ What follows below is a huge mess of code to construct this polylinear scale.
 
 // Pair up consecutive events, calculate and store properties of each pair.
 // The return result is considered a "scale".
-function calcScales(minPixelsPerMinute, gap, events) {
+function calcScales(minPixelsPerMinute, minGap, maxGap, events) {
   return consecutivePairs(events).map(([a,b]) => {
     let minutes = (b - a) / (1000 * 60);
     // pixelsPerMinute is Infinity when the two events happened at the exact same time
-    let pixelsPerMinute = gap / minutes;
+    let pixelsPerMinute = Math.min(Math.max(minGap / minutes, minPixelsPerMinute), maxGap / minutes);
     return {
       domain: [a, b],
-      pixelsPerMinute: Math.max(pixelsPerMinute, minPixelsPerMinute)
+      pixelsPerMinute
     };
   });
 }
@@ -104,7 +104,7 @@ function compactScales(scales) {
   return compact;
 }
 
-function scaleFromScales(gap, scales) {
+function scaleFromScales(minGap, scales) {
 
   let domain = [];
   let range = [];
@@ -119,7 +119,7 @@ function scaleFromScales(gap, scales) {
     let domainEnd = scale.domain[1];
     let dy;
     if (scale.pixelsPerMinute === Infinity) {
-      dy = gap * (scale.numberOfEvents - 1);
+      dy = minGap * (scale.numberOfEvents - 1);
       exceptions[+domainStart] = y;
     } else {
       let minutes = (domainEnd - domainStart) / (1000 * 60);
@@ -136,7 +136,7 @@ function scaleFromScales(gap, scales) {
   };
 }
 
-function fixOverlapping(gap, points) {
+function fixOverlapping(minGap, points) {
   let nested = d3.nest()
       .key(d => d.y)
       .sortKeys(d3.ascending)
@@ -145,7 +145,7 @@ function fixOverlapping(gap, points) {
       .map(d => d.values);
   overlapping.forEach(points => {
     for (let i = 1; i < points.length; i++) {
-      points[i].y += i * gap;
+      points[i].y += i * minGap;
     }
   });
   return points;
@@ -153,16 +153,23 @@ function fixOverlapping(gap, points) {
 
 export default function(collections) {
 
-  let gap = 10,
+  let minGap = 1,
+      maxGap = 1,
       pixelsPerMinute = 1;
 
   let exceptions = {};
 
   let noOverlap = d3.time.scale();
 
-  noOverlap.gap = function(x) {
-    if (!arguments.length) return gap;
-    gap = x;
+  noOverlap.minGap = function(x) {
+    if (!arguments.length) return minGap;
+    minGap = x;
+    return noOverlap;
+  };
+
+  noOverlap.maxGap = function(x) {
+    if (!arguments.length) return maxGap;
+    maxGap = x;
     return noOverlap;
   };
 
@@ -181,14 +188,14 @@ export default function(collections) {
         y
       }
     });
-    return fixOverlapping(gap, points);
+    return fixOverlapping(minGap, points);
   };
 
   noOverlap.build = function(collections) {
     collections.map(events => events.sort());
-    let pass = collections.map(d => calcScales(pixelsPerMinute, gap, d)).map(compactScales);
+    let pass = collections.map(d => calcScales(pixelsPerMinute, minGap, maxGap, d)).map(compactScales);
     let scales = combineScales(pass);
-    let { domain, range, exceptions:ex } = scaleFromScales(gap, scales);
+    let { domain, range, exceptions:ex } = scaleFromScales(minGap, scales);
     noOverlap.domain(domain).range(range);
     exceptions = ex;
     return noOverlap;
