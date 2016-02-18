@@ -155,8 +155,8 @@ function fixOverlapping(minGap, points) {
 
 export default function(collections) {
 
-  let minGap = 1,
-      maxGap = 1,
+  let minGap = 0,
+      maxGap = Infinity,
       pixelsPerMinute = 1;
 
   let exceptions = {};
