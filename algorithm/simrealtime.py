@@ -7,6 +7,7 @@
 from flask import Flask
 from flask.ext.sqlalchemy import SQLAlchemy
 import concurrent.futures
+import filter_trust
 import filter_gps
 import threading
 import datetime
@@ -42,7 +43,6 @@ class SimulateRealTime(threading.Thread):
             records = db.session.query(model).\
                 filter(model.event_time > records[-1]['event_time']).\
                 order_by(model.event_time.asc()).limit(100)
-
         # Extract individual records as dictionary
         return map(lambda x: x.as_dict(), records)
 
@@ -104,10 +104,17 @@ class SimulateRealTime(threading.Thread):
         current['record'] = next['record']
 
     def performAction(self, object):
-        print object['record']
+        # print object['record']
         if object['name'] == 'gps':
+            globals.lock.acquire()
             filter_gps.addGPS(object['record'])
+            globals.lock.release()
+        elif object['name'] == 'trust':
+            globals.lock.acquire()
+            filter_trust.addTrust(object['record'])
+            globals.lock.release()
         print globals.segments
+
 
     def run(self):
         with concurrent.futures.ThreadPoolExecutor(max_workers=5) as executor:
