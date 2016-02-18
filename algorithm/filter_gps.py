@@ -17,14 +17,10 @@ import time
 import os
 
 
-# Do backtracking across the segments with the same
-# gps_car_id
-
-
 # Finds the segment with the reports
 # that happened near the gps_report
 def findClosestSegment(segments, gps_report):
-    closest = {'segment': None, 'time_diff': datetime.timedelta(1000000)}
+    closest = {'segment': None, 'time_diff': datetime.timedelta(days=1)}
     for segment in segments:
         if segment.gps_car_id == gps_report['gps_car_id']:
             time_diff = abs(segment.matching[-1]['gps']['event_time'] -
@@ -42,14 +38,14 @@ def checkNonMatchingTrust(segment, gps_report):
         if (match['trust'] is not None) and (match['gps'] is None):
             time_error = abs(
                 match['trust']['event_time'] - gps_report['event_time'])
-            dist_err = geo_distance.calculateDistance(
+            dist_error = geo_distance.calculateDistance(
                 match['trust']['tiploc'], gps_report['tiploc']
             )
-            if dist_err < globals.tolerance['distance']\
+            if dist_error < globals.tolerance['distance']\
                     and time_err < globals.tolerance['time']:
                 match['gps'] = gps_report
-                match['dist_err'] = dist_err
-                match['time_err'] = time_err
+                match['dist_error'] = dist_err
+                match['time_error'] = time_err
                 return True
     return False
 
@@ -57,7 +53,6 @@ def checkNonMatchingTrust(segment, gps_report):
 # This function adds the gps report to a segment
 def addGPS(gps_report):
     potential_segments = []
-    globals.lock.acquire()
     for segment in globals.segments:
         if segment.gps_car_id == gps_report['gps_car_id']:
             potential_segments.append(segment)
@@ -72,7 +67,6 @@ def addGPS(gps_report):
         segment.matching.append({
             'gps': gps_report,
             'trust': None,
-            'dist_err': None,
+            'dist_error': None,
             'time_error': None
         })
-    globals.lock.release()
