@@ -19,6 +19,10 @@ backmatches = 5
 global lock
 lock = threading.RLock()
 
+# Lock for accessing datebase
+global db_lock
+db_lock = threading.RLock()
+
 
 class Segment:
     def __init__(self):

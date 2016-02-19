@@ -36,6 +36,7 @@ class SimulateRealTime(threading.Thread):
     # since we dont want to store all of the events in the model
     def fetchEvents(self, model, records):
         # If it is a newly declared records
+        globals.db_lock.acquire()
         if records is None:
             records = db.session.query(model).\
                 order_by(model.event_time.asc()).limit(100)
@@ -43,6 +44,7 @@ class SimulateRealTime(threading.Thread):
             records = db.session.query(model).\
                 filter(model.event_time > records[-1]['event_time']).\
                 order_by(model.event_time.asc()).limit(100)
+        globals.db_lock.release()
         # Extract individual records as dictionary
         return map(lambda x: x.as_dict(), records)
 
