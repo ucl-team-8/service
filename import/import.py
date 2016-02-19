@@ -196,7 +196,7 @@ def parseDiagramHeader(header):
     service['date_runs_to'] = parse_date(header[15:21], '%y%m%d')
     service['days_run'] = header[21:28]
     service['train_category'] = header[30:32]
-    service['unit'] = header[32:36]
+    service['headcode'] = header[32:36]
     service['train_class'] = header[66:67]
 
     checkEmptyValues(service)
