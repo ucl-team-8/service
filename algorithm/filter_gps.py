@@ -1,14 +1,8 @@
 # File that is reponsible for adding gps_reports
 # to the segments
 
-# TODO: findClosestSegment should also check for reports
-# that dont have a gps_car_id yet
 # TODO: Backtracking to see if it can join
 # segments
-# TODO: In checkNonMatchingTrust should it also check
-# trust reports that have a match to see if this is a potential
-# closer match?
-# TODO: Should checkNonMatchingTrust choose the closest trust?
 
 from flask import Flask
 from flask.ext.sqlalchemy import SQLAlchemy
@@ -36,7 +30,6 @@ def findClosestSegment(segments, gps_report):
     closest = {'segment': None, 'time_diff': datetime.timedelta(days=1)}
     for segment in segments:
         if segment.gps_car_id == gps_report['gps_car_id']:
-                closest['segment'] = segment
             checkTimeDiff(segment, gps_report, closest)
     if closest['segment'] is None:
         for segment in segments:
@@ -48,6 +41,11 @@ def findClosestSegment(segments, gps_report):
 # Checks if this gps report is a potential
 # match with a trust report in the segment
 def checkNonMatchingTrust(segment, gps_report):
+    closest = {
+        'match': None,
+        'time_error': datetime.timedelta(days=1),
+        'dist_error': 1000000
+    }
     for match in segment.matching:
         if (match['trust'] is not None) and (match['gps'] is None):
             time_error = abs(
@@ -57,10 +55,16 @@ def checkNonMatchingTrust(segment, gps_report):
             )
             if dist_error < globals.tolerance['distance']\
                     and time_err < globals.tolerance['time']:
-                match['gps'] = gps_report
-                match['dist_error'] = dist_err
-                match['time_error'] = time_err
-                return True
+                if dist_error < closest['dist_error'] and\
+                        time_error < closest['time_error']:
+                    closest['match'] = match
+                    closest['dist_error'] = dist_error
+                    closest['time_error'] = time_error
+    if closest['match'] is not None:
+        closest['match']['gps'] = gps_report
+        closest['match']['dist_error'] = dist_err
+        closest['match']['time_error'] = time_err
+        return True
     return False
 
 
