@@ -115,7 +115,7 @@ function draw() {
         .data(noOverlapY.positions(unit.values, d => d.event_time))
       .enter().append("g")
         .attr("class", "stop")
-        .attr("transform", d => `translate(0, ${d.y})`);
+        .attr("transform", d => `translate(0, ${d.pos})`);
 
     stops.append("circle")
         .attr("cx", 100)
@@ -129,18 +129,18 @@ function draw() {
 
     labels.append("tspan")
         .attr("class", "event_type")
-        .text(d => d.data.event_type);
+        .text(d => d.event_type);
 
     labels.append("tspan")
         .attr("class", "tiploc")
-        .text(d => " " + d.data.tiploc);
+        .text(d => " " + d.tiploc);
 
     stops.append("text")
         .attr("class", "time")
         .attr("y", 0)
         .attr("x", 100 - 8)
         .attr("dy", ".35em")
-        .text(d => timeFormat(d.data.event_time));
+        .text(d => timeFormat(d.event_time));
 
     let indexFromTime = d3.scale.quantile()
         .domain(unit.values.map(d => d.event_time))
@@ -157,7 +157,7 @@ function draw() {
     }
 
     function radius(d) {
-      if (d.data.event_type == "A" || d.data.event_type == "D") {
+      if (d.event_type == "A" || d.event_type == "D") {
         return 4;
       } else {
         return 1;
@@ -184,11 +184,11 @@ function draw() {
         .data(noOverlapY.positions(mergedServices, d => d.event_time))
       .enter().append("g")
         .attr("class", "stop")
-        .attr("transform", d => `translate(0, ${d.y})`);
+        .attr("transform", d => `translate(0, ${d.pos})`);
 
     serviceStops.append("circle")
         .attr("class", d => {
-          return matches(d.data) ? "good" : "bad";
+          return matches(d) ? "good" : "bad";
         })
         .attr("cx", 100)
         .attr("cy", 0)
@@ -203,7 +203,7 @@ function draw() {
         .attr("y", 0)
         .attr("x", 100 - 8)
         .attr("dy", ".35em")
-        .text(d => timeFormat(d.data.event_time));
+        .text(d => timeFormat(d.event_time));
 
     let serviceLabels = serviceStops.append("text")
         .attr("y", 0)
@@ -212,11 +212,11 @@ function draw() {
 
     serviceLabels.append("tspan")
         .attr("class", "event_type")
-        .text(d => d.data.event_type);
+        .text(d => d.event_type);
 
     serviceLabels.append("tspan")
         .attr("class", "tiploc")
-        .text(d => " " + d.data.tiploc);
+        .text(d => " " + d.tiploc);
 
     match(unit.values, mergedServices[10]);
 

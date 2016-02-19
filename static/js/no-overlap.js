@@ -140,14 +140,14 @@ function scaleFromScales(minGap, scales) {
 
 function fixOverlapping(minGap, points) {
   let nested = d3.nest()
-      .key(d => d.y)
+      .key(d => d.pos)
       .sortKeys(d3.ascending)
       .entries(points);
   let overlapping = nested.filter(d => d.values.length > 1)
       .map(d => d.values);
   overlapping.forEach(points => {
     for (let i = 1; i < points.length; i++) {
-      points[i].y += i * minGap;
+      points[i].pos += i * minGap;
     }
   });
   return points;
@@ -184,11 +184,8 @@ export default function(collections) {
   noOverlap.positions = function(events, accessor = (d) => d) {
     let points = events.map(event => {
       let time = accessor(event);
-      let y = (+time in exceptions) ? exceptions[+time] : noOverlap(time);
-      return {
-        data: event,
-        y
-      }
+      event.pos = (+time in exceptions) ? exceptions[+time] : noOverlap(time);
+      return event;
     });
     return fixOverlapping(minGap, points);
   };
