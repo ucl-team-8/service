@@ -106,15 +106,13 @@ class SimulateRealTime(threading.Thread):
     def performAction(self, object):
         # print object['record']
         if object['name'] == 'gps':
-            globals.lock.acquire()
             filter_gps.addGPS(object['record'])
-            globals.lock.release()
         elif object['name'] == 'trust':
-            globals.lock.acquire()
             filter_trust.addTrust(object['record'])
-            globals.lock.release()
+        # We don't want threads switching between printing
+        globals.lock.acquire()
         print globals.segments
-
+        globals.lock.release()
 
     def run(self):
         with concurrent.futures.ThreadPoolExecutor(max_workers=5) as executor:
@@ -128,5 +126,6 @@ class SimulateRealTime(threading.Thread):
                 self.checkEmptyRecords()
                 self.getNextRecordAndSleep(executor, current, next)
 
-temp = SimulateRealTime(100)
+
+temp = SimulateRealTime(globals.speedup)
 temp.start()

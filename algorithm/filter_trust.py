@@ -2,6 +2,7 @@
 # reports to the segments
 
 # TODO: Can we use planned_pass?
+# TODO: Use filterByDiagrams
 
 from flask import Flask
 from flask.ext.sqlalchemy import SQLAlchemy
@@ -14,25 +15,19 @@ import os
 
 import threading
 
-# Find potential segments by time and distance
-# Filter segments that the unit is supposed to run (genius allocation)
-# Filter segments that the service is supposed to run (diagrams)
-# Do something with 'seq'
-# Choose the segment with the longest amount of previously matching
-# If no matches are found, create a new segment
-
 
 # We only want to look at the segments with the
 # same headcode as the trust so this filters out
 # the ones that don't have the same headcode
 def filterSegmentsByHeadcode(trust):
     potential_segments = []
+    globals.lock.acquire()
     for segment in globals.segments:
         if segment.headcode == '':
             potential_segments.append(segment)
         elif segment.headcode == trust['headcode']:
             potential_segments.append(segment)
-
+    globals.lock.release()
     return potential_segments
 
 
@@ -53,6 +48,7 @@ def filterPotentialSegments(segments, trust):
                             segment.matching[i]['gps']['tiploc'], trust['tiploc'])
                         if dist_error < globals.tolerance['distance']:
                             potential_segments.append(segment)
+                            break
             except:
                 temp = 1  # Do nothing
     return potential_segments
@@ -117,23 +113,19 @@ def time_difference(start, end):
     return delta
 
 
-# The third layer that checks if the trust event is one that was
+# Checks if the trust event is one that was
 # supposed to happen according to the diagrams
 def filterByDiagrams(segments, trust):
-    potential_segments = []
-    for segment in segments:
-        diagram_stops = db_queries.getDiagramStopsByUnit(trust['headcode'])
-        for stop in diagram_stops:
-            if stop['tiploc'] == trust['tiploc']:
-                extra_time = getExtraTime(stop)
-                time = getTimeFromStop(stop, trust)
-                time_diff = time_difference(time, trust['event_time'].time())
-                time_diff -= extra_time
-                if(abs(time_diff) < globals.tolerance['minutes']):
-                    potential_segments.append(segment)
-    if len(potential_segments) > 0:
-        return potential_segments
-    return segments
+    diagram_stops = db_queries.getDiagramStopsByUnit(trust['headcode'])
+    for stop in diagram_stops:
+        if stop['tiploc'] == trust['tiploc']:
+            extra_time = getExtraTime(stop)
+            time = getTimeFromStop(stop, trust)
+            time_diff = time_difference(time, trust['event_time'].time())
+            time_diff -= extra_time
+            if(abs(time_diff) < globals.tolerance['minutes']):
+                return True
+    return False
 
 
 # Chooses which one is the better sequence
@@ -177,6 +169,12 @@ def createNewSegment(trust):
         globals.segments.append(segment)
 
 
+def setBestStop(best, dist_error, time_error, match):
+    best['dist_error'] = dist_error
+    best['time_error'] = time_error
+    best['match'] = match
+
+
 # Gets the gps report in a particular segment
 # for a trust report and then adds trust report
 # to that stop
@@ -186,12 +184,10 @@ def getBestStop(segment, trust, with_seq):
     best = {
         'match': None,
         'time_error': datetime.timedelta(days=1),
-        'dist_error': 1000000,  # km
-        'i': 0
+        'dist_error': 1000000  # km
     }
     last_seq = 0
-    for i in range(0, len(segment.matching)):
-        match = segment.matching[i]
+    for match in segment.matching:
         if(match['gps'] is not None) and\
                 (match['trust'] is None):
             dist_error = geo_distance.calculateDistance(
@@ -200,22 +196,16 @@ def getBestStop(segment, trust, with_seq):
             if(dist_error < best['dist_error']) and\
                     (time_error < best['time_error']):
                 if with_seq and (trust['seq'] > last_seq):
-                    best['dist_error'] = dist_error
-                    best['time_error'] = time_error
-                    best['match'] = match
-                    best['i'] = i
+                    setBestStop(best, dist_error, time_error, match)
                 elif not with_seq:
-                    best['dist_error'] = dist_error
-                    best['time_error'] = time_error
-                    best['match'] = match
-                    best['i'] = i
+                    setBestStop(best, dist_error, time_error, match)
         elif match['trust'] is not None:
             last_seq = match['trust']['seq']
 
     if best['match'] is not None:
-        segment.matching[i]['trust'] = trust
-        segment.matching[i]['time_error'] = best['time_error']
-        segment.matching[i]['dist_error'] = best['dist_error']
+        best['match']['trust'] = trust
+        best['match']['time_error'] = best['time_error']
+        best['match']['dist_error'] = best['dist_error']
         if segment.headcode == '':
             segment.headcode = trust['headcode']
         return True
@@ -229,10 +219,11 @@ def addTrust(trust_report):
     segments = filterSegmentsByHeadcode(trust_report)
     segments = filterPotentialSegments(segments, trust_report)
     segments = filterByGeniusAllocations(segments, trust_report)
-    segments = filterByDiagrams(segments, trust_report)
 
     segment = chooseBestSegment(segments, trust_report)
+    globals.lock.acquire()
     if segment is None:
         createNewSegment(trust_report)
     else:
         getBestStop(segment, trust_report, True)
+    globals.lock.release()

@@ -63,3 +63,8 @@ tolerance = {
     'distance': 10,
     'minutes': 10
 }
+
+
+# Determines how fast the simulation runs
+global speedup
+speedup = 100

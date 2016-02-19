@@ -1,5 +1,3 @@
-# File that contains function, which do querying
-
 from flask.ext.sqlalchemy import SQLAlchemy
 from sqlalchemy.sql import func, and_, or_
 from flask import Flask

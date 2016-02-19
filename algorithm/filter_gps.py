@@ -1,6 +1,8 @@
 # File that is reponsible for adding gps_reports
 # to the segments
 
+# TODO: findClosestSegment should also check for reports
+# that dont have a gps_car_id yet
 # TODO: Backtracking to see if it can join
 # segments
 # TODO: In checkNonMatchingTrust should it also check
@@ -53,11 +55,14 @@ def checkNonMatchingTrust(segment, gps_report):
 # This function adds the gps report to a segment
 def addGPS(gps_report):
     potential_segments = []
+    globals.lock.acquire()
     for segment in globals.segments:
         if segment.gps_car_id == gps_report['gps_car_id']:
             potential_segments.append(segment)
+    globals.lock.release()
 
     segment = findClosestSegment(potential_segments, gps_report)
+    globals.lock.acquire()
     if segment is None:
         segment = globals.Segment()
         segment.gps(gps_report)
@@ -70,3 +75,4 @@ def addGPS(gps_report):
             'dist_error': None,
             'time_error': None
         })
+    globals.lock.release()
