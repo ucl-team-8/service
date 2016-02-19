@@ -19,17 +19,29 @@ import time
 import os
 
 
+# Checks the time difference between the segment and checks
+# if the it closer to the gps_report than the current
+# closest
+def checkTimeDiff(segment, gps_report, closest):
+    time_diff = abs(segment.matching[-1]['gps']['event_time'] -
+                    gps_report['event_time'])
+    if time_diff < closest['time_diff']:
+        closest['segment'] = segment
+        closest['time_diff'] = time_diff
+
+
 # Finds the segment with the reports
 # that happened near the gps_report
 def findClosestSegment(segments, gps_report):
     closest = {'segment': None, 'time_diff': datetime.timedelta(days=1)}
     for segment in segments:
         if segment.gps_car_id == gps_report['gps_car_id']:
-            time_diff = abs(segment.matching[-1]['gps']['event_time'] -
-                            gps_report['event_time'])
-            if time_diff < closest['time_diff']:
                 closest['segment'] = segment
-                closest['time_diff'] = time_diff
+            checkTimeDiff(segment, gps_report, closest)
+    if closest['segment'] is None:
+        for segment in segments:
+            if segment.gps_car_id is None:
+                checkTimeDiff(segment, gps_report, closest)
     return closest['segment']
 
 
