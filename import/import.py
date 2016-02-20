@@ -11,7 +11,7 @@ import os
 from latlon_converter import ENtoLL84
 
 parentdir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-os.sys.path.insert(0,parentdir)
+os.sys.path.insert(0, parentdir)
 from models import *
 
 
@@ -80,7 +80,7 @@ def parse_trust(file):
     for row in rows:
         row['origin_departure'] = parse_date(row['origin_departure'], "%Y-%m-%dT%H:%M:%S")
         row['event_time'] = parse_date(row['event_time'], "%Y-%m-%dT%H:%M:%S")
-        row['planned_pass'] = convert_to(bool, row['planned_pass'])
+        row['planned_pass'] = row['planned_pass'] == 'true'
         row['seq'] = convert_to(int, row['seq'])
     return rows
 
