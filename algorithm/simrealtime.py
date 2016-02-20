@@ -128,6 +128,6 @@ class SimulateRealTime(threading.Thread):
                 self.checkEmptyRecords()
                 self.getNextRecordAndSleep(executor, current, next)
 
-
-temp = SimulateRealTime(globals.speedup)
-temp.start()
+if __name__ == "__main__":
+    temp = SimulateRealTime(globals.speedup)
+    temp.start()
