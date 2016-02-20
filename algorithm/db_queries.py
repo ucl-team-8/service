@@ -40,10 +40,10 @@ def getUnitFromCarId(gps_car_id):
 
 # Gets the diagram_service row for a
 # particular unit
-def getDiagramServiceByUnit(unit):
+def getDiagramServiceByHeadcode(headcode):
     globals.db_lock.acquire()
     result = db.session.query(DiagramService).filter(
-        DiagramService.unit == unit
+        DiagramService.headcode == headcode
     )
     globals.db_lock.release()
     try:
@@ -64,8 +64,8 @@ def getDiagramStopsByService(diagram_service):
 
 
 # Gets all of the diagram stops for a service
-def getDiagramStopsByUnit(unit):
-    diagram_service = getDiagramServiceByUnit(unit)
+def getDiagramStopsByHeadcode(headcode):
+    diagram_service = getDiagramServiceByHeadcode(headcode)
     return getDiagramStopsByService(diagram_service)
 
 

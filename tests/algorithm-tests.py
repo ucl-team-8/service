@@ -52,21 +52,21 @@ class TestDBQueries(unittest.TestCase):
         self.assertEqual(result, 'BN28')
 
     def testDiagramServiceByUnit1(self):
-        result = db_queries.getDiagramServiceByUnit('0P04')
+        result = db_queries.getDiagramServiceByHeadcode('0P04')
         self.assertEqual(result['cif_uid'], 'Y58236')
 
     def testDiagramServiceByUnit1(self):
-        result = db_queries.getDiagramServiceByUnit('0')
+        result = db_queries.getDiagramServiceByHeadcode('0')
         self.assertEqual(result, None)
 
     def testDiagramStopsByService(self):
-        temp = db_queries.getDiagramServiceByUnit('0P04')
+        temp = db_queries.getDiagramServiceByHeadcode('0P04')
         result = db_queries.getDiagramStopsByService(temp)
         station_type = result[0]['station_type']
         self.assertEqual(station_type, 'LO')
 
-    def testGetDiagramStopsByUnit(self):
-        result = db_queries.getDiagramStopsByUnit('0P04')
+    def testGetDiagramStopsByH(self):
+        result = db_queries.getDiagramStopsByHeadcode('0P04')
         station_type = result[0]['station_type']
         self.assertEqual(station_type, 'LO')
 

@@ -2,7 +2,7 @@
 # reports to the segments
 
 # TODO: Can we use planned_pass?
-# TODO: Use filterByDiagrams
+# TODO: Use filterByDiagrams - Api help?
 
 from flask import Flask
 from flask.ext.sqlalchemy import SQLAlchemy
@@ -112,11 +112,11 @@ def time_difference(start, end):
         delta = 24 * 60 - delta
     return delta
 
-
+# Not using this atm
 # Checks if the trust event is one that was
 # supposed to happen according to the diagrams
 def filterByDiagrams(segments, trust):
-    diagram_stops = db_queries.getDiagramStopsByUnit(trust['headcode'])
+    diagram_stops = db_queries.getDiagramStopsByHeadcode(trust['headcode'])
     for stop in diagram_stops:
         if stop['tiploc'] == trust['tiploc']:
             extra_time = getExtraTime(stop)
