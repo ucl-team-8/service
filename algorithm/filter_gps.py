@@ -4,13 +4,9 @@
 # TODO: Backtracking to see if it can join
 # segments
 
-from flask import Flask
-from flask.ext.sqlalchemy import SQLAlchemy
 import geo_distance
 import datetime
 import globals
-import time
-import os
 
 
 # Checks the time difference between the segment and checks
@@ -54,7 +50,7 @@ def checkNonMatchingTrust(segment, gps_report):
                 match['trust']['tiploc'], gps_report['tiploc']
             )
             if dist_error < globals.tolerance['distance']\
-                    and time_err < globals.tolerance['time']:
+                    and time_error < globals.tolerance['time']:
                 if dist_error < closest['dist_error'] and\
                         time_error < closest['time_error']:
                     closest['match'] = match
@@ -62,8 +58,8 @@ def checkNonMatchingTrust(segment, gps_report):
                     closest['time_error'] = time_error
     if closest['match'] is not None:
         closest['match']['gps'] = gps_report
-        closest['match']['dist_error'] = dist_err
-        closest['match']['time_error'] = time_err
+        closest['match']['dist_error'] = dist_error
+        closest['match']['time_error'] = time_error
         return True
     return False
 

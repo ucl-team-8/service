@@ -4,16 +4,11 @@
 # TODO: Can we use planned_pass?
 # TODO: Use filterByDiagrams - Api help?
 
-from flask import Flask
-from flask.ext.sqlalchemy import SQLAlchemy
 import geo_distance
 import db_queries
 import datetime
 import globals
-import time
-import os
 
-import threading
 
 
 # We only want to look at the segments with the
@@ -50,7 +45,7 @@ def filterPotentialSegments(segments, trust):
                             potential_segments.append(segment)
                             break
             except:
-                temp = 1  # Do nothing
+                pass # Do nothing
     return potential_segments
 
 
@@ -111,6 +106,7 @@ def time_difference(start, end):
     if reverse:
         delta = 24 * 60 - delta
     return delta
+
 
 # Not using this atm
 # Checks if the trust event is one that was
@@ -209,7 +205,7 @@ def getBestStop(segment, trust, with_seq):
         if segment.headcode == '':
             segment.headcode = trust['headcode']
         return True
-    elif width_seq:
+    elif with_seq:
         if not getBestStop(segment, trust, False):
             createNewSegment(trust)
 

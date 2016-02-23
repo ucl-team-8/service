@@ -1,6 +1,3 @@
-from flask.ext.sqlalchemy import SQLAlchemy
-from sqlalchemy.sql import func, and_, or_
-from flask import Flask
 import globals
 import os
 
@@ -19,7 +16,7 @@ def isPlanned(unit, headcode):
     ))
     globals.db_lock.release()
     try:
-        temp = result[0].as_dict()
+        result[0].as_dict()
         return True
     except:
         return False

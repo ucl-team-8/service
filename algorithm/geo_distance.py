@@ -1,6 +1,4 @@
 from math import sin, cos, sqrt, atan2, radians
-from flask.ext.sqlalchemy import SQLAlchemy
-from flask import Flask
 import os
 
 parentdir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))

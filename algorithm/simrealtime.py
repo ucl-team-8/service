@@ -4,13 +4,10 @@
 # TODO: Update perform action
 # TODO: Fix out of bounds error for the last event
 
-from flask import Flask
-from flask.ext.sqlalchemy import SQLAlchemy
 import concurrent.futures
 import filter_trust
 import filter_gps
 import threading
-import datetime
 import globals
 import time
 import os
@@ -112,9 +109,9 @@ class SimulateRealTime(threading.Thread):
         elif object['name'] == 'trust':
             filter_trust.addTrust(object['record'])
         # We don't want threads switching between printing
-        globals.lock.acquire()
-        print globals.segments
-        globals.lock.release()
+        # globals.lock.acquire()
+        # print globals.segments
+        # globals.lock.release()
 
     def run(self):
         with concurrent.futures.ThreadPoolExecutor(max_workers=5) as executor:
