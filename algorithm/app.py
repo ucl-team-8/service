@@ -1,12 +1,17 @@
 from flask import Flask, render_template, jsonify
 from flask.ext.sqlalchemy import SQLAlchemy
 from sqlalchemy.sql import func, and_
+from copy import deepcopy
+import simrealtime
+import globals
 import os
 
 app = Flask(__name__)
 app.config.from_object(os.environ['APP_SETTINGS'])
 db = SQLAlchemy(app)
 
+parentdir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+os.sys.path.insert(0, parentdir)
 from models import *
 
 
@@ -68,5 +73,20 @@ def gps():
     return jsonify(result=map(extract_dict, records))
 
 
+@app.route("/segments")
+def segments():
+    globals.lock.acquire()
+    results = deepcopy(globals.segments)
+    results = map(lambda x: x.__dict__, results)
+    for result in results:
+        for match in result['matching']:
+            if match['time_error'] is not None:
+                match['time_error'] = match['time_error'].total_seconds() * 100
+    results = jsonify({'results': results})
+    globals.lock.release()
+    return results
+
 if __name__ == "__main__":
+    temp = simrealtime.SimulateRealTime(globals.speedup)
+    temp.start()
     app.run()

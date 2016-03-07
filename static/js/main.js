@@ -237,7 +237,7 @@ function match(gpsEvents, trustEvent) {
 function trustDatatypes(d) {
   d.event_time = new Date(d.event_time);
   d.origin_depart_time = new Date(d.origin_departure);
-  d.tiploc = d.tiploc.trim(); // TODO: trim this in import
+  d.tiploc = d.tiploc.trim();
 }
 
 function gpsDatatypes(d) {
