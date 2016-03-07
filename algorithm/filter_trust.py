@@ -3,6 +3,7 @@
 
 # TODO: Can we use planned_pass?
 # TODO: Use filterByDiagrams - Api help?
+# TODO: Give preference to the same event type?
 
 import geo_distance
 import db_queries

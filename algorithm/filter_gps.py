@@ -36,6 +36,9 @@ def findClosestSegment(segments, gps_report):
 
 # Checks if this gps report is a potential
 # match with a trust report in the segment
+# and adds the gps report to the trust if there is
+# a match, then returns a boolean which shows
+# if it found a match
 def checkNonMatchingTrust(segment, gps_report):
     closest = {
         'match': None,

@@ -16,6 +16,40 @@ We define a segment to be a a set of consecutive gps reports, with their matchin
 
 The data structure of a segment can be found in [globals.py](algorithm/globals.py). At the moment, all of the segments are stored in memory but eventually they will be stored in the database.
 
+These are all of the data structures:
+
+**Segment:**
+- unit - *String*
+- cif_uid - *String*
+- gps_car_id - *String*
+- headcode - *String*
+- matching - *Array of Dictionaries*
+    - gps - *gps_report*
+    - trust - *trust_report*
+    - dist_error - *Int*
+    - time_error - *datetime.timedelta*
+
+
+**Trust Report:**
+- id - *Int*
+- headcode - *String*
+- event_time - *datetime.datetime*
+- event_type - *String*
+- origin_departure - *datetime.datetime*
+- origin_location - *String*
+- planned_pass - *Bool*
+- seq - *Int*
+- tiploc - *String*
+
+
+**GPS Report:**
+- id - *Int*
+- event_type - *String*
+- tiploc - *String*
+- event_time - *datetime.datetime*
+- gps_car_id - *String*
+
+
 ## Constructing segments
 There are 2 main files that are responsible for creating the segments: [filter_gps.py](algorithm/filter_gps.py) and [filter_trust.py](algorithm/filter_trust.py). Both add or change segments using a different algorithm.
 

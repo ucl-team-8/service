@@ -109,12 +109,12 @@ class SimulateRealTime(threading.Thread):
         elif object['name'] == 'trust':
             filter_trust.addTrust(object['record'])
         # We don't want threads switching between printing
-        # globals.lock.acquire()
-        # print globals.segments
-        # globals.lock.release()
+        globals.lock.acquire()
+        print globals.segments
+        globals.lock.release()
 
     def run(self):
-        with concurrent.futures.ThreadPoolExecutor(max_workers=5) as executor:
+        with concurrent.futures.ThreadPoolExecutor(max_workers=globals.workers) as executor:
             current = {'name': '', 'record': None}
             next = {'name': '', 'record': None}
             self.closestRecordName(current, next)

@@ -24,6 +24,7 @@ global db_lock
 db_lock = threading.RLock()
 
 
+# The overall layout of how segment should look
 class Segment:
     def __init__(self):
         self.unit = ''
@@ -72,3 +73,8 @@ tolerance = {
 # Determines how fast the simulation runs
 global speedup
 speedup = 100
+
+# The amount of threads in the threadpool
+# that add events to the segments
+global workers
+workers = 5
