@@ -1,7 +1,6 @@
 from flask import Flask, render_template, jsonify
 from flask.ext.sqlalchemy import SQLAlchemy
 from sqlalchemy.sql import func, and_
-from copy import deepcopy
 import simrealtime
 import globals
 import os
@@ -76,14 +75,9 @@ def gps():
 @app.route("/segments")
 def segments():
     globals.lock.acquire()
-    results = deepcopy(globals.segments)
-    results = map(lambda x: x.__dict__, results)
-    for result in results:
-        for match in result['matching']:
-            if match['time_error'] is not None:
-                match['time_error'] = match['time_error'].total_seconds() * 100
-    results = jsonify({'results': results})
+    results = map(lambda x: x.__dict__, globals.segments)
     globals.lock.release()
+    results = jsonify({'results': results})
     return results
 
 if __name__ == "__main__":
