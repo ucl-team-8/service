@@ -97,7 +97,6 @@ class SimulateRealTime(threading.Thread):
         time.sleep(time_to_sleep/self.speed)
 
         executor.submit(self.performAction, next)
-
         del self.records[current['name']][0]
         current['name'] = next['name']
         current['record'] = next['record']
@@ -109,9 +108,9 @@ class SimulateRealTime(threading.Thread):
         elif object['name'] == 'trust':
             filter_trust.addTrust(object['record'])
         # We don't want threads switching between printing
-        globals.lock.acquire()
-        print globals.segments
-        globals.lock.release()
+        # globals.lock.acquire()
+        # print globals.segments
+        # globals.lock.release()
 
     def run(self):
         with concurrent.futures.ThreadPoolExecutor(max_workers=globals.workers) as executor:

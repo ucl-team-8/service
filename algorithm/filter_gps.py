@@ -1,7 +1,7 @@
-# File that is reponsible for adding gps_reports
+# File that is responsible for adding gps_reports
 # to the segments
 
-# TODO: Backtracking to see if it can join
+# TODO: Interpolating to see if it can join
 # segments
 
 import geo_distance
@@ -62,7 +62,6 @@ def checkNonMatchingTrust(segment, gps_report):
     if closest['match'] is not None:
         closest['match']['gps'] = gps_report
         closest['match']['dist_error'] = dist_error
-        closest['match']['time_error'] = time_error
         return True
     return False
 
@@ -87,7 +86,7 @@ def addGPS(gps_report):
         segment.matching.append({
             'gps': gps_report,
             'trust': None,
-            'dist_error': None,
-            'time_error': None
+            'dist_error': None
         })
+    print("Finished processing GPS")
     globals.lock.release()

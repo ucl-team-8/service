@@ -47,8 +47,7 @@ class Segment:
         self.matching.append({
             'gps': gps_report,
             'trust': None,
-            'dist_error': None,
-            'time_error': None
+            'dist_error': None
         })
 
     def trust(self, trust_report):
@@ -56,8 +55,7 @@ class Segment:
         self.matching.append({
             'gps': None,
             'trust': trust_report,
-            'dist_error': None,
-            'time_error': None
+            'dist_error': None
         })
 
 
