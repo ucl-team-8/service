@@ -1,3 +1,5 @@
+from flask.ext.sqlalchemy import SQLAlchemy
+from sqlalchemy.sql import func, and_, or_
 import globals
 import os
 
