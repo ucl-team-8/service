@@ -1,4 +1,4 @@
-# This file is reponsible for adding trust
+# This file is responsible for adding trust
 # reports to the segments
 
 # TODO: Can we use planned_pass?
@@ -9,7 +9,6 @@ import geo_distance
 import db_queries
 import datetime
 import globals
-
 
 
 # We only want to look at the segments with the
@@ -50,7 +49,7 @@ def filterPotentialSegments(segments, trust):
     return potential_segments
 
 
-# The second layer that filters the potenial segments
+# The second layer that filters the potential segments
 # again and finds segments that it is supposed to run
 # using the genius allocations (named schedule in the db)
 def filterByGeniusAllocations(segments, trust):
@@ -63,7 +62,7 @@ def filterByGeniusAllocations(segments, trust):
     return segments
 
 
-# Checks if there is a pathingor engineering
+# Checks if there is a pathing or engineering
 # allowance for a stop
 def getExtraTime(stop):
     extra_time = 0
@@ -201,7 +200,6 @@ def getBestStop(segment, trust, with_seq):
 
     if best['match'] is not None:
         best['match']['trust'] = trust
-        best['match']['time_error'] = best['time_error']
         best['match']['dist_error'] = best['dist_error']
         if segment.headcode == '':
             segment.headcode = trust['headcode']
@@ -216,11 +214,14 @@ def addTrust(trust_report):
     segments = filterSegmentsByHeadcode(trust_report)
     segments = filterPotentialSegments(segments, trust_report)
     segments = filterByGeniusAllocations(segments, trust_report)
-
+    globals.lock.acquire()
+    print("Start processing Trust")
+    globals.lock.release()
     segment = chooseBestSegment(segments, trust_report)
     globals.lock.acquire()
     if segment is None:
         createNewSegment(trust_report)
     else:
         getBestStop(segment, trust_report, True)
+    print("Finished processing Trust")
     globals.lock.release()
