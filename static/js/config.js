@@ -20,12 +20,8 @@ System.config({
     "d3": "github:mbostock/d3@3.5.9",
     "fetch": "github:github/fetch@0.10.1",
     "jquery": "github:components/jquery@2.1.4",
-<<<<<<< HEAD
     "leaflet": "github:Leaflet/Leaflet@0.7.7",
-    "lodash": "npm:lodash@3.10.1",
-=======
     "lodash": "npm:lodash@4.5.0",
->>>>>>> non-overlapping-time-scale
     "moment": "npm:moment@2.10.6",
     "q": "npm:q@1.4.1",
     "github:jspm/nodelibs-assert@0.1.0": {
