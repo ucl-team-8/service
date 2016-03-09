@@ -7,6 +7,7 @@
 # TODO: Give preference to the same event type?
 
 import geo_distance
+import interpolating
 import db_queries
 import datetime
 import globals
@@ -226,3 +227,4 @@ def addTrust(trust_report):
         segment.isPlanned = db_queries.isPlanned(segment.unit, trust_report['headcode'])
         getBestStop(segment, trust_report, True)
     globals.lock.release()
+    interpolating.interpolate(trust_report['headcode'])

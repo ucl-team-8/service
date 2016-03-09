@@ -6,6 +6,7 @@
 # instead of running it every time a trust_report is added
 # to the segments, it might be better to run it every 10 min?
 
+import geo_distance
 import globals
 
 
@@ -18,15 +19,17 @@ def countMatching(segment):
             count += 1
     return count
 
-# Gets all of the segments with a particular unit
-def getSegmentsWithUnit(unit):
+
+# Gets all of the segments with a particular headcode
+def getSegmentsWithHeadcode(headcode):
     globals.lock.acquire()
     segments = []
     for segment in globals.segments:
-        if segment.unit == unit:
+        if segment.headcode == headcode:
             segments.append(segment)
     globals.lock.release()
     return segments
+
 
 # Gets the time of the report
 def getReportTime(report):
@@ -34,6 +37,7 @@ def getReportTime(report):
         return report['gps']['event_time']
     else:
         return report['trust']['event_time']
+
 
 def removeSegments():
     globals.lock.acquire()
@@ -72,6 +76,7 @@ def joinSegmentsHelper(segments, i):
             if stops_in_between > globals.min_matching:
                 return
 
+
 # Joins the segments together, as discussed in the readme
 def joinSegments(segments):
     # Sort them in reversed order such that we can go through them
@@ -80,7 +85,7 @@ def joinSegments(segments):
     # We don't want to have i to be the last segment
     for i in range(0, len(segments) - 1):
         if segments[i].gps_car_id == segments[i + 1].gps_car_id:
-            # Join them together because they have the same gps and unit
+            # Join them together because they have the same gps and heacode
             globals.lock.acquire()
             segments[i].matching.extend(segments[i + 1].matching)
             segments[i].matching.sort(key=lambda x: getReportTime(x), reverse=False)
@@ -91,16 +96,75 @@ def joinSegments(segments):
         removeSegments()
 
 
+# Checks if a gps report matches a
+# trust report
+def isMatching(gps, trust):
+    time_error = abs(gps['event_time'] - trust['event_type'])
+    if time_error < globals.tolerance['time']:
+        dist_error = geo_distance.calculateDistance(
+            gps['tiploc'], trust['tiploc'])
+        if dist_error < globals.tolerance['distance']:
+            return True
+    return False
+
+
+# Finds the next index in the empty_matching
+# list that is within the time constraint
+def findNextIndex(match, empty_matching, next_index):
+    time_error = abs(match['event_time'] - empty_matching[next_index]['event_time'])
+    while time_error > globals.tolerance['time'] and\
+            next_index < len(empty_matching):
+        next_index += 1
+        time_error = abs(match['event_time'] - empty_matching[next_index]['event_time'])
+    return next_index
+
+
+# Checks if you have enough potential_matches and
+# if you do, it adds those to the segment
+def checkPotentialMatches(segment, potential_matches):
+    if len(potential_matches) > globals.min_matching:
+        globals.lock.acquire()
+        segment.headcode = potential_matches[0]['trust']['headcode']
+        for match in potential_matches:
+            segment.matching[match['index']]['trust'] = match['trust']
+        globals.lock.release()
+
+
+# Checks a segment with both gps_car_id and headcode
+# and a segment without a headcode and see if they are both
+# potentially running the same service
+def matchingSegments(segment, empty_segment):
+    potential_matches = []
+    next_index = 0
+    segment.matching.sort(key=lambda x: getReportTime(x), reverse=False)
+    empty_segment.matching.sort(key=lambda x: getReportTime(x), reverse=False)
+    for match in segment.matching:
+        if match['trust'] is not None:
+            next_index = findNextIndex(match, empty_segment.matching, next_index)
+            for i in range(next_index, len(empty_segment.matching)):
+                if isMatching(empty_segment.matching[i]['gps'], match['trust']):
+                    next_index = i + 1
+                    potential_matches.append({
+                        'index': i,
+                        'trust': match['trust']
+                    })
+    checkPotentialMatches(empty_segment, potential_matches)
+
+
 # Checks if there are 2 rolling stock that might be running
 # the given service by checking if there are potentially other
-# segments with no unit that are running the same service
+# segments with no headcode that are running the same service
 # and adds the trust reports to it
-def runningSameService(unit):
-    pass
+def runningSameService(headcode):
+    segments = getSegmentsWithHeadcode(headcode)
+    empty_segments = getSegmentsWithHeadcode(None)
+    for segment in segments:
+        for empty_segment in empty_segments:
+            matchingSegments(segment, empty_segment)
 
-def interpolate(unit):
-    segments = getSegmentsWithUnit(unit)
+
+def interpolate(headcode):
+    segments = getSegmentsWithHeadcode(headcode)
     joinSegments(segments)
-    runningSameService(unit)
-
+    runningSameService(headcode)
 
