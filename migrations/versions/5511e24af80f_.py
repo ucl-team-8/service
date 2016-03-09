@@ -61,6 +61,6 @@ def downgrade():
                existing_type=sa.Float(precision=32),
                type_=postgresql.DOUBLE_PRECISION(precision=53),
                existing_nullable=True)
-    op.drop_table('diagram_stop')
-    op.drop_table('diagram_service')
+    # op.drop_table('diagram_stop')
+    # op.drop_table('diagram_service')
     ### end Alembic commands ###
