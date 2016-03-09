@@ -2,7 +2,7 @@ import get from "./d3-async-get";
 
 export function trustDatatypes(d) {
   d.event_time = new Date(d.event_time);
-  d.origin_depart_time = new Date(d.origin_departure);
+  d.origin_departure = new Date(d.origin_departure);
   d.tiploc = d.tiploc.trim();
 }
 
