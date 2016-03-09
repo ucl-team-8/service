@@ -1,4 +1,4 @@
-import get from "./get";
+import get from "./d3-async-get";
 
 export function trustDatatypes(d) {
   d.event_time = new Date(d.event_time);
