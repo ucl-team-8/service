@@ -1,4 +1,3 @@
-import pdb
 from flask import render_template, jsonify
 from sqlalchemy.sql import func, and_
 import os
@@ -8,7 +7,6 @@ from app_db import app, db
 app.config.from_object(os.environ['APP_SETTINGS'])
 
 from models import *
-# pdb.set_trace()
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)) + '/algorithm')
 import simrealtime
 import globals
@@ -70,6 +68,13 @@ def gps():
 
     return jsonify(result=map(extract_dict, records))
 
+@app.route("/data/segments.json")
+def segments():
+    globals.lock.acquire()
+    results = map(lambda x: x.__dict__, globals.segments)
+    globals.lock.release()
+    results = jsonify({'results': results})
+    return results
 
 if __name__ == "__main__":
     temp = simrealtime.SimulateRealTime(globals.speedup)
