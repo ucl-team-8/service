@@ -1,0 +1,21 @@
+BSRY579881505181512111111100 PZZ0D08    121704001 D      075Q                   
+BX         GRY                                                                  
+LODONC    1202 00007         TB                                                 
+LISHFTHLJ           1211 00000000                        H                      
+LIHYWDJN            1214 00000000                       6H                      
+LIKNTNGSJ           1234 00000000                                               
+LIKNTNGWJ           1236 00000000                                               
+LIPTFTMHL           1240 000000001                                              
+LICRFTNEJ           1248 00000000                       1                       
+LICRFTNWJ           1251 00000000                                               
+LICLDBDGJ           1253 00000000                                               
+LIWKFLDKG 1256H1300H     000000003        RM            1                       
+LICLDBDGJ2          1304H00000000                                               
+LICRFTNWJ2          1306H00000000                       4H                      
+LICRFTNEJ2          1312 00000000                       10                      
+LIPTFTMHL2          1334H000000002                      3H                      
+LIKNTNGWJ2          1341 00000000                       5H                      
+LIKNTNGSJ2          1348H00000000                                               
+LIHYWDJN 2          1358H00000000                                               
+LISHFTHLJ21402 1403      00000000         OPA           2                       
+LTDONC   21412 00007     TF                                                     

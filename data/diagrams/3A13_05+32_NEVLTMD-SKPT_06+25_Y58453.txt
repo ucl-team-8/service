@@ -1,0 +1,14 @@
+BSRY584531505181508281111100 PEE3A13    121704001 E  410 125EP                  
+BX         GRY                                                                  
+LONEVLTMD 0532 0000          TB                                                 
+LINEVLWJN           0534 00000000   GL                                          
+LIMRLNJN            0539 00000000                                               
+LILEEDS   0542 0554      000000008  D     OP                                    
+LILEEDSWJ           0555 00000000   D                                           
+LIWHRDJN            0555H00000000   DS                                          
+LIARMLJCN           0556H00000000                                               
+LIAPERLYJ           0601 00000000                                               
+LISHPYDJN           0604 00000000                                               
+LISHPY              0605 000000002                                              
+LIKEIGHLY           0611H000000002                    2 3H                      
+LTSKPT    0625 00002     TF                                                     

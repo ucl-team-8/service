@@ -1,0 +1,17 @@
+BSNY579871507281512110111100 PZZ0D07    121704001 D      075Q                   
+BX         GRY                                                                  
+LODONC    0943 00002WG       TB                                                 
+LISHFTHLJ           0950 00000000                                               
+LIHYWDJN            0952H00000000                                               
+LIKNTNGSJ           1004 00000000                                               
+LIKNTNGWJ           1006 00000000                                               
+LIFERYBDG 1009 1017      00000000         OPA         3 10                      
+LIMILFDY            1036 00000000                       3                       
+LICHFN    1045 1052      000000003        OPRMA         4                       
+LIMILFDY 2          1103 00000000                     3                         
+LIFERYBDG2          1112 00000000                       6                       
+LIKNTNGWJ2          1120 00000000                                               
+LIKNTNGSJ2          1122 00000000                                               
+LIHYWDJN 2          1132 00000000                       3                       
+LISHFTHLJ2          1137H00000000                       3                       
+LTDONC   21150 00007     TF                                                     

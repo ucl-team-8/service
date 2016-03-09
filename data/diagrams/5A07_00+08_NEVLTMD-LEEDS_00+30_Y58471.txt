@@ -1,0 +1,10 @@
+BSNY584711505191512110111100 PEE5A07    121704001 E  410 125EP                  
+BX         GRY                                                                  
+LONEVLTMD 0008 0000          TB                                                 
+LINEVLWJN           0010 00000000   FL                                          
+LIMRLNJN            0015 00000000                                               
+LILEEDS   0018 0020      000000009  B     OPC                                   
+LILEEDSWJ           0021 00000000   B                                           
+LILEED631 0021H0026H     00000000   A     OP                                    
+LILEEDSWJ2          0028H00000000   A                                           
+LTLEEDS  20030 00001     TF                                                     

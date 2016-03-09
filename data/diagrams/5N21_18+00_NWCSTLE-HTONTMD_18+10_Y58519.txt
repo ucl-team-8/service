@@ -1,0 +1,5 @@
+BSNY585191506011512111111100 PEE5N21    121704001 E  410 125EP                  
+BX         GRY                                                                  
+LONWCSTLE 1800 00003  SL     TB                                                 
+LIHTONSJN           1806 00000000                                               
+LTHTONTMD 1810 0000      TF                                                     

@@ -1,0 +1,6 @@
+BSNY582151506081508281111100 PEE5D28    121704001 E  410 125EP                  
+BX         GRY                                                                  
+LOLEEDS   2129 00008         TB                                                 
+LIMRLNJN            2132 00000000   GL                                          
+LINEVLWJN           2135 00000000                                               
+LTNEVLTMD 2139 0000      TF                                                     

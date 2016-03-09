@@ -1,0 +1,11 @@
+BSNY584551506011512111111100 PEE3A15    121704001 HST    125                    
+BX         GRY                                                                  
+LONEVLTMD 0622 0000          TB                                                 
+LINEVLWJN           0624 00000000   GL                                          
+LIMRLNJN  0629 0631      00000000         OPA           3                       
+LILEEDS   0637 0654      0000000011 B     OP                                    
+LILEEDSWJ           0655 00000000   DH                                          
+LIARMLJCN           0656H00000000                                               
+LIHSFT              0701 000000002                                              
+LIRIGTON            0708H00000000                     2                         
+LTHAGT    0718 00001     TF                                                     

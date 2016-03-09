@@ -1,0 +1,27 @@
+BSNY579991507271512111111100 PZZ0L03    121704001 D      075Q                   
+BX         GRY                                                                  
+LOEDINBUR 1433 0000MR NL     TB                                                 
+LIABHLJN            1434H00000000                        H                      
+LICRGNTYJ           1436 00000000                                               
+LIPORTOBL           1438H00000000                                               
+LINIDRIWJ           1442H00000000                     2                         
+LICRLORTJ           1453H00000000                       2H                      
+LIGORGIEJ           1457 00000000                                               
+LIHAYMRWJ           1459 00000000                                               
+LINWBG              1507 00000000                                               
+LINWBGDPL 1509H1532      00000000         OPA                                   
+LIWNCBROJ           1537 00000000                                               
+LILNLTHGW           1542 000000002                                              
+LIPOLMONT           1548 00000000                                               
+LIGRNGMTJ           1552 00000000                                               
+LICRMRSEJ           1555 00000000                                               
+LILARBERJ 1557 1604H     00000000         OPA                                   
+LISTIRLNG           1614 000000002                                              
+LIDUNANE            1621 00000000                       2                       
+LIBLFD              1636 00000000                     2                         
+LIHILTONJ           1653 00000000                                               
+LIPERTH             1657 000000002                                              
+LIBHLP              1701 00000000                       2                       
+LIERROLLC           1714 00000000                     3 1H                      
+LIDUNDCJ            1729H00000000                        H                      
+LTDUNDETB 1731 00003     TF                                                     

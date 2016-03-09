@@ -1,0 +1,5 @@
+BSRY585271506011508281111100 PEE5N33    121704001 HST    125EP                  
+BX         GRY                                                                  
+LONWCSTLE 2306 00004  SL     TB                                                 
+LIHTONSJN           2312 00000000                                               
+LTHTONTMD 2316 0000      TF                                                     

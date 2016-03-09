@@ -1,0 +1,29 @@
+BSNY581321506221508071111100 PEE5H10    121704001 HST    125                    
+BX         GRY                                                                  
+LOHULL    2030 00007         TB                                                 
+LIHESSLRD           2033H00000000                                               
+LIBROUGH            2041 00000000                                               
+LIGLBRDYK           2047H00000000                                               
+LIGOOLE             2054 000000002                    2 3H                      
+LITHORNEJ           2107 00000000                     2                         
+LIHTFLASF           2111 00000000                                               
+LIBTLYJN            2115H00000000                       3                       
+LIDONC    2121 2133      000000001        OPA RM                                
+LISHFTHLJ           2138 00000000                                               
+LIHYWDJN            2140H00000000                                               
+LIKNTNGSJ           2150H00000000                                               
+LIKNTNGWJ           2152 00000000                                               
+LIPTFTMHL           2155H000000001                    1                         
+LICRFTNEJ           2203H00000000                                               
+LICRFTNWJ           2205 00000000                       3                       
+LICLDBDGJ           2210 00000000                                               
+LITRNRSLA           2213 00000000                                               
+LIALTFTJN           2217 00000000                                               
+LIMETHLYJ           2218H00000000                                               
+LISTRTJN            2222H00000000                     2 2                       
+LIESJLEDS           2229 00000000   DM                  1H                      
+LILEEDSWJ           2231H00000000   E                                           
+LILEEDS   2233 2243      0000000011       S                                     
+LIMRLNJN            2246 00000000   GL                                          
+LINEVLWJN           2249 00000000                                               
+LTNEVLTMD 2253 0000      TF                                                     

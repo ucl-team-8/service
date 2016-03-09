@@ -4,6 +4,7 @@ import xml.etree.ElementTree as ET
 import datetime
 import math
 import sys
+import glob
 import csv
 import os
 
@@ -31,7 +32,7 @@ def open_file(filename):
 # Date handling
 
 def parse_date(date_string, date_format, time_only=False):
-    if date_string == '':
+    if date_string == '' or date_string == '    ':
         return None
 
     date = datetime.datetime.strptime(date_string, date_format)
@@ -175,6 +176,68 @@ def parse_locations(file):
 
     return rows
 
+# Checking if we have no empty strings in the values
+def checkEmptyValues(dict):
+    for key, value in dict.iteritems():
+        if(type(value) is str and value.strip() == ''):
+            dict[key] = None
+
+# Parses the first line of a diagram txt file
+def parseDiagramHeader(header):
+    service = {'cif_uid': header[3:9]}
+    service['date_runs_from'] = parse_date(header[9:15], '%y%m%d')
+    service['date_runs_to'] = parse_date(header[15:21], '%y%m%d')
+    service['days_run'] = header[21:28]
+    service['train_category'] = header[30:32]
+    service['unit'] = header[32:36]
+    service['train_class'] = header[66:67]
+
+    checkEmptyValues(service)
+    return service
+
+# Parses all of the other lines in every diagram
+# and records all of the stops
+def parseDiagramStops(f, service):
+    f.readline() # skip additional information in the header
+    stops = []
+    for line in f:
+        stop = {'diagram_service': service, 'diagram_service_id': service.id}
+        stop['station_type'] = line[0:2]
+        stop['tiploc'] = line[2:10]
+        if(stop['station_type'] == 'LO'):
+            stop['depart_time'] = parse_date(line[10:14], '%H%M') # date doesnt matter
+            stop['engineering_allowance'] = convert_to(int, line[25:27].strip())
+            stop['pathing_allowance'] = convert_to(int, line[27:29].strip())
+        elif(stop['station_type'] == 'LI'):
+            stop['arrive_time'] = parse_date(line[10:14], '%H%M') # date doesnt matter
+            stop['depart_time'] = parse_date(line[15:19], '%H%M') # date doesnt matter
+            stop['pass_time'] = parse_date(line[20:24], '%H%M') # date doesnt matter
+            stop['engineering_allowance'] = convert_to(int, line[54:56].strip())
+            stop['pathing_allowance'] = convert_to(int, line[56:58].strip())
+        elif(stop['station_type'] == 'LT'):
+            stop['arrive_time'] = parse_date(line[10:14], '%H%M') # date doesnt matter
+
+
+        checkEmptyValues(stop)
+        stops.append(stop)
+    return stops
+
+# loops over all of the files in the diagrams
+# directory and extracts the data from them
+def parseDiagrams():
+    stops = []
+    for filename in glob.glob(os.path.join(parentdir + '/data/diagrams', '*.txt')):
+        f = open(filename, 'r')
+        service = parseDiagramHeader(f.readline())
+        service = DiagramService(**service)
+        db.session.add(service)
+        db.session.commit() # We do not use bulk inserts atm because we want to get the id
+        db.session.flush()
+        db.session.refresh(service)  # Making sure we have the id
+
+        stops.extend(parseDiagramStops(f, service))
+        f.close()
+    return stops
 
 # Storing data in database
 
@@ -183,7 +246,7 @@ def store_rows(rows, model):
     db.session.commit()
 
 def delete_data():
-    for model in [Trust, Schedule, GPS, UnitToGPSMapping, GeographicalLocation]:
+    for model in [Trust, Schedule, GPS, UnitToGPSMapping, GeographicalLocation, DiagramStop, DiagramService]:
         db.session.query(model).delete()
     db.session.commit()
 
@@ -223,6 +286,13 @@ def main():
     store_rows(parse_locations(files['locations']), GeographicalLocation)
 
     close_files(files)
+
+    print("Importing Diagram data...")
+    stops = parseDiagrams()
+
+    print("Importing Diagram Stops data...")
+    store_rows(stops, DiagramStop)
+
     print("\nSuccessfully imported all data.\n")
 
 if __name__ == "__main__":

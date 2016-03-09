@@ -1,0 +1,11 @@
+BSNY580721507271510021111100 PEE5S22    121704001 HST    125                    
+BX         GRY                                                                  
+LOEDINBUR 1946 00009  W      TB                                                 
+LIPRNCSTG           1947 00000000   DS                                          
+LIHAYMRKT           1948H000000004                                              
+LIHAYMRCJ           1949H00000000                                               
+LIGORGIEJ           1950H00000000                                               
+LICRLORTJ           1951H00000000                     2 2H                      
+LINIDRIWJ           2004 00000000                                               
+LIPORTOBL           2008 00000000                                               
+LTCRGNTNY 2023 0000      TF                                                     

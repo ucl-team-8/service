@@ -1,0 +1,20 @@
+BSNY584921507271508281111100 PXX1S016000121700001 HST    125      B R C         
+BX         GRY                                                                  
+LONWCSTLE 0622 06222         TBK                                                
+LIHTONSJN           0625 00000000                        H                      
+LIMRPTHRP 0635H0638H     063606382        T                                     
+LIALNMOTH 0652H0654H     065306542        T                                     
+LIBELFORD           0706 00000000                     2                         
+LIBRWCKUT 0716H0718H     071707182        T K                                   
+LIREST403           0722H00000000                                               
+LIRESTON            0727 00000000                                               
+LIGTHS              0731H00000000                                               
+LIOXWLCO            0738 00000000                                               
+LIDUNBAR  0740H0742H     07410742         T K                                   
+LIDREMJ             0751 00000000                                               
+LIPPAN              0755H00000000                     2                         
+LIMNKTNHJ           0759H00000000                                               
+LIPORTOBL           0801 00000000                                               
+LICRGNTYJ           0802 00000000                                               
+LIABHLJN            0803H00000000   SL                                          
+LTEDINBUR 0805 08078  SL TF                                                     

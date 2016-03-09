@@ -1,0 +1,7 @@
+BSNY579101505181512121111110 PEE5E25    121704001ZHST    125                    
+BX         GRY                                                                  
+LOABRDEEN 1315 00005         TB                                                 
+LIABRD27  1320 1330      00000000         OPRM                                  
+LIABRDCH  1335 1410      00000000         OP                                    
+LIABRD27 21415 1425      00000000         OPRM                                  
+LTABRDEEN21430 00005     TF                                                     

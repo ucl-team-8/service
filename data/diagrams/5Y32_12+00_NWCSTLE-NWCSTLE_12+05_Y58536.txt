@@ -1,0 +1,8 @@
+BSRY585361506011508281111100 PEE5Y32    121704001 E  410 125EP                  
+BX         GRY                                                                  
+LONWCSTLE 1200 00003         TB                                                 
+LIHLBDGJN           1201H00000000                                               
+LIGRNSFDJ           1202 00000000                                               
+LIKEBGEJN           1202H00000000                                               
+LIKEBGNJN           1203 00000000                                               
+LTNWCSTLE21205 00003     TF                                                     

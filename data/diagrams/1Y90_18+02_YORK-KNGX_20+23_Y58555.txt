@@ -1,0 +1,29 @@
+BSRY585551506011508281111100 PXX1Y903640121700001 HST    125      B R C         
+BX         GRY                                                                  
+LOYORK    1802 18026         TB                                                 
+LICOLTONJ           1807 00000000                                               
+LIHAMBLNJ           1811 00000000                        H1                     
+LITEMPLHJ           1815H00000000                                               
+LISHFTHLJ           1820 00000000                                               
+LIDONC    1824 1826      182418263A       T                                     
+LIDONCLCJ           1830 00000000                                               
+LIRTFD    1839 1840H     183918401        T               1                     
+LINWRKFC            1853 00000000                                               
+LINEWANG  1854 1855H     185418552        T                                     
+LICLPLLP            1900 00000000                                               
+LIGTHM    1906 1907H     190619071        T                                     
+LISOKEJN            1913 00000000   FL                                          
+LITALNGTN           1920 00000000                          H                    
+LIPBRO    1927 1929      192719293        T                                     
+LICNNGSJN           1936H00000000                                               
+LIHNTNGDN           1941 00000000   FL FL                                       
+LISNDY              1948H00000000   FL                                          
+LIHITCHIN           1954H00000000   FL                                          
+LISTEVNGE 1957H1959H     195819592        T                                     
+LIWLMRGRN           2003H00000000                     1                         
+LIWLWYNGC           2006H00000000                                               
+LIPOTRSBR           2010H000000002                        1                     
+LIALEXNDP           2016H00000000   FL                                          
+LIFNPK              2018 000000004                    1                         
+LIKNGXBEL           2021 00000000   FL2                                         
+LTKNGX    2023 20253     TF                                                     

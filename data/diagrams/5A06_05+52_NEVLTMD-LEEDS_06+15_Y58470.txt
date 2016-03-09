@@ -1,0 +1,6 @@
+BSRY584701507131507311111100 PEE5A06    121704001 E  410 125EP                  
+BX         GRY                                                                  
+LONEVLTMD 0552 0000          TB                                                 
+LINEVLWJN           0554 00000000   GL                                          
+LIMRLNJN  0559 0612      00000000         OPA                                   
+LTLEEDS   0615 00008     TF                                                     

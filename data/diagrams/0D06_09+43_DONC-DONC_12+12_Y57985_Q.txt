@@ -1,0 +1,22 @@
+BSRY579851505181512111111100 PZZ0D06    121704001 D      075Q                   
+BX         GRY                                                                  
+LODONC    0943 00002WG       TB                                                 
+LISHFTHLJ           0950 00000000                                               
+LITEMPLHJ           0957 00000000                                               
+LIHAMBLSJ           1002 00000000                                               
+LIHAMBLWJ 1004 1022      00000000         OPA                                   
+LIGSCGNWJ           1027 00000000                                               
+LIMCKLFLD           1032 000000002                                              
+LICSGT              1037 000000002                                              
+LINEVLWJN           1040 00000000   GL    X                                     
+LIMRLNJN  1045 1108      00000000         OPX                                   
+LILEEDS   1112 1120      0000000014A      OPRMA                                 
+LINEVLWJN2          1124 00000000                                               
+LICSGT   2          1127 000000001                                              
+LIMCKLFLD2          1133 000000001                                              
+LIGSCGNWJ2          1138 00000000                                               
+LIHAMBLWJ2          1142 00000000                                               
+LIHAMBLSJ21144 1146      00000000         OPA                                   
+LITEMPLHJ2          1152 00000000                       3                       
+LISHFTHLJ2          1202H00000000                       2                       
+LTDONC   21212 00001     TF                                                     

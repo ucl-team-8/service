@@ -1,0 +1,33 @@
+BSNY583141506011512111111100 PXX1H102540121703001 HST    125      B R CT        
+BX         GRY                                                                  
+LOKNGX    1719 17194  FL1    TB                                                 
+LIKNGXBEL           1721 00000000   FL                                          
+LIFNPK              1723 000000005                       H                      
+LIALEXNDP           1725H00000000   FL                                          
+LIPOTRSBR           1730H000000003                       H                      
+LIWLWYNGC           1735 00000000                        H                      
+LIWLMRGRN           1737H00000000                                               
+LISTEVNGE           1739H000000003                                              
+LIHITCHIN           1741H00000000   FL                                          
+LISNDY              1747H00000000   FL                                          
+LIHNTNGDN           1754H00000000   FL FL                                       
+LIHOLME             1759H00000000                         1                     
+LIPBRO    1806 1808      180618084        T                                     
+LITALNGTN           1815 00000000                                               
+LISOKEJN            1822H00000000                         1                     
+LIGTHM    1827H1829      182818292        T                                     
+LICLPLLP            1836 00000000                                               
+LINEWANG  1839H1841      184018411        T                                     
+LINWRKFC            1842H00000000                                               
+LIRTFD              1853 00000000                          H                    
+LIDONCLCJ           1900H00000000                                               
+LIDONCDNJ           1902 00000000   DS1                                         
+LIDONCBJN           1903H00000000   WS1                   1                     
+LIDONC    1906 1910      190619104        T K                                   
+LISHFTHLJ           1914 00000000                                               
+LITEMPLHJ           1919H00000000                                               
+LISELBY   1924H1926H     192519261        T K                                   
+LIGLBRDYK           1939 00000000                                               
+LIBROUGH  1945H1948      19461948         T K         2                         
+LIHESSLRD           1958H00000000                                               
+LTHULL    2002 20047     TF                                                     

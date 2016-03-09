@@ -21,6 +21,11 @@ def basic_algorithm():
 def trainMap():
     return render_template("map.html")
 
+@app.route("/layerTwo")
+def layerTwo():
+    return render_template("layerTwo.html")
+
+
 @app.route("/events/trust.json")
 def trust():
     records = db.session.query(Trust, Schedule, UnitToGPSMapping).\

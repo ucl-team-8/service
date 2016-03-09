@@ -1,0 +1,5 @@
+BSNY579141505181512121111110 PEE5S20    121704001 HST    125                    
+BX         GRY                                                                  
+LOABRDEEN 2125 00005         TB                                                 
+LIABRD27  2130 2140      00000000         OP                                    
+LTABRDCH  2145 0000      TF                                                     

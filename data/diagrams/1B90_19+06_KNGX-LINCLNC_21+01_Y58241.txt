@@ -1,0 +1,24 @@
+BSRY582411505181512111111100 PXX1B902660121703001 HST    125      B R C         
+BX         GRY                                                                  
+LOKNGX    1906 19067  FL1    TB                                                 
+LIKNGXBEL           1908 00000000   FL                   H                      
+LIFNPK              1910H000000005                                              
+LIALEXNDP           1912H00000000   FL                                          
+LIPOTRSBR           1917H000000003                                              
+LIWLWYNGC           1921H00000000                                               
+LIWLMRGRN           1923H00000000                                               
+LISTEVNGE 1926 1928      192619283        T                                     
+LIHITCHIN           1932H00000000   FL                                          
+LISNDY              1938H00000000   FL                                          
+LIHNTNGDN           1945H00000000   FL FL                                       
+LIHOLME             1950H00000000                         1                     
+LIPBRO    1957 2000      195720004        T                                     
+LITALNGTN           2007 00000000                                               
+LISOKEJN            2014H00000000                         1                     
+LIGTHM    2019H2021H     202020212        T                                     
+LICLPLLP            2028H00000000                                               
+LINEWANG  2033 2036      203320363        T                                     
+LINWRKCEJ           2040 00000000                                               
+LIBOUTHMJ           2055H00000000                     1                         
+LIWHOLMSJ           2057H00000000                                               
+LTLINCLNC 2101 21033     TF                                                     

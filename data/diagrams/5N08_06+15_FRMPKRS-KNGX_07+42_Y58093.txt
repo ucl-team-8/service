@@ -1,0 +1,11 @@
+BSRY580931506011508281111100 PEE5N08    121704001 E  410 125EP                  
+BX         GRY                                                                  
+LOFRMPKRS 0615 0000   CL     TB                                                 
+LIHRNS451 0655 0658      00000000         OP            1                       
+LIALEXNDP           0701 000000004                                              
+LIBOWERRL 0706 0724H     00000000         OP                                    
+LIALEXNDP2          0728H000000001  SL2                 3                       
+LIFNPK              0735 000000001                                              
+LIHLWYSJ            0738 00000000   FL                                          
+LIKNGXBEL           0740 00000000   FL2                                         
+LTKNGX    0742 00004     TF                                                     

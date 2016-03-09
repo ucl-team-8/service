@@ -1,0 +1,24 @@
+BSRY582321505181512111111100 PEE5B90    121704001 HST    125                    
+BX         GRY                                                                  
+LOLINCLNC 2114 00003         TB                                                 
+LIWHOLMSJ           2116 00000000                                               
+LISAXILBY           2121H00000000                                               
+LIGBGHLRD           2130H00000000                                               
+LIGBROTJ            2132 00000000                                               
+LIBESSCRJ           2147 00000000                                               
+LIDONCDSJ           2149 00000000                                               
+LIDONCDNJ           2150 00000000   DS1                                         
+LIDONCBJN           2151H00000000   WS1                 4                       
+LIDONC              2157 000000008                      1H                      
+LISHFTHLJ           2203 00000000                       4H                      
+LITEMPLHJ           2212 00000000                       6                       
+LIHAMBLSJ           2221 00000000                       3                       
+LIHAMBLWJ           2225 00000000                                               
+LIGSCGNWJ           2226H00000000                       1H                      
+LIMCKLFLD           2231H000000002                      1H                      
+LICSGT              2236H000000002                       H                      
+LINEVLWJN           2239H00000000                                               
+LILEEDS   2243 2309      000000009        OP                                    
+LIMRLNJN            2312 00000000   GL                                          
+LINEVLWJN2          2315 00000000                                               
+LTNEVLTMD 2319 0000      TF                                                     

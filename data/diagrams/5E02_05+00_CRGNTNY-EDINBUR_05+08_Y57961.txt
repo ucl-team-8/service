@@ -1,0 +1,6 @@
+BSRY579611505181508281111100 PEE5E02    121704001 E  410 125EP                  
+BX         GRY                                                                  
+LOCRGNTNY 0500 0000          TB                                                 
+LICRGNTYJ           0505 00000000                                               
+LIABHLJN            0506H00000000   NL                                          
+LTEDINBUR 0508 00002  NL TF                                                     

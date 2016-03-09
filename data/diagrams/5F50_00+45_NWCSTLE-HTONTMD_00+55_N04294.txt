@@ -1,0 +1,5 @@
+BSNN042941507301507300001000 1EE5F506069121700001 E  410 125                    
+BX         GRY                                                                  
+LONWCSTLE 0045 00002  SL     TB                                                 
+LIHTONSJN           0051 00000000                                               
+LTHTONTMD 0055 0000      TF                                                     
