@@ -31,6 +31,8 @@ class Segment:
         self.cif_uid = ''
         self.gps_car_id = ''
         self.headcode = ''
+        self.isPlanned = False
+        self.remove = False
         self.matching = []
 
     def __repr__(self):
@@ -38,6 +40,7 @@ class Segment:
         string += ', gps_car_id= {0}'.format(self.gps_car_id)
         string += ', cif_uid= {0}'.format(self.cif_uid)
         string += ', headcode= {0}'.format(self.headcode)
+        string += ', isplanned= {0}'.format(self.isPlanned)
         string += ', matching= {0}'.format(self.matching)
         return string
 
