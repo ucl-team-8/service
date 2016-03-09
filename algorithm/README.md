@@ -10,6 +10,8 @@ python algorithm/simrealtime.py
 
 This will print out the segments after every change that has happened.
 
+The realtime thread then creates a threadpool and, which it uses to do all of the data processing. 
+
 ## Segments
 What the algorithm currently does is creating segments from all of the reports that are coming in.
 We define a segment to be a a set of consecutive gps reports, with their matching trust reports. However the gps and trust reports in one given segment can only be from 1 rolling stock and service respectively.
@@ -24,7 +26,7 @@ These are all of the data structures:
 - gps_car_id - *String*
 - headcode - *String*
 - isPlanned - *Bool*
-- remove - *Bool*   // Value indicating that this segment should be deleted
+- remove - *Bool*  
 - matching - *Array of Dictionaries*
     - supposed_to_run: *Bool*
     - gps - *gps_report*
@@ -120,7 +122,6 @@ First, the algorithm goes over the segments with the same unit code and tries to
 
 We can see that in the middle, there is a very short segment with only 1 stop and the two other (outer) segments have multiple stops and have the same gps_car_id. Looking at the diagram, we know that it is very likely that we can combine all three segments into one segment with the same gps_car_id as the first and the last segment. This is exactly what the first step of interpolation does.
 
-
 ![figure 2](../static/images/readmefig2.png)
 
-
+The second step then checks if there are any segments, without a headcode yet that might be running the same service as another rolling stock. If it finds such a segment, it adds all of the matching trust report to the appropriate gps reports.
