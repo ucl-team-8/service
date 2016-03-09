@@ -1,14 +1,11 @@
-from flask import Flask, render_template, jsonify
-from flask.ext.sqlalchemy import SQLAlchemy
+from flask import render_template, jsonify
 from sqlalchemy.sql import func, and_
 import os
+from app_db import app, db
 
-app = Flask(__name__)
 app.config.from_object(os.environ['APP_SETTINGS'])
-db = SQLAlchemy(app)
 
 from models import *
-
 
 @app.route("/")
 def hello():
