@@ -1,9 +1,6 @@
 # File that is responsible for adding gps_reports
 # to the segments
 
-# TODO: Interpolating to see if it can join
-# segments
-
 import geo_distance
 import datetime
 import globals
@@ -24,12 +21,14 @@ def checkTimeDiff(segment, gps_report, closest):
 # that happened near the gps_report
 def findClosestSegment(segments, gps_report):
     closest = {'segment': None, 'time_diff': datetime.timedelta(days=1)}
+    # First checks empty segments because it might be a rolling stock starting to run
+    # another service
     for segment in segments:
-        if segment.gps_car_id == gps_report['gps_car_id']:
+        if segment.gps_car_id is None:
             checkTimeDiff(segment, gps_report, closest)
     if closest['segment'] is None:
         for segment in segments:
-            if segment.gps_car_id is None:
+            if segment.gps_car_id == gps_report['gps_car_id']:
                 checkTimeDiff(segment, gps_report, closest)
     return closest['segment']
 
@@ -68,15 +67,8 @@ def checkNonMatchingTrust(segment, gps_report):
 
 # This function adds the gps report to a segment
 def addGPS(gps_report):
-    potential_segments = []
     globals.lock.acquire()
-    for segment in globals.segments:
-        if segment.gps_car_id == gps_report['gps_car_id']:
-            potential_segments.append(segment)
-    globals.lock.release()
-
-    segment = findClosestSegment(potential_segments, gps_report)
-    globals.lock.acquire()
+    segment = findClosestSegment(globals.segments, gps_report)
     if segment is None:
         segment = globals.Segment()
         segment.gps(gps_report)
@@ -88,5 +80,4 @@ def addGPS(gps_report):
             'trust': None,
             'dist_error': None
         })
-    print("Finished processing GPS")
     globals.lock.release()
