@@ -1,4 +1,5 @@
-from app import db
+from app_db import db
+
 
 class Trust(db.Model):
     __tablename__ = 'trust'
@@ -16,7 +17,7 @@ class Trust(db.Model):
         return '<Trust id={0} headcode={1}>'.format(self.id, self.headcode)
 
     def as_dict(self):
-       return {c.name: getattr(self, c.name) for c in self.__table__.columns}
+        return {c.name: getattr(self, c.name) for c in self.__table__.columns}
 
 
 class Schedule(db.Model):
@@ -32,7 +33,7 @@ class Schedule(db.Model):
         return '<Schedule id={0} unit={1} headcode={2}>'.format(self.id, self.unit, self.headcode)
 
     def as_dict(self):
-       return {c.name: getattr(self, c.name) for c in self.__table__.columns}
+        return {c.name: getattr(self, c.name) for c in self.__table__.columns}
 
 
 class GPS(db.Model):
@@ -47,7 +48,7 @@ class GPS(db.Model):
         return '<GPS id={0} gps_car_id={1}>'.format(self.id, self.gps_car_id)
 
     def as_dict(self):
-       return {c.name: getattr(self, c.name) for c in self.__table__.columns}
+        return {c.name: getattr(self, c.name) for c in self.__table__.columns}
 
 
 class UnitToGPSMapping(db.Model):
@@ -59,7 +60,8 @@ class UnitToGPSMapping(db.Model):
         return '<UnitToGPSMapping unit={0}, gps_car_id={1}>'.format(self.unit, self.gps_car_id)
 
     def as_dict(self):
-       return {c.name: getattr(self, c.name) for c in self.__table__.columns}
+        return {c.name: getattr(self, c.name) for c in self.__table__.columns}
+
 
 class GeographicalLocation(db.Model):
     __tablename__ = 'geographical_location'
@@ -80,12 +82,13 @@ class GeographicalLocation(db.Model):
         return '<GeographicalLocation tiploc={0}, easting={1}, northing={2}>'.format(self.tiploc, self.easting, self.northing)
 
     def as_dict(self):
-       return {c.name: getattr(self, c.name) for c in self.__table__.columns}
+        return {c.name: getattr(self, c.name) for c in self.__table__.columns}
+
 
 class DiagramService(db.Model):
     __tablename__ = 'diagram_service'
     id = db.Column(db.Integer, primary_key=True)
-    unit = db.Column(db.String(20))
+    headcode = db.Column(db.String(20))
     cif_uid = db.Column(db.String(20))
     date_runs_from = db.Column(db.DateTime)
     date_runs_to = db.Column(db.DateTime)
@@ -97,16 +100,17 @@ class DiagramService(db.Model):
         return '<DiagramService unit={0}'.format(self.unit)
 
     def as_dict(self):
-       return {c.name: getattr(self, c.name) for c in self.__table__.columns}
+        return {c.name: getattr(self, c.name) for c in self.__table__.columns}
+
 
 class DiagramStop(db.Model):
     __tablename__ = 'diagram_stop'
     id = db.Column(db.Integer, primary_key=True)
     diagram_service_id = db.Column(db.Integer, db.ForeignKey('diagram_service.id'), nullable=False)
     diagram_service = db.relationship('DiagramService', backref='diagram_stop')
-    station_type = db.Column(db.String(2)) # LO (origin), LI (intermediate), LT (terminating) and CR (changes en route)
+    station_type = db.Column(db.String(2))  # LO (origin), LI (intermediate), LT (terminating) and CR (changes en route)
     tiploc = db.Column(db.String(20))
-    arrive_time = db.Column(db.Time) # these are the scheduled times (not public)
+    arrive_time = db.Column(db.Time)  # these are the scheduled times (not public)
     depart_time = db.Column(db.Time)
     pass_time = db.Column(db.Time)
     engineering_allowance = db.Column(db.Integer)
@@ -116,4 +120,4 @@ class DiagramStop(db.Model):
         return '<DiagramStop diagram_service_id={0}, tiploc={1}'.format(self.diagram_service_id, self.tiploc)
 
     def as_dict(self):
-       return {c.name: getattr(self, c.name) for c in self.__table__.columns}
+        return {c.name: getattr(self, c.name) for c in self.__table__.columns}

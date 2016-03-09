@@ -1,15 +1,18 @@
-from flask import render_template, jsonify
+from flask import Flask, render_template, jsonify
+from flask.ext.sqlalchemy import SQLAlchemy
 from sqlalchemy.sql import func, and_
-import os
-import sys
-from app_db import app, db
-
-app.config.from_object(os.environ['APP_SETTINGS'])
-
-from models import *
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)) + '/algorithm')
 import simrealtime
 import globals
+import os
+
+app = Flask(__name__)
+app.config.from_object(os.environ['APP_SETTINGS'])
+db = SQLAlchemy(app)
+
+parentdir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+os.sys.path.insert(0, parentdir)
+from models import *
+
 
 @app.route("/")
 def hello():
@@ -20,9 +23,6 @@ def hello():
 def basic_algorithm():
     return render_template("basic-algorithm.html")
 
-@app.route("/map")
-def trainMap():
-    return render_template("map.html")
 
 @app.route("/layerTwo")
 def layerTwo():
@@ -71,7 +71,8 @@ def gps():
 
     return jsonify(result=map(extract_dict, records))
 
-@app.route("/data/segments.json")
+
+@app.route("/segments")
 def segments():
     globals.lock.acquire()
     results = map(lambda x: x.__dict__, globals.segments)
