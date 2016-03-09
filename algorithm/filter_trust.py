@@ -2,10 +2,12 @@
 # reports to the segments
 
 # TODO: Can we use planned_pass?
-# TODO: Use filterByDiagrams - Api help?
+# TODO: Use filterByDiagrams -> The variable predicted in the trust
+# report is set to true if filterByDiagrams returns true
 # TODO: Give preference to the same event type?
 
 import geo_distance
+import interpolating
 import db_queries
 import datetime
 import globals
@@ -49,13 +51,15 @@ def filterPotentialSegments(segments, trust):
     return potential_segments
 
 
+
+
 # The second layer that filters the potential segments
 # again and finds segments that it is supposed to run
 # using the genius allocations (named schedule in the db)
 def filterByGeniusAllocations(segments, trust):
     potential_segments = []
     for segment in segments:
-        if db_queries.isPlanned(segment.unit, trust['headcode']):
+        if segment.isPlanned or db_queries.isPlanned(segment.unit, trust['headcode']):
             potential_segments.append(segment)
     if len(potential_segments) > 0:
         return potential_segments
@@ -108,10 +112,9 @@ def time_difference(start, end):
     return delta
 
 
-# Not using this atm
 # Checks if the trust event is one that was
 # supposed to happen according to the diagrams
-def filterByDiagrams(segments, trust):
+def isPredictedReport(trust):
     diagram_stops = db_queries.getDiagramStopsByHeadcode(trust['headcode'])
     for stop in diagram_stops:
         if stop['tiploc'] == trust['tiploc']:
@@ -203,6 +206,7 @@ def getBestStop(segment, trust, with_seq):
         best['match']['dist_error'] = best['dist_error']
         if segment.headcode == '':
             segment.headcode = trust['headcode']
+            segment.cif_uid = db_queries.cif_uidFromHeadcode(trust['headcode'])
         return True
     elif with_seq:
         if not getBestStop(segment, trust, False):
@@ -211,17 +215,17 @@ def getBestStop(segment, trust, with_seq):
 
 # Adds the trust report to a segment
 def addTrust(trust_report):
+    trust_report['predicted'] = isPredictedReport(trust_report)
     segments = filterSegmentsByHeadcode(trust_report)
     segments = filterPotentialSegments(segments, trust_report)
     segments = filterByGeniusAllocations(segments, trust_report)
-    globals.lock.acquire()
-    print("Start processing Trust")
-    globals.lock.release()
+
     segment = chooseBestSegment(segments, trust_report)
     globals.lock.acquire()
     if segment is None:
         createNewSegment(trust_report)
     else:
+        segment.isPlanned = db_queries.isPlanned(segment.unit, trust_report['headcode'])
         getBestStop(segment, trust_report, True)
-    print("Finished processing Trust")
     globals.lock.release()
+    interpolating.interpolate(trust_report['headcode'])

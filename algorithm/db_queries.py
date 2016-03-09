@@ -82,3 +82,17 @@ def cif_uidFromUnitAndHeadcode(unit, headcode):
         return temp
     except:
         return ''
+
+
+def cif_uidFromHeadcode(headcode):
+    globals.db_lock.acquire()
+    result = db.session.query(DiagramService).filter(
+            DiagramService.headcode == headcode)
+    globals.db_lock.release()
+    try:
+        temp = result[0].as_dict()['cif_uid']
+        if temp is None:
+            return ''
+        return temp
+    except:
+        return ''
