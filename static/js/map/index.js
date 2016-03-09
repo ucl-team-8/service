@@ -2,7 +2,6 @@ import _ from "lodash";
 import d3 from "d3";
 import L from "leaflet";
 
-import get from "./get";
 import RouteMap from "./route-map";
 import { getTrust, getGPS, getLocations } from "./data";
 
