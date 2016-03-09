@@ -6,7 +6,7 @@ import RouteMap from "./route-map";
 import { getTrust, getGPS, getLocations } from "./data";
 
 let transportLayer = new L.TileLayer("http://{s}.tile.thunderforest.com/transport/{z}/{x}/{y}.png")
-    .setOpacity(0.35);
+    .setOpacity(0.25);
 
 let map = new L.Map("map", {center: [53.5, -1.5], zoom: 7})
     .addLayer(transportLayer);
