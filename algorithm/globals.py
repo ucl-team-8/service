@@ -1,5 +1,4 @@
 # File with all of the globals
-# TODO: How do you get cif_uid from headcode?
 import db_queries
 import threading
 import datetime
@@ -55,6 +54,7 @@ class Segment:
 
     def trust(self, trust_report):
         self.headcode = trust_report['headcode']
+        self.cif_uid = db_queries.cif_uidFromHeadcode(self.headcode)
         self.matching.append({
             'gps': None,
             'trust': trust_report,
@@ -70,6 +70,12 @@ tolerance = {
     'minutes': 10
 }
 
+# Represents the amount of minimum matching
+# stops you need for a segment to become
+# 'valuable' where valuable means that we can
+# trust it to be an actual segment
+global min_matching
+min_matching = 3
 
 # Determines how fast the simulation runs
 global speedup

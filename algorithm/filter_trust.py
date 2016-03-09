@@ -206,6 +206,7 @@ def getBestStop(segment, trust, with_seq):
         best['match']['dist_error'] = best['dist_error']
         if segment.headcode == '':
             segment.headcode = trust['headcode']
+            segment.cif_uid = db_queries.cif_uidFromHeadcode(trust['headcode'])
         return True
     elif with_seq:
         if not getBestStop(segment, trust, False):

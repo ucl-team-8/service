@@ -55,7 +55,7 @@ class TestDBQueries(unittest.TestCase):
         result = db_queries.getDiagramServiceByHeadcode('0P04')
         self.assertEqual(result['cif_uid'], 'Y58236')
 
-    def testDiagramServiceByUnit1(self):
+    def testDiagramServiceByUnit2(self):
         result = db_queries.getDiagramServiceByHeadcode('0')
         self.assertEqual(result, None)
 
@@ -81,6 +81,19 @@ class TestDBQueries(unittest.TestCase):
     def testcif_uidFromUnit3(self):
         result = db_queries.cif_uidFromUnitAndHeadcode('BN87', '0Z00')
         self.assertEqual(result, '')
+
+    def testcif_uidFromHeadcode1(self):
+        result = db_queries.cif_uidFromHeadcode('0B02')
+        self.assertEqual(result, 'Y57996')
+
+    def testcif_uidFromHeadcode2(self):
+        result = db_queries.cif_uidFromHeadcode('1A00')
+        self.assertEqual(result, 'Y58484')
+
+    def testcif_uidFromHeadcode3(self):
+        result = db_queries.cif_uidFromHeadcode('0')
+        self.assertEqual(result, '')
+
 
 if __name__ == "__main__":
     unittest.main()
