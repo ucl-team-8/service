@@ -1,32 +1,66 @@
+import _ from "lodash";
 import d3 from "d3";
 
+import tiplocToPoint from "./tiploc-to-point";
 import Route from "./route";
 
 export default class RouteMap {
 
   constructor(map) {
     this.map = map;
-    this.svg = d3.select(map.getPanes().overlayPane).append("svg");
+    this.svg = d3.select(map.getPanes().overlayPane).append("svg").attr("width", 400).attr("height", 700);
     this.container = this.svg.append("g").attr("class", "leaflet-zoom-hide");
 
-    this.services = [];
+    this.unitsContainer = this.container.append("g")
+        .attr("class", "units");
+
+    this.servicesContainer = this.container.append("g")
+        .attr("class", "services");
+
     this.units = [];
+    this.services = [];
 
     this.redraw = this.redraw.bind(this);
     this.map.on("viewreset", this.redraw);
+    this.redraw();
   }
 
   plotServices(services) {
     this.services.forEach(d => d.destroy());
-    this.services = services.map(d => new Route(d));
+    this.services = services.map(d => new Route(this.map, this.servicesContainer, d, "trust"));
+    this.redraw();
   }
 
   plotUnits(units) {
     this.units.forEach(d => d.destroy());
-    this.units = units.map();
+    this.units = units.map(d => new Route(this.map, this.unitsContainer, d, "gps"));
+    this.redraw();
   }
 
   redraw() {
+
+    const allRoutes = this.services.concat(this.units).map(d => d.data);
+    const allLocations = _.flatten(allRoutes).map(d => tiplocToPoint(this.map, d.tiploc));
+
+    if (allLocations.length) {
+      const padding = 10;
+      let [left, right] = d3.extent(allLocations, d => d.x);
+      let [top, bottom] = d3.extent(allLocations, d => d.y);
+
+      left   -= padding;
+      right  += padding;
+      top    -= padding;
+      bottom += padding;
+
+      this.svg
+        .attr("width", right - left)
+        .attr("height", bottom - top)
+        .style("left", left + "px")
+        .style("top", top + "px");
+
+      this.container.attr("transform", "translate(" + -left + "," + -top + ")");
+    }
+
     this.services.forEach(d => d.redraw());
     this.units.forEach(d => d.redraw());
   }

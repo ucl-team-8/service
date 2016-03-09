@@ -4,19 +4,38 @@ import L from "leaflet";
 
 import get from "./get";
 import RouteMap from "./route-map";
+import { getTrust, getGPS, getLocations } from "./data";
+
+let transportLayer = new L.TileLayer("http://{s}.tile.thunderforest.com/transport/{z}/{x}/{y}.png")
+    .setOpacity(0.35);
 
 let map = new L.Map("map", {center: [53.5, -1.5], zoom: 7})
-    .addLayer(new L.TileLayer("http://{s}.tile.thunderforest.com/transport/{z}/{x}/{y}.png"));
+    .addLayer(transportLayer);
 
 let routeMap = new RouteMap(map);
 
-import { getTrust, getGPS, getLocations } from "./data";
+window.locations = {};
 
 Promise.all([
   getTrust(),
   getGPS(),
   getLocations()
 ]).then(([trust, gps, locations]) => {
-  locations = _.keyBy(locations, "tiploc");
-  debugger;
+
+  window.locations = _.keyBy(locations, "tiploc");
+
+  let services = d3.nest()
+      .key(d => d.headcode)
+      .sortValues((a, b) => d3.ascending(a.seq, b.seq))
+      .entries(trust);
+
+  let units = d3.nest()
+      .key(d => d.gps_car_id)
+      .sortKeys(d3.ascending)
+      .sortValues((a,b) => d3.ascending(a.event_time, b.event_time))
+      .entries(gps);
+
+  routeMap.plotServices([services[30].values]);
+  routeMap.plotUnits([units[26].values])
+
 });

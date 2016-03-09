@@ -2,6 +2,9 @@
   <head>
     <link rel="stylesheet" href="/static/css/leaflet.css" charset="utf-8">
     <style>
+      .leaflet-container {
+        background: #f2f2f2;
+      }
       body {
         margin: 0;
         padding: 0;
@@ -9,6 +12,22 @@
       #map {
         width: 400px;
         height: 700px;
+      }
+      .trust .route-section {
+        stroke: rgba(221, 86, 0, 0.75);
+        stroke-width: 2px;
+      }
+      .trust .route-stop {
+        fill: rgba(200, 84, 0, 0.75);
+      }
+      .gps .route-section {
+        stroke: rgba(0, 128, 221, 0.5);
+        stroke-width: 3px;
+      }
+      .gps .route-stop {
+        fill: none;
+        stroke: rgba(0, 111, 191, 0.5);
+        stroke-width: 4px;
       }
     </style>
   </head>

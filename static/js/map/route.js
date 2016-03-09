@@ -1,5 +1,7 @@
 import d3 from "d3";
 
+import tiplocToPoint from "./tiploc-to-point";
+
 function sectionify(array) {
   let accumulator = [];
   for (let i = 0; i < array.length - 1; i++) {
@@ -13,10 +15,15 @@ export default class Route {
   constructor(map, container, data, type) {
 
     this.map = map;
-    this.container = d3.select(container).append("g").attr("class", "route");
+    this.container = container.append("g").attr("class", "route");
+    this.data = data;
 
-    this._appendStops(data);
-    this._appendSections(sectionify(data));
+    if (type) {
+      this.container.classed(type, true);
+    }
+
+    this._appendSections(sectionify(this.data));
+    this._appendStops(this.data);
 
     this.redraw();
   }
@@ -25,27 +32,23 @@ export default class Route {
     return this.container.selectAll(".route-stop");
   }
 
-  sectons() {
+  sections() {
     return this.container.selectAll(".route-section");
-  }
-
-  latLngToPoint(lat, lng) {
-    const latLng = new L.LatLng(lat, lng);
-    return this.map.latLngToLayerPoint(latLng);
   }
 
   redraw() {
 
     let routeLine = d3.svg.line()
-      .x(d => "")
-      .y(d => "")
+      .x(d => tiplocToPoint(this.map, d.tiploc).x)
+      .y(d => tiplocToPoint(this.map, d.tiploc).y)
 
     this.stops()
-      .attr("x", "")
-      .attr("y", "")
+      .attr("cx", d => tiplocToPoint(this.map, d.tiploc).x)
+      .attr("cy", d => tiplocToPoint(this.map, d.tiploc).y)
+      .attr("r", () => Math.pow(this.map.getZoom(), 2) / 12)
 
     this.sections()
-      .attr("d")
+      .attr("d", routeLine)
   }
 
   destroy() {
@@ -53,14 +56,17 @@ export default class Route {
   }
 
   _appendStops(stops) {
-    this.stops().data(stops)
+    this.stops()
+      .data(stops)
+    .enter()
       .append("circle")
-      .attr("class", "route-stop")
-      .attr("r", 5);
+      .attr("class", "route-stop");
   }
 
   _appendSections(sections) {
-    this.sections().data(sections)
+    this.sections()
+      .data(sections)
+    .enter()
       .append("path")
       .attr("class", "route-section");
   }
