@@ -4,8 +4,6 @@ import os
 import sys
 from app_db import app, db
 
-app.config.from_object(os.environ['APP_SETTINGS'])
-
 from models import *
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)) + '/algorithm')
 import simrealtime

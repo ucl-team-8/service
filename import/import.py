@@ -13,6 +13,7 @@ from latlon_converter import ENtoLL84
 parentdir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.sys.path.insert(0, parentdir)
 from models import *
+from app_db import db
 
 
 def convert_to(datatype, value, *args, **kwargs):
@@ -24,7 +25,7 @@ def convert_to(datatype, value, *args, **kwargs):
 
 # File handling
 def open_file(filename):
-    f = open(os.path.dirname(os.path.realpath(__file__)) + '/' + filename, 'rb')
+    f = open(os.path.dirname(os.path.dirname(os.path.abspath(__file__))) + filename, 'rb')
     return f
 
 
@@ -264,11 +265,11 @@ def delete_data():
 
 def open_files():
     return {
-        'schedule': open_file('../data/schedule.csv'),
-        'unit_to_gps': open_file('../data/unit_to_gps.csv'),
-        'trust': open_file('../data/trustData.xml'),
-        'gpsData': open_file('../data/gpsData.xml'),
-        'locations': open_file('../data/locations.tsv')
+        'schedule': open_file('/data/schedule.csv'),
+        'unit_to_gps': open_file('/data/unit_to_gps.csv'),
+        'trust': open_file('/data/trustData.xml'),
+        'gpsData': open_file('/data/gpsData.xml'),
+        'locations': open_file('/data/locations.tsv')
     }
 
 
