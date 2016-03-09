@@ -1,4 +1,4 @@
-from app import db
+from app_db import db
 
 
 class Trust(db.Model):
