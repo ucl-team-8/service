@@ -1,11 +1,17 @@
+import pdb
 from flask import render_template, jsonify
 from sqlalchemy.sql import func, and_
 import os
+import sys
 from app_db import app, db
 
 app.config.from_object(os.environ['APP_SETTINGS'])
 
 from models import *
+# pdb.set_trace()
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)) + '/algorithm')
+import simrealtime
+import globals
 
 @app.route("/")
 def hello():
@@ -66,4 +72,6 @@ def gps():
 
 
 if __name__ == "__main__":
+    temp = simrealtime.SimulateRealTime(globals.speedup)
+    temp.start()
     app.run()
