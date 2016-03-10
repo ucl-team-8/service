@@ -1,4 +1,16 @@
-import get from "./d3-async-get";
+import get from "./d3-request-promise";
+
+/*
+
+Contains data coercing functions for various entities on the API, since JSON
+serializes certain datatypes.
+
+Also contains functions that automatically request data, coerce types, and
+return the processed data.
+
+*/
+
+// -----------------------------------------------------------------------------
 
 export function trustDatatypes(d) {
   d.event_time = new Date(d.event_time);
