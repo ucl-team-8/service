@@ -215,6 +215,8 @@ def getBestStop(segment, trust, with_seq):
 
 # Adds the trust report to a segment
 def addTrust(trust_report):
+    if trust_report is None:
+        return
     trust_report['predicted'] = isPredictedReport(trust_report)
     segments = filterSegmentsByHeadcode(trust_report)
     segments = filterPotentialSegments(segments, trust_report)

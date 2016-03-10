@@ -95,7 +95,8 @@ class SimulateRealTime(threading.Thread):
 
         time.sleep(time_to_sleep/self.speed)
 
-        executor.submit(self.performAction, next)
+        future = executor.submit(self.performAction, next)
+        future.result()
         del self.records[current['name']][0]
         current['name'] = next['name']
         current['record'] = next['record']
@@ -116,8 +117,8 @@ class SimulateRealTime(threading.Thread):
             current = {'name': '', 'record': None}
             next = {'name': '', 'record': None}
             self.closestRecordName(current, next)
-            executor.submit(self.performAction, current)
-
+            future = executor.submit(self.performAction, current)
+            future.result()
             while len(self.records['gps']) > 0 or\
                     len(self.records['trust']) > 0:
                 self.checkEmptyRecords()
