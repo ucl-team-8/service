@@ -25,6 +25,10 @@ export default class RouteMap {
     this.redraw();
   }
 
+  allRoutes() {
+    return this.services.concat(this.units);
+  }
+
   plotServices(services) {
     this.services.forEach(d => d.destroy());
     this.services = services.map(d => new Route(this.map, this.servicesContainer, d, "trust"));
@@ -39,7 +43,7 @@ export default class RouteMap {
 
   redraw() {
 
-    const allRoutes = this.services.concat(this.units).map(d => d.data);
+    const allRoutes = this.allRoutes().map(d => d.data);
     const allLocations = _.flatten(allRoutes).map(d => tiplocToPoint(this.map, d.tiploc));
 
     if (allLocations.length) {
