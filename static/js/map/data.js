@@ -61,16 +61,6 @@ export function getLocations() {
 
 // -----------------------------------------------------------------------------
 
-export function locationsDatatypes(d) {
-  d.cif_pass_count = Number(d.cif_pass_count);
-  d.cif_stop_count = Number(d.cif_stop_count);
-  d.is_cif_stop = Boolean(d.is_cif_stop);
-  d.latitude = Number(d.latitude);
-  d.longitude = Number(d.longitude);
-  d.easting = Number(d.easting);
-  d.northing = Number(d.northing);
-}
-
 export function getSegments() {
   return get("json", "/static/data/segments.json").then((data) => {
     data = data.results;
