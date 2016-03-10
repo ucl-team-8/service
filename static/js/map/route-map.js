@@ -41,6 +41,10 @@ export default class RouteMap {
     this.redraw();
   }
 
+  time(t) {
+    this.allRoutes().forEach(d => d.setTime(t));
+  }
+
   redraw() {
 
     const allRoutes = this.allRoutes().map(d => d.data);

@@ -34,6 +34,8 @@ Promise.all([
   routeMap.plotServices([serviceStops]);
   routeMap.plotUnits(units);
 
+  routeMap.time(new Date("Tue Mar 17 2015 11:38:00"));
+
 });
 
 function getServiceStopsFromSegments(segments) {
