@@ -43,7 +43,7 @@ export default class RouteMap {
     const allLocations = _.flatten(allRoutes).map(d => tiplocToPoint(this.map, d.tiploc));
 
     if (allLocations.length) {
-      const padding = 10;
+      const padding = 20;
       let [left, right] = d3.extent(allLocations, d => d.x);
       let [top, bottom] = d3.extent(allLocations, d => d.y);
 
