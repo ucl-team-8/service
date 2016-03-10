@@ -67,6 +67,8 @@ def checkNonMatchingTrust(segment, gps_report):
 
 # This function adds the gps report to a segment
 def addGPS(gps_report):
+    if gps_report is None:
+        return
     globals.lock.acquire()
     segment = findClosestSegment(globals.segments, gps_report)
     if segment is None:
