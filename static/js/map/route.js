@@ -29,8 +29,8 @@ export default class Route {
 
     let stopsWithLocation = data.filter(d => hasLocation(this.map, d));
 
-    this._appendSections(sectionify(stopsWithLocation));
-    this._appendStops(stopsWithLocation);
+    this.appendSections(sectionify(stopsWithLocation));
+    this.appendStops(stopsWithLocation);
 
     this.redraw();
   }
@@ -62,7 +62,7 @@ export default class Route {
     this.container.remove();
   }
 
-  _appendStops(stops) {
+  appendStops(stops) {
     this.stops()
       .data(stops)
     .enter()
@@ -70,7 +70,7 @@ export default class Route {
       .attr("class", "route-stop");
   }
 
-  _appendSections(sections) {
+  appendSections(sections) {
     this.sections()
       .data(sections)
     .enter()
