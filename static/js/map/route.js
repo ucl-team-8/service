@@ -52,7 +52,7 @@ export default class Route {
     this.stops()
       .attr("cx", d => tiplocToPoint(this.map, d.tiploc).x)
       .attr("cy", d => tiplocToPoint(this.map, d.tiploc).y)
-      .attr("r", () => Math.pow(this.map.getZoom(), 2) / 12)
+      .attr("r", () => Math.pow(this.map.getZoom(), 2) / 18)
 
     this.sections()
       .attr("d", routeLine)
