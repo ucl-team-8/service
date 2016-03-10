@@ -1,17 +1,50 @@
 import unittest
 import os
-
+import json
 parentdir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.sys.path.insert(0, parentdir + '/algorithm')
 
 import geo_distance
 import db_queries
 
+import app
+
 coord1 = {'latitude': 52.2296756, 'longitude': 21.0122287}
 coord2 = {'latitude': 52.406374, 'longitude': 16.9251681}
 coord3 = {'latitude': 57.4774160525352, 'longitude': -4.46815579590345}
 coord4 = {'latitude': 51.6909417951552, 'longitude': -3.40287716811208}
 
+class TestEndPoints(unittest.TestCase):
+
+    def setUp(self):
+        app.app.config['TESTING'] = True
+        self.testApp = app.app.test_client()
+
+    def get(self, resource):
+        return self.testApp.get(resource)
+
+    def checkDict(self, response):
+        return isinstance(json.loads(response.data), dict)
+
+    def testSegments(self):
+        response = self.get('/data/segments.json')
+        self.assertEqual(response.status_code, 200)
+        self.assertTrue(self.checkDict(response))
+
+    def testGPS(self):
+        response = self.get('/events/gps.json')
+        self.assertEqual(response.status_code, 200)
+        self.assertTrue(self.checkDict(response))
+
+    def testTrust(self):
+        response = self.get('/events/trust.json')
+        self.assertEqual(response.status_code, 200)
+        self.assertTrue(self.checkDict(response))
+
+    def testSchedule(self):
+        response = self.get('/data/schedule.json')
+        self.assertEqual(response.status_code, 200)
+        self.assertTrue(self.checkDict(response))
 
 class TestGeoDist(unittest.TestCase):
     def test_distance1(self):
