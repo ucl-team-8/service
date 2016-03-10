@@ -10,6 +10,11 @@ function sectionify(array) {
   return accumulator;
 }
 
+function hasLocation(map, stop) {
+  let location = window.locations[stop.tiploc];
+  return !!(location && location.latitude != 0);
+}
+
 export default class Route {
 
   constructor(map, container, data, type) {
@@ -22,8 +27,10 @@ export default class Route {
       this.container.classed(type, true);
     }
 
-    this._appendSections(sectionify(this.data));
-    this._appendStops(this.data);
+    let stopsWithLocation = data.filter(d => hasLocation(this.map, d));
+
+    this._appendSections(sectionify(stopsWithLocation));
+    this._appendStops(stopsWithLocation);
 
     this.redraw();
   }
