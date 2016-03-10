@@ -1,6 +1,6 @@
 import d3 from "d3";
 
-import tiplocToPoint from "./tiploc-to-point";
+import { tiplocToPoint, tiplocToLocation } from "./location";
 
 function sectionify(array) {
   let accumulator = [];
@@ -11,7 +11,7 @@ function sectionify(array) {
 }
 
 function hasLocation(map, stop) {
-  let location = window.locations[stop.tiploc];
+  let location = tiplocToLocation(stop.tiploc);
   return !!(location && location.latitude != 0);
 }
 

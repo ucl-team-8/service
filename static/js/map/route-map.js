@@ -1,7 +1,7 @@
 import _ from "lodash";
 import d3 from "d3";
 
-import tiplocToPoint from "./tiploc-to-point";
+import { tiplocToPoint } from "./location";
 import Route from "./route";
 
 export default class RouteMap {
