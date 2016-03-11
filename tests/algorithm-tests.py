@@ -6,13 +6,30 @@ os.sys.path.insert(0, parentdir + '/algorithm')
 
 import geo_distance
 import db_queries
-
+import simrealtime
 import app
-
+from models import GPS
+    
 coord1 = {'latitude': 52.2296756, 'longitude': 21.0122287}
 coord2 = {'latitude': 52.406374, 'longitude': 16.9251681}
 coord3 = {'latitude': 57.4774160525352, 'longitude': -4.46815579590345}
 coord4 = {'latitude': 51.6909417951552, 'longitude': -3.40287716811208}
+
+class TestSimulation(unittest.TestCase):
+
+    simulation = simrealtime.SimulateRealTime(1000)
+
+    def testFetchEvents(self):
+        # Test for no events
+        fetched = self.simulation.fetchEvents(GPS, None)
+        self.assertIsNotNone(fetched)
+        self.assertLessEqual(len(fetched), 100) 
+
+        # Test for more than one event (up to 100)
+        # Is it supposed to handle 1 record? Currently Doesn't
+        randRecs = [ x.as_dict() for x in app.db.session.query(GPS).filter(GPS.tiploc=='KNGX').all()]
+        newFetched = self.simulation.fetchEvents(GPS, randRecs)
+        self.assertLessEqual(newFetched[0]['event_time'], newFetched[1]['event_time'])
 
 class TestEndPoints(unittest.TestCase):
 
