@@ -1,7 +1,7 @@
 import _ from "lodash";
 import d3 from "d3";
 
-import { tiplocToPoint } from "./location";
+import { tiplocToPoint, tiplocHasLocation } from "./location";
 import Route from "./route";
 
 /*
@@ -85,7 +85,9 @@ export default class RouteMap {
   redraw() {
 
     const allRoutes = this.allRoutes().map(d => d.data);
-    const allLocations = _.flatten(allRoutes).map(d => tiplocToPoint(this.map, d.tiploc));
+    const allLocations = _.flatten(allRoutes)
+      .filter(d => tiplocHasLocation(d.tiploc))
+      .map(d => tiplocToPoint(this.map, d.tiploc));
 
     if (allLocations.length) {
       const padding = 20;

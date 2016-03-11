@@ -1,6 +1,6 @@
 import d3 from "d3";
 
-import { tiplocToPoint, tiplocToLocation } from "./location";
+import { tiplocToPoint, tiplocToLocation, tiplocHasLocation } from "./location";
 
 function sectionify(array) {
   let accumulator = [];
@@ -8,11 +8,6 @@ function sectionify(array) {
     accumulator.push([array[i], array[i+1]]);
   }
   return accumulator;
-}
-
-function hasLocation(map, stop) {
-  let location = tiplocToLocation(stop.tiploc);
-  return !!(location && location.latitude != 0);
 }
 
 export default class Route {
@@ -35,7 +30,7 @@ export default class Route {
       this.container.classed(type, true);
     }
 
-    let stopsWithLocation = data.filter(d => hasLocation(this.map, d));
+    let stopsWithLocation = data.filter(d => tiplocHasLocation(d.tiploc));
 
     this.appendSections(sectionify(stopsWithLocation));
     this.appendStops(stopsWithLocation);
