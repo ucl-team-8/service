@@ -1,0 +1,31 @@
+.leaflet-container {
+  background: #f2f2f2;
+}
+
+#map {
+  width: 400px;
+  height: 700px;
+}
+
+.trust .route-section {
+  stroke: rgba(1, 172, 48, 0.5);
+  stroke-width: 3px;
+}
+.trust .route-stop {
+  fill: rgba(1, 172, 48, 0.7);
+}
+
+.gps .route-section {
+  stroke: rgba(190, 95, 0, 0.6);
+  stroke-width: 3px;
+}
+.gps .route-stop {
+  fill: rgba(190, 95, 0, 0.7);
+}
+
+.route-section.future {
+  stroke: rgba(170, 170, 170, .6);
+}
+.route-stop.future {
+  fill: rgba(170, 170, 170, .75);
+}

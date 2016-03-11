@@ -1,0 +1,19 @@
+body {
+  display: flex;
+  align-items: stretch;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  align-items: stretch;
+}
+
+.map-pane {
+  flex: 0 0 400px;
+  width: 400px;
+}
+
+.routes-pane {
+  flex: 1;
+}
