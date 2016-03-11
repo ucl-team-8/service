@@ -48,6 +48,8 @@ def filterPotentialSegments(segments, trust):
                             break
             except:
                 pass # Do nothing
+    if len(potential_segments) == 0:
+        return segments
     return potential_segments
 
 

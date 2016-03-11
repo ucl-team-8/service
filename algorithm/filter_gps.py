@@ -10,8 +10,15 @@ import globals
 # if the it closer to the gps_report than the current
 # closest
 def checkTimeDiff(segment, gps_report, closest):
-    time_diff = abs(segment.matching[-1]['gps']['event_time'] -
-                    gps_report['event_time'])
+    time_diff = None
+    if segment.matching[-1]['gps'] is not None:
+        time_diff = abs(segment.matching[-1]['gps']['event_time'] -
+                gps_report['event_time'])
+    if segment.matching[-1]['trust'] is not None:
+        temp_diff = abs(segment.matching[-1]['trust']['event_time'] -
+                gps_report['event_time'])
+        if temp_diff < time_diff:
+            time_diff = temp_diff
     if time_diff < closest['time_diff']:
         closest['segment'] = segment
         closest['time_diff'] = time_diff
@@ -25,9 +32,13 @@ def findClosestSegment(segments, gps_report):
     # another service
     for segment in segments:
         if segment.gps_car_id is None:
+            segment.matching.sort(
+                    key=lambda x: x['trust']['event_time'], reverse=False)
             checkTimeDiff(segment, gps_report, closest)
     if closest['segment'] is None:
         for segment in segments:
+            segment.matching.sort(
+                    key=lambda x: x['gps']['event_time'], reverse=False)
             if segment.gps_car_id == gps_report['gps_car_id']:
                 checkTimeDiff(segment, gps_report, closest)
     return closest['segment']

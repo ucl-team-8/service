@@ -79,7 +79,7 @@ min_matching = 3
 
 # Determines how fast the simulation runs
 global speedup
-speedup = 1000
+speedup = 5000
 
 # The amount of threads in the threadpool
 # that add events to the segments
