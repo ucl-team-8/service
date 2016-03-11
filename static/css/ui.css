@@ -10,10 +10,14 @@ body {
 }
 
 .map-pane {
-  flex: 0 0 400px;
-  width: 400px;
+  display: flex;
+  flex: 1;
+}
+
+#map {
+  flex: 1;
 }
 
 .routes-pane {
-  flex: 1;
+  flex: 2;
 }
