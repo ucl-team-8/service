@@ -18,15 +18,23 @@ Much of the code is from https://bost.ocks.org/mike/leaflet/.
 export default class RouteMap {
 
   constructor(map) {
+
     this.map = map;
-    this.svg = d3.select(map.getPanes().overlayPane).append("svg").attr("width", 400).attr("height", 700);
-    this.container = this.svg.append("g").attr("class", "leaflet-zoom-hide");
+
+    this.svg = d3.select(map.getPanes().overlayPane)
+      .append("svg")
+      .attr("width", 400)
+      .attr("height", 700);
+
+    // The "leaflet-zoom-hide" class hides the plot during the zoom animation.
+    this.container = this.svg.append("g")
+      .attr("class", "leaflet-zoom-hide");
 
     this.unitsContainer = this.container.append("g")
-        .attr("class", "units");
+      .attr("class", "units");
 
     this.servicesContainer = this.container.append("g")
-        .attr("class", "services");
+      .attr("class", "services");
 
     this.units = [];
     this.services = [];
@@ -37,7 +45,7 @@ export default class RouteMap {
   }
 
   /*
-  Returns all Route objects that are plotted on the map.
+  Returns all `Route` instances that are plotted on the map.
   */
   allRoutes() {
     return this.services.concat(this.units);
@@ -53,6 +61,7 @@ export default class RouteMap {
         { tiploc: ..., event_time: ... }
       ];
 
+  The logic for drawing routes is implemented in the `Route` class.
   */
   plotServices(services) {
     this.services.forEach(d => d.destroy());
@@ -80,7 +89,7 @@ export default class RouteMap {
 
   /*
   Redraws the all routes. This method is called automatically in case of updated
-  services, or an action like zoom.
+  services, or on map zoom.
   */
   redraw() {
 
