@@ -31,6 +31,7 @@ Promise.all([
 
   let i = 0;
   segments = _.sortBy(segments, "headcode");
+  console.log(segments);
 
   plotSegment(segments[i]);
 
@@ -51,7 +52,7 @@ Promise.all([
 });
 
 function plotSegment(segment) {
-  console.log(`Plotting ${segment.headcode || "_"} ${segment.gps_car_id || "_"}`, segment);
+  console.log(`Plotting headcode:${segment.headcode || "_"} gps_car_id:${segment.gps_car_id || "_"}`, segment);
   let serviceStops = getServiceStopsFromSegment(segment);
   let unitStops = getUnitStopsFromSegment(segment);
   routeMap.plotServices([serviceStops]);
