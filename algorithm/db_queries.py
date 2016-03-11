@@ -53,15 +53,13 @@ def getDiagramServiceByHeadcode(headcode):
 # gets the rows from diagram_stop for a particular
 # diagram service
 def getDiagramStopsByService(diagram_service):
-    globals.db_lock.acquire()
-    try:
-        result = db.session.query(DiagramStop).filter(
-            DiagramStop.diagram_service_id == diagram_service['id']
-        )
-        globals.db_lock.release()
-    except:
-        globals.db_lock.release()
+    if diagram_service is None:
         return []
+    globals.db_lock.acquire()
+    result = db.session.query(DiagramStop).filter(
+        DiagramStop.diagram_service_id == diagram_service['id']
+    )
+    globals.db_lock.release()
     return map(lambda x: x.as_dict(), result)
 
 
