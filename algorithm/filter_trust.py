@@ -33,7 +33,7 @@ def filterSegmentsByHeadcode(trust):
 def filterPotentialSegments(segments, trust):
     potential_segments = []
     for segment in segments:
-        for i in range(-globals.backmatches, 0):
+        for i in range(0, len(segment.matching)):
             try:
                 if (segment.matching[i]['gps'] is not None) and\
                         (segment.matching[i]['trust'] is None):
@@ -213,6 +213,7 @@ def getBestStop(segment, trust, with_seq):
     elif with_seq:
         if not getBestStop(segment, trust, False):
             createNewSegment(trust)
+    return False
 
 
 # Adds the trust report to a segment
