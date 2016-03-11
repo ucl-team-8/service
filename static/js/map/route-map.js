@@ -116,9 +116,9 @@ export default class RouteMap {
   one if you want to continue plotting.
   */
   destroy() {
-    this.destroyContents();
+    this.allRoutes().forEach(d => d.destroy());
     this.map.off("viewreset", this.redraw);
-    this.container.remove();
+    this.svg.remove();
   }
 
 }
