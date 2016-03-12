@@ -12,7 +12,7 @@ segments = []
 # the algorithm looks back at when trying
 # to match a trust report to a gps report
 global backmatches
-backmatches = 5
+backmatches = 10
 
 # Lock for accessing segment
 global lock

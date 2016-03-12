@@ -24,6 +24,14 @@ def checkTimeDiff(segment, gps_report, closest):
         closest['time_diff'] = time_diff
 
 
+# Gets the time from either report
+# in the match
+def getTimeFromMatching(match):
+    if match['gps'] is not None:
+        return match['gps']['event_time']
+    return match['trust']['event_time']
+
+
 # Finds the segment with the reports
 # that happened near the gps_report
 def findClosestSegment(segments, gps_report):
@@ -38,7 +46,7 @@ def findClosestSegment(segments, gps_report):
     if closest['segment'] is None:
         for segment in segments:
             segment.matching.sort(
-                    key=lambda x: x['gps']['event_time'], reverse=False)
+                    key=lambda x: getTimeFromMatching(x), reverse=False)
             if segment.gps_car_id == gps_report['gps_car_id']:
                 checkTimeDiff(segment, gps_report, closest)
     return closest['segment']
