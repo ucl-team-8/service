@@ -1,5 +1,4 @@
-from flask.ext.sqlalchemy import SQLAlchemy
-from sqlalchemy.sql import func, and_, or_
+from sqlalchemy.sql import and_
 import globals
 import os
 
@@ -54,6 +53,8 @@ def getDiagramServiceByHeadcode(headcode):
 # gets the rows from diagram_stop for a particular
 # diagram service
 def getDiagramStopsByService(diagram_service):
+    if diagram_service is None:
+        return []
     globals.db_lock.acquire()
     result = db.session.query(DiagramStop).filter(
         DiagramStop.diagram_service_id == diagram_service['id']
