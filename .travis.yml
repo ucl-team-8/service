@@ -1,17 +1,18 @@
 language: python
 python:
-  - "2.7"
-  - "3.4"
+- '2.7'
+- '3.4'
 env:
-  - APP_SETTINGS=config.DevelopmentConfig DATABASE_URL=postgres://postgres@localhost/atos
+- APP_SETTINGS=config.DevelopmentConfig DATABASE_URL=postgres://postgres@localhost/atos
 services:
-  - postgresql
+- postgresql
 before_script:
-  - psql -c 'create database atos;' -U postgres
-  - python manage.py db upgrade
-  - python import/import.py
-# command to install dependencies
+- psql -c 'create database atos;' -U postgres
+- python manage.py db upgrade
+- python import/import.py
 install:
-  - pip install -r requirements.txt
-# command to run tests
+- pip install -r requirements.txt
 script: python tests/algorithm-tests.py
+before_install:
+- openssl aes-256-cbc -K $encrypted_949d2cba8123_key -iv $encrypted_949d2cba8123_iv
+  -in locations.tsv.enc -out data/locations.tsv -d
