@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/ucl-team-8/service.svg?branch=CI)](https://travis-ci.org/ucl-team-8/service)
+# Atos Pattern Matching Algorithm [![Build Status](https://travis-ci.org/ucl-team-8/service.svg?branch=CI)](https://travis-ci.org/ucl-team-8/service)
 
 # Setting up local environment
 
