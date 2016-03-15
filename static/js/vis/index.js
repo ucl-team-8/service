@@ -4,6 +4,8 @@ import L from "leaflet";
 
 import RouteMap from "./map/route-map";
 import { getSegments, getLocations } from "./utils/data";
+import updateReports from "./reports/update-reports";
+import noOverlap from "./utils/no-overlap-time-scale";
 
 /*
 
@@ -17,6 +19,10 @@ let transportLayer = new L.TileLayer("http://{s}.tile.thunderforest.com/transpor
 
 let map = new L.Map("map", {center: [53.5, -1.5], zoom: 7})
     .addLayer(transportLayer);
+
+let reportsContainer = d3.select(".reports-svg")
+    .attr("width", 300)
+    .attr("height", 1500);
 
 let routeMap = new RouteMap({ map });
 
@@ -51,12 +57,25 @@ Promise.all([
 
 });
 
+let reports = reportsContainer.append("g")
+    .attr("class", "reports");
+
 function plotSegment(segment) {
   console.log(`Plotting headcode:${segment.headcode || "_"} gps_car_id:${segment.gps_car_id || "_"}`, segment);
   let serviceStops = getServiceStopsFromSegment(segment);
   let unitStops = getUnitStopsFromSegment(segment);
   routeMap.plotServices([serviceStops]);
   routeMap.plotUnits([unitStops]);
+  let scale = noOverlap()
+      .minGap(12)
+      .maxGap(50)
+      .pixelsPerMinute(5)
+      .build([serviceStops.map(d => d.event_time)]);
+  reportsContainer.on("mousemove", () => {
+    let p = d3.mouse(reportsContainer.node());
+    routeMap.time(scale.invert(p[1]));
+  });
+  updateReports(reports, scale, serviceStops);
 }
 
 function getServiceStopsFromSegments(segments) {
