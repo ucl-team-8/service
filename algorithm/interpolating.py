@@ -64,7 +64,7 @@ def combineSegments(segments, i, j):
 # segments
 def sortSegments(segments):
     for segment in segments:
-        segment.matching.sort(lambda x: getReportTime(x), reverse=False)
+        segment.matching.sort(key=lambda x: getReportTime(x), reverse=False)
 
 
 # Helper function for join segments that joins
