@@ -1,6 +1,7 @@
 @import "leaflet.css";
 @import "map.css";
 @import "ui.css";
+@import "reports.css";
 
 body {
   margin: 0;
