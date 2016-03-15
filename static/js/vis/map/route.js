@@ -1,14 +1,7 @@
 import d3 from "d3";
 
 import { tiplocToPoint, tiplocToLocation, tiplocHasLocation } from "../utils/location";
-
-function sectionify(array) {
-  let accumulator = [];
-  for (let i = 0; i < array.length - 1; i++) {
-    accumulator.push([array[i], array[i+1]]);
-  }
-  return accumulator;
-}
+import sectionify from "../utils/sectionify";
 
 export default class Route {
 
