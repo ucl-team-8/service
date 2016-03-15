@@ -3,12 +3,13 @@ python:
   - "2.7"
   - "3.4"
 env:
-  - APP_SETTINGS=config.DevelopmentConfig
-  - DATABASE_URL=postgres://postgres@localhost/atos
+  - APP_SETTINGS=config.DevelopmentConfig DATABASE_URL=postgres://postgres@localhost/atos
 services:
   - postgresql
 before_script:
   - psql -c 'create database atos;' -U postgres
+  - python manage.py db upgrade
+  - python import/import.py
 # command to install dependencies
 install:
   - pip install -r requirements.txt
