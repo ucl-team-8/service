@@ -92,8 +92,6 @@ def cif_uidFromHeadcode(headcode):
     globals.db_lock.release()
     try:
         temp = result[0].as_dict()['cif_uid']
-        if temp is None:
-            return ''
         return temp
     except:
-        return ''
+        return None
