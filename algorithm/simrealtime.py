@@ -153,7 +153,7 @@ class SimulateRealTime(threading.Thread):
                 len(self.records['trust']) > 0:
             self.checkEmptyRecords()
             if not self.getNextRecordAndSleep(executor, current, next):
-                print "Finished simulating the environment"
+                print("Finished simulating the environment")
                 return None
 
 

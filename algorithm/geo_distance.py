@@ -29,7 +29,7 @@ def calculateDist(coord1, coord2):
 
         return distance
     except:
-	return globals.tolerance['distance'] + 1
+        return globals.tolerance['distance'] + 1
 
 # Queries the db to find the long and lat of
 # a tiploc
