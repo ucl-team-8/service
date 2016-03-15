@@ -62,7 +62,7 @@ export function getLocations() {
 // -----------------------------------------------------------------------------
 
 export function getSegments() {
-  return get("json", "/static/data/segments.json").then((data) => {
+  return get("json", "/data/segments.json").then((data) => {
     data = data.results;
     data.forEach(segment => {
       segment.matching.forEach(stop => {
