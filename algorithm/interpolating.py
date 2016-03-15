@@ -41,9 +41,14 @@ def getReportTime(report):
 
 def removeSegments():
     globals.lock.acquire()
-    for i in range(0, len(globals.segments)):
+    length = len(globals.segments)
+    i = 0
+    while i < length:
         if globals.segments[i].remove:
             del globals.segments[i]
+            length -= 1
+            i -= 1
+        i += 1
     globals.lock.release()
 
 
