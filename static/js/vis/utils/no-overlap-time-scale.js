@@ -70,7 +70,7 @@ function getMaxAtSameTime(time, scales) {
   return _.maxBy(candidates, d => d.numberOfEvents);
 }
 
-function combineScales(collections) {
+function combineScales(defaultPixelsPerMinute, collections) {
   let output = [];
   let scales = _.flatten(collections);
   if (scales.length == 0) return output;
@@ -82,6 +82,9 @@ function combineScales(collections) {
     if (sameTime) output.push(sameTime);
     let candidates = getScalesCovering([domainStart, domainEnd], scales);
     let pixelsPerMinute = _.max(candidates.map(d => d.pixelsPerMinute));
+    if (pixelsPerMinute === undefined) {
+      pixelsPerMinute = defaultPixelsPerMinute;
+    }
     output.push({
       domain: [domainStart, domainEnd],
       pixelsPerMinute
@@ -130,7 +133,7 @@ function scaleFromScales(minGap, scales) {
       let domainEnd = scale.domain[1];
       let dy;
       if (scale.pixelsPerMinute === Infinity) {
-        dy = minGap * (scale.numberOfEvents - 1);
+        dy = minGap * scale.numberOfEvents;
         exceptions[+domainStart] = y;
       } else {
         let minutes = (domainEnd - domainStart) / (1000 * 60);
@@ -205,7 +208,7 @@ export default function(collections) {
       .map(events => events.sort())
       .map(events => calcScales(pixelsPerMinute, minGap, maxGap, events))
       .map(compactScales);
-    let scales = compactScales(combineScales(pass));
+    let scales = compactScales(combineScales(pixelsPerMinute, pass));
     let { domain, range, exceptions:ex } = scaleFromScales(minGap, scales);
     if (domain.length > 1) noOverlap.domain(domain);
     if (range.length > 1) noOverlap.range(range);
