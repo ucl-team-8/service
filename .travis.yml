@@ -1,7 +1,6 @@
 language: python
 python:
 - '2.7'
-- '3.4'
 env:
 - APP_SETTINGS=config.DevelopmentConfig DATABASE_URL=postgres://postgres@localhost/atos
 services:
