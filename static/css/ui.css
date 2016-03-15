@@ -1,0 +1,23 @@
+body {
+  display: flex;
+  align-items: stretch;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  align-items: stretch;
+}
+
+.map-pane {
+  display: flex;
+  flex: 1;
+}
+
+#map {
+  flex: 1;
+}
+
+.routes-pane {
+  flex: 1;
+}

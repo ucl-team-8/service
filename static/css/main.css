@@ -1,0 +1,8 @@
+@import "leaflet.css";
+@import "map.css";
+@import "ui.css";
+
+body {
+  margin: 0;
+  padding: 0;
+}

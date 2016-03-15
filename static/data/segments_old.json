@@ -1,0 +1,6845 @@
+{
+ "results": [{
+  "cif_uid": "Y57923",
+  "gps_car_id": "82204",
+  "headcode": "3A00",
+  "isPlanned": true,
+  "matching": [{
+   "dist_error": 0,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:00:32 GMT",
+    "event_type": "A",
+    "gps_car_id": "82204",
+    "id": 2,
+    "tiploc": "BNDSGRN"
+   },
+   "trust": {
+    "event_time": "Tue, 17 Mar 2015 00:49:00 GMT",
+    "event_type": "D",
+    "headcode": "3A00",
+    "id": 15,
+    "origin_departure": "Tue, 17 Mar 2015 01:00:00 GMT",
+    "origin_location": "BNDSGRN",
+    "planned_pass": false,
+    "predicted": false,
+    "seq": 1,
+    "tiploc": "BNDSGRN"
+   }
+  }, {
+   "dist_error": 0.40003796270969205,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:02:49 GMT",
+    "event_type": "A",
+    "gps_car_id": "82204",
+    "id": 30,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": {
+    "event_time": "Tue, 17 Mar 2015 00:49:00 GMT",
+    "event_type": "D",
+    "headcode": "3A00",
+    "id": 15,
+    "origin_departure": "Tue, 17 Mar 2015 01:00:00 GMT",
+    "origin_location": "BNDSGRN",
+    "planned_pass": false,
+    "predicted": false,
+    "seq": 1,
+    "tiploc": "BNDSGRN"
+   }
+  }, {
+   "dist_error": 0,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:09:16 GMT",
+    "event_type": "A",
+    "gps_car_id": "82204",
+    "id": 48,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": {
+    "event_time": "Tue, 17 Mar 2015 02:40:00 GMT",
+    "event_type": "D",
+    "headcode": "3A00",
+    "id": 37,
+    "origin_departure": "Tue, 17 Mar 2015 01:00:00 GMT",
+    "origin_location": "BNDSGRN",
+    "planned_pass": true,
+    "predicted": false,
+    "seq": 9,
+    "tiploc": "ALEXNDP"
+   }
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:09:47 GMT",
+    "event_type": "D",
+    "gps_car_id": "82204",
+    "id": 50,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:09:47 GMT",
+    "event_type": "D",
+    "gps_car_id": "82204",
+    "id": 50,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:12:00 GMT",
+    "event_type": "A",
+    "gps_car_id": "82204",
+    "id": 59,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:13:24 GMT",
+    "event_type": "D",
+    "gps_car_id": "82204",
+    "id": 68,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:20:49 GMT",
+    "event_type": "D",
+    "gps_car_id": "82204",
+    "id": 87,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:28:03 GMT",
+    "event_type": "A",
+    "gps_car_id": "82204",
+    "id": 121,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:31:07 GMT",
+    "event_type": "D",
+    "gps_car_id": "82204",
+    "id": 132,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:35:28 GMT",
+    "event_type": "A",
+    "gps_car_id": "82204",
+    "id": 146,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:35:48 GMT",
+    "event_type": "D",
+    "gps_car_id": "82204",
+    "id": 147,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:36:19 GMT",
+    "event_type": "A",
+    "gps_car_id": "82204",
+    "id": 149,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:37:52 GMT",
+    "event_type": "D",
+    "gps_car_id": "82204",
+    "id": 156,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:42:00 GMT",
+    "event_type": "A",
+    "gps_car_id": "82204",
+    "id": 189,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:44:04 GMT",
+    "event_type": "D",
+    "gps_car_id": "82204",
+    "id": 208,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:44:35 GMT",
+    "event_type": "A",
+    "gps_car_id": "82204",
+    "id": 210,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:46:47 GMT",
+    "event_type": "D",
+    "gps_car_id": "82204",
+    "id": 220,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:48:02 GMT",
+    "event_type": "A",
+    "gps_car_id": "82204",
+    "id": 225,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:48:51 GMT",
+    "event_type": "A",
+    "gps_car_id": "82204",
+    "id": 228,
+    "tiploc": "HRNS451"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:50:57 GMT",
+    "event_type": "D",
+    "gps_car_id": "82204",
+    "id": 237,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:50:57 GMT",
+    "event_type": "D",
+    "gps_car_id": "82204",
+    "id": 237,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:51:28 GMT",
+    "event_type": "D",
+    "gps_car_id": "82204",
+    "id": 245,
+    "tiploc": "HRNS453"
+   },
+   "trust": null
+  }, {
+   "dist_error": 2.0827465614960965,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:54:59 GMT",
+    "event_type": "P",
+    "gps_car_id": "82204",
+    "id": 257,
+    "tiploc": "FRMPKRS"
+   },
+   "trust": {
+    "event_time": "Tue, 17 Mar 2015 00:57:00 GMT",
+    "event_type": "D",
+    "headcode": "3A00",
+    "id": 17,
+    "origin_departure": "Tue, 17 Mar 2015 01:00:00 GMT",
+    "origin_location": "BNDSGRN",
+    "planned_pass": true,
+    "predicted": false,
+    "seq": 3,
+    "tiploc": "FNPK"
+   }
+  }, {
+   "dist_error": 1.7093160987718392,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:57:06 GMT",
+    "event_type": "P",
+    "gps_car_id": "82204",
+    "id": 263,
+    "tiploc": "FNPK"
+   },
+   "trust": {
+    "event_time": "Tue, 17 Mar 2015 00:58:00 GMT",
+    "event_type": "D",
+    "headcode": "3A00",
+    "id": 18,
+    "origin_departure": "Tue, 17 Mar 2015 01:00:00 GMT",
+    "origin_location": "BNDSGRN",
+    "planned_pass": true,
+    "predicted": false,
+    "seq": 4,
+    "tiploc": "HLWYSJ"
+   }
+  }, {
+   "dist_error": 1.152014491428742,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:58:41 GMT",
+    "event_type": "P",
+    "gps_car_id": "82204",
+    "id": 270,
+    "tiploc": "HLWYSJ"
+   },
+   "trust": {
+    "event_time": "Tue, 17 Mar 2015 00:59:00 GMT",
+    "event_type": "D",
+    "headcode": "3A00",
+    "id": 20,
+    "origin_departure": "Tue, 17 Mar 2015 01:00:00 GMT",
+    "origin_location": "BNDSGRN",
+    "planned_pass": true,
+    "predicted": false,
+    "seq": 5,
+    "tiploc": "KNGXBEL"
+   }
+  }, {
+   "dist_error": 1.0350204372240261,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:00:06 GMT",
+    "event_type": "P",
+    "gps_car_id": "82204",
+    "id": 279,
+    "tiploc": "KNGXBEL"
+   },
+   "trust": {
+    "event_time": "Tue, 17 Mar 2015 01:02:00 GMT",
+    "event_type": "A",
+    "headcode": "3A00",
+    "id": 22,
+    "origin_departure": "Tue, 17 Mar 2015 01:00:00 GMT",
+    "origin_location": "BNDSGRN",
+    "planned_pass": false,
+    "predicted": false,
+    "seq": 6,
+    "tiploc": "KNGX"
+   }
+  }, {
+   "dist_error": 1.0350204372240261,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:02:12 GMT",
+    "event_type": "A",
+    "gps_car_id": "82204",
+    "id": 280,
+    "tiploc": "KNGX"
+   },
+   "trust": {
+    "event_time": "Tue, 17 Mar 2015 02:35:00 GMT",
+    "event_type": "D",
+    "headcode": "3A00",
+    "id": 34,
+    "origin_departure": "Tue, 17 Mar 2015 01:00:00 GMT",
+    "origin_location": "BNDSGRN",
+    "planned_pass": true,
+    "predicted": false,
+    "seq": 7,
+    "tiploc": "KNGXBEL"
+   }
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:33:59 GMT",
+    "event_type": "D",
+    "gps_car_id": "82204",
+    "id": 590,
+    "tiploc": "KNGX"
+   },
+   "trust": null
+  }, {
+   "dist_error": 2.860305041659394,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:35:43 GMT",
+    "event_type": "P",
+    "gps_car_id": "82204",
+    "id": 596,
+    "tiploc": "KNGXBEL"
+   },
+   "trust": {
+    "event_time": "Tue, 17 Mar 2015 02:37:00 GMT",
+    "event_type": "D",
+    "headcode": "3A00",
+    "id": 36,
+    "origin_departure": "Tue, 17 Mar 2015 01:00:00 GMT",
+    "origin_location": "BNDSGRN",
+    "planned_pass": true,
+    "predicted": false,
+    "seq": 8,
+    "tiploc": "FNPK"
+   }
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:35:43 GMT",
+    "event_type": "P",
+    "gps_car_id": "82204",
+    "id": 596,
+    "tiploc": "KNGXBEL"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:37:31 GMT",
+    "event_type": "P",
+    "gps_car_id": "82204",
+    "id": 598,
+    "tiploc": "FNPK"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:38:27 GMT",
+    "event_type": "P",
+    "gps_car_id": "82204",
+    "id": 602,
+    "tiploc": "FRMPKRS"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:40:09 GMT",
+    "event_type": "P",
+    "gps_car_id": "82204",
+    "id": 605,
+    "tiploc": "HRNS453"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:40:35 GMT",
+    "event_type": "P",
+    "gps_car_id": "82204",
+    "id": 604,
+    "tiploc": "HRNS451"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:40:35 GMT",
+    "event_type": "P",
+    "gps_car_id": "82204",
+    "id": 606,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:40:35 GMT",
+    "event_type": "P",
+    "gps_car_id": "82204",
+    "id": 606,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:42:09 GMT",
+    "event_type": "P",
+    "gps_car_id": "82204",
+    "id": 623,
+    "tiploc": "BOWERRL"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:42:09 GMT",
+    "event_type": "P",
+    "gps_car_id": "82204",
+    "id": 609,
+    "tiploc": "BOWESPK"
+   },
+   "trust": null
+  }],
+  "remove": false,
+  "unit": "BN07"
+ }, {
+  "cif_uid": "",
+  "gps_car_id": "82231",
+  "headcode": "",
+  "isPlanned": false,
+  "matching": [{
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:00:33 GMT",
+    "event_type": "A",
+    "gps_car_id": "82231",
+    "id": 5,
+    "tiploc": "BNDSGRN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:08:49 GMT",
+    "event_type": "A",
+    "gps_car_id": "82231",
+    "id": 47,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:09:30 GMT",
+    "event_type": "D",
+    "gps_car_id": "82231",
+    "id": 49,
+    "tiploc": "BNDSGRN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:10:01 GMT",
+    "event_type": "A",
+    "gps_car_id": "82231",
+    "id": 52,
+    "tiploc": "HRNS451"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:13:03 GMT",
+    "event_type": "D",
+    "gps_car_id": "82231",
+    "id": 64,
+    "tiploc": "HRNS451"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:22:30 GMT",
+    "event_type": "D",
+    "gps_car_id": "82231",
+    "id": 96,
+    "tiploc": "BNDSGRN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:22:51 GMT",
+    "event_type": "A",
+    "gps_car_id": "82231",
+    "id": 99,
+    "tiploc": "HRNS451"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:25:34 GMT",
+    "event_type": "D",
+    "gps_car_id": "82231",
+    "id": 110,
+    "tiploc": "HRNS451"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:30:48 GMT",
+    "event_type": "A",
+    "gps_car_id": "82231",
+    "id": 131,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:32:19 GMT",
+    "event_type": "D",
+    "gps_car_id": "82231",
+    "id": 136,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:32:52 GMT",
+    "event_type": "A",
+    "gps_car_id": "82231",
+    "id": 137,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:06:27 GMT",
+    "event_type": "D",
+    "gps_car_id": "82231",
+    "id": 297,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:08:00 GMT",
+    "event_type": "A",
+    "gps_car_id": "82231",
+    "id": 302,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:10:35 GMT",
+    "event_type": "D",
+    "gps_car_id": "82231",
+    "id": 307,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:11:06 GMT",
+    "event_type": "A",
+    "gps_car_id": "82231",
+    "id": 309,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:26:36 GMT",
+    "event_type": "D",
+    "gps_car_id": "82231",
+    "id": 370,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:27:07 GMT",
+    "event_type": "A",
+    "gps_car_id": "82231",
+    "id": 373,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:27:07 GMT",
+    "event_type": "A",
+    "gps_car_id": "82231",
+    "id": 373,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:29:19 GMT",
+    "event_type": "D",
+    "gps_car_id": "82231",
+    "id": 384,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:29:50 GMT",
+    "event_type": "A",
+    "gps_car_id": "82231",
+    "id": 385,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:29:50 GMT",
+    "event_type": "A",
+    "gps_car_id": "82231",
+    "id": 385,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:33:58 GMT",
+    "event_type": "D",
+    "gps_car_id": "82231",
+    "id": 414,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:34:19 GMT",
+    "event_type": "A",
+    "gps_car_id": "82231",
+    "id": 417,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:36:25 GMT",
+    "event_type": "D",
+    "gps_car_id": "82231",
+    "id": 423,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:39:31 GMT",
+    "event_type": "A",
+    "gps_car_id": "82231",
+    "id": 431,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:51:55 GMT",
+    "event_type": "D",
+    "gps_car_id": "82231",
+    "id": 458,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:52:57 GMT",
+    "event_type": "A",
+    "gps_car_id": "82231",
+    "id": 461,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:55:32 GMT",
+    "event_type": "D",
+    "gps_car_id": "82231",
+    "id": 471,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:57:05 GMT",
+    "event_type": "A",
+    "gps_car_id": "82231",
+    "id": 475,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:01:34 GMT",
+    "event_type": "D",
+    "gps_car_id": "82231",
+    "id": 488,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:02:30 GMT",
+    "event_type": "A",
+    "gps_car_id": "82231",
+    "id": 490,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:11:44 GMT",
+    "event_type": "D",
+    "gps_car_id": "82231",
+    "id": 513,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:12:04 GMT",
+    "event_type": "A",
+    "gps_car_id": "82231",
+    "id": 516,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:13:06 GMT",
+    "event_type": "D",
+    "gps_car_id": "82231",
+    "id": 522,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:15:18 GMT",
+    "event_type": "A",
+    "gps_car_id": "82231",
+    "id": 530,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:16:12 GMT",
+    "event_type": "D",
+    "gps_car_id": "82231",
+    "id": 534,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:16:43 GMT",
+    "event_type": "A",
+    "gps_car_id": "82231",
+    "id": 535,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:28:15 GMT",
+    "event_type": "D",
+    "gps_car_id": "82231",
+    "id": 567,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:29:38 GMT",
+    "event_type": "A",
+    "gps_car_id": "82231",
+    "id": 573,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:33:46 GMT",
+    "event_type": "A",
+    "gps_car_id": "82231",
+    "id": 585,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:32:44 GMT",
+    "event_type": "D",
+    "gps_car_id": "82231",
+    "id": 584,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:42:33 GMT",
+    "event_type": "D",
+    "gps_car_id": "82231",
+    "id": 610,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }],
+  "remove": false,
+  "unit": ""
+ }, {
+  "cif_uid": "",
+  "gps_car_id": "82220",
+  "headcode": "",
+  "isPlanned": false,
+  "matching": [{
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:00:33 GMT",
+    "event_type": "A",
+    "gps_car_id": "82220",
+    "id": 3,
+    "tiploc": "BNDSGRN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:03:39 GMT",
+    "event_type": "A",
+    "gps_car_id": "82220",
+    "id": 33,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:03:39 GMT",
+    "event_type": "A",
+    "gps_car_id": "82220",
+    "id": 33,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:04:41 GMT",
+    "event_type": "D",
+    "gps_car_id": "82220",
+    "id": 38,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:04:41 GMT",
+    "event_type": "D",
+    "gps_car_id": "82220",
+    "id": 38,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:12:26 GMT",
+    "event_type": "A",
+    "gps_car_id": "82220",
+    "id": 61,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:12:57 GMT",
+    "event_type": "D",
+    "gps_car_id": "82220",
+    "id": 66,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:20:42 GMT",
+    "event_type": "A",
+    "gps_car_id": "82220",
+    "id": 86,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:22:23 GMT",
+    "event_type": "D",
+    "gps_car_id": "82220",
+    "id": 95,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:22:55 GMT",
+    "event_type": "A",
+    "gps_car_id": "82220",
+    "id": 98,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:23:48 GMT",
+    "event_type": "D",
+    "gps_car_id": "82220",
+    "id": 104,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:02:33 GMT",
+    "event_type": "D",
+    "gps_car_id": "82220",
+    "id": 281,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:30:27 GMT",
+    "event_type": "A",
+    "gps_car_id": "82220",
+    "id": 391,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:31:29 GMT",
+    "event_type": "D",
+    "gps_car_id": "82220",
+    "id": 395,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:45:12 GMT",
+    "event_type": "A",
+    "gps_car_id": "82220",
+    "id": 445,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:46:39 GMT",
+    "event_type": "D",
+    "gps_car_id": "82220",
+    "id": 447,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:48:32 GMT",
+    "event_type": "A",
+    "gps_car_id": "82220",
+    "id": 450,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:49:47 GMT",
+    "event_type": "D",
+    "gps_car_id": "82220",
+    "id": 453,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:12:49 GMT",
+    "event_type": "A",
+    "gps_car_id": "82220",
+    "id": 520,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:13:20 GMT",
+    "event_type": "D",
+    "gps_car_id": "82220",
+    "id": 524,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:17:28 GMT",
+    "event_type": "A",
+    "gps_car_id": "82220",
+    "id": 538,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:18:16 GMT",
+    "event_type": "D",
+    "gps_car_id": "82220",
+    "id": 542,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:25:44 GMT",
+    "event_type": "A",
+    "gps_car_id": "82220",
+    "id": 555,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:29:21 GMT",
+    "event_type": "A",
+    "gps_car_id": "82220",
+    "id": 571,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:30:32 GMT",
+    "event_type": "D",
+    "gps_car_id": "82220",
+    "id": 576,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:38:08 GMT",
+    "event_type": "A",
+    "gps_car_id": "82220",
+    "id": 597,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:39:19 GMT",
+    "event_type": "D",
+    "gps_car_id": "82220",
+    "id": 600,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }],
+  "remove": false,
+  "unit": "BN18"
+ }, {
+  "cif_uid": "",
+  "gps_car_id": "82228",
+  "headcode": "",
+  "isPlanned": false,
+  "matching": [{
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:00:33 GMT",
+    "event_type": "A",
+    "gps_car_id": "82228",
+    "id": 4,
+    "tiploc": "BNDSGRN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:01:47 GMT",
+    "event_type": "A",
+    "gps_car_id": "82228",
+    "id": 29,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:26:31 GMT",
+    "event_type": "D",
+    "gps_car_id": "82228",
+    "id": 116,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:27:23 GMT",
+    "event_type": "A",
+    "gps_car_id": "82228",
+    "id": 120,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:37:14 GMT",
+    "event_type": "D",
+    "gps_car_id": "82228",
+    "id": 154,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:37:14 GMT",
+    "event_type": "D",
+    "gps_car_id": "82228",
+    "id": 154,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:37:45 GMT",
+    "event_type": "A",
+    "gps_car_id": "82228",
+    "id": 155,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:43:34 GMT",
+    "event_type": "D",
+    "gps_car_id": "82228",
+    "id": 201,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:43:34 GMT",
+    "event_type": "D",
+    "gps_car_id": "82228",
+    "id": 201,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:44:28 GMT",
+    "event_type": "A",
+    "gps_car_id": "82228",
+    "id": 209,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:04:14 GMT",
+    "event_type": "D",
+    "gps_car_id": "82228",
+    "id": 288,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:04:14 GMT",
+    "event_type": "D",
+    "gps_car_id": "82228",
+    "id": 288,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:04:35 GMT",
+    "event_type": "A",
+    "gps_car_id": "82228",
+    "id": 291,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:05:39 GMT",
+    "event_type": "D",
+    "gps_car_id": "82228",
+    "id": 294,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:06:10 GMT",
+    "event_type": "A",
+    "gps_car_id": "82228",
+    "id": 295,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:13:55 GMT",
+    "event_type": "D",
+    "gps_car_id": "82228",
+    "id": 317,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:14:26 GMT",
+    "event_type": "A",
+    "gps_car_id": "82228",
+    "id": 318,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:36:08 GMT",
+    "event_type": "D",
+    "gps_car_id": "82228",
+    "id": 420,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:37:18 GMT",
+    "event_type": "A",
+    "gps_car_id": "82228",
+    "id": 425,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:50:17 GMT",
+    "event_type": "A",
+    "gps_car_id": "82228",
+    "id": 454,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:50:17 GMT",
+    "event_type": "A",
+    "gps_car_id": "82228",
+    "id": 454,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:53:20 GMT",
+    "event_type": "D",
+    "gps_car_id": "82228",
+    "id": 463,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:53:51 GMT",
+    "event_type": "A",
+    "gps_car_id": "82228",
+    "id": 466,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:53:51 GMT",
+    "event_type": "A",
+    "gps_car_id": "82228",
+    "id": 466,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:26:55 GMT",
+    "event_type": "D",
+    "gps_car_id": "82228",
+    "id": 559,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:27:48 GMT",
+    "event_type": "A",
+    "gps_car_id": "82228",
+    "id": 565,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }],
+  "remove": false,
+  "unit": ""
+ }, {
+  "cif_uid": "",
+  "gps_car_id": "40735",
+  "headcode": "",
+  "isPlanned": false,
+  "matching": [{
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:00:35 GMT",
+    "event_type": "A",
+    "gps_car_id": "40735",
+    "id": 7,
+    "tiploc": "ABRDEEN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:00:35 GMT",
+    "event_type": "A",
+    "gps_car_id": "40735",
+    "id": 9,
+    "tiploc": "ABRD27"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:13:07 GMT",
+    "event_type": "D",
+    "gps_car_id": "40735",
+    "id": 67,
+    "tiploc": "ABRDEEN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:13:07 GMT",
+    "event_type": "D",
+    "gps_car_id": "40735",
+    "id": 67,
+    "tiploc": "ABRDEEN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:14:02 GMT",
+    "event_type": "D",
+    "gps_car_id": "40735",
+    "id": 70,
+    "tiploc": "ABRDCH"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:46:47 GMT",
+    "event_type": "A",
+    "gps_car_id": "40735",
+    "id": 218,
+    "tiploc": "ABRDFJN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:46:47 GMT",
+    "event_type": "D",
+    "gps_car_id": "40735",
+    "id": 219,
+    "tiploc": "ABRD27"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:46:47 GMT",
+    "event_type": "D",
+    "gps_car_id": "40735",
+    "id": 219,
+    "tiploc": "ABRD27"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:53:40 GMT",
+    "event_type": "D",
+    "gps_car_id": "40735",
+    "id": 250,
+    "tiploc": "ABRDFJN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:56:23 GMT",
+    "event_type": "A",
+    "gps_car_id": "40735",
+    "id": 249,
+    "tiploc": "ABRD27"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:56:54 GMT",
+    "event_type": "A",
+    "gps_car_id": "40735",
+    "id": 254,
+    "tiploc": "ABRDCH"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:57:44 GMT",
+    "event_type": "A",
+    "gps_car_id": "40735",
+    "id": 260,
+    "tiploc": "ABRDEEN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:58:54 GMT",
+    "event_type": "D",
+    "gps_car_id": "40735",
+    "id": 264,
+    "tiploc": "ABRDEEN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:07:10 GMT",
+    "event_type": "A",
+    "gps_car_id": "40735",
+    "id": 300,
+    "tiploc": "ABRDEEN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:24:36 GMT",
+    "event_type": "D",
+    "gps_car_id": "40735",
+    "id": 355,
+    "tiploc": "ABRDEEN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:25:07 GMT",
+    "event_type": "A",
+    "gps_car_id": "40735",
+    "id": 361,
+    "tiploc": "ABRDEEN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:25:38 GMT",
+    "event_type": "D",
+    "gps_car_id": "40735",
+    "id": 365,
+    "tiploc": "ABRDEEN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:26:09 GMT",
+    "event_type": "A",
+    "gps_car_id": "40735",
+    "id": 367,
+    "tiploc": "ABRDEEN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:27:50 GMT",
+    "event_type": "D",
+    "gps_car_id": "40735",
+    "id": 375,
+    "tiploc": "ABRDEEN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:28:11 GMT",
+    "event_type": "A",
+    "gps_car_id": "40735",
+    "id": 379,
+    "tiploc": "ABRDEEN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:30:48 GMT",
+    "event_type": "D",
+    "gps_car_id": "40735",
+    "id": 393,
+    "tiploc": "ABRDEEN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:30:48 GMT",
+    "event_type": "D",
+    "gps_car_id": "40735",
+    "id": 393,
+    "tiploc": "ABRDEEN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:41:08 GMT",
+    "event_type": "A",
+    "gps_car_id": "40735",
+    "id": 432,
+    "tiploc": "ABRDEEN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:41:39 GMT",
+    "event_type": "D",
+    "gps_car_id": "40735",
+    "id": 433,
+    "tiploc": "ABRDEEN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:42:10 GMT",
+    "event_type": "A",
+    "gps_car_id": "40735",
+    "id": 435,
+    "tiploc": "ABRDEEN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:08:00 GMT",
+    "event_type": "D",
+    "gps_car_id": "40735",
+    "id": 505,
+    "tiploc": "ABRDEEN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:09:11 GMT",
+    "event_type": "A",
+    "gps_car_id": "40735",
+    "id": 507,
+    "tiploc": "ABRDEEN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:09:31 GMT",
+    "event_type": "D",
+    "gps_car_id": "40735",
+    "id": 509,
+    "tiploc": "ABRDEEN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:10:04 GMT",
+    "event_type": "A",
+    "gps_car_id": "40735",
+    "id": 511,
+    "tiploc": "ABRDEEN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:10:35 GMT",
+    "event_type": "D",
+    "gps_car_id": "40735",
+    "id": 512,
+    "tiploc": "ABRDEEN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:42:15 GMT",
+    "event_type": "A",
+    "gps_car_id": "40735",
+    "id": 608,
+    "tiploc": "ABRDEEN"
+   },
+   "trust": null
+  }],
+  "remove": false,
+  "unit": "EC52"
+ }, {
+  "cif_uid": "Y58449",
+  "gps_car_id": "82207",
+  "headcode": "5Y52",
+  "isPlanned": true,
+  "matching": [{
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:00:39 GMT",
+    "event_type": "A",
+    "gps_car_id": "82207",
+    "id": 1,
+    "tiploc": "KNGX"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:00:39 GMT",
+    "event_type": "A",
+    "gps_car_id": "82207",
+    "id": 1,
+    "tiploc": "KNGX"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:38:38 GMT",
+    "event_type": "D",
+    "gps_car_id": "82207",
+    "id": 172,
+    "tiploc": "KNGX"
+   },
+   "trust": null
+  }, {
+   "dist_error": 1.152014491428742,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:40:19 GMT",
+    "event_type": "P",
+    "gps_car_id": "82207",
+    "id": 190,
+    "tiploc": "KNGXBEL"
+   },
+   "trust": {
+    "event_time": "Tue, 17 Mar 2015 00:41:00 GMT",
+    "event_type": "D",
+    "headcode": "5Y52",
+    "id": 10,
+    "origin_departure": "Tue, 17 Mar 2015 00:53:00 GMT",
+    "origin_location": "KNGX",
+    "planned_pass": true,
+    "predicted": false,
+    "seq": 3,
+    "tiploc": "HLWYSJ"
+   }
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:40:19 GMT",
+    "event_type": "P",
+    "gps_car_id": "82207",
+    "id": 190,
+    "tiploc": "KNGXBEL"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:40:19 GMT",
+    "event_type": "P",
+    "gps_car_id": "82207",
+    "id": 190,
+    "tiploc": "KNGXBEL"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:43:15 GMT",
+    "event_type": "A",
+    "gps_car_id": "82207",
+    "id": 200,
+    "tiploc": "HLWYSJ"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:43:15 GMT",
+    "event_type": "A",
+    "gps_car_id": "82207",
+    "id": 200,
+    "tiploc": "HLWYSJ"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:48:30 GMT",
+    "event_type": "D",
+    "gps_car_id": "82207",
+    "id": 227,
+    "tiploc": "HLWYSJ"
+   },
+   "trust": null
+  }, {
+   "dist_error": 0,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:49:07 GMT",
+    "event_type": "A",
+    "gps_car_id": "82207",
+    "id": 230,
+    "tiploc": "FNPK"
+   },
+   "trust": {
+    "event_time": "Tue, 17 Mar 2015 00:58:00 GMT",
+    "event_type": "D",
+    "headcode": "5Y52",
+    "id": 19,
+    "origin_departure": "Tue, 17 Mar 2015 00:53:00 GMT",
+    "origin_location": "KNGX",
+    "planned_pass": true,
+    "predicted": false,
+    "seq": 4,
+    "tiploc": "FNPK"
+   }
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:58:56 GMT",
+    "event_type": "D",
+    "gps_car_id": "82207",
+    "id": 850,
+    "tiploc": "FNPK"
+   },
+   "trust": null
+  }],
+  "remove": false,
+  "unit": "BN01"
+ }, {
+  "cif_uid": "",
+  "gps_car_id": "82203",
+  "headcode": "",
+  "isPlanned": false,
+  "matching": [{
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:00:42 GMT",
+    "event_type": "A",
+    "gps_car_id": "82203",
+    "id": 10,
+    "tiploc": "HTONTMD"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:19:13 GMT",
+    "event_type": "D",
+    "gps_car_id": "82203",
+    "id": 337,
+    "tiploc": "HTONTMD"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:19:13 GMT",
+    "event_type": "D",
+    "gps_car_id": "82203",
+    "id": 337,
+    "tiploc": "HTONTMD"
+   },
+   "trust": null
+  }],
+  "remove": false,
+  "unit": "BN30"
+ }, {
+  "cif_uid": "",
+  "gps_car_id": "40720",
+  "headcode": "",
+  "isPlanned": false,
+  "matching": [{
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:00:48 GMT",
+    "event_type": "A",
+    "gps_car_id": "40720",
+    "id": 15,
+    "tiploc": "ABRD27"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:00:48 GMT",
+    "event_type": "A",
+    "gps_car_id": "40720",
+    "id": 14,
+    "tiploc": "ABRDCH"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:00:48 GMT",
+    "event_type": "A",
+    "gps_car_id": "40720",
+    "id": 14,
+    "tiploc": "ABRDCH"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:03:54 GMT",
+    "event_type": "D",
+    "gps_car_id": "40720",
+    "id": 35,
+    "tiploc": "ABRDEEN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:04:25 GMT",
+    "event_type": "A",
+    "gps_car_id": "40720",
+    "id": 37,
+    "tiploc": "ABRDEEN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:06:25 GMT",
+    "event_type": "D",
+    "gps_car_id": "40720",
+    "id": 296,
+    "tiploc": "ABRDEEN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:06:59 GMT",
+    "event_type": "D",
+    "gps_car_id": "40720",
+    "id": 299,
+    "tiploc": "ABRDCH"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:09:42 GMT",
+    "event_type": "D",
+    "gps_car_id": "40720",
+    "id": 305,
+    "tiploc": "ABRD27"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:10:03 GMT",
+    "event_type": "A",
+    "gps_car_id": "40720",
+    "id": 306,
+    "tiploc": "ABRDFJN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:18:50 GMT",
+    "event_type": "A",
+    "gps_car_id": "40720",
+    "id": 333,
+    "tiploc": "ABRD27"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:19:39 GMT",
+    "event_type": "A",
+    "gps_car_id": "40720",
+    "id": 340,
+    "tiploc": "ABRDCH"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:20:43 GMT",
+    "event_type": "A",
+    "gps_car_id": "40720",
+    "id": 343,
+    "tiploc": "ABRDEEN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:24:48 GMT",
+    "event_type": "D",
+    "gps_car_id": "40720",
+    "id": 359,
+    "tiploc": "ABRD27"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:30:16 GMT",
+    "event_type": "A",
+    "gps_car_id": "40720",
+    "id": 388,
+    "tiploc": "ABRD27"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:54:17 GMT",
+    "event_type": "D",
+    "gps_car_id": "40720",
+    "id": 468,
+    "tiploc": "ABRDEEN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:55:12 GMT",
+    "event_type": "D",
+    "gps_car_id": "40720",
+    "id": 469,
+    "tiploc": "ABRDCH"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:58:08 GMT",
+    "event_type": "A",
+    "gps_car_id": "40720",
+    "id": 479,
+    "tiploc": "ABRDCH"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:58:47 GMT",
+    "event_type": "D",
+    "gps_car_id": "40720",
+    "id": 481,
+    "tiploc": "ABRDCH"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:04:51 GMT",
+    "event_type": "D",
+    "gps_car_id": "40720",
+    "id": 497,
+    "tiploc": "ABRDCH"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:17:43 GMT",
+    "event_type": "D",
+    "gps_car_id": "40720",
+    "id": 540,
+    "tiploc": "ABRD27"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:17:43 GMT",
+    "event_type": "A",
+    "gps_car_id": "40720",
+    "id": 539,
+    "tiploc": "ABRDFJN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:25:55 GMT",
+    "event_type": "D",
+    "gps_car_id": "40720",
+    "id": 557,
+    "tiploc": "ABRDFJN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:26:57 GMT",
+    "event_type": "A",
+    "gps_car_id": "40720",
+    "id": 561,
+    "tiploc": "ABRDCH"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:26:57 GMT",
+    "event_type": "A",
+    "gps_car_id": "40720",
+    "id": 561,
+    "tiploc": "ABRDCH"
+   },
+   "trust": null
+  }],
+  "remove": false,
+  "unit": "EC56"
+ }, {
+  "cif_uid": "",
+  "gps_car_id": "82208",
+  "headcode": "",
+  "isPlanned": false,
+  "matching": [{
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:00:55 GMT",
+    "event_type": "A",
+    "gps_car_id": "82208",
+    "id": 12,
+    "tiploc": "BNDSGRN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:02:51 GMT",
+    "event_type": "A",
+    "gps_car_id": "82208",
+    "id": 31,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:05:35 GMT",
+    "event_type": "D",
+    "gps_car_id": "82208",
+    "id": 40,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:22:06 GMT",
+    "event_type": "A",
+    "gps_car_id": "82208",
+    "id": 91,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:22:06 GMT",
+    "event_type": "A",
+    "gps_car_id": "82208",
+    "id": 91,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:22:38 GMT",
+    "event_type": "D",
+    "gps_car_id": "82208",
+    "id": 97,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:23:00 GMT",
+    "event_type": "A",
+    "gps_car_id": "82208",
+    "id": 100,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:23:31 GMT",
+    "event_type": "D",
+    "gps_car_id": "82208",
+    "id": 102,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:25:04 GMT",
+    "event_type": "A",
+    "gps_car_id": "82208",
+    "id": 107,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:28:41 GMT",
+    "event_type": "D",
+    "gps_car_id": "82208",
+    "id": 123,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:29:12 GMT",
+    "event_type": "A",
+    "gps_car_id": "82208",
+    "id": 124,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:30:23 GMT",
+    "event_type": "D",
+    "gps_car_id": "82208",
+    "id": 127,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:31:47 GMT",
+    "event_type": "A",
+    "gps_car_id": "82208",
+    "id": 133,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:34:30 GMT",
+    "event_type": "D",
+    "gps_car_id": "82208",
+    "id": 142,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:36:26 GMT",
+    "event_type": "A",
+    "gps_car_id": "82208",
+    "id": 151,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:38:59 GMT",
+    "event_type": "D",
+    "gps_car_id": "82208",
+    "id": 163,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:39:32 GMT",
+    "event_type": "A",
+    "gps_car_id": "82208",
+    "id": 166,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:40:34 GMT",
+    "event_type": "D",
+    "gps_car_id": "82208",
+    "id": 174,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:41:36 GMT",
+    "event_type": "A",
+    "gps_car_id": "82208",
+    "id": 185,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:43:40 GMT",
+    "event_type": "D",
+    "gps_car_id": "82208",
+    "id": 203,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:46:23 GMT",
+    "event_type": "A",
+    "gps_car_id": "82208",
+    "id": 215,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:48:19 GMT",
+    "event_type": "D",
+    "gps_car_id": "82208",
+    "id": 226,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:54:00 GMT",
+    "event_type": "A",
+    "gps_car_id": "82208",
+    "id": 242,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:55:13 GMT",
+    "event_type": "D",
+    "gps_car_id": "82208",
+    "id": 246,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:55:31 GMT",
+    "event_type": "A",
+    "gps_car_id": "82208",
+    "id": 248,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:56:35 GMT",
+    "event_type": "D",
+    "gps_car_id": "82208",
+    "id": 253,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:56:35 GMT",
+    "event_type": "D",
+    "gps_car_id": "82208",
+    "id": 253,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:57:06 GMT",
+    "event_type": "A",
+    "gps_car_id": "82208",
+    "id": 256,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:01:14 GMT",
+    "event_type": "D",
+    "gps_car_id": "82208",
+    "id": 276,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:02:55 GMT",
+    "event_type": "A",
+    "gps_car_id": "82208",
+    "id": 282,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:03:26 GMT",
+    "event_type": "D",
+    "gps_car_id": "82208",
+    "id": 284,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:07:03 GMT",
+    "event_type": "D",
+    "gps_car_id": "82208",
+    "id": 298,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:12:36 GMT",
+    "event_type": "A",
+    "gps_car_id": "82208",
+    "id": 312,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:13:07 GMT",
+    "event_type": "D",
+    "gps_car_id": "82208",
+    "id": 314,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:14:40 GMT",
+    "event_type": "A",
+    "gps_car_id": "82208",
+    "id": 321,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:15:19 GMT",
+    "event_type": "D",
+    "gps_car_id": "82208",
+    "id": 323,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:15:50 GMT",
+    "event_type": "A",
+    "gps_car_id": "82208",
+    "id": 326,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:17:15 GMT",
+    "event_type": "D",
+    "gps_car_id": "82208",
+    "id": 332,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:19:27 GMT",
+    "event_type": "A",
+    "gps_car_id": "82208",
+    "id": 338,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:19:27 GMT",
+    "event_type": "A",
+    "gps_car_id": "82208",
+    "id": 338,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:22:25 GMT",
+    "event_type": "D",
+    "gps_car_id": "82208",
+    "id": 348,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:23:35 GMT",
+    "event_type": "A",
+    "gps_car_id": "82208",
+    "id": 349,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:24:06 GMT",
+    "event_type": "D",
+    "gps_car_id": "82208",
+    "id": 352,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:25:00 GMT",
+    "event_type": "A",
+    "gps_car_id": "82208",
+    "id": 360,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:25:31 GMT",
+    "event_type": "D",
+    "gps_car_id": "82208",
+    "id": 364,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:27:45 GMT",
+    "event_type": "A",
+    "gps_car_id": "82208",
+    "id": 374,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:32:22 GMT",
+    "event_type": "A",
+    "gps_car_id": "82208",
+    "id": 401,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:32:43 GMT",
+    "event_type": "D",
+    "gps_car_id": "82208",
+    "id": 404,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:33:16 GMT",
+    "event_type": "A",
+    "gps_car_id": "82208",
+    "id": 408,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:33:47 GMT",
+    "event_type": "D",
+    "gps_car_id": "82208",
+    "id": 413,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:33:47 GMT",
+    "event_type": "D",
+    "gps_car_id": "82208",
+    "id": 413,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:35:20 GMT",
+    "event_type": "A",
+    "gps_car_id": "82208",
+    "id": 419,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:36:51 GMT",
+    "event_type": "D",
+    "gps_car_id": "82208",
+    "id": 424,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:43:05 GMT",
+    "event_type": "A",
+    "gps_car_id": "82208",
+    "id": 438,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:44:57 GMT",
+    "event_type": "D",
+    "gps_car_id": "82208",
+    "id": 444,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:45:53 GMT",
+    "event_type": "A",
+    "gps_car_id": "82208",
+    "id": 446,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:47:13 GMT",
+    "event_type": "D",
+    "gps_car_id": "82208",
+    "id": 449,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:47:13 GMT",
+    "event_type": "D",
+    "gps_car_id": "82208",
+    "id": 449,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:56:00 GMT",
+    "event_type": "A",
+    "gps_car_id": "82208",
+    "id": 473,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:57:31 GMT",
+    "event_type": "D",
+    "gps_car_id": "82208",
+    "id": 477,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:58:04 GMT",
+    "event_type": "A",
+    "gps_car_id": "82208",
+    "id": 478,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:58:35 GMT",
+    "event_type": "D",
+    "gps_car_id": "82208",
+    "id": 480,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:00:08 GMT",
+    "event_type": "A",
+    "gps_car_id": "82208",
+    "id": 484,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:01:31 GMT",
+    "event_type": "D",
+    "gps_car_id": "82208",
+    "id": 487,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:02:28 GMT",
+    "event_type": "A",
+    "gps_car_id": "82208",
+    "id": 489,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:02:56 GMT",
+    "event_type": "D",
+    "gps_car_id": "82208",
+    "id": 491,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:03:26 GMT",
+    "event_type": "A",
+    "gps_car_id": "82208",
+    "id": 492,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:14:14 GMT",
+    "event_type": "D",
+    "gps_car_id": "82208",
+    "id": 525,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:14:36 GMT",
+    "event_type": "A",
+    "gps_car_id": "82208",
+    "id": 527,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:15:07 GMT",
+    "event_type": "D",
+    "gps_car_id": "82208",
+    "id": 529,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:15:38 GMT",
+    "event_type": "A",
+    "gps_car_id": "82208",
+    "id": 532,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:17:53 GMT",
+    "event_type": "D",
+    "gps_car_id": "82208",
+    "id": 541,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:18:33 GMT",
+    "event_type": "A",
+    "gps_car_id": "82208",
+    "id": 543,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:24:25 GMT",
+    "event_type": "D",
+    "gps_car_id": "82208",
+    "id": 553,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:31:08 GMT",
+    "event_type": "A",
+    "gps_car_id": "82208",
+    "id": 580,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:34:56 GMT",
+    "event_type": "D",
+    "gps_car_id": "82208",
+    "id": 587,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:34:56 GMT",
+    "event_type": "D",
+    "gps_car_id": "82208",
+    "id": 587,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:38:31 GMT",
+    "event_type": "A",
+    "gps_car_id": "82208",
+    "id": 599,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:39:24 GMT",
+    "event_type": "D",
+    "gps_car_id": "82208",
+    "id": 601,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }],
+  "remove": false,
+  "unit": "BN06"
+ }, {
+  "cif_uid": "",
+  "gps_car_id": "40705",
+  "headcode": "",
+  "isPlanned": false,
+  "matching": [{
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:00:56 GMT",
+    "event_type": "A",
+    "gps_car_id": "40705",
+    "id": 18,
+    "tiploc": "IVRNTMD"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:00:56 GMT",
+    "event_type": "A",
+    "gps_car_id": "40705",
+    "id": 18,
+    "tiploc": "IVRNTMD"
+   },
+   "trust": null
+  }],
+  "remove": false,
+  "unit": "EC54"
+ }, {
+  "cif_uid": "Y58228",
+  "gps_car_id": "40701",
+  "headcode": "5E30",
+  "isPlanned": true,
+  "matching": [{
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:00:57 GMT",
+    "event_type": "P",
+    "gps_car_id": "40701",
+    "id": 32,
+    "tiploc": "SKELTON"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:00:57 GMT",
+    "event_type": "P",
+    "gps_car_id": "40701",
+    "id": 32,
+    "tiploc": "SKELTON"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:00:57 GMT",
+    "event_type": "P",
+    "gps_car_id": "40701",
+    "id": 32,
+    "tiploc": "SKELTON"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:19:00 GMT",
+    "event_type": "D",
+    "gps_car_id": "40701",
+    "id": 103,
+    "tiploc": "YORK"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:19:00 GMT",
+    "event_type": "D",
+    "gps_car_id": "40701",
+    "id": 103,
+    "tiploc": "YORK"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:23:46 GMT",
+    "event_type": "P",
+    "gps_car_id": "40701",
+    "id": 125,
+    "tiploc": "COLTONJ"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:30:07 GMT",
+    "event_type": "P",
+    "gps_car_id": "40701",
+    "id": 144,
+    "tiploc": "CHFN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:34:36 GMT",
+    "event_type": "P",
+    "gps_car_id": "40701",
+    "id": 160,
+    "tiploc": "MCKLFLD"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:38:28 GMT",
+    "event_type": "P",
+    "gps_car_id": "40701",
+    "id": 173,
+    "tiploc": "CSGT"
+   },
+   "trust": null
+  }, {
+   "dist_error": 0,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:40:27 GMT",
+    "event_type": "P",
+    "gps_car_id": "40701",
+    "id": 177,
+    "tiploc": "NEVLTMD"
+   },
+   "trust": {
+    "event_time": "Tue, 17 Mar 2015 01:10:00 GMT",
+    "event_type": "A",
+    "headcode": "5E30",
+    "id": 23,
+    "origin_departure": "Tue, 17 Mar 2015 00:55:00 GMT",
+    "origin_location": "LEEDS",
+    "planned_pass": false,
+    "predicted": false,
+    "seq": 4,
+    "tiploc": "NEVLTMD"
+   }
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:40:50 GMT",
+    "event_type": "P",
+    "gps_car_id": "40701",
+    "id": 186,
+    "tiploc": "NEVLWJN"
+   },
+   "trust": null
+  }, {
+   "dist_error": 0,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:41:39 GMT",
+    "event_type": "P",
+    "gps_car_id": "40701",
+    "id": 207,
+    "tiploc": "MRLNJN"
+   },
+   "trust": {
+    "event_time": "Tue, 17 Mar 2015 01:00:00 GMT",
+    "event_type": "D",
+    "headcode": "5E30",
+    "id": 21,
+    "origin_departure": "Tue, 17 Mar 2015 00:55:00 GMT",
+    "origin_location": "LEEDS",
+    "planned_pass": true,
+    "predicted": false,
+    "seq": 2,
+    "tiploc": "MRLNJN"
+   }
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:41:39 GMT",
+    "event_type": "P",
+    "gps_car_id": "40701",
+    "id": 207,
+    "tiploc": "MRLNJN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:59:43 GMT",
+    "event_type": "D",
+    "gps_car_id": "40701",
+    "id": 266,
+    "tiploc": "LEEDS"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:01:24 GMT",
+    "event_type": "A",
+    "gps_car_id": "40701",
+    "id": 277,
+    "tiploc": "MRLNJN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:23:31 GMT",
+    "event_type": "D",
+    "gps_car_id": "40701",
+    "id": 350,
+    "tiploc": "MRLNJN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:24:33 GMT",
+    "event_type": "A",
+    "gps_car_id": "40701",
+    "id": 354,
+    "tiploc": "NEVLWJN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:24:33 GMT",
+    "event_type": "A",
+    "gps_car_id": "40701",
+    "id": 354,
+    "tiploc": "NEVLWJN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:26:46 GMT",
+    "event_type": "D",
+    "gps_car_id": "40701",
+    "id": 372,
+    "tiploc": "NEVLWJN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:26:46 GMT",
+    "event_type": "D",
+    "gps_car_id": "40701",
+    "id": 372,
+    "tiploc": "NEVLWJN"
+   },
+   "trust": null
+  }],
+  "remove": false,
+  "unit": "EC62"
+ }, {
+  "cif_uid": "",
+  "gps_car_id": "82229",
+  "headcode": "",
+  "isPlanned": false,
+  "matching": [{
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:00:58 GMT",
+    "event_type": "A",
+    "gps_car_id": "82229",
+    "id": 20,
+    "tiploc": "NEVLTMD"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:57:50 GMT",
+    "event_type": "D",
+    "gps_car_id": "82229",
+    "id": 676,
+    "tiploc": "NEVLTMD"
+   },
+   "trust": null
+  }],
+  "remove": false,
+  "unit": "BN24"
+ }, {
+  "cif_uid": "",
+  "gps_car_id": "82223",
+  "headcode": "",
+  "isPlanned": false,
+  "matching": [{
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:00:59 GMT",
+    "event_type": "A",
+    "gps_car_id": "82223",
+    "id": 21,
+    "tiploc": "LEEDS"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:00:59 GMT",
+    "event_type": "A",
+    "gps_car_id": "82223",
+    "id": 21,
+    "tiploc": "LEEDS"
+   },
+   "trust": null
+  }],
+  "remove": false,
+  "unit": "BN26"
+ }, {
+  "cif_uid": "",
+  "gps_car_id": "82227",
+  "headcode": "",
+  "isPlanned": false,
+  "matching": [{
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:01:00 GMT",
+    "event_type": "A",
+    "gps_car_id": "82227",
+    "id": 26,
+    "tiploc": "PLMDCMD"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:01:00 GMT",
+    "event_type": "A",
+    "gps_car_id": "82227",
+    "id": 26,
+    "tiploc": "PLMDCMD"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:01:00 GMT",
+    "event_type": "A",
+    "gps_car_id": "82227",
+    "id": 26,
+    "tiploc": "PLMDCMD"
+   },
+   "trust": null
+  }],
+  "remove": false,
+  "unit": "BN21"
+ }, {
+  "cif_uid": "Y58471",
+  "gps_car_id": "82205",
+  "headcode": "5A07",
+  "isPlanned": true,
+  "matching": [{
+   "dist_error": 0.5302832191878593,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:01:00 GMT",
+    "event_type": "A",
+    "gps_car_id": "82205",
+    "id": 24,
+    "tiploc": "NEVLWJN"
+   },
+   "trust": {
+    "event_time": "Tue, 17 Mar 2015 00:28:00 GMT",
+    "event_type": "D",
+    "headcode": "5A07",
+    "id": 1,
+    "origin_departure": "Tue, 17 Mar 2015 00:08:00 GMT",
+    "origin_location": "NEVLTMD",
+    "planned_pass": false,
+    "predicted": false,
+    "seq": 1,
+    "tiploc": "NEVLTMD"
+   }
+  }, {
+   "dist_error": 1.0617995227384924,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:01:00 GMT",
+    "event_type": "A",
+    "gps_car_id": "82205",
+    "id": 24,
+    "tiploc": "NEVLWJN"
+   },
+   "trust": {
+    "event_time": "Tue, 17 Mar 2015 00:30:00 GMT",
+    "event_type": "D",
+    "headcode": "5A07",
+    "id": 2,
+    "origin_departure": "Tue, 17 Mar 2015 00:08:00 GMT",
+    "origin_location": "NEVLTMD",
+    "planned_pass": true,
+    "predicted": false,
+    "seq": 3,
+    "tiploc": "MRLNJN"
+   }
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:27:39 GMT",
+    "event_type": "D",
+    "gps_car_id": "82205",
+    "id": 130,
+    "tiploc": "NEVLWJN"
+   },
+   "trust": null
+  }, {
+   "dist_error": 1.6091028365406657,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:30:33 GMT",
+    "event_type": "P",
+    "gps_car_id": "82205",
+    "id": 139,
+    "tiploc": "MRLNJN"
+   },
+   "trust": {
+    "event_time": "Tue, 17 Mar 2015 00:37:00 GMT",
+    "event_type": "D",
+    "headcode": "5A07",
+    "id": 4,
+    "origin_departure": "Tue, 17 Mar 2015 00:08:00 GMT",
+    "origin_location": "NEVLTMD",
+    "planned_pass": false,
+    "predicted": false,
+    "seq": 4,
+    "tiploc": "LEEDS"
+   }
+  }, {
+   "dist_error": 0,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:33:02 GMT",
+    "event_type": "A",
+    "gps_car_id": "82205",
+    "id": 138,
+    "tiploc": "LEEDS"
+   },
+   "trust": {
+    "event_time": "Tue, 17 Mar 2015 00:33:00 GMT",
+    "event_type": "A",
+    "headcode": "5A07",
+    "id": 3,
+    "origin_departure": "Tue, 17 Mar 2015 00:08:00 GMT",
+    "origin_location": "NEVLTMD",
+    "planned_pass": false,
+    "predicted": false,
+    "seq": 4,
+    "tiploc": "LEEDS"
+   }
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:37:58 GMT",
+    "event_type": "D",
+    "gps_car_id": "82205",
+    "id": 159,
+    "tiploc": "LEEDS"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:38:20 GMT",
+    "event_type": "P",
+    "gps_car_id": "82205",
+    "id": 162,
+    "tiploc": "LEEDSWJ"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:38:49 GMT",
+    "event_type": "P",
+    "gps_car_id": "82205",
+    "id": 169,
+    "tiploc": "LEED631"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:39:39 GMT",
+    "event_type": "A",
+    "gps_car_id": "82205",
+    "id": 168,
+    "tiploc": "WHRDJN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:41:37 GMT",
+    "event_type": "D",
+    "gps_car_id": "82205",
+    "id": 193,
+    "tiploc": "LEED615"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:42:08 GMT",
+    "event_type": "P",
+    "gps_car_id": "82205",
+    "id": 197,
+    "tiploc": "LEED631"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:43:18 GMT",
+    "event_type": "A",
+    "gps_car_id": "82205",
+    "id": 199,
+    "tiploc": "LEEDSWJ"
+   },
+   "trust": null
+  }],
+  "remove": false,
+  "unit": "BN10"
+ }, {
+  "cif_uid": "",
+  "gps_car_id": "82222",
+  "headcode": "",
+  "isPlanned": false,
+  "matching": [{
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:01:12 GMT",
+    "event_type": "A",
+    "gps_car_id": "82222",
+    "id": 27,
+    "tiploc": "HTONTMD"
+   },
+   "trust": null
+  }],
+  "remove": false,
+  "unit": "BN16"
+ }, {
+  "cif_uid": "",
+  "gps_car_id": "82201",
+  "headcode": "",
+  "isPlanned": false,
+  "matching": [{
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:01:34 GMT",
+    "event_type": "A",
+    "gps_car_id": "82201",
+    "id": 28,
+    "tiploc": "HTONSJN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:07:53 GMT",
+    "event_type": "D",
+    "gps_car_id": "82201",
+    "id": 378,
+    "tiploc": "HTONSJN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:28:01 GMT",
+    "event_type": "A",
+    "gps_car_id": "82201",
+    "id": 377,
+    "tiploc": "HTONTMD"
+   },
+   "trust": null
+  }],
+  "remove": false,
+  "unit": "BN19"
+ }, {
+  "cif_uid": "",
+  "gps_car_id": "40708",
+  "headcode": "",
+  "isPlanned": false,
+  "matching": [{
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:04:19 GMT",
+    "event_type": "P",
+    "gps_car_id": "40708",
+    "id": 58,
+    "tiploc": "SNDY"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:11:39 GMT",
+    "event_type": "P",
+    "gps_car_id": "40708",
+    "id": 73,
+    "tiploc": "HNTNGDN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:15:47 GMT",
+    "event_type": "P",
+    "gps_car_id": "40708",
+    "id": 77,
+    "tiploc": "CNNGSJN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:16:54 GMT",
+    "event_type": "P",
+    "gps_car_id": "40708",
+    "id": 84,
+    "tiploc": "HOLME"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:20:27 GMT",
+    "event_type": "P",
+    "gps_car_id": "40708",
+    "id": 90,
+    "tiploc": "FLETTON"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:21:12 GMT",
+    "event_type": "P",
+    "gps_car_id": "40708",
+    "id": 94,
+    "tiploc": "PBROE"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:23:18 GMT",
+    "event_type": "A",
+    "gps_car_id": "40708",
+    "id": 101,
+    "tiploc": "PBRO"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:25:05 GMT",
+    "event_type": "D",
+    "gps_car_id": "40708",
+    "id": 111,
+    "tiploc": "PBRO"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:25:42 GMT",
+    "event_type": "P",
+    "gps_car_id": "40708",
+    "id": 122,
+    "tiploc": "PBROLIP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:25:42 GMT",
+    "event_type": "P",
+    "gps_car_id": "40708",
+    "id": 122,
+    "tiploc": "PBROLIP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:28:35 GMT",
+    "event_type": "P",
+    "gps_car_id": "40708",
+    "id": 129,
+    "tiploc": "WRNGTNJ"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:30:27 GMT",
+    "event_type": "P",
+    "gps_car_id": "40708",
+    "id": 134,
+    "tiploc": "HELPSTN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:32:02 GMT",
+    "event_type": "P",
+    "gps_car_id": "40708",
+    "id": 164,
+    "tiploc": "TALNGTN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:39:16 GMT",
+    "event_type": "P",
+    "gps_car_id": "40708",
+    "id": 181,
+    "tiploc": "SOKEJN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:41:26 GMT",
+    "event_type": "P",
+    "gps_car_id": "40708",
+    "id": 211,
+    "tiploc": "HGHDJN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:45:36 GMT",
+    "event_type": "A",
+    "gps_car_id": "40708",
+    "id": 214,
+    "tiploc": "GTHM"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:47:32 GMT",
+    "event_type": "D",
+    "gps_car_id": "40708",
+    "id": 243,
+    "tiploc": "GTHM"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:54:02 GMT",
+    "event_type": "P",
+    "gps_car_id": "40708",
+    "id": 258,
+    "tiploc": "CLPLLP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:58:10 GMT",
+    "event_type": "A",
+    "gps_car_id": "40708",
+    "id": 261,
+    "tiploc": "NEWANG"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:03:15 GMT",
+    "event_type": "D",
+    "gps_car_id": "40708",
+    "id": 286,
+    "tiploc": "NEWANG"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:03:55 GMT",
+    "event_type": "P",
+    "gps_car_id": "40708",
+    "id": 289,
+    "tiploc": "NWRKFC"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:04:19 GMT",
+    "event_type": "P",
+    "gps_car_id": "40708",
+    "id": 319,
+    "tiploc": "NWRKCEJ"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:04:19 GMT",
+    "event_type": "P",
+    "gps_car_id": "40708",
+    "id": 319,
+    "tiploc": "NWRKCEJ"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:14:27 GMT",
+    "event_type": "P",
+    "gps_car_id": "40708",
+    "id": 353,
+    "tiploc": "RTFD"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:24:28 GMT",
+    "event_type": "P",
+    "gps_car_id": "40708",
+    "id": 356,
+    "tiploc": "DONCLCJ"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:25:23 GMT",
+    "event_type": "P",
+    "gps_car_id": "40708",
+    "id": 369,
+    "tiploc": "DONCBCJ"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:26:30 GMT",
+    "event_type": "P",
+    "gps_car_id": "40708",
+    "id": 382,
+    "tiploc": "DONCDNJ"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:26:40 GMT",
+    "event_type": "P",
+    "gps_car_id": "40708",
+    "id": 383,
+    "tiploc": "DONCPCJ"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:28:52 GMT",
+    "event_type": "P",
+    "gps_car_id": "40708",
+    "id": 387,
+    "tiploc": "DONCBJN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:31:43 GMT",
+    "event_type": "A",
+    "gps_car_id": "40708",
+    "id": 397,
+    "tiploc": "DONC"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:31:43 GMT",
+    "event_type": "A",
+    "gps_car_id": "40708",
+    "id": 397,
+    "tiploc": "DONC"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:33:37 GMT",
+    "event_type": "D",
+    "gps_car_id": "40708",
+    "id": 415,
+    "tiploc": "DONC"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:33:37 GMT",
+    "event_type": "D",
+    "gps_car_id": "40708",
+    "id": 415,
+    "tiploc": "DONC"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:34:31 GMT",
+    "event_type": "P",
+    "gps_car_id": "40708",
+    "id": 430,
+    "tiploc": "DONCMRG"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:39:21 GMT",
+    "event_type": "P",
+    "gps_car_id": "40708",
+    "id": 456,
+    "tiploc": "SHFTHLJ"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:51:52 GMT",
+    "event_type": "P",
+    "gps_car_id": "40708",
+    "id": 462,
+    "tiploc": "KNTNGSJ"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:52:59 GMT",
+    "event_type": "P",
+    "gps_car_id": "40708",
+    "id": 474,
+    "tiploc": "KNTNGWJ"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:56:35 GMT",
+    "event_type": "P",
+    "gps_car_id": "40708",
+    "id": 500,
+    "tiploc": "PTFTMHL"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:07:07 GMT",
+    "event_type": "P",
+    "gps_car_id": "40708",
+    "id": 508,
+    "tiploc": "CRFTNEJ"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:09:18 GMT",
+    "event_type": "P",
+    "gps_car_id": "40708",
+    "id": 514,
+    "tiploc": "CRFTNWJ"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:12:08 GMT",
+    "event_type": "P",
+    "gps_car_id": "40708",
+    "id": 526,
+    "tiploc": "CLDBDGJ"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:14:43 GMT",
+    "event_type": "P",
+    "gps_car_id": "40708",
+    "id": 544,
+    "tiploc": "TRNRSLA"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:19:04 GMT",
+    "event_type": "P",
+    "gps_car_id": "40708",
+    "id": 547,
+    "tiploc": "ALTFTJN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:20:15 GMT",
+    "event_type": "P",
+    "gps_car_id": "40708",
+    "id": 578,
+    "tiploc": "METHLYJ"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:30:50 GMT",
+    "event_type": "P",
+    "gps_car_id": "40708",
+    "id": 586,
+    "tiploc": "STRTJN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:34:03 GMT",
+    "event_type": "P",
+    "gps_car_id": "40708",
+    "id": 589,
+    "tiploc": "ESJLEDS"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:34:32 GMT",
+    "event_type": "P",
+    "gps_car_id": "40708",
+    "id": 591,
+    "tiploc": "LEED631"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:35:18 GMT",
+    "event_type": "P",
+    "gps_car_id": "40708",
+    "id": 592,
+    "tiploc": "LEEDSWJ"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:35:18 GMT",
+    "event_type": "P",
+    "gps_car_id": "40708",
+    "id": 592,
+    "tiploc": "LEEDSWJ"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:36:36 GMT",
+    "event_type": "A",
+    "gps_car_id": "40708",
+    "id": 595,
+    "tiploc": "LEEDS"
+   },
+   "trust": null
+  }],
+  "remove": false,
+  "unit": "EC63"
+ }, {
+  "cif_uid": "Y58223",
+  "gps_car_id": "40732",
+  "headcode": "5D33",
+  "isPlanned": true,
+  "matching": [{
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:05:03 GMT",
+    "event_type": "P",
+    "gps_car_id": "40732",
+    "id": 39,
+    "tiploc": "HOLBJCN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:05:39 GMT",
+    "event_type": "P",
+    "gps_car_id": "40732",
+    "id": 41,
+    "tiploc": "LEED615"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:06:01 GMT",
+    "event_type": "P",
+    "gps_car_id": "40732",
+    "id": 44,
+    "tiploc": "LEED631"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:06:01 GMT",
+    "event_type": "P",
+    "gps_car_id": "40732",
+    "id": 44,
+    "tiploc": "LEED631"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:06:26 GMT",
+    "event_type": "P",
+    "gps_car_id": "40732",
+    "id": 43,
+    "tiploc": "LEEDSWJ"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:07:47 GMT",
+    "event_type": "A",
+    "gps_car_id": "40732",
+    "id": 46,
+    "tiploc": "LEEDS"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:41:06 GMT",
+    "event_type": "D",
+    "gps_car_id": "40732",
+    "id": 178,
+    "tiploc": "LEEDS"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:41:06 GMT",
+    "event_type": "D",
+    "gps_car_id": "40732",
+    "id": 178,
+    "tiploc": "LEEDS"
+   },
+   "trust": null
+  }, {
+   "dist_error": 1.489101932903362,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:41:37 GMT",
+    "event_type": "P",
+    "gps_car_id": "40732",
+    "id": 310,
+    "tiploc": "MRLNJN"
+   },
+   "trust": {
+    "event_time": "Tue, 17 Mar 2015 00:44:00 GMT",
+    "event_type": "A",
+    "headcode": "5D33",
+    "id": 12,
+    "origin_departure": "Tue, 17 Mar 2015 00:25:00 GMT",
+    "origin_location": "LEEDS",
+    "planned_pass": false,
+    "predicted": false,
+    "seq": 4,
+    "tiploc": "NEVLTMD"
+   }
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:13:36 GMT",
+    "event_type": "A",
+    "gps_car_id": "40732",
+    "id": 316,
+    "tiploc": "NEVLWJN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:14:15 GMT",
+    "event_type": "D",
+    "gps_car_id": "40732",
+    "id": 320,
+    "tiploc": "NEVLWJN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:15:07 GMT",
+    "event_type": "A",
+    "gps_car_id": "40732",
+    "id": 322,
+    "tiploc": "NEVLTMD"
+   },
+   "trust": null
+  }],
+  "remove": false,
+  "unit": "EC64"
+ }, {
+  "cif_uid": "",
+  "gps_car_id": "82217",
+  "headcode": "",
+  "isPlanned": false,
+  "matching": [{
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:05:15 GMT",
+    "event_type": "P",
+    "gps_car_id": "82217",
+    "id": 55,
+    "tiploc": "SNDY"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:11:07 GMT",
+    "event_type": "P",
+    "gps_car_id": "82217",
+    "id": 71,
+    "tiploc": "HITCHIN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:16:03 GMT",
+    "event_type": "A",
+    "gps_car_id": "82217",
+    "id": 75,
+    "tiploc": "STEVNGE"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:19:15 GMT",
+    "event_type": "P",
+    "gps_car_id": "82217",
+    "id": 88,
+    "tiploc": "LNGYJN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:20:58 GMT",
+    "event_type": "P",
+    "gps_car_id": "82217",
+    "id": 117,
+    "tiploc": "BRAGJN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:34:19 GMT",
+    "event_type": "P",
+    "gps_car_id": "82217",
+    "id": 170,
+    "tiploc": "GORDONH"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:41:18 GMT",
+    "event_type": "P",
+    "gps_car_id": "82217",
+    "id": 192,
+    "tiploc": "BNDSGRN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:42:15 GMT",
+    "event_type": "P",
+    "gps_car_id": "82217",
+    "id": 205,
+    "tiploc": "HRNS451"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:43:51 GMT",
+    "event_type": "P",
+    "gps_car_id": "82217",
+    "id": 213,
+    "tiploc": "FRMPKRS"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:44:57 GMT",
+    "event_type": "P",
+    "gps_car_id": "82217",
+    "id": 217,
+    "tiploc": "FNPK"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:46:27 GMT",
+    "event_type": "P",
+    "gps_car_id": "82217",
+    "id": 224,
+    "tiploc": "HLWYSJ"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:47:47 GMT",
+    "event_type": "P",
+    "gps_car_id": "82217",
+    "id": 231,
+    "tiploc": "KNGXBEL"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:49:55 GMT",
+    "event_type": "A",
+    "gps_car_id": "82217",
+    "id": 233,
+    "tiploc": "KNGX"
+   },
+   "trust": null
+  }],
+  "remove": false,
+  "unit": "BN28"
+ }, {
+  "cif_uid": "",
+  "gps_car_id": "82230",
+  "headcode": "",
+  "isPlanned": false,
+  "matching": [{
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:06:32 GMT",
+    "event_type": "P",
+    "gps_car_id": "82230",
+    "id": 54,
+    "tiploc": "ABHLJN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:11:28 GMT",
+    "event_type": "A",
+    "gps_car_id": "82230",
+    "id": 57,
+    "tiploc": "CRGNTYJ"
+   },
+   "trust": null
+  }],
+  "remove": false,
+  "unit": ""
+ }, {
+  "cif_uid": "Y58530",
+  "gps_car_id": "82209",
+  "headcode": "5N34",
+  "isPlanned": true,
+  "matching": [{
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:06:40 GMT",
+    "event_type": "P",
+    "gps_car_id": "82209",
+    "id": 45,
+    "tiploc": "FYHLSJN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:06:40 GMT",
+    "event_type": "P",
+    "gps_car_id": "82209",
+    "id": 45,
+    "tiploc": "FYHLSJN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:07:37 GMT",
+    "event_type": "P",
+    "gps_car_id": "82209",
+    "id": 62,
+    "tiploc": "TURSDLJ"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:13:55 GMT",
+    "event_type": "A",
+    "gps_car_id": "82209",
+    "id": 69,
+    "tiploc": "DRHM"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:14:48 GMT",
+    "event_type": "D",
+    "gps_car_id": "82209",
+    "id": 85,
+    "tiploc": "DRHM"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:20:41 GMT",
+    "event_type": "P",
+    "gps_car_id": "82209",
+    "id": 105,
+    "tiploc": "BRTLYJN"
+   },
+   "trust": null
+  }, {
+   "dist_error": 3.2993019649880924,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:24:20 GMT",
+    "event_type": "P",
+    "gps_car_id": "82209",
+    "id": 114,
+    "tiploc": "KEBGEJN"
+   },
+   "trust": {
+    "event_time": "Tue, 17 Mar 2015 00:45:00 GMT",
+    "event_type": "D",
+    "headcode": "5N34",
+    "id": 13,
+    "origin_departure": "Tue, 17 Mar 2015 00:54:00 GMT",
+    "origin_location": "NWCSTLE",
+    "planned_pass": true,
+    "predicted": false,
+    "seq": 2,
+    "tiploc": "HTONSJN"
+   }
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:24:20 GMT",
+    "event_type": "P",
+    "gps_car_id": "82209",
+    "id": 114,
+    "tiploc": "KEBGEJN"
+   },
+   "trust": null
+  }, {
+   "dist_error": 3.1584780203433356,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:26:07 GMT",
+    "event_type": "A",
+    "gps_car_id": "82209",
+    "id": 112,
+    "tiploc": "NWCSTLE"
+   },
+   "trust": {
+    "event_time": "Tue, 17 Mar 2015 00:45:00 GMT",
+    "event_type": "D",
+    "headcode": "5N34",
+    "id": 13,
+    "origin_departure": "Tue, 17 Mar 2015 00:54:00 GMT",
+    "origin_location": "NWCSTLE",
+    "planned_pass": true,
+    "predicted": false,
+    "seq": 2,
+    "tiploc": "HTONSJN"
+   }
+  }, {
+   "dist_error": 3.88089532740931,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:40:42 GMT",
+    "event_type": "D",
+    "gps_car_id": "82209",
+    "id": 221,
+    "tiploc": "NWCSTLE"
+   },
+   "trust": {
+    "event_time": "Tue, 17 Mar 2015 00:46:00 GMT",
+    "event_type": "A",
+    "headcode": "5N34",
+    "id": 14,
+    "origin_departure": "Tue, 17 Mar 2015 00:54:00 GMT",
+    "origin_location": "NWCSTLE",
+    "planned_pass": false,
+    "predicted": false,
+    "seq": 3,
+    "tiploc": "HTONTMD"
+   }
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:47:23 GMT",
+    "event_type": "A",
+    "gps_car_id": "82209",
+    "id": 223,
+    "tiploc": "HTONSJN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:47:54 GMT",
+    "event_type": "D",
+    "gps_car_id": "82209",
+    "id": 633,
+    "tiploc": "HTONSJN"
+   },
+   "trust": null
+  }],
+  "remove": false,
+  "unit": "BN04"
+ }, {
+  "cif_uid": "Y58533",
+  "gps_car_id": "40748",
+  "headcode": "5N35",
+  "isPlanned": true,
+  "matching": [{
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:08:40 GMT",
+    "event_type": "P",
+    "gps_car_id": "40748",
+    "id": 51,
+    "tiploc": "KNTNGSJ"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:10:27 GMT",
+    "event_type": "P",
+    "gps_car_id": "40748",
+    "id": 56,
+    "tiploc": "KNTNGWJ"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:11:48 GMT",
+    "event_type": "P",
+    "gps_car_id": "40748",
+    "id": 108,
+    "tiploc": "FERYBDG"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:25:21 GMT",
+    "event_type": "P",
+    "gps_car_id": "40748",
+    "id": 126,
+    "tiploc": "MILFDY"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:30:35 GMT",
+    "event_type": "P",
+    "gps_car_id": "40748",
+    "id": 150,
+    "tiploc": "CHFN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:36:33 GMT",
+    "event_type": "P",
+    "gps_car_id": "40748",
+    "id": 175,
+    "tiploc": "COLTONJ"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:41:44 GMT",
+    "event_type": "A",
+    "gps_car_id": "40748",
+    "id": 187,
+    "tiploc": "YORK"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:44:31 GMT",
+    "event_type": "D",
+    "gps_car_id": "40748",
+    "id": 216,
+    "tiploc": "YORK"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:46:36 GMT",
+    "event_type": "P",
+    "gps_car_id": "40748",
+    "id": 239,
+    "tiploc": "SKELTON"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:51:20 GMT",
+    "event_type": "P",
+    "gps_car_id": "40748",
+    "id": 259,
+    "tiploc": "TOLERTN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:57:45 GMT",
+    "event_type": "P",
+    "gps_car_id": "40748",
+    "id": 278,
+    "tiploc": "THIRSK"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:01:24 GMT",
+    "event_type": "P",
+    "gps_car_id": "40748",
+    "id": 283,
+    "tiploc": "LNGLNDJ"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:03:45 GMT",
+    "event_type": "A",
+    "gps_car_id": "40748",
+    "id": 285,
+    "tiploc": "NLRTN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:05:45 GMT",
+    "event_type": "D",
+    "gps_car_id": "40748",
+    "id": 335,
+    "tiploc": "NLRTN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:19:42 GMT",
+    "event_type": "A",
+    "gps_car_id": "40748",
+    "id": 339,
+    "tiploc": "DLTN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:31:40 GMT",
+    "event_type": "P",
+    "gps_car_id": "40748",
+    "id": 405,
+    "tiploc": "FYHLSJN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:32:57 GMT",
+    "event_type": "P",
+    "gps_car_id": "40748",
+    "id": 427,
+    "tiploc": "TURSDLJ"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:39:12 GMT",
+    "event_type": "A",
+    "gps_car_id": "40748",
+    "id": 429,
+    "tiploc": "DRHM"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:47:02 GMT",
+    "event_type": "P",
+    "gps_car_id": "40748",
+    "id": 455,
+    "tiploc": "BRTLYJN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:51:15 GMT",
+    "event_type": "P",
+    "gps_car_id": "40748",
+    "id": 457,
+    "tiploc": "KEBGSJN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:51:46 GMT",
+    "event_type": "P",
+    "gps_car_id": "40748",
+    "id": 460,
+    "tiploc": "KEBGNJN"
+   },
+   "trust": null
+  }, {
+   "dist_error": 3.1584780203433356,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:53:52 GMT",
+    "event_type": "A",
+    "gps_car_id": "40748",
+    "id": 467,
+    "tiploc": "NWCSTLE"
+   },
+   "trust": {
+    "event_time": "Tue, 17 Mar 2015 02:21:00 GMT",
+    "event_type": "D",
+    "headcode": "5N35",
+    "id": 27,
+    "origin_departure": "Tue, 17 Mar 2015 02:26:00 GMT",
+    "origin_location": "NWCSTLE",
+    "planned_pass": true,
+    "predicted": false,
+    "seq": 2,
+    "tiploc": "HTONSJN"
+   }
+  }, {
+   "dist_error": 3.88089532740931,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:17:08 GMT",
+    "event_type": "D",
+    "gps_car_id": "40748",
+    "id": 548,
+    "tiploc": "NWCSTLE"
+   },
+   "trust": {
+    "event_time": "Tue, 17 Mar 2015 02:22:00 GMT",
+    "event_type": "A",
+    "headcode": "5N35",
+    "id": 28,
+    "origin_departure": "Tue, 17 Mar 2015 02:26:00 GMT",
+    "origin_location": "NWCSTLE",
+    "planned_pass": false,
+    "predicted": false,
+    "seq": 3,
+    "tiploc": "HTONTMD"
+   }
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:23:16 GMT",
+    "event_type": "A",
+    "gps_car_id": "40748",
+    "id": 550,
+    "tiploc": "HTONSJN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:23:54 GMT",
+    "event_type": "D",
+    "gps_car_id": "40748",
+    "id": 751,
+    "tiploc": "HTONSJN"
+   },
+   "trust": null
+  }],
+  "remove": false,
+  "unit": "EC51"
+ }, {
+  "cif_uid": "",
+  "gps_car_id": "40742",
+  "headcode": "",
+  "isPlanned": false,
+  "matching": [{
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:10:30 GMT",
+    "event_type": "A",
+    "gps_car_id": "40742",
+    "id": 53,
+    "tiploc": "NEVLWJN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:11:24 GMT",
+    "event_type": "D",
+    "gps_car_id": "40742",
+    "id": 60,
+    "tiploc": "NEVLWJN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:12:57 GMT",
+    "event_type": "A",
+    "gps_car_id": "40742",
+    "id": 65,
+    "tiploc": "NEVLTMD"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:36:15 GMT",
+    "event_type": "D",
+    "gps_car_id": "40742",
+    "id": 594,
+    "tiploc": "NEVLTMD"
+   },
+   "trust": null
+  }],
+  "remove": false,
+  "unit": "EC60"
+ }, {
+  "cif_uid": "",
+  "gps_car_id": "82212",
+  "headcode": "",
+  "isPlanned": false,
+  "matching": [{
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:15:32 GMT",
+    "event_type": "A",
+    "gps_car_id": "82212",
+    "id": 72,
+    "tiploc": "NEVLTMD"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:52:18 GMT",
+    "event_type": "D",
+    "gps_car_id": "82212",
+    "id": 465,
+    "tiploc": "NEVLTMD"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:08:47 GMT",
+    "event_type": "D",
+    "gps_car_id": "82212",
+    "id": 895,
+    "tiploc": "NEVLWJN"
+   },
+   "trust": null
+  }],
+  "remove": false,
+  "unit": "BN12"
+ }, {
+  "cif_uid": "Y57923",
+  "gps_car_id": "82216",
+  "headcode": "3A00",
+  "isPlanned": false,
+  "matching": [{
+   "dist_error": 7.376257726919334,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:16:07 GMT",
+    "event_type": "A",
+    "gps_car_id": "82216",
+    "id": 74,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": {
+    "event_time": "Tue, 17 Mar 2015 02:32:00 GMT",
+    "event_type": "D",
+    "headcode": "3A00",
+    "id": 33,
+    "origin_departure": "Tue, 17 Mar 2015 01:00:00 GMT",
+    "origin_location": "BNDSGRN",
+    "planned_pass": false,
+    "predicted": false,
+    "seq": 6,
+    "tiploc": "KNGX"
+   }
+  }, {
+   "dist_error": 7.376257726919334,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:16:39 GMT",
+    "event_type": "D",
+    "gps_car_id": "82216",
+    "id": 76,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": {
+    "event_time": "Tue, 17 Mar 2015 02:32:00 GMT",
+    "event_type": "D",
+    "headcode": "3A00",
+    "id": 33,
+    "origin_departure": "Tue, 17 Mar 2015 01:00:00 GMT",
+    "origin_location": "BNDSGRN",
+    "planned_pass": false,
+    "predicted": false,
+    "seq": 6,
+    "tiploc": "KNGX"
+   }
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:21:18 GMT",
+    "event_type": "A",
+    "gps_car_id": "82216",
+    "id": 89,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:21:18 GMT",
+    "event_type": "A",
+    "gps_car_id": "82216",
+    "id": 89,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:24:24 GMT",
+    "event_type": "A",
+    "gps_car_id": "82216",
+    "id": 106,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:24:24 GMT",
+    "event_type": "A",
+    "gps_car_id": "82216",
+    "id": 106,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:27:21 GMT",
+    "event_type": "D",
+    "gps_car_id": "82216",
+    "id": 119,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:32:00 GMT",
+    "event_type": "A",
+    "gps_car_id": "82216",
+    "id": 135,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:36:08 GMT",
+    "event_type": "D",
+    "gps_car_id": "82216",
+    "id": 148,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:39:14 GMT",
+    "event_type": "A",
+    "gps_car_id": "82216",
+    "id": 165,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:39:14 GMT",
+    "event_type": "A",
+    "gps_car_id": "82216",
+    "id": 165,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:40:56 GMT",
+    "event_type": "D",
+    "gps_car_id": "82216",
+    "id": 176,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:41:27 GMT",
+    "event_type": "A",
+    "gps_car_id": "82216",
+    "id": 182,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:42:20 GMT",
+    "event_type": "D",
+    "gps_car_id": "82216",
+    "id": 195,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:42:20 GMT",
+    "event_type": "D",
+    "gps_car_id": "82216",
+    "id": 195,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:42:20 GMT",
+    "event_type": "D",
+    "gps_car_id": "82216",
+    "id": 195,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:50:36 GMT",
+    "event_type": "D",
+    "gps_car_id": "82216",
+    "id": 236,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:50:36 GMT",
+    "event_type": "D",
+    "gps_car_id": "82216",
+    "id": 236,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:51:07 GMT",
+    "event_type": "A",
+    "gps_car_id": "82216",
+    "id": 238,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:55:15 GMT",
+    "event_type": "D",
+    "gps_car_id": "82216",
+    "id": 247,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:56:17 GMT",
+    "event_type": "A",
+    "gps_car_id": "82216",
+    "id": 252,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:59:54 GMT",
+    "event_type": "D",
+    "gps_car_id": "82216",
+    "id": 268,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:07:08 GMT",
+    "event_type": "A",
+    "gps_car_id": "82216",
+    "id": 301,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:08:10 GMT",
+    "event_type": "D",
+    "gps_car_id": "82216",
+    "id": 303,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:13:20 GMT",
+    "event_type": "A",
+    "gps_car_id": "82216",
+    "id": 315,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:15:24 GMT",
+    "event_type": "D",
+    "gps_car_id": "82216",
+    "id": 324,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:16:26 GMT",
+    "event_type": "A",
+    "gps_car_id": "82216",
+    "id": 329,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:20:03 GMT",
+    "event_type": "D",
+    "gps_car_id": "82216",
+    "id": 341,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:21:36 GMT",
+    "event_type": "A",
+    "gps_car_id": "82216",
+    "id": 344,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:22:15 GMT",
+    "event_type": "D",
+    "gps_car_id": "82216",
+    "id": 346,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:23:40 GMT",
+    "event_type": "A",
+    "gps_car_id": "82216",
+    "id": 351,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:24:42 GMT",
+    "event_type": "D",
+    "gps_car_id": "82216",
+    "id": 357,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:27:48 GMT",
+    "event_type": "A",
+    "gps_car_id": "82216",
+    "id": 376,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:29:52 GMT",
+    "event_type": "D",
+    "gps_car_id": "82216",
+    "id": 386,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:31:56 GMT",
+    "event_type": "A",
+    "gps_car_id": "82216",
+    "id": 399,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:31:56 GMT",
+    "event_type": "A",
+    "gps_car_id": "82216",
+    "id": 399,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:32:27 GMT",
+    "event_type": "D",
+    "gps_car_id": "82216",
+    "id": 402,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:32:58 GMT",
+    "event_type": "A",
+    "gps_car_id": "82216",
+    "id": 406,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:33:29 GMT",
+    "event_type": "D",
+    "gps_car_id": "82216",
+    "id": 411,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:43:26 GMT",
+    "event_type": "A",
+    "gps_car_id": "82216",
+    "id": 439,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:44:41 GMT",
+    "event_type": "D",
+    "gps_car_id": "82216",
+    "id": 442,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:59:28 GMT",
+    "event_type": "A",
+    "gps_car_id": "82216",
+    "id": 482,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:59:59 GMT",
+    "event_type": "D",
+    "gps_car_id": "82216",
+    "id": 483,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:13:16 GMT",
+    "event_type": "A",
+    "gps_car_id": "82216",
+    "id": 523,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:17:24 GMT",
+    "event_type": "D",
+    "gps_car_id": "82216",
+    "id": 537,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:23:49 GMT",
+    "event_type": "A",
+    "gps_car_id": "82216",
+    "id": 551,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:24:18 GMT",
+    "event_type": "D",
+    "gps_car_id": "82216",
+    "id": 552,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:27:13 GMT",
+    "event_type": "A",
+    "gps_car_id": "82216",
+    "id": 563,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:27:44 GMT",
+    "event_type": "D",
+    "gps_car_id": "82216",
+    "id": 564,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:29:26 GMT",
+    "event_type": "A",
+    "gps_car_id": "82216",
+    "id": 570,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:29:48 GMT",
+    "event_type": "D",
+    "gps_car_id": "82216",
+    "id": 574,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:30:50 GMT",
+    "event_type": "A",
+    "gps_car_id": "82216",
+    "id": 579,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:30:50 GMT",
+    "event_type": "A",
+    "gps_car_id": "82216",
+    "id": 579,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:32:31 GMT",
+    "event_type": "D",
+    "gps_car_id": "82216",
+    "id": 583,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:40:21 GMT",
+    "event_type": "A",
+    "gps_car_id": "82216",
+    "id": 603,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }],
+  "remove": false,
+  "unit": "BN25"
+ }, {
+  "cif_uid": "",
+  "gps_car_id": "82226",
+  "headcode": "",
+  "isPlanned": false,
+  "matching": [{
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:17:40 GMT",
+    "event_type": "P",
+    "gps_car_id": "82226",
+    "id": 79,
+    "tiploc": "NWRKCEJ"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:17:52 GMT",
+    "event_type": "P",
+    "gps_car_id": "82226",
+    "id": 81,
+    "tiploc": "NWRKFC"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:19:22 GMT",
+    "event_type": "A",
+    "gps_car_id": "82226",
+    "id": 82,
+    "tiploc": "NEWANG"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:19:22 GMT",
+    "event_type": "A",
+    "gps_car_id": "82226",
+    "id": 82,
+    "tiploc": "NEWANG"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:26:35 GMT",
+    "event_type": "D",
+    "gps_car_id": "82226",
+    "id": 118,
+    "tiploc": "NEWANG"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:26:35 GMT",
+    "event_type": "D",
+    "gps_car_id": "82226",
+    "id": 118,
+    "tiploc": "NEWANG"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:26:43 GMT",
+    "event_type": "P",
+    "gps_car_id": "82226",
+    "id": 143,
+    "tiploc": "CLPLLP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:34:56 GMT",
+    "event_type": "A",
+    "gps_car_id": "82226",
+    "id": 145,
+    "tiploc": "GTHM"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:37:24 GMT",
+    "event_type": "D",
+    "gps_car_id": "82226",
+    "id": 188,
+    "tiploc": "GTHM"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:41:56 GMT",
+    "event_type": "P",
+    "gps_car_id": "82226",
+    "id": 202,
+    "tiploc": "HGHDJN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:41:56 GMT",
+    "event_type": "P",
+    "gps_car_id": "82226",
+    "id": 202,
+    "tiploc": "HGHDJN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:43:38 GMT",
+    "event_type": "P",
+    "gps_car_id": "82226",
+    "id": 241,
+    "tiploc": "SOKEJN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:52:46 GMT",
+    "event_type": "P",
+    "gps_car_id": "82226",
+    "id": 244,
+    "tiploc": "TALNGTN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:52:46 GMT",
+    "event_type": "P",
+    "gps_car_id": "82226",
+    "id": 244,
+    "tiploc": "TALNGTN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:54:32 GMT",
+    "event_type": "P",
+    "gps_car_id": "82226",
+    "id": 251,
+    "tiploc": "HELPSTN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:00:06 GMT",
+    "event_type": "P",
+    "gps_car_id": "82226",
+    "id": 272,
+    "tiploc": "PBROLIP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:01:03 GMT",
+    "event_type": "A",
+    "gps_car_id": "82226",
+    "id": 273,
+    "tiploc": "PBRO"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:01:03 GMT",
+    "event_type": "A",
+    "gps_car_id": "82226",
+    "id": 273,
+    "tiploc": "PBRO"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:02:58 GMT",
+    "event_type": "D",
+    "gps_car_id": "82226",
+    "id": 287,
+    "tiploc": "PBRO"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:03:56 GMT",
+    "event_type": "P",
+    "gps_car_id": "82226",
+    "id": 293,
+    "tiploc": "PBROE"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:04:43 GMT",
+    "event_type": "P",
+    "gps_car_id": "82226",
+    "id": 304,
+    "tiploc": "FLETTON"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:09:28 GMT",
+    "event_type": "P",
+    "gps_car_id": "82226",
+    "id": 308,
+    "tiploc": "HOLME"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:10:46 GMT",
+    "event_type": "P",
+    "gps_car_id": "82226",
+    "id": 328,
+    "tiploc": "CNNGSJN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:16:17 GMT",
+    "event_type": "P",
+    "gps_car_id": "82226",
+    "id": 362,
+    "tiploc": "HNTNGDN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:25:26 GMT",
+    "event_type": "P",
+    "gps_car_id": "82226",
+    "id": 403,
+    "tiploc": "SNDY"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:32:50 GMT",
+    "event_type": "P",
+    "gps_car_id": "82226",
+    "id": 426,
+    "tiploc": "HITCHIN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:38:08 GMT",
+    "event_type": "A",
+    "gps_car_id": "82226",
+    "id": 428,
+    "tiploc": "STEVNGE"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:42:03 GMT",
+    "event_type": "P",
+    "gps_car_id": "82226",
+    "id": 440,
+    "tiploc": "LNGYJN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:42:03 GMT",
+    "event_type": "D",
+    "gps_car_id": "82226",
+    "id": 434,
+    "tiploc": "STEVNGE"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:44:18 GMT",
+    "event_type": "P",
+    "gps_car_id": "82226",
+    "id": 451,
+    "tiploc": "BRAGJN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:49:43 GMT",
+    "event_type": "P",
+    "gps_car_id": "82226",
+    "id": 476,
+    "tiploc": "HFDN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:57:30 GMT",
+    "event_type": "P",
+    "gps_car_id": "82226",
+    "id": 493,
+    "tiploc": "GORDONH"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:03:52 GMT",
+    "event_type": "P",
+    "gps_car_id": "82226",
+    "id": 496,
+    "tiploc": "BOWERRL"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:03:52 GMT",
+    "event_type": "P",
+    "gps_car_id": "82226",
+    "id": 496,
+    "tiploc": "BOWERRL"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:04:59 GMT",
+    "event_type": "P",
+    "gps_car_id": "82226",
+    "id": 498,
+    "tiploc": "BNDSGRN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:06:13 GMT",
+    "event_type": "P",
+    "gps_car_id": "82226",
+    "id": 499,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:06:40 GMT",
+    "event_type": "P",
+    "gps_car_id": "82226",
+    "id": 503,
+    "tiploc": "HRNS453"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:06:40 GMT",
+    "event_type": "P",
+    "gps_car_id": "82226",
+    "id": 503,
+    "tiploc": "HRNS453"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:08:22 GMT",
+    "event_type": "P",
+    "gps_car_id": "82226",
+    "id": 510,
+    "tiploc": "FRMPKRS"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:09:47 GMT",
+    "event_type": "P",
+    "gps_car_id": "82226",
+    "id": 515,
+    "tiploc": "FNPK"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:11:39 GMT",
+    "event_type": "P",
+    "gps_car_id": "82226",
+    "id": 519,
+    "tiploc": "HLWYSJ"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:12:56 GMT",
+    "event_type": "A",
+    "gps_car_id": "82226",
+    "id": 518,
+    "tiploc": "KNGXBEL"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:13:12 GMT",
+    "event_type": "D",
+    "gps_car_id": "82226",
+    "id": 528,
+    "tiploc": "KNGXBEL"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:15:29 GMT",
+    "event_type": "A",
+    "gps_car_id": "82226",
+    "id": 531,
+    "tiploc": "KNGX"
+   },
+   "trust": null
+  }],
+  "remove": false,
+  "unit": "BN23"
+ }, {
+  "cif_uid": "",
+  "gps_car_id": "82214",
+  "headcode": "",
+  "isPlanned": false,
+  "matching": [{
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:18:03 GMT",
+    "event_type": "D",
+    "gps_car_id": "82214",
+    "id": 422,
+    "tiploc": "NEVLTMD"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:36:11 GMT",
+    "event_type": "A",
+    "gps_car_id": "82214",
+    "id": 421,
+    "tiploc": "NEVLWJN"
+   },
+   "trust": null
+  }],
+  "remove": false,
+  "unit": "BN15"
+ }, {
+  "cif_uid": "Y58530",
+  "gps_car_id": "40704",
+  "headcode": "5N34",
+  "isPlanned": false,
+  "matching": [{
+   "dist_error": 3.88089532740931,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:33:51 GMT",
+    "event_type": "A",
+    "gps_car_id": "40704",
+    "id": 140,
+    "tiploc": "HTONTMD"
+   },
+   "trust": {
+    "event_time": "Tue, 17 Mar 2015 00:39:00 GMT",
+    "event_type": "D",
+    "headcode": "5N34",
+    "id": 7,
+    "origin_departure": "Tue, 17 Mar 2015 00:54:00 GMT",
+    "origin_location": "NWCSTLE",
+    "planned_pass": false,
+    "predicted": false,
+    "seq": 1,
+    "tiploc": "NWCSTLE"
+   }
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:53:53 GMT",
+    "event_type": "D",
+    "gps_car_id": "40704",
+    "id": 982,
+    "tiploc": "HTONTMD"
+   },
+   "trust": null
+  }],
+  "remove": false,
+  "unit": "EC55"
+ }, {
+  "cif_uid": "Y57926",
+  "gps_car_id": "82211",
+  "headcode": "5D01",
+  "isPlanned": true,
+  "matching": [{
+   "dist_error": 1.0350204372240261,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:35:31 GMT",
+    "event_type": "D",
+    "gps_car_id": "82211",
+    "id": 153,
+    "tiploc": "KNGX"
+   },
+   "trust": {
+    "event_time": "Tue, 17 Mar 2015 02:28:00 GMT",
+    "event_type": "D",
+    "headcode": "5D01",
+    "id": 31,
+    "origin_departure": "Tue, 17 Mar 2015 02:08:00 GMT",
+    "origin_location": "BNDSGRN",
+    "planned_pass": true,
+    "predicted": false,
+    "seq": 5,
+    "tiploc": "KNGXBEL"
+   }
+  }, {
+   "dist_error": 1.152014491428742,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:36:58 GMT",
+    "event_type": "P",
+    "gps_car_id": "82211",
+    "id": 171,
+    "tiploc": "KNGXBEL"
+   },
+   "trust": {
+    "event_time": "Tue, 17 Mar 2015 02:26:00 GMT",
+    "event_type": "D",
+    "headcode": "5D01",
+    "id": 30,
+    "origin_departure": "Tue, 17 Mar 2015 02:08:00 GMT",
+    "origin_location": "BNDSGRN",
+    "planned_pass": true,
+    "predicted": false,
+    "seq": 4,
+    "tiploc": "HLWYSJ"
+   }
+  }, {
+   "dist_error": 0,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:40:03 GMT",
+    "event_type": "P",
+    "gps_car_id": "82211",
+    "id": 204,
+    "tiploc": "HLWYSJ"
+   },
+   "trust": {
+    "event_time": "Tue, 17 Mar 2015 02:26:00 GMT",
+    "event_type": "D",
+    "headcode": "5D01",
+    "id": 30,
+    "origin_departure": "Tue, 17 Mar 2015 02:08:00 GMT",
+    "origin_location": "BNDSGRN",
+    "planned_pass": true,
+    "predicted": false,
+    "seq": 4,
+    "tiploc": "HLWYSJ"
+   }
+  }, {
+   "dist_error": 0,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:44:11 GMT",
+    "event_type": "P",
+    "gps_car_id": "82211",
+    "id": 271,
+    "tiploc": "FNPK"
+   },
+   "trust": {
+    "event_time": "Tue, 17 Mar 2015 02:24:00 GMT",
+    "event_type": "D",
+    "headcode": "5D01",
+    "id": 29,
+    "origin_departure": "Tue, 17 Mar 2015 02:08:00 GMT",
+    "origin_location": "BNDSGRN",
+    "planned_pass": true,
+    "predicted": false,
+    "seq": 3,
+    "tiploc": "FNPK"
+   }
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:01:16 GMT",
+    "event_type": "P",
+    "gps_car_id": "82211",
+    "id": 380,
+    "tiploc": "FRMPKRS"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:29:16 GMT",
+    "event_type": "P",
+    "gps_car_id": "82211",
+    "id": 390,
+    "tiploc": "HRNS453"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:29:47 GMT",
+    "event_type": "P",
+    "gps_car_id": "82211",
+    "id": 392,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": 0,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:30:43 GMT",
+    "event_type": "P",
+    "gps_car_id": "82211",
+    "id": 400,
+    "tiploc": "BNDSGRN"
+   },
+   "trust": {
+    "event_time": "Tue, 17 Mar 2015 02:17:00 GMT",
+    "event_type": "D",
+    "headcode": "5D01",
+    "id": 26,
+    "origin_departure": "Tue, 17 Mar 2015 02:08:00 GMT",
+    "origin_location": "BNDSGRN",
+    "planned_pass": false,
+    "predicted": false,
+    "seq": 1,
+    "tiploc": "BNDSGRN"
+   }
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:33:35 GMT",
+    "event_type": "A",
+    "gps_car_id": "82211",
+    "id": 410,
+    "tiploc": "BOWESPK"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:06:30 GMT",
+    "event_type": "D",
+    "gps_car_id": "82211",
+    "id": 502,
+    "tiploc": "BOWERRL"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:06:30 GMT",
+    "event_type": "D",
+    "gps_car_id": "82211",
+    "id": 502,
+    "tiploc": "BOWERRL"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:08:20 GMT",
+    "event_type": "A",
+    "gps_car_id": "82211",
+    "id": 506,
+    "tiploc": "BNDSGRN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:08:51 GMT",
+    "event_type": "D",
+    "gps_car_id": "82211",
+    "id": 536,
+    "tiploc": "BNDSGRN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:15:58 GMT",
+    "event_type": "A",
+    "gps_car_id": "82211",
+    "id": 533,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:17:07 GMT",
+    "event_type": "D",
+    "gps_car_id": "82211",
+    "id": 545,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:17:38 GMT",
+    "event_type": "P",
+    "gps_car_id": "82211",
+    "id": 546,
+    "tiploc": "HRNS451"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:18:58 GMT",
+    "event_type": "P",
+    "gps_car_id": "82211",
+    "id": 549,
+    "tiploc": "HRNS453"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:23:33 GMT",
+    "event_type": "P",
+    "gps_car_id": "82211",
+    "id": 554,
+    "tiploc": "FRMPKRS"
+   },
+   "trust": null
+  }, {
+   "dist_error": 1.7093160987718392,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:25:07 GMT",
+    "event_type": "P",
+    "gps_car_id": "82211",
+    "id": 562,
+    "tiploc": "FNPK"
+   },
+   "trust": {
+    "event_time": "Tue, 17 Mar 2015 02:26:00 GMT",
+    "event_type": "D",
+    "headcode": "5D01",
+    "id": 30,
+    "origin_departure": "Tue, 17 Mar 2015 02:08:00 GMT",
+    "origin_location": "BNDSGRN",
+    "planned_pass": true,
+    "predicted": false,
+    "seq": 4,
+    "tiploc": "HLWYSJ"
+   }
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:27:12 GMT",
+    "event_type": "P",
+    "gps_car_id": "82211",
+    "id": 569,
+    "tiploc": "HLWYSJ"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:28:41 GMT",
+    "event_type": "P",
+    "gps_car_id": "82211",
+    "id": 577,
+    "tiploc": "KNGXBEL"
+   },
+   "trust": null
+  }],
+  "remove": false,
+  "unit": "BN08"
+ }, {
+  "cif_uid": "Y58449",
+  "gps_car_id": "82200",
+  "headcode": "5Y52",
+  "isPlanned": false,
+  "matching": [{
+   "dist_error": 7.25368865398812,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:36:25 GMT",
+    "event_type": "P",
+    "gps_car_id": "82200",
+    "id": 157,
+    "tiploc": "HRNS451"
+   },
+   "trust": {
+    "event_time": "Tue, 17 Mar 2015 00:37:00 GMT",
+    "event_type": "D",
+    "headcode": "5Y52",
+    "id": 6,
+    "origin_departure": "Tue, 17 Mar 2015 00:53:00 GMT",
+    "origin_location": "KNGX",
+    "planned_pass": false,
+    "predicted": false,
+    "seq": 1,
+    "tiploc": "KNGX"
+   }
+  }, {
+   "dist_error": 1.5135102761209125,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:36:25 GMT",
+    "event_type": "P",
+    "gps_car_id": "82200",
+    "id": 152,
+    "tiploc": "HRNS453"
+   },
+   "trust": {
+    "event_time": "Tue, 17 Mar 2015 01:14:00 GMT",
+    "event_type": "A",
+    "headcode": "5Y52",
+    "id": 24,
+    "origin_departure": "Tue, 17 Mar 2015 00:53:00 GMT",
+    "origin_location": "KNGX",
+    "planned_pass": false,
+    "predicted": false,
+    "seq": 5,
+    "tiploc": "FRMPKRS"
+   }
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:36:52 GMT",
+    "event_type": "P",
+    "gps_car_id": "82200",
+    "id": 158,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:38:25 GMT",
+    "event_type": "A",
+    "gps_car_id": "82200",
+    "id": 161,
+    "tiploc": "BNDSGRN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:40:00 GMT",
+    "event_type": "D",
+    "gps_car_id": "82200",
+    "id": 184,
+    "tiploc": "BNDSGRN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:40:00 GMT",
+    "event_type": "D",
+    "gps_car_id": "82200",
+    "id": 184,
+    "tiploc": "BNDSGRN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:41:42 GMT",
+    "event_type": "A",
+    "gps_car_id": "82200",
+    "id": 183,
+    "tiploc": "BOWESPK"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:42:04 GMT",
+    "event_type": "A",
+    "gps_car_id": "82200",
+    "id": 191,
+    "tiploc": "BOWERRL"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:42:48 GMT",
+    "event_type": "D",
+    "gps_car_id": "82200",
+    "id": 262,
+    "tiploc": "BOWESPK"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:58:50 GMT",
+    "event_type": "A",
+    "gps_car_id": "82200",
+    "id": 265,
+    "tiploc": "BNDSGRN"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:12:31 GMT",
+    "event_type": "A",
+    "gps_car_id": "82200",
+    "id": 311,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:13:02 GMT",
+    "event_type": "D",
+    "gps_car_id": "82200",
+    "id": 313,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:15:29 GMT",
+    "event_type": "A",
+    "gps_car_id": "82200",
+    "id": 325,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:16:00 GMT",
+    "event_type": "D",
+    "gps_car_id": "82200",
+    "id": 327,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:16:39 GMT",
+    "event_type": "A",
+    "gps_car_id": "82200",
+    "id": 330,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:17:10 GMT",
+    "event_type": "D",
+    "gps_car_id": "82200",
+    "id": 331,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:20:47 GMT",
+    "event_type": "A",
+    "gps_car_id": "82200",
+    "id": 342,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:21:39 GMT",
+    "event_type": "D",
+    "gps_car_id": "82200",
+    "id": 345,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:22:12 GMT",
+    "event_type": "A",
+    "gps_car_id": "82200",
+    "id": 347,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:24:55 GMT",
+    "event_type": "D",
+    "gps_car_id": "82200",
+    "id": 358,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:25:47 GMT",
+    "event_type": "A",
+    "gps_car_id": "82200",
+    "id": 366,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:26:20 GMT",
+    "event_type": "D",
+    "gps_car_id": "82200",
+    "id": 368,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:33:11 GMT",
+    "event_type": "A",
+    "gps_car_id": "82200",
+    "id": 407,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:34:03 GMT",
+    "event_type": "D",
+    "gps_car_id": "82200",
+    "id": 416,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:34:36 GMT",
+    "event_type": "A",
+    "gps_car_id": "82200",
+    "id": 418,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:42:19 GMT",
+    "event_type": "D",
+    "gps_car_id": "82200",
+    "id": 436,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:42:52 GMT",
+    "event_type": "A",
+    "gps_car_id": "82200",
+    "id": 437,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:44:11 GMT",
+    "event_type": "D",
+    "gps_car_id": "82200",
+    "id": 441,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:44:45 GMT",
+    "event_type": "A",
+    "gps_car_id": "82200",
+    "id": 443,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:52:10 GMT",
+    "event_type": "D",
+    "gps_car_id": "82200",
+    "id": 459,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:55:16 GMT",
+    "event_type": "A",
+    "gps_car_id": "82200",
+    "id": 470,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:55:47 GMT",
+    "event_type": "D",
+    "gps_car_id": "82200",
+    "id": 472,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:00:26 GMT",
+    "event_type": "A",
+    "gps_car_id": "82200",
+    "id": 485,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:01:14 GMT",
+    "event_type": "D",
+    "gps_car_id": "82200",
+    "id": 486,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:12:19 GMT",
+    "event_type": "A",
+    "gps_car_id": "82200",
+    "id": 517,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:12:50 GMT",
+    "event_type": "D",
+    "gps_car_id": "82200",
+    "id": 521,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:27:58 GMT",
+    "event_type": "D",
+    "gps_car_id": "82200",
+    "id": 566,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:28:20 GMT",
+    "event_type": "A",
+    "gps_car_id": "82200",
+    "id": 568,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:29:22 GMT",
+    "event_type": "D",
+    "gps_car_id": "82200",
+    "id": 572,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:29:53 GMT",
+    "event_type": "A",
+    "gps_car_id": "82200",
+    "id": 575,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:31:55 GMT",
+    "event_type": "D",
+    "gps_car_id": "82200",
+    "id": 582,
+    "tiploc": "ALEXNDP"
+   },
+   "trust": null
+  }],
+  "remove": false,
+  "unit": "BN20"
+ }, {
+  "cif_uid": "Y58228",
+  "gps_car_id": "40702",
+  "headcode": "5E30",
+  "isPlanned": false,
+  "matching": [{
+   "dist_error": 3.0483636325129746,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 00:50:39 GMT",
+    "event_type": "D",
+    "gps_car_id": "40702",
+    "id": 235,
+    "tiploc": "NEVLTMD"
+   },
+   "trust": {
+    "event_time": "Tue, 17 Mar 2015 00:55:00 GMT",
+    "event_type": "D",
+    "headcode": "5E30",
+    "id": 16,
+    "origin_departure": "Tue, 17 Mar 2015 00:55:00 GMT",
+    "origin_location": "LEEDS",
+    "planned_pass": false,
+    "predicted": false,
+    "seq": 1,
+    "tiploc": "LEEDS"
+   }
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:01:07 GMT",
+    "event_type": "A",
+    "gps_car_id": "40702",
+    "id": 274,
+    "tiploc": "NEVLTMD"
+   },
+   "trust": null
+  }, {
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 01:01:07 GMT",
+    "event_type": "D",
+    "gps_car_id": "40702",
+    "id": 275,
+    "tiploc": "NEVLWJN"
+   },
+   "trust": null
+  }],
+  "remove": false,
+  "unit": "EC61"
+ }, {
+  "cif_uid": "",
+  "gps_car_id": "82215",
+  "headcode": "",
+  "isPlanned": false,
+  "matching": [{
+   "dist_error": null,
+   "gps": {
+    "event_time": "Tue, 17 Mar 2015 02:10:48 GMT",
+    "event_type": "P",
+    "gps_car_id": "82215",
+    "id": 615,
+    "tiploc": "FRMPKRS"
+   },
+   "trust": null
+  }],
+  "remove": false,
+  "unit": "BN09"
+ }, {
+  "cif_uid": "Y58533",
+  "gps_car_id": "",
+  "headcode": "5N35",
+  "isPlanned": false,
+  "matching": [{
+   "dist_error": null,
+   "gps": null,
+   "trust": {
+    "event_time": "Tue, 17 Mar 2015 02:16:00 GMT",
+    "event_type": "D",
+    "headcode": "5N35",
+    "id": 25,
+    "origin_departure": "Tue, 17 Mar 2015 02:26:00 GMT",
+    "origin_location": "NWCSTLE",
+    "planned_pass": false,
+    "predicted": false,
+    "seq": 1,
+    "tiploc": "NWCSTLE"
+   }
+  }],
+  "remove": false,
+  "unit": ""
+ }]
+}

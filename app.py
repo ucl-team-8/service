@@ -20,6 +20,9 @@ def hello():
 def basic_algorithm():
     return render_template("basic-algorithm.html")
 
+@app.route("/map")
+def trainMap():
+    return render_template("map.html")
 
 @app.route("/layerTwo")
 def layerTwo():
