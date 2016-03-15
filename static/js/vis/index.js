@@ -2,8 +2,8 @@ import _ from "lodash";
 import d3 from "d3";
 import L from "leaflet";
 
-import RouteMap from "./route-map";
-import { getSegments, getLocations } from "./data";
+import RouteMap from "./map/route-map";
+import { getSegments, getLocations } from "./utils/data";
 
 /*
 
@@ -18,7 +18,7 @@ let transportLayer = new L.TileLayer("http://{s}.tile.thunderforest.com/transpor
 let map = new L.Map("map", {center: [53.5, -1.5], zoom: 7})
     .addLayer(transportLayer);
 
-let routeMap = new RouteMap(map);
+let routeMap = new RouteMap({ map });
 
 window.locations = {};
 

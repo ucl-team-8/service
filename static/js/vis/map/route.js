@@ -1,6 +1,6 @@
 import d3 from "d3";
 
-import { tiplocToPoint, tiplocToLocation, tiplocHasLocation } from "./location";
+import { tiplocToPoint, tiplocToLocation, tiplocHasLocation } from "../utils/location";
 
 function sectionify(array) {
   let accumulator = [];
@@ -12,7 +12,7 @@ function sectionify(array) {
 
 export default class Route {
 
-  constructor(map, container, data, type) {
+  constructor({ map, container, data, type }) {
 
     this.map = map;
     this.data = data;
