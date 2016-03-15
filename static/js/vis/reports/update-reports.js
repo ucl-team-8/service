@@ -3,51 +3,45 @@ import noOverlap from "../utils/no-overlap-time-scale";
 
 export default function updateReports(container, scale, data) {
 
-  let a;
+  let timeFormat = d3.time.format("%H:%M:%S");
+
+  let dataWithPositions = scale.positions(data, d => d.event_time);
 
   let reports = container.selectAll(".report")
-      .data(scale.positions(data, d => d.event_time));
+      .data(dataWithPositions, d => d.id);
 
-  reports.enter()
+  let newReports = reports.enter()
     .append("g")
-      .attr("class", "report")
-      .attr("transform", d => `translate(0, ${d.pos})`)
-    .append("circle")
-      .attr("cx", 50)
+      .attr("class", "report");
+
+  newReports.append("circle")
+      .attr("cx", 100)
       .attr("cy", 0)
-      .attr("r", 5);
+      .attr("r", 4);
+
+  let newLabels = newReports.append("text")
+      .attr("y", 0)
+      .attr("x", 100 + 8)
+      .attr("dy", ".35em");
+
+  newLabels.append("tspan")
+      .attr("class", "event-type")
+      .text(d => d.event_type);
+
+  newLabels.append("tspan")
+      .attr("class", "tiploc")
+      .text(d => " " + d.tiploc);
+
+  newReports.append("text")
+      .attr("class", "time")
+      .attr("y", 0)
+      .attr("x", 100 - 8)
+      .attr("dy", ".35em")
+      .text(d => timeFormat(d.event_time));
 
   reports.exit()
     .remove();
 
-  // let stops = unitDiagram.selectAll(".stop")
-  //     .data(noOverlapY.positions(unit.values, d => d.event_time))
-  //   .enter().append("g")
-  //     .attr("class", "stop")
-  //     .attr("transform", d => `translate(0, ${d.pos})`);
+  reports.attr("transform", d => `translate(0, ${d.pos})`);
 
-  // stops.append("circle")
-  //     .attr("cx", 100)
-  //     .attr("cy", 0)
-  //     .attr("r", radius);
-
-  // let labels = stops.append("text")
-  //     .attr("y", 0)
-  //     .attr("x", 100 + 8)
-  //     .attr("dy", ".35em");
-  //
-  // labels.append("tspan")
-  //     .attr("class", "event_type")
-  //     .text(d => d.event_type);
-  //
-  // labels.append("tspan")
-  //     .attr("class", "tiploc")
-  //     .text(d => " " + d.tiploc);
-  //
-  // stops.append("text")
-  //     .attr("class", "time")
-  //     .attr("y", 0)
-  //     .attr("x", 100 - 8)
-  //     .attr("dy", ".35em")
-  //     .text(d => timeFormat(d.event_time));
 }
