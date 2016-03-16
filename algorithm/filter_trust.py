@@ -18,13 +18,11 @@ import globals
 # the ones that don't have the same headcode
 def filterSegmentsByHeadcode(trust):
     potential_segments = []
-    globals.lock.acquire()
     for segment in globals.segments:
-        if segment.headcode == '':
+        if segment.headcode is None:
             potential_segments.append(segment)
         elif segment.headcode == trust['headcode']:
             potential_segments.append(segment)
-    globals.lock.release()
     return potential_segments
 
 
@@ -53,15 +51,13 @@ def filterPotentialSegments(segments, trust):
     return potential_segments
 
 
-
-
 # The second layer that filters the potential segments
 # again and finds segments that it is supposed to run
 # using the genius allocations (named schedule in the db)
 def filterByGeniusAllocations(segments, trust):
     potential_segments = []
     for segment in segments:
-        if segment.unit != '':
+        if segment.unit is not None:
             if segment.isPlanned or db_queries.isPlanned(segment.unit, trust['headcode']):
                 potential_segments.append(segment)
     if len(potential_segments) > 0:
@@ -215,7 +211,7 @@ def getTimeForMatching(match):
 # sort according to the getBestSegment function
 # then it chooses the first and best stop to match with
 def getBestStop(segments1, trust, with_seq):
-    segments = filter(lambda x: x['segment'].gps_car_id != '', segments1)
+    segments = filter(lambda x: x['segment'].gps_car_id is not None, segments1)
     segments.sort(key=lambda x: isBetterSegment(x), reverse=True)
     for segment1 in segments:
         segment = segment1['segment']
@@ -225,7 +221,7 @@ def getBestStop(segments1, trust, with_seq):
         if best is not None:
             best['match']['trust'] = trust
             best['match']['dist_error'] = best['dist_error']
-            if segment.headcode == '':
+            if segment.headcode is None:
                 segment.headcode = trust['headcode']
                 segment.cif_uid = db_queries.cif_uidFromHeadcode(trust['headcode'])
                 segment.isPlanned = db_queries.isPlanned(segment.unit, trust['headcode'])
@@ -237,7 +233,7 @@ def getBestStop(segments1, trust, with_seq):
 # the trust report to an existing segment with no
 # gps_car_id
 def findEmptySegment(segments1, trust):
-    segments = filter(lambda x: x['segment'].gps_car_id == '', segments1)
+    segments = filter(lambda x: x['segment'].gps_car_id is None, segments1)
     if len(segments) > 0:
         segments.sort(key=lambda x: isBetterSegment(x), reverse=True)
         segment = segments[0]['segment']
@@ -254,13 +250,13 @@ def findEmptySegment(segments1, trust):
 def addTrust(trust_report):
     if trust_report is None:
         return
+    globals.lock.acquire()
     trust_report['predicted'] = isPredictedReport(trust_report)
     segments = filterSegmentsByHeadcode(trust_report)
     segments = filterPotentialSegments(segments, trust_report)
     segments = filterByGeniusAllocations(segments, trust_report)
 
     segments = chooseBestSegment(segments, trust_report)
-    globals.lock.acquire()
     foundStop = getBestStop(segments, trust_report, True)
     if not foundStop:
         if not findEmptySegment(segments, trust_report):

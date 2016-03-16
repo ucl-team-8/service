@@ -4,7 +4,6 @@ import os
 import sys
 from app_db import app, db
 
-import pdb
 
 from models import *
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)) + '/algorithm')
@@ -114,6 +113,40 @@ def trustData():
     result.sort(key=lambda x: x['event_time'])
     return jsonify(result=result)
 
+
+# Because datetime.time is not JSON serializable
+# we stringify it
+def stringifyTime(record):
+    if record['arrive_time'] is not None:
+        record['arrive_time'] = str(record['arrive_time'])
+    if record['depart_time'] is not None:
+        record['depart_time'] = str(record['depart_time'])
+    if record['pass_time'] is not None:
+        record['pass_time'] = str(record['pass_time'])
+    return record
+
+
+@app.route("/data/diagram/<headcode>")
+def diagramData(headcode):
+    globals.db_lock.acquire()
+    result = db.session.query(DiagramService).filter(
+        DiagramService.headcode == headcode
+    )
+    result = map(lambda x: x.as_dict(), result)
+    if len(result) > 0:
+        diagram_service = result[0]
+    else:
+        globals.db_lock.release()
+        return jsonify(result=None)
+
+    result = db.session.query(DiagramStop).filter(
+        DiagramStop.diagram_service_id == diagram_service['id']
+    )
+    globals.db_lock.release()
+
+    diagram_service['stop'] = map(lambda x: stringifyTime(x.as_dict()), result)
+
+    return jsonify(result=diagram_service)
 
 
 @app.route("/data/segments.json")

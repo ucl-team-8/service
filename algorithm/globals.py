@@ -26,10 +26,10 @@ db_lock = threading.RLock()
 # The overall layout of how segment should look
 class Segment:
     def __init__(self):
-        self.unit = ''
-        self.cif_uid = ''
-        self.gps_car_id = ''
-        self.headcode = ''
+        self.unit = None
+        self.cif_uid = None
+        self.gps_car_id = None
+        self.headcode = None
         self.isPlanned = False
         self.remove = False
         self.matching = []

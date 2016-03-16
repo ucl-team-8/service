@@ -93,7 +93,7 @@ class TestDBQueries(unittest.TestCase):
 
     def testcif_uidFromHeadcode3(self):
         result = db_queries.cif_uidFromHeadcode('0')
-        self.assertEqual(result, '')
+        self.assertEqual(result, None)
 
 
 if __name__ == "__main__":
