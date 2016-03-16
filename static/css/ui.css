@@ -26,4 +26,5 @@ body {
 .reports-pane {
   flex: 1;
   overflow: scroll;
+  cursor: default;
 }
