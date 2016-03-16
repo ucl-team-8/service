@@ -1,7 +1,7 @@
 import _ from "lodash";
 import d3 from "d3";
 
-import { tiplocToPoint, tiplocHasLocation } from "./location";
+import { tiplocToPoint, tiplocHasLocation } from "../utils/location";
 import Route from "./route";
 
 /*
@@ -17,7 +17,7 @@ Much of the code is from https://bost.ocks.org/mike/leaflet/.
 
 export default class RouteMap {
 
-  constructor(map) {
+  constructor({ map }) {
 
     this.map = map;
 
@@ -65,7 +65,12 @@ export default class RouteMap {
   */
   plotServices(services) {
     this.services.forEach(d => d.destroy());
-    this.services = services.map(d => new Route(this.map, this.servicesContainer, d, "trust"));
+    this.services = services.map(d => new Route({
+      map: this.map,
+      container: this.servicesContainer,
+      data: d,
+      type: "trust"
+    }));
     this.redraw();
   }
 
@@ -75,7 +80,12 @@ export default class RouteMap {
   */
   plotUnits(units) {
     this.units.forEach(d => d.destroy());
-    this.units = units.map(d => new Route(this.map, this.unitsContainer, d, "gps"));
+    this.units = units.map(d => new Route({
+      map: this.map,
+      container: this.unitsContainer,
+      data: d,
+      type: "gps"
+    }));
     this.redraw();
   }
 

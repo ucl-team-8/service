@@ -1,7 +1,7 @@
 import _ from "lodash";
 import d3 from "d3";
 import moment from "moment";
-import consecutivePairs from "./consecutive-pairs";
+import sectionify from "./sectionify";
 
 
 /*
@@ -18,7 +18,12 @@ What follows below is a huge mess of code to construct this polylinear scale.
 // Pair up consecutive events, calculate and store properties of each pair.
 // The return result is considered a "scale".
 function calcScales(minPixelsPerMinute, minGap, maxGap, events) {
-  return consecutivePairs(events).map(([a,b]) => {
+  if (events.length == 0) return [];
+  if (events.length == 1) return [{
+    domain: [events[0], events[0]],
+    pixelsPerMinute: Infinity
+  }];
+  return sectionify(events).map(([a,b]) => {
     let minutes = (b - a) / (1000 * 60);
     let min = (minGap == 0) ? 0 : minGap / minutes;
     let max = (maxGap == Infinity) ? Infinity : maxGap / minutes;
@@ -65,16 +70,21 @@ function getMaxAtSameTime(time, scales) {
   return _.maxBy(candidates, d => d.numberOfEvents);
 }
 
-function combineScales(collections) {
+function combineScales(defaultPixelsPerMinute, collections) {
+  let output = [];
   let scales = _.flatten(collections);
+  if (scales.length == 0) return output;
+  if (scales.length == 1) return scales;
   let domainStart = getDomainStart(scales);
   let domainEnd;
-  let output = [];
   while (domainEnd = getNextStop(domainStart, scales)) {
     let sameTime = getMaxAtSameTime(domainStart, scales);
     if (sameTime) output.push(sameTime);
     let candidates = getScalesCovering([domainStart, domainEnd], scales);
     let pixelsPerMinute = _.max(candidates.map(d => d.pixelsPerMinute));
+    if (pixelsPerMinute === undefined) {
+      pixelsPerMinute = defaultPixelsPerMinute;
+    }
     output.push({
       domain: [domainStart, domainEnd],
       pixelsPerMinute
@@ -113,23 +123,26 @@ function scaleFromScales(minGap, scales) {
   let exceptions = {};
   let y = 0;
 
-  domain.push(scales[0].domain[0]);
-  range.push(0);
+  if (scales.length > 0) {
 
-  scales.forEach(scale => {
-    let domainStart = scale.domain[0];
-    let domainEnd = scale.domain[1];
-    let dy;
-    if (scale.pixelsPerMinute === Infinity) {
-      dy = minGap * (scale.numberOfEvents - 1);
-      exceptions[+domainStart] = y;
-    } else {
-      let minutes = (domainEnd - domainStart) / (1000 * 60);
-      dy = minutes * scale.pixelsPerMinute;
-    }
-    domain.push(domainEnd);
-    range.push(y += dy);
-  });
+    domain.push(scales[0].domain[0]);
+    range.push(0);
+
+    scales.forEach(scale => {
+      let domainStart = scale.domain[0];
+      let domainEnd = scale.domain[1];
+      let dy;
+      if (scale.pixelsPerMinute === Infinity) {
+        dy = minGap * scale.numberOfEvents;
+        exceptions[+domainStart] = y;
+      } else {
+        let minutes = (domainEnd - domainStart) / (1000 * 60);
+        dy = minutes * scale.pixelsPerMinute;
+      }
+      domain.push(domainEnd);
+      range.push(y += dy);
+    });
+  }
 
   return {
     domain,
@@ -191,11 +204,14 @@ export default function(collections) {
   };
 
   noOverlap.build = function(collections) {
-    collections.map(events => events.sort());
-    let pass = collections.map(d => calcScales(pixelsPerMinute, minGap, maxGap, d)).map(compactScales);
-    let scales = compactScales(combineScales(pass));
+    let pass = collections
+      .map(events => events.sort())
+      .map(events => calcScales(pixelsPerMinute, minGap, maxGap, events))
+      .map(compactScales);
+    let scales = compactScales(combineScales(pixelsPerMinute, pass));
     let { domain, range, exceptions:ex } = scaleFromScales(minGap, scales);
-    noOverlap.domain(domain).range(range);
+    if (domain.length > 1) noOverlap.domain(domain);
+    if (range.length > 1) noOverlap.range(range);
     exceptions = ex;
     return noOverlap;
   };
