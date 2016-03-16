@@ -37,7 +37,7 @@ Promise.all([
 
   let i = 0;
   segments = _.sortBy(segments, "headcode")
-    .filter(segment => segment.headcode && segment.gps_car_id);
+    //.filter(segment => segment.headcode && segment.gps_car_id);
   console.log(segments);
 
   plotSegment(segments[i]);
