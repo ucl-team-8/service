@@ -1,12 +1,14 @@
 # File with all of the globals
 import db_queries
 import threading
+import socket_io
+import itertools
 import datetime
 
 # Currently only stored in memory, will also store in
 # database
 global segments
-segments = []
+segments = {}
 
 # This is to how many matches in matching
 # the algorithm looks back at when trying
@@ -22,10 +24,18 @@ lock = threading.RLock()
 global db_lock
 db_lock = threading.RLock()
 
+# Used whenever emmiting
+# with socketio
+global io_lock
+io_lock = threading.RLock()
 
 # The overall layout of how segment should look
 class Segment:
+
+    newid = itertools.count().next
+
     def __init__(self):
+        self.id = self.newid()
         self.unit = None
         self.cif_uid = None
         self.gps_car_id = None
@@ -60,6 +70,18 @@ class Segment:
             'trust': trust_report,
             'dist_error': None
         })
+
+
+# Creates a new segment and stores
+# it in the global
+def createNewSegment(report):
+    segment = Segment()
+    if 'planned_pass' in report.keys():  # Trust has planned pass
+        segment.trust(report)
+    else:
+        segment.gps(report)
+    segments[segment.id] = segment
+    socket_io.emitSegment('new', segment)
 
 
 # Time in seconds and distance in km
