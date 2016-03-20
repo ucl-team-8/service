@@ -61,15 +61,18 @@ export function getLocations() {
 
 // -----------------------------------------------------------------------------
 
+export function getSegment(segment) {
+  segment.matching.forEach(stop => {
+    if (stop.trust) trustDatatypes(stop.trust);
+    if (stop.gps) gpsDatatypes(stop.gps);
+  });
+  return segment;
+}
+
 export function getSegments() {
   return get("json", "/data/segments.json").then((data) => {
     data = data.results;
-    data.forEach(segment => {
-      segment.matching.forEach(stop => {
-        if (stop.trust) trustDatatypes(stop.trust);
-        if (stop.gps) gpsDatatypes(stop.gps);
-      });
-    });
+    data.forEach(segment => getSegment(segment));
     return data;
   });
 }
