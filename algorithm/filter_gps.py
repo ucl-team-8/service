@@ -97,6 +97,7 @@ def checkNonMatchingTrust(segment, gps_report):
         if segment.gps_car_id is None:
            segment.gps_car_id = gps_report['gps_car_id']
            segment.unit = db_queries.getUnitFromCarId(segment.gps_car_id)
+           segment.isPlanned = db_queries.isPlanned(segment.unit, segment.headcode)
         return True
     return False
 
