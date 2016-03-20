@@ -31,7 +31,7 @@ class SimulateRealTime(threading.Thread):
     def fetchEvents(self, model, records):
         # If it is a newly declared records
         globals.db_lock.acquire()
-        if records is None:
+        if records is None or len(records) == 0:
             records = db.session.query(model).\
                 order_by(model.event_time.asc()).limit(100)
         else:
