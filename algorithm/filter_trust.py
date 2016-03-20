@@ -5,10 +5,10 @@
 # TODO: Use filterByDiagrams -> The variable predicted in the trust
 # report is set to true if filterByDiagrams returns true
 # TODO: Give preference to the same event type?
-
-import geo_distance
 import interpolating
+import geo_distance
 import db_queries
+import socket_io
 import datetime
 import globals
 
@@ -18,7 +18,7 @@ import globals
 # the ones that don't have the same headcode
 def filterSegmentsByHeadcode(trust):
     potential_segments = []
-    for segment in globals.segments:
+    for segment in globals.segments.values():
         if segment.headcode is None:
             potential_segments.append(segment)
         elif segment.headcode == trust['headcode']:
@@ -152,14 +152,6 @@ def chooseBestSegment(segments, trust):
     return new_segments
 
 
-# Creates a new segment and stores
-# it in the global
-def createNewSegment(trust):
-        segment = globals.Segment()
-        segment.trust(trust)
-        globals.segments.append(segment)
-
-
 def setBestStop(best, dist_error, time_error, match):
     best['dist_error'] = dist_error
     best['time_error'] = time_error
@@ -225,6 +217,7 @@ def getBestStop(segments1, trust, with_seq):
                 segment.headcode = trust['headcode']
                 segment.cif_uid = db_queries.cif_uidFromHeadcode(trust['headcode'])
                 segment.isPlanned = db_queries.isPlanned(segment.unit, trust['headcode'])
+            socket_io.emitSegment('update', segment)
             return True
     return False
 
@@ -242,6 +235,7 @@ def findEmptySegment(segments1, trust):
             'gps': None,
             'trust': trust
         })
+        socket_io.emitSegment('update', segment)
         return True
     return False
 
@@ -260,6 +254,6 @@ def addTrust(trust_report):
     foundStop = getBestStop(segments, trust_report, True)
     if not foundStop:
         if not findEmptySegment(segments, trust_report):
-            createNewSegment(trust_report)
+            globals.createNewSegment(trust_report)
     globals.lock.release()
     interpolating.interpolate(trust_report['headcode'])
