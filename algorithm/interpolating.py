@@ -8,6 +8,7 @@
 
 import geo_distance
 import db_queries
+import socket_io
 import globals
 
 
@@ -25,7 +26,7 @@ def countMatching(segment):
 def getSegmentsWithHeadcode(headcode):
     globals.lock.acquire()
     segments = []
-    for segment in globals.segments:
+    for segment in globals.segments.values():
         if segment.headcode == headcode:
             segments.append(segment)
     globals.lock.release()
@@ -41,14 +42,10 @@ def getReportTime(report):
 
 
 def removeSegments():
-    length = len(globals.segments)
-    i = 0
-    while i < length:
-        if globals.segments[i].remove:
-            del globals.segments[i]
-            length -= 1
-        else:
-            i += 1
+    for key, segment in globals.segments.items():
+        if segment.remove:
+            socket_io.emitSegment('delete', key)
+            del globals.segments[key]
 
 
 # Combines the segments from i to j and
@@ -58,6 +55,7 @@ def combineSegments(segments, i, j):
         segments[i].matching.extend(segments[k].matching)
         segments[k].remove = True
     segments[i].matching.sort(key=lambda x: getReportTime(x), reverse=False)
+    socket_io.emitSegment('update', segments[i])
 
 
 # Sorts all of the matching in the
@@ -139,6 +137,7 @@ def checkPotentialMatches(segment, potential_matches):
         segment.cif_uid = db_queries.cif_uidFromHeadcode(segment.headcode)
         for match in potential_matches:
             segment.matching[match['index']]['trust'] = match['trust']
+        socket_io.emitSegment('update', segment)
         globals.lock.release()
 
 
@@ -179,4 +178,3 @@ def interpolate(headcode):
     segments = getSegmentsWithHeadcode(headcode)
     joinSegments(segments)
     runningSameService(headcode)
-
