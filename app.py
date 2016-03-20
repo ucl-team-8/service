@@ -1,8 +1,8 @@
 from flask import render_template, jsonify
 from sqlalchemy.sql import func, and_
-import os
+from app_db import app, db, socketio
 import sys
-from app_db import app, db
+import os
 
 
 from models import *
@@ -20,9 +20,11 @@ def hello():
 def basic_algorithm():
     return render_template("basic-algorithm.html")
 
+
 @app.route("/map")
 def trainMap():
     return render_template("map.html")
+
 
 @app.route("/layerTwo")
 def layerTwo():
@@ -66,6 +68,7 @@ def schedule():
     records = db.session.query(Schedule, UnitToGPSMapping).\
               outerjoin(UnitToGPSMapping, Schedule.unit==UnitToGPSMapping.unit)
     globals.db_lock.release()
+
     def extract_dict(record):
         schedule, mapping = record
         result = schedule.as_dict()
@@ -152,10 +155,16 @@ def diagramData(headcode):
 @app.route("/data/segments.json")
 def segments():
     globals.lock.acquire()
-    results = map(lambda x: x.__dict__, globals.segments)
+    results = map(lambda x: x.__dict__, globals.segments.values())
     globals.lock.release()
     results = jsonify({'results': results})
     return results
+
+
+@socketio.on('connection')
+def handle_message(message):
+    print("Client connected")
+
 
 simulation = None
 
