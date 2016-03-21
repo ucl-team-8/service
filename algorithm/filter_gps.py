@@ -58,11 +58,10 @@ def findClosestSegment(segments, gps_report):
 def findClosestGPSSegment(segments, gps_report):
     closest = {'segment': None, 'time_diff': datetime.timedelta(days=1)}
     for segment in segments:
-        if segment in segments:
-            segment.matching.sort(
-                    key=lambda x: getTimeFromMatching(x), reverse=False)
-            if segment.gps_car_id == gps_report['gps_car_id']:
-                checkTimeDiff(segment, gps_report, closest)
+        segment.matching.sort(
+                key=lambda x: getTimeFromMatching(x), reverse=False)
+        if segment.gps_car_id == gps_report['gps_car_id']:
+            checkTimeDiff(segment, gps_report, closest)
     return closest['segment']
 
 
@@ -120,7 +119,7 @@ def addGPS(gps_report):
         segment = findClosestGPSSegment(globals.segments, gps_report)
         if segment is None:
             createNewSegment(gps_report)
-        else:
+        elif not checkNonMatchingTrust(segment, gps_report):
             segment.matching.append({
                 'gps': gps_report,
                 'trust': None,
