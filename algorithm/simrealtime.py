@@ -157,6 +157,3 @@ class SimulateRealTime(threading.Thread):
                 return None
 
 
-if __name__ == "__main__":
-    temp = SimulateRealTime(globals.speedup)
-    temp.start()
