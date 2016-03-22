@@ -152,10 +152,27 @@ def diagramData(headcode):
     return jsonify(result=diagram_service)
 
 
+# Returns a merge value of 2 dicts
+def mergeTwoDicts(a, b):
+    c = a.copy()
+    c.update(b)
+    return c
+
+
 @app.route("/data/segments.json")
 def segments():
     globals.lock.acquire()
-    results = map(lambda x: x.__dict__, globals.segments.values())
+    results = mergeTwoDicts(globals.segments, globals.old_segments)
+    results = map(lambda x: x.__dict__, results.values())
+    globals.lock.release()
+    results = jsonify({'results': results})
+    return results
+
+
+@app.route("/data/old_segments.json")
+def oldSegments():
+    globals.lock.acquire()
+    results = map(lambda x: x.__dict__, globals.old_segments.values())
     globals.lock.release()
     results = jsonify({'results': results})
     return results
