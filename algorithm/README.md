@@ -14,6 +14,11 @@ Since we want to simulate a real-time environment, the thread sleeps for `(next.
 
 The code also gets the next 100 reports once the gps or the trust queue gets too small. The reason we only hold a 100 reports in memory is because of scalability. If we want to test the segment generation with more reports, we will eventually not be able to hold all of them in memory.
 
+On top of all of this, there is also a cleaner thread. This thread is responsible for going through all of the segments every x amount of time and find segments that have not been updated for a while. After finding those segments, we remove them from the `segments` variable and add them to another variable, called `old_segments`. The reason we do this is because the `addGPS`, `addTrust` and the `interpolate` functions loop through all of the segments quite often. However we know that the
+probability of those functions adding a report to a segment that has not been updated for more than 3 hours is close to 0.
+
+Hence instead keeping having to loop through those 'useless' segments, we filter them out. That way we still have access to all of the segments if we need to but we improve the performance of our algorithm slightly.
+
 ### Submitting for processing
 Until now, we have treated submitting for processing as a high level concept to make the overall concept of real-time easier to understand but it is also an essential part of the simulation.
 
@@ -22,7 +27,7 @@ Once the SimulateRealTime thread is started, it creates a threadpool using the `
 This means that the task gets added to a task queue, which will eventually be executed, as soon as one of the threads in the threadpool is finished processing a previous report.
 
 ## Threading
-Since we have multiple threads, we need to assure thread safety, which we currently do using 2 different locks. First of all, we do not want 2 or more threads reading and writing to the segments variable at the same time. This is why, every time we read or write from the variable, we use the `lock` variable. 
+Since we have multiple threads, we need to assure thread safety, which we currently do using 2 different locks. First of all, we do not want 2 or more threads reading and writing to the segments variable at the same time. This is why, every time we read or write from the variable, we use the `lock` variable.
 
 Additionally, since SQLAlchemy is not thread safe from default, we are currently using the `db_lock` variable whenever we access the database.
 
