@@ -137,17 +137,6 @@ function plotSegment(segment) {
   updateReports(unitContainer, scale, unitStops);
 }
 
-function getServiceStopsFromSegments(segments) {
-  return _(segments)
-    .map(d => d.matching)
-    .flatten()
-    .map(d => d.trust)
-    .uniqWith(_.isEqual)
-    .compact()
-    .sortBy(d => d.event_time)
-    .value();
-}
-
 function getServiceStopsFromSegment(segment) {
   return _(segment.matching)
     .map(d => d.trust)
