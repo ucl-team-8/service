@@ -5,6 +5,7 @@ import concurrent.futures
 import filter_trust
 import filter_gps
 import threading
+import cleaner
 import globals
 import time
 import os
@@ -142,7 +143,14 @@ class SimulateRealTime(threading.Thread):
         # print globals.segments
         # globals.lock.release()
 
+    # Starts a cleaner thread
+    def startCleaner(self):
+        cleanerThread = cleaner.Cleaner(self)
+        cleanerThread.start()
+        return cleanerThread
+
     def run(self):
+        cleanerThread = self.startCleaner()
         executor = concurrent.futures.ThreadPoolExecutor(max_workers=globals.workers)
         current = {'name': '', 'record': None}
         next = {'name': '', 'record': None}
@@ -154,7 +162,8 @@ class SimulateRealTime(threading.Thread):
             self.checkEmptyRecords()
             if not self.getNextRecordAndSleep(executor, current, next):
                 print("Finished simulating the environment")
-                return None
+                break
+        cleanerThread.stop()
 
 
 if __name__ == "__main__":
