@@ -65,9 +65,9 @@ class Segment:
 # Time in seconds and distance in km
 global tolerance
 tolerance = {
-    'time': datetime.timedelta(minutes=15),
-    'distance': 10,
-    'minutes': 15
+    'time': datetime.timedelta(minutes=10),
+    'distance': 5,
+    'minutes': 10
 }
 
 # Represents the amount of minimum matching
@@ -77,9 +77,14 @@ tolerance = {
 global min_matching
 min_matching = 3
 
+# The maximum time that can be between 2 segment
+# for interpolation
+global min_time
+min_time = datetime.timedelta(minutes=30)
+
 # Determines how fast the simulation runs
 global speedup
-speedup = 5000
+speedup = 100
 
 # The amount of threads in the threadpool
 # that add events to the segments
