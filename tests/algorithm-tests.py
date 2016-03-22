@@ -6,12 +6,46 @@ os.sys.path.insert(0, parentdir + '/algorithm')
 
 import geo_distance
 import db_queries
+import datetime
+import globals
+import cleaner
 
 tolerance = 0.001
 coord1 = {'latitude': 52.2296756, 'longitude': 21.0122287}
 coord2 = {'latitude': 52.406374, 'longitude': 16.9251681}
 coord3 = {'latitude': 57.4774160525352, 'longitude': -4.46815579590345}
 coord4 = {'latitude': 51.6909417951552, 'longitude': -3.40287716811208}
+
+# Test class for cleaner
+class Simulation():
+    def __init__(self, gps, trust):
+        self.records = {'gps': gps, 'trust': trust}
+
+old = datetime.datetime.now() - globals.is_old
+now= datetime.datetime.now()
+
+now_dict = {'event_time': now}
+old_dict = {'event_time': old}
+
+sim1 = Simulation([now_dict], [now_dict])
+sim2 = Simulation([now_dict], [old_dict])
+sim3 = Simulation([old_dict], [now_dict])
+sim4 = Simulation([old_dict], [old_dict])
+sim5 = Simulation([old_dict], [])
+sim6 = Simulation([], [now_dict])
+
+
+newSegment1 = globals.Segment()
+newSegment1.matching.append({'trust': {'event_time': now}, 'gps': None})
+
+newSegment2 = globals.Segment()
+newSegment2.matching.append({'gps': {'event_time': now}, 'trust': None})
+
+oldSegment1 = globals.Segment()
+oldSegment1.matching.append({'trust': {'event_time': old}, 'gps': None})
+
+oldSegment2 = globals.Segment()
+oldSegment2.matching.append({'gps': {'event_time': old}, 'trust': None})
 
 
 class TestGeoDist(unittest.TestCase):
@@ -94,6 +128,58 @@ class TestDBQueries(unittest.TestCase):
     def testcif_uidFromHeadcode3(self):
         result = db_queries.cif_uidFromHeadcode('0')
         self.assertEqual(result, None)
+
+
+class TestCleaner(unittest.TestCase):
+    def setUp(self):
+        globals.segments = {}
+        globals.old_segments = {}
+
+    def testGetCurrentTime1(self):
+        time = cleaner.getCurrentTime(sim1)
+        self.assertEqual(now, time)
+
+    def testGetCurrentTime2(self):
+        time = cleaner.getCurrentTime(sim2)
+        self.assertEqual(old, time)
+
+    def testGetCurrentTime3(self):
+        time = cleaner.getCurrentTime(sim3)
+        self.assertEqual(old, time)
+
+    def testGetCurrentTime4(self):
+        time = cleaner.getCurrentTime(sim4)
+        self.assertEqual(old, time)
+
+    def testGetCurrentTime5(self):
+        time = cleaner.getCurrentTime(sim5)
+        self.assertEqual(old, time)
+
+    def testGetCurrentTime6(self):
+        time = cleaner.getCurrentTime(sim6)
+        self.assertEqual(now, time)
+
+    def testMoveOldSegment(self):
+        globals.segments[oldSegment1.id] = oldSegment1
+        cleaner.moveToOldSegment(oldSegment1)
+        self.assertEqual(len(globals.segments), 0)
+        self.assertEqual(len(globals.old_segments), 1)
+
+    def testCheckIfOld1(self):
+        result = cleaner.checkIfOld(newSegment1, now)
+        self.assertEqual(result, False)
+
+    def testCheckIfOld2(self):
+        result = cleaner.checkIfOld(newSegment2, now)
+        self.assertEqual(result, False)
+
+    def testCheckIfOld3(self):
+        result = cleaner.checkIfOld(oldSegment1, now)
+        self.assertEqual(result, True)
+
+    def testCheckIfOld4(self):
+        result = cleaner.checkIfOld(oldSegment2, now)
+        self.assertEqual(result, True)
 
 
 if __name__ == "__main__":
