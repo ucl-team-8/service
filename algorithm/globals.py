@@ -10,6 +10,22 @@ import datetime
 global segments
 segments = {}
 
+# Stores all of the old segments that
+# we do not need to consider for processing
+# anymore
+global old_segments
+old_segments = {}
+
+# Variable used to check if a segment
+# can be moved from the segments variable
+# to the old_segments variable
+global is_old
+is_old = datetime.timedelta(hours=3)
+
+# How often the cleaning thread runs
+global clean_time
+clean_time = datetime.timedelta(minutes=15)
+
 # This is to how many matches in matching
 # the algorithm looks back at when trying
 # to match a trust report to a gps report
