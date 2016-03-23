@@ -3,14 +3,29 @@
 ## Simulating realtime
 The [simrealtime.py](algorithm/simrealtime.py) file creates a new thread that simulates a real time environment by querying the database for trust and gps reports and calling the appropriate functions when it gets a new report.
 
-Currently you can test the algorithm by running:
-```
-python algorithm/simrealtime.py
-```
+### General overview
+When you create a SimulateRealTime object and call start, a new thread will be initialized and it will start simulating a real time environment.
 
-This will print out the segments after every change that has happened.
+The way it does it is by storing the next 100 gps and the next 100 trust reports in the self.records variable. You can image it to be like having 2 queues, one with trust reports and one with gps reports.
 
-The realtime thread then creates a threadpool and, which it uses to do all of the data processing. 
+Next, the thread starts off by checking the first value in the gps queue and the first value in the trust queue. We compare the time stamps on the reports and store the oldest one in the `current` variable, take it out of the queue and submit it to be processed. After that, we compare the first value in the gps queue and the trust queue and choose the oldest one again and store it in the `next` variable.
+
+Since we want to simulate a real-time environment, the thread sleeps for `(next.time - current.time)` and then submits the next variable to be processed. Finally, the `current` variable is set equal to the `next` variable and we repeat until there are no more gps and trust reports.
+
+The code also gets the next 100 reports once the gps or the trust queue gets too small. The reason we only hold a 100 reports in memory is because of scalability. If we want to test the segment generation with more reports, we will eventually not be able to hold all of them in memory.
+
+### Submitting for processing
+Until now, we have treated submitting for processing as a high level concept to make the overall concept of real-time easier to understand but it is also an essential part of the simulation.
+
+Once the SimulateRealTime thread is started, it creates a threadpool using the `concurrent.futures` module with a certain amount of worker threads. These threads are actually responsible for all of the data processing and generating the segments. Every time we submit a report for processing, we check if it is a trust or a gps report. Depending on the type, we submit it for a different kind of processing.
+
+This means that the task gets added to a task queue, which will eventually be executed, as soon as one of the threads in the threadpool is finished processing a previous report.
+
+## Threading
+Since we have multiple threads, we need to assure thread safety, which we currently do using 2 different locks. First of all, we do not want 2 or more threads reading and writing to the segments variable at the same time. This is why, every time we read or write from the variable, we use the `lock` variable. 
+
+Additionally, since SQLAlchemy is not thread safe from default, we are currently using the `db_lock` variable whenever we access the database.
+
 
 ## Segments
 What the algorithm currently does is creating segments from all of the reports that are coming in.

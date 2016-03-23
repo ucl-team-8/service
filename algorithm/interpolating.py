@@ -7,6 +7,7 @@
 # to the segments, it might be better to run it every 10 min?
 
 import geo_distance
+import db_queries
 import globals
 
 
@@ -40,22 +41,30 @@ def getReportTime(report):
 
 
 def removeSegments():
-    globals.lock.acquire()
-    for i in range(0, len(globals.segments)):
+    length = len(globals.segments)
+    i = 0
+    while i < length:
         if globals.segments[i].remove:
             del globals.segments[i]
-    globals.lock.release()
+            length -= 1
+        else:
+            i += 1
 
 
 # Combines the segments from i to j and
 # store all of the reports in i
 def combineSegments(segments, i, j):
-    globals.lock.acquire()
-    for k in range(i + 1, j):
+    for k in range(i + 1, j + 1):
         segments[i].matching.extend(segments[k].matching)
         segments[k].remove = True
     segments[i].matching.sort(key=lambda x: getReportTime(x), reverse=False)
-    globals.lock.release()
+
+
+# Sorts all of the matching in the
+# segments
+def sortSegments(segments):
+    for segment in segments:
+        segment.matching.sort(key=lambda x: getReportTime(x), reverse=False)
 
 
 # Helper function for join segments that joins
@@ -64,6 +73,7 @@ def combineSegments(segments, i, j):
 def joinSegmentsHelper(segments, i):
     imatching = countMatching(segments[i])
     if imatching < globals.min_matching:
+        # The segment is not long enough to be 'trusted'
         return
     stops_in_between = 0
     # Loops through the lookaheads
@@ -81,25 +91,24 @@ def joinSegmentsHelper(segments, i):
 def joinSegments(segments):
     # Sort them in reversed order such that we can go through them
     # backwards
+    globals.lock.acquire()
+    sortSegments(segments)
     segments.sort(key=lambda x: getReportTime(x.matching[-1]), reverse=True)
     # We don't want to have i to be the last segment
     for i in range(0, len(segments) - 1):
         if segments[i].gps_car_id == segments[i + 1].gps_car_id:
-            # Join them together because they have the same gps and heacode
-            globals.lock.acquire()
-            segments[i].matching.extend(segments[i + 1].matching)
-            segments[i].matching.sort(key=lambda x: getReportTime(x), reverse=False)
-            segments[i + 1].remove = True
-            globals.lock.release()
+            # Join them together because they have the same gps and headcode
+            combineSegments(segments, i, i + 1)
         else:
             joinSegmentsHelper(segments, i)
         removeSegments()
+    globals.lock.release()
 
 
 # Checks if a gps report matches a
 # trust report
 def isMatching(gps, trust):
-    time_error = abs(gps['event_time'] - trust['event_type'])
+    time_error = abs(gps['event_time'] - trust['event_time'])
     if time_error < globals.tolerance['time']:
         dist_error = geo_distance.calculateDistance(
             gps['tiploc'], trust['tiploc'])
@@ -111,12 +120,14 @@ def isMatching(gps, trust):
 # Finds the next index in the empty_matching
 # list that is within the time constraint
 def findNextIndex(match, empty_matching, next_index):
-    time_error = abs(match['event_time'] - empty_matching[next_index]['event_time'])
-    while time_error > globals.tolerance['time'] and\
-            next_index < len(empty_matching):
-        next_index += 1
-        time_error = abs(match['event_time'] - empty_matching[next_index]['event_time'])
-    return next_index
+    if next_index < len(empty_matching):
+        time_error = abs(getReportTime(match) - getReportTime(empty_matching[next_index]))
+        while time_error > globals.tolerance['time'] and\
+                next_index < len(empty_matching):
+            time_error = abs(getReportTime(match) - getReportTime(empty_matching[next_index]))
+            next_index += 1
+        return next_index
+    return len(empty_matching) - 1
 
 
 # Checks if you have enough potential_matches and
@@ -125,6 +136,7 @@ def checkPotentialMatches(segment, potential_matches):
     if len(potential_matches) > globals.min_matching:
         globals.lock.acquire()
         segment.headcode = potential_matches[0]['trust']['headcode']
+        segment.cif_uid = db_queries.cif_uidFromHeadcode(segment.headcode)
         for match in potential_matches:
             segment.matching[match['index']]['trust'] = match['trust']
         globals.lock.release()

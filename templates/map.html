@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="/static/css/main.css" charset="utf-8">
+  </head>
+  <body>
+
+    <div class="container">
+
+      <div class="map-pane">
+        <div id="map"></div>
+      </div>
+
+      <div class="reports-pane">
+        <svg class="reports-svg"></svg>
+      </div>
+
+    </div>
+
+    <script src="/static/js/jspm_packages/system.js"></script>
+    <script src="/static/js/config.js"></script>
+    <script>
+      System.import('/static/js/vis/index.js');
+    </script>
+  </body>
+</html>

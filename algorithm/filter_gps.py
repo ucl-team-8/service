@@ -2,6 +2,7 @@
 # to the segments
 
 import geo_distance
+import db_queries
 import datetime
 import globals
 
@@ -10,11 +11,28 @@ import globals
 # if the it closer to the gps_report than the current
 # closest
 def checkTimeDiff(segment, gps_report, closest):
-    time_diff = abs(segment.matching[-1]['gps']['event_time'] -
-                    gps_report['event_time'])
+    time_diff = None
+    if segment.matching[-1]['gps'] is not None:
+        time_diff = abs(segment.matching[-1]['gps']['event_time'] -
+                gps_report['event_time'])
+    if segment.matching[-1]['trust'] is not None:
+        temp_diff = abs(segment.matching[-1]['trust']['event_time'] -
+                gps_report['event_time'])
+        if time_diff is None:
+            time_diff = temp_diff
+        elif temp_diff < time_diff:
+            time_diff = temp_diff
     if time_diff < closest['time_diff']:
         closest['segment'] = segment
         closest['time_diff'] = time_diff
+
+
+# Gets the time from either report
+# in the match
+def getTimeFromMatching(match):
+    if match['gps'] is not None:
+        return match['gps']['event_time']
+    return match['trust']['event_time']
 
 
 # Finds the segment with the reports
@@ -25,9 +43,24 @@ def findClosestSegment(segments, gps_report):
     # another service
     for segment in segments:
         if segment.gps_car_id is None:
+            segment.matching.sort(key=lambda x: x['trust']['event_time'], reverse=False)
             checkTimeDiff(segment, gps_report, closest)
     if closest['segment'] is None:
         for segment in segments:
+            segment.matching.sort(
+                    key=lambda x: getTimeFromMatching(x), reverse=False)
+            if segment.gps_car_id == gps_report['gps_car_id']:
+                checkTimeDiff(segment, gps_report, closest)
+    return closest['segment']
+
+
+# Finds the closest segment with the same gps_car_id
+def findClosestGPSSegment(segments, gps_report):
+    closest = {'segment': None, 'time_diff': datetime.timedelta(days=1)}
+    for segment in segments:
+        if segment in segments:
+            segment.matching.sort(
+                    key=lambda x: getTimeFromMatching(x), reverse=False)
             if segment.gps_car_id == gps_report['gps_car_id']:
                 checkTimeDiff(segment, gps_report, closest)
     return closest['segment']
@@ -61,23 +94,35 @@ def checkNonMatchingTrust(segment, gps_report):
     if closest['match'] is not None:
         closest['match']['gps'] = gps_report
         closest['match']['dist_error'] = dist_error
+        if segment.gps_car_id is None:
+           segment.gps_car_id = gps_report['gps_car_id']
+           segment.unit = db_queries.getUnitFromCarId(segment.gps_car_id)
         return True
     return False
 
 
+def createNewSegment(gps_report):
+    segment = globals.Segment()
+    segment.gps(gps_report)
+    globals.segments.append(segment)
+
+
 # This function adds the gps report to a segment
 def addGPS(gps_report):
+    if gps_report is None:
+        return
     globals.lock.acquire()
     segment = findClosestSegment(globals.segments, gps_report)
     if segment is None:
-        segment = globals.Segment()
-        segment.gps(gps_report)
-        globals.segments.append(segment)
-
+        createNewSegment(gps_report)
     elif not checkNonMatchingTrust(segment, gps_report):
-        segment.matching.append({
-            'gps': gps_report,
-            'trust': None,
-            'dist_error': None
-        })
+        segment = findClosestGPSSegment(globals.segments, gps_report)
+        if segment is None:
+            createNewSegment(gps_report)
+        else:
+            segment.matching.append({
+                'gps': gps_report,
+                'trust': None,
+                'dist_error': None
+            })
     globals.lock.release()

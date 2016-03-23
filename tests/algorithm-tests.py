@@ -6,10 +6,14 @@ os.sys.path.insert(0, parentdir + '/algorithm')
 
 import geo_distance
 import db_queries
+
 import simrealtime
 import app
 from models import GPS
-    
+
+
+tolerance = 0.001
+
 coord1 = {'latitude': 52.2296756, 'longitude': 21.0122287}
 coord2 = {'latitude': 52.406374, 'longitude': 16.9251681}
 coord3 = {'latitude': 57.4774160525352, 'longitude': -4.46815579590345}
@@ -65,23 +69,23 @@ class TestEndPoints(unittest.TestCase):
 
 class TestGeoDist(unittest.TestCase):
     def test_distance1(self):
-        self.assertEqual(
-            geo_distance.calculateDist(coord1, coord2), 278.54558935106695
+        self.assertLess(
+            abs(geo_distance.calculateDist(coord1, coord2) - 278.54558935106695), tolerance
         )
 
     def test_distance2(self):
-        self.assertEqual(
-            geo_distance.calculateDist(coord3, coord4), 647.259510348751
+        self.assertLess(
+            abs(geo_distance.calculateDist(coord3, coord4) - 647.259510348751), tolerance
         )
 
     def test_tiploc_long_lat(self):
         result = geo_distance.findLongLat('BEAULY')
-        self.assertEqual(result['latitude'], 57.4774160525352)
-        self.assertEqual(result['longitude'], -4.46815579590345)
+        self.assertLess(abs(result['latitude'] - 57.4774160525352), tolerance)
+        self.assertLess(abs(result['longitude'] - -4.46815579590345), tolerance)
 
     def test_calculate_distance(self):
         result = geo_distance.calculateDistance('BEAULY', 'ABCWM')
-        self.assertEqual(result, 647.259510348751)
+        self.assertLess(result - 647.259510348751, tolerance)
 
 
 class TestDBQueries(unittest.TestCase):
@@ -142,7 +146,7 @@ class TestDBQueries(unittest.TestCase):
 
     def testcif_uidFromHeadcode3(self):
         result = db_queries.cif_uidFromHeadcode('0')
-        self.assertEqual(result, '')
+        self.assertEqual(result, None)
 
 
 if __name__ == "__main__":

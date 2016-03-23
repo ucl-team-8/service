@@ -74,3 +74,4 @@ jspm_packages
 
 # Sensitive tiploc locations dataset
 data/locations.tsv
+static/data/locations_east_coast_extract.csv

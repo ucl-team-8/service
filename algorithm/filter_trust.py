@@ -18,13 +18,11 @@ import globals
 # the ones that don't have the same headcode
 def filterSegmentsByHeadcode(trust):
     potential_segments = []
-    globals.lock.acquire()
     for segment in globals.segments:
-        if segment.headcode == '':
+        if segment.headcode is None:
             potential_segments.append(segment)
         elif segment.headcode == trust['headcode']:
             potential_segments.append(segment)
-    globals.lock.release()
     return potential_segments
 
 
@@ -33,7 +31,7 @@ def filterSegmentsByHeadcode(trust):
 def filterPotentialSegments(segments, trust):
     potential_segments = []
     for segment in segments:
-        for i in range(-globals.backmatches, 0):
+        for i in range(0, len(segment.matching)):
             try:
                 if (segment.matching[i]['gps'] is not None) and\
                         (segment.matching[i]['trust'] is None):
@@ -48,9 +46,9 @@ def filterPotentialSegments(segments, trust):
                             break
             except:
                 pass # Do nothing
+    if len(potential_segments) == 0:
+        return segments
     return potential_segments
-
-
 
 
 # The second layer that filters the potential segments
@@ -59,8 +57,9 @@ def filterPotentialSegments(segments, trust):
 def filterByGeniusAllocations(segments, trust):
     potential_segments = []
     for segment in segments:
-        if segment.isPlanned or db_queries.isPlanned(segment.unit, trust['headcode']):
-            potential_segments.append(segment)
+        if segment.unit is not None:
+            if segment.isPlanned or db_queries.isPlanned(segment.unit, trust['headcode']):
+                potential_segments.append(segment)
     if len(potential_segments) > 0:
         return potential_segments
     return segments
@@ -129,16 +128,9 @@ def isPredictedReport(trust):
 
 # Chooses which one is the better sequence
 # returns true is current is better than best
-def isBetterSegment(segment, current, best):
+def isBetterSegment(current):
     currentValue = current['matching'] + current['seq_respected']
-    bestValue = best['matching'] + best['seq_respected']
-
-    # >= than because initially every segment has
-    # 0 matching
-    if currentValue >= bestValue:
-        best['segment'] = segment
-        best['matching'] = current['matching']
-        best['seq_respected'] = current['seq_respected']
+    return currentValue
 
 
 # from the list of filtered segments, this function
@@ -146,9 +138,9 @@ def isBetterSegment(segment, current, best):
 # the first is how accurately the seq are
 # the second by how many matches there are
 def chooseBestSegment(segments, trust):
-    best = {'matching': 0, 'seq_respected': 0, 'segment': None}
+    new_segments = []
     for segment in segments:
-        current = {'matching': 0, 'seq_respected': 0, 'seq': 0}
+        current = {'matching': 0, 'seq_respected': 0, 'seq': 0, 'segment': segment}
         for match in segment.matching:
             if (match['gps'] is not None) and\
                     (match['trust'] is not None):
@@ -156,8 +148,8 @@ def chooseBestSegment(segments, trust):
                 if match['trust']['seq'] < current['seq']:
                     current['seq_respected'] += 1
                     current['seq'] = match['trust']['seq']
-        isBetterSegment(segment, current, best)
-    return best['segment']
+        new_segments.append(current)
+    return new_segments
 
 
 # Creates a new segment and stores
@@ -179,53 +171,95 @@ def setBestStop(best, dist_error, time_error, match):
 # to that stop
 # the with_seq flag determines if the function takes
 # seq in consideration
-def getBestStop(segment, trust, with_seq):
+def getBestStopHelper(matching, trust, with_seq):
     best = {
         'match': None,
         'time_error': datetime.timedelta(days=1),
         'dist_error': 1000000  # km
     }
     last_seq = 0
-    for match in segment.matching:
+    for match in matching:
         if(match['gps'] is not None) and\
                 (match['trust'] is None):
             dist_error = geo_distance.calculateDistance(
                 match['gps']['tiploc'], trust['tiploc'])
             time_error = abs(match['gps']['event_time'] - trust['event_time'])
-            if(dist_error < best['dist_error']) and\
-                    (time_error < best['time_error']):
-                if with_seq and (trust['seq'] > last_seq):
-                    setBestStop(best, dist_error, time_error, match)
-                elif not with_seq:
-                    setBestStop(best, dist_error, time_error, match)
+            if(dist_error < globals.tolerance['distance']) and\
+                    (time_error < globals.tolerance['time']):
+                if(dist_error < best['dist_error']) and\
+                        (time_error < best['time_error']):
+                    if with_seq and (trust['seq'] > last_seq):
+                        setBestStop(best, dist_error, time_error, match)
+                    elif not with_seq:
+                        setBestStop(best, dist_error, time_error, match)
         elif match['trust'] is not None:
             last_seq = match['trust']['seq']
 
     if best['match'] is not None:
-        best['match']['trust'] = trust
-        best['match']['dist_error'] = best['dist_error']
-        if segment.headcode == '':
-            segment.headcode = trust['headcode']
-            segment.cif_uid = db_queries.cif_uidFromHeadcode(trust['headcode'])
-        return True
+        return best
     elif with_seq:
-        if not getBestStop(segment, trust, False):
-            createNewSegment(trust)
+        return getBestStopHelper(matching, trust, False)
+    return None
+
+
+def getTimeForMatching(match):
+    if match['gps'] is not None:
+        return match['gps']['event_time']
+    return match['trust']['event_time']
+
+# Goes through the array of segments that we
+# sort according to the getBestSegment function
+# then it chooses the first and best stop to match with
+def getBestStop(segments1, trust, with_seq):
+    segments = filter(lambda x: x['segment'].gps_car_id is not None, segments1)
+    segments.sort(key=lambda x: isBetterSegment(x), reverse=True)
+    for segment1 in segments:
+        segment = segment1['segment']
+        segment.matching.sort(key=lambda x: getTimeForMatching(x), reverse=True)
+        matching = segment.matching[0: globals.backmatches]
+        best = getBestStopHelper(matching, trust, True)
+        if best is not None:
+            best['match']['trust'] = trust
+            best['match']['dist_error'] = best['dist_error']
+            if segment.headcode is None:
+                segment.headcode = trust['headcode']
+                segment.cif_uid = db_queries.cif_uidFromHeadcode(trust['headcode'])
+                segment.isPlanned = db_queries.isPlanned(segment.unit, trust['headcode'])
+            return True
+    return False
+
+
+# If no matching gps report is found, it tries to append
+# the trust report to an existing segment with no
+# gps_car_id
+def findEmptySegment(segments1, trust):
+    segments = filter(lambda x: x['segment'].gps_car_id is None, segments1)
+    if len(segments) > 0:
+        segments.sort(key=lambda x: isBetterSegment(x), reverse=True)
+        segment = segments[0]['segment']
+        segment.matching.append({
+            'dist_error': None,
+            'gps': None,
+            'trust': trust
+        })
+        return True
+    return False
 
 
 # Adds the trust report to a segment
 def addTrust(trust_report):
+    if trust_report is None:
+        return
+    globals.lock.acquire()
     trust_report['predicted'] = isPredictedReport(trust_report)
     segments = filterSegmentsByHeadcode(trust_report)
     segments = filterPotentialSegments(segments, trust_report)
     segments = filterByGeniusAllocations(segments, trust_report)
 
-    segment = chooseBestSegment(segments, trust_report)
-    globals.lock.acquire()
-    if segment is None:
-        createNewSegment(trust_report)
-    else:
-        segment.isPlanned = db_queries.isPlanned(segment.unit, trust_report['headcode'])
-        getBestStop(segment, trust_report, True)
+    segments = chooseBestSegment(segments, trust_report)
+    foundStop = getBestStop(segments, trust_report, True)
+    if not foundStop:
+        if not findEmptySegment(segments, trust_report):
+            createNewSegment(trust_report)
     globals.lock.release()
     interpolating.interpolate(trust_report['headcode'])
