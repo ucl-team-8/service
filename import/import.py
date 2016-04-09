@@ -115,7 +115,6 @@ allocations_column_map = {
 def parse_allocations(file):
     reader = csv.DictReader(file)
     rows = [map_columns(allocations_column_map, row) for row in reader]
-    rows = filter(lambda row: len(row['unit']) <= 4, rows)
     for row in rows:
         row['origin_departure'] = parse_date(row['origin_departure'], '%d/%m/%Y %H:%M')
     return rows
