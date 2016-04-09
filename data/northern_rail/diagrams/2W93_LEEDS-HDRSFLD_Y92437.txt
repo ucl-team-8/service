@@ -1,0 +1,19 @@
+BSNY924371512141605131111100 POO2W93    111868820 DMUA   075      S            P
+BX         NTY                                                                  
+LOLEEDS   2118 211810BD      TB                                                 
+LILEEDSWJ           2119 00000000   D                                           
+LIWHRDJN            2119H00000000                                               
+LIHOLBJCN           2120 00000000                                               
+LIBRMLYSR 2125 2125H     212521251        T                                     
+LINPUD    2129 2130      212921301        T                                     
+LIMLLNJN            2136H00000000                                               
+LIBRADIN  2138 2141      213821413        T                                     
+LIMLLNJN 2          2142H00000000                         1                     
+LIHLFX    2153H2158      215421581        T                                     
+LIDYCLJN            2200H00000000                                               
+LIGRTLNDJ           2203 00000000                                               
+LIELLAND            2204 00000000                                               
+LIBRHOUSE 2207H2208H     220822081        T           1                         
+LIBRLYWJN           2212 00000000                                               
+LIBRLYJN  2214H2217      00000000         A                                     
+LTHDRSFLD 2223 22234A    TF                                                     

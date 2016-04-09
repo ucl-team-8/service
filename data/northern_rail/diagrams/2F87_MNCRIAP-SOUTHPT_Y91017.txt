@@ -1,0 +1,26 @@
+BSNY910171512141605131111100 POO2F87    112233110 DMUS   075      S            P
+BX         NTY                                                                  
+LOMNCRIAP 1904 19041A        TB                                                 
+LIHLDGWJ            1906 00000000                                               
+LIHLDG              1907 000000001                                              
+LISLDLJN            1912H00000000   SL                  1                       
+LIARDWCKJ           1915 00000000                                               
+CRMNCRPIC OO2F87    112224820 DMUS   075      S                                 
+LIMNCRPIC 1918 1920      1918192014    SL T                                     
+LIMNCROXR 1921H1924      192219242        T                                     
+LIMNCRDGT 1925H1927H     192619272        T                                     
+LICFLDJN            1928 00000000                        H                      
+LIORDSLLJ           1929H00000000                       1                       
+LISLFDCT  1932 1934      193219342        T                                     
+LIBOLTON  1943H1944H     194419444        T                                     
+LILOSTCKJ           1948H00000000                                               
+LIWSTHOTN 1951H1952      19521952         T                                     
+LICRWNSTJ           1954H00000000                                               
+LIHINDLEY 1955H1956      19561956         T              H                      
+LIWIGANWL 2001 2003      200120031        T                                     
+LIGATHRST 2007 2007H     20072007         T                                     
+LIAPLYBDG 2010H2011      20112011         T                                     
+LIPARBOLD 2014H2015      20152015         T                                     
+LIBRSCGHB 2019 2019H     20192019         T                                     
+LIMEOLSCP 2026H2027      20272027         T           2                         
+LTSOUTHPT 2034 20365     TF                                                     

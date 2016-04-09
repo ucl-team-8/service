@@ -1,0 +1,12 @@
+BSNY921061512141605131111100 POO2S10    111820820 EMU333 100      S            P
+BX         NTY                                                                  
+LOBRADFS  0841 08411         TB                                                 
+LIFRZNGHL 0844 0844H     084408441        T                                     
+LISHPY    0848 0849      084808495        T                                     
+LISAIR    0851 0852      085108522        T                                     
+LIBNGY    0855 0856      085508562        T                                     
+LICFLATTS 0857H0858H     085808582        T                                     
+LIKEIGHLY 0902 0903      090209032        T                                     
+LISTEETON 0906H0907H     090709072        T                                     
+LICONONLY 0911 0912      091109122        T           1   1                     
+LTSKPT    0919 09204     TF                                                     

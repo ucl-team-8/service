@@ -1,0 +1,8 @@
+BSNY924891512141605131111100 PEE5A55    121799000 DMUA   075                   P
+BX         NTY                                                                  
+LODLTN    2305 00001     15  TB                                                 
+LINLRTN             2332H00000000   FL                                          
+LITHIRSK            2338H00000000   FL                                          
+LITOLERTN           2348H00000000   FL                7                         
+LISKELTON           0002 00000000                                               
+LTYORK    0005 00003     TF                                                     

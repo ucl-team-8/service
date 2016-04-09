@@ -1,0 +1,28 @@
+BSNY924091512141605131111100 POO2W68    121800000 DMUA   075      S            P
+BX         NTY                                                                  
+LONUNTHRP 1730 17302         TB                                                 
+LIGYPSYLA 1731H1732      173217321        T                                     
+LIJAMCOK  1735 1736      173517361        T           1                         
+LIGUSBROJ           1739H00000000                                               
+CRMDLSBRO OO2W68    111792920 DMUA   075      S                                 
+LIMDLSBRO 1740H1743      174217431        T                                     
+LITABY    1747H1748      174817481        T              H                      
+LIBOWSFLD           1750H00000000                                               
+LIHRTBJN            1751H00000000                                               
+LISTOCTON 1753H1754H     175417542        T                                     
+LINORTONS           1757H00000000                                               
+LIBLNGHMJ           1800 00000000                                               
+LIBLNGHM  1801 1801H     180118012        T                                     
+LIGREATHM           1804H00000000                                               
+LISETNCRW 1807 1808      180718082        T                                     
+LIHRTLEPL 1812 1813H     181218131        T                                     
+LIHORD137           1822 00000000                                               
+LISEAHAM  1828H1829      182918292        T                                     
+LIRYHPGRN           1833 00000000                     2                         
+LISNDRLND 1838H1843      183918434        T               2                     
+LIBRWHINS           1851 00000000                                               
+LIPELAW             1854 00000000                                               
+LIHEWORTH 1855 1856      18541854         T             1                       
+LIPKLNJN            1859H00000000                                               
+LIHLBDGJN           1901H00000000                       3                       
+LTNWCSTLE 1907 19078     TF                                                     

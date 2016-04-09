@@ -1,0 +1,10 @@
+BSNY923621512141605131111100 POO2W20    121796000 DMUA   075      S            P
+BX         NTY                                                                  
+LONWCSTLE 1044 10445         TB                                                 
+LIHLBDGJN           1045H00000000                                               
+LIGRNSFDJ           1046 00000000                                               
+LIKEBGEJN           1046H00000000                                               
+LIKEBGSJN           1047 00000000                                               
+LINRWDJN            1049 00000000                                               
+LIDNSN    1050 1050H     10501050         T                                     
+LTGTSHDMC 1053 10542     TF                                                     

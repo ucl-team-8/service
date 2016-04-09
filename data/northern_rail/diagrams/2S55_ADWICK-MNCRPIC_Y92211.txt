@@ -1,0 +1,41 @@
+BSNY922111512141605131111100 POO2S55    111807820 DMUA   075      S            P
+BX         NTY                                                                  
+LOADWICK  1615 16151         TB                                                 
+LIBTLYSY  1618H1619      161916191        T             1                       
+LIDONC    1624 1626      162416268        T                                     
+LIDONCHJN           1629 00000000                        H                      
+LICONBRGH 1633 1634      16331634         T                                     
+LIMEXBRGH 1637H1638H     16381638         T                                     
+LISWINTN  1641 1642      16411642         T                                     
+LIALDWRKJ           1645 00000000                         2                     
+LIROTHCEN 1650H1651H     165116511        T                                     
+LIROTHHJN           1653H00000000                          H                    
+LIMEADWHL 1656H1657H     165716571        T                                     
+LIWNCOJN            1658 00000000                     1    H                    
+LINNRYMLJ           1703 00000000                                               
+CRSHEFFLD OO2S55    112226820 DMUA   075      S                                 
+LISHEFFLD 1705 1714      170517148B       T                                     
+LIDORESNJ           1720 00000000                                               
+LIDORE    1721 1721H     17211721         T                                     
+LIDOREWJ            1722H00000000                                               
+LITOTLYTE           1723 00000000                                               
+LIGRNDLFD 1728 1729      172817291        T                                     
+LIHATHRSG 1732 1732H     173217321        T                                     
+LIBAMFORD 1735H1736H     17361736         T                                     
+LIHOPD    1739H1740      174017401        T                                     
+LIERLESDG           1742 00000000                                               
+LIEDALE   1747 1748      174717481        T                                     
+LICHNLYEJ           1753H00000000                                               
+LICHNLYNJ           1754 00000000                                               
+LICHNLY   1755H1756      175617561        T                                     
+LINWMILSJ           1759H00000000                                               
+LINWMILSC 1802 1803      180218031        T                                     
+LISTRINES 1805H1806      180618061        T                                     
+LIMARPLE  1809 1809H     180918091        T                                     
+LIMARPLWJ           1811 00000000                                               
+LIROMILEY 1812H1813H     18131813         T                                     
+LIBREDBRY 1816 1816H     18161816         T                                     
+LIREDISHN           1820 00000000                     1                         
+LIASHBRYS           1824H00000000                     1                         
+LIARDWCKJ           1827 00000000   EL                                          
+LTMNCRPIC 1830 18311  EL TF                                                     

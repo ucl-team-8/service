@@ -1,0 +1,11 @@
+BSNY926891512141605131111100 PEE5H02    112226820 DMUA   075                   P
+BX         NTY                                                                  
+LOCHNLY   1801 00002         TB                                                 
+LICHNLYNJ 1803 1810      00000000         OPRM                                  
+LINWMILSJ           1816 00000000                       7                       
+LIHAZLGHJ           1828 00000000                                               
+LIHAZL              1829 000000002                                              
+LISTKPE1            1833 00000000   SL                  1                       
+LISTKP              1835 000000004                                              
+LISTKPVIA 1836 1840      00000000         RM                                    
+LTSTKPCS  1845 0000      TF                                                     

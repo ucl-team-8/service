@@ -1,0 +1,29 @@
+BSNY904761512141605131111100 POO2C69    111838821ZDMUS   075      S            P
+BX         NTY                                                                  
+LOSCARBRO 1457 14574         TB                                                 
+LISEAMER  1501H1502H     15021502         T                                     
+LIFILEY   1511H1512H     15121512         T                                     
+LIHUNMNBY 1516H1517H     15171517         T                                     
+LIBEMPTON 1526H1527      15271527         T               1                     
+LIBRDLNGT 1534 1536      153415365        T                                     
+LINAFERTN 1546H1547H     15471547         T                                     
+LIDRIFILD 1551 1552      15511552         T                                     
+LIHTNCRNS 1556H1557H     15571557         T                                     
+LIBEVERLY 1606 1607      160616071        T                                     
+LICTTGHM  1612H1613H     16131613         T           2                         
+CRHULL    OO2C69    111808920ZDMUS   075      S                                 
+LIHULL    1622 1626      162316266        T                                     
+LIHESSLRD           1629H00000000                                               
+LIHESSLE  1632H1633      16331633         T                                     
+LIFERRIBY 1637 1638      16371638   SL    T                                     
+LIBROUGH  1642H1643H     16431643         T                                     
+LIGLBRDYK 1650H1651      16511651         T                                     
+LISLTMRSH 1656 1657      16561657         T                                     
+LIGOOLE   1701 1702      170117022        T                                     
+CRTHORNEN OO2C69    111816820ZDMUS   075      S                                 
+LITHORNEN 1710 1710H     17101710         T                                     
+LITHORNEJ           1713 00000000                                               
+LIHTFLASF 1715H1716H     17161716         T                                     
+LIKKSNDAL 1720H1721      17211721         T                                     
+LIBTLYJN            1724H00000000                     2   2                     
+LTDONC    1731 17321     TF                                                     

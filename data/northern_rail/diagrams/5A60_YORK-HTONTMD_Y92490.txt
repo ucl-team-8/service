@@ -1,0 +1,20 @@
+BSNY924901512141605131111100 PEE5A60    121799000 DMUA   075                   P
+BX         NTY                                                                  
+LOYORK    1919 000010        TBRMC                                              
+LISKELTON           1921H00000000   SL    X                                     
+LITOLERTN           1930 00000000   SL                                          
+LITHIRSK            1941 00000000   SL                                          
+LILNGLNDJ 1947H1952      00000000         OP             H                      
+LINLRTN             1954 00000000                                               
+LIDLTN    2006 2022      00000000DML      A                                     
+LIFYHLSJN           2034 00000000                                               
+LITURSDLJ           2036 00000000                                               
+LIDRHM              2042 00000000DM                   1                         
+LIBRTLYJN           2050 00000000                                               
+LIKEBGSJN           2053H00000000                                               
+LIKEBGEJN           2054H00000000                                               
+LIGRNSFDJ           2055 00000000                                               
+LIHLBDGJN           2056 00000000                                               
+LINWCSTLE 2058 2115      000000001  SL    -U                                    
+LIHTONSJN           2121 00000000                                               
+LTHTONTMD 2125 0000      TF                                                     

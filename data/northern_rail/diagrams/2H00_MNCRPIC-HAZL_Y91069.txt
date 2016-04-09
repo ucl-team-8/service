@@ -1,0 +1,13 @@
+BSNY910691512141605131111100 POO2H00    112228110 DMUS   075      S            P
+BX         NTY                                                                  
+LOMNCRPIC 1658 16583  FL     TB                                                 
+LIARDWCKJ           1700 00000000                                               
+LISLDLJN            1702 00000000   SL                                          
+LILVHM    1703 1703H     170317031        T                                     
+LIHTCP    1706 1706H     170617061        T                                     
+LIHTNOJN            1708 00000000                                               
+LISTKP    1709H1710H     17101710         T                                     
+LISTKPE1            1712 00000000                                               
+LIDAVNPRT 1714 1715      171417151        T                                     
+LIWMOR    1716H1717      171717171        T                                     
+LTHAZL    1719 17211     TF                                                     

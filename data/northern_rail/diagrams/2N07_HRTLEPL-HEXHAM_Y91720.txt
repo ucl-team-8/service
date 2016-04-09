@@ -1,0 +1,26 @@
+BSNY917201512141605131111100 POO2N07    111792920 DMUA   075      S            P
+BX         NTY                                                                  
+LOHRTLEPL 0703 07031         TB                                                 
+LIHORD137           0711H00000000                                               
+LISEAHAM  0718 0718H     071807182        T                                     
+LIRYHPGRN           0722H00000000                     2                         
+LISNDRLND 0728 0730      072807304        T             1 2                     
+LIBRWHINS           0739 00000000                                               
+LIPELAW             0742 00000000                                               
+LIHEWORTH 0743 0744      07410742         T                                     
+LIPKLNJN            0746H00000000                        H                      
+LIHLBDGJN           0749 00000000                                               
+CRNWCSTLE OO2N07    121796000 DMUA   075      S                                 
+LINWCSTLE 0751 0753      075107536  SL    T                                     
+LIKEBGNJN           0754H00000000                                               
+LIKEBGSJN           0755 00000000                                               
+LINRWDJN            0757 00000000                                               
+LIDNSN    0758 0758H     07580758         T                                     
+LIGTSHDMC 0801 0802      080108022        T                                     
+LIBLAYDON 0805H0806H     08060806         T                                     
+LIWYLAM   0812 0812H     08120812         T                                     
+LIPRUDHOE 0816 0817      08160817         T                                     
+LISTCKSFL 0821 0821H     08210821         T                                     
+LIRIDNGML 0825 0826      08250826         T                                     
+LICRBG    0829H0830      08300830         T           2                         
+LTHEXHAM  0837 08382     TF                                                     

@@ -1,0 +1,19 @@
+BSNY911581512141605131111100 POO2H25    112232820 EMU323 090      S S          P
+BX         NTY                                                                  
+LOCREWE   1950 19501         TB                                                 
+LICREWSBG           1952H00000000   FL                                          
+LISBCH    1956H1957H     195719572        T                                     
+LIHCHP    2001H2002      20022002         T                                     
+LIGOOSTRY 2004H2005      20052005         T                                     
+LICHELFD  2009 2009H     20092009         T                                     
+LIALDEDGE 2013 2013H     20132013         T                                     
+LIWLMSL   2016 2017      201620173        T                                     
+LIHNDFRTH 2019H2020      20202020         T           1                         
+LICHDH    2024 2024H     202420241        T                                     
+LIADSWDRD           2025H00000000   SL                                          
+LISTKPE1            2027 00000000                                               
+LISTKP    2028H2029H     202920294        T                                     
+LIHTNOJN            2031 00000000                       3                       
+LISLDLJN            2037 00000000   FL                                          
+LIARDWCKJ           2039 00000000                                               
+LTMNCRPIC 2042 20437  FL TF                                                     

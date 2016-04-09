@@ -1,0 +1,11 @@
+BSNY922391512141605131111100 POO2T87    111837920 DMUA   075      S S          P
+BX         NTY                                                                  
+LOYORK    0740 074011 NNL    TB                                                 
+LICOLTONJ           0746 00000000   NNL                 3H                      
+LICHFN    0754H0801H     075508013        T               1                     
+LIMCKLFLD 0809H0810H     081008102        T                                     
+LIEGRFRTH 0814 0815      081408152        T                                     
+LIGARFRTH 0816H0817H     081708172        T                                     
+LICSGT    0821H0822H     082208222        T                                     
+LINEVLWJN           0826 00000000                                               
+LTLEEDS   0829 08307A    TF                                                     

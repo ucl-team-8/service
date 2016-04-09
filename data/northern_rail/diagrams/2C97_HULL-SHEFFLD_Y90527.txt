@@ -1,0 +1,28 @@
+BSNY905271512141605131111100 POO2C97    111808920 DMUA   075      S S          P
+BX         NTY                                                                  
+LOHULL    2220 22202         TB                                                 
+LIHESSLRD           2223H00000000                                               
+LIHESSLE  2226H2227      22272227         T                                     
+LIFERRIBY 2231 2232      22312232   SL    T                                     
+LIBROUGH  2236H2237H     22372237         T                                     
+LIGLBRDYK 2245 2245H     22452245         T                                     
+LIGOOLE   2253H2254H     225422542        T                                     
+CRTHORNEN OO2C97    111816820 DMUS   075      S S                               
+LITHORNEN 2302H2303      23032303         T                                     
+LITHORNEJ           2305H00000000                                               
+LIHTFLASF 2308 2309      23082309         T                                     
+LIKKSNDAL 2313 2313H     23132313         T                                     
+LIBTLYJN            2317 00000000                     2   1H                    
+CRDONC    OO2C97    111807820 DMUS   075      S S                               
+LIDONC    2323 2325      232423253B       T                                     
+LIDONCHJN           2328 00000000                                               
+LICONBRGH 2331H2332      23322332         T                                     
+LIMEXBRGH 2335 2336      23352336         T                                     
+LISWINTN  2338H2339      23392339         T                                     
+LIALDWRKJ           2342 00000000                         2H                    
+LIROTHCEN 2348 2349      234823491        T                                     
+LIROTHHJN           2351 00000000                                               
+LIMEADWHL 2353H2354H     235423541        T                                     
+LIWNCOJN            2355 00000000                     1                         
+LINNRYMLJ           2359H00000000                          H                    
+LTSHEFFLD 0002 00041A    TF                                                     

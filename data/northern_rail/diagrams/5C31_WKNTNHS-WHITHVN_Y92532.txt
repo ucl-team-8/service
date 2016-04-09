@@ -1,0 +1,6 @@
+BSNY925321512141605131111100 PEE5C31    122358000 DMUA   075                   P
+BX         NTY                                                                  
+LOWKNTNHS 0553 0000          TB                                                 
+LIPARTNNJ           0600H00000000                                               
+LIPARTON            0604H00000000                     2                         
+LTWHITHVN 0611 0000      TF                                                     

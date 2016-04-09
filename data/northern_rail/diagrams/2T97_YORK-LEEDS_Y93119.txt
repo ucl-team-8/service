@@ -1,0 +1,11 @@
+BSNY931191512141605121111000 POO2T978144111837920ZDMUA   075      S S          P
+BX         NTY                                                                  
+LOYORK    2313 23136  LSL3   TB                                                 
+LICOLTONJ           2321H00000000   LSL                                         
+LICHFN    2327H2328      232823283        T                                     
+LIMCKLFLD 2335 2336      233523362        T                                     
+LIEGRFRTH 2339H2340      234023402        T                                     
+LIGARFRTH 2341H2342H     234223422        T                                     
+LICSGT    2346H2347H     234723472        T                                     
+LINEVLWJN           2351 00000000                         1                     
+LTLEEDS   2355 235616B   TF                                                     

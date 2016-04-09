@@ -1,0 +1,15 @@
+BSNY904561512141605131111100 POO2C50    111830820 DMUA   075      S            P
+BX         NTY                                                                  
+LOLEEDS   1713 17131B B      TB                                                 
+LILEEDSWJ           1714 00000000   DH                                          
+LIARMLJCN           1715H00000000                                               
+LIBRLEYPK 1717 1718      17171718         T                                     
+LIHEDNGLY 1720H1721      17211721         T                                     
+LIHSFT    1725H1726H     172617262        T                                     
+LIWEETON  1734 1734H     17341734         T                                     
+LIRIGTON            1737 00000000                                               
+LIPANNAL  1739H1740H     17401740         T                                     
+LIHRNBPK  1745 1745H     17451745         T                                     
+LIHAGT    1748 1750      174817501        T                                     
+LISTARBCK 1754 1754H     175417542        T           2                         
+LTKNRSBGH 1759H18002     TF                                                     

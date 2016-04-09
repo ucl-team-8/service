@@ -1,0 +1,20 @@
+BSNY900561512141605131111100 PXX1F02    112225820 DMUA   075      S            P
+BX         NTY                                                                  
+LOMNCRVIC 1742 17425  FL     TB                                                 
+LIMNCRDST           1743H00000000                                               
+LISLFDORD 1744H1745H     17451745         T             2                       
+LISLFDCT  1750 1751      175017512        T                                     
+LIWALKDEN           1759 00000000                                               
+LIATHERTN 1803 1804      18031804         T                                     
+LIDAISYH  1807 1808      18071808         T                                     
+LICRWNSTJ           1811 00000000                                               
+LIWIGANWL 1816 1818      181618181        T                                     
+LIGATHRST 1822 1823      18221823         T                                     
+LIAPLYBDG 1826 1827      18261827         T                                     
+LIPARBOLD 1830H1831H     18311831         T                                     
+LIHOSCAR  1834 1834H     18341834         T                                     
+LIBRSCGHB 1837 1838      18371838         T                                     
+LINEWLANE 1840 1840H     18401840         T                                     
+LIBESCRLA 1843H1844      18441844         T                                     
+LIMEOLSCP 1848H1849H     18491849         T           2                         
+LTSOUTHPT 1857 18594     TF                                                     

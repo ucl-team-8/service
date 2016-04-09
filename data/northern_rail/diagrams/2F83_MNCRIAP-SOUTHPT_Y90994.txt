@@ -1,0 +1,26 @@
+BSNY909941512141605131111100 POO2F831039112233110 DMUS   075      S S          P
+BX         NTY                                                                  
+LOMNCRIAP 1603 16034A        TB                                                 
+LIHLDGWJ            1605 00000000                                               
+LIHLDG              1606 000000001                       H                      
+LISLDLJN            1612 00000000   SL                                          
+LIARDWCKJ           1614 00000000                       1H                      
+CRMNCRPIC OO2F831039112224820 DMUS   075      S S                               
+LIMNCRPIC 1618 1622      1618162214    SL T                                     
+LIMNCROXR 1623H1626      162416262        T                                     
+LIMNCRDGT 1627H1628H     162816282        T                                     
+LICFLDJN            1629 00000000                                               
+LIORDSLLJ           1630 00000000                       1H                      
+LISLFDCT  1633 1635      163316342        T                                     
+LIBOLTON  1644H1645H     164516454        T                                     
+LILOSTCKJ           1649H00000000                                               
+LIWSTHOTN 1652H1653      16531653         T                                     
+LICRWNSTJ           1655H00000000                                               
+LIHINDLEY 1656H1657      16571657         T                                     
+LIWIGANWL 1701H1703H     170217031        T                                     
+LIGATHRST 1707H1708      17081708         T                                     
+LIAPLYBDG 1711 1712      17111712         T                                     
+LIPARBOLD 1715H1716H     17161716         T                                     
+LIBRSCGHB 1720H1721H     17211721         T                                     
+LIMEOLSCP 1728H1729      17291729         T           2                         
+LTSOUTHPT 1736 17375     TF                                                     

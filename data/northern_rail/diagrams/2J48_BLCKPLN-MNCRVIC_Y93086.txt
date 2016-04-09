@@ -1,0 +1,26 @@
+BSNY930861512141605121111000 POO2J48    112355820 DMUS   075      S S          P
+BX         NTY                                                                  
+LOBLCKPLN 2021 20212         TB                                                 
+LILAYTON  2024 2024H     202420241        T                                     
+LILAYTCLX           2026 00000000                                               
+LIPLTNLFY 2028 2029      202820292        T                                     
+LIPLTNT67           2033 00000000                                               
+LIKIRKMNJ           2036 00000000                     1                         
+LIKIRKHAM 2038 2039      203820392        T                                     
+LIPRSTNFJ           2047 00000000   BL                                          
+LIPRST    2048H2050H     204920502  SL    T                                     
+LIFRNGTNC           2052H00000000                                               
+LILEYLAND 2055H2056      20562056         T                                     
+LIEUXTONJ           2058H00000000                                               
+LICHORBUK 2100 2100H     21002100         T                                     
+LICHORLEY 2104 2105      21042105         T                                     
+LIADNL    2109 2109H     21092109         T                                     
+LIBLRD    2112H2113      21132113         T                                     
+LIHORWICH 2116 2117      21162117         T                                     
+LILOSTCKP 2120 2120H     212021202        T                                     
+LILOSTCKJ           2121 00000000                                               
+LIBOLTON  2125 2126      212521263        T           2                         
+LISLFDCT  2138 2139      213821391        T                                     
+LISLFDORD 2141 2142      21412142         T                                     
+LIMNCRDST           2143H00000000   FL                                          
+LTMNCRVIC 2145 21476     TF                                                     

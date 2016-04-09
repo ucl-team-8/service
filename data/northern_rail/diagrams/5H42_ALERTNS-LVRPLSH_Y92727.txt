@@ -1,0 +1,8 @@
+BSNY927271512141605131111100 PEE5H42    112236820 DMUS   075                   P
+BX         NTY                                                                  
+LOALERTNS 0552 0000          TB                                                 
+LIALERTN            0557 000000002  FL                                          
+LIWVRTREJ           0600 00000000                                               
+LIEDGHSB            0602 00000000                                               
+LIEDGH              0603 000000004                                              
+LTLVRPLSH 0607 00004     TF                                                     

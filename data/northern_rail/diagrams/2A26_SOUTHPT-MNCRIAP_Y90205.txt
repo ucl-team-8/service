@@ -1,0 +1,26 @@
+BSNY902051512141605131111100 POO2A261030112224820 DMUS   075      S S          P
+BX         NTY                                                                  
+LOSOUTHPT 1920 19204         TB                                                 
+LIMEOLSCP 1925 1926      19251926         T                                     
+LIBRSCGHB 1933H1934H     19341934         T                                     
+LIPARBOLD 1938H1939      19391939         T                                     
+LIAPLYBDG 1942H1943H     19431943         T                                     
+LIGATHRST 1946H1947      19471947         T                                     
+LIWIGANWL 1951 1953      195119532        T                                     
+LIHINDLEY 1957H1958      19581958         T                                     
+LICRWNSTJ           1959 00000000                                               
+LIWSTHOTN 2002 2002H     20022002         T                                     
+LILOSTCKJ           2006 00000000                                               
+LIBOLTON  2010 2011      201020113        T           2                         
+LISLFDCT  2023 2024      202320241        T                                     
+LIORDSLLJ           2025H00000000                                               
+LICFLDJN            2026H00000000                                               
+LIMNCRDGT 2027 2027H     202720271        T                                     
+LIMNCROXR 2029 2031      202920313        T             1                       
+CRMNCRPIC OO2A261030112233110 DMUS   075      S S                               
+LIMNCRPIC 2034 2036      2034203613 SL    T                                     
+LIARDWCKJ           2037H00000000                                               
+LISLDLJN            2039H00000000                       3                       
+LIHLDG              2048 000000002                                              
+LIHLDGWJ            2049 00000000                                               
+LTMNCRIAP 2052 20533B    TF                                                     

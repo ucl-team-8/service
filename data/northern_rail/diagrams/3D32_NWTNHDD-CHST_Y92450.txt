@@ -1,0 +1,31 @@
+BSNY924501512151605130111100 PEE3D32    112229820 DMUS   075                   P
+BX         NTY                                                                  
+LONWTNHDD 0432 0000          TBC                                                
+LITHRPSBJ           0434 00000000                                               
+LIMILESPL           0435 00000000   SL                                          
+LIMNCRVIC 0438 0447      000000004        RM             H                      
+LIMNCRDST           0449 00000000                                               
+LISLFDORD           0449H00000000                                               
+LISLFDCT  0451H0455H     000000001        RM                                    
+LIORDSLLJ           0457 00000000                                               
+LICFLDJN            0458 00000000                                               
+LIMNCRDGT           0458H000000001                                              
+LIMNCROXR 0459H0504      000000004        RM                                    
+LIMNCRDGT2          0505 000000002                                              
+LICFLDJN 2          0505H00000000                                               
+LIORDSLLJ2          0506H00000000                                               
+LIECCLES            0510 00000000                                               
+LIASTLEY            0514H00000000                                               
+LIPKSDJT            0519H00000000                                               
+LINWTNLW            0520H00000000                                               
+LIERLSTWN           0522 000000005                                              
+LIWINWCKJ           0524 00000000   FL                                          
+LIDALAMBR           0526H00000000                                               
+LIWRGTNBQ           0527H000000001  OL                                          
+LIWRGTWOJ           0529 00000000                                               
+LIACGJN             0530H00000000                                               
+LIRUNCRNE           0533H00000000                                               
+LIFRDSHMJ           0535H00000000                                               
+LIHELSBY            0539H000000001                    2                         
+LIMIKLTRF           0545H00000000                                               
+LTCHST    0551 00006     TF                                                     

@@ -1,0 +1,18 @@
+BSNY927041512141605131111100 PEE5H14    112231820 EMU323 090                   P
+BX         NTY                                                                  
+LOSTOKEOT 1813 00003         TB                                                 
+LIKIDSGRV           1820H00000000                                               
+LIALSAGER           1823 00000000                                               
+LIBTHLYJN           1825 00000000                                               
+LICREWSJN           1828 00000000UDP                    6H                      
+LICREWE   1837 1841      000000001        C A                                   
+LICREWSBG           1843H00000000   FL                  1H                      
+LISBCH              1848H000000002                    1 3H                      
+LIALDEDGE           1902 00000000                                               
+LIWLMSL             1903H000000003                                              
+LICHDH              1906 000000001                      3H                      
+LIADSWDRD           1910 00000000   SL                  2                       
+LISTKPE1            1913H00000000                                               
+LISTKP    1915 1955      00000000DG       A                                     
+LISTKPVIA 1956 2000      00000000         RM                                    
+LTSTKPCS  2005 0000      TF                                                     

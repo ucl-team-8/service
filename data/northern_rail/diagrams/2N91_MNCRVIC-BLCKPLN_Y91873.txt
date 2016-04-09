@@ -1,0 +1,26 @@
+BSNY918731512141605131111100 POO2N916019112355820 DMUS   075      S S          P
+BX         NTY                                                                  
+LOMNCRVIC 0619 06195  FL     TB                                                 
+LIMNCRDST           0620H00000000                                               
+LISLFDORD           0621 00000000                                               
+LISLFDCT  0623 0624      062306242        T                                     
+LIBOLTON  0633H0634H     063406344        T                                     
+LILOSTCKJ           0638H00000000                                               
+LILOSTCKP 0639 0640      063906401        T                                     
+LIHORWICH 0643H0644      06440644         T                                     
+LIBLRD    0646H0647      06470647         T                                     
+LIADNL    0650 0651      06500651         T                                     
+LICHORLEY 0655 0656      06550656         T                                     
+LICHORBUK 0659 0700      06590700         T           2  H                      
+LIEUXTONJ           0704 00000000   SL                                          
+LILEYLAND 0706H0707      07070707         T                                     
+LIFRNGTNC           0709H00000000                                               
+LIPRST    0712 0714      071207141  SL    T                                     
+LIPRSTNFJ           0715 00000000                                               
+LIKIRKHAM 0723 0723H     072307231        T                                     
+LIKIRKMNJ           0725 00000000                                               
+LIKIRKM51           0728 00000000                                               
+LIPLTNLFY 0731 0731H     073107311        T                                     
+LILAYTCLX           0733H00000000                                               
+LILAYTON  0735 0735H     07350735         T           1                         
+LTBLCKPLN 0740 07414     TF                                                     

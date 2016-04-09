@@ -1,0 +1,26 @@
+BSNY918781512141605131111100 POO2N936025112355820 DMUS   075      S S          P
+BX         NTY                                                                  
+LOMNCRVIC 1623 16235  FL     TB                                                 
+LIMNCRDST           1624H00000000                                               
+LISLFDORD 1625H1626      16261626         T             1                       
+LISLFDCT  1629H1630H     163016302        T                                     
+LIBOLTON  1640 1641      164016414        T                                     
+LILOSTCKJ           1645 00000000                                               
+LILOSTCKP 1645H1646      164616461        T                                     
+LIHORWICH 1649H1650      16501650         T                                     
+LIBLRD    1652H1653      16531653         T                                     
+LIADNL    1656 1657      16561657         T                                     
+LICHORLEY 1701 1702      17011702         T                                     
+LICHORBUK 1705 1705H     17051705         T           2                         
+LIEUXTONJ           1709 00000000   SL                                          
+LILEYLAND 1711H1712      17121712         T                                     
+LIFRNGTNC           1714H00000000                                               
+LIPRST    1717 1719      171717191  SL    T                                     
+LIPRSTNFJ           1720 00000000                                               
+LIKIRKHAM 1728 1728H     172817281        T                                     
+LIKIRKMNJ           1730 00000000                                               
+LIKIRKM51           1733 00000000                                               
+LIPLTNLFY 1736 1736H     173617361        T                                     
+LILAYTCLX           1738H00000000                                               
+LILAYTON  1740 1740H     17401740         T           1                         
+LTBLCKPLN 1745 17475     TF                                                     

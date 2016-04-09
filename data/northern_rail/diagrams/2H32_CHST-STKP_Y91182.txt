@@ -1,0 +1,24 @@
+BSNY911821512141605131111100 POO2H32    112229820 DMUS   075      S            P
+BX         NTY                                                                  
+LOCHST    0633 06333A        TB                                                 
+LIMIKLTRF           0639H00000000                                               
+LIMLDSWTH 0644 0644H     06440644         T                                     
+LIDELAMER 0648H0649H     06490649         T                                     
+LICUDNGTN 0653H0654      06540654         T                                     
+LIGBNK    0658 0659      06580659         T                                     
+LINTHWICH 0703 0704      07030704         T                                     
+LILSTG    0706H0707      07070707         T                                     
+LIPLUMSB            0709 00000000                                               
+LIPLUMLEY 0710 0711      07100711         T                                     
+LIKNUTSFD 0715H0716H     07160716         T                                     
+LIMOBERLY 0720 0721      07200721         T                                     
+LIASHLEY  0724 0724H     07240724         T                                     
+LIHALE    0727 0728      07270728         T           2                         
+LIALTRNHM 0732 0733      07320733         T                                     
+LINAVGTNR 0734H0735H     07350735         T                                     
+LIDENSGTJ           0736H00000000                                               
+LINTHNDNJ           0742 00000000                                               
+LINTHNSHJ           0743 00000000                     1                         
+LISTKPCVJ           0746 00000000                       3 4                     
+LISTKPE2            0755H00000000   FL                                          
+LTSTKP    0757 07573     TF                                                     

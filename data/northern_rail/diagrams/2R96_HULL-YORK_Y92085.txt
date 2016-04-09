@@ -1,0 +1,15 @@
+BSNY920851512141605131111100 POO2R96    121806000 DMUS   075      S            P
+BX         NTY                                                                  
+LOHULL    1918 19183         TB                                                 
+LIHESSLRD           1921H00000000                                               
+LIBROUGH  1929 1930      19291930         T                                     
+LIGLBRDYK 1937 1937H     19371937         T                                     
+LIHOWDEN  1943H1944H     19441944         T                                     
+LISELBY   1953H1954H     195419542        T                                     
+LIHAMBLEJ           1959H00000000                     1                         
+LIHAMBLWJ           2001H00000000                     1                         
+LIGSCGNWJ           2005 00000000                                               
+LISHBN    2008 2008H     20082008         T                                     
+LICHFN              2011H000000002  NNL                   1                     
+LICOLTONJ           2016H00000000   NNL                   1                     
+LTYORK    2023 20251     TF                                                     

@@ -1,0 +1,22 @@
+BSNY905391512141605131111100 POO2D13    121801000 DMUA   075      S            P
+BX         NTY                                                                  
+LOSBRN    0957 09571         TB                                                 
+LISBRNWJN           0959 00000000                                               
+LIMRSK    1001 1001H     100110011        T                                     
+LILONGBCK 1003 1004      100310041        T                                     
+LIREDCARE 1006H1007      100710071        T                                     
+LIREDCARC 1009 1010      100910101        T             2                       
+LIGUSBROJ           1021 00000000                                               
+LIMDLSBRO 1022 1023      102210231        T                                     
+LITABY    1027H1028      102810281        T                                     
+LIBOWSFLD           1030 00000000                                               
+LISTOCCJN           1031 00000000                                               
+LIEGLSCLF 1032H1033H     103310331        T                                     
+LIALLENSW 1035H1036      103610361        T                                     
+LIDINSDAL 1041H1042H     104210421        T           1   2                     
+LIDLTN    1051H1054      105210544B       T                                     
+LINTRD    1056H1057      105710571        T                                     
+LIHGHNGTN 1104H1105H     11051105         T                                     
+LINWTA    1108 1108H     110811082        T                                     
+LISHDN    1112 1113      111211132        T                                     
+LTBSAUKLD 1118 11201     TF                                                     

@@ -1,0 +1,14 @@
+BSNY916211512141605131111100 POO2K33    111835920 DMUA   075      S            P
+BX         NTY                                                                  
+LOLEEDS   1452 14527A        TB                                                 
+LINEVLWJN           1454H00000000                                               
+LICSGT    1458 1459      145814591        T                                     
+LIGARFRTH 1503H1504H     150415041        T                                     
+LIEGRFRTH 1506 1506H     150615061        T                                     
+LIMCKLFLD 1509H1510H     151015101        T                                     
+LISMILFD  1514H1515      151515151        T                                     
+LIGSCGNWJ           1517 00000000                                               
+LIHAMBLWJ           1518H00000000                                               
+LIHAMBLEJ           1519H00000000                                               
+LISELBYWJ           1523 00000000   UL    X               2                     
+LTSELBY   1527 15273     TF                                                     

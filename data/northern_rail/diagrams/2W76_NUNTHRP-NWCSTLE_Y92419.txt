@@ -1,0 +1,29 @@
+BSNY924191512141605131111100 POO2W76    121800000 DMUA   075      S            P
+BX         NTY                                                                  
+LONUNTHRP 1926 19262         TB                                                 
+LIGYPSYLA 1927H1928      192819281        T                                     
+LIMARTON  1930 1930H     193019301        T                                     
+LIJAMCOK  1932H1933H     193319331        T           1   1                     
+LIGUSBROJ           1938 00000000                                               
+CRMDLSBRO OO2W76    111792920 DMUA   075      S                                 
+LIMDLSBRO 1939 1942      194019421        T                                     
+LITABY    1946H1947      194719471        T             1                       
+LIBOWSFLD           1950 00000000                                               
+LIHRTBJN            1951 00000000                                               
+LISTOCTON 1953 1954      195319542        T                                     
+LINORTONS           1957 00000000                                               
+LIBLNGHMJ           1959H00000000                                               
+LIBLNGHM  2000H2001      200120012        T                                     
+LIGREATHM           2004 00000000                                               
+LISETNCRW 2006H2007H     200720072        T                                     
+LIHRTLEPL 2011H2013      201220131        T                                     
+LIHORD137           2021H00000000                                               
+LISEAHAM  2028 2028H     202820282        T                                     
+LIRYHPGRN           2032H00000000                     2                         
+LISNDRLND 2038 2039H     203820394        T               2                     
+LIBRWHINS           2047H00000000                       3                       
+LIPELAW             2053H00000000                                               
+LIHEWORTH 2054H2055H     20532053         T                                     
+LIPKLNJN            2058 00000000                                               
+LIHLBDGJN           2100 00000000                                               
+LTNWCSTLE 2102 21027     TF                                                     

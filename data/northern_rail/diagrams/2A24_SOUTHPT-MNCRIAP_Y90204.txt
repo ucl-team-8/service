@@ -1,0 +1,29 @@
+BSNY902041512141605131111100 POO2A241029112224820 DMUS   075      S S          P
+BX         NTY                                                                  
+LOSOUTHPT 1815 18155         TB                                                 
+LIMEOLSCP 1820 1821      18201821         T                                     
+LIBESCRLA 1825H1826      18261826         T                                     
+LINEWLANE 1829 1829H     18291829         T                                     
+LIBRSCGHB 1831H1832H     18321832         T                                     
+LIHOSCAR  1835H1836      18361836         T                                     
+LIPARBOLD 1838H1839      18391839         T                                     
+LIAPLYBDG 1842H1843H     18431843         T                                     
+LIGATHRST 1846H1847      18471847         T                                     
+LIWIGANWL 1851 1853      185118532        T                                     
+LIHINDLEY 1857H1858      18581858         T                                     
+LICRWNSTJ           1859 00000000                                               
+LIWSTHOTN 1902 1902H     19021902         T                                     
+LILOSTCKJ           1906 00000000                                               
+LIBOLTON  1910 1911      191019113        T           2 1                       
+LISLFDCT  1924 1925H     192419251        T                                     
+LIORDSLLJ           1927 00000000                       1                       
+LICFLDJN            1929 00000000                                               
+LIMNCRDGT 1929H1930      193019301        T                                     
+LIMNCROXR 1931H1933H     193219334        T              H                      
+CRMNCRPIC OO2A241029112233110 DMUS   075      S S                               
+LIMNCRPIC 1936 1938      1936193813 SL    T                                     
+LIARDWCKJ           1939H00000000                        H                      
+LISLDLJN            1942 00000000                       1H                      
+LIHLDG              1949 000000002                                              
+LIHLDGWJ            1950 00000000                       1                       
+LTMNCRIAP 1954 19543A    TF                                                     

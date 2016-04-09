@@ -1,0 +1,35 @@
+BSNY905241512141605131111100 POO2C89    111838821 DMUS   075      S S          P
+BX         NTY                                                                  
+LOBRDLNGT 1911 19116         TB                                                 
+LINAFERTN 1921H1922H     19221922         T                                     
+LIDRIFILD 1926 1927      19261927         T                                     
+LIHTNCRNS 1931H1932H     19321932         T                                     
+LIBEVERLY 1941 1942      194119421        T                                     
+LICTTGHM  1947H1948H     19481948         T           2                         
+CRHULL    OO2C89    111808920 DMUS   075      S S                               
+LIHULL    1957 2003      195820032        T                                     
+LIHESSLRD           2006H00000000                                               
+LIHESSLE  2009H2010      20102010         T                                     
+LIFERRIBY 2014 2015      20142015   SL    T                                     
+LIBROUGH  2019H2020H     20202020         T                                     
+LIGLBRDYK 2027H2028      20282028         T                                     
+LIGOOLE   2035H2036H     203620362        T                                     
+CRTHORNEN OO2C89    111816820 DMUS   075      S S                               
+LITHORNEN 2044H2045      20452045         T               1                     
+LITHORNEJ           2048H00000000                                               
+LIHTFLASF 2051 2052      20512052         T                                     
+LIKKSNDAL 2056 2056H     20562056         T                                     
+LIBTLYJN            2100 00000000                     2   1                     
+CRDONC    OO2C89    111807820 DMUS   075      S S                               
+LIDONC    2105H2107H     210621078        T                                     
+LIDONCHJN           2110H00000000                                               
+LICONBRGH 2114 2115      21142115         T                                     
+LIMEXBRGH 2118 2118H     21182118         T                                     
+LISWINTN  2121 2121H     21212121         T                                     
+LIALDWRKJ           2124H00000000                                               
+LIROTHCEN 2128 2129      212821291        T                                     
+LIROTHHJN           2131 00000000                                               
+LIMEADWHL 2133H2134H     213421341        T                                     
+LIWNCOJN            2135 00000000                     1    H                    
+LINNRYMLJ           2140 00000000                                               
+LTSHEFFLD 2142 21428A    TF                                                     

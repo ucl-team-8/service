@@ -1,0 +1,5 @@
+BSNY926571512141605131111100 PEE5F61    122350000 DMUA   075                   P
+BX         NTY                                                                  
+LOPRSTNCS 0713 0000          TB                                                 
+LIPRSTSHL 0715 0720      00000000         RM                                    
+LTPRST    0722 00002     TFRMA                                                  

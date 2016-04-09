@@ -1,0 +1,12 @@
+BSNY926151512141605131111100 PEE5F15    112974820 DMUA   075                   P
+BX         NTY                                                                  
+LOWIGANWL 1651 00001         TB                                                 
+LIWIGADCS 1653 1658      00000000         OP                                    
+LIWIGANWL21700 1702      000000002        OP                                    
+LIWIGANSJ           1703 00000000                                               
+LICRWNSTJ           1707H00000000                                               
+LIWALKDEN           1717 00000000                     2 6                       
+LISLFDCT            1733H000000001                      2                       
+LISLFDORD           1737 00000000                       3                       
+LIMNCRDST           1740H00000000   FL                                          
+LTMNCRVIC 1742 00006     TF                                                     

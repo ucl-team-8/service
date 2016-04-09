@@ -1,0 +1,11 @@
+BSNY920421512141605131111100 POO2R46    111825820 DMUS   075      S            P
+BX         NTY                                                                  
+LOSCNTHRP 1915 19152         TB                                                 
+LIALTPE   1919H1920      19201920         T                                     
+LICROWLE  1925H1926H     19261926         T                                     
+LITHORNES 1934H1935      19351935         T                                     
+LITHORNEJ           1937 00000000                                               
+LIHTFLASF 1939H1940H     19401940         T                                     
+LIKKSNDAL 1944H1945      19451945         T                                     
+LIBTLYJN            1949H00000000                     2 1 1                     
+LTDONC    1956 19571     TF                                                     

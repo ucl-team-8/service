@@ -1,0 +1,15 @@
+BSNY913531512141605131111100 POO2H74    112230110 EMU323 090      S            P
+BX         NTY                                                                  
+LOMNCRPIC 1446 14461  EL     TB                                                 
+LIARDWCKJ           1448 00000000                                               
+LIASHBRYS 1449H1450      14501450         T             2H                      
+LIGIDB    1457 1457H     145714572        T                                     
+LIHYDEJ             1459 00000000                                               
+LIFLWRYFD 1500 1500H     150015002        T                                     
+LINWTH    1502 1502H     15021502         T                                     
+LIGODLY   1504 1504H     15041504         T                                     
+LIHATRSLY 1506 1506H     15061506         T                                     
+LIBRBM    1508H1509      15091509         T           1                         
+LIDNTG    1514 1514H     151415142        T                                     
+LIGLSP    1517H1520H     15181520         T                                     
+LTHADFILD 1526 1527      TF                                                     

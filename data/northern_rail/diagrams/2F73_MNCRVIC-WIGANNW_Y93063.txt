@@ -1,0 +1,17 @@
+BSNY930631512141605121111000 POO2F73    112225110 DMUS   075      S            P
+BX         NTY                                                                  
+LOMNCRVIC 2245 22455  FL     TB                                                 
+LIMNCRDST           2246H00000000                                               
+LIORDSLLJ           2248 00000000                        H                      
+LISLFDCT  2250H2252      225122522        T                                     
+LISWNT    2258 2258H     22582258         T                                     
+LIMRSD    2300H2301      23012301         T                                     
+LIWALKDEN 2304 2304H     23042304         T                                     
+LIATHERTN 2309H2310      23102310         T                                     
+LIHAGFOLD 2312 2312H     23122312         T                                     
+LIDAISYH  2315 2315H     23152315         T                                     
+LICRWNSTJ           2318H00000000                                               
+LIHINDLEY 2319H2320      23202320         T                                     
+LIINCE    2322H2323      23232323         T           2                         
+LIWIGANSJ           2328 00000000                                               
+LTWIGANNW 2329 23313     TF                                                     

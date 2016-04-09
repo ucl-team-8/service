@@ -1,0 +1,5 @@
+BSNY931331512141605121111000 PEE5C60    111830820 DMUA   075                   P
+BX         NTY                                                                  
+LOKNRSBGH 2221 00002         TB                                                 
+LISTARBCK           2223H000000001                                              
+LTHAGT    2227 00003     TF                                                     

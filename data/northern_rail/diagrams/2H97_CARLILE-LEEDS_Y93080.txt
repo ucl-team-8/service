@@ -1,0 +1,37 @@
+BSNY930801603071605121111000 POO2H97    121151900 DMUS   075      S            P
+BX         NTY                                                                  
+LOCARLILE 1814 18146         TB                                                 
+LICARLLRJ           1815H00000000                                               
+LIPETLBGJ           1816H00000000                                               
+LIHOWEACS           1822 00000000                                               
+LILOWHXSB           1825 00000000                                               
+LIARMTHWT 1827 1828      18271828         T                                     
+LILAZKRKO 1834H1835      18351835         T                                     
+LILWBY    1840H1841H     18411841         T                                     
+LINWBICUL           1846 00000000                                               
+LINWBIKTH           1848H00000000                                               
+LIAPBY    1855 1856      18551856         T                                     
+LIORMMSID           1859 00000000                                               
+LICROGAR            1904 00000000                                               
+LIKSTP    1908H1909      19091909         T                                     
+LIMALRSTG           1914 00000000                                               
+LIAISGILL           1918 00000000                                               
+LIGARSDLE 1921H1922H     19221922         T                                     
+LIDENT    1927 1927H     19271927         T                                     
+LIBLEMOR            1933 00000000                                               
+LIRIBLHED 1936 1937      19361937         T                                     
+LIHTNRIBL 1943 1943H     19431943         T                                     
+LIHELWTHB           1945H00000000                                               
+LISETTLE  1950H1951H     19511951         T                                     
+LISETTLEJ           1954 00000000                                               
+LIHELIFLD 1958 1959      19581959         T                                     
+LIGRGRAVE           2006 00000000                     2                         
+LISKPT    2012H2015H     201420152        T                                     
+LIKEIGHLY 2024H2025H     202520251        T                                     
+LIBNGY    2029H2030      203020301        T                                     
+LISHPY    2034 2035      203420351        T                                     
+LISHPYDJN           2036 00000000                                               
+LIAPERLYJ           2039H00000000                     2   1                     
+LIARMLJCN           2047 00000000   UH                                          
+LILEEDSWJ           2048H00000000   A                                           
+LTLEEDS   2050 20502B    TF                                                     

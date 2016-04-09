@@ -1,0 +1,17 @@
+BSNY903001512141605131111100 POO2B29    111824820 EMU321 100      S S          P
+BX         NTY                                                                  
+LOLEEDS   1921 192112DE      TB                                                 
+LILEEDSWJ           1922 00000000   E                                           
+LIWHRDJN            1922H00000000   CHC                                         
+LICOPHWJN           1923H00000000                                               
+LIOUTWOOD 1929H1930      193019301        T                                     
+LIWKFLDWG 1933H1934H     193419341        T                                     
+LISABR    1937 1937H     193719371        T                                     
+LIHAREPKJ           1940 00000000                                               
+LIFITZWLM 1943 1944      194319441        T                                     
+LISKIRBYJ           1947 00000000                                               
+LISELMSAL 1948H1949      194919491        T                                     
+LIADWICKJ           1953 00000000                                               
+LIADWICK  1954 1955      195419551        T                                     
+LIBTLYSY  1958H1959      195919591        T           2                         
+LTDONC    2005 20086     TF                                                     

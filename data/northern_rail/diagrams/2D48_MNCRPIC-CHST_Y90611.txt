@@ -1,0 +1,28 @@
+BSNY906111512141605131111100 POO2D48    112229820 DMUA   075      S            P
+BX         NTY                                                                  
+LOMNCRPIC 1517 151711 SL     TB                                                 
+LIARDWCKJ           1519H00000000                       1H                      
+LISLDLJN            1523 00000000   FL                                          
+LIHTNOJN            1525H00000000                                               
+LISTKP    1527 1530      152715302        T                                     
+LISTKPE2            1531H00000000                                               
+LISTKPCVJ           1534 00000000                                               
+LINTHNSHJ           1535H00000000                                               
+LINTHNDNJ           1536H00000000                                               
+LIDENSGTJ           1542H00000000                                               
+LINAVGTNR 1543H1544      15441544         T                                     
+LIALTRNHM 1545H1546H     15461546         T                                     
+LIHALE    1548H1549H     15491549         T                                     
+LIASHLEY  1552 1552H     15521552         T                                     
+LIMOBERLY 1555 1555H     15551555         T                                     
+LIKNUTSFD 1559H1600H     16001600         T                                     
+LIPLUMLEY 1604 1605      16041605         T                                     
+LIPLUMSB            1606H00000000                                               
+LILSTG    1608 1608H     16081608         T           2                         
+LINTHWICH 1613 1614      16131614         T                                     
+LIGBNK    1618 1619      16181619         T                                     
+LICUDNGTN 1623H1624H     16241624         T                                     
+LIDELAMER 1628H1629      16291629         T                                     
+LIMLDSWTH 1633 1634      16331634         T           1                         
+LIMIKLTRF           1640 00000000                                               
+LTCHST    1645 16456     TF                                                     

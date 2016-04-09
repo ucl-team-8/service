@@ -1,0 +1,43 @@
+BSNY920531512141605131111100 POO2R616061111804920 DMUA   075      S S          P
+BX         NTY                                                                  
+LOLINCLNC 0700 07005         TB                                                 
+LIWHOLMSJ           0702 00000000                                               
+LISAXILBY 0708H0709      07090709         T                                     
+LIGBGHLRD 0720H0721H     07210721         T                                     
+LIGBROTJ            0723 00000000                        H                      
+LICLRBROJ           0729 00000000                     2                         
+LIRTFDLL  0736 0740      073607403        T                                     
+LITHRMWJN           0741H00000000                         1                     
+LIWORKSOP 0750H0751H     075107511        T                                     
+LISHRKSEJ           0753H00000000                                               
+LISHRKSKS 0755 0755H     07550755         T                                     
+LIBRCLEJN           0757H00000000                                               
+LIKVTNPK  0800H0801H     08010801         T                                     
+LIKVTNBDG 0804 0804H     08040804         T                                     
+LIWDHOUSJ           0808H00000000                                               
+LIWDHOUSE 0809H0810H     08100810         T                                     
+LIDARNALL 0815 0815H     08150815         T                                     
+LIWDBRNJN           0818 00000000                     1   1H                    
+LINNRYMLJ           0822 00000000                                               
+CRSHEFFLD OO2R616061111807820 DMUA   075      S S                               
+LISHEFFLD 0824 0830      082408303A       T -D                                  
+LINNRYMLJ2          0831H00000000                                               
+LIWNCOJN            0834H00000000                                               
+LIMEADWHL 0835 0836      083508362        T                                     
+LIROTHHJN           0839 00000000                                               
+LIROTHCEN 0841 0842      084108422        T                                     
+LIALDWRKJ           0846 00000000                                               
+LISWINTN  0849H0850      08500850         T                                     
+LIMEXBRGH 0852 0853      08520853         T                                     
+LICONBRGH 0856H0857      08570857         T                                     
+LIDONCHJN           0900H00000000                     1   2                     
+CRDONC    OO2R616061111825820 DMUA   075      S S                               
+LIDONC    0906H0908H     090709088        T                                     
+LIBTLYJN            0911 00000000                                               
+LIKKSNDAL 0914 0914H     09140914         T                                     
+LIHTFLASF 0918H0919H     09190919         T                                     
+LITHORNEJ           0922 00000000                                               
+LITHORNES 0923H0924      09240924         T                                     
+LICROWLE  0931H0932H     09320932         T                                     
+LIALTPE   0938 0938H     09380938         T           1   1                     
+LTSCNTHRP 0945H09471     TF                                                     

@@ -1,0 +1,29 @@
+BSNY910521512141605131111100 POO2F957548112236820 DMUS   075      S S          P
+BX         NTY                                                                  
+LOMNCROXR 1816 18165         TB                                                 
+LIMNCRDGT 1817H1818      181818182        T                                     
+LICFLDJN            1818H00000000                                               
+LITRFDPEJ           1821 00000000                                               
+LITRFDPK  1822H1823      18231823         T                                     
+LIHMPHRYP 1824H1825      18251825         T                                     
+LIURMSTON 1827 1827H     18271827         T                                     
+LICHASNRD 1829 1829H     18291829         T                                     
+LIFLIXTON 1831H1832      18321832         T                                     
+LIIRLAM   1835H1836      18361836         T                                     
+LIGLAZBKE           1837H00000000                                               
+LIBIRCHWD 1841 1841H     18411841         T                                     
+CRWRGT    OO2F957548112299820 DMUS   075      S S                               
+LIWRGT    1846 1847      184618472        T                                     
+LISANKEY  1850H1851      18511851         T                                     
+LIWIDNES  1856 1856H     18561856         T                                     
+LIHOUGHGR 1859H1900      19001900         T                                     
+LIHALW    1903H1904      19041904         T                                     
+LIHUNTSX  1906H1908H     190719081  DML   T           2                         
+LIHUNTXWJ           1912H00000000                                               
+LIALERTN  1913H1914      191419142  SL    T                                     
+LIWALERTN 1916H1917      191719174        T                                     
+LIMSLH    1919 1919H     191919194        T             3H                      
+LIWVRTREJ           1926 00000000   FL                                          
+LIEDGHSB            1927H00000000                                               
+LIEDGH    1928H1929      192919294        T                                     
+LTLVRPLSH 1933 19339     TF                                                     

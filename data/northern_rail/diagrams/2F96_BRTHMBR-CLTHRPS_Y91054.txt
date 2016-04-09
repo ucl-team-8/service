@@ -1,0 +1,17 @@
+BSNY910541512141605131111100 POO2F96    121826000 DMUS   075      S            P
+BX         NTY                                                                  
+LOBRTHMBR 1959 1959          TB                                                 
+LIBARWHVN 2004 2004H     20042004         T                                     
+LINHOL    2007H2008      20082008         T                                     
+LIOXMRSHX 2009 2009      00000000         TW                                    
+LIGOXHILL 2012H2013      20132013         T                                     
+LITHABBEY 2016 2017      20162017         T                                     
+LIULCEBY  2021 2021H     20212021         T                                     
+LIHABRO   2025 2026      20252026         T                                     
+LISBROUGH 2031 2031H     20312031         T                                     
+LIHEALING 2033H2034      20342034         T                                     
+LIGTCOATS 2036H2037      20372037         T           1                         
+LIGRMSBYT 2041H2042H     204220421        T                                     
+LIGRMSBYD 2044H2045      20452045         T                                     
+LINEWCLEE 2047 2047      20472047         R                                     
+LTCLTHRPS 2050H20522     TF                                                     

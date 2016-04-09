@@ -1,0 +1,31 @@
+BSNY910371512141605131111100 POO2F914836112236820 DMUS   075      S S          P
+BX         NTY                                                                  
+LOMNCROXR 1716 17165         TB                                                 
+LIMNCRDGT 1717H1718H     171817182        T                                     
+LICFLDJN            1719 00000000                                               
+LITRFDPEJ           1721H00000000                                               
+LITRFDPK  1723 1723H     17231723         T                                     
+LIHMPHRYP 1725 1725H     17251725         T                                     
+LIURMSTON 1727H1728      17281728         T                                     
+LICHASNRD 1729H1730      17301730         T                                     
+LIFLIXTON 1732 1732H     17321732         T                                     
+LIIRLAM   1736 1737      17361737         T                                     
+LIGLAZBKE           1738H00000000                                               
+LIGLAZBRK 1739H1740      17401740         T                                     
+LIBIRCHWD 1744 1745      17441745         T                                     
+LIPADGATE 1747H1748      17481748         T                                     
+CRWRGT    OO2F914836112299820 DMUS   075      S S                               
+LIWRGT    1751 1752      175117522        T                                     
+LISANKEY  1755H1756      17561756         T                                     
+LIWIDNES  1801 1802      18011802         T                                     
+LIHOUGHGR 1805 1805H     18051805         T                                     
+LIHALW    1809 1809H     18091809         T                                     
+LIHUNTSX  1812 1812H     181218121  DML   T           2  H                      
+LIHUNTXWJ           1817 00000000                                               
+LIALERTN  1818 1818H     181818182  SL    T                                     
+LIWALERTN 1821 1821H     182118214        T                                     
+LIMSLH    1823H1824H     182418244        T             1H                      
+LIWVRTREJ           1829 00000000   FL                                          
+LIEDGHSB            1830H00000000                                               
+LIEDGH    1831H1832      183218324        T                                     
+LTLVRPLSH 1836 18369     TF                                                     

@@ -1,0 +1,4 @@
+BSNY932231512151605130111100 PEE5N93    122350000 DMUA   075                   P
+BX         NTY                                                                  
+LOBLCKPLN 0055 00004         TB                                                 
+LTBLCKNCS 0100 0000      TF                                                     

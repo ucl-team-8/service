@@ -1,0 +1,24 @@
+BSNY917531512141605131111100 POO2N171078121793000ZDMUS   075      S S          P
+BX         NTY                                                                  
+LONWCSTLE 1022 10221         TB                                                 
+LIHLBDGJN           1023H00000000                                               
+LIGRNSFDJ           1024 00000000                                               
+LIKEBGEJN           1024H00000000                                               
+LIKEBGSJN           1025 00000000                                               
+LINRWDJN            1027 00000000                                               
+LIGTSHDMC 1030 1032      103010322        T                                     
+LIBLAYDON           1035 00000000                                               
+LIWYLAM             1039 00000000                                               
+LIPRUDHOE 1042 1042H     10421042         T               1                     
+LIHEXHAM  1054H1055H     105510552        T                                     
+LIHYDB    1104 1104H     11041104         T                                     
+LIBRDNML  1110 1111      11101111         T                                     
+LIHLTWHST 1117H1118      11181118         T                                     
+LILOWRWSB           1128H00000000                                               
+LIBRMPTNC 1132H1133H     11331133         T                                     
+LIBRMPTNF           1135 00000000                        H                      
+LIWETHCOR           1141H00000000                                               
+LIWETHERL 1142 1142H     11421142         T           2                         
+LIPETLBGJ           1149 00000000                                               
+LICARLLRJ           1150 00000000                        H                      
+LTCARLILE 1152 11575     TF                                                     

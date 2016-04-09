@@ -1,0 +1,26 @@
+BSNY931101512141605121111000 POO2N99    112355820 DMUS   075      S S          P
+BX         NTY                                                                  
+LOMNCRVIC 2123 21234  SL     TB                                                 
+LIMNCRDST           2124H00000000                                               
+LISLFDORD 2125H2126      21262126         T             1                       
+LISLFDCT  2129H2130H     213021302        T                                     
+LIBOLTON  2140 2141      214021414        T                                     
+LILOSTCKJ           2145 00000000                                               
+LILOSTCKP 2145H2146      214621461        T                                     
+LIHORWICH 2149H2150      21502150         T                                     
+LIBLRD    2152H2153      21532153         T                                     
+LIADNL    2156 2157      21562157         T                                     
+LICHORLEY 2201 2202      22012202         T                                     
+LICHORBUK 2205 2205H     22052205         T           2                         
+LIEUXTONJ           2209 00000000   SL                                          
+LILEYLAND 2211H2212      22122212         T                                     
+LIFRNGTNC           2214H00000000                                               
+LIPRST    2217 2219      221722191  SL    T                                     
+LIPRSTNFJ           2220 00000000                                               
+LIKIRKHAM 2228 2228H     222822281        T                                     
+LIKIRKMNJ           2230 00000000                                               
+LIKIRKM51           2233 00000000                                               
+LIPLTNLFY 2236 2236H     223622361        T                                     
+LILAYTCLX           2238H00000000                                               
+LILAYTON  2240 2240H     22402240         T           1                         
+LTBLCKPLN 2245 22471     TF                                                     

@@ -1,0 +1,16 @@
+BSNY913541512141605131111100 POO2H74    112230110 EMU323 090      S            P
+BX         NTY                                                                  
+LOMNCRPIC 1946 19462  EL     TB                                                 
+LIARDWCKJ           1948 00000000                                               
+LIASHBRYS 1949H1950      19501950         T                                     
+LIGORTON  1952 1952H     19521952         T              H                      
+LIGIDB    1956 1956H     195619562        T                                     
+LIHYDEJ             1958 00000000                                               
+LIFLWRYFD 1959 1959H     195919592        T                                     
+LINWTH    2001 2001H     20012001         T                                     
+LIGODLY   2003 2003H     20032003         T                                     
+LIHATRSLY 2005 2005H     20052005         T                                     
+LIBRBM    2007H2008      20082008         T           1 1H                      
+LIDNTG    2014H2015      201520152        T                                     
+LIGLSP    2018 2021      20182021         T                                     
+LTHADFILD 2027 2028      TF                                                     

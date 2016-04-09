@@ -1,0 +1,11 @@
+BSNY910841512151605130111100 POO2H05    112228110 DMUA   075      S            P
+BX         NTY                                                                  
+LOHAZL    0750 07501         TB                                                 
+LIWMOR    0752 0753      075207532        T                                     
+LIDAVNPRT 0754H0755H     075507552        T              H                      
+LISTKPE1            0758 00000000   SL                                          
+LISTKP    0759H0800H     080008004        T                                     
+LIHTNOJN            0802 00000000                                               
+LISLDLJN            0805 00000000   FL                                          
+LIARDWCKJ           0807 00000000                                               
+LTMNCRPIC 0810 081010 FL TF                                                     

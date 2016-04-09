@@ -1,0 +1,5 @@
+BSNY592121512281605131111100 PEE5U291106111871821 DMUS   075                   P
+BX         NTY                                                                  
+LOMNCRVIC 1217 00004         TB                                                 
+LIMNCRVRS 1220 1310      00000000         RM                                    
+LTMNCRVIC21313 00003     TF                                                     

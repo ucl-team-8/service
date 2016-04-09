@@ -1,0 +1,51 @@
+BSNY903961602151604011111100 POO2C33    112228820 DMUS   075      S            P
+BX         NTY                                                                  
+LOBUXTON  1529 15292         TB                                                 
+LICHEF    1538 1538H     153815382        T                                     
+LIWHALYBG 1544 1544H     154415442        T                                     
+LIFURNESV 1547 1547H     15471547         T                                     
+LINWMILSN 1550 1550H     155015502        T                                     
+LIDISLEY  1553H1554      155415542        T                                     
+LIMDWD    1557 1558      155715582        T           1  H                      
+LIHAZL    1602H1603H     160316032        T                                     
+LIWMOR    1605H1606      160616062        T                                     
+LIDAVNPRT 1607H1608H     160816082        T                                     
+LISTKPE1            1610H00000000   SL                                          
+LISTKP    1612H1613H     161316134        T                                     
+LIHTNOJN            1615 00000000                       3                       
+LISLDLJN            1621 00000000                                               
+LIARDWCKJ           1623 00000000                                               
+CRMNCRPIC OO2C33    112355820 DMUS   075      S                                 
+LIMNCRPIC 1625 1627      1625162714    SL T                                     
+LIMNCROXR 1628H1630H     162916302        T                                     
+LIMNCRDGT 1632 1633      163216332        T                                     
+LICFLDJN            1633H00000000                                               
+LIORDSLLJ           1634H00000000                       1H                      
+LISLFDCT  1637H1638H     163816382        T                                     
+LIBOLTON  1648 1649      164816494        T                                     
+LILOSTCKJ           1653 00000000                                               
+LILOSTCKP 1653H1654      165416541        T                                     
+LIHORWICH 1657H1658H     16581658         T                                     
+LIBLRD    1701 1701H     17011701         T                                     
+LIADNL    1704H1705H     17051705         T                                     
+LICHORLEY 1709H1710H     17101710         T                                     
+LICHORBUK 1713H1714H     17141714         T           2                         
+LIEUXTONJ           1718 00000000   FL                                          
+LILEYLAND 1720 1720H     17201720         T                                     
+CRPRST    OO2C33    122354000 DMUS   075      S                                 
+LIPRST    1726 1728      172617284        T                                     
+LIGSTANG            1737 00000000                                               
+LILANCSTR 1747H1748H     174817483        T              H                      
+LIMORCMSJ           1752 00000000                                               
+LICRNFNJN           1756H00000000                                               
+LICRNF    1757H1758H     17581758         T                                     
+LISDAL    1803H1804      18041804         T                                     
+LIARNSIDE 1808 1809      18081809         T                                     
+LIGOVS    1814 1815      18141815         T                                     
+LIKTBK    1818 1818H     18181818         T                                     
+LICARK    1822 1823      18221823         T                                     
+LIULVRSTN 1830H1831H     18311831         T                                     
+LIDALTON  1839 1839H     18391839         T                                     
+LIDALTONJ           1841 00000000                                               
+LIROOSE   1845 1845H     18451845         T           2                         
+LTBAROW   1853 18561     TF                                                     

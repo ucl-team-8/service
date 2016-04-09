@@ -1,0 +1,14 @@
+BSNY929561512141605131111100 PEE5R96    111808920 DMUA   075                   P
+BX         NTY                                                                  
+LODONC    2306 00003B        TB                                                 
+LIDONCHJN           2309 00000000                                               
+LIMEXBRGH           2315 00000000                                               
+LITHBGJN            2319 00000000                                               
+LIALDWRKJ           2321 00000000                                               
+LIROTHCEN           2325 000000001                                              
+LITINSLEJ           2328 00000000                                               
+LITINSLSJ           2329 00000000                       1H                      
+LIBRGLJN            2332 00000000                                               
+LIWDBRNJN           2334H00000000                     1 4                       
+LINNRYMLJ           2341 00000000                                               
+LTSHEFFLD 2343 00006A    TF                                                     

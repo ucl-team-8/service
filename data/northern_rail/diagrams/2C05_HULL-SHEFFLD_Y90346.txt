@@ -1,0 +1,26 @@
+BSNY903461512141605131111100 POO2C05    111808920 DMUS   075      S S          P
+BX         NTY                                                                  
+LOHULL    0520 05202         TB                                                 
+LIHESSLRD           0523H00000000                                               
+LIBROUGH  0531 0532      05310532         T                                     
+LIGLBRDYK           0539 00000000                                               
+LIGOOLE   0546H0547H     054705472        T                                     
+CRTHORNEN OO2C05    111816820 DMUS   075      S S                               
+LITHORNEN 0555H0556      05560556         T             1                       
+LITHORNEJ           0559H00000000                                               
+LIHTFLASF 0602 0603      06020603         T                                     
+LIKKSNDAL 0607 0607H     06070607         T              H                      
+LIBTLYJN            0611H00000000                     2   1                     
+CRDONC    OO2C05    111807820 DMUS   075      S S                               
+LIDONC    0617 0628      061706284        T                                     
+LIDONCHJN           0631 00000000                                               
+LICONBRGH 0634H0635      06350635         T                                     
+LIMEXBRGH 0638 0639      06380639         T                                     
+LISWINTN  0641H0642      06420642         T                                     
+LIALDWRKJ           0645 00000000                         2                     
+LIROTHCEN 0650H0651H     065106511        T                                     
+LIROTHHJN           0653H00000000                          H                    
+LIMEADWHL 0656H0657H     065706571        T                                     
+LIWNCOJN            0658 00000000                     1    H                    
+LINNRYMLJ           0703 00000000                                               
+LTSHEFFLD 0705 07061A    TF                                                     

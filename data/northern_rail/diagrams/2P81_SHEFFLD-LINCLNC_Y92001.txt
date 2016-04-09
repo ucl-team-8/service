@@ -1,0 +1,22 @@
+BSNY920011512141605131111100 POO2P811066111804920 DMUS   075      S S          P
+BX         NTY                                                                  
+LOSHEFFLD 1845 18454A        TB                                                 
+LINNRYMLJ           1846H00000000                                               
+LIWDBRNJN           1848H00000000                                               
+LIDARNALL 1850 1850H     18501850         T                                     
+LIWDHOUSE 1855 1856      18551856         T                                     
+LIWDHOUSJ           1857 00000000                                               
+LIKVTNBDG 1902H1903      19031903         T                                     
+LIKVTNPK  1905H1906H     19061906         T                                     
+LIBRCLEJN           1909 00000000                                               
+LISHRKSKS 1910H1911      19111911         T                                     
+LISHRKSEJ           1913 00000000                                               
+LIWORKSOP 1915 1916      191519162        T                                     
+LITHRMWJN           1923H00000000                                               
+LIRTFDLL  1925H1926H     192619264        T           2                         
+LICLRBROJ           1933H00000000                                               
+LIGBROTJ            1939 00000000                                               
+LIGBGHLRD 1940H1941H     19411941         T                                     
+LISAXILBY 1953 1953H     19531953         T           1   1H                    
+LIWHOLMSJ           2002H00000000                                               
+LTLINCLNC 2005 20065     TF                                                     

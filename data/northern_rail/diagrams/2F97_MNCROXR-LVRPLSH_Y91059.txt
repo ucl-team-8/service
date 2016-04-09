@@ -1,0 +1,28 @@
+BSNY910591512141605121111000 POO2F977553112236820 DMUS   075      S S          P
+BX         NTY                                                                  
+LOMNCROXR 1944 19445         TB                                                 
+LIMNCRDGT 1945H1946      194619462        T                                     
+LICFLDJN            1946H00000000                                               
+LITRFDPEJ           1949 00000000                       1                       
+LITRFDPK  1951H1952      19521952         T                                     
+LIHMPHRYP 1953H1954      19541954         T                                     
+LIURMSTON 1956 1956H     19561956         T                                     
+LICHASNRD 1958 1958H     19581958         T                                     
+LIFLIXTON 2000H2001      20012001         T                                     
+LIIRLAM   2004H2005      20052005         T                                     
+LIGLAZBKE           2006H00000000                                               
+LIGLAZBRK 2007H2008      20082008         T                                     
+LIBIRCHWD 2012 2012H     20122012         T                                     
+LIPADGATE 2015 2015H     20152015         T                                     
+CRWRGT    OO2F977553112299820 DMUS   075      S S                               
+LIWRGT    2018H2019      201920192        T                                     
+LIHOUGHGR 2028 2028H     20282028         T                                     
+LIHUNTSX  2033 2033H     203320331  DML   T                                     
+LIHUNTXWJ           2035H00000000                     2                         
+LIALERTN  2038H2039      203920392  SL    T                                     
+LIWALERTN 2041H2042      204220424        T                                     
+LIMSLH    2044 2044H     204420444        T             7                       
+LIWVRTREJ           2054H00000000   FL                                          
+LIEDGHSB            2056 00000000                        H                      
+LIEDGH              2057H000000004                                              
+LTLVRPLSH 2102 21022     TF                                                     

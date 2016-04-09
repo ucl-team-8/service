@@ -1,0 +1,12 @@
+BSNY901861512141605131111100 POO2A11    121794000 DMUA   075      S            P
+BX         NTY                                                                  
+LOMRPTHRP 1249 12491         TB                                                 
+LICRMLNGT 1257 1257H     12571257         T           1   2                     
+LIHTONSJN           1308 00000000                                               
+LIMANORS  1310 1311      13101311         T                                     
+CRNWCSTLE OO2A11    121796000 DMUA   075      S                                 
+LINWCSTLE 1313 1315      131413157  SL    T                                     
+LIKEBGNJN           1316H00000000                                               
+LIKEBGSJN           1317 00000000                                               
+LINRWDJN            1319 00000000                                               
+LTGTSHDMC 1322 13232     TF                                                     

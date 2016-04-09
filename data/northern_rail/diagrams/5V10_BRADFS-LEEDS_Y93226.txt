@@ -1,0 +1,9 @@
+BSNY932261512151605130111100 PEE5V10    111818620 EMU333 100                   P
+BX         NTY                                                                  
+LOBRADFS  0634 00003       2HTB                                                 
+LISHPY    0641 0646      000000003        OP                                    
+LISHPYDJN           0647 00000000                       6                       
+LIAPERLYJ           0656 00000000                     1 3H                      
+LIARMLJCN           0705 00000000   UH                                          
+LILEEDSWJ           0706H00000000   A                                           
+LTLEEDS   0708 00005C    TF                                                     

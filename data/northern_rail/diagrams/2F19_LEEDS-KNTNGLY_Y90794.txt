@@ -1,0 +1,14 @@
+BSNY907941512141605131111100 POO2F19    111841820 DMUS   075      S            P
+BX         NTY                                                                  
+LOLEEDS   1400 140017AF      TB                                                 
+LILEEDSWJ           1401 00000000   UM                                          
+LIESJLEDS           1402 00000000                                               
+LISTRTJN            1405H00000000                                               
+LIWDLESFD 1407H1408      140814082        T                                     
+LIMETHLYJ           1412 00000000                                               
+LIWHWDJN            1414H00000000                                               
+LICASTLFD 1416H1419H     141714191        T                                     
+LIGLASHTN 1423 1424      142314242        T                                     
+LIPTFTMHL 1428 1428H     142814282        T                                     
+LIKNTNGWJ           1431H00000000                     1   1                     
+LTKNTNGLY 1434 14352     TF                                                     

@@ -1,0 +1,26 @@
+BSNY930571512141605121111000 POO2E631100111871821 DMUS   075      S S          P
+BX         NTY                                                                  
+LOMNCRVIC 1916 19165  SL     TB                                                 
+LIMILESPL           1920 00000000                                               
+LITHRPSBJ           1921 00000000                       1                       
+LIVTRLWKS           1924H00000000                                               
+LICSTLTEJ           1928 00000000                                               
+LIRCHDALE 1930H1931H     193019301        T                                     
+LIRCHDLEJ           1932H00000000                                               
+LILITLBRO           1936 000000002                                              
+LITODMRDN 1942 1943      194119422        T                                     
+LIHALRYDJ           1944H00000000                                               
+LIHBDNBDG 1949 1950      194819492        T                                     
+LIMYTHLMR 1952H1953H     195219522        T                                     
+LISWRBBDG 1958H1959H     195819582        T                                     
+LIMLNRYDJ           2000H00000000                                               
+LIHLFX    2005H2006H     200620062        T           2                         
+LIMLLNJN            2018H00000000                                               
+LIBRADIN  2020 2024      202020243        T                                     
+LIMLLNJN 2          2025H00000000                                               
+LINPUD    2032 2032H     203220322        T                                     
+LIBRMLYSR 2035H2036H     203620362        T               1                     
+LIHOLBJCN           2041H00000000                                               
+LIWHRDJN            2042 00000000   C                                           
+LILEEDSWJ           2042H00000000   B                                           
+LTLEEDS   2044 20472C    TF                                                     

@@ -1,0 +1,27 @@
+BSNY909181512141605131111100 PXX1F05    112249820 DMUA   075      S            P
+BX         NTY                                                                  
+LOPRST    2242 22422  SL     TB                                                 
+LIFRNGTNC           2244 00000000                                               
+LILEYLAND 2247 2248      22472248         T                                     
+LIEUXTONJ           2251 00000000                        H                      
+LIEUXT    2253 2254      22532254         T                                     
+LIBALSHWL           2256 00000000   FL                                          
+LIWIGANNW 2303 2304H     230323044        T                                     
+LIWIGASJN           2306 00000000                                               
+LISPRBJN            2307H00000000                                               
+LIBRYN    2312 2312H     23122312         T                                     
+LIGARW    2315H2316      23162316         T                                     
+LISTHLNSC 2322 2323      232223232        T                                     
+LITHHT    2326 2326H     23262326         T                                     
+LIECPK    2328H2329      23292329         T                                     
+LIPRESCOT 2330H2331      23312331         T                                     
+LIHUYTJUN           2334 00000000                                               
+LIHUYTON  2334H2335      233523352        T                                     
+LIROBY    2336H2337      23372337         T                                     
+LIBROADGR 2340 2340H     23402340         T                                     
+LIOLIVEMJ           2342 00000000                                               
+LIWVRTTEC 2343 2343H     234323431        T           2                         
+LIBOOTLBJ           2346H00000000                                               
+LIEDGHSB            2347 00000000   SL                                          
+LIEDGH    2348 2348H     234823482        T                                     
+LTLVRPLSH 2353 23546     TF                                                     

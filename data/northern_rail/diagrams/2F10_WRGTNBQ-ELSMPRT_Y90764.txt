@@ -1,0 +1,10 @@
+BSNY907641512141605131111100 POO2F10    122291000 DMUA   075      S            P
+BX         NTY                                                                  
+LOWRGTNBQ 0549 05491  FL     TB                                                 
+LIACGJN             0552H00000000                                               
+LIRUNCRNE           0555H00000000                                               
+LIFRDSHMJ           0557H00000000                                               
+LIHELSBY  0602 0603      060206033        T                                     
+LIINEL    0605H0606      06060606         T                                     
+LISTNLWAT 0608 0608H     06080608         T           2                         
+LTELSMPRT 0614 06152     TF                                                     

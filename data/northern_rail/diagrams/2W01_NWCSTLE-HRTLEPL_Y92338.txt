@@ -1,0 +1,13 @@
+BSNY923381512141605131111100 POO2W01    111792920 DMUA   075      S            P
+BX         NTY                                                                  
+LONWCSTLE 0600 06007         TB                                                 
+LIHLBDGJN           0601H00000000                                               
+LIPKLNJN            0603H00000000                                               
+LIHEWORTH 0606 0607      06060607         T                                     
+LIPELAW             0609 00000000                                               
+LIBRWHINS           0612 00000000                     1                         
+LISNDRLND 0619 0620H     061906201        T                                     
+LIRYHPGRN           0623H00000000                                               
+LISEAHAM  0627H0628      062806281        T                                     
+LIHORD148           0635H00000000                         2                     
+LTHRTLEPL 0645 06461     TF                                                     

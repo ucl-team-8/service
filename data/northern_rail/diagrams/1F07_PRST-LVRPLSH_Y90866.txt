@@ -1,0 +1,19 @@
+BSNY908661512141605131111100 PXX1F07    112249820 DMUS   075      S            P
+BX         NTY                                                                  
+LOPRST    1930 19302  SL     TB                                                 
+LIFRNGTNC           1932 00000000                                               
+LILEYLAND 1935 1936      19351936         T                                     
+LIEUXTONJ           1938H00000000                                               
+LIEUXT    1940 1940H     19401940         T                                     
+LIBALSHWL           1942 00000000   FL                                          
+LIWIGANNW 1949H1950H     195019504        T                                     
+LIWIGASJN           1952 00000000                                               
+LISPRBJN            1953H00000000                                               
+LISTHLNSC 2005 2006      200520062        T                                     
+LIHUYTJUN           2013H00000000                                               
+LIHUYTON  2014 2015      201420152        T                                     
+LIOLIVEMJ           2018H00000000                                               
+LIBOOTLBJ           2019H00000000                                               
+LIEDGHSB            2020 00000000   SL                                          
+LIEDGH              2020H000000002                    2                         
+LTLVRPLSH 2027 20291     TF                                                     

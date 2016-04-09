@@ -1,0 +1,9 @@
+BSNY917091512141605131111100 POO2N01    122351000 DMUS   075      S            P
+BX         NTY                                                                  
+LOORMSKRK 2056 2056          TB                                                 
+LIBRSCGHJ 2100 2100H     21002100         T                                     
+LIRUFDORD 2105 2105H     21052105         T                                     
+LICROT    2110 2110H     21102110         T           2 2                       
+LIFRNGTNC           2124 00000000   SL                                          
+LIPRSTRJN           2126 00000000   FL                                          
+LTPRST    2128 21293C    TF                                                     

@@ -1,0 +1,16 @@
+BSNY920501512141605131111100 POO2R57    111807820ZDMUS   075      S            P
+BX         NTY                                                                  
+LOSHEFFLD 0652 06525B        TB                                                 
+LINNRYMLJ           0653H00000000                                               
+LIWNCOJN            0656H00000000                                               
+LIMEADWHL 0657 0658      065706582        T              H H                    
+LIROTHHJN           0702H00000000                                               
+LIROTHCEN 0704H0705H     070507052        T              H1H                    
+LIALDWRKJ           0712 00000000                                               
+LISWINTN  0715H0716      07160716         T                                     
+LIMEXBRGH 0718 0719      07180719         T                                     
+LICONBRGH 0722H0723      07230723         T                                     
+LIDONCHJN           0727 00000000                     1   1                     
+LIDONC    0732 0734      073207348        T                                     
+LIBTLYSY  0736H0737      073707372        T           1                         
+LTADWICK  0742 07422     TF                                                     

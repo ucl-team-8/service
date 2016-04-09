@@ -1,0 +1,5 @@
+BSNY925011512141605131111100 PEE5A864022112233820 DMUS   075                   P
+BX         NTY                                                                  
+LOWLMSL   2127 00002         TB                                                 
+LIWLMSDRS 2129 2151      00000000         RMA                                   
+LTWLMSL  22153 00001     TF                                                     

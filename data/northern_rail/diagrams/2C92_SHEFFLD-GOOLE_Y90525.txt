@@ -1,0 +1,21 @@
+BSNY905251512141605131111100 POO2C92    111807820 DMUS   075      S            P
+BX         NTY                                                                  
+LOSHEFFLD 2014 20145B        TB                                                 
+LINNRYMLJ           2015H00000000                         1                     
+LIWNCOJN            2019H00000000                                               
+LIMEADWHL 2020 2021      202020212        T                                     
+LIROTHHJN           2024H00000000                                               
+LIROTHCEN 2026H2027H     202720272        T              H                      
+LIALDWRKJ           2032H00000000                                               
+LISWINTN  2036 2036H     20362036         T                                     
+LIMEXBRGH 2038H2039H     20392039         T                                     
+LICONBRGH 2043 2043H     20432043         T                                     
+LIDONCHJN           2047H00000000                     1  H3                     
+CRDONC    OO2C92    111816820 DMUS   075      S                                 
+LIDONC    2055 2057      205520578        T                                     
+LIBTLYJN            2059H00000000                                               
+LIKKSNDAL 2103 2103H     21032103         T                                     
+LIHTFLASF 2107H2108H     21082108         T                                     
+LITHORNEJ           2111 00000000                                               
+LITHORNEN 2113H2114      21142114         T                                     
+LTGOOLE   2122 21231     TF                                                     

@@ -1,0 +1,18 @@
+BSNY903871512141605131111100 POO2C31    122354000 DMUS   075      S            P
+BX         NTY                                                                  
+LOPRST    0519 05192         TB                                                 
+LIGSTANG            0528 00000000                                               
+LILANCSTR 0538H0542      053905423        T                                     
+LIMORCMSJ           0545 00000000                                               
+LICRNFNJN           0550 00000000                                               
+LICRNF    0551 0552      05510552         T                                     
+LISDAL    0557 0558      05570558         T                                     
+LIARNSIDE 0602 0602H     06020602         T                                     
+LIGOVS    0607H0608H     06080608         T                                     
+LIKTBK    0611H0612      06120612         T                                     
+LICARK    0615H0616H     06160616         T                                     
+LIULVRSTN 0624 0625      06240625         T                                     
+LIDALTON  0632H0633      06330633         T                                     
+LIDALTONJ           0634H00000000                                               
+LIROOSE   0638H0639      06390639         T           2                         
+LTBAROW   0646 06461     TF                                                     

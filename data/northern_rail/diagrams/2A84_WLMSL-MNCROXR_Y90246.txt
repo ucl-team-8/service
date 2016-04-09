@@ -1,0 +1,16 @@
+BSNY902461512141605131111100 POO2A84    112233820 EMU323 090      S            P
+BX         NTY                                                                  
+LOWLMSL   1956 19561         TB                                                 
+LIHLDGSJ            1959H00000000                                               
+LIHLDGWJ            2000H00000000                     1                         
+LIMNCRIAP 2004 2009      200420091A       T                                     
+LIHLDGWJ 2          2010H00000000                       2H                      
+LIHLDG    2014H2015      201520151        T                                     
+LIGATLEY  2017H2018      20182018         T                                     
+LIEDIDBRY 2020 2020H     20202020         T                                     
+LIBAGE    2022 2022H     20222022         T                                     
+LIMLDTHRD 2024 2024H     20242024         T           1                         
+LISLDLJN            2027H00000000   SL                                          
+LIARDWCKJ           2029 00000000                                               
+LIMNCRPIC 2032 2034      2032203414    SL T                                     
+LTMNCROXR 2036 20381     TF                                                     

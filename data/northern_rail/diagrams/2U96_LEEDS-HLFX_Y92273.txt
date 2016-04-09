@@ -1,0 +1,21 @@
+BSNY922731601181605131111100 POO2U96    111874020 DMUA   075      S            P
+BX         NTY                                                                  
+LOLEEDS   1926 192613AF      TB                                                 
+LILEEDSWJ           1927 00000000   F                                           
+LIWHRDJN            1927H00000000                                               
+LICOTNGLY 1931 1932      19311932         T                                     
+LIMRLY    1935 1935H     19351935         T                                     
+LIBATLEY  1940 1940H     19401940         T                                     
+LIDWBY    1943 1944      19431944         T                                     
+LIRTHP    1946H1947      19471947         T                                     
+LITHHLNWJ           1947H00000000                                               
+LIMIRFEJN           1948H00000000   SL                                          
+LIMIRFILD 1950 1951      195019513        T           1   1                     
+LIHETNLJN 1955H1958H     00000000         A                                     
+LIBRLYWJN           2001H00000000                                               
+CRBRHOUSE OO2U96    111868820 DMUA   075      S                                 
+LIBRHOUSE 2003H2004      200420042        T                                     
+LIELLAND            2007H00000000                                               
+LIGRTLNDJ           2009 00000000                                               
+LIDYCLJN            2011H00000000                                               
+LTHLFX    2013H20162     TF                                                     

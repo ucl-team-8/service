@@ -1,0 +1,12 @@
+BSNY920141512141605131111100 POO2R06    121806000 DMUA   075      S            P
+BX         NTY                                                                  
+LOHULL    1204 12042         TB                                                 
+LIHESSLRD           1207H00000000                                               
+LIBROUGH  1215H1216H     12161216         T                                     
+LIGLBRDYK           1223 00000000                                               
+LIHOWDEN  1228 1228H     12281228         T                                     
+LISELBY   1238 1239      123812392        T           2                         
+LIHAMBLEJ           1246H00000000                                               
+LIHAMBLNJ           1247H00000000                                               
+LICOLTONJ           1254H00000000   NNL                 1 3                     
+LTYORK    1304 13041     TF                                                     

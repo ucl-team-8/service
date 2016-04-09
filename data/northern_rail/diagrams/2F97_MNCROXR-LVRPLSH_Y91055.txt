@@ -1,0 +1,26 @@
+BSNY910551512141605131111100 POO2F977551112236820 DMUS   075      S S          P
+BX         NTY                                                                  
+LOMNCROXR 0844 08445         TB                                                 
+LIMNCRDGT 0845H0846      084608462        T                                     
+LICFLDJN            0846H00000000                                               
+LITRFDPEJ           0849 00000000                        H                      
+LIURMSTON 0852H0853      08530853         T                                     
+LIIRLAM   0857H0858H     08580858         T                                     
+LIGLAZBKE           0900 00000000                                               
+LIBIRCHWD 0903H0904      09040904         T                                     
+LIPADGATE 0906H0907      09070907         T                                     
+CRWRGT    OO2F977551112299820 DMUS   075      S S                               
+LIWRGT    0910 0911      091009112        T                                     
+LISANKEY  0914H0915      09150915         T                                     
+LIWIDNES  0920 0920H     09200920         T                                     
+LIHOUGHGR 0923H0924      09240924         T                                     
+LIHALW    0927H0928      09280928         T                                     
+LIHUNTSX  0930H0931      093109311  DML   T                                     
+LIHUNTXWJ           0933 00000000                     2                         
+LIALERTN  0936 0936H     093609362  FL    T                                     
+LIWALERTN 0939 0939H     093909392        T                                     
+LIMSLH    0941H0942      094209422        T                                     
+LIWVRTREJ           0944H00000000                       2                       
+LIEDGHSB            0948 00000000   SL                                          
+LIEDGH    0949 0949H     094809482        T                                     
+LTLVRPLSH 0954 09544     TF                                                     

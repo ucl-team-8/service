@@ -1,0 +1,30 @@
+BSNY901361512141605131111100 PXX1W46    111808920 DMUS   075      S S          P
+BX         NTY                                                                  
+LOSHEFFLD 1641 16414A        TB                                                 
+LINNRYMLJ           1642H00000000                                               
+LIWNCOJN            1645H00000000                                               
+LIMEADWHL 1646 1647      164616472        T                                     
+LIROTHHJN           1649H00000000                                               
+LIALDWRKJ           1652H00000000                         1                     
+LISWINTN            1655 00000000                                               
+LIMEXBRGH           1656H00000000                       1H                      
+LIDONCHJN           1703 00000000                     1 7H1                     
+CRDONC    XX1W46    111816820 DMUS   075      S S                               
+LIDONC    1715H1719      171717194        T                                     
+LIBTLYJN            1721H00000000                        H                      
+LIHTFLASF           1727 00000000                       1H                      
+LITHORNEJ           1730 00000000                                               
+CRTHORNEN XX1W46    111808920 DMUS   075      S S                               
+LITHORNEN 1732H1733      17331733         T                                     
+LIGOOLE   1741 1742      174117421        T               1                     
+LIGLBRDYK           1750 00000000                                               
+LIBROUGH  1755H1756H     17561756         T           2                         
+LIHESSLRD           1807 00000000                          H                    
+CRHULL    XX1W46    111838821 DMUS   075      S S                               
+LIHULL    1811 1814      181118147        T                                     
+LICTTGHM  1821 1821H     18211821         T                                     
+LIBEVERLY 1827 1828      182718282        T                                     
+LIHTNCRNS 1836H1837      18371837         T                                     
+LIDRIFILD 1841H1842H     18421842         T                                     
+LINAFERTN 1846 1846H     18461846         T           2                         
+LTBRDLNGT 1859H19006     TF                                                     

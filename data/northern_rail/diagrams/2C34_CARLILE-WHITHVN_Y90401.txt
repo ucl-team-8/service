@@ -1,0 +1,14 @@
+BSNY904011512141605131111100 POO2C34    122358000ZDMUS   075      S            P
+BX         NTY                                                                  
+LOCARLILE 2200 22002         TB                                                 
+LICARLCUR           2204 00000000                                               
+LIDALSTON 2208 2208      22082208         R                                     
+LIWIGTON  2218 2218H     22182218         T                                     
+LIASPTRIA 2228H2228H     22282228         R                                     
+LIMPRT    2238H2239      22392239         T                                     
+LIFLIMBY  2242 2242      22422242         R                                     
+LIWKNT    2248H2250H     22492250         T                                     
+LIHNGT    2254 2254      22542254         R                                     
+LIPARTNNJ           2258 00000000                                               
+LIPARTON  2302H2302H     23022302         R           2                         
+LTWHITHVN 2310 2310      TF                                                     

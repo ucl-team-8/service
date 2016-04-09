@@ -1,0 +1,33 @@
+BSNY913941603071605131111100 POO2H88    121151900 DMUS   075      S            P
+BX         NTY                                                                  
+LOLEEDS   1249 12495B B      TB                                                 
+LILEEDSWJ           1250 00000000   DH                                          
+LIARMLJCN           1251H00000000                                               
+LIAPERLYJ           1257 00000000                                               
+LISHPYDJN           1300 00000000                                               
+LISHPY    1301 1302      130113022        T                                     
+LIBNGY    1306 1306H     130613062        T                                     
+LIKEIGHLY 1311 1312      131113122        T           2                         
+LISKPT    1324 1326      132413263        T                                     
+LIGRGRAVE 1331 1331H     13311331         T                                     
+LIHELIFLD 1339 1340      13391340         T                                     
+LILPRESTN 1342 1342H     13421342         T                                     
+LISETTLEJ           1345 00000000                                               
+LISETTLE  1347H1348H     13481348         T                                     
+LIHTNRIBL 1356H1357      13571357         T                                     
+LIRIBLHED 1404 1405      14041405         T                                     
+LIBLEMOR            1408 00000000                                               
+LIDENT    1414 1414H     14141414         T                                     
+LIGARSDLE 1419 1420      14191420         T                                     
+LIKSTP    1432 1432H     14321432         T                                     
+LIAPBY    1444 1445      14441445         T                                     
+LINWBIKTH           1451H00000000                                               
+LINWBICUL           1454 00000000                                               
+LILWBY    1458 1459      14581459         T                                     
+LILAZKRKO 1504 1504H     15041504         T                                     
+LIARMTHWT 1511H1512H     15121512         T                                     
+LILOWHXSB           1514H00000000                                               
+LIHOWEACS           1518 00000000                     2                         
+LIPETLBGJ           1524H00000000                       6                       
+LICARLLRJ           1531H00000000                                               
+LTCARLILE 1533 15336     TF                                                     

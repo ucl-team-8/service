@@ -1,0 +1,17 @@
+BSNY914291512141605131111100 POO2J02    111874020 DMUA   075      S            P
+BX         NTY                                                                  
+LOMRSN    0615 06153         TB                                                 
+LISLTHWTE 0618H0619      06190619         T              H H                    
+LIHDRSFLD 0625H0627      062606278        T                                     
+LIDEIGHTN 0630 0630H     063006301        T                                     
+LIHETNLEJ           0633 00000000                                               
+LIMIRFILD 0634H0635H     063506351        T                                     
+LIMIRFEJN           0637 00000000                                               
+LIRTHP    0638 0638H     06380638         T                                     
+LIDWBY    0641H0642H     06420642         T                                     
+LIBATLEY  0645 0645H     06450645         T                                     
+LIMRLY    0650H0651H     06510651         T                                     
+LICOTNGLY 0654H0655      06550655         T           1    H                    
+LIWHRDJN            0700 00000000   E                                           
+LILEEDSWJ           0700H00000000   E                                           
+LTLEEDS   0702 070410B   TF                                                     

@@ -1,0 +1,21 @@
+BSNY928391602151605131111100 PEE5K17    112231820 EMU323 090                   P
+BX         NTY                                                                  
+LOLNGSTCS 0525 0000          TB                                                 
+LILNGSGHT 0530 0530      00000000   FL    OPA                                   
+LISLDLJN            0531 00000000                                               
+LIHTNOJN            0533H00000000                       1                       
+LISTKP    0536 0538      000000002        C                                     
+LISTKPE1            0539 00000000                                               
+LIADSWDRD           0540 00000000                                               
+LICHDH              0541 000000002                                              
+LIWLMSL             0543H000000004                                              
+LIALDEDGE           0544H00000000                     1 6                       
+LISBCH              0600 000000001  FL                  2                       
+LICREWSBG           0605H00000000                                               
+LICREWUML 0606H0613H     00000000         A                                     
+LICREWE             0616 000000001                                              
+LICREWSJN           0618H00000000UDP                                            
+LIBTHLYJN           0621H00000000                                               
+LIALSAGER           0623H00000000                       2                       
+LIKIDSGRV           0628 00000000                                               
+LTSTOKEOT 0636 00003     TF                                                     

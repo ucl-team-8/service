@@ -1,0 +1,13 @@
+BSNY925571512141605131111100 PEE5C70    122358000 DMUS   075                   P
+BX         NTY                                                                  
+LOBAROWCS 0458 0000          TB                                                 
+LIBAROW   0501 0507      000000001        OP                                    
+LIDALTONJ           0514 00000000                                               
+LIULVRSTN           0521H00000000                                               
+LIGOVS              0533 00000000                                               
+LIARNSIDE           0537 00000000                     1                         
+LICRNF              0546 00000000                                               
+LICRNFNJN           0546H00000000                                               
+LIHESTBNK           0551H00000000                                               
+LIBARELA  0557H0558H     000000002  DUH   TW                                    
+LTMORCAME 0602 0000      TF                                                     

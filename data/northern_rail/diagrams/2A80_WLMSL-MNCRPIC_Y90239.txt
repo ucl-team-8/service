@@ -1,0 +1,15 @@
+BSNY902391512141605131111100 POO2A80    112233820 EMU323 090      S            P
+BX         NTY                                                                  
+LOWLMSL   0547 05471         TB                                                 
+LIHLDGSJ            0550H00000000                                               
+LIHLDGWJ            0551H00000000                                               
+LIMNCRIAP 0554 0602      055406021A       T                                     
+LIHLDGWJ 2          0603H00000000                                               
+LIHLDG    0605 0605H     060506051        T                                     
+LIGATLEY  0608 0608H     06080608         T                                     
+LIEDIDBRY 0610H0611      06110611         T                                     
+LIBAGE    0612H0613      06130613         T                                     
+LIMLDTHRD 0614H0615      06150615         T           2 1H H                    
+LISLDLJN            0621 00000000   SL                                          
+LIARDWCKJ           0623 00000000                                               
+LTMNCRPIC 0626 062610 SL TF                                                     

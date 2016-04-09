@@ -1,0 +1,16 @@
+BSNY907331512141605061111100 POO2F01    112299820 DMUS   075      S            P
+BX         NTY                                                                  
+LOWRGT    2149 21492         TB                                                 
+LISANKEY  2152H2153      21532153         T                                     
+LIWIDNES  2158 2158H     21582158         T                                     
+LIHOUGHGR 2201H2202      22022202         T                                     
+LIHALW    2205H2206      22062206         T                                     
+LIHUNTSX  2208H2209      220922091  DML   T                                     
+LIHUNTXWJ           2211 00000000                       3H                      
+LIALERTN  2215H2216      221622162  FL    T                                     
+LIWALERTN 2218H2219      221922192        T                                     
+LIMSLH    2221 2221H     222122212        T                                     
+LIWVRTREJ           2224 00000000                                               
+LIEDGHSB            2225H00000000   SL                                          
+LIEDGH    2226H2227      222722272        T                                     
+LTLVRPLSH 2231 22331     TF                                                     

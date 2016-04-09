@@ -1,0 +1,8 @@
+BSNY920101512141605131111100 POO2R01    121806000 DMUA   075      S            P
+BX         NTY                                                                  
+LOYORK    0544 05441  NNL3   TB                                                 
+LICOLTONJ           0553 00000000                                               
+LIHAMBLNJ           0600H00000000                                               
+LIHAMBLEJ           0601H00000000                                               
+LISELBYWJ           0605H00000000   UL                    1                     
+LTSELBY   0608H06093     TF                                                     

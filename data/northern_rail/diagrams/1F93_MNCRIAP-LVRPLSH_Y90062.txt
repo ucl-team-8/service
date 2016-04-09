@@ -1,0 +1,26 @@
+BSNY900621512141605131111100 PXX1F936423112248822 DMUS   075      S S          P
+BX         NTY                                                                  
+LOMNCRIAP 1840 18402A        TB                                                 
+LIHLDGWJ            1842 00000000                                               
+LIHLDG              1843 000000001                                              
+LISLDLJN            1848H00000000   SL                                          
+LIARDWCKJ           1850H00000000                                               
+LIMNCRPIC 1853 1855      1853185514    SL T                                     
+LIMNCROXR 1856H1859      185718592        T              H                      
+LIMNCRDGT           1900H000000002                                              
+LICFLDJN            1901 00000000                                               
+LIORDSLLJ           1902 00000000                                               
+LIECCLES            1905H00000000                                               
+LIASTLEY            1910 00000000                                               
+LIPKSDJT            1915 00000000                                               
+LINWTNLW  1916H1917H     19171917         T                                     
+LIERLSTWN           1919 000000002                                              
+LISTHLNSJ 1922 1922H     192219222        T                                     
+LIRHIL              1926H00000000                                               
+LIHUYTJUN           1929 00000000                        H1                     
+LIOLIVEMJ           1933 00000000                                               
+LIWVRTTEC 1934 1934H     193419341        T              H                      
+LIBOOTLBJ           1936 00000000                        H                      
+LIEDGHSB            1937 00000000   SL                                          
+LIEDGH              1937H000000002                    2                         
+LTLVRPLSH 1944 19452     TF                                                     

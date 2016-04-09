@@ -1,0 +1,28 @@
+BSNY906941512141605131111100 POO2E374516111871821 DMUS   075      S S          P
+BX         NTY                                                                  
+LOMNCRVIC 0712 07122  SL     TB                                                 
+LIMILESPL           0716 00000000                                               
+LITHRPSBJ           0717 00000000                                               
+LIVTRLWKS           0719H00000000                                               
+LICSTLTEJ           0723 00000000                                               
+LIRCHDALE 0725H0726H     072607261        T                                     
+LIRCHDLEJ           0727H00000000                                               
+LISMBG    0730 0730H     073007302        T                                     
+LILITLBRO 0733 0734      073307342        T                                     
+LIWDEN    0739H0740      074007402        T                                     
+LITODMRDN 0742H0743H     074307432        T                                     
+LIHALRYDJ           0745 00000000                                               
+LIHBDNBDG 0749H0750H     075007502        T                                     
+LIMYTHLMR 0753 0753H     075307532        T                                     
+LISWRBBDG 0758H0759H     075907592        T                                     
+LIMLNRYDJ           0800H00000000                                               
+LIHLFX    0805H0806H     080608062        T           2                         
+LIMLLNJN            0818H00000000                                               
+LIBRADIN  0820 0823      082008234        T                                     
+LIMLLNJN 2          0824H00000000                                               
+LINPUD    0831 0831H     083108312        T                                     
+LIBRMLYSR 0834H0835H     083508352        T               1                     
+LIHOLBJCN           0840H00000000                                               
+LIWHRDJN            0841 00000000   C                                           
+LILEEDSWJ           0841H00000000   C                                           
+LTLEEDS   0843 084411B   TF                                                     

@@ -1,0 +1,17 @@
+BSNY910201512141605131111100 POO2F88    121826000 DMUS   075      S            P
+BX         NTY                                                                  
+LOBRTHMBR 1150 1150          TB                                                 
+LIBARWHVN 1155 1155H     11551155         T                                     
+LINHOL    1158H1159      11591159         T                                     
+LIOXMRSHX 1200 1200      00000000         TW                                    
+LIGOXHILL 1203H1204      12041204         T                                     
+LITHABBEY 1207 1208      12071208         T                                     
+LIULCEBY  1212 1212H     12121212         T                                     
+LIHABRO   1216 1217      12161217         T                                     
+LISBROUGH 1222 1222H     12221222         T                                     
+LIHEALING 1224H1225      12251225         T                                     
+LIGTCOATS 1227H1228      12281228         T           1                         
+LIGRMSBYT 1232H1233H     123312331        T                                     
+LIGRMSBYD 1235H1236      12361236         T                                     
+LINEWCLEE 1238 1238      12381238         R                                     
+LTCLTHRPS 1241H12432     TF                                                     

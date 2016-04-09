@@ -1,0 +1,7 @@
+BSNY927001602151605131111100 PEE5H11    112231820 EMU323 090                   P
+BX         NTY                                                                  
+LOSTKP    0555 00002  FL     TB                                                 
+LISTKPE1            0556 00000000                                               
+LIADSWDRD           0557 00000000                                               
+LICHDH              0558 000000004                    1                         
+LTMACLSFD 0608 00003     TF                                                     

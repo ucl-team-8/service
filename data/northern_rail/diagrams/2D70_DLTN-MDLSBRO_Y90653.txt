@@ -1,0 +1,10 @@
+BSNY906531512141605131111100 POO2D70    121801000 DMUA   075      S            P
+BX         NTY                                                                  
+LODLTN    1955 19552         TB                                                 
+LIDINSDAL 2000 2000H     200020002        T                                     
+LIALLENSW 2006H2007H     200720072        T                                     
+LIEGLSCLF 2009 2009H     200920092        T                                     
+LISTOCCJN           2011H00000000                                               
+LIBOWSFLD           2012H00000000                                               
+LITABY    2014 2015      201420152        T           1                         
+LTMDLSBRO 2021 20212     TF                                                     

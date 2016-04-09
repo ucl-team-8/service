@@ -1,0 +1,5 @@
+BSNY928871512141605131111100 PEE5N74    112249820 DMUS   075                   P
+BX         NTY                                                                  
+LOPRST    1919 00001         TB                                                 
+LIPRSTSHL 1921 1924      00000000         OPRM                                  
+LTPRSTNCS 1926 0000      TF                                                     

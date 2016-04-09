@@ -1,0 +1,14 @@
+BSNY912921512141605131111100 POO2H57    112226110 DMUA   075      S            P
+BX         NTY                                                                  
+LOROHL    1523 1523          TB                                                 
+LIMARPLWJ           1526 00000000                                               
+LIROMILEY 1527H1528      15281528         T                                     
+LIWOODLEY 1531 1532      15311532         T                                     
+LIHYDEC   1534H1535      15351535         T                                     
+LIHYDEJ             1538 00000000                                               
+LIGIDB    1540H1541H     154115411        T                                     
+LIFRFD    1544 1544H     15441544         T                                     
+LIGORTON  1546H1547H     15471547   ML    T             1                       
+LIASHBRYS           1550H00000000                       1H                      
+LIARDWCKJ           1553H00000000   EL                                          
+LTMNCRPIC 1557 15573  EL TF                                                     

@@ -1,0 +1,16 @@
+BSNY915601512141605131111100 POO2J80    112225110 DMUA   075      S            P
+BX         NTY                                                                  
+LOWIGANWL 0700 07002         TB                                                 
+LIINCE    0702H0703      07030703         T                                     
+LIHINDLEY 0706 0706H     07060706         T                                     
+LICRWNSTJ           0707H00000000                                               
+LIDAISYH  0710 0711      07100711         T                                     
+LIHAGFOLD 0713H0714      07140714         T                                     
+LIATHERTN 0716 0717      07160717         T                                     
+LIWALKDEN 0722 0722H     07220722         T                                     
+LIMRSD    0725H0726      07260726         T                                     
+LISWNT    0728 0729      07280729         T           2                         
+LISLFDCT  0736 0737      073607371        T                                     
+LISLFDORD 0739 0740      07390740         T               1                     
+LIMNCRDST           0742H00000000   FL                                          
+LTMNCRVIC 0744 07445     TF                                                     

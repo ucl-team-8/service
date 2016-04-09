@@ -1,0 +1,28 @@
+BSNY916911512141605131111100 POO2M585735111871821 DMUS   075      S S          P
+BX         NTY                                                                  
+LOLEEDS   1751 175112AD      TB                                                 
+LILEEDSWJ           1752 00000000   D                                           
+LIWHRDJN            1752H00000000                                               
+LIHOLBJCN           1753 00000000                                               
+LIBRMLYSR 1758 1758H     175817581        T                                     
+LINPUD    1802 1803      180218031        T                                     
+LIMLLNJN            1809H00000000                                               
+LIBRADIN  1811 1814      181118144        T                                     
+LIMLLNJN 2          1815H00000000                                               
+LIHLFX    1825H1826H     182618261        T                                     
+LIMLNRYDJ           1831 00000000                                               
+LISWRBBDG 1832H1833      183318331        T                                     
+LIMYTHLMR 1838 1839      183818391        T                                     
+LIHBDNBDG 1841H1842      184218421        T                                     
+LIHALRYDJ           1847 00000000                                               
+LITODMRDN 1848H1849H     184918491        T                                     
+LIWDEN    1852 1852H     185218521        T                                     
+LILITLBRO 1858 1859      185818591        T                                     
+LISMBG    1901 1901H     190119011        T                                     
+LIRCHDLEJ           1904 00000000                                               
+LIRCHDALE 1905 1906      190519063        T                                     
+LICSTLTEJ           1908H00000000                                               
+LIVTRLWKS           1912 00000000                     2                         
+LITHRPSBJ           1916H00000000                                               
+LIMILESPL           1917H00000000   FL                                          
+LTMNCRVIC 1921 19231     TF                                                     

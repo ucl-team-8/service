@@ -1,0 +1,16 @@
+BSNY928331512141605121111000 PEE5J88    112220821 DMUA   075                   P
+BX         NTY                                                                  
+LOHDRSFLD 2348 00004  UPV    TB                                                 
+LIMRSN    2358H0006H     000000002  UPL   A                                     
+LIDIGGLEJ           0012 00000000      UPL                                      
+LIGFLD              0014 00000000                                               
+LISBYD              0019H000000003                                              
+LIGIDB              0024 000000001                                              
+LIASHBRYS           0027H00000000                                               
+LIPHILPK2           0032H00000000                     2                         
+LIPHILPK1           0035H00000000                                               
+LIMILESPL           0036 00000000   SL                                          
+LIMNCRVIC 0039 0043      000000003  FL    OPRM                                  
+LIMILESPL2          0045H00000000                                               
+LITHRPSBJ           0047 00000000                                               
+LTNWTNHDD 0049 0000      TF                                                     

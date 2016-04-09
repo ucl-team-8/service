@@ -1,0 +1,16 @@
+BSNY905351512141605131111100 POO2D09    121800000ZDMUA   075      S            P
+BX         NTY                                                                  
+LONUNTHRP 0829 08292         TB                                                 
+LIGYPSYLA 0830H0831      083108311        T                                     
+LIMARTON  0833 0833H     083308331        T                                     
+LIJAMCOK  0835H0836H     083608361        T           1   1                     
+LIGUSBROJ           0841 00000000                                               
+CRMDLSBRO OO2D09    121801000ZDMUA   075      S                                 
+LIMDLSBRO 0842 0844      084208441        T                                     
+LITABY    0848H0849      084908491        T                                     
+LIBOWSFLD           0851 00000000                                               
+LISTOCCJN           0852 00000000                                               
+LIEGLSCLF 0853H0854      085408541        T                                     
+LIALLENSW 0856 0857      085608571        T                                     
+LIDINSDAL 0902H0903H     090309031        T           1 1                       
+LTDLTN    0912 09133     TF                                                     

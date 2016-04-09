@@ -1,0 +1,29 @@
+BSNY900491512141605131111100 PXX1B33    121737000 DMUE   090      S            P
+BX         NTY                                                                  
+LOBLCKPLN 1811 18116         TB                                                 
+LILAYTCLX           1814H00000000                                               
+LIPLTNLFY 1816H1817H     181718172        T                                     
+LIPLTNT67           1821H00000000                                               
+LIKIRKMNJ           1824 00000000                     1                         
+LIPRSTNFJ           1833 00000000   BL                                          
+LIPRST    1834H1837H     183518372  SL    T                                     
+LIFRNGTNC           1840 00000000                                               
+LILSTHJN            1842H00000000                       2H                      
+LIBLKB    1855H1856H     185618561        T                                     
+LIBLKBDJN           1858 00000000                                               
+LIACRNGTN 1903H1904H     190419041        T                                     
+LIGANNOWJ           1911 00000000                                               
+LIBURNMR  1912H1913H     191319132        T                                     
+LICOPYPIT           1920H00000000                     2                         
+LIHALRYDJ           1930 00000000                                               
+LIHBDNBDG 1934H1935H     193519352        T                                     
+LIMLNRYDJ           1942 00000000                                               
+LIHLFX    1946H1947H     194719472        T           2                         
+LIMLLNJN            1959H00000000                                               
+LIBRADIN  2001 2004      200120041        T                                     
+LIMLLNJN 2          2005H00000000                                               
+LINPUD    2011H2012H     201220122        T             1H2                     
+LIHOLBJCN           2021H00000000                                               
+LIWHRDJN            2022 00000000   C                                           
+LILEEDSWJ           2022H00000000   C                                           
+LTLEEDS   2024 20266C    TF                                                     

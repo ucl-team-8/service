@@ -1,0 +1,11 @@
+BSNY920301512141605131111100 POO2R23    111825820 DMUA   075      S            P
+BX         NTY                                                                  
+LODONC    0639 06397         TB                                                 
+LIBTLYJN            0641H00000000                                               
+LIKKSNDAL 0644H0645      06450645         T                                     
+LIHTFLASF 0649 0650      06490650         T                                     
+LITHORNEJ           0652H00000000                                               
+LITHORNES 0654 0654H     06540654         T                                     
+LICROWLE  0702 0703      07020703         T                                     
+LIALTPE   0708H0709      07090709         T           1   1                     
+LTSCNTHRP 0716 07171     TF                                                     

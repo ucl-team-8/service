@@ -1,0 +1,26 @@
+BSNY900761512141605131111100 PXX1H456453112248822 DMUS   075      S S          P
+BX         NTY                                                                  
+LOLVRPLSH 0916 09164  SL     TB                                                 
+LIEDGH              0919H000000001                                              
+LIEDGHSB            0920 00000000                                               
+LIBOOTLBJ           0920H00000000                                               
+LIWVRTTEC 0921 0921H     092109212        T                                     
+LIOLIVEMJ           0922H00000000                                               
+LIHUYTJUN           0925 00000000                                               
+LIRHIL              0928 00000000                                               
+LISTHLNSJ 0931 0931H     093109311        T                                     
+LIERLSTWN           0935 000000001                                              
+LINWTNLW  0936H0937H     09370937         T                                     
+LIPKSDJT            0940 00000000                                               
+LIASTLEY            0944H00000000                                               
+LIECCLES            0948H00000000                     2 1                       
+LIORDSLLJ           0954H00000000                                               
+LICFLDJN            0955H00000000                                               
+LIMNCRDGT           0956 000000001                                              
+LIMNCROXR 0957 0959      095709594        T                                     
+LIMNCRPIC 1001 1004      1001100413 SL    T                                     
+LIARDWCKJ           1005H00000000                       1H                      
+LISLDLJN            1009 00000000                       1                       
+LIHLDG              1015H000000002                      1H                      
+LIHLDGWJ            1018 00000000                                               
+LTMNCRIAP 1021 10212A    TF                                                     

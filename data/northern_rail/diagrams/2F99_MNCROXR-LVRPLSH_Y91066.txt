@@ -1,0 +1,29 @@
+BSNY910661512141605131111100 POO2F994915112236820 DMUS   075      S S          P
+BX         NTY                                                                  
+LOMNCROXR 2327 23275         TB                                                 
+LIMNCRDGT 2328H2329      232923292        T                                     
+LICFLDJN            2329H00000000                                               
+LITRFDPEJ           2332 00000000                                               
+LITRFDPK  2333H2334      23342334         T                                     
+LIHMPHRYP 2335H2336      23362336         T                                     
+LIURMSTON 2338 2338H     23382338         T                                     
+LICHASNRD 2340 2340H     23402340         T                                     
+LIFLIXTON 2342H2343      23432343         T                                     
+LIIRLAM   2346H2347      23472347         T                                     
+LIGLAZBKE           2348H00000000                                               
+LIGLAZBRK 2349H2350      23502350         T                                     
+LIBIRCHWD 2354 2354H     23542354         T                                     
+LIPADGATE 2357 2357H     23572357         T                                     
+CRWRGT    OO2F994915112299820 DMUS   075      S S                               
+LIWRGT    0001 0002      000100022        T                                     
+LISANKEY  0005 0005H     00050005         T                                     
+LIWIDNES  0010H0011      00110011         T                                     
+LIHOUGHGR 0014 0014H     00130013         T                                     
+LIHALW    0018 0018H     00180018         T                                     
+LIHUNTSX  0021 0021H     002100211  DML   T                                     
+LIHUNTXWJ           0023H00000000                     2                         
+LIALERTN  0026H0027      002700272  SL    T                                     
+LIWVRTREJ           0032H00000000   FL                                          
+LIEDGHSB            0034 00000000   SL                                          
+LIEDGH              0034H000000004                                              
+LTLVRPLSH 0039 00419     TF                                                     

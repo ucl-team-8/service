@@ -1,0 +1,16 @@
+BSNY904521512141605131111100 POO2C49    122354000 DMUS   075      S            P
+BX         NTY                                                                  
+LOLANCSTR 1648 16482         TB                                                 
+LIMORCMSJ           1651 00000000                                               
+LICRNFNJN           1656H00000000                                               
+LICRNF    1657H1658H     16581658         T                                     
+LISDAL    1704 1705      17041705         T                                     
+LIARNSIDE 1709 1709H     17091709         T                                     
+LIGOVS    1714H1715H     17151715         T                                     
+LIKTBK    1718H1719      17191719         T                                     
+LICARK    1722H1723H     17231723         T                                     
+LIULVRSTN 1731H1732H     17321732         T                                     
+LIDALTON  1740H1741      17411741         T                                     
+LIDALTONJ           1742H00000000                                               
+LIROOSE   1746H1747      17471747         T           2                         
+LTBAROW   1754 17561     TF                                                     

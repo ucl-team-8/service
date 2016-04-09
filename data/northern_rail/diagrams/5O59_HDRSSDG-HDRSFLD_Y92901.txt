@@ -1,0 +1,5 @@
+BSNY929011512141605131111100 PEE5O59    111868820 DMUS   075                   P
+BX         NTY                                                                  
+LOHDRSSDG 0609 0000          TB                                                 
+LIHDRS771 0610 0613      00000000         RM                                    
+LTHDRSFLD 0614 00005     TF                                                     

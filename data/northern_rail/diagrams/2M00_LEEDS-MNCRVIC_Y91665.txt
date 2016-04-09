@@ -1,0 +1,26 @@
+BSNY916651512141605131111100 POO2M005698111871821 DMUS   075      S S          P
+BX         NTY                                                                  
+LOLEEDS   0718 071812CD      TB                                                 
+LILEEDSWJ           0719 00000000   D                                           
+LIWHRDJN            0719H00000000                                               
+LIHOLBJCN           0720 00000000                                               
+LIBRMLYSR 0725 0725H     072507251        T                                     
+LINPUD    0729 0730      072907301        T                                     
+LIMLLNJN            0736H00000000                                               
+LIBRADIN  0738 0741      073807413        T                                     
+LIMLLNJN 2          0742H00000000                                               
+LIHLFX    0752H0753H     075307531        T                                     
+LIMLNRYDJ           0758 00000000                                               
+LIHBDNBDG 0804H0805      080508051        T                                     
+LIHALRYDJ           0810 00000000                                               
+LITODMRDN 0811H0812H     081208121        T                                     
+LILITLBRO 0819 0819H     081908191        T                                     
+LIRCHDLEJ           0823 00000000                                               
+LIRCHDALE 0824 0825      082408253        T                                     
+LICSTL    0827H0828      08280828         T                                     
+LICSTLTEJ           0829 00000000                                               
+LIMLSHILL 0832 0833      08320833         T                                     
+LIVTRLWKS           0834H00000000                     2                         
+LITHRPSBJ           0839 00000000                                               
+LIMILESPL           0840 00000000   SL                                          
+LTMNCRVIC 0844 08471     TF                                                     

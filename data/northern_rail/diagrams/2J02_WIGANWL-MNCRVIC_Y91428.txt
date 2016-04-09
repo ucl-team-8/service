@@ -1,0 +1,15 @@
+BSNY914281512141605131111100 POO2J02    112224110 DMUA   075      S            P
+BX         NTY                                                                  
+LOWIGANWL 1824 18242         TB                                                 
+LIHINDLEY 1828H1829      18291829         T                                     
+LICRWNSTJ           1830 00000000                                               
+LIWSTHOTN 1833 1833H     18331833         T                                     
+LILOSTCKJ           1837 00000000                                               
+LIBOLTON  1841 1842      184118423        T                                     
+LIMSGT    1844H1845      18451845         T                                     
+LIFRNW    1846H1847      18471847         T                                     
+LIKEARSLY 1848H1849      18491849         T           2                         
+LISLFDCT  1859H1900H     190019001        T                                     
+LISLFDORD 1902H1903      19031903         T                                     
+LIMNCRDST           1904H00000000   FL                                          
+LTMNCRVIC 1906 19086     TF                                                     

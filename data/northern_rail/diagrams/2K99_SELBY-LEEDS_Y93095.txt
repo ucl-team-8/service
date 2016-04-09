@@ -1,0 +1,13 @@
+BSNY930951512141605121111000 POO2K99    111835920 DMUS   075      S            P
+BX         NTY                                                                  
+LOSELBY   1854 18541         TB                                                 
+LIHAMBLEJ           1859 00000000                                               
+LIHAMBLWJ           1900 00000000                                               
+LIGSCGNWJ           1901H00000000                                               
+LISMILFD  1903 1903H     190319032        T                                     
+LIMCKLFLD 1908 1909      190819092        T                                     
+LIEGRFRTH 1912H1913      191319132        T                                     
+LIGARFRTH 1914H1915H     191519152        T                                     
+LICSGT    1919H1920H     192019202        T               2                     
+LINEVLWJN           1926 00000000                                               
+LTLEEDS   1929 192914A   TF                                                     

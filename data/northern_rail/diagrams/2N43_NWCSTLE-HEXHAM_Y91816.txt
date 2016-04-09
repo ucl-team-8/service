@@ -1,0 +1,14 @@
+BSNY918161512141605131111100 POO2N43    121796000 DMUA   075      S            P
+BX         NTY                                                                  
+LONWCSTLE 1724 17247  SL     TB                                                 
+LIKEBGNJN           1725H00000000                                               
+LIKEBGSJN           1726 00000000                                               
+LINRWDJN            1728 00000000                                               
+LIGTSHDMC 1731 1732      173117322        T                                     
+LIBLAYDON 1735H1736H     17361736         T                                     
+LIWYLAM   1742 1742H     17421742         T                                     
+LIPRUDHOE 1746 1747      17461747         T                                     
+LISTCKSFL 1751 1751H     17511751         T                                     
+LIRIDNGML 1755 1756      17551756         T                                     
+LICRBG    1759H1800      18001800         T           2                         
+LTHEXHAM  1806H18082     TF                                                     

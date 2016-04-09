@@ -1,0 +1,13 @@
+BSNY909031512141605131111100 POO2F60    111822820 DMUA   075      S            P
+BX         NTY                                                                  
+LOKNTNGLY 0657 06561         TB                                                 
+LIKNTNGWJ           0657H00000000                                               
+LIPTFTMHL 0700H0701      070007001        T                                     
+LIPTFTTSF 0703 0704      070207031        T                                     
+LIFTHRSTN 0707 0707H     070607061        T                                     
+LISTHS    0710H0711H     071007101        T                                     
+LICRFTNEJ           0714 00000000                                               
+LICRFTNWJ           0715 00000000                                               
+LIOKNSHWJ           0716 00000000                                               
+LICLDBDGJ           0717H00000000                     1                         
+LTWKFLDKG 0720 07213     TF                                                     

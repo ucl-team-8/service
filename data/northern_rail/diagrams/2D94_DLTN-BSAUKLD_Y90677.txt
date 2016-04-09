@@ -1,0 +1,8 @@
+BSNY906771512141605131111100 POO2D94    121801000 DMUA   075      S            P
+BX         NTY                                                                  
+LODLTN    0749 07491         TB                                                 
+LINTRD    0751H0752H     075207521        T                                     
+LIHGHNGTN 0800 0800H     08000800         T                                     
+LINWTA    0803 0804      080308042        T                                     
+LISHDN    0807H0808      080808082        T                                     
+LTBSAUKLD 0813 08161     TF                                                     

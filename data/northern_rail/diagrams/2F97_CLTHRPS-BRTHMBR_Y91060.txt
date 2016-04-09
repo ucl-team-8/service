@@ -1,0 +1,17 @@
+BSNY910601512141605131111100 POO2F97    121826000 DMUS   075      S            P
+BX         NTY                                                                  
+LOCLTHRPS 2104 21042         TB                                                 
+LINEWCLEE 2107H2107H     21072107         R                                     
+LIGRMSBYD 2109H2110      21102110         T                                     
+LIGRMSBYT 2112 2113      211221132        T                                     
+LIGTCOATS 2116H2117      21172117         T                                     
+LIHEALING 2119H2120      21202120         T                                     
+LISBROUGH 2122H2123      21232123         T                                     
+LIHABRO   2128 2129      21282129         T                                     
+LIULCEBY  2132 2132H     21322132         T                                     
+LITHABBEY 2136H2137      21372137         T                                     
+LIGOXHILL 2140 2140H     21402140         T                                     
+LIOXMRSHX 2143H2143H     00000000         TW                                    
+LINHOL    2144H2145      21452145         T                                     
+LIBARWHVN 2147H2148      21482148         T                                     
+LTBRTHMBR 2153 2153      TF                                                     

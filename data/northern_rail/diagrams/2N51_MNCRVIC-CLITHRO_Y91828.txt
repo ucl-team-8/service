@@ -1,0 +1,17 @@
+BSNY918281512141605131111100 POO2N51    112349820 DMUS   075      S            P
+BX         NTY                                                                  
+LOMNCRVIC 1903 19035  FL     TB                                                 
+LIMNCRDST           1904H00000000                                               
+LISLFDORD 1905H1906      19061906         T                                     
+LISLFDCT  1908H1909H     190919092        T                                     
+LIBOLTON  1920H1921H     192119213        T                                     
+LIHITW    1926 1926H     19261926         T                                     
+LIBRMCRSS 1929 1930H     19291930         T                                     
+LIENTWISL 1936H1937      19371937         R                                     
+LIDARWEN  1943 1943H     19431943         T X                                   
+LIBLKB    1951 1952      195119522        T                                     
+LIBLKBDJN           1953H00000000                                               
+LIRMSWILP 1957H1958H     195819582        T                                     
+LILGHO    2002H2003H     200320032        T                                     
+LIWHALLEY 2007 2008      200720082        T           2                         
+LTCLITHRO 2016 20172     TF                                                     

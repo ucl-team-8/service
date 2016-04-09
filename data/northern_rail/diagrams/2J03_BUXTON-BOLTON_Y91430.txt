@@ -1,0 +1,26 @@
+BSNY914301512141605131111100 POO2J03    112228820 DMUS   075      S            P
+BX         NTY                                                                  
+LOBUXTON  1802 18022         TB                                                 
+LICHEF    1811 1811H     181118112        T                                     
+LIWHALYBG 1817 1817H     181718172        T                                     
+LIFURNESV 1820 1820H     18201820         T                                     
+LINWMILSN 1823 1823H     182318232        T                                     
+LIDISLEY  1826H1827      182718272        T           2                         
+LIHAZL    1834H1835H     183518352        T                                     
+LIWMOR    1837H1838      183818382        T                                     
+LIDAVNPRT 1839H1840H     184018402        T              H                      
+LISTKPE1            1843 00000000   SL                                          
+LISTKP    1844H1846H     184518464        T                                     
+LIHTNOJN            1848 00000000                                               
+LIHTCP    1849H1850      185018502        T                                     
+LILVHM    1852H1853      185318532        T             2H                      
+LISLDLJN            1856H00000000                                               
+LIARDWCKJ           1858 00000000                                               
+CRMNCRPIC OO2J03    112355820 DMUS   075      S                                 
+LIMNCRPIC 1900 1903      1900190314    SL T                                     
+LIMNCROXR 1904H1907      190519072        T                                     
+LIMNCRDGT 1908H1909      190919092        T                                     
+LICFLDJN            1909H00000000                                               
+LIORDSLLJ           1910H00000000                                               
+LISLFDCT  1912 1913      191219132        T                                     
+LTBOLTON  1924 19262     TF                                                     

@@ -1,0 +1,7 @@
+BSNY927551512141605131111100 PEE5J01    112224820 DMUS   075                   P
+BX         NTY                                                                  
+LOWIGAWCS 0610 0000          TB                                                 
+LIWIGANWL 0615 0619      000000002        OP                                    
+LIPARBOLD           0629 00000000                                               
+LIBRSCGHB           0631H00000000                     2                         
+LTSOUTHPT 0645 00004     TF                                                     

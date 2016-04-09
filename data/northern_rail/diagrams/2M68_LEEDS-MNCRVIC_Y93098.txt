@@ -1,0 +1,26 @@
+BSNY930981512141605121111000 POO2M681120111871821 DMUS   075      S S          P
+BX         NTY                                                                  
+LOLEEDS   1951 19519C D      TB                                                 
+LILEEDSWJ           1952 00000000   D                                           
+LIWHRDJN            1952H00000000                                               
+LIHOLBJCN           1953 00000000                                               
+LIBRMLYSR 1958 1958H     195819581        T                                     
+LINPUD    2002 2003      200220031        T                                     
+LIMLLNJN            2009H00000000                                               
+LIBRADIN  2011 2014      201120144        T                                     
+LIMLLNJN 2          2015H00000000                                               
+LIHLFX    2025H2026H     202620261        T                                     
+LIMLNRYDJ           2031 00000000                                               
+LISWRBBDG 2032H2033      203320331        T                                     
+LIMYTHLMR 2038 2039      203820391        T                                     
+LIHBDNBDG 2041H2042H     204220421        T                                     
+LIHALRYDJ           2047H00000000                                               
+LITODMRDN 2049 2050      204920501        T                                     
+LILITLBRO           2056 000000001                                              
+LIRCHDLEJ           2058H00000000                                               
+LIRCHDALE 2059H2100H     210021003        T                                     
+LICSTLTEJ           2103 00000000                                               
+LIVTRLWKS           2106H00000000                     2                         
+LITHRPSBJ           2111 00000000                                               
+LIMILESPL           2112 00000000   FL                                          
+LTMNCRVIC 2115 21171     TF                                                     

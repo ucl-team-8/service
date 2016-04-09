@@ -1,0 +1,24 @@
+BSNY931001601181605121111000 POO2N39    111810920 DMUA   075      S S          P
+BX         NTY                                                                  
+LOLEEDS   1948 194813AE      TB                                                 
+LILEEDSWJ           1949 00000000   D                                           
+LIWHRDJN            1949H00000000                                               
+LIHOLBJCN           1950 00000000                                               
+LIOUTWOOD 1958H1959H     195919591        T                                     
+LIWKFLDWG 2003 2004      200320041        T                                     
+LISABR    2007 2007H     200720071        T                                     
+LIHAREPKJ           2010H00000000                                               
+LIFITZWLM 2013H2014H     201420141        T                                     
+LISKIRBYJ           2019 00000000                                               
+LIMORTHRP 2020 2020H     202020201        T                                     
+LITRNO    2025H2026H     20262026         T                                     
+LIGLDTHRP 2028 2028H     20282028         T                                     
+LIBLTNODR 2030H2031H     20312031         T                                     
+LISWINTN  2035 2035H     20352035         T                                     
+LIALDWRKJ           2038H00000000                         2                     
+LIROTHCEN 2044 2045      204420451        T                                     
+LIROTHHJN           2047 00000000                          H                    
+LIMEADWHL 2050 2051H     205020511        T                                     
+LIWNCOJN            2052 00000000                     1    H                    
+LINNRYMLJ           2057 00000000                                               
+LTSHEFFLD 2059 21011B    TF                                                     

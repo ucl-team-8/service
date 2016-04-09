@@ -1,0 +1,5 @@
+BSNY932241512151605130111100 PEE5R91    111816820 DMUA   075                   P
+BX         NTY                                                                  
+LODONC    0011 00003B        TB                                                 
+LIDONCMRG 0012 0016      00000000         OPRM                                  
+LTDONC   20017 00007     TF                                                     

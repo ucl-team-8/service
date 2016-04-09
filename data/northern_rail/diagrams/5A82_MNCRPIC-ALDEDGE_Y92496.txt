@@ -1,0 +1,12 @@
+BSNY924961512141605131111100 PEE5A82    112232820 EMU323 090                   P
+BX         NTY                                                                  
+LOMNCRPIC 0652 000012 SL     TB                                                 
+LIARDWCKJ           0654H00000000                                               
+LISLDLJN            0656H00000000   FL                                          
+LIHTNOJN            0659 00000000                                               
+LISTKP    0701H0711H     000000001        A                                     
+LISTKPE1            0712H00000000                        H                      
+LIADSWDRD           0714 00000000                                               
+LICHDH              0715 000000002                      5H                      
+LIWLMSL             0723 000000004                    1                         
+LTALDEDGE 0726 0000      TF                                                     

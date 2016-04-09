@@ -1,0 +1,7 @@
+BSNY927751512141605131111100 PEE5J16    112224110 DMUA   075                   P
+BX         NTY                                                                  
+LOWIGANWL 1250 00001         TB                                                 
+LIWIGADCS 1252 1256      00000000         RM                                    
+LIWIGANWL21258 1302      000000002        RM                                    
+LIWIGAWCS 1306 1338      00000000         OPRM                                  
+LTWIGANWL31343 00002     TF                                                     

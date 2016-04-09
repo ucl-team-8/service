@@ -1,0 +1,5 @@
+BSNY928661512141605131111100 PEE5N04    121799000 DMUA   075                   P
+BX         NTY                                                                  
+LONWCSTLE 1040 00001  SL     TB                                                 
+LIHTONSJN           1046 00000000                                               
+LTHTONTMD 1050H0000      TF                                                     

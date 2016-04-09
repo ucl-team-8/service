@@ -1,0 +1,15 @@
+BSNY929481512141605131111100 PEE5R70    112226820 DMUA   075                   P
+BX         NTY                                                                  
+LONWMILSC 1954 00002         TB                                                 
+LIMARPLWJ           2000H00000000                                               
+LIROMILEY           2002 00000000                                               
+LIREDISHN           2007 00000000                                               
+LIASHBRYS           2010H00000000                                               
+LIARDWCKJ           2012 00000000   EL                                          
+LIMNCRPIC 2015 2023      000000002  FL EL -U            1                       
+LIARDWCKJ2          2026 00000000                                               
+LISLDLJN            2028 00000000   SL                  10                      
+LIHTNOJN            2041 00000000   FL                                          
+LISTKP    2043 2055      000000003A SL    -D                                    
+LISTKPVIA 2056 2100      00000000         RM                                    
+LTSTKPCS  2105 0000      TF                                                     

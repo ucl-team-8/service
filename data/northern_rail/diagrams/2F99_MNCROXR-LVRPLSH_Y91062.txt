@@ -1,0 +1,26 @@
+BSNY910621512141605131111100 POO2F997556112236820 DMUS   075      S S          P
+BX         NTY                                                                  
+LOMNCROXR 0916 09165         TB                                                 
+LIMNCRDGT 0917H0918      091809182        T                                     
+LICFLDJN            0918H00000000                                               
+LITRFDPEJ           0921 00000000                                               
+LITRFDPK  0922H0923      09230923         T                                     
+LIHMPHRYP 0924H0925      09250925         T                                     
+LIURMSTON 0927 0927H     09270927         T                                     
+LIFLIXTON 0930 0930H     09300930         T                                     
+LIIRLAM   0934 0934H     09340934         T                                     
+LIGLAZBKE           0936 00000000                                               
+LIBIRCHWD 0939H0940H     09400940         T                                     
+CRWRGT    OO2F997556112299820 DMUS   075      S S                               
+LIWRGT    0945 0946      094509462        T                                     
+LIWIDNES  0953H0954      09540954         T                                     
+LIHOUGHGR 0957 0958      09570958         T                                     
+LIHUNTSX            1002 000000001  DML                                         
+LIHUNTXWJ           1003H00000000                     2                         
+LIALERTN  1006H1007      100710072  SL    T                                     
+LIWALERTN 1009H1010      101010104        T                                     
+LIMSLH    1012 1012H     101210124        T                                     
+LIWVRTREJ           1015H00000000   FL                                          
+LIEDGHSB            1017 00000000   SL                  1                       
+LIEDGH              1018H000000002                      2H                      
+LTLVRPLSH 1025 10253     TF                                                     

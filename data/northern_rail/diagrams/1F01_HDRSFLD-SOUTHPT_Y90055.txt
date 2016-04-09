@@ -1,0 +1,30 @@
+BSNY900551512141605131111100 PXX1F01    112220821 DMUA   075      S            P
+BX         NTY                                                                  
+LOHDRSFLD 1615 16154B        TB                                                 
+LISLTHWTE 1621H1622      16221622         T                                     
+LIMRSN    1627 1628      162716283  UPL   T                                     
+LIDIGGLEJ           1633H00000000      UPL                                      
+LIGFLD    1636 1636H     16361636         T                                     
+LIMOSSLEY 1640 1641      16401641         T                                     
+LISBYD    1645 1646      164516463        T                                     
+LIASHONUL 1649H1650H     16501650         T                H                    
+LIASHTMNJ           1652H00000000                                               
+LIBAGLYFJ           1655H00000000                     2                         
+LIPHILPK1           1658H00000000                                               
+LIMILESPL           1659 00000000   SL                    2H                    
+CRMNCRVIC XX1F01    112225820 DMUA   075      S                                 
+LIMNCRVIC 1705 1710      170717103        T                                     
+LIMNCRDST           1711H00000000                                               
+LISLFDORD 1712H1713      17131713         T              H                      
+LISLFDCT  1716 1717      171617172        T                                     
+LIWALKDEN           1725 00000000                                               
+LIATHERTN 1729 1730      17291730         T                                     
+LIDAISYH  1733 1734      17331734         T                                     
+LICRWNSTJ           1737 00000000                                               
+LIWIGANWL 1741H1742H     174217421        T                                     
+LIGATHRST 1746H1747      17471747         T                                     
+LIAPLYBDG 1750 1750H     17501750         T                                     
+LIPARBOLD 1754 1755      17541755         T                                     
+LIBRSCGHB 1759 1800      17591800         T                                     
+LIMEOLSCP 1807 1808      18071808         T           2                         
+LTSOUTHPT 1815 18154     TF                                                     

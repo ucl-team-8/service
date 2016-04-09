@@ -1,0 +1,24 @@
+BSNY903991512141605131111100 POO2C34    122358000 DMUS   075      S            P
+BX         NTY                                                                  
+LOMPRT    0646 0646          TB                                                 
+LIFLIMBY  0649 0649      06490649         R                                     
+LIWKNT    0654H0704      06550704         T                                     
+LIHNGT    0707H0707H     07070707         R                                     
+LIPARTNNJ           0711H00000000                                               
+LIPARTON  0716 0716      07160716         R             1                       
+LIWHITHVN 0722H0724H     07230724         T                                     
+LICRCK    0726H0726H     07260726         R                                     
+LISTBEES  0731H0732      07320732         T                                     
+LISELAFLD 0741H0742H     07420742         T                                     
+LISEASCAL 0745H0746H     07460746         T                                     
+LIDRIGG   0749H0749H     07490749         R                                     
+LIRGLS    0752H0753H     07530753         T                                     
+LIBOOTLE  0759 0759      07590759         R                                     
+LISILCRFT 0805H0805H     08050805         R                                     
+LIMLLM    0811H0812H     08120812         T                                     
+LIGREENRD 0816H0816H     08160816         R                                     
+LIFOXFILD 0820 0820      08200820         R                                     
+LIKRKBYIF 0824 0824      08240824         R                                     
+LIASKAM   0828H0829      08290829         T                                     
+LIPSTH              0833 00000000                     2                         
+LTBAROW   0845 08453     TF                                                     

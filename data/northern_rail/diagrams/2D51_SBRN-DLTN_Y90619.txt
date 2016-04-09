@@ -1,0 +1,18 @@
+BSNY906191512141605131111100 POO2D51    121801000 DMUA   075      S            P
+BX         NTY                                                                  
+LOSBRN    1830 18301         TB                                                 
+LISBRNWJN           1832 00000000                                               
+LIMRSK    1834 1834H     183418341        T                                     
+LILONGBCK 1836 1837      183618371        T                                     
+LIREDCARE 1839H1840      184018401        T                                     
+LIREDCARC 1842 1843      184218431        T                                     
+LISTHBANK 1849H1850      185018501        T                                     
+LIGUSBROJ           1853H00000000                                               
+LIMDLSBRO 1854H1855H     185518551        T                                     
+LITABY    1900 1900H     190019001        T                                     
+LIBOWSFLD           1902H00000000                                               
+LISTOCCJN           1903H00000000                                               
+LIEGLSCLF 1905 1906      190519061        T                                     
+LIALLENSW 1908 1908H     190819081        T                                     
+LIDINSDAL 1914 1915      191419151        T           1  H1                     
+LTDLTN    1924 19254A    TF                                                     

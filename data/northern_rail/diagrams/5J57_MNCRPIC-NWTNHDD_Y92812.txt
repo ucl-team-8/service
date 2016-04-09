@@ -1,0 +1,13 @@
+BSNY928121512141605131111100 PEE5J57    112974820 DMUS   075                   P
+BX         NTY                                                                  
+LOMNCRPIC 1102 00001  EL     TB                                                 
+LIARDWCKJ           1104 00000000                                               
+LIASHBRYS           1106 00000000                       1                       
+LIGIDB              1111 000000002                                              
+LISBYD    1116 1140      000000002        RM                                    
+LIASHTMNJ           1144 00000000                                               
+LIBAGLYFJ           1147 00000000                                               
+LIPHILPK1           1148 00000000                       13                      
+LIBREWRYS           1202 00000000   ML                  3                       
+LITHRPSBJ           1208 00000000                                               
+LTNWTNHDD 1210 0000      TF                                                     

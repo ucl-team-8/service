@@ -1,0 +1,6 @@
+BSNY929581512141605131111100 PEE5S04    112226110 DMUA   075                   P
+BX         NTY                                                                  
+LOLNGSTCS 0448 0000          TB                                                 
+LILNGSTN  0453 0453      00000000   GL    OPA                                   
+LIARDWCKJ           0456 00000000   EL                  1                       
+LTMNCRPIC 0500 00002  EL TFRMA                                                  

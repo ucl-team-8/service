@@ -1,0 +1,6 @@
+BSNY931361512141605121111000 PEE5E61    121831000 DMUS   075                   P
+BX         NTY                                                                  
+LOLEEDS   1955 000011D       TB                                                 
+LIMRLNJN            1958 00000000   GL    X                                     
+LINEVLWJN           2001 00000000                                               
+LTNEVLTMD 2005 0000      TF                                                     

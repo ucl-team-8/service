@@ -1,0 +1,12 @@
+BSNY922081512141605131111100 POO2S53    111820820 EMU333 100      S            P
+BX         NTY                                                                  
+LOSKPT    1800 18001         TB                                                 
+LICONONLY 1804H1805H     180518051        T                                     
+LISTEETON 1809H1810      181018101        T                                     
+LIKEIGHLY 1813H1814H     181418141        T                                     
+LICFLATTS 1817H1818      181818181        T                                     
+LIBNGY    1819H1820H     182018201        T                                     
+LISAIR    1824H1825H     182518251        T             1                       
+LISHPY    1828H1829H     182918295        T                                     
+LIFRZNGHL 1832H1833      183318332        T           1                         
+LTBRADFS  1837H18393     TF                                                     

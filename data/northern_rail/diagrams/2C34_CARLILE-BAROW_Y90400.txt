@@ -1,0 +1,29 @@
+BSNY904001512141605131111100 POO2C34    122358000 D  140 075      S            P
+BX         NTY                                                                  
+LOCARLILE 1435 14353         TB                                                 
+LICARLCUR           1439 00000000                                               
+LIDALSTON 1443H1444      14441444         R                                     
+LIWIGTON  1453 1454      14531454         T                                     
+LIASPTRIA 1505 1505H     15051505         R                                     
+LIMPRT    1516H1517H     15171517         T                                     
+LIFLIMBY  1520H1521H     15211521         R                                     
+LIWKNT    1526H1528      15271528         T                                     
+LIHNGT    1532 1533      15321533         R                                     
+LIPARTNNJ           1537H00000000                                               
+LIPARTON  1542H1543H     15431543         R                                     
+LIWHITHVN 1547H1549H     15481549         T                                     
+LICRCK    1552 1553      15521553         R                                     
+LISTBEES  1559 1600      15591600         T                                     
+LISELAFLD 1610 1611      16101611         T                                     
+LISEASCAL 1614H1615H     16151615         T                                     
+LIDRIGG   1619 1620      16191620         R                                     
+LIRGLS    1623H1624H     16241624         T                                     
+LIBOOTLE  1630 1631      16301631         R                                     
+LISILCRFT 1638H1639H     16391639         R                                     
+LIMLLM    1644H1645H     16451645         T                                     
+LIGREENRD 1651 1651H     16511651         R                                     
+LIFOXFILD 1656 1656H     16561656         R                                     
+LIKRKBYIF 1700H1701H     17011701         R                                     
+LIASKAM   1706H1707H     17071707         T           2                         
+LIPSTH              1714 00000000                                               
+LTBAROW   1722 17242     TF                                                     

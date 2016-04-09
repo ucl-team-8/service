@@ -1,0 +1,36 @@
+BSNY918381512141605131111100 POO2N55    112228820 DMUS   075      S            P
+BX         NTY                                                                  
+LOBUXTON  0653 06531         TB                                                 
+LICHEF    0702 0702H     070207022        T                                     
+LIWHALYBG 0708 0708H     070807082        T                                     
+LIFURNESV 0711 0711H     07110711         T                                     
+LINWMILSN 0714 0715      071407152        T                                     
+LIDISLEY  0718 0719      071807192        T           2                         
+LIHAZL    0726H0728      072707282        T                                     
+LIWMOR    0730 0730H     073007302        T                                     
+LIDAVNPRT 0732 0733      073207332        T                                     
+LISTKPE1            0735 00000000   SL                                          
+LISTKP    0736H0737H     073707374        T                                     
+LIHTNOJN            0739 00000000                                               
+LIHTCP    0740H0741      074107412        T                                     
+LILVHM    0743H0744      074407442        T             1                       
+LISLDLJN            0746 00000000                                               
+LIARDWCKJ           0748 00000000                                               
+CRMNCRPIC OO2N55    112349820 DMUS   075      S                                 
+LIMNCRPIC 0750 0752      0750075214    SL T                                     
+LIMNCROXR 0753H0802      075408021        T                                     
+LIMNCRDGT 0803H0804      080408042        T                                     
+LICFLDJN            0804H00000000                       1H                      
+LIORDSLLJ           0807 00000000                                               
+LISLFDCT  0808H0809H     080908092        T                                     
+LIBOLTON  0820H0821H     082108211        T                                     
+LIHITW    0826 0826H     08260826         T                                     
+LIBRMCRSS 0829 0829H     08280828         T                                     
+LIENTWISL 0835H0836      08360836         T             1                       
+LIDARWEN  0843 0843H     08430843         T                                     
+LIBLKB    0850H0851H     085108512        T                                     
+LIBLKBDJN           0853 00000000                                               
+LIRMSWILP 0857 0857H     085708572        T                                     
+LILGHO    0901H0902H     090209022        T                                     
+LIWHALLEY 0906 0907      090609072        T           2                         
+LTCLITHRO 0915 09162     TF                                                     

@@ -1,0 +1,11 @@
+BSNY916281512141605131111100 POO2L01    111802820 DMUA   075      S            P
+BX         NTY                                                                  
+LOBNSLY   0523 05232         TB                                                 
+LIWOMBWEL 0527H0528      05280528         T                                     
+LIELSC    0531 0532      05310532         T                                     
+LICHPLTWN 0536H0537      05370537         T                                     
+LIECLSFLW           0539 00000000                         2H                    
+LIMEADWHL 0544H0545H     054505453        T                                     
+LIWNCOJN            0546 00000000                     1    H                    
+LINNRYMLJ           0551 00000000                                               
+LTSHEFFLD 0553 05544A    TF                                                     

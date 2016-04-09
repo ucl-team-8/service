@@ -1,0 +1,16 @@
+BSNY901401512141605131111100 PXX1Y016556121865000 DMUE   090      S            P
+BX         NTY                                                                  
+LOSHEFFLD 0505 05052A        TB          1                                      
+LIDORESNJ           0511 00000000                                               
+LITAPTONJ           0518 00000000   ML                                          
+LICHFD    0519 0520      051905202        T           5                         
+LICHFDSJ            0526H00000000                                               
+LICLAYXNJ           0528 00000000      ML                                       
+LIAMBERGJ           0536 00000000                     1                         
+LIDRBY    0545 0547      054500006        D                                     
+LISPDN              0551 00000000                                               
+LISHEETSJ           0557 00000000                                               
+LITRENT             0558H00000000                                               
+LIBESTNSJ           0602 00000000   DNF               1                         
+LINTNGMJN           0605 00000000   C                                           
+LTNTNG    0607 06075     TF                                                     

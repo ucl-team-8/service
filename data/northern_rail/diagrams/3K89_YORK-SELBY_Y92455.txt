@@ -1,0 +1,8 @@
+BSNY924551512141605131111100 PEE3K89    111835920 DMUS   075                   P
+BX         NTY                                                                  
+LOYORK    0743 00001        HTB          1                                      
+LICOLTONJ           0750 00000000                                               
+LIHAMBLNJ           0757 00000000                                               
+LIHAMBLEJ           0758 00000000                                               
+LISELBYWJ           0802 00000000   UL                                          
+LTSELBY   0804 00003     TF                                                     

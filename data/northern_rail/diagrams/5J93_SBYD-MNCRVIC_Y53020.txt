@@ -1,0 +1,9 @@
+BSNY530201512141605121111000 PEE5J93    112220821 DMUS   075                   P
+BX         NTY                                                                  
+LOSBYD    2338 00003         TB                                                 
+LIGIDB              2343 000000001                                              
+LIASHBRYS           2346H00000000                                               
+LIPHILPK2           2351H00000000                     2                         
+LIPHILPK1           2354H00000000                                               
+LIMILESPL           2355 00000000   SL                                          
+LTMNCRVIC 2358 00003     TF                                                     

@@ -1,0 +1,39 @@
+BSNY916791512141605131111100 POO2M347835121793000ZDMUS   075      S S          P
+BX         NTY                                                                  
+LONWCSTLE 1622 16221         TB                                                 
+LIHLBDGJN           1623H00000000                       1                       
+LIGRNSFDJ           1625 00000000                                               
+LIKEBGEJN           1625H00000000                                               
+LIKEBGSJN           1626 00000000                                               
+LINRWDJN            1628 00000000                                               
+LIGTSHDMC 1631 1632      163116322        T                                     
+LIBLAYDON           1635 00000000                                               
+LIWYLAM   1639H1640      16401640         T                                     
+LIPRUDHOE 1643H1644H     16441644         T                                     
+LISTCKSFL 1648H1649      16491649         T                                     
+LIRIDNGML 1652H1653H     16531653         T                                     
+LICRBG    1657 1657H     16571657         T                                     
+LIHEXHAM  1702 1703      170217032        T                                     
+LIHYDB    1711H1712H     17121712         T                                     
+LIBRDNML  1718 1718H     17181718         T                                     
+LIHLTWHST 1725 1726      17251726         T                                     
+LILOWRWSB           1736H00000000                                               
+LIBRMPTNC 1740H1741      17411741         T                                     
+LIBRMPTNF           1742H00000000                                               
+LIWETHCOR           1748H00000000                                               
+LIWETHERL 1749 1750      17491750         T           2                         
+LIPETLBGJ           1756H00000000                                               
+LICARLLRJ           1757H00000000                                               
+CRCARLILE OO2M347835122358000ZDMUS   075      S S                               
+LICARLILE 1759 1814      180018142        T                                     
+LICARLCUR           1818 00000000                                               
+LIDALSTON 1822 1822      18221822         R                                     
+LIWIGTON  1832 1832H     18321832         T                                     
+LIASPTRIA 1842H1842H     18421842         R                                     
+LIMPRT    1852H1853      18531853         T                                     
+LIFLIMBY  1856 1856      18561856         R                                     
+LIWKNT    1902H1904H     19031904         T                                     
+LIHNGT    1908 1908      19081908         R                                     
+LIPARTNNJ           1912 00000000                                               
+LIPARTON  1916H1916H     19161916         R           2                         
+LTWHITHVN 1925 1925      TF                                                     

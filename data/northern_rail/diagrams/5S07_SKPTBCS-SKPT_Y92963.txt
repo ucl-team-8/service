@@ -1,0 +1,6 @@
+BSNY929631512141605131111100 PEE5S07    111820820 DMUA   075                   P
+BX         NTY                                                                  
+LOSKPTBCS 0542 0000          TB                                                 
+LISKPT    0547 0606      000000003  USM   OP                                    
+LISKPT549 0608 0611      00000000         RM                                    
+LTSKPT   20613 00001     TF                                                     

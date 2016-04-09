@@ -1,0 +1,21 @@
+BSNY905341512141605131111100 POO2D06    121800000 DMUA   075      S            P
+BX         NTY                                                                  
+LOMDLSBRO 0704 07041         TB                                                 
+LIGUSBROJ           0705 00000000                                               
+LIJAMCOK  0707H0708H     070807081        T                                     
+LIMARTON  0710H0711      071107111        T                                     
+LIGYPSYLA 0713H0714      071407141        T                                     
+LINUNTHRP 0716 0717H     071607172        T                                     
+LIGTAYTON 0723H0724      07240724         T                                     
+LIBTRSBY  0729 0736H     07290736         T                                     
+LIKLDL    0740H0741      07410741         T                                     
+LICOMONDL 0747H0748      07480748         T                                     
+LICTNM    0751 0752      07510752         T                                     
+LIDANBY   0754H0755H     07550755         T                                     
+LILEALHLM 0801H0802H     08020802         T                                     
+LIGLAISDL 0806H0809H     08070809         T                                     
+LIEGTON   0812H0813H     08130813         T                                     
+LIGROSMNT 0816H0817H     08170817         T                                     
+LISLEGHTS 0825 0826H     08250826         T                                     
+LIRUSWARP 0830H0831H     08310831         T           1   2                     
+LTWTBY    0838 08381     TF                                                     

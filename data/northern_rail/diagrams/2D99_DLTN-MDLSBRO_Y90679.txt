@@ -1,0 +1,10 @@
+BSNY906791512141605131111100 POO2D99    121801000 DMUS   075      S            P
+BX         NTY                                                                  
+LODLTN    2238 22381         TB                                                 
+LIDINSDAL 2243 2243H     224322432        T                                     
+LIALLENSW 2249H2250H     225022502        T                                     
+LIEGLSCLF 2252 2252H     225222522        T                                     
+LISTOCCJN           2254H00000000                                               
+LIBOWSFLD           2255H00000000                                               
+LITABY    2257 2258      225722582        T           1                         
+LTMDLSBRO 2303H23042     TF                                                     

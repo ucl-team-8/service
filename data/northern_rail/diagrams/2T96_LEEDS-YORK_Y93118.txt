@@ -1,0 +1,11 @@
+BSNY931181512141605121111000 POO2T968143111837920 DMUE   090      S S          P
+BX         NTY                                                                  
+LOLEEDS   1952 195214A       TB                                                 
+LINEVLWJN           1954H00000000                                               
+LICSGT    1958 1959      195819591        T                                     
+LIGARFRTH 2003 2004      200320041        T                                     
+LIEGRFRTH 2005H2006H     200620061        T                                     
+LIMCKLFLD 2009 2010      200920101        T              H                      
+LICHFN              2015H000000004  NNL                   1                     
+LICOLTONJ           2020H00000000                        H1                     
+LTYORK    2027 20271     TF                                                     

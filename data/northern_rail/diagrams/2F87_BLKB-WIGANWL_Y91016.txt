@@ -1,0 +1,35 @@
+BSNY910161512141605131111100 POO2F87    112242110 DMUA   075      S            P
+BX         NTY                                                                  
+LOBLKB    1620 16202         TB                                                 
+LIBLKBDJN           1621H00000000                                               
+LIACRNGTN 1627 1628      162716281        T                                     
+LIROSG    1634H1635      163516351        T                                     
+LIGANNOWJ           1636H00000000                                               
+LIBURNMR  1638 1639      163816392        T                                     
+LICOPYPIT           1646H00000000                                               
+LISTNSHJN           1653H00000000                                               
+LITODMRDN 1655 1656      165516561        T                                     
+LILITLBRO 1702H1703H     170317031        T                                     
+LISMBG    1705H1706      170617061        T                                     
+LIRCHDLEJ           1708H00000000                                               
+LIRCHDALE 1709H1710H     171017103        T                                     
+LICSTL    1713 1713H     17131713         T                                     
+LICSTLTEJ           1714H00000000                                               
+LIMLSHILL 1717H1718H     17181718         T                                     
+LIVTRLWKS           1720 00000000                     2 1                       
+LITHRPSBJ           1725H00000000                                               
+LIMILESPL           1726H00000000   FL                  4H                      
+CRMNCRVIC OO2F87    112224110 DMUA   075      S                                 
+LIMNCRVIC 1734 1738      173417386        T                                     
+LIMNCRDST           1739H00000000                        H                      
+LISLFDORD 1741 1742      17411742         T             1                       
+LISLFDCT  1745H1746H     174617462        T                                     
+LIKEARSLY 1753H1754      17541754         T                                     
+LIFRNW    1755H1756      17561756         T                                     
+LIMSGT    1758 1758H     17581758         T                                     
+LIBOLTON  1801H1802H     180218024        T                                     
+LILOSTCKJ           1806H00000000                                               
+LIWSTHOTN 1809H1810      18101810         T           2                         
+LICRWNSTJ           1814H00000000                                               
+LIHINDLEY 1815H1816      18161816         T                                     
+LTWIGANWL 1821 18211     TF                                                     

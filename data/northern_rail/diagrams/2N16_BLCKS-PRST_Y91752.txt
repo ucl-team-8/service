@@ -1,0 +1,13 @@
+BSNY917521512141605131111100 POO2N16    122350000 DMUA   075      S            P
+BX         NTY                                                                  
+LOBLCKS   2324 23241         TB                                                 
+LIBLCKPB  2325H2326      232623261        T                                     
+LISQUIRES 2328 2328H     232823281        T                                     
+LISTAS    2331H2332      233223321        T                                     
+LIANSDELL 2335 2335H     233523351        T                                     
+LILYTHAM  2338 2338H     233823381        T                                     
+LIMSSD    2342H2343H     234323431        T           1                         
+LIKIRKMNJ           2349 00000000                                               
+LIKIRKHAM 2350 2350H     235023502        T               1                     
+LIPRSTNFJ           2359H00000000   SL                                          
+LTPRST    0001 00032     TF                                                     

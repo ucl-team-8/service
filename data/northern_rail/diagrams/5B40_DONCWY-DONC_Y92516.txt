@@ -1,0 +1,5 @@
+BSNY925161512141605131111100 PEE5B40    111816820 EMU321 100                   P
+BX         NTY                                                                  
+LODONCWY  0650 0000          TB                                                 
+LIDONCMRG 0652 0656      00000000         OP                                    
+LTDONC    0658 00007     TF                                                     

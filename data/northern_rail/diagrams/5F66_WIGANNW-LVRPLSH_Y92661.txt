@@ -1,0 +1,17 @@
+BSNY926611512141605131111100 PEE5F66    112297820 DMUA   075                   P
+BX         NTY                                                                  
+LOWIGANNW 2140 00006         TB                                                 
+LIWIGANSJ           2141 00000000   UPL                                         
+LIWIGASJN           2141H00000000   FL                                          
+LISPRBJN            2143 00000000                                               
+LIGOLBRNJ           2146H00000000                     2                         
+LINWTNLW            2152 00000000                                               
+LIERLSTWN           2153 000000002                                              
+LISTHLNSJ           2155H000000002                                              
+LIRHIL              2158 00000000                                               
+LIHUYTJUN           2200H00000000                       3                       
+LIOLIVEMJ           2206 00000000                       1                       
+LIBOOTLBJ           2208 00000000                     2                         
+LIEDGHSB            2210H00000000   SL                                          
+LIEDGH              2211 000000002                                              
+LTLVRPLSH 2215 00001     TF                                                     

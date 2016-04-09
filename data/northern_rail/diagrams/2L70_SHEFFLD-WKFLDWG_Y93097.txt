@@ -1,0 +1,16 @@
+BSNY930971512141605121111000 POO2L70    111802820 DMUA   075      S            P
+BX         NTY                                                                  
+LOSHEFFLD 2324 23244A        TB                                                 
+LINNRYMLJ           2325H00000000                                               
+LIWNCOJN            2328H00000000                                               
+LIMEADWHL 2329 2330      232923304        T                                     
+LIECLSFLW           2333H00000000                                               
+LICHPLTWN 2335H2336      23362336         T                                     
+LIELSC    2340H2341H     23412341         T                                     
+LIWOMBWEL 2344H2345      23452345         T                                     
+LIBNSLY   2350 2351      235023512        T                                     
+LIDRTN    2355H2356      23562356         T                                     
+LIWOLEYCS           2357H00000000                                               
+LIHORBRYJ           0002H00000000   FL                3                         
+LIWKFLDKG 0010 0013      001000001        D               1                     
+LTWKFLDWG 0017 00171     TF                                                     

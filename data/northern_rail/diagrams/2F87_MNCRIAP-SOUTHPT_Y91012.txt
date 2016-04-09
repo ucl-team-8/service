@@ -1,0 +1,24 @@
+BSNY910121512141605131111100 POO2F871033112233110 DMUS   075      S S          P
+BX         NTY                                                                  
+LOMNCRIAP 1003 10034A        TB                                                 
+LIHLDGWJ            1005 00000000                                               
+LIHLDG              1006 000000001                      1H                      
+LISLDLJN            1013 00000000   SL                                          
+LIARDWCKJ           1015 00000000                       1                       
+CRMNCRPIC OO2F871033112224820 DMUS   075      S S                               
+LIMNCRPIC 1018H1022      1019102214    SL T                                     
+LIMNCROXR 1023H1026      102410262        T                                     
+LIMNCRDGT 1027H1028      102810282        T                                     
+LICFLDJN            1028H00000000                                               
+LIORDSLLJ           1029H00000000                       2                       
+LISLFDCT  1033 1035      103310352        T                                     
+LIBOLTON  1044H1045H     104510454        T                                     
+LILOSTCKJ           1049H00000000                                               
+LIWSTHOTN 1052H1053      10531053         T                                     
+LICRWNSTJ           1055H00000000                                               
+LIHINDLEY 1056H1057      10571057         T                                     
+LIWIGANWL 1101H1103H     110211031        T                                     
+LIAPLYBDG 1109H1110H     11101110         T                                     
+LIPARBOLD 1114 1115      11141115         T                                     
+LIBRSCGHB 1119 1120      11191120         T           2                         
+LTSOUTHPT 1134 11356     TF                                                     

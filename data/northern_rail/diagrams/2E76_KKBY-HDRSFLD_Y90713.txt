@@ -1,0 +1,34 @@
+BSNY907131512141605131111100 POO2E76    112240820 DMUA   075      S            P
+BX         NTY                                                                  
+LOKKBY    1643 1643          TB                                                 
+LIRNFD    1650H1651      16511651         T                                     
+LIUPHOLND 1654H1655      16551655         T                                     
+LIORRELL  1658 1658H     16581658         T                                     
+LIPBRT    1701 1701H     17011701         T           1                         
+CRWIGANWL OO2E76    112225110 DMUA   075      S                                 
+LIWIGANWL 1706H1708H     170717082        T                                     
+LIHINDLEY 1713 1713H     17131713         T                                     
+LICRWNSTJ           1714H00000000                                               
+LIDAISYH  1717 1717H     17171717         T                                     
+LIHAGFOLD 1720 1720H     17201720         T                                     
+LIATHERTN 1722H1723      17231723         T                                     
+LIWALKDEN 1728 1728H     17281728         T                                     
+LIMRSD    1731H1732      17321732         T                                     
+LISWNT    1734 1734H     17341734         T           2                         
+LISLFDCT  1741H1742H     174217421        T              H                      
+LISLFDORD 1745 1746      17451746         T                                     
+LIMNCRDST           1747H00000000   FL                    2                     
+CRMNCRVIC OO2E76    112220821 DMUA   075      S                                 
+LIMNCRVIC 1751 1757      175117576  SL    T                                     
+LIMILESPL           1800H00000000                                               
+LIPHILPK1           1801 00000000                                               
+LIBAGLYFJ           1802 00000000                                               
+LIASHTMNJ           1805H00000000                                               
+LIASHONUL 1806H1807      18071807         T                                     
+LISBYD    1811 1812      181118124        T                                     
+LIMOSSLEY 1816 1816H     18161816         T                                     
+LIGFLD    1820 1820H     18201820         T                H                    
+LIDIGGLEJ           1824 00000000                                               
+LIMRSN    1828H1829      182918291        T                                     
+LISLTHWTE 1832H1833H     18331833         T           1                         
+LTHDRSFLD 1840 18424B    TF                                                     

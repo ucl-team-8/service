@@ -1,0 +1,27 @@
+BSNY913891512141605131111100 POO2H85    112230110 EMU323 090      S            P
+BX         NTY                                                                  
+LOMNCRPIC 1757 17573  EL     TB                                                 
+LIARDWCKJ           1759 00000000                                               
+LIASHBRYS 1800H1801      18011801         T                                     
+LIGORTON  1803 1803H     18031803         T                                     
+LIGIDB    1806H1807      180718072        T                                     
+LIHYDEJ             1808H00000000                                               
+LIFLWRYFD 1809H1810      181018102        T                                     
+LINWTH    1811H1812      18121812         T                                     
+LIGODLY   1813H1814      18141814         T                                     
+LIHATRSLY 1815H1816      18161816         T                                     
+LIBRBM    1818 1818H     18181818         T           1                         
+LIDNTG    1823H1824      182418242        T                                     
+LIGLSP    1827 1830      18271830         T                                     
+LIHADFILD 1835H1838H     18361838         T                                     
+LIDNTG   21840H1841      184118411        T                                     
+LIBRBM   21844H1845      18451845         T                                     
+LIHATRSLY21847 1847H     18471847         T                                     
+LIGODLY  21849 1849H     18491849         T                                     
+LINWTH   21851 1851H     18511851         T                                     
+LIFLWRYFD21853 1853H     185318531        T                                     
+LIHYDEJ  2          1854H00000000                       2H                      
+LIGIDB   21858H1859      185718571        T                                     
+LIASHBRYS21903H1904      19021902         T           1                         
+LIARDWCKJ2          1907 00000000   EL                                          
+LTMNCRPIC21910 19111  EL TF                                                     

@@ -1,0 +1,36 @@
+BSNY922711512141605131111100 POO2U446818111874020 DMUS   075      S S          P
+BX         NTY                                                                  
+LOLEEDS   1823 182311DF      TB                                                 
+LILEEDSWJ           1824 00000000   F                                           
+LIWHRDJN            1824H00000000                                               
+LICOTNGLY 1828 1829      18291829         T                                     
+LIMRLY    1832 1832H     18321832         T                                     
+LIBATLEY  1837 1837H     18371837         T                                     
+LIDWBY    1840 1841      18411841         T                                     
+LIRTHP    1843H1844      18441844         T                H                    
+LITHHLNWJ           1845 00000000                                               
+LIMIRFEJN           1846 00000000   SL                                          
+LIMIRFILD 1847H1848H     184818483        T           1    H                    
+LIHETNLJN 1852H1853      00000000         A                                     
+LIBRLYWJN           1856 00000000                                               
+LIBRHOUSE 1858H1900H     185919002        T                                     
+LIGRTLNDJ           1906 00000000                                               
+LIMLNRYDJ           1908 00000000                                               
+LISWRBBDG 1909H1910      191019101        T                                     
+LIMYTHLMR 1915 1916      191519151        T                                     
+LIHBDNBDG 1918H1919      191919191        T                                     
+LIHALRYDJ           1924 00000000                                               
+LITODMRDN 1925H1926H     192519251        T                                     
+LIWDEN    1929 1929H     192819281        T                                     
+LILITLBRO 1935 1936      193419341        T                                     
+LISMBG    1938 1938H     193719371        T                                     
+LIRCHDLEJ           1941 00000000                                               
+LIRCHDALE 1942 1943      194119413        T                                     
+LICSTL    1945H1946      19441944         T                                     
+LICSTLTEJ           1947 00000000                                               
+LIMLSHILL 1950 1951      19491949         T                                     
+LIVTRLWKS           1952H00000000                                               
+LIMSTN    1953H1954      19521952         T           2                         
+LITHRPSBJ           1959 00000000                                               
+LIMILESPL           2000 00000000   FL                                          
+LTMNCRVIC 2003 20032     TF                                                     

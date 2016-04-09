@@ -1,0 +1,27 @@
+BSNY910271512141605131111100 POO2F89    112220821 DMUA   075      S            P
+BX         NTY                                                                  
+LOHDRSFLD 1715 17154B        TB                                                 
+LISLTHWTE 1721H1722      17221722         T                                     
+LIMRSN    1727 1728      172717283  UPL   T                                     
+LIDIGGLEJ           1733H00000000      UPL                                      
+LIGFLD    1736 1736H     17361736         T                                     
+LIMOSSLEY 1740 1741      17401741         T                                     
+LISBYD    1745 1746      174517463        T                                     
+LIASHONUL 1749H1750H     17501750         T                                     
+LIASHTMNJ           1752 00000000                          H                    
+LIBAGLYFJ           1755H00000000                     2                         
+LIPHILPK1           1758H00000000                                               
+LIMILESPL           1759 00000000   SL                  3H                      
+CRMNCRVIC OO2F89    112224110 DMUA   075      S                                 
+LIMNCRVIC 1806 1810      180718106  FL    T                                     
+LIMNCRDST           1811H00000000                                               
+LISLFDORD 1812H1813      18131813         T              H                      
+LISLFDCT  1816 1817      181618172        T                                     
+LICLTN    1821H1822      18221822         T                                     
+LIFRNW    1827 1827H     18271827         T                                     
+LIBOLTON  1831H1832H     183218324        T                                     
+LILOSTCKJ           1836H00000000                                               
+LIWSTHOTN 1839H1840      18401840         T                                     
+LICRWNSTJ           1842H00000000                                               
+LIHINDLEY 1843H1844      18441844         T           2                         
+LTWIGANWL 1851 18511     TF                                                     

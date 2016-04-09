@@ -1,0 +1,7 @@
+BSNY927181512141605131111100 PEE5H27    112974820 DMUS   075                   P
+BX         NTY                                                                  
+LOCREWE   0916 00001         TB                                                 
+LICREWSBG           0918H00000000   FL                                          
+LISBCH              0922H000000002                                              
+LICHELFDL 0932H0945H     00000000         OP                                    
+LTALDEDGE 0949 0000      TF                                                     

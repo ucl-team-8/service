@@ -1,0 +1,9 @@
+BSNY924871512141605131111100 PEE5A52    121791000 DMUA   075                   P
+BX         NTY                                                                  
+LOMDLSBRO 0547 00002         TB                                                 
+LIMDLSWDK 0548 0558      00000000         RM                                    
+LIMDLSBRO20559 0600      000000002        OP                                    
+LIGUSBROJ           0601 00000000                     1                         
+LIREDCARC           0610H000000002                                              
+LISBRNWJN           0615 00000000                     2                         
+LTSBRN    0619 00001     TF                                                     

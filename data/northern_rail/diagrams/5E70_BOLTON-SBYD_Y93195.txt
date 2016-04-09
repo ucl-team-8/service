@@ -1,0 +1,12 @@
+BSNY931951512151605130111100 PEE5E70    112220821 DMUA   075                   P
+BX         NTY                                                                  
+LOBOLTON  0602 00003         TB                                                 
+LISLFDCT            0611H000000001                                              
+LISLFDORD           0613 00000000                                               
+LIMNCRDST           0613H00000000   FL                                          
+LIMNCRVIC 0615 0625      000000003  SL    OP                                    
+LIMILESPL           0628H00000000                                               
+LIPHILPK1           0629 00000000                                               
+LIBAGLYFJ           0630 00000000                                               
+LIASHTMNJ           0633H00000000                     2                         
+LTSBYD    0640 00004     TF                                                     

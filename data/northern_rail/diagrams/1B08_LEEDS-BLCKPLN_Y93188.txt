@@ -1,0 +1,34 @@
+BSNY931881512151605130111100 PXX1B08    121737000ZDMUE   090      S            P
+BX         NTY                                                                  
+LOLEEDS   0557 05572C B      TB                                                 
+LILEEDSWJ           0558 00000000   D     X                                     
+LIWHRDJN            0558H00000000                                               
+LIHOLBJCN           0559 00000000                                               
+LINPUD    0605H0606H     060606061        T                                     
+LIMLLNJN            0613 00000000                                               
+LIBRADIN  0614H0618H     061506184        T                                     
+LIMLLNJN 2          0620 00000000                                               
+LIHLFX    0629H0630H     063006301        T                                     
+LIMLNRYDJ           0635 00000000                                               
+LISWRBBDG 0636H0637H     063706371        T                                     
+LIMYTHLMR 0642H0643      064306431        T                                     
+LIHBDNBDG 0645 0646      064506461        T                                     
+LIHALRYDJ           0651 00000000                                               
+LICOPYPIT           0657H00000000                                               
+LIBURNMR  0704H0705H     070507051        T                                     
+LIGANNOWJ           0707 00000000                                               
+LIACRNGTN 0713H0714H     071407142        T                                     
+LIBLKBDJN           0720H00000000   UEL                                         
+LIBLKB    0722H0723H     072307234        T                                     
+LIMLHL    0726 0727      072607272        T                                     
+LIBMBRBDG 0734H0735H     073507351        T                                     
+LILSTHJN            0737 00000000                                               
+LILSTH    0737H0738H     073807381        T           2                         
+LIFRNGTNC           0743H00000000   SL                                          
+LIPRST    0746 0748      074607481  SL    T                                     
+LIPRSTNFJ           0749 00000000                                               
+LIKIRKMNJ           0758 00000000                                               
+LIKIRKM51           0801 00000000                                               
+LIPLTNLFY 0804 0805      080408051        T                                     
+LILAYTCLX           0807 00000000                     1 2                       
+LTBLCKPLN 0814 08146     TF                                                     

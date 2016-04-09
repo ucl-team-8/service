@@ -1,0 +1,23 @@
+BSNY901391512141605131111100 PXX1W52    111808920 DMUS   075      S S          P
+BX         NTY                                                                  
+LOSHEFFLD 1944 19443B        TB                                                 
+LINNRYMLJ           1945H00000000                                               
+LIWNCOJN            1948H00000000                                               
+LIMEADWHL 1949 1950      194919502        T                                     
+LIROTHHJN           1952H00000000                                               
+LIALDWRKJ           1955H00000000                         1                     
+LISWINTN            1958 00000000                                               
+LIMEXBRGH           1959H00000000                                               
+LIDONCHJN           2004H00000000                     1 3H1                     
+LIDONC    2013 2017      201320173B       T                                     
+LIBTLYJN            2020 00000000                                               
+LIHTFLASF           2025 00000000                                               
+LITHORNEJ           2026H00000000                                               
+LIGOOLE   2035H2036H     203620361        T               1                     
+LIGLBRDYK           2044H00000000                                               
+LIBROUGH  2050 2051      20502051         T           2                         
+LIHESSLRD           2101H00000000                         1                     
+CRHULL    XX1W52    111838821 DMUS   075      S S                               
+LIHULL    2106 2111      210621115        T                                     
+LICTTGHM  2118 2118H     21182118         T                                     
+LTBEVERLY 2124 21242     TF                                                     

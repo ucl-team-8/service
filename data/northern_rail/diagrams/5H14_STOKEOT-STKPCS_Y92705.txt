@@ -1,0 +1,12 @@
+BSNY927051602151605131111100 PEE5H14    112231820 EMU323 090                   P
+BX         NTY                                                                  
+LOSTOKEOT 2245 00003         TB                                                 
+LIKIDSGRV           2251H00000000                                               
+LICONGLTN           2256 00000000                                               
+LIMACLSFD           2301H000000001                    1 1H                      
+LICHDH              2312 000000003                                              
+LIADSWDRD           2313 00000000   SL                                          
+LISTKPE1            2314H00000000                                               
+LISTKP    2316 2318      000000004        C                                     
+LISTKPVIA 2319 2323      00000000         RM                                    
+LTSTKPCS  2328 0000      TF                                                     

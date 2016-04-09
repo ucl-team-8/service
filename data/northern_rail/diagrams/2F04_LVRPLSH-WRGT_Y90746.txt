@@ -1,0 +1,16 @@
+BSNY907461512141605131111100 POO2F04    112299820 DMUA   075      S            P
+BX         NTY                                                                  
+LOLVRPLSH 0650 06505  FL     TB                                                 
+LIEDGH    0654 0654H     065406542        T                                     
+LIEDGHSB            0655H00000000                                               
+LIWVRTREJ           0657 00000000                                               
+LIMSLH    0658H0659      065906591        T                                     
+LIWALERTN 0701 0701H     070107011        T                                     
+LIALERTN  0704 0704H     070407041        T                                     
+LIHUNTXWJ           0705H00000000   UML                                         
+LIHUNTSX  0707H0708      070807082        T                                     
+LIHALW    0710 0710H     07100710         T                                     
+LIHOUGHGR 0714 0714H     07140714         T                                     
+LIWIDNES  0717H0718      07180718         T                                     
+LISANKEY  0722H0723      07230723         T                                     
+LTWRGT    0728 07291     TF                                                     

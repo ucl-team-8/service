@@ -1,0 +1,11 @@
+BSNY931161512141605121111000 POO2T918138111837920ZDMUE   090      S S          P
+BX         NTY                                                                  
+LOYORK    2020 20206  LSL    TB                                                 
+LICOLTONJ           2025H00000000   LSL                                         
+LICHFN              2029H00000000TL                       1H                    
+LIMCKLFLD 2035H2036H     203620362        T                                     
+LIEGRFRTH 2039H2040H     204020402        T                                     
+LIGARFRTH 2042 2043      204220432        T                                     
+LICSGT    2047 2048      204720482        T             1                       
+LINEVLWJN           2052H00000000                          H                    
+LTLEEDS   2056 20567A    TF                                                     

@@ -1,0 +1,22 @@
+BSNY901711512141605131111100 PXX1Y70    121865000 DMUE   090      S S          P
+BX         NTY                                                                  
+LOCHFD    0626 06263  DBH    TB                                                 
+LITAPTONJ           0627H00000000                                               
+LIDRONFLD 0633 0634      06330634         T           2                         
+LIDORESNJ           0640 00000000                       1                       
+CRSHEFFLD XX1Y70    121853000 DMUE   090      S S                               
+LISHEFFLD 0646 0649      064606492B       T                                     
+LINNRYMLJ           0650H00000000                                               
+LIWNCOJN            0653H00000000                                               
+LIMEADWHL 0654 0655      065406554        T                                     
+LIECLSFLW           0658H00000000                       2H                      
+LIBNSLY   0711 0712      071107122        T                                     
+LIWOLEYCS           0717 00000000                                               
+LIHORBRYJ           0722 00000000   SL                                          
+LIWKFLDKG 0726H0728      072707281        T                                     
+LINORMNTN 0732 0733      073207331        T                                     
+LIALTFTJN           0734H00000000                                               
+LIMETHLYJ           0736 00000000                     2   2                     
+LIESJLEDS           0746H00000000   UM                  1H                      
+LILEEDSWJ           0749 00000000   F                                           
+LTLEEDS   0751 075117B   TF                                                     
