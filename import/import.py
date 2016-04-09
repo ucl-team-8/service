@@ -36,15 +36,10 @@ def convert_to(datatype, value, *args, **kwargs):
 # Date handling
 
 def parse_date(date_string, date_format, time_only=False):
-    if date_string == '' or date_string == '    ':
+    if date_string.strip() == '':
         return None
-
-    date = datetime.datetime.strptime(date_string, date_format)
-
-    if time_only:
-        return date.replace(day=17, month=3, year=2015)
     else:
-        return date
+        return datetime.datetime.strptime(date_string, date_format)
 
 
 # Extracting data from files
@@ -122,7 +117,7 @@ def parse_allocations(file):
     rows = [map_columns(allocations_column_map, row) for row in reader]
     rows = filter(lambda row: len(row['unit']) <= 4, rows)
     for row in rows:
-        row['origin_departure'] = parse_date(row['origin_departure'], '%H:%M:%S', time_only=True)
+        row['origin_departure'] = parse_date(row['origin_departure'], '%d/%m/%Y %H:%M')
     return rows
 
 # Unit to GPS
