@@ -218,18 +218,20 @@ def deleteReports(segment):
 # If you have enough empty matches, joins them
 def checkEmptyMatches(segment, empty_segment, potential_matches):
     if len(potential_matches) > globals.min_matching:
-        for match in potential_matches:
+
+        for i, match in enumerate(potential_matches):
             if 'index' in match:  # It can match to a gps
                 dist_error = geo_distance.calculateDistance(
                     match['trust']['tiploc'], segment.matching[match['index']]['gps']['tiploc'])
                 segment.matching[match['index']]['trust'] = match['trust']
                 segment.matching[match['index']]['dist_error'] = dist_error
-            else:
-                segment.matching.append({
-                    'dist_err': None,
-                    'gps': None,
-                    'trust': match['trust']
-                })
+                del potential_matches[i]
+        for match in potential_matches:
+            segment.matching.append({
+                'dist_err': None,
+                'gps': None,
+                'trust': match['trust']
+            })
         socket_io.emitSegment('update', segment)
         deleteReports(empty_segment)
 
@@ -254,8 +256,16 @@ def matchingEmptyTrust(segment, empty_segment):
     segment.matching.sort(key=lambda x: getReportTime(x), reverse=False)
     empty_segment.matching.sort(key=lambda x: getReportTime(x), reverse=False)
     potential_matches = []
-    for i, match in enumerate(segment.matching):
-        for j, empty_match in enumerate(empty_segment.matching):
+    for i in range(-globals.backmatches, 0):
+        try:
+            match = segment.matching[i]
+        except IndexError:
+            continue
+        for j in range(-globals.backmatches, 0):
+            try:
+                empty_match = empty_segment.matching[j]
+            except IndexError:
+                continue
             empty_match['delete'] = False
             if match['gps'] is not None:
                 if match['trust'] is None:
