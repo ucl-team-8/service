@@ -8,8 +8,11 @@ os.sys.path.insert(0, parentdir)
 
 from app_db import socketio
 
-# Returns a json object
+# Returns a json object of a segment
 def jsonSegment(segment):
+    # We take a deepcopy because we do not want
+    # to change the event_time objects in the
+    # segment to strings
     segment1 = deepcopy(segment).__dict__
     for match in segment1['matching']:
         if match['gps'] is not None:
@@ -27,9 +30,13 @@ def jsonSegment(segment):
 # keywords are 'update', 'delete' and 'new'
 def emitSegment(keyword, segment):
     globals.io_lock.acquire()
-    if keyword == 'delete':  # because it is an id only
-        socketio.emit(keyword, segment)
-    else:
-        json_segment = jsonSegment(segment)
-        socketio.emit(keyword, json_segment)
-    globals.io_lock.release()
+    try:
+        if keyword == 'delete':  # because it is an id only
+            socketio.emit(keyword, segment)
+        else:
+            json_segment = jsonSegment(segment)
+            socketio.emit(keyword, json_segment)
+    except IOError:
+        pass  # Client disconnected
+    finally:
+        globals.io_lock.release()
