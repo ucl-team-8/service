@@ -1,10 +1,12 @@
 @import "normalize.css";
 @import "leaflet.css";
-@import "map.css";
 @import "ui.css";
+@import "list.css";
+@import "map.css";
 @import "reports.css";
 
 body {
   margin: 0;
   padding: 0;
+  font-size: 62.5%;
 }
