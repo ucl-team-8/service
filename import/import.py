@@ -234,7 +234,7 @@ def parseDiagramStops(f, service):
 # directory and extracts the data from them
 def parseDiagrams():
     stops = []
-    for filename in glob.glob(os.path.join(parentdir + '/data/diagrams', '*.txt')):
+    for filename in glob.glob(os.path.join(parentdir, 'data', args.folder, 'diagrams', '*.txt')):
         f = open(filename, 'r')
         service = parseDiagramHeader(f.readline())
         service = DiagramService(**service)
