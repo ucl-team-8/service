@@ -97,6 +97,7 @@ gps_column_map = {
 def parse_gps(file):
     events = parse_xml(file)
     rows = [map_columns(gps_column_map, event) for event in events]
+    rows = filter(lambda row: row['gps_car_id'] != "NOTSET", rows)
     for row in rows:
         row['event_time'] = parse_date(row['event_time'], "%Y-%m-%dT%H:%M:%S")
     return rows
