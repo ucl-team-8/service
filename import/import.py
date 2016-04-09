@@ -108,7 +108,7 @@ def parse_gps(file):
 
 # Schedule
 
-schedule_column_map = {
+allocations_column_map = {
     'Unit': 'unit',
     'headcode': 'headcode',
     'origin_loc': 'origin_location',
@@ -117,9 +117,9 @@ schedule_column_map = {
 }
 
 
-def parse_schedule(file):
+def parse_allocations(file):
     reader = csv.DictReader(file)
-    rows = [map_columns(schedule_column_map, row) for row in reader]
+    rows = [map_columns(allocations_column_map, row) for row in reader]
     rows = filter(lambda row: len(row['unit']) <= 4, rows)
     for row in rows:
         row['origin_departure'] = parse_date(row['origin_departure'], '%H:%M:%S', time_only=True)
@@ -280,7 +280,7 @@ def open_extract_file(filename):
 
 def open_files():
     return {
-        'schedule': open_extract_file('schedule.csv'),
+        'allocations': open_extract_file('allocations.csv'),
         'unit_to_gps': open_extract_file('unit_to_gps.csv'),
         'trust': open_extract_file('trustData.xml'),
         'gpsData': open_extract_file('gpsData.xml'),
@@ -305,8 +305,8 @@ def main():
     print("Importing GPS data...")
     store_rows(parse_gps(files['gpsData']), GPS)
 
-    print("Importing Schedule data...")
-    store_rows(parse_schedule(files['schedule']), Schedule)
+    print("Importing Allocations data...")
+    store_rows(parse_allocations(files['allocations']), Schedule)
 
     print("Importing Unit to GPS data...")
     store_rows(parse_unit_to_gps(files['unit_to_gps']), UnitToGPSMapping)
