@@ -1,0 +1,21 @@
+BSNY916021512141605131111100 POO2K24    112232820 EMU323 090      S S          P
+BX         NTY                                                                  
+LOMNCRPIC 1004 10043  FL     TB                                                 
+LIARDWCKJ           1006 00000000                                               
+LISLDLJN            1008 00000000   SL                                          
+LILVHM    1009 1009H     100910091        T                                     
+LIHTCP    1012 1012H     101210121        T                                     
+LIHTNOJN            1014 00000000                                               
+LISTKP    1015H1017H     101610171        T                                     
+LISTKPE1            1018H00000000                       2                       
+LIADSWDRD           1021H00000000                       1                       
+LICHDH    1024 1024H     102410242        T                                     
+LIHNDFRTH 1028 1028H     10281028         T                                     
+LIWLMSL   1030H1031H     103110314        T                                     
+LIALDEDGE 1034 1034H     10341034         T                                     
+LICHELFD  1038 1038H     10381038         T                                     
+LIGOOSTRY 1042H1043      10431043         T                                     
+LIHCHP    1045H1046      10461046         T                                     
+LISBCH    1050 1051      105010511  FL    T           1                         
+LICREWSBG           1056 00000000                                               
+LTCREWE   1059 11011     TF                                                     

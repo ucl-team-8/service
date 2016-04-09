@@ -1,0 +1,27 @@
+BSNY901351512141605131111100 PXX1W44    111808920 DMUS   075      S S          P
+BX         NTY                                                                  
+LOSHEFFLD 1541 15414A        TB                                                 
+LINNRYMLJ           1542H00000000                                               
+LIWNCOJN            1545H00000000                                               
+LIMEADWHL 1546 1547      154615472        T                                     
+LIROTHHJN           1550 00000000                                               
+LIALDWRKJ           1553 00000000                         1                     
+LISWINTN            1555H00000000                                               
+LIMEXBRGH           1557 00000000                       2                       
+LIDONCHJN           1604 00000000                     1 5H1                     
+LIDONC    1614H1619      161516194        T                                     
+LIBTLYJN            1622 00000000                                               
+LIHTFLASF           1627 00000000                                               
+LITHORNEJ           1628H00000000                                               
+LIGOOLE   1637H1638H     163816381        T               1                     
+LIGLBRDYK           1646H00000000                                               
+LIBROUGH  1652 1653      16521653         T           2                         
+LIHESSLRD           1703H00000000                         1                     
+CRHULL    XX1W44    111838821 DMUS   075      S S                               
+LIHULL    1708 1714      170917147        T                                     
+LICTTGHM  1721 1722      17211722         T                                     
+LIBEVERLY 1727H1728H     172817282        T                                     
+LIHTNCRNS 1737 1738      17371738         T                                     
+LIDRIFILD 1742H1743H     17431743         T                                     
+LINAFERTN 1747 1747H     17471747         T           2                         
+LTBRDLNGT 1800H18016     TF                                                     

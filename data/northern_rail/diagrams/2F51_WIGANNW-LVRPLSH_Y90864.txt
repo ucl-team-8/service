@@ -1,0 +1,21 @@
+BSNY908641512141605131111100 POO2F51    112297820 DMUA   075      S            P
+BX         NTY                                                                  
+LOWIGANNW 1231 12316  DPL    TB                                                 
+LIWIGASJN           1232H00000000   UDS                                         
+LISPRBJN            1234 00000000                                               
+LIBRYN    1238 1238H     12381238         T                                     
+LIGARW    1241H1242      12421242         T                                     
+LISTHLNSC 1248 1249      124812492        T                                     
+LITHHT    1252 1252H     12521252         T                                     
+LIECPK    1254H1255      12551255         T                                     
+LIPRESCOT 1256H1257      12571257         T                                     
+LIHUYTJUN           1300 00000000                                               
+LIHUYTON  1300H1302      130113022        T           1                         
+LIROBY    1304H1305      13051305         T                                     
+LIBROADGR 1308 1308H     13081308         T                                     
+LIOLIVEMJ           1310 00000000                                               
+LIWVRTTEC 1311 1311H     131113111        T                                     
+LIBOOTLBJ           1312H00000000                                               
+LIEDGHSB            1313 00000000   SL                                          
+LIEDGH    1314 1314H     131413142        T           1                         
+LTLVRPLSH 1320 13214     TF                                                     

@@ -1,0 +1,9 @@
+BSNY923761512141605131111100 POO2W29    111838821 DMUS   075      S            P
+BX         NTY                                                                  
+LOBRDLNGT 2128 21286         TB                                                 
+LINAFERTN 2138H2139H     21392139         T                                     
+LIDRIFILD 2143 2144      21432144         T                                     
+LIHTNCRNS 2148H2149H     21492149         T                                     
+LIBEVERLY 2158 2159      215821591        T                                     
+LICTTGHM  2204H2205H     22052205         T           2                         
+LTHULL    2214 22157     TF                                                     

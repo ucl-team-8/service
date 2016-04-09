@@ -1,0 +1,27 @@
+BSNY910441512141605131111100 POO2F934849112236820 DMUS   075      S S          P
+BX         NTY                                                                  
+LOMNCROXR 1516 15165         TB                                                 
+LIMNCRDGT 1517H1518      151815182        T                                     
+LICFLDJN            1518H00000000                        H                      
+LITRFDPEJ           1521H00000000                                               
+LITRFDPK  1523 1523H     15231523         T                                     
+LIHMPHRYP 1525 1525H     15251525         T                                     
+LIURMSTON 1527H1528      15281528         T                                     
+LIFLIXTON 1530H1531      15311531         T                                     
+LIIRLAM   1534H1535      15351535         T                                     
+LIGLAZBKE           1536H00000000                                               
+LIBIRCHWD 1540 1540H     15401540         T                                     
+CRWRGT    OO2F934849112299820 DMUS   075      S S                               
+LIWRGT    1545 1546      154515462        T                                     
+LIWIDNES  1553H1554      15541554         T                                     
+LIHOUGHGR 1557 1557H     15571557         T                                     
+LIHALW    1601 1601H     16011601         T                                     
+LIHUNTSX            1604 000000001  DML                                         
+LIHUNTXWJ           1605H00000000                     1                         
+LIALERTN  1607H1608      160816082  SL    T                                     
+LIWALERTN 1610H1611      161116114        T                                     
+LIMSLH    1613 1613H     161316134        T              H                      
+LIWVRTREJ           1617 00000000   FL                                          
+LIEDGHSB            1618H00000000   SL                                          
+LIEDGH              1619 000000002                    1                         
+LTLVRPLSH 1624 16244     TF                                                     

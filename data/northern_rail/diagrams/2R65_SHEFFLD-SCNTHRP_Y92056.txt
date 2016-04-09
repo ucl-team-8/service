@@ -1,0 +1,23 @@
+BSNY920561512141605131111100 POO2R65    111807820 DMUS   075      S            P
+BX         NTY                                                                  
+LOSHEFFLD 1024 10243A        TB                                                 
+LINNRYMLJ           1025H00000000                                               
+LIWNCOJN            1028H00000000                                               
+LIMEADWHL 1029 1030      102910302        T              H                      
+LIROTHHJN           1033H00000000                                               
+LIROTHCEN 1035H1037H     103610372        T             1 1                     
+LIALDWRKJ           1044 00000000                                               
+LISWINTN  1047H1048      10481048         T                                     
+LIMEXBRGH 1050 1051      10501051         T                                     
+LICONBRGH 1054H1055      10551055         T              H                      
+LIDONCHJN           1059 00000000                     1   1                     
+CRDONC    OO2R65    111825820 DMUS   075      S                                 
+LIDONC    1104 1108      110411088        T                                     
+LIBTLYJN            1110H00000000                                               
+LIKKSNDAL 1113H1114      11141114         T                                     
+LIHTFLASF 1118 1119      11181119         T                                     
+LITHORNEJ           1121H00000000                                               
+LITHORNES 1123H1124      11241124         T                                     
+LICROWLE  1131H1132H     11321132         T                                     
+LIALTPE   1138 1138H     11381138         T           1   1                     
+LTSCNTHRP 1145 11461     TF                                                     

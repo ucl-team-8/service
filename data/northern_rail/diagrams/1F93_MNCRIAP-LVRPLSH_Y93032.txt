@@ -1,0 +1,26 @@
+BSNY930321512141605121111000 PXX1F936422112248822 DMUS   075      S S          P
+BX         NTY                                                                  
+LOMNCRIAP 0840 08402A        TB                                                 
+LIHLDGWJ            0842 00000000                                               
+LIHLDG              0843 000000001                                              
+LISLDLJN            0848H00000000   SL                                          
+LIARDWCKJ           0850H00000000                                               
+LIMNCRPIC 0853 0855      0853085514    SL T                                     
+LIMNCROXR 0856H0859      085708592        T              H                      
+LIMNCRDGT           0900H000000002                                              
+LICFLDJN            0901 00000000                                               
+LIORDSLLJ           0902 00000000                                               
+LIECCLES            0905H00000000                                               
+LIASTLEY            0910 00000000                                               
+LIPKSDJT            0915 00000000                                               
+LINWTNLW  0916H0917H     09170917         T                                     
+LIERLSTWN           0919 000000002                                              
+LISTHLNSJ 0922 0922H     092209222        T                                     
+LIRHIL              0926H00000000                                               
+LIHUYTJUN           0929 00000000                        H                      
+LIOLIVEMJ           0932 00000000                                               
+LIWVRTTEC 0933 0933H     093309331        T                                     
+LIBOOTLBJ           0934H00000000                     2 4H                      
+LIEDGHSB            0941H00000000   SL                                          
+LIEDGH              0942 000000002                                              
+LTLVRPLSH 0946 09461     TF                                                     

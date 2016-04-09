@@ -1,0 +1,28 @@
+BSNY910451512141605131111100 POO2F93    112236820 DMUS   075      S S          P
+BX         NTY                                                                  
+LOMNCROXR 1744 17445         TB                                                 
+LIMNCRDGT 1745H1746H     174617462        T                                     
+LICFLDJN            1747 00000000                                               
+LITRFDPEJ           1749H00000000                       1                       
+LITRFDPK  1752 1752H     17521752         T                                     
+LIHMPHRYP 1754 1754H     17541754         T                                     
+LIURMSTON 1756H1757      17571757         T                                     
+LICHASNRD 1758H1759      17591759         T                                     
+LIFLIXTON 1801 1801H     18011801         T                                     
+LIIRLAM   1805 1805H     18051805         T                                     
+LIGLAZBKE           1807 00000000                                               
+LIGLAZBRK 1808 1808H     18081808         T                                     
+LIBIRCHWD 1812H1813      18131813         T                                     
+LIPADGATE 1815H1816      18161816         T                                     
+CRWRGT    OO2F93    112299820 DMUS   075      S S                               
+LIWRGT    1819 1819H     181918192        T                                     
+LIHOUGHGR 1828H1829      18291829         T                                     
+LIHUNTSX  1833H1834      183418341  DML   T                                     
+LIHUNTXWJ           1836 00000000                     2                         
+LIALERTN  1839 1839H     183918392  FL    T                                     
+LIWALERTN 1842 1842H     184218422        T                                     
+LIMSLH    1844H1845      184518452        T                                     
+LIWVRTREJ           1847H00000000                                               
+LIEDGHSB            1849 00000000   SL                                          
+LIEDGH    1850 1850H     185018502        T             1                       
+LTLVRPLSH 1856 18584     TF                                                     

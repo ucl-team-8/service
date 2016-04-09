@@ -1,0 +1,26 @@
+BSNY906991512141605131111100 POO2E471091111871821 DMUS   075      S S          P
+BX         NTY                                                                  
+LOMNCRVIC 1216 12163  SL     TB                                                 
+LIMILESPL           1220 00000000                                               
+LITHRPSBJ           1221 00000000                                               
+LIVTRLWKS           1223H00000000                                               
+LICSTLTEJ           1227 00000000                                               
+LIRCHDALE 1229H1230H     123012301        T                                     
+LIRCHDLEJ           1231H00000000                                               
+LILITLBRO           1235 000000002                                              
+LITODMRDN 1241 1242      124112422        T                                     
+LIHALRYDJ           1243H00000000                                               
+LIHBDNBDG 1248 1249      124812492        T                                     
+LIMYTHLMR 1251H1252H     125212522        T                                     
+LISWRBBDG 1257H1258H     125812582        T                                     
+LIMLNRYDJ           1259H00000000                         1                     
+LIHLFX    1305H1306H     130613062        T           2                         
+LIMLLNJN            1318H00000000                                               
+LIBRADIN  1320 1323      132013233        T                                     
+LIMLLNJN 2          1324H00000000                                               
+LINPUD    1331 1331H     133113312        T                                     
+LIBRMLYSR 1334H1335H     133513352        T               1                     
+LIHOLBJCN           1340H00000000                                               
+LIWHRDJN            1341 00000000   C                                           
+LILEEDSWJ           1341H00000000   C                                           
+LTLEEDS   1343 134410B   TF                                                     

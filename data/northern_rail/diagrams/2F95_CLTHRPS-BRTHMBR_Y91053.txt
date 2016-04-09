@@ -1,0 +1,17 @@
+BSNY910531512141605131111100 POO2F95    121826000 DMUS   075      S            P
+BX         NTY                                                                  
+LOCLTHRPS 1900 19002         TB                                                 
+LINEWCLEE 1903H1903H     19031903         R                                     
+LIGRMSBYD 1905H1906      19061906         T                                     
+LIGRMSBYT 1908 1909      190819092        T                                     
+LIGTCOATS 1912H1913      19131913         T                                     
+LIHEALING 1915H1916      19161916         T                                     
+LISBROUGH 1918H1919      19191919         T                                     
+LIHABRO   1924 1925      19241925         T                                     
+LIULCEBY  1928 1928H     19281928         T                                     
+LITHABBEY 1932H1933      19331933         T                                     
+LIGOXHILL 1936 1936H     19361936         T                                     
+LIOXMRSHX 1939H1939H     00000000         TW                                    
+LINHOL    1940H1941      19411941         T                                     
+LIBARWHVN 1943H1944      19441944         T                                     
+LTBRTHMBR 1949 1949      TF                                                     

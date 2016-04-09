@@ -1,0 +1,10 @@
+BSNY932191512151605130111100 PEE5N12    122974000 DMUA   075                   P
+BX         NTY                                                                  
+LOBLCKNCS 0400 0000          TB                                                 
+LIBLCKPLN 0405 0409      000000004        -D                                    
+LILAYTCLX           0412H00000000                                               
+LIPLTNLFY           0414H000000002                                              
+LIPLTNT67           0418H00000000                                               
+LIKIRKMNJ           0421 00000000                     1                         
+LIPRSTNFJ           0430H00000000   BL                                          
+LTPRST    0432 00002     TF                                                     

@@ -1,0 +1,20 @@
+BSNY908301512141605131111100 POO2F30    111841820 DMUA   075      S            P
+BX         NTY                                                                  
+LOGOOLE   1849 18492         TB                                                 
+LIGOOLPGJ           1850 00000000                                               
+LIRAWCLIF 1855H1856      18561856         T                                     
+LISNAITH  1900H1901H     19011901         T                                     
+LIHENSALL 1907H1908      19081908         T                                     
+LIWHTBDGE 1911 1912      19111912         T               1                     
+LIKNTNGLY 1919H1921      192019211        T                                     
+LIKNTNGWJ           1921H00000000                                               
+LIPTFTMHL 1924H1925      192519251        T                                     
+LIGLASHTN 1929 1930      192919301        T             1                       
+LICASTLFD 1935 1938      193419371        T                                     
+LIWHWDJN            1940H00000000                                               
+LIMETHLYJ           1943 00000000                                               
+LIWDLESFD 1946H1947      194619461        T                                     
+LISTRTJN            1950H00000000                     1  H1                     
+LIESJLEDS           1955H00000000   UM                                          
+LILEEDSWJ           1956H00000000   F                                           
+LTLEEDS   1958 195917B   TF                                                     

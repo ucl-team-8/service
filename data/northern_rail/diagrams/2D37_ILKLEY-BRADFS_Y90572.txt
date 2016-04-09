@@ -1,0 +1,12 @@
+BSNY905721512141605131111100 POO2D37    111821020 EMU321 100      S            P
+BX         NTY                                                                  
+LOILKLEY  0824 08241         TB                                                 
+LIBNRHYDN 0826 0827      082608272        T                                     
+LIBURLYIW 0830H0831H     083108312        T                                     
+LIMENSTON 0834 0835      083408352        T                                     
+LIGUISELY 0837H0838H     083808382        T                                     
+LIBAILDON 0843 0844      084308441        T                                     
+LISHPYDJN           0846 00000000                                               
+LISHPY    0847 0848      084708484        T                                     
+LIFRZNGHL 0850 0850H     085008502        T           1                         
+LTBRADFS  0855 08572     TF                                                     

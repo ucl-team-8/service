@@ -1,0 +1,11 @@
+BSNY925611512141605131111100 PEE5C96    111816820 DMUA   075                   P
+BX         NTY                                                                  
+LOGOOLE   2345 00001        HTB                                                 
+LITHORNEJ           2355 00000000   SL                2                         
+LIHTFLASF           2359H00000000                                               
+LITMSHJN            0004 00000000                     3                         
+LIAPLHRSJ           0008 00000000                                               
+LISKLWJN            0013 00000000                                               
+LICRCRFTJ           0014H00000000                                               
+LIADWICK            0015 000000001                                              
+LTDONC    0021 00007     TF                                                     

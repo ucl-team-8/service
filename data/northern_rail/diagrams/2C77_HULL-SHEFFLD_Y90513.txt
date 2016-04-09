@@ -1,0 +1,32 @@
+BSNY905131512141605131111100 POO2C77    111808920 DMUE   090      S S          P
+BX         NTY                                                                  
+LOHULL    1743 17432         TB                                                 
+LIHESSLRD           1746H00000000                                               
+LIHESSLE  1749H1750H     17501750         T                                     
+LIFERRIBY 1754 1755      17541755   SL    T                                     
+LIBROUGH  1759H1800H     18001800         T                                     
+LIBRFT    1805H1806H     18061806         T                                     
+CRGLBRDYK OO2C77    111808920 DMUS   075      S S                               
+LIGLBRDYK 1809H1810H     18101810         T                                     
+LISLTMRSH 1815H1816H     18161816         T                                     
+CRGOOLE   OO2C77    111808920 DMUE   090      S S                               
+LIGOOLE   1820H1821H     182118212        T                                     
+CRTHORNEN OO2C77    111816820 DMUE   090      S S                               
+LITHORNEN 1829 1830      18291830         T                                     
+LITHORNEJ           1832H00000000                                               
+LIHTFLASF 1834H1835H     18351835         T                                     
+LIKKSNDAL 1839H1840H     18401840         T           2                         
+LIBTLYJN            1845H00000000                         2                     
+CRDONC    OO2C77    111807820 DMUE   090      S S                               
+LIDONC    1850 1902      185119023B       T                                     
+LIDONCHJN           1905 00000000                                               
+LICONBRGH 1908H1909      19091909         T                                     
+LIMEXBRGH 1912 1913      19121913         T                                     
+LISWINTN  1915H1916      19161916         T                                     
+LIALDWRKJ           1918H00000000                                               
+LIROTHCEN 1922 1923      192219231        T                                     
+LIROTHHJN           1925 00000000                          H                    
+LIMEADWHL 1928 1929      192819291        T                                     
+LIWNCOJN            1929H00000000                     1    H                    
+LINNRYMLJ           1934 00000000                                               
+LTSHEFFLD 1936 19391A    TF                                                     

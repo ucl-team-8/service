@@ -1,0 +1,19 @@
+BSNY919671512141605131111100 POO2P576041111804920 DMUA   075      S S          P
+BX         NTY                                                                  
+LOSHEFFLD 0539 05392B        TB                                                 
+LINNRYMLJ           0540H00000000                                               
+LIWDBRNJN           0542H00000000                                               
+LIWDHOUSJ           0547H00000000                                               
+LIKVTNPK  0554 0555      05540555         T                                     
+LIBRCLEJN           0557H00000000                                               
+LISHRKSKS           0558H00000000                                               
+LISHRKSEJ           0600 00000000                                               
+LIWORKSOP 0602 0603      060206032        T                                     
+LITHRMWJN           0610H00000000                                               
+LIRTFDLL  0612H0613H     061306134        T           2                         
+LICLRBROJ           0620H00000000                                               
+LIGBROTJ            0626 00000000                                               
+LIGBGHLRD 0627H0628H     06280628         T                                     
+LISAXILBY 0640 0640H     06400640         T           1   2                     
+LIWHOLMSJ           0650 00000000                                               
+LTLINCLNC 0653 06535     TF                                                     

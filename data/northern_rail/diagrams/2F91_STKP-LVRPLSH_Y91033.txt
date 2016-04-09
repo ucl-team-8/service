@@ -1,0 +1,37 @@
+BSNY910331512141605131111100 POO2F91    112229110 DMUS   075      S S          P
+BX         NTY                                                                  
+LOSTKP    0605 06053A FL     TB                                                 
+LIHTNOJN            0607 00000000                       2                       
+LISLDLJN            0611H00000000   SL                                          
+LIARDWCKJ           0613 00000000                       1H                      
+CRMNCRPIC OO2F91    112236820 DMUS   075      S S                               
+LIMNCRPIC 0617 0619      0617061914    SL T                                     
+LIMNCROXR 0620H0622      062106222        T                                     
+LIMNCRDGT 0623H0624      062406242        T                                     
+LICFLDJN            0624H00000000                                               
+LITRFDPEJ           0627 00000000                                               
+LITRFDPK  0628H0629      06290629         T                                     
+LIHMPHRYP 0630H0631      06310631         T                                     
+LIURMSTON 0633 0633H     06330633         T                                     
+LICHASNRD 0635 0635H     06350635         T                                     
+LIFLIXTON 0637H0638      06380638         T                                     
+LIIRLAM   0641H0642      06420642         T                                     
+LIGLAZBKE           0643H00000000                                               
+LIGLAZBRK 0644H0645      06450645         T                                     
+LIBIRCHWD 0649 0649H     06490649         T                                     
+LIPADGATE 0652 0652H     06520652         T                                     
+CRWRGT    OO2F91    112299820 DMUS   075      S S                               
+LIWRGT    0655H0656H     065606562        T                                     
+LISANKEY  0700 0700H     07000700         T                                     
+LIWIDNES  0705H0706      07060706         T                                     
+LIHOUGHGR 0709 0709H     07090709         T                                     
+LIHALW    0713 0713H     07130713         T                                     
+LIHUNTSX  0716 0717      071607171  DML   T           1                         
+LIHUNTXWJ           0720 00000000                     1                         
+LIALERTN  0722 0722H     072207222  FL    T                                     
+LIWALERTN 0725 0725H     072507252        T                                     
+LIMSLH    0727H0728      072807282        T                                     
+LIWVRTREJ           0730H00000000                                               
+LIEDGHSB            0732 00000000                                               
+LIEDGH    0733 0733H     073307334        T                                     
+LTLVRPLSH 0738 07406     TF                                                     

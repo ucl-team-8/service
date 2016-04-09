@@ -1,0 +1,11 @@
+BSNY919021512141605131111100 POO2O69    111868821 DMUS   075      S            P
+BX         NTY                                                                  
+LOHDRSFLD 1131 11316         TB                                                 
+LIDEIGHTN 1134 1134H     113411341        T                                     
+LIHETNLEJ           1137 00000000                        H                      
+LIMIRFILD 1139 1140      113911401        T                                     
+LIMIRFEJN           1141H00000000                                               
+LITHHLNWJ           1142 00000000                     1 8H                      
+LIHORBRYJ           1157H00000000   SL                                          
+LIWKFLDKG 1201 1204      120112041        T             2                       
+LTWKFLDWG 1209 12091     TF                                                     

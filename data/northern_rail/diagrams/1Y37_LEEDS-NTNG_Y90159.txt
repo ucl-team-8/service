@@ -1,0 +1,31 @@
+BSNY901591512141605131111100 PXX1Y371010121865000 DMUE   090      S S          P
+BX         NTY                                                                  
+LOLEEDS   1405 140517BF      TB                                                 
+LILEEDSWJ           1406 00000000   UM                                          
+LIESJLEDS           1407 00000000                       1                       
+LISTRTJN            1411 00000000                       1                       
+LIMETHLYJ           1416 00000000                                               
+LIALTFTJN           1417H00000000                                               
+LIWKFLDKG 1422H1423H     142314232  SL    T                                     
+LIHORBRYJ           1428 00000000                                               
+LIWOLEYCS           1433 00000000                         1                     
+LIBNSLY   1439 1440      143914401        T                                     
+LIECLSFLW           1450 00000000                         1                     
+LIMEADWHL 1453H1454H     145414543        T                                     
+LIWNCOJN            1455 00000000                     1   1                     
+LINNRYMLJ           1500 00000000                                               
+LISHEFFLD 1502 1505      150215058A       T                                     
+LIDORESNJ           1510 00000000                                               
+LIDRONFLD 1514 1515      15151515         T               1                     
+LITAPTONJ           1520 00000000   ML                                          
+LICHFD    1521 1522      152115222        T                                     
+LICHFDSJ            1523H00000000   EL                                          
+LICLAYXNJ           1525H00000000      EL                                       
+LIALFRETN 1531H1532H     15321532         T                                     
+LIIRNVLJN           1536 00000000   ML                                          
+LILGML    1539 1540      15401540         T                                     
+LIILKES   1544 1545      00000000         N           1    H                    
+LITRWLJN            1549 00000000                       1 1                     
+LIRADFDJ            1556H00000000   UM                                          
+LINTNGMJN           1558H00000000   A                                           
+LTNTNG    1600 16004A    TF                                                     

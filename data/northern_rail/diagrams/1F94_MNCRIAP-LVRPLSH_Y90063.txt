@@ -1,0 +1,26 @@
+BSNY900631512141605131111100 PXX1F946426112248822 DMUS   075      S S          P
+BX         NTY                                                                  
+LOMNCRIAP 1940 19403B        TB                                                 
+LIHLDGWJ            1942 00000000                                               
+LIHLDG              1943 000000001                                              
+LISLDLJN            1948H00000000   SL                                          
+LIARDWCKJ           1950H00000000                                               
+LIMNCRPIC 1953 1955      1953195514    SL T                                     
+LIMNCROXR 1956H1959      195719592        T                                     
+LIMNCRDGT           2000 000000002                                              
+LICFLDJN            2000H00000000                        H                      
+LIORDSLLJ           2002 00000000                                               
+LIECCLES            2005H00000000                                               
+LIASTLEY            2010 00000000                                               
+LIPKSDJT            2015 00000000                                               
+LINWTNLW  2016H2017H     20172017         T                                     
+LIERLSTWN           2019 000000002                                              
+LISTHLNSJ 2022 2022H     202220222        T                                     
+LIRHIL              2026H00000000                                               
+LIHUYTJUN           2029 00000000                                               
+LIOLIVEMJ           2031H00000000                                               
+LIWVRTTEC 2032H2033      203320331        T                                     
+LIBOOTLBJ           2034 00000000                                               
+LIEDGHSB            2034H00000000   SL                                          
+LIEDGH              2035 000000002                    2   1                     
+LTLVRPLSH 2042 20432     TF                                                     

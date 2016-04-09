@@ -1,0 +1,17 @@
+BSNY910471512141605131111100 POO2F94    121826000 DMUS   075      S            P
+BX         NTY                                                                  
+LOBRTHMBR 1755 1755          TB                                                 
+LIBARWHVN 1800 1800H     18001800         T                                     
+LINHOL    1803H1804      18041804         T                                     
+LIOXMRSHX 1805 1805      00000000         TW                                    
+LIGOXHILL 1808H1809      18091809         T                                     
+LITHABBEY 1812 1812H     18121812         T                                     
+LIULCEBY  1816H1817      18171817         T                                     
+LIHABRO   1820H1821H     18211821         T                                     
+LISBROUGH 1826H1827      18271827         T                                     
+LIHEALING 1829 1829H     18291829         T                                     
+LIGTCOATS 1832 1832H     18321832         T           1                         
+LIGRMSBYT 1837 1838      183718381        T                                     
+LIGRMSBYD 1840 1840H     18401840         T                                     
+LINEWCLEE 1842H1842H     18421842         R                                     
+LTCLTHRPS 1846 18472     TF                                                     

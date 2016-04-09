@@ -1,0 +1,20 @@
+BSNY900941512141605131111100 PXX1J33    111808920 DMUS   075      S S          P
+BX         NTY                                                                  
+LOHULL    1857 18576         TB                                                 
+LIHESSLRD           1900H00000000                                               
+LIBROUGH  1908 1909      19081909         T                                     
+LIGLBRDYK           1916 00000000                                               
+LIGOOLE   1923 1924      192319242        T                                     
+LITHORNEJ           1933 00000000                                               
+LIHTFLASF           1935 00000000                        H                      
+LIBTLYJN            1940H00000000                     2 1 2                     
+LIDONC    1948 1950      194919503B       T                                     
+LIDONCHJN           1953 00000000                                               
+LIMEXBRGH           1958H00000000                                               
+LISWINTN            2000 00000000                                               
+LIALDWRKJ           2002 00000000                         1                     
+LIROTHHJN           2006 00000000                         1                     
+LIMEADWHL 2009 2010      200920101        T                                     
+LIWNCOJN            2010H00000000                     1                         
+LINNRYMLJ           2015 00000000                                               
+LTSHEFFLD 2017 20173A    TF                                                     

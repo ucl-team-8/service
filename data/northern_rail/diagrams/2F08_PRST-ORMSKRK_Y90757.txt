@@ -1,0 +1,8 @@
+BSNY907571512141605131111100 POO2F08    122351000 DMUS   075      S            P
+BX         NTY                                                                  
+LOPRST    1115 11152  SL     TB                                                 
+LIFRNGTNC           1118H00000000                                               
+LICROT    1127H1128      11271127         T                                     
+LIRUFDORD 1132H1133H     11321132         T                                     
+LIBRSCGHJ 1138 1138H     11371137         T           2                         
+LTORMSKRK 1145 1145      TF                                                     

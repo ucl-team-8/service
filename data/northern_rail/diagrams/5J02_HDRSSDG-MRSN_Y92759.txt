@@ -1,0 +1,6 @@
+BSNY927591512141605131111100 PEE5J02    111874020 DMUA   075                   P
+BX         NTY                                                                  
+LOHDRSSDG 0543 0000          TB                                                 
+LIHDRS771 0544 0547      00000000         RM                                    
+LIHDRSFLD 0548 0554      000000004  UPV   OPC                                   
+LTMRSN    0605 00003     TF                                                     

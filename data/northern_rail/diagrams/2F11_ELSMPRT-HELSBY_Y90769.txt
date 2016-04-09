@@ -1,0 +1,6 @@
+BSNY907691512141605131111100 POO2F11    122291000 DMUA   075      S            P
+BX         NTY                                                                  
+LOELSMPRT 0619 06192         TB                                                 
+LISTNLWAT 0623 0623H     06230623         T                                     
+LIINEL    0625H0626      06260626         T                                     
+LTHELSBY  0629 06304     TF                                                     

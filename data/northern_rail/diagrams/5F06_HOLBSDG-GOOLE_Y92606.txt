@@ -1,0 +1,20 @@
+BSNY926061512141605131111100 PEE5F06    111841820 DMUA   075                   P
+BX         NTY                                                                  
+LOHOLBSDG 0554 0000          TB                                                 
+LIESJLEDS           0558 00000000                                               
+LISTRTJN            0601H00000000                                               
+LIMETHLYJ           0605H00000000                                               
+LIALTFTJN           0607 00000000                                               
+LITRNRSLA           0613 00000000                                               
+LICLDBDGJ           0616H00000000                                               
+LICRFTNWJ           0618H00000000                                               
+LICRFTNEJ           0619H00000000                                               
+LIPTFTMHL           0627H000000002                       H                      
+LIKNTNGWJ           0630 00000000                     1                         
+LIKNTNGLY           0631H000000002                                              
+LIWHTBDGE           0636H00000000                                               
+LIHENSALL           0639 00000000                                               
+LISNAITH            0643H00000000                                               
+LIRAWCLIF 0647 0647      00000000         OP                                    
+LIGOOLPGJ           0653 00000000                                               
+LTGOOLE   0654 00002     TF                                                     

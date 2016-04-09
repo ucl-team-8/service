@@ -1,0 +1,20 @@
+BSNY900951512141605131111100 PXX1J35    111808920 DMUS   075      S S          P
+BX         NTY                                                                  
+LOHULL    2057 20572         TB                                                 
+LIHESSLRD           2100H00000000                                               
+LIBROUGH  2108 2109      21082109         T                                     
+LIGLBRDYK           2116 00000000                                               
+LIGOOLE   2123H2124H     212421242        T                                     
+LITHORNEJ           2133H00000000                                               
+LIHTFLASF           2135H00000000                                               
+LIBTLYJN            2140H00000000                     2   2                     
+LIDONC    2147 2149      214721493B       T                                     
+LIDONCHJN           2152 00000000                                               
+LIMEXBRGH           2157H00000000                                               
+LITHBGJN            2200H00000000                       2                       
+LIALDWRKJ           2204H00000000                         2                     
+LIROTHHJN           2209H00000000                                               
+LIMEADWHL 2211 2212      221122121        T                                     
+LIWNCOJN            2212H00000000                     1                         
+LINNRYMLJ           2217 00000000                                               
+LTSHEFFLD 2219 22215B    TF                                                     

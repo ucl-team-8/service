@@ -1,0 +1,14 @@
+BSNY920821512141605131111100 POO2R94    111807820 DMUS   075      S            P
+BX         NTY                                                                  
+LODONC    2130 21303B        TB                                                 
+LIDONCHJN           2133H00000000                                               
+LICONBRGH 2137 2138      21372138         T                                     
+LIMEXBRGH 2141 2141H     21412141         T                                     
+LISWINTN  2144 2145      21442145         T                                     
+LIALDWRKJ           2148 00000000                         2                     
+LIROTHCEN 2153H2157H     215421571        T                                     
+LIROTHHJN           2159H00000000                          H                    
+LIMEADWHL 2202H2203H     220322031        T                                     
+LIWNCOJN            2204 00000000                     1    H                    
+LINNRYMLJ           2209 00000000                                               
+LTSHEFFLD 2211 22128B    TF                                                     

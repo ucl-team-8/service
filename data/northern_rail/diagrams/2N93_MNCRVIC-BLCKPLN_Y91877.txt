@@ -1,0 +1,26 @@
+BSNY918771512141605131111100 POO2N936024112355820 DMUS   075      S S          P
+BX         NTY                                                                  
+LOMNCRVIC 1123 11235  FL     TB                                                 
+LIMNCRDST           1124H00000000                                               
+LISLFDORD 1125H1126      11261126         T             1                       
+LISLFDCT  1129H1130H     113011302        T                                     
+LIBOLTON  1140 1141      114011414        T                                     
+LILOSTCKJ           1145 00000000                                               
+LILOSTCKP 1145H1146      114611461        T                                     
+LIHORWICH 1149H1150      11501150         T                                     
+LIBLRD    1152H1153      11531153         T                                     
+LIADNL    1156 1157      11561157         T                                     
+LICHORLEY 1201 1202      12011202         T                                     
+LICHORBUK 1205 1205H     12051205         T           2                         
+LIEUXTONJ           1209 00000000   SL                                          
+LILEYLAND 1211H1212      12121212         T                                     
+LIFRNGTNC           1214H00000000                                               
+LIPRST    1217 1222      121712221  SL    T                                     
+LIPRSTNFJ           1223 00000000                                               
+LIKIRKHAM 1231 1231H     123112311        T                                     
+LIKIRKMNJ           1233 00000000                                               
+LIKIRKM51           1236 00000000                                               
+LIPLTNLFY 1239 1239H     123912391        T                                     
+LILAYTCLX           1241H00000000                                               
+LILAYTON  1243 1243H     12431243         T           1                         
+LTBLCKPLN 1248 12505     TF                                                     

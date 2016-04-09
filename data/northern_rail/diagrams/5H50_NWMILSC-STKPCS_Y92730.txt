@@ -1,0 +1,12 @@
+BSNY927301512141605131111100 PEE5H50    112226820 DMUA   075                   P
+BX         NTY                                                                  
+LONWMILSC 1809 00002         TB                                                 
+LINWMILSJ           1811H00000000                                               
+LICHNLYNJ 1817 1838H     00000000         RMA                                   
+LINWMILSJ2          1843H00000000                       6                       
+LIHAZLGHJ           1854 00000000                                               
+LIHAZL              1855 000000002                      3                       
+LISTKPE1            1902 00000000   SL                                          
+LISTKP    1904 1905      000000004        OPC                                   
+LISTKPVIA 1906 1910      00000000         RM                                    
+LTSTKPCS  1915 0000      TF                                                     

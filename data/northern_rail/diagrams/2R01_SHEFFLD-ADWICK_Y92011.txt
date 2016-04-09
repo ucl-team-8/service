@@ -1,0 +1,16 @@
+BSNY920111512141605131111100 POO2R01    111807820 DMUS   075      S            P
+BX         NTY                                                                  
+LOSHEFFLD 0616 06163A        TB                                                 
+LINNRYMLJ           0617H00000000                         1                     
+LIWNCOJN            0621H00000000                                               
+LIMEADWHL 0622 0623      062206232        T                H                    
+LIROTHHJN           0627 00000000                                               
+LIROTHCEN 0629 0630      062906302        T                                     
+LIALDWRKJ           0634 00000000                                               
+LISWINTN  0637H0638      06380638         T                                     
+LIMEXBRGH 0640 0641      06400641         T                                     
+LICONBRGH 0644H0645      06450645         T                                     
+LIDONCHJN           0649 00000000                     1    H                    
+LIDONC    0653H0659      065606598        T                                     
+LIBTLYSY  0701H0702      070207022        T           1                         
+LTADWICK  0707 07082     TF                                                     

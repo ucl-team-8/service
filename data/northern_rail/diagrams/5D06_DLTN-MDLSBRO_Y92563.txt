@@ -1,0 +1,11 @@
+BSNY925631512141605131111100 PEE5D06    121801000 DMUA   075                   P
+BX         NTY                                                                  
+LODLTN    0612 00002         TB                                                 
+LIDINSDAL           0617 000000002                                              
+LIEGLSCLF           0623 000000002                                              
+LISTOCCJN           0625 00000000                                               
+LIBOWSFLD           0626 00000000                                               
+LITABY              0627 000000002                    1 5H                      
+LIMDLSBRO 0638 0641      000000002        RM                                    
+LIMDLSWDK 0642 0658      00000000         RMA                                   
+LTMDLSBRO20659 00001     TF                                                     

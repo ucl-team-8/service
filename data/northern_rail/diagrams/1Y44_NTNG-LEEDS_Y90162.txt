@@ -1,0 +1,31 @@
+BSNY901621512141605131111100 PXX1Y441013121865000 DMUE   090      S S          P
+BX         NTY                                                                  
+LONTNG    1618 16184A B      TB                                                 
+LINTNGMJN           1620 00000000   DM                                          
+LIRADFDJ            1622 00000000                                               
+LITRWLJN            1627H00000000   ML                                          
+LIILKES   1629 1630      00000000         N                H                    
+LILGML    1636 1637      16361637         T                                     
+LIIRNVLJN           1641 00000000                                               
+LIALFRETN 1644 1645      16441645         T                                     
+LICLAYXNJ           1651H00000000   EL                   H                      
+LICHFDSJ            1653H00000000   ML                    1                     
+LICHFD    1656 1657      165716571        T                                     
+LITAPTONJ           1658 00000000                                               
+LIDRONFLD 1703 1704      17041704         T                                     
+LIDORESNJ           1708 00000000                     1                         
+LISHEFFLD 1714 1718      171417181B       T                                     
+LINNRYMLJ           1719H00000000                                               
+LIWNCOJN            1722H00000000                                               
+LIMEADWHL 1723 1724      172317244        T                                     
+LIECLSFLW           1727H00000000                       2 1                     
+LIBNSLY   1740H1742H     174117422        T                                     
+LIWOLEYCS           1747H00000000                                               
+LIHORBRYJ           1752H00000000   SL                                          
+LIWKFLDKG 1757 1758      175717581        T                                     
+LIALTFTJN           1802H00000000                                               
+LIMETHLYJ           1804 00000000                         2                     
+LISTRTJN            1810 00000000                     2                         
+LIESJLEDS           1814H00000000   UM                                          
+LILEEDSWJ           1815H00000000   F                                           
+LTLEEDS   1817 181717B   TF                                                     

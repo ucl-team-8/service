@@ -1,0 +1,35 @@
+BSNY916661512141605131111100 POO2M025897111835920 DMUS   075      S S          P
+BX         NTY                                                                  
+LOSELBY   0741 07413         TB                                                 
+LIHAMBLEJ           0746 00000000                                               
+LIHAMBLWJ           0747 00000000                                               
+LIGSCGNWJ           0748H00000000                                               
+LISMILFD  0750 0751      075007512        T               2                     
+LIMCKLFLD 0757H0758H     075807582        T                                     
+LIEGRFRTH 0802 0803      080208032        T                                     
+LIGARFRTH 0804H0805H     080508052        T                                     
+LICSGT    0809H0810H     081008102        T                                     
+LINEVLWJN           0814 00000000                                               
+CRLEEDS   OO2M025897111871821 DMUS   075      S S                               
+LILEEDS   0817 0820      0817082011CD     T                                     
+LILEEDSWJ           0821 00000000   D                                           
+LIWHRDJN            0821H00000000                                               
+LIHOLBJCN           0822 00000000                                               
+LIBRMLYSR 0827 0827H     082708271        T                                     
+LINPUD    0831 0832      083108321        T                                     
+LIMLLNJN            0838H00000000                                               
+LIBRADIN  0840 0843      084008433        T                                     
+LIMLLNJN 2          0844H00000000                                               
+LIHLFX    0854H0855H     085508551        T                                     
+LIMLNRYDJ           0900 00000000                                               
+LIHBDNBDG 0906H0907H     090709071        T                                     
+LIHALRYDJ           0912H00000000                                               
+LITODMRDN 0914 0915      091409151        T                                     
+LILITLBRO           0921 000000001                                              
+LIRCHDLEJ           0923H00000000                                               
+LIRCHDALE 0924H0925H     092509253        T                                     
+LICSTLTEJ           0928 00000000                                               
+LIVTRLWKS           0931H00000000                     2                         
+LITHRPSBJ           0936 00000000                                               
+LIMILESPL           0937 00000000   FL                  1                       
+LTMNCRVIC 0941 09412     TF                                                     

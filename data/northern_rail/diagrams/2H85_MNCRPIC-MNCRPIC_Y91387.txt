@@ -1,0 +1,29 @@
+BSNY913871512141605131111100 POO2H85    112230110 EMU323 090      S            P
+BX         NTY                                                                  
+LOMNCRPIC 0718 07182  EL     TB                                                 
+LIARDWCKJ           0720 00000000                                               
+LIASHBRYS 0721H0722      07220722         T                                     
+LIGORTON  0724 0724H     07240724         T                                     
+LIFRFD    0726H0727      07270727         T                                     
+LIGIDB    0729H0730      073007302        T                                     
+LIHYDEJ             0731H00000000                                               
+LIFLWRYFD 0732H0733      073307332        T                                     
+LINWTH    0734H0735      07350735         T                                     
+LIGODLY   0736H0737      07370737         T                                     
+LIHATRSLY 0738H0739      07390739         T                                     
+LIBRBM    0741 0741H     07410741         T           1                         
+LIDNTG    0746H0747      074707471        T                                     
+LIHADFILD 0749 0757      07490757         T                                     
+LIGLSP    0802 0805      08020805         T                                     
+LIDNTG   20808 0808H     080808082        T                                     
+LIBRBM   20812 0812H     08120812         T                                     
+LIHATRSLY20814H0815H     08150815         T                                     
+LIGODLY  20817 0817H     08170817         T                                     
+LINWTH   20819 0820      08190820         T                                     
+LIFLWRYFD20821H0822H     082208221        T                                     
+LIHYDEJ  2          0823H00000000                                               
+LIGIDB   20825 0826      082508261        T                                     
+LIGORTON 20829 0830      08290830   ML    T           1                         
+LIASHBRYS20833 0833H     08330833         T              H                      
+LIARDWCKJ2          0836 00000000   EL                                          
+LTMNCRPIC20839 08401  EL TF                                                     

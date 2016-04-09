@@ -1,0 +1,13 @@
+BSNY920191512141605131111100 POO2R10    121806000 DMUS   075      S            P
+BX         NTY                                                                  
+LOHULL    1610 16106         TB                                                 
+LIHESSLRD           1613H00000000                                               
+LIBROUGH  1621 1622      16211622         T                                     
+LIBRFT    1627 1627H     16271627         T                                     
+LIGLBRDYK 1631 1632      16311632         T                                     
+LIHOWDEN  1638 1638H     16381638         T                                     
+LISELBY   1647H1649      164816492        T           2                         
+LIHAMBLEJ           1656H00000000                                               
+LIHAMBLNJ           1657H00000000                                               
+LICOLTONJ           1704H00000000                         3                     
+LTYORK    1713 17131     TF                                                     

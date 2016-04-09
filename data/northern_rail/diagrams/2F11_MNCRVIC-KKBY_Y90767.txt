@@ -1,0 +1,21 @@
+BSNY907671512141605131111100 POO2F11    112225110 DMUA   075      S            P
+BX         NTY                                                                  
+LOMNCRVIC 1114 11146  FL     TB                                                 
+LIMNCRDST           1115H00000000                                               
+LISLFDORD 1117 1117H     11171117         T                                     
+LISLFDCT  1120 1121      112011212        T                                     
+LISWNT    1127 1127H     11271127         T                                     
+LIMRSD    1129H1130      11301130         T                                     
+LIWALKDEN 1133 1133H     11331133         T                                     
+LIATHERTN 1138H1139      11391139         T                                     
+LIHAGFOLD 1141 1141H     11411141         T                                     
+LIDAISYH  1144 1144H     11441144         T                                     
+LICRWNSTJ           1147H00000000                                               
+LIHINDLEY 1148H1149      11491149         T                                     
+CRWIGANWL OO2F11    112240820 DMUA   075      S                                 
+LIWIGANWL 1153H1155H     115411551        T                                     
+LIPBRT    1159 1159H     11591159         T                                     
+LIORRELL  1203 1203H     12031203         T                                     
+LIUPHOLND 1206H1207      12071207         T                                     
+LIRNFD    1210 1210H     12101210         T           2                         
+LTKKBY    1220 1222      TF                                                     

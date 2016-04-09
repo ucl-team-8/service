@@ -1,0 +1,18 @@
+BSNY902111512141605131111100 POO2A48    121796000 DMUA   075      S            P
+BX         NTY                                                                  
+LOHEXHAM  2112 21122         TB                                                 
+LICRBG    2116H2117      21172117         T                                     
+LIRIDNGML 2120H2121H     21212121         T                                     
+LISTCKSFL 2125 2125H     21252125         T                                     
+LIPRUDHOE 2129 2130      21292130         T                                     
+LIWYLAM   2134 2134H     21342134         T                                     
+LIBLAYDON 2139H2140H     21402140         T                                     
+LIGTSHDMC 2144H2145H     214521451        T                                     
+LINRWDJN            2148H00000000                     2                         
+LIKEBGSJN           2152H00000000   SL                                          
+LIKEBGNJN           2153 00000000   USL                                         
+CRNWCSTLE OO2A48    121794000 DMUA   075      S                                 
+LINWCSTLE 2155 2200      215622007  ML    T                                     
+LIHTONSJN           2203H00000000                                               
+LICRMLNGT 2211H2212      22122212         T                                     
+LTMRPTHRP 2219 22192     TF                                                     

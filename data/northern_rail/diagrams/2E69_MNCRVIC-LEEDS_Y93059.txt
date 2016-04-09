@@ -1,0 +1,31 @@
+BSNY930591512141605121111000 POO2E694531111871821 DMUS   075      S S          P
+BX         NTY                                                                  
+LOMNCRVIC 2226 22263  SL     TB                                                 
+LIMILESPL           2229 00000000                                               
+LITHRPSBJ           2230 00000000                                               
+LIMSTN    2232 2232H     22322232         T                                     
+LIVTRLWKS           2234 00000000                                               
+LIMLSHILL 2236 2237      22362237         T                                     
+LICSTLTEJ           2240H00000000                                               
+LICSTL    2241H2242      22422242         T                                     
+LIRCHDALE 2245 2246      224522461        T                                     
+LIRCHDLEJ           2247 00000000                                               
+LISMBG    2249H2250      225022502        T                                     
+LILITLBRO 2252H2253H     225322532        T                                     
+LIWDEN    2259 2259H     225922592        T                                     
+LITODMRDN 2302 2303      230223032        T                                     
+LIHALRYDJ           2304H00000000                                               
+LIHBDNBDG 2309 2310      230923102        T                                     
+LIMYTHLMR 2312H2313H     231323132        T                                     
+LISWRBBDG 2318H2319H     231923192        T                                     
+LIMLNRYDJ           2320H00000000                         1                     
+LIHLFX    2326H2327H     232723272        T           2                         
+LIMLLNJN            2339H00000000                                               
+LIBRADIN  2341 2344      234123441        T                                     
+LIMLLNJN 2          2345H00000000                                               
+LINPUD    2352 2352H     235223522        T                                     
+LIBRMLYSR 2355H2356H     235623562        T               2                     
+LIHOLBJCN           0002H00000000                                               
+LIWHRDJN            0003 00000000   C                                           
+LILEEDSWJ           0003H00000000   E     X                                     
+LTLEEDS   0005 000612D   TF                                                     

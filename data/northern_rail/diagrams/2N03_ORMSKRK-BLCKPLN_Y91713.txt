@@ -1,0 +1,17 @@
+BSNY917131512141605121111000 POO2N03    122351000 DMUS   075      S            P
+BX         NTY                                                                  
+LOORMSKRK 2256 2256          TB                                                 
+LIBRSCGHJ 2300 2300H     23002300         T                                     
+LIRUFDORD 2305 2305H     23052305         T                                     
+LICROT    2310 2310H     23102310         T           2 1                       
+LIFRNGTNC           2323 00000000   SL                                          
+CRPRST    OO2N03    112355820 DMUS   075      S                                 
+LIPRST    2325H2327H     232723271  SL    T                                     
+LIPRSTNFJ           2328H00000000                                               
+LIKIRKHAM 2336H2337H     233723371        T                                     
+LIKIRKMNJ           2339 00000000                                               
+LIKIRKM51           2342 00000000                                               
+LIPLTNLFY 2345 2345H     234523451        T                                     
+LILAYTCLX           2347H00000000                     1                         
+LILAYTON  2350 2350H     23502350         T                                     
+LTBLCKPLN 2354 23544     TF                                                     

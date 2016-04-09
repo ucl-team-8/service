@@ -1,0 +1,25 @@
+BSNY912141512141605131111100 POO2H425423112299820 DMUA   075      S S          P
+BX         NTY                                                                  
+LOLVRPLSH 0855 08554  FL     TB                                                 
+LIEDGH    0859 0859H     085908593        T                                     
+LIEDGHSB            0900H00000000                                               
+LIWVRTREJ           0902 00000000                                               
+LIMSLH    0903H0904      090409041        T                                     
+LIWALERTN 0906 0906H     090609061        T                                     
+LIALERTN  0909 0909H     090909091        T              H                      
+LIHUNTXWJ           0911 00000000   UML                                         
+LIHUNTSX  0913 0913H     091309132        T                                     
+LIHALW    0915H0916      09160916         T                                     
+LIHOUGHGR 0919H0920      09200920         T                                     
+LIWIDNES  0923 0923H     09230923         T                                     
+LISANKEY  0928 0928H     09280928         T                                     
+CRWRGT    OO2H425423112236820 DMUA   075      S S                               
+LIWRGT    0933 0934      093309341        T                                     
+LIBIRCHWD 0938 0938H     09380938         T                                     
+LIGLAZBKE           0942H00000000                                               
+LIIRLAM   0944 0945      09440945         T                                     
+LIURMSTON 0949H0950      09500950         T           2                         
+LITRFDPEJ           0956 00000000                                               
+LICFLDJN            0959 00000000                                               
+LIMNCRDGT 0959H1000      095909591        T                                     
+LTMNCROXR 1002 10045     TF                                                     

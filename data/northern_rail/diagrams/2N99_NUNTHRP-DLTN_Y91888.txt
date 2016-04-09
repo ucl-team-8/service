@@ -1,0 +1,15 @@
+BSNY918881512141605131111100 POO2N99    121800000 DMUA   075      S            P
+BX         NTY                                                                  
+LONUNTHRP 1826 18262         TB                                                 
+LIGYPSYLA 1827H1828      182818281        T                                     
+LIMARTON  1830 1830H     183018301        T                                     
+LIJAMCOK  1832H1833H     183318331        T           1   1                     
+LIGUSBROJ           1838 00000000                                               
+CRMDLSBRO OO2N99    121801000 DMUA   075      S                                 
+LIMDLSBRO 1839 1845      183918451        T                                     
+LITABY    1849H1850      185018501        T                                     
+LIBOWSFLD           1852 00000000                                               
+LISTOCCJN           1853 00000000                                               
+LIEGLSCLF           1854H000000001                                              
+LIDINSDAL           1900H000000001                    1 2H1                     
+LTDLTN    1911 19113     TF                                                     

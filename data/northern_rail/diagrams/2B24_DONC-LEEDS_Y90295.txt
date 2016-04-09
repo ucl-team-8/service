@@ -1,0 +1,17 @@
+BSNY902951512141605131111100 POO2B24    111824820 EMU321 100      S S          P
+BX         NTY                                                                  
+LODONC    1626 16266         TB                                                 
+LIBTLYSY  1629 1629H     162916292        T                                     
+LIADWICK  1632H1633H     163316332        T                                     
+LIADWICKJ           1634H00000000                                               
+LISELMSAL 1638H1639      163916392        T              H                      
+LISKIRBYJ           1641 00000000                                               
+LIFITZWLM 1644 1645      164416452        T                                     
+LIHAREPKJ           1648 00000000                                               
+LISABR    1650 1650H     165016502        T                                     
+LIWKFLDWG 1654 1655      165416552        T                                     
+LIOUTWOOD 1659 1659H     165916592        T           2                         
+LICOPHWJN           1708H00000000   CHC                                         
+LIWHRDJN            1709 00000000   E                                           
+LILEEDSWJ           1709H00000000   E                                           
+LTLEEDS   1711 171112D   TF                                                     

@@ -1,0 +1,24 @@
+BSNY906851512141605131111100 POO2E111092111871821 DMUS   075      S S          P
+BX         NTY                                                                  
+LOMNCRVIC 1248 12481  FL     TB                                                 
+LIMILESPL           1251 00000000                                               
+LITHRPSBJ           1252 00000000                                               
+LIVTRLWKS           1254H00000000                                               
+LICSTLTEJ           1258 00000000                                               
+LIRCHDALE 1300H1301H     130113011        T                                     
+LIRCHDLEJ           1302H00000000                                               
+LILITLBRO           1306 000000002                                              
+LITODMRDN 1312 1313      131213132        T                                     
+LIHALRYDJ           1314H00000000                                               
+LIHBDNBDG 1319 1320      131913202        T                                     
+LIMLNRYDJ           1326H00000000                                               
+LIHLFX    1331H1332H     133213322        T           2                         
+LIMLLNJN            1344H00000000                                               
+LIBRADIN  1346 1349      134613491        T                                     
+LIMLLNJN 2          1350H00000000                                               
+LINPUD    1357 1357H     135713572        T                                     
+LIBRMLYSR 1400H1401H     140114012        T               2                     
+LIHOLBJCN           1407H00000000                                               
+LIWHRDJN            1408 00000000   C                                           
+LILEEDSWJ           1408H00000000   C                                           
+LTLEEDS   1410 141010B   TF                                                     

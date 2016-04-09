@@ -1,0 +1,10 @@
+BSNY905261512141605131111100 POO2C93    111816820 DMUS   075      S            P
+BX         NTY                                                                  
+LOGOOLE   2135 21352         TB                                                 
+CRTHORNEN OO2C93    111816820 DMUS   075      S                                 
+LITHORNEN 2143H2144      21442144         T                                     
+LITHORNEJ           2146H00000000                                               
+LIHTFLASF 2149 2150      21492150         T                                     
+LIKKSNDAL 2154 2154H     21542154         T             1                       
+LIBTLYJN            2159 00000000                     2 1H1                     
+LTDONC    2206 22083B    TF                                                     

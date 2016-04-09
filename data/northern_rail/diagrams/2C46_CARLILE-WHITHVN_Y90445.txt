@@ -1,0 +1,14 @@
+BSNY904451512141605131111100 POO2C46    122358000ZDMUS   075      S            P
+BX         NTY                                                                  
+LOCARLILE 1915 19152         TB                                                 
+LICARLCUR           1919 00000000                                               
+LIDALSTON 1923 1923      19231923         R                                     
+LIWIGTON  1933 1933H     19331933         T                                     
+LIASPTRIA 1943H1943H     19431943         R                                     
+LIMPRT    1953H1954      19541954         T                                     
+LIFLIMBY  1957 1957      19571957         R                                     
+LIWKNT    2003H2005H     20042005         T                                     
+LIHNGT    2009 2009      20092009         R                                     
+LIPARTNNJ           2013 00000000                                               
+LIPARTON  2017H2017H     20172017         R           2                         
+LTWHITHVN 2025 2025      TF                                                     

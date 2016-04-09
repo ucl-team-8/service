@@ -1,0 +1,39 @@
+BSNY907181512141605131111100 POO2E803976112355820 DMUA   075      S S          P
+BX         NTY                                                                  
+LOBLCKPLN 1021 10214         TB                                                 
+LILAYTON  1024 1024H     102410241        T                                     
+LILAYTCLX           1026 00000000                                               
+LIPLTNLFY 1028 1029      102810292        T                                     
+LIPLTNT67           1033 00000000                                               
+LIKIRKMNJ           1036 00000000                     1                         
+LIKIRKHAM 1038 1039      103810392        T                                     
+LIPRSTNFJ           1047 00000000   BL                                          
+LIPRST    1048H1050H     104910502  SL    T                                     
+LIFRNGTNC           1052H00000000                                               
+LILEYLAND 1055H1056      10561056         T                                     
+LIEUXTONJ           1058H00000000                                               
+LICHORBUK 1100 1100H     11001100         T                                     
+LICHORLEY 1104 1105      11041105         T                                     
+LIADNL    1109 1109H     11091109         T                                     
+LIBLRD    1112H1113      11131113         T                                     
+LIHORWICH 1116 1117      11161117         T                                     
+LILOSTCKP 1120 1120H     112011202        T                                     
+LILOSTCKJ           1121 00000000                                               
+LIBOLTON  1125 1126      112511263        T           2                         
+LISLFDCT  1138 1139      113811391        T                                     
+LISLFDORD 1141 1144      11411144         T                                     
+LIMNCRDST           1145H00000000   SL                                          
+CRMNCRVIC OO2E803976112220821 DMUA   075      S S                               
+LIMNCRVIC 1147 1157      114711574        T                                     
+LIMILESPL           1200H00000000                                               
+LIPHILPK1           1201 00000000                                               
+LIBAGLYFJ           1202 00000000                                               
+LIASHTMNJ           1205H00000000                                               
+LIASHONUL 1206H1207      12071207         T                                     
+LISBYD    1211 1212      121112124        T                                     
+LIMOSSLEY 1216 1216H     12161216         T                                     
+LIGFLD    1220 1220H     12201220         T                H                    
+LIDIGGLEJ           1224 00000000                                               
+LIMRSN    1228H1229      122912291        T                                     
+LISLTHWTE 1232H1233H     12331233         T           1                         
+LTHDRSFLD 1241 12424B    TF                                                     

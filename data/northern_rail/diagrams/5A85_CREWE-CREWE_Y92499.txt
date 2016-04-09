@@ -1,0 +1,5 @@
+BSNY924991512141605131111100 PEE5A85    112232820 EMU323 090                   P
+BX         NTY                                                                  
+LOCREWE   1003 00001         TB                                                 
+LICREWCET 1005 1027      00000000         RMA                                   
+LTCREWE  21029 00001     TF                                                     

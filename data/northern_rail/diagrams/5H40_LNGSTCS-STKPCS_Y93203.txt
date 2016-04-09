@@ -1,0 +1,9 @@
+BSNY932031512151605130111100 PEE5H404022112231820 DMUS   075                   P
+BX         NTY                                                                  
+LOLNGSTCS 0145 0000          TB                                                 
+LILNGSGHT 0150 0150      00000000   FL    OPA                                   
+LISLDLJN            0151 00000000   SL                                          
+LIHTNOJN            0154 00000000                                               
+LISTKP    0156 0202      000000001        RM                                    
+LISTKPVIA 0203 0207      00000000         RM                                    
+LTSTKPCS  0212 0000      TF                                                     

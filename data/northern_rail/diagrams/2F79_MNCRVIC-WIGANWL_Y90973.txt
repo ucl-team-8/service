@@ -1,0 +1,16 @@
+BSNY909731512141605131111100 POO2F79    112225110 DMUS   075      S            P
+BX         NTY                                                                  
+LOMNCRVIC 1935 19356  FL     TB                                                 
+LIMNCRDST           1936H00000000                                               
+LISLFDORD 1937H1938      19381938         T                                     
+LISLFDCT  1941 1942      194119422        T                                     
+LISWNT    1948 1948H     19481948         T                                     
+LIMRSD    1950H1951      19511951         T                                     
+LIWALKDEN 1954 1954H     19541954         T                                     
+LIATHERTN 1959H2000H     20002000         T                                     
+LIHAGFOLD 2002H2003      20032003         T                                     
+LIDAISYH  2005H2006      20062006         T                                     
+LICRWNSTJ           2009 00000000                                               
+LIHINDLEY 2010 2010H     20102010         T                                     
+LIINCE    2013 2013H     20132013         T           2                         
+LTWIGANWL 2018 20201     TF                                                     

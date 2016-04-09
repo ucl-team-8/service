@@ -1,0 +1,26 @@
+BSNY918761512141605131111100 POO2N936021112355820 DMUS   075      S S          P
+BX         NTY                                                                  
+LOMNCRVIC 0723 07233  SL     TB                                                 
+LIMNCRDST           0724H00000000                                               
+LISLFDORD 0725H0726      07260726         T                                     
+LISLFDCT  0728H0729H     072907292        T             1                       
+LIBOLTON  0740 0741      074007414        T                                     
+LILOSTCKJ           0745 00000000                                               
+LILOSTCKP 0745H0746H     074607461        T                                     
+LIHORWICH 0750 0750H     07500750         T                                     
+LIBLRD    0753 0753H     07530753         T                                     
+LIADNL    0756H0757H     07570757         T                                     
+LICHORLEY 0801H0802H     08020802         T                                     
+LICHORBUK 0805H0806H     08060806         T           2 2                       
+LIEUXTONJ           0812 00000000   SL                                          
+LILEYLAND 0814H0815      08150815         T                                     
+LIFRNGTNC           0817H00000000                                               
+LIPRST    0820 0822      082008221  SL    T                                     
+LIPRSTNFJ           0823 00000000                                               
+LIKIRKHAM 0831 0831H     083108311        T                                     
+LIKIRKMNJ           0833 00000000                                               
+LIKIRKM51           0836 00000000                                               
+LIPLTNLFY 0839 0839H     083908391        T                                     
+LILAYTCLX           0841H00000000                                               
+LILAYTON  0843 0843H     08430843         T           1                         
+LTBLCKPLN 0848 08487     TF                                                     

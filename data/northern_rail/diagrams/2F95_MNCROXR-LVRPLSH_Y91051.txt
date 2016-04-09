@@ -1,0 +1,26 @@
+BSNY910511512141605131111100 POO2F954856112236820 DMUS   075      S S          P
+BX         NTY                                                                  
+LOMNCROXR 1544 15445         TB                                                 
+LIMNCRDGT 1545H1546      154615462        T                                     
+LICFLDJN            1546H00000000                                               
+LITRFDPEJ           1549 00000000                        H                      
+LIURMSTON 1552H1553      15531553         T                                     
+LIIRLAM   1557H1558H     15581558         T                                     
+LIGLAZBKE           1600 00000000                                               
+LIBIRCHWD 1603H1604      16041604         T                                     
+LIPADGATE 1606H1607      16071607         T                                     
+CRWRGT    OO2F954856112299820 DMUS   075      S S                               
+LIWRGT    1610 1611      161016112        T                                     
+LISANKEY  1614H1615      16151615         T                                     
+LIWIDNES  1620 1620H     16201620         T                                     
+LIHOUGHGR 1623H1624      16241624         T                                     
+LIHALW    1627H1628      16281628         T                                     
+LIHUNTSX  1630H1631      163116311  DML   T                                     
+LIHUNTXWJ           1633 00000000                     2                         
+LIALERTN  1636 1637      163616372  FL    T                                     
+LIWALERTN 1639H1640      164016402        T                                     
+LIMSLH    1642 1642H     164216422        T             1                       
+LIWVRTREJ           1646 00000000                                               
+LIEDGHSB            1647H00000000   SL                                          
+LIEDGH    1648H1649      164916492        T             1                       
+LTLVRPLSH 1654 16551     TF                                                     

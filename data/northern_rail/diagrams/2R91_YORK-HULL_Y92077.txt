@@ -1,0 +1,15 @@
+BSNY920771512141605131111100 POO2R91    121806000 DMUS   075      S            P
+BX         NTY                                                                  
+LOYORK    0843 08436  NNL    TB                                                 
+LICOLTONJ           0848H00000000   NNL                                         
+LICHFN              0852H000000001                                              
+LISHBN    0855 0855H     08550855         T                                     
+LIGSCGNWJ           0858H00000000                                               
+LIHAMBLWJ           0900H00000000                                               
+LIHAMBLEJ           0901H00000000                                               
+LISELBY   0906 0907      090609071        T                                     
+LIHOWDEN  0916 0916H     09160916         T               1                     
+LIGLBRDYK           0923 00000000                                               
+LIBROUGH  0928H0929H     09290929         T           2                         
+LIHESSLRD           0940 00000000                         2H                    
+LTHULL    0946 09485     TF                                                     

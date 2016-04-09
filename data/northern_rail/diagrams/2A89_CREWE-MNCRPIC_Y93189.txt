@@ -1,0 +1,15 @@
+BSNY931891512151605130111100 POO2A89    112233820 EMU323 090      S S          P
+BX         NTY                                                                  
+LOCREWE   0044 00441         TB                                                 
+LICREWSBG           0046H00000000   FL                                          
+LISBCH              0050 000000002                                              
+LIALDEDGE           0059 00000000                                               
+LIWLMSL             0101 000000001                    1                         
+LIHLDGSJ            0105 00000000                                               
+LIHLDGWJ            0106 00000000                                               
+LIMNCRIAP 0108H0112H     010901123A       T                                     
+LIHLDGWJ 2          0114 00000000                                               
+LIHLDG              0115 000000001                    1                         
+LISLDLJN            0121 00000000   SL                                          
+LIARDWCKJ           0123 00000000   FL                                          
+LTMNCRPIC 0126 01286  FL TF                                                     

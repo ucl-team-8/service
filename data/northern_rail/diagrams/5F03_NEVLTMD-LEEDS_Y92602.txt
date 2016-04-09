@@ -1,0 +1,6 @@
+BSNY926021512141605131111100 PEE5F03    121831000 DMUA   075                   P
+BX         NTY                                                                  
+LONEVLTMD 0526 0000          TB                                                 
+LINEVLWJN           0528 00000000   GL                                          
+LIMRLNJN            0533 00000000                       1                       
+LTLEEDS   0537 000016A   TF                                                     

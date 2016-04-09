@@ -1,0 +1,7 @@
+BSNY925981512141605131111100 PEE5F01    112225820 DMUS   075                   P
+BX         NTY                                                                  
+LOSOUTHPT 1842 00004         TB                                                 
+LIBRSCGHB           1853H00000000                                               
+LIPARBOLD           1856 00000000                                               
+LIWIGANWL 1904 1908      000000002        C                                     
+LTWIGAWCS 1912 0000      TF                                                     

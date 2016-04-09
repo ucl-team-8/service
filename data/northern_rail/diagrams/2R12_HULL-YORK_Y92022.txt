@@ -1,0 +1,16 @@
+BSNY920221512141605131111100 POO2R12    121806000 DMUE   090      S            P
+BX         NTY                                                                  
+LOHULL    1717 17176         TB                                                 
+LIHESSLRD           1720H00000000                                               
+LIHESSLE  1723H1724H     17241724         T                                     
+LIFERRIBY 1728 1729      17281729   SL    T                                     
+LIBROUGH  1733H1734H     17341734         T                                     
+LIGLBRDYK 1741H1742H     17421742         T                                     
+LIESTRNGT 1746 1747      17461747         T                                     
+LIHOWDEN  1751 1752      17511752         T                                     
+LIWRESSLE 1755H1756H     17561756         T                                     
+LISELBY   1803 1804      180318042        T                                     
+LIHAMBLEJ           1809H00000000                     1                         
+LIHAMBLNJ 1812H1812H     00000000         A                                     
+LICOLTONJ           1819H00000000                     1                         
+LTYORK    1826 18281     TF                                                     

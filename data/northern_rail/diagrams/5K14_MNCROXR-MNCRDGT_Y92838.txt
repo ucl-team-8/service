@@ -1,0 +1,8 @@
+BSNY928381512141605131111100 PEE5K14    112232820 EMU323 090                   P
+BX         NTY                                                                  
+LOMNCROXR 1602 00001         TB                                                 
+LIMNCRDGT           1603 000000002                                              
+LICFLDJN            1603H00000000                                               
+LITRFDPEJ 1607 1704      00000000         RMA            H                      
+LICFLDJN 2          1708 00000000                                               
+LTMNCRDGT21709 00001     TF                                                     

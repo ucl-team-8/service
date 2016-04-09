@@ -1,0 +1,13 @@
+BSNY910671512141605131111100 POO2H00    112228110 DMUS   075      S            P
+BX         NTY                                                                  
+LOMNCRPIC 0621 06214  FL     TB                                                 
+LIARDWCKJ           0623 00000000                                               
+LISLDLJN            0625 00000000   SL                                          
+LILVHM    0626H0627      062706271        T                                     
+LIHTCP    0629H0630      063006301        T                                     
+LIHTNOJN            0631H00000000                                               
+LISTKP    0633 0635      06330635         T                                     
+LISTKPE1            0636H00000000                                               
+LIDAVNPRT 0638H0639H     063906391        T                                     
+LIWMOR    0641 0641H     064106411        T                                     
+LTHAZL    0644 06451     TF                                                     

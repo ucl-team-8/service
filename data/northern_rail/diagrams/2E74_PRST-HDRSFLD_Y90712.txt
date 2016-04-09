@@ -1,0 +1,30 @@
+BSNY907121512141605131111100 POO2E74    112355820 DMUA   075      S            P
+BX         NTY                                                                  
+LOPRST    0750 07502  FL     TB                                                 
+LILEYLAND 0755 0755H     07550755         T                                     
+LIEUXTONJ           0758 00000000                                               
+LICHORBUK 0759H0800      08000800         T                                     
+LICHORLEY 0803H0804H     08040804         T                                     
+LIADNL    0808H0809      08090809         T                                     
+LIBLRD    0812 0812H     08120812         T                                     
+LIHORWICH 0815H0816H     08160816         T                                     
+LILOSTCKP 0819H0820H     082008202        T                                     
+LILOSTCKJ           0821 00000000                                               
+LIBOLTON  0825 0826      082508263        T           2                         
+LISLFDCT  0838 0839      083808391        T                                     
+LISLFDORD 0841 0842      08410842         T             1                       
+LIMNCRDST           0844H00000000   FL                    2                     
+CRMNCRVIC OO2E74    112220821 DMUA   075      S                                 
+LIMNCRVIC 0848 0857      084808575  SL    T -D                                  
+LIMILESPL           0900H00000000                                               
+LIPHILPK1           0901 00000000                                               
+LIBAGLYFJ           0902 00000000                                               
+LIASHTMNJ           0905H00000000                                               
+LIASHONUL 0906H0907      09070907         T                                     
+LISBYD    0911 0912      091109124        T                                     
+LIMOSSLEY 0916 0916H     09160916         T                                     
+LIGFLD    0920 0920H     09200920         T                H                    
+LIDIGGLEJ           0924 00000000                                               
+LIMRSN    0928H0929      092909291        T                                     
+LISLTHWTE 0932H0933H     09330933         T           1                         
+LTHDRSFLD 0941 09424B    TF                                                     

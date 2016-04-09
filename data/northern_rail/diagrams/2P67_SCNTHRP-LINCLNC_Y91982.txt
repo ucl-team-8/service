@@ -1,0 +1,43 @@
+BSNY919821512141605131111100 POO2P671060111825820 DMUS   075      S S          P
+BX         NTY                                                                  
+LOSCNTHRP 1119 11192         TB                                                 
+LIALTPE   1123H1124      11241124         T                                     
+LICROWLE  1129H1130H     11301130         T                                     
+LITHORNES 1138H1139      11391139         T                                     
+LITHORNEJ           1141 00000000                                               
+LIHTFLASF 1143H1144H     11441144         T                                     
+LIKKSNDAL 1148H1149      11491149         T           2   1                     
+LIBTLYJN            1156H00000000                                               
+CRDONC    OO2P671060111807820 DMUS   075      S S                               
+LIDONC    1159 1203      115912033B       T               1                     
+LIDONCHJN           1207H00000000                                               
+LICONBRGH 1211 1212      12111212         T                                     
+LIMEXBRGH 1215 1215H     12151215         T                                     
+LISWINTN  1218 1218H     12181218         T                                     
+LIALDWRKJ           1221H00000000                         1H                    
+LIROTHCEN 1226H1227H     122712271        T                                     
+LIROTHHJN           1229H00000000                                               
+LIMEADWHL 1232 1233      123212331        T                                     
+LIWNCOJN            1233H00000000                     1                         
+LINNRYMLJ           1238 00000000                                               
+CRSHEFFLD OO2P671060111804920 DMUS   075      S S                               
+LISHEFFLD 1240 1244      124112443B       T                                     
+LINNRYMLJ2          1245H00000000                                               
+LIWDBRNJN           1247H00000000                                               
+LIDARNALL 1249H1250      12501250         T                                     
+LIWDHOUSE 1254 1255      12541255         T                                     
+LIWDHOUSJ           1256 00000000                                               
+LIKVTNBDG 1301H1302      13021302         T                                     
+LIKVTNPK  1304H1305H     13051305         T                                     
+LIBRCLEJN           1308 00000000                                               
+LISHRKSKS 1309H1310      13101310         T                                     
+LISHRKSEJ           1312 00000000                                               
+LIWORKSOP 1314 1315      131413152        T                                     
+LITHRMWJN           1322H00000000                                               
+LIRTFDLL  1324H1325H     132513254        T           2                         
+LICLRBROJ           1332H00000000                                               
+LIGBROTJ            1338 00000000                                               
+LIGBGHLRD 1339H1340H     13401340         T                                     
+LISAXILBY 1352 1352H     13521352         T           1   1H                    
+LIWHOLMSJ           1401H00000000                                               
+LTLINCLNC 1404 14055     TF                                                     

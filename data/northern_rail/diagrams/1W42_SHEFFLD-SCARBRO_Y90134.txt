@@ -1,0 +1,33 @@
+BSNY901341602151605131111100 PXX1W42    111808920 DMUE   090      S S          P
+BX         NTY                                                                  
+LOSHEFFLD 1441 14414A        TB                                                 
+LINNRYMLJ           1442H00000000                                               
+LIWNCOJN            1445H00000000                                               
+LIMEADWHL 1446 1447      144614472        T                                     
+LIROTHHJN           1449H00000000                                               
+LIALDWRKJ           1452H00000000                         1                     
+LISWINTN            1455 00000000                                               
+LIMEXBRGH           1456H00000000                       1H                      
+LIDONCHJN           1503 00000000                     1 7 1                     
+LIDONC    1515 1519      151715194        T                                     
+LIBTLYJN            1521H00000000                                               
+LIHTFLASF           1526 00000000                                               
+LITHORNEJ           1527H00000000                                               
+LIGOOLE   1536H1537H     153715371        T               1                     
+LIGLBRDYK           1545H00000000                                               
+LIBROUGH  1551 1552      15511552         T           2                         
+LIHESSLRD           1602 00000000                         1                     
+CRHULL    XX1W42    111838821 DMUE   090      S S                               
+LIHULL    1606H1618      160716187        T                                     
+LICTTGHM  1625 1626      16251626         T                                     
+LIBEVERLY 1631H1632H     163216322        T                                     
+LIHTNCRNS 1641 1641H     16411641         T                                     
+LIDRIFILD 1646 1647      16461647         T                                     
+LINAFERTN 1650H1651      16511651         T                                     
+CRBRDLNGT XX1W42    111838821 DMUE   090      S S                               
+LIBRDLNGT 1701H1704      170217044        T                                     
+LIBEMPTON 1710 1710H     17101710         T                                     
+LIHUNMNBY 1720 1721      17201721         T                                     
+LIFILEY   1725 1726      17251726         T           2                         
+LISEAMER  1736H1737H     17371737         T                                     
+LTSCARBRO 1742H17444     TF                                                     

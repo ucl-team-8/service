@@ -1,0 +1,16 @@
+BSNY931381512141605121111000 PEE5F91    111822820 DMUS   075                   P
+BX         NTY                                                                  
+LOKNTNGLY 2338 00001         TB                                                 
+LIKNTNGWJ           2338H00000000                                               
+LIPTFTMHL           2341H000000001                                              
+LICRFTNEJ           2349H00000000                                               
+LICRFTNWJ           2350H00000000                                               
+LIOKNSHWJ           2351H00000000                                               
+LICLDBDGJ           2353 00000000                                               
+LITRNRSLA           2356 00000000                                               
+LIALTFTJN           0001 00000000                                               
+LIMETHLYJ           0002 00000000                                               
+LISTRTJN            0006 00000000                     2                         
+LIESJLEDS           0011 00000000   UM                                          
+LILEEDSWJ           0012 00000000   E                                           
+LTLEEDS   0013H000010B   TF                                                     

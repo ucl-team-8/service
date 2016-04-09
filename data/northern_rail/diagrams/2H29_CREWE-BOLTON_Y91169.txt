@@ -1,0 +1,28 @@
+BSNY911691512141605131111100 POO2H29    112232820 DMUA   075      S S          P
+BX         NTY                                                                  
+LOCREWE   0722 07221         TB                                                 
+LICREWSBG           0724H00000000   FL                                          
+LISBCH    0729H0735      073007353        T                                     
+LIHCHP    0740H0741H     07410741         T                                     
+LIGOOSTRY 0744H0745H     07450745         T                                     
+LICHELFD  0750H0751H     07510751         T                                     
+LIALDEDGE 0756 0756H     07560756         T                                     
+LIWLMSL   0759 0800      075908003        T                                     
+LIHNDFRTH 0803 0803H     08030803         T           1                         
+LICHDH    0808 0809      080808091        T                                     
+LIADSWDRD           0810H00000000   SL                                          
+LISTKPE1            0812 00000000                                               
+LISTKP    0813H0814H     081408144        T                                     
+LIHTNOJN            0816 00000000                                               
+LIHTCP    0817H0818      081808182        T                                     
+LILVHM    0820H0821      082108212        T                                     
+LISLDLJN            0822 00000000                                               
+LIARDWCKJ           0824 00000000                        H                      
+CRMNCRPIC OO2H29    112224110 DMUA   075      S S                               
+LIMNCRPIC 0827 0829      0827082914    SL T                                     
+LIMNCROXR 0830H0833H     083108331        T                                     
+LIMNCRDGT 0835 0836      083508352        T                                     
+LICFLDJN            0837 00000000                                               
+LIORDSLLJ           0838 00000000                       7H                      
+LISLFDCT  0847H0849H     084808492        T             4                       
+LTBOLTON  0903 09032     TF                                                     

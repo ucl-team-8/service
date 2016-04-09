@@ -1,0 +1,9 @@
+BSNY913601512141605131111100 POO2H76    112230110 EMU323 090      S            P
+BX         NTY                                                                  
+LOMNCRPIC 0558 05581  EL     TB                                                 
+LIARDWCKJ           0600H00000000                                               
+LIASHBRYS 0602 0602H     06020602         T              H                      
+LIGIDB    0607H0608      060806082        T                                     
+LIHYDEJ             0609H00000000                     1                         
+LIDNTG              0619 000000001                                              
+LTHADFILD 0621 0622      TF                                                     

@@ -1,0 +1,29 @@
+BSNY913861512141605131111100 POO2H84    121869000 DMUA   075      S            P
+BX         NTY                                                                  
+LOLEEDS   1017 10171B B      TB                                                 
+LILEEDSWJ           1018 00000000   DH                                          
+LIARMLJCN           1019H00000000                                               
+LIAPERLYJ           1025 00000000                       3                       
+LISHPYDJN           1031 00000000                                               
+LISHPY    1032 1033      103210332        T                                     
+LIBNGY    1037H1038      103810382        T                                     
+LIKEIGHLY 1042H1043H     104310432        T           2                         
+LISKPT    1055H1100      105611003        T                                     
+LIGRGRAVE 1105 1105H     11051105         T                                     
+LIHELIFLD 1113H1114H     11141114         T                                     
+LILPRESTN 1117 1117H     11171117         T                                     
+LISETTLEJ           1120H00000000                                               
+LIGGLSWCK 1124 1124H     11241124         T                                     
+LICLPM    1132 1133      11321133         T                                     
+LIBNTHAM  1138H1139      11391139         T                                     
+LIWENNGTN 1143H1144H     11441144         T           2                         
+LICRNF    1200 1202H     12001202         T                                     
+LICRNFNJN           1203 00000000                                               
+LIMORCMSJ           1207H00000000                                               
+LILANCSTR 1211 1233      121112335        T                                     
+LIMORCMSJ2          1236H00000000                                               
+LIBARELA  1238H1239H     123912392  DUH   T                                     
+CRMORCAME OO2H84    122352000 DMUA   075      S                                 
+LIMORCAME 1243 1247      12431247         T                                     
+LIMORCJGF 1248 1250      00000000         OP                                    
+LTHEYSHBR 1300 1301      TF                                                     

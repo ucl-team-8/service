@@ -1,0 +1,30 @@
+BSNY923961512141605131111100 POO2W54    111807820 DMUS   075      S S          P
+BX         NTY                                                                  
+LOSHEFFLD 2115 21153A        TB                                                 
+LINNRYMLJ           2116H00000000                                               
+LIWNCOJN            2119H00000000                                               
+LIMEADWHL 2120 2121      212021212        T                                     
+LIROTHHJN           2124 00000000                                               
+LIROTHCEN 2126 2127      212621272        T               1                     
+LIALDWRKJ           2132H00000000                                               
+LISWINTN  2136 2136H     21362136         T                                     
+LIMEXBRGH 2138H2139H     21392139         T                                     
+LICONBRGH 2143 2143H     21432143         T                                     
+LIDONCHJN           2147 00000000                     1 1 2                     
+CRDONC    OO2W54    111816820 DMUS   075      S S                               
+LIDONC    2154 2156      215421564        T                                     
+LIBTLYJN            2158H00000000                                               
+LIKKSNDAL 2201H2202      22022202         T                                     
+LIHTFLASF 2206 2207      22062207         T                                     
+LITHORNEJ           2210 00000000                                               
+CRTHORNEN OO2W54    111808920 DMUS   075      S S                               
+LITHORNEN 2212H2213      22132213         T                                     
+LIGOOLE   2221 2222      222122221        T                                     
+LISLTMRSH 2226 2226H     22262226         T               1                     
+LIGLBRDYK 2232H2233      22332233         T                                     
+LIBROUGH  2240 2241      22402241         T           2                         
+LIHESSLRD           2251H00000000                         1                     
+CRHULL    OO2W54    111838821 DMUS   075      S S                               
+LIHULL    2256 2300      225723006        T                                     
+LICTTGHM  2307 2307H     23072307         T                                     
+LTBEVERLY 2313 23132     TF                                                     

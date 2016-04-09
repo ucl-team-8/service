@@ -1,0 +1,17 @@
+BSNY909641512141605131111100 POO2F76    112225110 DMUA   075      S            P
+BX         NTY                                                                  
+LOMNCRVIC 1814 18143  SL     TB                                                 
+LIMNCRDST           1815H00000000                                               
+LISLFDORD 1817 1817H     18171817         T                                     
+LISLFDCT  1820 1821      182018212        T                                     
+LISWNT    1827 1827H     18271827         T                                     
+LIMRSD    1829H1830      18301830         T                                     
+LIWALKDEN 1833 1833H     18331833         T                                     
+LIATHERTN 1838H1839      18391839         T                                     
+LIHAGFOLD 1841 1841H     18411841         T                                     
+LIDAISYH  1844 1844H     18441844         T                                     
+LICRWNSTJ           1847H00000000                                               
+LIHINDLEY 1848H1849      18491849         T                                     
+LIINCE    1851H1852      18521852         T           2                         
+LIWIGANSJ           1857 00000000                                               
+LTWIGANNW 1858 19002     TF                                                     

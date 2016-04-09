@@ -1,0 +1,27 @@
+BSNY922131512141605131111100 POO2S56    112226820 DMUA   075      S            P
+BX         NTY                                                                  
+LOMNCRPIC 1849 18491  EL     TB                                                 
+LIARDWCKJ           1851 00000000                                               
+LIASHBRYS           1852H00000000                                               
+LIREDISHN 1856 1856H     18561856         T                                     
+LIBRNGTN  1859H1900      19001900         T                                     
+LIBREDBRY 1902H1903      19031903         T                                     
+LIROMILEY 1905H1906H     190619062        T                                     
+LIMARPLWJ           1908H00000000                                               
+LIMARPLE  1909H1910      191019102        T                                     
+LINWMILSC 1915 1916      191519162        T                                     
+LINWMILSJ           1918H00000000                                               
+LICHNLY   1923 1923H     192319232        T                                     
+LICHNLYNJ           1925H00000000                                               
+LICHNLYEJ           1926 00000000                                               
+LIEDALE   1932 1933      193219332        T                                     
+LIERLESDG           1937 00000000                                               
+LIHOPD    1938H1939      193919392        T                                     
+LIBAMFORD 1941H1942H     19421942         T                                     
+LIHATHRSG 1945H1946      194619462        T                                     
+LIGRNDLFD 1949 1949H     194919492        T                                     
+LITOTLYTE           1954 00000000                     2                         
+LIDOREWJ  1957 1957H     00000000         A                                     
+LIDORE    1958H1959      19591959         T                                     
+LIDORESNJ           2000 00000000                                               
+LTSHEFFLD 2005 20072C    TF                                                     

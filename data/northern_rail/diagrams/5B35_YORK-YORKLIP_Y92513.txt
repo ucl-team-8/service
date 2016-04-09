@@ -1,0 +1,6 @@
+BSNY925131512141605131111100 PEE5B35    121806000 DMUE   090                   P
+BX         NTY                                                                  
+LOYORK    0205 00006         TB                                                 
+LIYORKHLG 0208 0213      00000000         OP                                    
+LIYORK   20216 0219      000000009        OP                                    
+LTYORKLIP 0222 0000      TF                                                     

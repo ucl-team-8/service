@@ -1,0 +1,19 @@
+BSNY911741512141605131111100 POO2H29    112232820 DMUS   075      S S          P
+BX         NTY                                                                  
+LOCREWE   2145 21451         TB                                                 
+LICREWSBG           2147H00000000   FL                                          
+LISBCH    2152 2152H     215221522        T                                     
+LIHCHP    2157H2158      21582158         T                                     
+LIGOOSTRY 2201 2201H     22012201         T                                     
+LICHELFD  2206H2207      22072207         T                                     
+LIALDEDGE 2211H2212      22122212         T                                     
+LIWLMSL   2214H2215H     221522153        T                                     
+LIHNDFRTH 2218H2219      22192219         T           1                         
+LICHDH    2223H2224      222422241        T                                     
+LIADSWDRD           2225H00000000   SL                  1H                      
+LISTKPE1            2228H00000000                                               
+LISTKP    2230 2231      223022314        T              H                      
+LIHTNOJN            2233 00000000                                               
+LISLDLJN            2236 00000000                        H                      
+LIARDWCKJ           2238 00000000   FL                                          
+LTMNCRPIC 2241 22435  FL TF                                                     

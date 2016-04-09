@@ -1,0 +1,30 @@
+BSNY924171512141605131111100 POO2W75    111835920 DMUA   075      S            P
+BX         NTY                                                                  
+LOSELBY   1254 12543         TB                                                 
+LIHAMBLEJ           1259 00000000                                               
+LIHAMBLWJ           1300 00000000                                               
+LIGSCGNWJ           1301H00000000                                               
+LISMILFD  1303 1303H     130313032        T                                     
+LIMCKLFLD 1308 1309      130813092        T                                     
+LIEGRFRTH 1312H1313      131313132        T                                     
+LIGARFRTH 1314H1315H     131513152        T                                     
+LICSGT    1319H1320H     132013202        T               1                     
+LINEVLWJN           1325 00000000                         1                     
+CRLEEDS   OO2W75    111868820 DMUA   075      S                                 
+LILEEDS   1329 1335      1329133511BD     T                                     
+LILEEDSWJ           1336 00000000   D                                           
+LIWHRDJN            1336H00000000                                               
+LIHOLBJCN           1337 00000000                                               
+LIBRMLYSR 1342 1342H     134213421        T                                     
+LINPUD    1346 1347      134613471        T             2                       
+LIMLLNJN            1355H00000000                                               
+LIBRADIN  1357 1400      135714004        T                                     
+LIMLLNJN 2          1401H00000000                         1                     
+LIHLFX    1412H1420      141314201        T                                     
+LIDYCLJN            1422H00000000                       1H                      
+LIGRTLNDJ           1426H00000000                       1                       
+LIELLAND            1428H00000000                                               
+LIBRHOUSE 1432 1432H     143214321        T           1                         
+LIBRLYWJN           1436 00000000                        H                      
+LIBRLYJN            1439 00000000                                               
+LTHDRSFLD 1445 14456     TF                                                     

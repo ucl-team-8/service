@@ -1,0 +1,41 @@
+BSNY918151512141605131111100 POO2N42    121796000ZDMUS   075      S            P
+BX         NTY                                                                  
+LOHEXHAM  1645 16452         TB                                                 
+LICRBG    1649H1650      16501650         T                                     
+LIRIDNGML 1653H1654H     16541654         T                                     
+LISTCKSFL 1658 1658H     16581658         T                                     
+LIPRUDHOE 1702 1703      17021703         T                                     
+LIWYLAM   1707 1707H     17071707         T                                     
+LIBLAYDON           1712 00000000                                               
+LIGTSHDMC 1715H1716H     171617161        T                                     
+LINRWDJN            1719H00000000                     2                         
+LIKEBGSJN           1723H00000000                                               
+LIKEBGNJN           1724 00000000                                               
+CRNWCSTLE OO2N42    111792920ZDMUS   075      S                                 
+LINWCSTLE 1726 1730      172717305        T                                     
+LIHLBDGJN           1731H00000000                                               
+LIPKLNJN            1733H00000000                                               
+LIHEWORTH 1736 1737      17361737         T                                     
+LIPELAW             1739 00000000                                               
+LIBRWHINS           1742 00000000                     1                         
+LISNDRLND 1749 1752      175017521        T                                     
+LIRYHPGRN           1755H00000000                                               
+LISEAHAM  1759 1800      175918001        T                                     
+LIHORD148           1807H00000000                       2H                      
+LIHRTLEPL 1817H1818H     181818181        T                                     
+LISETNCRW 1822H1823      182318231        T                                     
+LIGREATHM           1825H00000000                                               
+LIBLNGHM  1829 1830      182918301        T                                     
+LIBLNGHMJ           1831H00000000                                               
+LINORTONS           1834 00000000                                               
+LISTOCTON 1836H1837      183718371        T                                     
+LIHRTBJN            1838H00000000                                               
+LIBOWSFLD           1840 00000000                       2 1                     
+LITABY    1844H1845H     184518452        T           2                         
+CRMDLSBRO OO2N42    121800000ZDMUA   075      S                                 
+LIMDLSBRO 1852 1854H     185218542        T                                     
+LIGUSBROJ           1855H00000000                                               
+LIJAMCOK  1858 1859      185818591        T                                     
+LIMARTON  1901 1901H     190119011        T                                     
+LIGYPSYLA 1904 1904H     190419041        T                                     
+LTNUNTHRP 1907 19102     TF                                                     

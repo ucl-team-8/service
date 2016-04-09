@@ -1,0 +1,11 @@
+BSNY924921512141605131111100 PEE5A80    112233820 EMU323 090                   P
+BX         NTY                                                                  
+LOSTKPCS  0514 0000          TB                                                 
+LISTKPVIA 0519 0523      00000000   FL    RM                                    
+LISTKP              0524 000000002                      1                       
+LISTKPE1            0526 00000000                       1                       
+LIADSWDRD           0528 00000000                                               
+LICHDH              0529 000000002                      4H                      
+LIWLMSL             0536 000000004                                              
+LIALDEDGE 0538 0542      00000000         RM                                    
+LTWLMSL  20545 00001     TF                                                     

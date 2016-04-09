@@ -1,0 +1,27 @@
+BSNY921441512141605131111100 POO2S21    112226820 DMUA   075      S            P
+BX         NTY                                                                  
+LOSHEFFLD 0914 09142C        TB                                                 
+LIDORESNJ           0920 00000000                                               
+LIDORE    0921 0921H     09210921         T                                     
+LIDOREWJ            0922H00000000                                               
+LITOTLYTE           0923 00000000                                               
+LIGRNDLFD 0928 0929      092809291        T                                     
+LIHATHRSG 0932 0932H     093209321        T                                     
+LIBAMFORD 0935H0936H     09360936         T                                     
+LIHOPD    0939H0940      094009401        T                                     
+LIERLESDG           0942 00000000                                               
+LIEDALE   0947 0948      094709481        T                                     
+LICHNLYEJ           0953H00000000                                               
+LICHNLYNJ           0954 00000000                                               
+LICHNLY   0955H0956      095609561        T                                     
+LINWMILSJ           0959H00000000                                               
+LINWMILSC 1002 1003H     100210031        T                                     
+LIMARPLE  1008 1009      100810091        T                                     
+LIMARPLWJ           1010H00000000                                               
+LIROMILEY 1012 1013      10121013         T                                     
+LIBREDBRY 1015H1016      10161016         T                                     
+LIBRNGTN  1018 1019      10181019         T                                     
+LIREDISHN 1021H1022      10221022         T           1                         
+LIASHBRYS           1027 00000000                     1  H                      
+LIARDWCKJ           1030 00000000   EL                                          
+LTMNCRPIC 1033 10341  EL TF                                                     

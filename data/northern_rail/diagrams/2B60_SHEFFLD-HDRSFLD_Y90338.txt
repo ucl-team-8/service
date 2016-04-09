@@ -1,0 +1,23 @@
+BSNY903381512141605131111100 POO2B60    111803920 DMUA   075      S            P
+BX         NTY                                                                  
+LOSHEFFLD 1937 19374A        TB                                                 
+LINNRYMLJ           1938H00000000                                               
+LIWNCOJN            1941H00000000                                               
+LIMEADWHL 1942 1943      194219434        T                                     
+LIECLSFLW           1946H00000000                                               
+LICHPLTWN 1948H1949      19491949         T                                     
+LIELSC    1953H1954H     19541954         T                                     
+LIWOMBWEL 1957H1958      19581958         T                                     
+LIBNSLY   2003 2008      200320082        T                                     
+LIDODWRTH 2013H2014      20142014         T                                     
+LISKSCMN  2017 2018      20172018         T               1                     
+LIPENISTN 2024 2025      20242025         T                                     
+LIDNDL    2031 2031H     20312031         T                                     
+LICLYTNWJ           2034H00000000                                               
+LISPLY    2035H2036H     20362036         T                                     
+LISTKSMR  2038H2039      20392039         T                                     
+LIBKHLS   2042 2043      20422043         T                                     
+LIHONLEY  2045 2045H     20452045         T                                     
+LIBERRYB  2047H2048H     20482048         T                                     
+LILKWD    2050H2051      20512051         T           1    H                    
+LTHDRSFLD 2055 20572     TF                                                     

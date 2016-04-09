@@ -1,0 +1,22 @@
+BSNY915391512141605131111100 POO2J65    112242110 DMUA   075      S            P
+BX         NTY                                                                  
+LOBLKB    1920 19204         TB                                                 
+LIBLKBDJN           1921H00000000                                               
+LIACRNGTN 1927 1928      192719281        T                                     
+LIROSG    1934H1935      193519351        T                                     
+LIGANNOWJ           1936H00000000                                               
+LIBURNMR  1938 1939      193819392        T                                     
+LICOPYPIT           1946H00000000                                               
+LISTNSHJN           1953H00000000                                               
+LITODMRDN 1955 1956      195519561        T                                     
+LILITLBRO 2002H2003H     200320031        T                                     
+LISMBG    2005H2006      200620061        T                                     
+LIRCHDLEJ           2008H00000000                                               
+LIRCHDALE 2009H2010H     201020103        T                                     
+LICSTL    2013 2013H     20132013         T                                     
+LICSTLTEJ           2014H00000000                                               
+LIMLSHILL 2017H2018H     20182018         T                                     
+LIVTRLWKS           2020 00000000                                               
+LITHRPSBJ           2022H00000000                     2                         
+LIMILESPL           2025H00000000   FL                  2                       
+LTMNCRVIC 2031 20335     TF                                                     

@@ -1,0 +1,23 @@
+BSNY909621512141605131111100 POO2F75    112220110 DMUS   075      S            P
+BX         NTY                                                                  
+LOSBYD    1630 16305         TB                                                 
+LIASHONUL 1633H1634      16341634         T                                     
+LIASHTMNJ           1635H00000000                                               
+LIBAGLYFJ           1638H00000000                                               
+LIPHILPK1           1639H00000000                                               
+LIMILESPL           1640 00000000   SL                                          
+CRMNCRVIC OO2F75    112225110 DMUS   075      S                                 
+LIMNCRVIC 1644 1646      164416466  FL    T                                     
+LIMNCRDST           1648 00000000                                               
+LISLFDORD 1649 1649H     16491649         T                                     
+LISLFDCT  1652 1653      165216532        T                                     
+LISWNT    1659 1659H     16591659         T                                     
+LIMRSD    1701H1702      17021702         T                                     
+LIWALKDEN 1705 1706      17051706         T                                     
+LIATHERTN 1711 1712      17111712         T                                     
+LIHAGFOLD 1714 1714H     17141714         T                                     
+LIDAISYH  1717 1717H     17171717         T                                     
+LICRWNSTJ           1720H00000000                                               
+LIHINDLEY 1721H1722H     17221722         T                                     
+LIINCE    1725 1725H     17251725         T           2                         
+LTWIGANWL 1730 17301     TF                                                     

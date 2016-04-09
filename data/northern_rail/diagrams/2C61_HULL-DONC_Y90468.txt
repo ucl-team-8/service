@@ -1,0 +1,16 @@
+BSNY904681512141605131111100 POO2C61    111808920ZDMUS   075      S            P
+BX         NTY                                                                  
+LOHULL    1425 14255         TB                                                 
+LIHESSLRD           1428H00000000                                               
+LIHESSLE  1431H1432      14321432         T                                     
+LIFERRIBY 1436 1437      14361437   SL    T                                     
+LIBROUGH  1441H1442H     14421442         T                                     
+LIGLBRDYK 1449H1450      14501450         T                                     
+LIGOOLE   1459 1501      145915012        T                                     
+CRTHORNEN OO2C61    111816820ZDMUS   075      S                                 
+LITHORNEN 1509 1509H     15091509         T             1                       
+LITHORNEJ           1513 00000000                                               
+LIHTFLASF 1515H1516H     15161516         T               1                     
+LIKKSNDAL 1521H1522      15221522         T                                     
+LIBTLYJN            1525H00000000                     2                         
+LTDONC    1530 15301     TF                                                     

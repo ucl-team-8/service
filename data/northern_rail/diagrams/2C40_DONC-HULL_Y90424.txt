@@ -1,0 +1,16 @@
+BSNY904241512141605131111100 POO2C40    111816820 DMUS   075      S            P
+BX         NTY                                                                  
+LODONC    1953 19531         TB                                                 
+LIBTLYJN            1955H00000000                                               
+LIKKSNDAL 1958H1959      19591959         T                                     
+LIHTFLASF 2003 2004      20032004         T                                     
+LITHORNEJ           2006H00000000                                               
+CRTHORNEN OO2C40    111808920 DMUS   075      S                                 
+LITHORNEN 2009 2009H     20092009         T                                     
+LIGOOLE   2017H2018H     201820181        T               1                     
+LIGLBRDYK 2027 2027H     20272027         T                                     
+LIBROUGH  2034H2035H     20352035         T                                     
+LIFERRIBY 2039H2040      20402040         T                                     
+LIHESSLE  2043H2044H     20442044         T           2                         
+LIHESSLRD           2050H00000000                                               
+LTHULL    2054 20556     TF                                                     

@@ -1,0 +1,13 @@
+BSNY928601512141605131111100 PEE5M81    112220821 DMUA   075                   P
+BX         NTY                                                                  
+LONWTNHDD 0524 0000          TB                                                 
+LITHRPSBJ           0526 00000000   ML                                          
+LIBREWRYS           0528 00000000                                               
+LIPHILPK1           0531 00000000                                               
+LIBAGLYFJ           0532 00000000                                               
+LIASHTMNJ           0535H00000000                       7                       
+LISBYD              0546 000000004                                              
+LIGFLD              0552 00000000                                               
+LIDIGGLEJ           0554 00000000                                               
+LIMRSN              0558 000000001                    1 2                       
+LTHDRSFLD 0608 00004B    TF                                                     

@@ -1,0 +1,31 @@
+BSNY916941512141605131111100 POO2M641119111871821 DMUS   075      S S          P
+BX         NTY                                                                  
+LOLEEDS   1919 191910BD      TB                                                 
+LILEEDSWJ           1920 00000000   D                                           
+LIWHRDJN            1920H00000000                                               
+LIHOLBJCN           1921 00000000                                               
+LIBRMLYSR 1926 1926H     192619261        T                                     
+LINPUD    1930 1931      193019311        T                                     
+LIMLLNJN            1937H00000000                                               
+LIBRADIN  1939 1942      193919423        T                                     
+LIMLLNJN 2          1943H00000000                                               
+LIHLFX    1953H1954H     195419541        T                                     
+LIMLNRYDJ           1959 00000000                                               
+LISWRBBDG 2000H2001      200120011        T                                     
+LIMYTHLMR 2006 2007      200620071        T                                     
+LIHBDNBDG 2009H2010H     201020101        T                                     
+LIHALRYDJ           2015H00000000                                               
+LITODMRDN 2017 2018      201720181        T                                     
+LIWDEN    2020H2021      202120211        T                                     
+LILITLBRO 2026H2027H     202720271        T                                     
+LISMBG    2029H2030      203020301        T                                     
+LIRCHDLEJ           2032H00000000                                               
+LIRCHDALE 2033H2034H     203420343        T                                     
+LICSTL    2037 2037H     20372037         T                                     
+LICSTLTEJ           2038H00000000                                               
+LIMLSHILL 2041H2042H     20422042         T                                     
+LIVTRLWKS           2044 00000000                                               
+LIMSTN    2045 2045H     20452045         T           2                         
+LITHRPSBJ           2050H00000000                                               
+LIMILESPL           2052 00000000   SL    X                                     
+LTMNCRVIC 2055 20571     TF                                                     

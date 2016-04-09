@@ -1,0 +1,15 @@
+BSNY904131512141605131111100 POO2C37    122358000 DMUS   075      S            P
+BX         NTY                                                                  
+LOBAROW   0805 08051         TB                                                 
+LIPSTH              0811H00000000                                               
+LIASKAM   0814H0815      08150815         T                                     
+LIKRKBYIF 0819 0819      08190819         R                                     
+LIFOXFILD 0822H0822H     08220822         R                                     
+LIGREENRD 0826 0826      08260826         R                                     
+LIMLLM    0832 0833      08320833         T                                     
+LISILCRFT 0837H0837H     08370837         R                                     
+LIBOOTLE  0844 0844      08440844         R                                     
+LIRGLS    0849H0850      08500850         T                                     
+LIDRIGG   0853 0853      08530853         R                                     
+LISEASCAL 0856 0856H     08560856         T           2                         
+LTSELAFLD 0903 0903      TF                                                     

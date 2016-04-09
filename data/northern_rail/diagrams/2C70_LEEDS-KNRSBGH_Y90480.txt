@@ -1,0 +1,15 @@
+BSNY904801512141605131111100 POO2C70    111830820 DMUA   075      S            P
+BX         NTY                                                                  
+LOLEEDS   1859 18596C B      TB                                                 
+LILEEDSWJ           1900 00000000   DH                                          
+LIARMLJCN           1901H00000000                                               
+LIBRLEYPK 1903 1904      19031904         T                                     
+LIHEDNGLY 1906H1907      19071907         T                                     
+LIHSFT    1911H1912H     191219122        T                                     
+LIWEETON  1920 1920H     19201920         T                                     
+LIRIGTON            1923 00000000                                               
+LIPANNAL  1925H1926H     19261926         T                                     
+LIHRNBPK  1931 1931H     19311931         T                                     
+LIHAGT    1934 1936      193419361        T                                     
+LISTARBCK 1940 1940H     194019402        T           2   1                     
+LTKNRSBGH 1946H19472     TF                                                     

@@ -1,0 +1,18 @@
+BSNY931441512141605121111000 PEE5N12    122350000 DMUA   075                   P
+BX         NTY                                                                  
+LOCOLNE   2355 00001         TB                                                 
+LICHAFRSS 2358H2358H     00000000         OP                                    
+LIGANNOWJ           0006H00000000                                               
+LIACRNGTN           0013H000000002                                              
+LIBLKBDJN           0019H00000000   UEL                                         
+LIBLKB              0020H000000004                                              
+LILSTHJN            0029 00000000                     2                         
+LIFRNGTNC           0034 00000000   SL                                          
+LIPRST    0037 0043      000000002  SL    -U                                    
+LIPRSTNFJ           0044 00000000                                               
+LIKIRKMNJ           0053 00000000                                               
+LIKIRKM51           0056 00000000                                               
+LIPLTNLFY           0059 000000001                    1 1                       
+LILAYTCLX           0103 00000000                                               
+LIBLCKPLN 0107 0118      000000002        OPRM                                  
+LTBLCKNCS 0123 0000      TF                                                     

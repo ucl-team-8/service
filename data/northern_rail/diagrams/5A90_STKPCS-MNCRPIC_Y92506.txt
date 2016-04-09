@@ -1,0 +1,8 @@
+BSNY925061512141605131111100 PEE5A904022112233820 EMU323 090                   P
+BX         NTY                                                                  
+LOSTKPCS  0440 0000          TB                                                 
+LISTKPVIA 0445 0445      00000000   SL    OP                                    
+LIHTNOJN            0446H00000000                       5H                      
+LISLDLJN            0455 00000000                                               
+LIARDWCKJ           0457 00000000   FL                                          
+LTMNCRPIC 0500 00008  FL TF                                                     

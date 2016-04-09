@@ -1,0 +1,18 @@
+BSNY915691512141605131111100 POO2K10    112231820 EMU323 090      S S          P
+BX         NTY                                                                  
+LOMNCRPIC 1946 19465  FL     TB                                                 
+LIARDWCKJ           1948 00000000                                               
+LISLDLJN            1950 00000000                                               
+LIHTNOJN            1952H00000000                                               
+LISTKP    1954 1955      195419552        T                                     
+LISTKPE1            1956 00000000                                               
+LIADSWDRD           1957 00000000                                               
+LICHDH    1958H1959      195919594        T                                     
+LIBMHL    2001H2002      20022002         T                                     
+LIPOYNTON 2004H2005      20052005         T                                     
+LIADLC    2008 2008H     20082008         T                                     
+LIPSBY    2011 2011H     20112011         T                                     
+LIMACLSFD 2014H2015H     201520152        T                                     
+LICONGLTN 2022 2023      20222023         T                                     
+LIKIDSGRV 2028H2029      20292029         T                                     
+LTSTOKEOT 2037 20393     TF                                                     

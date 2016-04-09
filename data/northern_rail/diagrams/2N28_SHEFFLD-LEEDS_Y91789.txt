@@ -1,0 +1,24 @@
+BSNY917891512141605131111100 POO2N28    111810920 DMUA   075      S S          P
+BX         NTY                                                                  
+LOSHEFFLD 1414 14145B        TB                                                 
+LINNRYMLJ           1415H00000000                         1                     
+LIWNCOJN            1419H00000000                                               
+LIMEADWHL 1420 1421      142014212        T                                     
+LIROTHHJN           1424 00000000                                               
+LIROTHCEN 1426 1427      142614272        T             1                       
+LIALDWRKJ           1432H00000000                                               
+LISWINTN  1436 1437      14361437         T                                     
+LIBLTNODR 1440H1441H     14411441         T                                     
+LIGLDTHRP 1443H1444H     14441444         T                                     
+LITRNO    1446H1447H     14471447         T                                     
+LIMORTHRP 1452 1453      145214532        T                                     
+LISKIRBYJ           1454 00000000                                               
+LIFITZWLM 1458 1459      145814592        T                                     
+LIHAREPKJ           1502H00000000                                               
+LISABR    1504H1505      150515052        T                                     
+LIWKFLDWG 1508H1509H     150915092        T                                     
+LIOUTWOOD 1514 1514H     151415142        T           2  H3                     
+LIHOLBJCN           1527H00000000                                               
+LIWHRDJN            1528 00000000   C                                           
+LILEEDSWJ           1528H00000000   C                                           
+LTLEEDS   1530 153012B   TF                                                     

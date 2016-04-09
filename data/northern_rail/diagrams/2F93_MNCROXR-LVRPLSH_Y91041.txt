@@ -1,0 +1,29 @@
+BSNY910411512141605131111100 POO2F934844112236820 DMUS   075      S S          P
+BX         NTY                                                                  
+LOMNCROXR 0739 07392         TB                                                 
+LIMNCRDGT 0740H0741      074107412        T                                     
+LICFLDJN            0741H00000000                       1                       
+LITRFDPEJ           0745 00000000                        H                      
+LITRFDPK  0747 0747H     07470747         T                                     
+LIURMSTON 0750H0751      07510751         T                                     
+LIFLIXTON 0753H0754      07540754         T                                     
+LIIRLAM   0757H0758      07580758         T                                     
+LIGLAZBKE           0759H00000000                                               
+LIGLAZBRK 0800H0801      08010801         T                                     
+LIBIRCHWD 0805 0805H     08050805         T                                     
+LIPADGATE 0808 0808H     08080808         T                                     
+CRWRGT    OO2F934844112299820 DMUS   075      S S                               
+LIWRGT    0811H0812      081208122        T                                     
+LISANKEY  0815H0816H     08160816         T                                     
+LIWIDNES  0821H0822      08220822         T                                     
+LIHOUGHGR 0825 0825H     08250825         T                                     
+LIHALW    0829 0829H     08290829         T                                     
+LIHUNTSX  0832 0833      083208331  DML   T                                     
+LIHUNTXWJ           0835 00000000                     2                         
+LIALERTN  0838 0838H     083808382  FL    T                                     
+LIWALERTN 0841 0841H     084108412        T                                     
+LIMSLH    0843H0844      084408442        T                                     
+LIWVRTREJ           0846H00000000                                               
+LIEDGHSB            0848 00000000                                               
+LIEDGH    0849 0849H     084908494        T             1H                      
+LTLVRPLSH 0855 08559     TF                                                     

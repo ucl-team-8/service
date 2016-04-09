@@ -1,0 +1,16 @@
+BSNY915001512141605131111100 POO2J47    111874020 DMUA   075      S            P
+BX         NTY                                                                  
+LOLEEDS   1756 175613BF      TB                                                 
+LILEEDSWJ           1757 00000000   F                                           
+LIWHRDJN            1757H00000000                                               
+LICOTNGLY 1801 1802      18021802         T                                     
+LIMRLY    1805 1806      18061806         T                                     
+LIBATLEY  1810H1811H     18111811         T                                     
+LIDWBY    1814 1815      18151815         T                                     
+LIRTHP    1817H1818      18181818         T                                     
+LITHHLNWJ           1818H00000000                       1H                      
+LIMIRFEJN           1821 00000000   SL    X             1H                      
+LIMIRFILD 1824 1825      182418243        T           1   1                     
+LIHETNLJN           1829 00000000                                               
+LIDEIGHTN 1831H1832      183218322        T                                     
+LTHDRSFLD 1836 18376     TF                                                     

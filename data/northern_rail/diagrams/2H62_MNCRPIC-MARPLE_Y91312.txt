@@ -1,0 +1,13 @@
+BSNY913121512141605131111100 POO2H62    112226110 DMUA   075      S            P
+BX         NTY                                                                  
+LOMNCRPIC 1802 18021  EL     TB                                                 
+LIARDWCKJ           1804 00000000                       2                       
+LIASHBRYS 1807H1808      18081808         T                                     
+LIBLLVUE  1810 1810H     18101810         T                                     
+LIRYDRBRW 1812 1812H     18121812         T                                     
+LIREDISHN 1814H1815      18151815         T                                     
+LIBRNGTN  1818 1818H     18181818         T                                     
+LIBREDBRY 1821 1821H     18211821         T                                     
+LIROMILEY 1824 1824H     182418242        T                                     
+LIMARPLWJ           1826H00000000                        H                      
+LTMARPLE  1828 18292     TF                                                     

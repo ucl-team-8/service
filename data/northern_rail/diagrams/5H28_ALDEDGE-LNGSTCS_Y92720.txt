@@ -1,0 +1,12 @@
+BSNY927201512141605131111100 PEE5H28    112232820 DMUS   075                   P
+BX         NTY                                                                  
+LOALDEDGE 2346 0000          TB                                                 
+LIWLMSL             2349 000000003                    1                         
+LICHDH              2353H000000001                                              
+LIADSWDRD           2354H00000000   SL                                          
+LISTKPE1            2356 00000000                                               
+LISTKP    2358 2359      000000004        C                                     
+LIHTNOJN            0001 00000000                                               
+LISLDLJN            0004 00000000   FL                                          
+LILNGSGHT           0006 00000000                                               
+LTLNGSTCS 0011 0000      TF                                                     

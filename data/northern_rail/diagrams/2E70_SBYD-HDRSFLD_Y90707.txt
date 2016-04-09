@@ -1,0 +1,9 @@
+BSNY907071512141605131111100 POO2E70    112220821 DMUA   075      S            P
+BX         NTY                                                                  
+LOSBYD    0641 06414         TB                                                 
+LIMOSSLEY 0645 0645H     06450645         T                                     
+LIGFLD    0649 0649H     06490649         T                H                    
+LIDIGGLEJ           0653 00000000                                               
+LIMRSN    0657H0658      065806581        T                                     
+LISLTHWTE 0701H0702H     07020702         T           1                         
+LTHDRSFLD 0709 07104B    TF                                                     

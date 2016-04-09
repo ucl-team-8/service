@@ -1,0 +1,7 @@
+BSNY931391512141605121111000 PEE5H12    111818620 DMUE   090                   P
+BX         NTY                                                                  
+LOLEEDS   2358 000011AB      TB                                                 
+LILEEDSWJ           2359 00000000                                               
+LILEED631 0001 0004      00000000   A     RM                                    
+LILEEDSWJ2          0006 00000000   A                                           
+LTLEEDS  20008 00005B    TF                                                     

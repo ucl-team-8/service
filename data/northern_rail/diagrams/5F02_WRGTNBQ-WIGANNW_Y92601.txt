@@ -1,0 +1,9 @@
+BSNY926011512141605131111100 PEE5F02    122291000 DMUA   075                   P
+BX         NTY                                                                  
+LOWRGTNBQ 0725 00004  SL   5 TB                                                 
+LIWINWCKJ           0735 00000000   FL                  3                       
+LIGOLBRNJ           0740 00000000                                               
+LISPRBJN            0744 00000000                                               
+LIWIGASJN           0745 00000000   UPL                                         
+LIWIGANSJ           0746 00000000                                               
+LTWIGANNW 0747 00002     TF                                                     

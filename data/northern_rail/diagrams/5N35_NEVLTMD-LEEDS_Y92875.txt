@@ -1,0 +1,6 @@
+BSNY928751512141605131111100 PEE5N35    121831000 DMUA   075                   P
+BX         NTY                                                                  
+LONEVLTMD 1716 0000          TB                                                 
+LINEVLWJN           1718 00000000   FL    X                                     
+LIMRLNJN            1723 00000000                                               
+LTLEEDS   1726 000011A   TF-U                                                   

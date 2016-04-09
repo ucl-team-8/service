@@ -1,0 +1,23 @@
+BSNY918351512141605131111100 POO2N53    121794000 DMUA   075      S            P
+BX         NTY                                                                  
+LOCHHL    1910 1910          TB                                                 
+LIALNMOTH 1921H1922H     192219221        T                                     
+LIACKLNGT 1929H1930      19301930         T                                     
+LIWDRNGTN 1936H1937H     19371937         T                                     
+LIPEGSWD  1943 1943H     19431943         T                                     
+LIMRPTHRP 1946H1947H     194719471        T                                     
+LICRMLNGT 1955H1956      19561956         T           1                         
+LIHTONSJN           2004H00000000   ML                   H                      
+CRNWCSTLE OO2N53    121796000 DMUA   075      S                                 
+LINWCSTLE 2007H2016      200920166        T                                     
+LIKEBGNJN           2017H00000000   SL                                          
+LIKEBGSJN           2018 00000000                                               
+LINRWDJN            2020 00000000                                               
+LIGTSHDMC 2023 2024      202320242        T                                     
+LIBLAYDON 2027H2028H     20282028         T                                     
+LIWYLAM   2034 2034H     20342034         T                                     
+LIPRUDHOE 2038 2039      20382039         T                                     
+LISTCKSFL 2043 2043H     20432043         T                                     
+LIRIDNGML 2047 2048      20472048         T                                     
+LICRBG    2051H2052      20522052         T           2                         
+LTHEXHAM  2058H21002     TF                                                     

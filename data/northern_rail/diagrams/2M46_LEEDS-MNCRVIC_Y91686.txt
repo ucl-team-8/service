@@ -1,0 +1,26 @@
+BSNY916861512141605131111100 POO2M461110111871821 DMUS   075      S S          P
+BX         NTY                                                                  
+LOLEEDS   1251 125110BD      TB                                                 
+LILEEDSWJ           1252 00000000   D                                           
+LIWHRDJN            1252H00000000                                               
+LIHOLBJCN           1253 00000000                                               
+LIBRMLYSR 1258 1258H     125812581        T                                     
+LINPUD    1302 1303      130213031        T                                     
+LIMLLNJN            1309H00000000                                               
+LIBRADIN  1311 1314      131113144        T                                     
+LIMLLNJN 2          1315H00000000                                               
+LIHLFX    1325H1326H     132613261        T                                     
+LIMLNRYDJ           1331 00000000                                               
+LISWRBBDG 1332H1333      133313331        T                                     
+LIMYTHLMR 1338 1339      133813391        T                                     
+LIHBDNBDG 1341H1342H     134213421        T                                     
+LIHALRYDJ           1347H00000000                                               
+LITODMRDN 1349 1350      134913501        T                                     
+LILITLBRO           1356 000000001                                              
+LIRCHDLEJ           1358H00000000                                               
+LIRCHDALE 1359H1400H     140014003        T                                     
+LICSTLTEJ           1403 00000000                                               
+LIVTRLWKS           1406H00000000                     2                         
+LITHRPSBJ           1411 00000000                                               
+LIMILESPL           1412 00000000   FL                                          
+LTMNCRVIC 1415 14173     TF                                                     

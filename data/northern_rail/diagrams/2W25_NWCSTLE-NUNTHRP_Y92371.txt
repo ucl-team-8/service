@@ -1,0 +1,29 @@
+BSNY923711512141605131111100 POO2W25    111792920 DMUA   075      S            P
+BX         NTY                                                                  
+LONWCSTLE 1030 10301         TB                                                 
+LIHLBDGJN           1031H00000000                                               
+LIPKLNJN            1033H00000000                                               
+LIHEWORTH 1036 1037      10361037         T                                     
+LIPELAW             1039 00000000                                               
+LIBRWHINS           1042 00000000                     1                         
+LISNDRLND 1049 1050H     104910501        T                                     
+LIRYHPGRN           1053H00000000                                               
+LISEAHAM  1057H1058      105810581        T                                     
+LIHORD148           1105H00000000                       1                       
+LIHRTLEPL 1114 1116      111411161        T                                     
+LISETNCRW 1120 1120H     112011201        T                                     
+LIGREATHM           1123 00000000                                               
+LIBLNGHM  1126H1127H     112711271        T                                     
+LIBLNGHMJ           1129 00000000                                               
+LINORTONS           1131H00000000                                               
+LISTOCTON 1134 1134H     113411341        T                                     
+LIHRTBJN            1136 00000000                                               
+LIBOWSFLD           1137H00000000                                               
+LITABY    1139 1140      113911402        T           2   1                     
+CRMDLSBRO OO2W25    121800000 DMUA   075      S                                 
+LIMDLSBRO 1147H1150H     114811502        T                                     
+LIGUSBROJ           1151H00000000                                               
+LIJAMCOK  1154 1155      115411541        T                                     
+LIMARTON  1157 1157H     115711571        T                                     
+LIGYPSYLA 1200 1200H     120012001        T                                     
+LTNUNTHRP 1203 12062     TF                                                     

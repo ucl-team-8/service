@@ -1,0 +1,20 @@
+BSNY922461512141605131111100 POO2U13    111874020 DMUS   075      S            P
+BX         NTY                                                                  
+LOHBDNBDG 0739 07391         TB                                                 
+LIMYTHLMR 0741H0742      074207422        T                                     
+LISWRBBDG 0747 0748      074707482        T               1                     
+LIMLNRYDJ           0750 00000000                                               
+LIGRTLNDJ           0752 00000000                                               
+LIBRHOUSE 0756H0757      075607561        T                                     
+LIBRLYWJN           0759H00000000                         1                     
+LIHETNLEJ           0802H00000000                                               
+LIMIRFILD 0804 0805      080408051        T                                     
+LIMIRFEJN           0806H00000000                                               
+LIRTHP    0807H0808      08080808         T                                     
+LIDWBY    0811 0812      08110812         T                                     
+LIBATLEY  0814H0815H     08150815         T                                     
+LIMRLY    0820H0821H     08210821         T                                     
+LICOTNGLY 0824H0825H     08250825         T           1   1                     
+LIWHRDJN            0831 00000000   E                                           
+LILEEDSWJ           0831H00000000   E                                           
+LTLEEDS   0833 083413B   TF                                                     

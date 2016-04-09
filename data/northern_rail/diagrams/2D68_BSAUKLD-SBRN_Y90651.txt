@@ -1,0 +1,23 @@
+BSNY906511512141605131111100 POO2D68    121801000 DMUA   075      S            P
+BX         NTY                                                                  
+LOBSAUKLD 1902 19021         TB                                                 
+LISHDN    1906H1907H     190719071        T                                     
+LINWTA    1911H1912      191219121        T                                     
+LIHGHNGTN 1915 1916      19151916         T                                     
+LINTRD    1923H1924      192419241        T               1                     
+LIDLTN    1928 1930      192819301        T                                     
+LIDINSDAL 1935 1935H     193519352        T                                     
+LIALLENSW 1941H1942H     194219422        T                                     
+LIEGLSCLF 1944 1944H     194419442        T                                     
+LISTOCCJN           1946H00000000                                               
+LIBOWSFLD           1947H00000000                                               
+LITABY    1949 1950      194919502        T           1                         
+LIMDLSBRO 1955H1957      195619572        T                                     
+LIGUSBROJ           1958 00000000                                               
+LISTHBANK 2001 2001H     200120012        T                                     
+LIREDCARC 2008 2009      200820092        T                                     
+LIREDCARE 2011 2011H     201120112        T                                     
+LILONGBCK 2014H2015H     201520152        T                                     
+LIMRSK    2016H2017      201720172        T           2                         
+LISBRNWJN           2021H00000000                                               
+LTSBRN    2023H20251     TF                                                     

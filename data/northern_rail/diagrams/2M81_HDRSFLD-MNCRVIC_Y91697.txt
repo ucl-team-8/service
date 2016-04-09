@@ -1,0 +1,14 @@
+BSNY916971512141605131111100 POO2M81    112220821 DMUA   075      S            P
+BX         NTY                                                                  
+LOHDRSFLD 1745 17454B        TB                                                 
+LISLTHWTE 1751H1752      17521752   UPV   T                                     
+LIMRSN    1757 1758      175717583  UPL   T                                     
+LIDIGGLEJ           1803H00000000      UPL                                      
+LIGFLD              1805H00000000                                               
+LISBYD    1811 1812      181118123        T                                     
+LIASHONUL 1815H1816      18161816         T                H                    
+LIASHTMNJ           1818 00000000                                               
+LIBAGLYFJ           1821 00000000                     2                         
+LIPHILPK1           1824 00000000                                               
+LIMILESPL           1824H00000000   SL                  2                       
+LTMNCRVIC 1830 18301     TF                                                     

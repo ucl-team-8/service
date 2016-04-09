@@ -1,0 +1,16 @@
+BSNY918261512141605131111100 POO2N51    112349820 DMUS   075      S            P
+BX         NTY                                                                  
+LOMNCRVIC 0555 05555  FL     TB                                                 
+LIMNCRDST           0556H00000000                                               
+LISLFDORD           0557 00000000                                               
+LISLFDCT  0559 0600      055906002        T                                     
+LIBOLTON  0611 0612      061106121        T                                     
+LIHITW    0616H0617      06170617         T                                     
+LIBRMCRSS 0619H0620      06200620         T                                     
+LIDARWEN  0631 0636      06310636         T X                                   
+LIBLKB    0643 0644H     064306442        T                                     
+LIBLKBDJN           0646 00000000                                               
+LIRMSWILP 0650 0651      065006512        T                                     
+LILGHO    0655 0655H     065506552        T                                     
+LIWHALLEY 0659 0700      065907002        T           2                         
+LTCLITHRO 0708 07092     TF                                                     

@@ -1,0 +1,5 @@
+BSNY925771512141605131111100 PEE5D90    121799000 DMUA   075                   P
+BX         NTY                                                                  
+LODLTN    2108 00002         TB                                                 
+LIDLTNS   2109H2112H     00000000         OP                                    
+LTDLTN   22114 00001     TF                                                     

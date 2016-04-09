@@ -1,0 +1,29 @@
+BSNY923661512141605131111100 POO2W22    121800000 DMUA   075      S            P
+BX         NTY                                                                  
+LONUNTHRP 0916 09162         TB                                                 
+LIGYPSYLA 0917H0918      091809181        T                                     
+LIMARTON  0920 0920H     092009201        T                                     
+LIJAMCOK  0922H0923H     092309231        T           1   3                     
+LIGUSBROJ           0930 00000000                                               
+CRMDLSBRO OO2W22    111792920 DMUS   075      S                                 
+LIMDLSBRO 0931 0932      093109321        T                                     
+LITABY    0936H0937      093709371        T                                     
+LIBOWSFLD           0939 00000000                                               
+LIHRTBJN            0940 00000000                                               
+LISTOCTON 0942 0943      094209432        T                                     
+LINORTONS           0946 00000000                                               
+LIBLNGHMJ           0948H00000000                                               
+LIBLNGHM  0949H0950      095009502        T                                     
+LIGREATHM           0953 00000000                                               
+LISETNCRW 0955H0956H     095609562        T                                     
+LIHRTLEPL 1000H1002      100110021        T                                     
+LIHORD137           1010H00000000                                               
+LISEAHAM  1017 1017H     101710172        T                                     
+LIRYHPGRN           1021H00000000                     2                         
+LISNDRLND 1027H1030      102810304        T             1 2                     
+LIBRWHINS           1039 00000000                                               
+LIPELAW             1042 00000000                                               
+LIHEWORTH 1043 1044      10411042         T                                     
+LIPKLNJN            1046H00000000                        H                      
+LIHLBDGJN           1049 00000000                                               
+LTNWCSTLE 1051 10515     TF                                                     

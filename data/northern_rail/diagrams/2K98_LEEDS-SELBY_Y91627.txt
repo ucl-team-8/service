@@ -1,0 +1,11 @@
+BSNY916271512141605131111100 POO2K98    111835920 DMUS   075      S            P
+BX         NTY                                                                  
+LOLEEDS   0636 06367A        TB                                                 
+LINEVLWJN           0638H00000000                                               
+LICSGT              0641H000000001                                              
+LIMCKLFLD 0646H0647      064706471        T                                     
+LISMILFD  0651 0652      065106521        T              H                      
+LIGSCGNWJ           0654H00000000                                               
+LIHAMBLWJ           0656 00000000                                               
+LIHAMBLEJ           0657 00000000                                               
+LTSELBY   0702 07021     TF                                                     

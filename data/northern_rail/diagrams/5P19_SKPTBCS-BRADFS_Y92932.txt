@@ -1,0 +1,7 @@
+BSNY929321512141605131111100 PEE5P19    111820820 EMU333 100                   P
+BX         NTY                                                                  
+LOSKPTBCS 0510 0000          TB                                                 
+LISKPT    0515 0521      000000002X       C A           1                       
+LIKEIGHLY           0530 000000001                      2                       
+LISHPY              0538H000000005                    1   1                     
+LTBRADFS  0545 00002     TF                                                     

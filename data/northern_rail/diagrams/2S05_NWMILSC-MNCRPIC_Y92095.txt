@@ -1,0 +1,15 @@
+BSNY920951512141605131111100 POO2S05    112226820 DMUA   075      S            P
+BX         NTY                                                                  
+LONWMILSC 0611 06111         TB                                                 
+LISTRINES 0613H0614      061406141        T                                     
+LIMARPLE  0617 0617H     061706171        T                                     
+LIMARPLWJ           0619 00000000                                               
+LIROMILEY 0620H0621      06210621         T                                     
+LIBREDBRY 0623H0624      06240624         T                                     
+LIBRNGTN  0626 0626H     06260626         T                                     
+LIREDISHN 0629 0629H     06290629         T                                     
+LIRYDRBRW 0631H0632      06320632         T                                     
+LIBLLVUE  0633 0633H     06330633         T                                     
+LIASHBRYS 0636 0636H     06360636         T              H                      
+LIARDWCKJ           0639 00000000   EL                  2                       
+LTMNCRPIC 0644 06441  EL TF                                                     

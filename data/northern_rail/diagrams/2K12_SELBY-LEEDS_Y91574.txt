@@ -1,0 +1,13 @@
+BSNY915741512141605131111100 POO2K12    111835920 DMUE   090      S            P
+BX         NTY                                                                  
+LOSELBY   0714 07141         TB                                                 
+LIHAMBLEJ           0719 00000000                                               
+LIHAMBLWJ           0720 00000000                       1                       
+LIGSCGNWJ           0722H00000000                                               
+LISMILFD  0724 0725      072407252        T                                     
+LIMCKLFLD 0729H0730H     073007302        T                                     
+LIEGRFRTH 0733H0734H     073407342        T                                     
+LIGARFRTH 0736 0737      073607372        T                                     
+LICSGT              0740 000000002                         H                    
+LINEVLWJN           0743 00000000                          H                    
+LTLEEDS   0747 07487A    TF                                                     

@@ -1,0 +1,33 @@
+BSNY918711512141605131111100 POO2N88    112249820 DMUS   075      S            P
+BX         NTY                                                                  
+LOLVRPLSH 1716 17161  SL     TB                                                 
+LIEDGH              1719H000000001                                              
+LIEDGHSB            1720 00000000                                               
+LIBOOTLBJ           1720H00000000                                               
+LIOLIVEMJ           1721H00000000                                               
+LIBROADGR 1723 1724      17231724         T                                     
+LIROBY    1727 1727H     17271727         T                                     
+LIHUYTON  1729 1730      17291730         T                                     
+LIHUYTJUN           1730H00000000                                               
+LIPRESCOT 1734 1734H     17341734         T                                     
+LIECPK    1736H1737      17371737         T                                     
+LITHHT    1739 1740      17391740         T                                     
+LISTHLNSC 1743 1744      174317441        T                                     
+LIGARW    1750H1751H     17511751         T                                     
+LIBRYN    1754 1754H     17541754         T                                     
+LISPRBJN            1758H00000000   FL                                          
+LIWIGASJN           1759H00000000                                               
+LIWIGANNW 1801 1803H     180118035        T                                     
+LIBALSHWL           1812 00000000   SL                                          
+LIEUXT    1813H1814      18141814         T                                     
+LIEUXTONJ           1816 00000000                                               
+LILEYLAND 1818H1819      18191819         T           2                         
+LIFRNGTNC           1823H00000000                       4                       
+LIPRST    1830 1832      183018321  SL    T                                     
+LIPRSTNFJ           1833 00000000                                               
+LIKIRKHAM 1841 1842      184118421        T                                     
+LIKIRKMNJ           1843H00000000                                               
+LIKIRKM51           1846H00000000                                               
+LIPLTNLFY 1849H1850      185018501        T           1                         
+LILAYTCLX           1853 00000000                                               
+LTBLCKPLN 1857 18592     TF                                                     

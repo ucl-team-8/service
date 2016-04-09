@@ -1,0 +1,33 @@
+BSNY901371512141605131111100 PXX1W48    111808920 DMUS   075      S S          P
+BX         NTY                                                                  
+LOSHEFFLD 1741 17414A        TB                                                 
+LINNRYMLJ           1742H00000000                                               
+LIWNCOJN            1745H00000000                                               
+LIMEADWHL 1746 1747      174617472        T                                     
+LIROTHHJN           1749H00000000                                               
+LIALDWRKJ           1752H00000000                         1                     
+LISWINTN            1755 00000000                                               
+LIMEXBRGH           1756H00000000                       1H                      
+LIDONCHJN           1803 00000000                     1 2H1                     
+LIDONC    1810H1819      181218193B       T                                     
+LIBTLYJN            1821H00000000                                               
+LIHTFLASF           1826H00000000                                               
+LITHORNEJ           1828 00000000                                               
+LIGOOLE   1837 1838      183718381        T               1                     
+LIGLBRDYK           1846 00000000                                               
+LIBROUGH  1851H1852H     18521852         T           2                         
+LIHESSLRD           1903 00000000                         1                     
+CRHULL    XX1W48    111838821 DMUS   075      S S                               
+LIHULL    1907H1915      190819157        T                                     
+LICTTGHM  1922 1922H     19221922         T                                     
+LIBEVERLY 1928 1929      192819292        T                                     
+LIHTNCRNS 1937H1938      19381938         T                                     
+LIDRIFILD 1942H1943H     19431943         T                                     
+LINAFERTN 1947 1947H     19471947         T                                     
+CRBRDLNGT XX1W48    111838821 DMUS   075      S S                               
+LIBRDLNGT 1958 2003      195820034        T                                     
+LIBEMPTON 2009 2009H     20092009         T                                     
+LIHUNMNBY 2019 2020      20192020         T                                     
+LIFILEY   2024 2025      20242025         T           2                         
+LISEAMER  2035H2036H     20362036         T                                     
+LTSCARBRO 2041H20435     TF                                                     

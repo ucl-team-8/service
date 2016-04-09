@@ -1,0 +1,30 @@
+BSNY911851512141605131111100 POO2H33    112229820 DMUS   075      S            P
+BX         NTY                                                                  
+LOCHST    1159 11596         TB                                                 
+LIMIKLTRF           1205H00000000                                               
+LIMLDSWTH 1210 1210H     12101210         T                                     
+LIDELAMER 1214H1215H     12151215         T                                     
+LICUDNGTN 1219H1220      12201220         T                                     
+LIGBNK    1224 1225      12241225         T                                     
+LINTHWICH 1229 1230      12291230         T                                     
+LILSTG    1232H1233      12331233         T                                     
+LIPLUMSB            1235 00000000                                               
+LIPLUMLEY 1236 1237      12361237         T                                     
+LIKNUTSFD 1241H1242H     12421242         T                                     
+LIMOBERLY 1246 1247      12461247         T                                     
+LIASHLEY  1250 1250H     12501250         T                                     
+LIHALE    1253 1254      12531254         T           2                         
+LIALTRNHM 1258 1259      12581259         T                                     
+LINAVGTNR 1300H1301H     13011301         T                                     
+LIDENSGTJ           1302H00000000                                               
+LINTHNDNJ           1308 00000000                                               
+LINTHNSHJ           1309 00000000                     1  H                      
+LISTKPCVJ           1312H00000000                                               
+LISTKPE2            1315 00000000   SL                                          
+LISTKP    1316 1317      131613174        T                                     
+LIHTNOJN            1318H00000000                                               
+LIHTCP    1320 1320H     132013202        T                                     
+LILVHM    1323 1323H     132313232        T                                     
+LISLDLJN            1324H00000000                                               
+LIARDWCKJ           1326 00000000                                               
+LTMNCRPIC 1329 133011 SL TF                                                     

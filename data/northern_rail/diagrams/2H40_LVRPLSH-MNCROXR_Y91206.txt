@@ -1,0 +1,27 @@
+BSNY912061512141605131111100 POO2H407600112299820 DMUA   075      S S          P
+BX         NTY                                                                  
+LOLVRPLSH 0826 08265  FL     TB                                                 
+LIEDGH    0830 0830H     083008303        T                                     
+LIEDGHSB            0831H00000000                                               
+LIWVRTREJ           0833 00000000                                               
+LIMSLH    0834H0835      083508351        T                                     
+LIWALERTN 0837 0837H     083708371        T                                     
+LIALERTN  0840 0840H     084008401        T                                     
+LIHUNTXWJ           0841H00000000   UML                                         
+LIHUNTSX            0843 000000002                                              
+LIHOUGHGR 0846H0847      08470847         T                                     
+LIWIDNES  0850 0850H     08500850         T                                     
+CRWRGT    OO2H407600112236820 DMUA   075      S S                               
+LIWRGT    0858 0859      085808591        T                                     
+LIPADGATE 0901H0902      09020902         T                                     
+LIBIRCHWD 0904H0905      09050905         T                                     
+LIGLAZBKE           0909 00000000                                               
+LIIRLAM   0910H0911H     09110911         T                                     
+LIFLIXTON 0915 0915H     09150915         T                                     
+LIURMSTON 0918 0919      09180919         T                                     
+LIHMPHRYP 0921 0921H     09210921         T                                     
+LITRFDPK  0923H0924      09240924         T           2                         
+LITRFDPEJ           0928 00000000                        H                      
+LICFLDJN            0931H00000000                                               
+LIMNCRDGT 0932 0932H     093009301        T                                     
+LTMNCROXR 0934 09355     TF                                                     

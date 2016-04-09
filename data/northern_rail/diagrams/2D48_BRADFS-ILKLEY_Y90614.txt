@@ -1,0 +1,12 @@
+BSNY906141512141605131111100 POO2D48    111821020 EMU333 100      S            P
+BX         NTY                                                                  
+LOBRADFS  1116 11162         TB                                                 
+LIFRZNGHL 1119 1119H     111911191        T                                     
+LISHPY    1122H1123H     112311233        T                                     
+LISHPYDJN           1124H00000000                                               
+LIBAILDON 1126 1126H     112611261        T                                     
+LIGUISELY 1131 1132      113111321        T                                     
+LIMENSTON 1134H1135      113511351        T                                     
+LIBURLYIW 1137 1138      113711381        T                                     
+LIBNRHYDN 1141 1141H     114111411        T           1                         
+LTILKLEY  1145H11471     TF                                                     

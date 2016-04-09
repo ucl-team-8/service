@@ -1,0 +1,20 @@
+BSNY903731512141605131111100 POO2C25    111830920 DMUA   075      S            P
+BX         NTY                                                                  
+LOYORK    1111 11118         TB                                                 
+LISKELTON           1113H00000000                                               
+LIPOPLTON 1115H1116      111611162        T                                     
+LIHAMERTN 1123 1124      112311242        T                                     
+LICATTAL  1127 1127H     112711272        T                                     
+LIKNRSBGH 1135 1136      113511361        T                                     
+LISTARBCK 1139 1139H     113911391        T                                     
+LIHAGT    1143H1145H     114411453        T                                     
+LIHRNBPK  1147H1148      11481148         T                                     
+LIPANNAL  1152H1153H     11531153         T                                     
+LIRIGTON            1156 00000000                                               
+LIWEETON  1158 1158H     11581158         T                                     
+LIHSFT    1206 1207      120612071        T                                     
+LIHEDNGLY 1211 1211H     12111211         T                                     
+LIBRLEYPK 1213 1214      12131214         T           2                         
+LIARMLJCN           1218 00000000   UH                                          
+LILEEDSWJ           1219H00000000   B                                           
+LTLEEDS   1221 12229D    TF                                                     

@@ -1,0 +1,30 @@
+BSNY900931512141605131111100 PXX1J32    111838821 DMUE   090      S S          P
+BX         NTY                                                                  
+LOSCARBRO 1625 16254         TB                                                 
+LISEAMER  1629H1630H     16301630         T                                     
+LIFILEY   1639H1640H     16401640         T                                     
+LIHUNMNBY 1644H1645H     16451645         T                                     
+LIBEMPTON 1654H1655      16551655         T               1                     
+CRBRDLNGT XX1J32    111838821 DMUE   090      S S                               
+LIBRDLNGT 1702 1706      170217065        T                                     
+LIDRIFILD 1718H1719H     17191719         T                                     
+LIBEVERLY 1731 1732      173117321        T                                     
+LICTTGHM  1737H1738H     17381738         T           2   1                     
+CRHULL    XX1J32    111808920 DMUE   090      S S                               
+LIHULL    1748 1757      174817572        T                                     
+LIHESSLRD           1800H00000000                                               
+LIBROUGH  1808 1809      18081809         T                                     
+LIGLBRDYK           1815H00000000                                               
+LISELBY   1827 1828      182718282        T                                     
+LITEMPLHJ           1833H00000000                         2                     
+LISHFTHLJ           1842 00000000                                               
+LIDONC    1848 1850      184818504        T                                     
+LIDONCHJN           1853 00000000                                               
+LIMEXBRGH           1858 00000000                        H                      
+LISWINTN            1900 00000000                                               
+LIALDWRKJ           1902 00000000                         1                     
+LIROTHHJN           1906 00000000                         1                     
+LIMEADWHL 1909 1910      190919101        T                                     
+LIWNCOJN            1910H00000000                     1                         
+LINNRYMLJ           1915 00000000                                               
+LTSHEFFLD 1917 19173B    TF                                                     

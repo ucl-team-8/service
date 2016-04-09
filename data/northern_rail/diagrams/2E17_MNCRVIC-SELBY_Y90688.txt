@@ -1,0 +1,36 @@
+BSNY906881512141605131111100 POO2E171098111871821 DMUS   075      S S          P
+BX         NTY                                                                  
+LOMNCRVIC 1548 15481  FL     TB                                                 
+LIMILESPL           1551 00000000                                               
+LITHRPSBJ           1552 00000000                                               
+LIVTRLWKS           1554H00000000                                               
+LICSTLTEJ           1558 00000000                                               
+LIRCHDALE 1600H1601H     160116011        T                                     
+LIRCHDLEJ           1602H00000000                                               
+LILITLBRO           1606 000000002                                              
+LITODMRDN 1612 1613      161216132        T                                     
+LIHALRYDJ           1614H00000000                                               
+LIHBDNBDG 1619 1620      161916202        T                                     
+LIMLNRYDJ           1626H00000000                                               
+LIHLFX    1631H1632H     163216322        T           2                         
+LIMLLNJN            1644H00000000                                               
+LIBRADIN  1646 1649      164616491        T                                     
+LIMLLNJN 2          1650H00000000                                               
+LINPUD    1657 1657H     165716572        T                                     
+LIBRMLYSR 1700H1701H     170117012        T                                     
+LIHOLBJCN           1705H00000000                                               
+LIWHRDJN            1706 00000000   C                                           
+LILEEDSWJ           1706H00000000   C                                           
+CRLEEDS   OO2E171098111835920 DMUS   075      S S                               
+LILEEDS   1708 1721      171017219D       T                                     
+LINEVLWJN           1723H00000000                                               
+LICSGT    1727 1728      172717281        T                                     
+LIGARFRTH 1732H1733H     173317331        T                                     
+LIEGRFRTH 1735 1736      173517361        T                                     
+LIMCKLFLD           1740 000000001                                              
+LISMILFD  1743 1744      174317441        T                                     
+LIGSCGNWJ           1746 00000000                         1                     
+LIHAMBLWJ           1748H00000000                                               
+LIHAMBLEJ           1749H00000000                                               
+LISELBYWJ           1753 00000000   UL                    1                     
+LTSELBY   1756 17563     TF                                                     

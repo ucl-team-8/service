@@ -1,0 +1,23 @@
+BSNY905211512141605131111100 POO2C83    111838821 DMUS   075      S            P
+BX         NTY                                                                  
+LOBRDLNGT 1736 17366         TB                                                 
+LINAFERTN 1746H1747H     17471747         T                                     
+LIDRIFILD 1751 1752      17511752         T                                     
+LIHTNCRNS 1756H1757H     17571757         T                                     
+LIBEVERLY 1806 1807      180618071        T                                     
+LICTTGHM  1812H1813H     18131813         T           2                         
+CRHULL    OO2C83    111808920 DMUS   075      S                                 
+LIHULL    1822 1825      182318253        T                                     
+LIHESSLRD           1828H00000000                                               
+LIHESSLE  1831H1832      18321832         T                                     
+LIFERRIBY 1836 1837      18361837   SL    T                                     
+LIBROUGH  1841H1842H     18421842         T                                     
+LIGLBRDYK 1849H1850      18501850         T                                     
+LIGOOLE   1859 1901      185919012        T                                     
+CRTHORNEN OO2C83    111816820 DMUS   075      S                                 
+LITHORNEN 1909 1909H     19091909         T                                     
+LITHORNEJ           1912 00000000                                               
+LIHTFLASF 1914H1915H     19151915         T                                     
+LIKKSNDAL 1919H1920      19201920         T                                     
+LIBTLYJN            1923H00000000                     2   2                     
+LTDONC    1930 19301     TF                                                     

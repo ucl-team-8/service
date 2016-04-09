@@ -1,0 +1,27 @@
+BSNY912101512141605131111100 POO2H407602112299820 DMUA   075      S S          P
+BX         NTY                                                                  
+LOLVRPLSH 1825 18253  FL     TB                                                 
+LIEDGH    1829 1829H     182918293        T                                     
+LIEDGHSB            1830H00000000                                               
+LIWVRTREJ           1832 00000000                                               
+LIMSLH    1833H1834      183418341        T                                     
+LIWALERTN 1836 1836H     183618361        T                                     
+LIALERTN  1839 1839H     183918391        T              H                      
+LIHUNTXWJ           1841 00000000   UML                                         
+LIHUNTSX  1843 1843H     184318432        T                                     
+LIHALW    1845H1846      18461846         T                                     
+LIHOUGHGR 1849H1850      18501850         T                                     
+LIWIDNES  1853 1853H     18531853         T                                     
+LISANKEY  1858 1858H     18581858         T                                     
+CRWRGT    OO2H407602112236820 DMUA   075      S S                               
+LIWRGT    1903 1904      190319041        T                                     
+LIPADGATE 1906H1907      19071907         T                                     
+LIBIRCHWD 1909H1910      19101910         T                                     
+LIGLAZBRK 1914H1915      19151915         T                                     
+LIGLAZBKE           1916 00000000                                               
+LIIRLAM   1917H1918      19181918         T                                     
+LIURMSTON 1922H1923      19231923         T                                     
+LITRFDPEJ           1927 00000000                     2                         
+LICFLDJN            1932 00000000                                               
+LIMNCRDGT 1932H1933      193119311        T                                     
+LTMNCROXR 1935 19365     TF                                                     

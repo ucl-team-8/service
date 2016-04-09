@@ -22,7 +22,7 @@ Once the SimulateRealTime thread is started, it creates a threadpool using the `
 This means that the task gets added to a task queue, which will eventually be executed, as soon as one of the threads in the threadpool is finished processing a previous report.
 
 ## Threading
-Since we have multiple threads, we need to assure thread safety, which we currently do using 2 different locks. First of all, we do not want 2 or more threads reading and writing to the segments variable at the same time. This is why, every time we read or write from the variable, we use the `lock` variable. 
+Since we have multiple threads, we need to assure thread safety, which we currently do using 2 different locks. First of all, we do not want 2 or more threads reading and writing to the segments variable at the same time. This is why, every time we read or write from the variable, we use the `lock` variable.
 
 Additionally, since SQLAlchemy is not thread safe from default, we are currently using the `db_lock` variable whenever we access the database.
 
@@ -36,7 +36,6 @@ The data structure of a segment can be found in [globals.py](algorithm/globals.p
 These are all of the data structures:
 
 **Segment:**
-- unit - *String*
 - cif_uid - *String*
 - gps_car_id - *String*
 - headcode - *String*
@@ -133,7 +132,7 @@ All of the above constructs the segments to a reasonable extent however we still
 After we have inserted a trust report, we also perform what we identify as interpolating. It means that we go over a certain amount of segments and try to increase their accuracy.
 
 
-First, the algorithm goes over the segments with the same unit code and tries to join them together. For instance if we look at figure 2 below, we can see 3 segments. Each segment is represented by an arrow. The colour of the arrow represents the gps_car_id and the circles represent the trust reports. 
+First, the algorithm goes over the segments with the same unit code and tries to join them together. For instance if we look at figure 2 below, we can see 3 segments. Each segment is represented by an arrow. The colour of the arrow represents the gps_car_id and the circles represent the trust reports.
 
 We can see that in the middle, there is a very short segment with only 1 stop and the two other (outer) segments have multiple stops and have the same gps_car_id. Looking at the diagram, we know that it is very likely that we can combine all three segments into one segment with the same gps_car_id as the first and the last segment. This is exactly what the first step of interpolation does.
 

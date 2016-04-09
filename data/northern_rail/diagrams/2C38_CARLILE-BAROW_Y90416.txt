@@ -1,0 +1,31 @@
+BSNY904161512141605131111100 POO2C38    122358000 DMUS   075      S            P
+BX         NTY                                                                  
+LOCARLILE 1513 15132         TB                                                 
+LICARLCUR           1517 00000000                                               
+LIDALSTON 1521 1521      15211521         R                                     
+LIWIGTON  1531 1531H     15311531         T                                     
+LIASPTRIA 1541H1541H     15411541         R                                     
+LIMPRT    1551H1552      15521552         T                                     
+LIFLIMBY  1555 1555      15551555         R                                     
+LIWKNT    1601H1604      16021604         T                                     
+LIHNGT    1607H1607H     16071607         R                                     
+LIPARTNNJ           1611H00000000                                               
+LIPARTON  1616 1616      16161616         R                                     
+LIWHITHVN 1621H1623H     16221623         T                                     
+LICRCK    1625H1625H     16251625         R                                     
+LISTBEES  1630H1631H     16311631         T                                     
+LINETHRTN 1635H1635H     16351635         R                                     
+LIBRYSTNS 1638 1638      16381638         R                                     
+LISELAFLD 1643 1644H     16431644         T                                     
+LISEASCAL 1647H1648      16481648         T                                     
+LIDRIGG   1651 1651H     16511651         R                                     
+LIRGLS    1654H1655      16551655         T                                     
+LIBOOTLE  1700H1701      17011701         R                                     
+LISILCRFT 1707H1708      17081708         R                                     
+LIMLLM    1714H1715H     17151715         T                                     
+LIGREENRD 1719H1720      17201720         R                                     
+LIFOXFILD 1723H1724      17241724         R                                     
+LIKRKBYIF 1728 1728H     17281728         R                                     
+LIASKAM   1733 1733H     17331733         T           2  H                      
+LIPSTH              1741H00000000                                               
+LTBAROW   1749 17492     TF                                                     

@@ -1,0 +1,14 @@
+BSNY920761512141605131111100 POO2R90    111807820 DMUS   075      S            P
+BX         NTY                                                                  
+LOADWICK  1816 18161         TB                                                 
+LIBTLYSY  1820 1820H     182018201        T                                     
+CRDONC    OO2R90    111825820 DMUS   075      S                                 
+LIDONC    1824H1830H     182518307        T                                     
+LIBTLYJN            1833 00000000                                               
+LIKKSNDAL 1836H1837      18371837         T                                     
+LIHTFLASF 1841 1842      18411842         T                                     
+LITHORNEJ           1844H00000000                                               
+LITHORNES 1846H1847      18471847         T                                     
+LICROWLE  1854H1855H     18551855         T                                     
+LIALTPE   1901 1901H     19011901         T           1                         
+LTSCNTHRP 1907H19101     TF                                                     

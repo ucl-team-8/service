@@ -1,0 +1,16 @@
+BSNY907531512141605131111100 POO2F06    112299820 DMUA   075      S            P
+BX         NTY                                                                  
+LOLVRPLSH 1855 18559  FL     TB                                                 
+LIEDGH    1859 1859H     185918593        T                                     
+LIEDGHSB            1900H00000000                                               
+LIWVRTREJ           1902 00000000                                               
+LIMSLH    1903H1904      190419041        T                                     
+LIWALERTN 1906 1906H     190619061        T                                     
+LIALERTN  1909 1909H     190919091        T              H                      
+LIHUNTXWJ           1911 00000000   UML                                         
+LIHUNTSX  1913 1913H     191319132        T                                     
+LIHALW    1915H1916      19161916         T                                     
+LIHOUGHGR 1919H1920      19201920         T                                     
+LIWIDNES  1923 1923H     19231923         T                                     
+LISANKEY  1928 1928H     19281928         T                                     
+LTWRGT    1933 19341     TF                                                     

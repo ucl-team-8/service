@@ -1,0 +1,8 @@
+BSNY925291512141605131111100 PEE5C30    122358000 DMUS   075                   P
+BX         NTY                                                                  
+LOBAROWCS 0527 0000          TB                                                 
+LIBAROW   0530 0539      000000001        A RM                                  
+LIPSTH              0545H00000000                                               
+LIASKAM             0548H00000000                                               
+LIFOXFILD           0555 00000000                                               
+LTMLLM    0601 0000      TF                                                     

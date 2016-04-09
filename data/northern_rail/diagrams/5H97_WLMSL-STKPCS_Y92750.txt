@@ -1,0 +1,11 @@
+BSNY927501512141605131111100 PEE5H97    112233820 DMUS   075                   P
+BX         NTY                                                                  
+LOWLMSL   2324 00002         TB                                                 
+LIWLMSDRS 2326 2351      00000000         RMA                                   
+LIWLMSL  2          2353 000000003                    1 4H                      
+LICHDH              0002 000000001                      3                       
+LIADSWDRD           0006 00000000   SL                                          
+LISTKPE1            0008 00000000                       2                       
+LISTKP              0011 000000004                      2                       
+LISTKPVIA 0014 0017      00000000         RM                                    
+LTSTKPCS  0022 0000      TF                                                     

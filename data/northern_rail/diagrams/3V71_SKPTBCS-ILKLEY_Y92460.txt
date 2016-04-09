@@ -1,0 +1,10 @@
+BSNY924601512141605131111100 PEE3V71    111819020 EMU321 100                   P
+BX         NTY                                                                  
+LOSKPTBCS 0607 0000          TB                                                 
+LISKPT    0612 0621      000000003        C             5                       
+LIKEIGHLY           0634 000000001                      6                       
+LISHPY    0647H0657      000000001        A                                     
+LISHPYDJN           0658 00000000                        H                      
+LIGUISELY 0704H0707H     000000001        A             2                       
+LIBURLYIW           0713 000000001                    1                         
+LTILKLEY  0719 00002     TF                                                     

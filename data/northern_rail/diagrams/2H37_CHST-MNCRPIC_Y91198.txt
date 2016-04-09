@@ -1,0 +1,28 @@
+BSNY911981512141605131111100 POO2H37    112229820 DMUS   075      S            P
+BX         NTY                                                                  
+LOCHST    1904 19046         TB                                                 
+LIMIKLTRF           1910H00000000                                               
+LIMLDSWTH 1915 1915H     19151915         T                                     
+LIDELAMER 1919H1920H     19201920         T                                     
+LICUDNGTN 1924H1925      19251925         T                                     
+LIGBNK    1929 1930      19291930         T                                     
+LINTHWICH 1934 1935      19341935         T                                     
+LILSTG    1937H1938      19381938         T                                     
+LIPLUMSB            1940 00000000                                               
+LIPLUMLEY 1941 1942      19411942         T                                     
+LIKNUTSFD 1946H1947H     19471947         T                                     
+LIMOBERLY 1951 1952      19511952         T                                     
+LIASHLEY  1955 1955H     19551955         T                                     
+LIHALE    1958 1959      19581959         T           2                         
+LIALTRNHM 2003 2004      20032004         T                                     
+LINAVGTNR 2005H2006H     20062006         T                                     
+LIDENSGTJ           2007H00000000                                               
+LINTHNDNJ           2013 00000000                                               
+LINTHNSHJ           2014 00000000                     1                         
+LISTKPCVJ           2017 00000000                                               
+LISTKPE2            2019H00000000   FL                                          
+LISTKP    2020H2021H     202120213        T                                     
+LIHTNOJN            2023 00000000                                               
+LISLDLJN            2025H00000000                       1                       
+LIARDWCKJ           2028 00000000                                               
+LTMNCRPIC 2031 203411 FL TF                                                     

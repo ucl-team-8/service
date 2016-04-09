@@ -1,0 +1,11 @@
+BSNY919651602151605131111100 POO2P56    111818620 EMU333 100      S            P
+BX         NTY                                                                  
+LOLEEDS   1540 15402C B      TB                                                 
+LILEEDSWJ           1541 00000000   DH                                          
+LIARMLJCN           1542H00000000                                               
+LIAPERLYJ           1547 00000000                                               
+LIAPERLYB 1548 1549      154815492        T                                     
+LISHPYDJN           1552 00000000                                               
+LISHPY    1553 1554      155315544        T                                     
+LIFRZNGHL 1556 1556H     155615562        T           1   1                     
+LTBRADFS  1602 16032     TF                                                     

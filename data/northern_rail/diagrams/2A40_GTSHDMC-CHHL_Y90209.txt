@@ -1,0 +1,19 @@
+BSNY902091512141605131111100 POO2A40    121796000 DMUA   075      S            P
+BX         NTY                                                                  
+LOGTSHDMC 1727 17271         TB                                                 
+LIDNSN    1729H1730H     17301730         T                                     
+LINRWDJN            1731H00000000                                               
+LIKEBGSJN           1733H00000000   SL                                          
+LIKEBGNJN           1734 00000000                                               
+CRNWCSTLE OO2A40    121794000 DMUA   075      S                                 
+LINWCSTLE 1736 1738H     173717385  SL    T                                     
+LIMANORS  1740H1741      17411741   ML    T                                     
+LIHTONSJN           1743 00000000                                               
+LICRMLNGT 1751 1752      17511752         T                                     
+LIMRPTHRP 1759 1800      175918002  GL    T                                     
+LIMRPTNJN 1802 1809H     00000000         A                                     
+LIPEGSWD  1812 1812H     18121812         T                                     
+LIWDRNGTN 1817H1818H     18181818         T                                     
+LIACKLNGT 1824H1825      18251825         T           1                         
+LIALNMOTH 1833 1834      183318342        T                                     
+LTCHHL    1846 1849      TF                                                     

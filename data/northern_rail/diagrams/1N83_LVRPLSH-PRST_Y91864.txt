@@ -1,0 +1,19 @@
+BSNY918641512141605131111100 PXX1N83    112249820 DMUS   075      S            P
+BX         NTY                                                                  
+LOLVRPLSH 1028 10282  SL     TB                                                 
+LIEDGH              1031H000000001                                              
+LIEDGHSB            1032 00000000                                               
+LIBOOTLBJ           1032H00000000                                               
+LIOLIVEMJ           1033H00000000                       3                       
+LIHUYTON  1039H1040H     10401040         T                                     
+LIHUYTJUN           1041 00000000                                               
+LISTHLNSC 1048H1049H     104910491        T                                     
+LISPRBJN            1100 00000000   FL                                          
+LIWIGASJN           1101 00000000                                               
+LIWIGANNW 1102H1103H     110311035        T                                     
+LIBALSHWL           1112 00000000   SL                                          
+LIEUXT    1113H1114      11141114         T                                     
+LIEUXTONJ           1116 00000000                                               
+LILEYLAND 1118H1119      11191119         T           2                         
+LIFRNGTNC           1123H00000000                                               
+LTPRST    1126 11262     TF                                                     

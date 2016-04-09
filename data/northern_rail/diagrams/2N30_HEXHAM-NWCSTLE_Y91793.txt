@@ -1,0 +1,16 @@
+BSNY917931512141605131111100 POO2N30    121796000 DMUA   075      S            P
+BX         NTY                                                                  
+LOHEXHAM  1342 13422         TB                                                 
+LICRBG    1346H1347      13471347         T                                     
+LIRIDNGML 1350H1351H     13511351         T                                     
+LISTCKSFL 1355 1355H     13551355         T                                     
+LIPRUDHOE 1359 1400      13591400         T                                     
+LIWYLAM   1404 1404H     14041404         T                                     
+LIBLAYDON 1409H1410H     14101410         T                                     
+LIGTSHDMC 1414H1415H     141514151        T                                     
+LINRWDJN            1418H00000000                        H                      
+LIKEBGSJN           1421 00000000                                               
+LIKEBGEJN           1421H00000000                                               
+LIGRNSFDJ           1422 00000000                                               
+LIHLBDGJN           1423 00000000                     2                         
+LTNWCSTLE 1427 14298     TF                                                     

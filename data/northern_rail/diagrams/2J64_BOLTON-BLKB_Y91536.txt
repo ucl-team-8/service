@@ -1,0 +1,27 @@
+BSNY915361512141605131111100 POO2J64    112223820 DMUA   075      S            P
+BX         NTY                                                                  
+LOBOLTON  0930 09302     2   TB                                                 
+LISLFDCT  0942 0943H     094209431        T             1H                      
+LISLFDORD 0947 0947H     09470947         T                                     
+LIMNCRDST           0949 00000000   FL                                          
+CRMNCRVIC OO2J64    112242110 DMUA   075      S                                 
+LIMNCRVIC 0950H0956      095109566        T                                     
+LIMILESPL           0958H00000000                                               
+LITHRPSBJ           0959H00000000                                               
+LIVTRLWKS           1002 00000000                                               
+LIMLSHILL 1004 1005      10041005         T                                     
+LICSTLTEJ           1008H00000000                                               
+LICSTL    1009H1010      10101010         T                                     
+LIRCHDALE 1013 1014      101310141        T                                     
+LIRCHDLEJ           1015 00000000                                               
+LISMBG    1017H1018      101810182        T                                     
+LILITLBRO 1020H1021H     102110212        T                                     
+LITODMRDN 1028 1029      102810292        T                                     
+LISTNSHJN           1031H00000000                                               
+LICOPYPIT           1037H00000000                                               
+LIBURNMR  1044H1045H     104510451        T             1H                      
+LIGANNOWJ           1048H00000000                                               
+LIROSG    1049H1050H     105010502        T                                     
+LIACRNGTN 1058 1059H     105810592        T           2 2                       
+LIBLKBDJN           1109H00000000   UEL                                         
+LTBLKB    1111 11112     TF                                                     

@@ -1,0 +1,28 @@
+BSNY917141512141605131111100 POO2N047846121793000ZDMUS   075      S S          P
+BX         NTY                                                                  
+LOCARLILE 0628 06285         TB                                                 
+LICARLLRJ           0630 00000000                                               
+LIPETLBGJ           0631 00000000                                               
+LIWETHERL 0635 0636      06350636         T                                     
+LIWETHCOR           0637 00000000                                               
+LIBRMPTNF           0643H00000000                                               
+LIBRMPTNC 0645 0646      06450646         T                                     
+LILOWRWSB           0650 00000000                                               
+LIHLTWHST 0700 0700H     07000700         T                                     
+LIBRDNML  0707 0708      07070708         T                                     
+LIHYDB    0712H0713      07130713         T                                     
+LIHEXHAM  0721H0722H     072207221        T                                     
+LICRBG    0726H0727      07270727         T                                     
+LIRIDNGML 0730H0731H     07310731         T                                     
+LISTCKSFL 0735 0735H     07350735         T                                     
+LIPRUDHOE 0739 0740      07390740         T                                     
+LIWYLAM   0744 0744H     07440744         T                                     
+LIBLAYDON           0749 00000000                                               
+LIGTSHDMC 0752H0753H     075307531        T                                     
+LIDNSN    0756 0756H     07560756         T                                     
+LINRWDJN            0757H00000000                     2                         
+LIKEBGSJN           0801H00000000                                               
+LIKEBGEJN           0802 00000000                                               
+LIGRNSFDJ           0802H00000000                                               
+LIHLBDGJN           0803H00000000                       1                       
+LTNWCSTLE 0807 08071     TF                                                     

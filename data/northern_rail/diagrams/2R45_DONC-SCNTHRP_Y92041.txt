@@ -1,0 +1,11 @@
+BSNY920411512141605131111100 POO2R45    111825820 DMUS   075      S            P
+BX         NTY                                                                  
+LODONC    1723 17231         TB                                                 
+LIBTLYJN            1725H00000000                                               
+LIKKSNDAL 1729 1729H     17291729         T                                     
+LIHTFLASF 1733H1734H     17341734         T                                     
+LITHORNEJ           1737 00000000                                               
+LITHORNES 1739 1739H     17391739         T                                     
+LICROWLE  1747 1748      17471748         T                                     
+LIALTPE   1753H1754      17541754         T           1   1                     
+LTSCNTHRP 1801 18011     TF                                                     

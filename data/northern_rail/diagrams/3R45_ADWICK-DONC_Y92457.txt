@@ -1,0 +1,10 @@
+BSNY924571512141605131111100 PEE3R45    111807820 DMUS   075                   P
+BX         NTY                                                                  
+LOADWICK  1643 00002         TB                                                 
+LICRCRFTJ           1643H00000000                                               
+LISKLWJN            1645 00000000                       4                       
+LIAPLHRSJ           1655 00000000                                               
+LITMSHJN            1656 00000000                        H                      
+LIHTFLASF 1701H1704H     00000000         OPRM                                  
+LIBTLYJN            1711 00000000                     2                         
+LTDONC    1716 00001     TF                                                     

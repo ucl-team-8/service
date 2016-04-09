@@ -8,7 +8,7 @@ services:
 before_script:
 - psql -c 'create database atos;' -U postgres
 - python manage.py db upgrade
-- python import/import.py
+- python import/import.py east_coast
 install:
 - pip install -r requirements.txt
 script: python tests/algorithm-tests.py

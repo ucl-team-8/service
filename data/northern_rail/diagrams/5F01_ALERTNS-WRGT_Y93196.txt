@@ -1,0 +1,16 @@
+BSNY931961512141605131111100 PEE5F01    112236820 DMUS   075                   P
+BX         NTY                                                                  
+LOALERTNS 0445 0000          TB                                                 
+LIALERTN            0450 000000002  SL                                          
+LIWVRTREJ           0455 00000000   FL                                          
+LIEDGHSB            0457 00000000   SL                                          
+LIEDGH              0458 000000002                                              
+LILVRPLSH 0502 0517      000000003  FL    RM                                    
+LIEDGH   2          0521 000000003                                              
+LIEDGHSB 2          0522 00000000                                               
+LIWVRTREJ2          0524 00000000                     2                         
+LIALERTN 2          0530 000000001                      3                       
+LIHUNTXWJ           0534 00000000   UML                                         
+LIHUNTSX            0536 000000002                                              
+LIHOUGHGR           0539 00000000                     2                         
+LTWRGT    0549 00001     TF                                                     

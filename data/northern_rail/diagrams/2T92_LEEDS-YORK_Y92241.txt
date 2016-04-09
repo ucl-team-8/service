@@ -1,0 +1,11 @@
+BSNY922411512141605131111100 POO2T928139111837920 DMUE   090      S S          P
+BX         NTY                                                                  
+LOLEEDS   0800 08007A        TB                                                 
+LINEVLWJN           0802H00000000                                               
+LICSGT    0806 0807      080608071        T                                     
+LIGARFRTH 0811 0812      081108121        T                                     
+LIEGRFRTH 0813H0814H     081408141        T                                     
+LIMCKLFLD 0817 0818      081708181        T                                     
+LICHFN              0823 000000004  LSL                                         
+LICOLTONJ           0826H00000000   LSL                 1 2                     
+LTYORK    0835 08356     TF                                                     

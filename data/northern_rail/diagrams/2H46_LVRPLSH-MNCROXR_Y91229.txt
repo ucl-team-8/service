@@ -1,0 +1,28 @@
+BSNY912291512141605131111100 POO2H465428112299820 DMUA   075      S S          P
+BX         NTY                                                                  
+LOLVRPLSH 0725 07256  FL     TB                                                 
+LIEDGH    0729 0729H     072907293        T                                     
+LIEDGHSB            0730H00000000                                               
+LIWVRTREJ           0732 00000000                                               
+LIMSLH    0733H0734      073407341        T                                     
+LIWALERTN 0736 0736H     073607361        T                                     
+LIALERTN  0739 0740      073907401        T                                     
+LIHUNTXWJ           0741 00000000   UML                                         
+LIHUNTSX            0742H000000002                                              
+LIHOUGHGR 0746 0746H     07460746         T                                     
+CRWRGT    OO2H465428112236820 DMUA   075      S S                               
+LIWRGT    0755H0756H     075607561        T                                     
+LIPADGATE 0759 0759H     07590759         T                                     
+LIBIRCHWD 0802 0802H     08020802         T                                     
+LIGLAZBRK 0807 0807H     08070807         T                                     
+LIGLAZBKE           0808H00000000                                               
+LIIRLAM   0810 0811      08100811         T                                     
+LIFLIXTON 0814H0815      08150815         T                                     
+LICHASNRD 0816H0817      08170817         T                                     
+LIURMSTON 0818H0819      08190819         T                                     
+LIHMPHRYP 0821 0821H     08210821         T                                     
+LITRFDPK  0823H0824      08240824         T           2                         
+LITRFDPEJ           0828 00000000                                               
+LICFLDJN            0831 00000000                                               
+LIMNCRDGT 0831H0832H     083208321        T                                     
+LTMNCROXR 0834 08365     TF                                                     

@@ -1,0 +1,31 @@
+BSNY904481512141605131111100 POO2C47    122358000ZD  140 075      S            P
+BX         NTY                                                                  
+LOBAROW   1731 17312         TB                                                 
+LIPSTH              1738 00000000                                               
+LIASKAM   1742 1743      17421743         T                                     
+LIKRKBYIF 1748 1748H     17481748         R                                     
+LIFOXFILD 1752H1753      17531753         R                                     
+LIGREENRD 1757H1758H     17581758         R                                     
+LIMLLM    1804 1805      18041805         T                                     
+LISILCRFT 1810 1811      18101811         R                                     
+LIBOOTLE  1818H1819H     18191819         R                                     
+LIRGLS    1825H1826H     18261826         T                                     
+LIDRIGG   1830 1831      18301831         R                                     
+LISEASCAL 1834H1835H     18351835         T                                     
+LISELAFLD 1839 1840      18391840         T                                     
+LIBRYSTNS 1844 1845      18441845         R                                     
+LINETHRTN 1848 1849      18481849         R                                     
+LISTBEES  1853H1903H     18541903         T                                     
+LICRCK    1909H1910H     19101910         R                                     
+LIWHITHVN 1913 1915      19131915         T                                     
+LIPARTON  1919 1920      19191920         R                                     
+LIPARTNNJ           1924H00000000                                               
+LIHNGT    1929H1930H     19301930         R                                     
+LIWKNT    1934H1936      19351936         T                                     
+LIFLIMBY  1941H1942H     19421942         R                                     
+LIMPRT    1945H1946H     19461946         T                                     
+LIASPTRIA 1957 1958      19571958         R                                     
+LIWIGTON  2009 2010      20092010         T                                     
+LIDALSTON 2019 2020      20192020         R           2                         
+LICARLCUR           2026H00000000                                               
+LTCARLILE 2031 20311     TF                                                     

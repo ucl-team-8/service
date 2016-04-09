@@ -1,0 +1,29 @@
+BSNY924141512141605131111100 POO2W72    111792920 DMUA   075      S            P
+BX         NTY                                                                  
+LOMDLSBRO 1832 18322         TB                                                 
+LITABY    1836H1837      183718371        T                                     
+LIBOWSFLD           1839 00000000                                               
+LIHRTBJN            1840 00000000                                               
+LISTOCTON 1842 1843      184218432        T                                     
+LINORTONS           1846 00000000                                               
+LIBLNGHMJ           1848H00000000                                               
+LIBLNGHM  1849H1850      185018502        T                                     
+LIGREATHM           1853 00000000                                               
+LISETNCRW 1855H1856H     185618562        T                                     
+LIHRTLEPL 1900H1902      190119021        T                                     
+LIHORD137           1910H00000000                                               
+LISEAHAM  1917 1917H     191719172        T                                     
+LIRYHPGRN           1921H00000000                     2                         
+LISNDRLND 1927 1929      192719294        T             2 2                     
+LIBRWHINS           1939 00000000                                               
+LIPELAW             1942 00000000                                               
+LIHEWORTH 1943 1944      19411942         T                                     
+LIPKLNJN            1946H00000000                                               
+LIHLBDGJN           1948H00000000                                               
+CRNWCSTLE OO2W72    121796000 DMUA   075      S                                 
+LINWCSTLE 1950H1954      195119546  SL    T                                     
+LIKEBGNJN           1955H00000000                                               
+LIKEBGSJN           1956 00000000                                               
+LINRWDJN            1958 00000000                                               
+LIDNSN    1959 1959H     19591959         T                                     
+LTGTSHDMC 2002 20042     TF                                                     

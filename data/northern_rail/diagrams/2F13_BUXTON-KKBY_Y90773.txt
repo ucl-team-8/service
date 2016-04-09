@@ -1,0 +1,37 @@
+BSNY907731512141605131111100 POO2F13    112228820 DMUS   075      S            P
+BX         NTY                                                                  
+LOBUXTON  0602 06021         TB                                                 
+LICHEF    0611 0611H     061106112        T                                     
+LIWHALYBG 0617 0617H     061706172        T                                     
+LIFURNESV 0620 0620H     06200620         T                                     
+LINWMILSN 0623 0623H     062306232        T                                     
+LIDISLEY  0626H0627      062706272        T           2                         
+LIHAZL    0634H0635H     063506352        T                                     
+LIWMOR    0637H0638      063806382        T                                     
+LIDAVNPRT 0639H0640H     064006402        T                                     
+LISTKPE1            0642H00000000   FL                                          
+LISTKP    0644 0647      064406473  SL    T                                     
+LIHTNOJN            0648H00000000                                               
+LIHTCP    0650 0650H     065006502        T                                     
+LILVHM    0653 0653H     065306532        T                                     
+LISLDLJN            0654H00000000                                               
+LIARDWCKJ           0656H00000000                        H                      
+CRMNCRPIC OO2F13    112224110 DMUS   075      S                                 
+LIMNCRPIC 0659 0701      0659070114    SL T                                     
+LIMNCROXR 0702H0707      070307071        T                                     
+LIMNCRDGT 0708H0709      070907092        T                                     
+LICFLDJN            0709H00000000                                               
+LIORDSLLJ           0710H00000000                       1H                      
+LISLFDCT  0713H0714H     071407142        T              H                      
+LIBOLTON  0724H0725H     072507254        T             2                       
+LILOSTCKJ           0731H00000000                                               
+LIWSTHOTN 0734H0735      07350735         T              H                      
+LICRWNSTJ           0738 00000000                                               
+LIHINDLEY 0739 0739H     07390739         T           2                         
+CRWIGANWL OO2F13    112240820 DMUS   075      S                                 
+LIWIGANWL 0746 0748      074607481        T                                     
+LIPBRT    0751H0752      07520752         T                                     
+LIORRELL  0755H0756      07560756         T                                     
+LIUPHOLND 0759 0759H     07590759         T                                     
+LIRNFD    0802H0803      08030803         T               1                     
+LTKKBY    0812 0812      TF                                                     

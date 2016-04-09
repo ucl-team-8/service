@@ -1,0 +1,16 @@
+BSNY919581512141605131111100 POO2P51    111804920 DMUS   075      S            P
+BX         NTY                                                                  
+LOSHEFFLD 0546 05461B        TB                                                 
+LINNRYMLJ           0547H00000000                                               
+LIWDBRNJN           0549H00000000                                               
+LIDARNALL 0551 0551H     05510551         T                                     
+LIWDHOUSE 0556 0557      05560557         T                                     
+LIWDHOUSJ           0558 00000000                                               
+LIKVTNBDG 0603H0604      06040604         T                                     
+LIKVTNPK  0606H0607H     06070607         T                                     
+LIBRCLEJN           0610 00000000                                               
+LISHRKSKS 0611H0612      06120612         T                                     
+LISHRKSEJ           0614 00000000                                               
+LIWORKSOP 0616 0623      061606232        T -D        2                         
+LITHRMWJN           0632H00000000                          H                    
+LTRTFD    0637 06372     TF                                                     

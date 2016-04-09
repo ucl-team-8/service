@@ -1,0 +1,18 @@
+BSNY920891601181605131111100 POO2R99    121806000 DMUE   090      S            P
+BX         NTY                                                                  
+LOYORK    1840 18401  NNL  2HTB                                                 
+LICOLTONJ           1848 00000000   NNL                                         
+LIULESKLF 1851 1852      18511852         T                                     
+LICHFN    1855 1856      185518561        T                                     
+LISHBN    1859 1900      18591900         T                                     
+LIGSCGNWJ           1903H00000000                                               
+LIHAMBLWJ           1905H00000000                                               
+LIHAMBLEJ           1906H00000000                                               
+LISELBY   1911 1912      191119121        T                                     
+LIWRESSLE 1918H1919H     19191919         T                                     
+LIHOWDEN  1923 1924      19231924         T                                     
+LIESTRNGT 1928 1929      19281929         T                                     
+LIGLBRDYK 1932 1933      19321933         T                                     
+LIBROUGH  1939H1940H     19401940         T           2                         
+LIHESSLRD           1950H00000000                                               
+LTHULL    1954 19595     TF                                                     

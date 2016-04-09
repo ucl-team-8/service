@@ -1,0 +1,26 @@
+BSNY909841512141605131111100 POO2F811044112233110 DMUS   075      S S          P
+BX         NTY                                                                  
+LOMNCRIAP 2103 21033B        TB                                                 
+LIHLDGWJ            2105 00000000                                               
+LIHLDG              2106 000000001                      1H                      
+LISLDLJN            2113 00000000   SL                  1                       
+LIARDWCKJ           2116 00000000                                               
+CRMNCRPIC OO2F811044112224820 DMUS   075      S S                               
+LIMNCRPIC 2118H2120H     2120212014    SL T                                     
+LIMNCROXR 2122 2124      212221242        T                                     
+LIMNCRDGT 2125H2126      212621262        T                                     
+LICFLDJN            2126H00000000                       1                       
+LIORDSLLJ           2128H00000000                       3                       
+LISLFDCT  2133 2135      213221342        T                                     
+LIBOLTON  2144H2145H     214521454        T                                     
+LILOSTCKJ           2149H00000000                                               
+LIWSTHOTN 2152H2153      21532153         T                                     
+LICRWNSTJ           2155H00000000                                               
+LIHINDLEY 2156H2157      21572157         T                                     
+LIWIGANWL 2201H2203H     220222031        T                                     
+LIGATHRST 2207H2208      22082208         T                                     
+LIAPLYBDG 2211 2212      22112212         T                                     
+LIPARBOLD 2215H2216H     22162216         T                                     
+LIBRSCGHB 2220H2221H     22212221         T                                     
+LIMEOLSCP 2228H2229      22292229         T           2                         
+LTSOUTHPT 2236 22375     TF                                                     

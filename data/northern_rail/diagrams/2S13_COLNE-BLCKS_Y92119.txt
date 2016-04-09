@@ -1,0 +1,35 @@
+BSNY921191512141605131111100 POO2S13    122350000 DMUA   075      S            P
+BX         NTY                                                                  
+LOCOLNE   2131 21311         TB                                                 
+LICHAFRSS 2134 2134      00000000         OP                                    
+LINLSN    2135 2136      213521361        T                                     
+LIBRIERFL 2138H2139      213921391        T                                     
+LIBURNLYC 2143 2144      214321441        T                                     
+LIBURNLYB 2145H2146      214621461        R                                     
+LIGANNOWJ           2147H00000000                                               
+LIROSG    2149 2149H     214921492        T                                     
+LIHAPTON  2152 2152H     215221521        R                                     
+LIHUNCOAT 2155 2155H     215521551        T                                     
+LIACRNGTN 2159H2200H     220022002        T                                     
+LICHOS    2202H2203      220322031        T                                     
+LIRISHTON 2205H2206H     220622062        T                                     
+LIBLKBDJN           2209H00000000   UEL                                         
+LIBLKB    2211 2212      221122124        T                                     
+LIMLHL    2214H2215      221522152        T                                     
+LICHTR    2216H2217H     221722172        T                                     
+LIPLSNGTN 2219H2220      222022202        R                                     
+LIBMBRBDG 2226H2227H     222722271        T                                     
+LILSTHJN            2229 00000000                                               
+LILSTH    2229H2230      223022301        T           2                         
+LIFRNGTNC           2235 00000000   SL                  2H                      
+LIPRST    2240 2242      224022421  SL    T                                     
+LIPRSTNFJ           2243 00000000                                               
+LIKIRKHAM 2251 2251H     225122511        T                                     
+LIKIRKMNJ           2253 00000000                                               
+LIMSSD    2257 2257H     225722571        T                                     
+LILYTHAM  2301 2301H     230123011        T                                     
+LIANSDELL 2304 2304H     230423041        T                                     
+LISTAS    2307H2308H     230823081        T                                     
+LISQUIRES 2311H2312      231223121        T                                     
+LIBLCKPB  2314 2315      231423151        T                                     
+LTBLCKS   2317 23191     TF                                                     

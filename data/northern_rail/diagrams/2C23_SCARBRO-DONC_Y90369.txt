@@ -1,0 +1,29 @@
+BSNY903691602291605131111100 POO2C23    111838821ZDMUS   075      S            P
+BX         NTY                                                                  
+LOSCARBRO 0650 06502         TB                                                 
+LISEAMER  0654H0655H     06550655         T                                     
+LIFILEY   0704H0705H     07050705         T                                     
+LIHUNMNBY 0709H0710H     07100710         T                                     
+LIBEMPTON 0719H0720      07200720         T               1                     
+LIBRDLNGT 0727 0730H     072707305        T                                     
+LINAFERTN 0741 0742      07410742         T                                     
+LIDRIFILD 0745H0747H     07460747         T                                     
+LIHTNCRNS 0752 0753      07520753         T                                     
+LIARRAM   0759 0800      07590800         T                                     
+LIBEVERLY 0804 0806      080408061        T                                     
+LICTTGHM  0811H0812H     08120812         T           2   1                     
+CRHULL    OO2C23    111808920ZDMUS   075      S                                 
+LIHULL    0822 0826      082208265        T                                     
+LIHESSLRD           0829H00000000                                               
+LIHESSLE  0832H0833      08330833         T                                     
+LIFERRIBY 0837 0838      08370838   SL    T                                     
+LIBROUGH  0842H0843H     08430843         T                                     
+LIGLBRDYK 0850H0851      08510851         T                                     
+LIGOOLE   0900 0901      090009012        T                                     
+CRTHORNEN OO2C23    111816820ZDMUS   075      S                                 
+LITHORNEN 0909 0909H     09090909         T             1H H                    
+LITHORNEJ           0914 00000000                                               
+LIHTFLASF 0916H0917H     09170917         T                                     
+LIKKSNDAL 0921H0922      09220922         T                                     
+LIBTLYJN            0925H00000000                     2   1                     
+LTDONC    0931 09311     TF                                                     

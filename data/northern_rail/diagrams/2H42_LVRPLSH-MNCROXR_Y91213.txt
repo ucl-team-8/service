@@ -1,0 +1,29 @@
+BSNY912131512141605131111100 POO2H425422112299820 DMUA   075      S S          P
+BX         NTY                                                                  
+LOLVRPLSH 0619 06194  FL     TB                                                 
+LIEDGH              0623 000000003                                              
+LIEDGHSB            0623H00000000                                               
+LIWVRTREJ           0625 00000000   SL                                          
+LIMSLH    0627 0627H     062706273        T             3                       
+LIWALERTN 0632H0633      063306333        T                                     
+LIALERTN  0635H0636      063606361        T                                     
+LIHUNTXWJ           0637 00000000   UML                                         
+LIHUNTSX            0638H000000002                                              
+LIHOUGHGR 0642 0642H     06420642         T                                     
+LIWIDNES  0645H0646      06460646         T                                     
+CRWRGT    OO2H425422112236820 DMUA   075      S S                               
+LIWRGT    0653H0654H     065406541        T                                     
+LIPADGATE 0657 0657H     06570657         T                                     
+LIBIRCHWD 0700 0700H     07000700         T                                     
+LIGLAZBRK 0705 0705H     07050705         T                                     
+LIGLAZBKE           0706H00000000                                               
+LIIRLAM   0708 0709      07080709         T                                     
+LIFLIXTON 0712H0713H     07130713         T                                     
+LICHASNRD 0715 0715H     07150715         T                                     
+LIURMSTON 0717 0718      07170718         T                                     
+LIHMPHRYP 0720 0720H     07200720         T                                     
+LITRFDPK  0722H0723      07230723         T           2                         
+LITRFDPEJ           0727 00000000                        H                      
+LICFLDJN            0730H00000000                                               
+LIMNCRDGT 0731 0732      073107321        T                                     
+LTMNCROXR 0734 07362     TF                                                     

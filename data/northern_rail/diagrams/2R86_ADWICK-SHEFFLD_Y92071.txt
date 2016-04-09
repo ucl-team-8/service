@@ -1,0 +1,16 @@
+BSNY920711512141605131111100 POO2R86    111807820 DMUS   075      S            P
+BX         NTY                                                                  
+LOADWICK  1515 15151         TB                                                 
+LIBTLYSY  1519 1519H     151915191        T              H                      
+LIDONC    1524 1526      152415268        T                                     
+LIDONCHJN           1529H00000000                                               
+LICONBRGH 1533 1534      15331534         T                                     
+LIMEXBRGH 1537 1538      15371538         T              H                      
+LISWINTN  1541 1542      15411542         T                                     
+LIALDWRKJ           1545 00000000                         2                     
+LIROTHCEN 1550H1551H     155115511        T                                     
+LIROTHHJN           1553H00000000                          H                    
+LIMEADWHL 1556H1557H     155715571        T                                     
+LIWNCOJN            1558 00000000                     1    H                    
+LINNRYMLJ           1603 00000000                                               
+LTSHEFFLD 1605 16051A    TF                                                     

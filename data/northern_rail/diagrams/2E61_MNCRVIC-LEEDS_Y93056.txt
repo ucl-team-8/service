@@ -1,0 +1,28 @@
+BSNY930561512141605121111000 POO2E614527111871821 DMUS   075      S S          P
+BX         NTY                                                                  
+LOMNCRVIC 1810 18101  SL     TB                                                 
+LIMILESPL           1814 00000000                                               
+LITHRPSBJ           1815 00000000                                               
+LIVTRLWKS           1817H00000000                                               
+LIMLSHILL 1819H1820      18201820         T                                     
+LICSTLTEJ           1823H00000000                                               
+LIRCHDALE 1826 1827      182618271        T                                     
+LIRCHDLEJ           1828 00000000                                               
+LISMBG    1830H1831      183118312        T                                     
+LILITLBRO 1833H1834H     183418342        T                                     
+LITODMRDN 1841 1842      184118422        T                                     
+LIHALRYDJ           1843H00000000                                               
+LIHBDNBDG 1848 1849      184818492        T                                     
+LIMYTHLMR 1851H1852H     185218522        T                                     
+LISWRBBDG 1857H1858H     185818582        T                                     
+LIMLNRYDJ           1859H00000000                         1                     
+LIHLFX    1905H1906H     190619062        T           2                         
+LIMLLNJN            1918H00000000                                               
+LIBRADIN  1920 1924      192019233        T                                     
+LIMLLNJN 2          1925H00000000                                               
+LINPUD    1932 1932H     193119312        T                                     
+LIBRMLYSR 1935H1936H     193519352        T                                     
+LIHOLBJCN           1940H00000000                                               
+LIWHRDJN            1941 00000000   C                                           
+LILEEDSWJ           1941H00000000   C                                           
+LTLEEDS   1943 194511C   TF                                                     

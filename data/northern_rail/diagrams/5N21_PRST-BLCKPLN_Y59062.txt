@@ -1,0 +1,9 @@
+BSNY590621512141605131111100 PEE5N21    112355820 DMUS   075                   P
+BX         NTY                                                                  
+LOPRST    0849 00001         TB                                                 
+LIPRSTSHL 0851 0910      00000000         OP            3                       
+LIKIRKMNJ           0922 00000000                       3                       
+LIKIRKM51           0928 00000000                                               
+LIPLTNLFY           0931 000000001                                              
+LILAYTCLX           0933 00000000                                               
+LTBLCKPLN 0937 00002     TF                                                     

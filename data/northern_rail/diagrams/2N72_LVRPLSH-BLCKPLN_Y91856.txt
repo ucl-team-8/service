@@ -1,0 +1,26 @@
+BSNY918561602151605131111100 POO2N72    112249820 DMUS   075      S            P
+BX         NTY                                                                  
+LOLVRPLSH 0757 07573  SL     TB                                                 
+LIEDGH              0800H000000001                                              
+LIEDGHSB            0801 00000000                                               
+LIBOOTLBJ           0801H00000000                                               
+LIOLIVEMJ           0802H00000000                                               
+LIHUYTON  0805H0806H     08060806         T                                     
+LIHUYTJUN           0807 00000000                                               
+LISTHLNSC 0814H0815H     081508151        T             1H                      
+LISPRBJN            0827H00000000   FL                                          
+LIWIGASJN           0828H00000000                                               
+LIWIGANNW 0830 0831      083008315        T                                     
+LIBALSHWL           0839H00000000   SL                                          
+LIEUXT    0841 0841H     08410841         T                                     
+LIEUXTONJ           0843H00000000                                               
+LILEYLAND 0846 0846H     08460846         T           2 4                       
+LIFRNGTNC           0855 00000000                                               
+LIPRST    0858 0905H     085809053  SL    T                                     
+LIPRSTNFJ           0906H00000000                                               
+LIKIRKHAM 0914H0915      091509151        T                                     
+LIKIRKMNJ           0916H00000000                        H                      
+LIKIRKM51           0920 00000000                                               
+LIPLTNLFY 0923 0924      092309241        T           1                         
+LILAYTCLX           0927 00000000                                               
+LTBLCKPLN 0931 09315     TF                                                     

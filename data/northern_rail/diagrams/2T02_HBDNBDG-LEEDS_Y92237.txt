@@ -1,0 +1,16 @@
+BSNY922371512141605131111100 POO2T02    111868820 DMUS   075      S            P
+BX         NTY                                                                  
+LOHBDNBDG 0550 05501         TB                                                 
+LIMYTHLMR 0552H0553      055305532        T                                     
+LISWRBBDG 0558 0559      055805592        T                                     
+LIMLNRYDJ           0600 00000000                                               
+LIHLFX    0605 0606      060506062        T           1                         
+LIMLLNJN            0617 00000000                                               
+LIBRADIN  0618H0622      061906221        T                                     
+LIMLLNJN 2          0623H00000000                                               
+LINPUD    0630 0630H     063006302        T                                     
+LIBRMLYSR 0633H0634H     063406342        T               2                     
+LIHOLBJCN           0640H00000000                                               
+LIWHRDJN            0641 00000000   C                                           
+LILEEDSWJ           0641H00000000   C                   1                       
+LTLEEDS   0644 064710B   TF                                                     

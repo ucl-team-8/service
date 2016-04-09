@@ -1,0 +1,31 @@
+BSNY912261512141605131111100 POO2H445427112299820 DMUA   075      S S          P
+BX         NTY                                                                  
+LOLVRPLSH 2055 20558  FL     TB                                                 
+LIEDGH    2059 2059H     205920593        T                                     
+LIEDGHSB            2100H00000000                                               
+LIWVRTREJ           2102 00000000                                               
+LIMSLH    2103H2104      210421041        T                                     
+LIWALERTN 2106 2106H     210621061        T                                     
+LIALERTN  2109 2109H     210921091        T              H                      
+LIHUNTXWJ           2111 00000000   UML                                         
+LIHUNTSX  2113 2113H     211321132        T                                     
+LIHALW    2115H2116      21162116         T                                     
+LIHOUGHGR 2119H2120      21202120         T                                     
+LIWIDNES  2123 2123H     21232123         T                                     
+LISANKEY  2128 2128H     21282128         T                                     
+CRWRGT    OO2H445427112236820 DMUA   075      S S                               
+LIWRGT    2133 2134      213321341        T                                     
+LIPADGATE 2136H2137      21372137         T                                     
+LIBIRCHWD 2139H2140      21402140         T                                     
+LIGLAZBRK 2144H2145      21452145         T                                     
+LIGLAZBKE           2146 00000000                                               
+LIIRLAM   2147H2148      21482148         T                                     
+LIFLIXTON 2151H2152      21522152         T                                     
+LICHASNRD 2153H2154      21542154         T                                     
+LIURMSTON 2155H2156H     21562156         T                                     
+LIHMPHRYP 2158H2159      21592159         T                                     
+LITRFDPK  2201 2201H     22012201         T           1                         
+LITRFDPEJ           2204H00000000                     1                         
+LICFLDJN            2208H00000000                                               
+LIMNCRDGT 2209 2209H     220822081        T                                     
+LTMNCROXR 2211 22133     TF                                                     

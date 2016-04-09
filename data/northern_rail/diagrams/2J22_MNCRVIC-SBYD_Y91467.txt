@@ -1,0 +1,9 @@
+BSNY914671512141605131111100 POO2J22    112220110 DMUA   075      S            P
+BX         NTY                                                                  
+LOMNCRVIC 1611 16112  SL     TB                                                 
+LIMILESPL           1614 00000000                                               
+LIPHILPK1           1614H00000000                                               
+LIBAGLYFJ           1615H00000000                                               
+LIASHTMNJ           1619 00000000                                               
+LIASHONUL 1620 1621      16201621         T                                     
+LTSBYD    1625 16275     TF                                                     

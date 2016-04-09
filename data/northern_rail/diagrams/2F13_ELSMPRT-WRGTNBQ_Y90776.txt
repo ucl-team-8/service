@@ -1,0 +1,11 @@
+BSNY907761512141605131111100 POO2F13    122291000 DMUA   075      S            P
+BX         NTY                                                                  
+LOELSMPRT 0653 06532         TB                                                 
+LISTNLWAT 0657 0657H     06570657         T                                     
+LIINEL    0659H0700      07000700         T                                     
+LIHELSBY  0703 0703H     070307034        T                                     
+LIFRDSHM  0707H0708      07080708         T                                     
+LIFRDSHMJ           0710 00000000                     1                         
+LIRUNCRNE 0713H0714      07140714         T                                     
+LIACGJN             0718 00000000   FL                                          
+LTWRGTNBQ 0721 07234     TF                                                     

@@ -1,0 +1,7 @@
+BSNY925701512141605131111100 PEE5D43    112226820 DMUA   075                   P
+BX         NTY                                                                  
+LOHAZL    1726 00001        HTB                                                 
+LISTKPE1            1731 00000000   FL                                          
+LISTKP    1733 1733      00000000DM       OPA                                   
+LIHTNOJN  1735 1754      00000000   SL    OPRM                                  
+LTSTKP   21756 00001     TF                                                     

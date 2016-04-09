@@ -1,0 +1,26 @@
+BSNY924411512141605131111100 POO2Y55    121869000 DMUA   075      S            P
+BX         NTY                                                                  
+LOMORCAME 1034 10341  DUM    TB                                                 
+LIBARELA  1037H1038H     103810381        T              H                      
+LIMORCMSJ           1041 00000000                                               
+LILANCSTR 1045 1049      104510492        T                                     
+LIMORCMSJ2          1052 00000000                                               
+LICRNFNJN           1057 00000000                                               
+LICRNF    1058 1107      10581107         T                                     
+LIWENNGTN 1120 1120H     11201120         T                                     
+LIBNTHAM  1125H1126H     11261126         T                                     
+LICLPM    1132H1133      11331133         T                                     
+LIGGLSWCK 1141 1142      11411142         T           1                         
+LISETTLEJ           1146 00000000                                               
+LILPRESTN 1149H1150      11501150         T                                     
+LIHELIFLD 1152H1153H     11531153         T                                     
+LIGRGRAVE 1201 1201H     12011201         T           2   1H                    
+LISKPT    1210 1212      121012122        T                                     
+LIKEIGHLY 1221 1223      122112231        T             2 1                     
+LISHPY    1232H1233H     123312331        T                                     
+LISHPYDJN           1234H00000000                                               
+LIAPERLYJ           1238 00000000                     2   1                     
+LIARMLJCN           1245H00000000   US                  1H                      
+LIWHRDJN            1248 00000000   C                                           
+LILEEDSWJ           1248H00000000   C                                           
+LTLEEDS   1250 125411D   TF                                                     

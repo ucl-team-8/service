@@ -1,0 +1,15 @@
+BSNY913491512141605131111100 POO2H73    112230110 EMU323 090      S            P
+BX         NTY                                                                  
+LOHADFILD 1859 1859          TB                                                 
+LIGLSP    1904 1907      19041907         T                                     
+LIDNTG    1910 1910H     191019102        T                                     
+LIBRBM    1914 1914H     19141914         T                                     
+LIHATRSLY 1916H1917      19171917         T                                     
+LIGODLY   1918H1919      19191919         T                                     
+LINWTH    1920H1921      19211921         T                                     
+LIFLWRYFD 1922H1923      192319231        T                                     
+LIHYDEJ             1924 00000000                                               
+LIGIDB    1925H1926      192619261        T                                     
+LIASHBRYS 1930H1931      19311931         T           1 2                       
+LIARDWCKJ           1936 00000000   EL                                          
+LTMNCRPIC 1939 19402  EL TF                                                     

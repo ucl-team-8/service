@@ -1,0 +1,29 @@
+BSNY904221512141605131111100 POO2C40    122358000 D  140 075      S            P
+BX         NTY                                                                  
+LOCARLILE 0842 08421         TB                                                 
+LICARLCUR           0846 00000000                                               
+LIDALSTON 0850H0851      08510851         R                                     
+LIWIGTON  0900 0901      09000901         T                                     
+LIASPTRIA 0912 0913      09120913         R                                     
+LIMPRT    0924 0925      09240925         T                                     
+LIFLIMBY  0928 0928H     09280928         R                                     
+LIWKNT    0933H0935      09340935         T                                     
+LIHNGT    0939 0940      09390940         R                                     
+LIPARTNNJ           0944H00000000                                               
+LIPARTON  0949H0950H     09500950         R                                     
+LIWHITHVN 0954H0956H     09550956         T                                     
+LICRCK    0959 1000      09591000         R                                     
+LISTBEES  1006 1007      10061007         T X                                   
+LISELAFLD 1017 1018      10171018         T                                     
+LISEASCAL 1021H1022H     10221022         T                                     
+LIDRIGG   1026 1027      10261027         R                                     
+LIRGLS    1030H1031H     10311031         T                                     
+LIBOOTLE  1037 1038      10371038         R                                     
+LISILCRFT 1045H1046H     10461046         R                                     
+LIMLLM    1051H1052H     10521052         T                                     
+LIGREENRD 1058 1059      10581059         R                                     
+LIFOXFILD 1103H1104H     11041104         R                                     
+LIKRKBYIF 1108H1109H     11091109         R                                     
+LIASKAM   1114H1115H     11151115         T                                     
+LIPSTH              1120 00000000                     2                         
+LTBAROW   1130 11323     TF                                                     

@@ -1,0 +1,16 @@
+BSNY920701512141605131111100 POO2R84    111807820 DMUA   075      S            P
+BX         NTY                                                                  
+LOADWICK  1416 14161         TB                                                 
+LIBTLYSY  1419H1420      142014201        T                                     
+LIDONC    1424 1426      142414268        T                                     
+LIDONCHJN           1429H00000000                                               
+LICONBRGH 1433 1434      14331434         T                                     
+LIMEXBRGH 1437H1438H     14381438         T                                     
+LISWINTN  1441 1442      14411442         T                                     
+LIALDWRKJ           1445 00000000                         2                     
+LIROTHCEN 1450H1451H     145114511        T                                     
+LIROTHHJN           1453H00000000                          H                    
+LIMEADWHL 1456H1457H     145714571        T                                     
+LIWNCOJN            1458 00000000                     1    H                    
+LINNRYMLJ           1503 00000000                                               
+LTSHEFFLD 1505 15053A    TF                                                     

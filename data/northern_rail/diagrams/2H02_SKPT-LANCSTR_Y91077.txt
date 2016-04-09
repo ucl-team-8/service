@@ -1,0 +1,15 @@
+BSNY910771512141605131111100 POO2H02    121869000 DMUA   075      S            P
+BX         NTY                                                                  
+LOSKPT    0541 05414         TB                                                 
+LIGRGRAVE 0547 0547H     05470547         T                                     
+LIHELIFLD 0555H0556H     05560556         T                                     
+LILPRESTN 0559 0559H     05590559         T                                     
+LISETTLEJ           0602H00000000                                               
+LIGGLSWCK 0606 0607      06060607         T                                     
+LICLPM    0614H0615H     06150615         T                                     
+LIBNTHAM  0621 0621H     06210621         T                                     
+LIWENNGTN 0626 0626H     06260626         T           2                         
+LICRNF    0642 0643      06420643         T                                     
+LICRNFNJN           0643H00000000                                               
+LIMORCMSJ           0648 00000000                                               
+LTLANCSTR 0652 06525     TF                                                     

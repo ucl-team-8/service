@@ -1,0 +1,17 @@
+BSNY906421512141605131111100 POO2D63    121801000 DMUS   075      S            P
+BX         NTY                                                                  
+LOSBRN    2239 22391         TB                                                 
+LISBRNWJN           2241 00000000                                               
+LIMRSK    2243 2243H     224322431        T                                     
+LILONGBCK 2245 2246      224522461        T                                     
+LIREDCARE 2248H2249      224922491        T                                     
+LIREDCARC 2251 2252      225122521        T                                     
+LIGUSBROJ           2301 00000000                                               
+LIMDLSBRO 2302 2303      230223031        T                                     
+LITABY    2307H2308      230823081        T                                     
+LIBOWSFLD           2310 00000000                                               
+LISTOCCJN           2311 00000000                                               
+LIEGLSCLF 2312H2313H     231323131        T                                     
+LIALLENSW 2315H2316      231623161        T                                     
+LIDINSDAL 2321H2322H     232223221        T           1 2 1                     
+LTDLTN    2332H23334B    TF                                                     

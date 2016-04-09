@@ -1,0 +1,13 @@
+BSNY932071512151605130111100 PEE5H72    112230110 EMU323 090                   P
+BX         NTY                                                                  
+LOGLSP    0008 0000          TB                                                 
+LIDNTG              0011 000000002                                              
+LINWTH    0017 0017H     00000000         OP                                    
+LIHYDEJ             0019 00000000                       4                       
+LIGIDB              0025 000000001                    1                         
+LIASHBRYS           0030 00000000                       3                       
+LIARDWCKJ           0035 00000000   FL                                          
+LIMNCRPIC 0038 0055      000000006  SL FL RM-U                                  
+LIARDWCKJ2          0058 00000000   GL                                          
+LILNGSTN            0100 00000000                                               
+LTLNGSTCS 0106 0000      TF                                                     

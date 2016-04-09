@@ -1,0 +1,34 @@
+BSNY922501512141605131111100 POO2U186807111874020 DMUS   075      S S          P
+BX         NTY                                                                  
+LOLEEDS   0723 072311DF      TB                                                 
+LILEEDSWJ           0724 00000000   F                                           
+LIWHRDJN            0724H00000000                                               
+LIMRLY    0730 0731      07310731         T                                     
+LIBATLEY  0735H0736      07360736         T                                     
+LIDWBY    0738H0739H     07390739         T                                     
+LITHHLNWJ           0742 00000000                                               
+LIMIRFEJN           0743 00000000   SL                                          
+LIMIRFILD 0744H0747H     074707473        T           1   1                     
+LIHETNLJN 0752 0752H     00000000         A                                     
+LIBRLYWJN           0755H00000000                                               
+LIBRHOUSE 0758 0758H     075807582        T                                     
+LIGRTLNDJ           0804 00000000                                               
+LIMLNRYDJ           0806 00000000                                               
+LISWRBBDG 0807H0808H     080808081        T                                     
+LIMYTHLMR 0813H0814      081408141        T                                     
+LIHBDNBDG 0816H0817H     081708171        T                                     
+LIHALRYDJ           0822H00000000                                               
+LITODMRDN 0824 0824H     082408241        T                                     
+LIWDEN    0827 0828      082708281        T                                     
+LILITLBRO 0833H0834      083408341        T                                     
+LISMBG    0836 0837      083608371        T                                     
+LIRCHDLEJ           0839H00000000                                               
+LIRCHDALE 0840H0841H     084108413        T                                     
+LICSTL    0844 0844H     08440844         T                                     
+LICSTLTEJ           0845H00000000                                               
+LIMLSHILL 0848H0849H     08490849         T                                     
+LIVTRLWKS           0851 00000000                                               
+LIMSTN    0852 0852H     08520852         T           2                         
+LITHRPSBJ           0857H00000000                                               
+LIMILESPL           0858H00000000   FL                                          
+LTMNCRVIC 0902 09021     TF                                                     

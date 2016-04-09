@@ -1,0 +1,8 @@
+BSNY959471602151604011111100 PEE5F53    112297820 DMUS   075                   P
+BX         NTY                                                                  
+LOPRSTNCS 0529 0000          TB                                                 
+LIPRSTSHL 0531 0536      00000000         RM                                    
+LIPRST    0538 0540      000000004  FL    OP                                    
+LIEUXTONJ           0546 00000000                                               
+LIBALSHWL           0548 00000000                     3                         
+LTWIGANNW 0558 00004     TF                                                     

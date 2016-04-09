@@ -1,0 +1,28 @@
+BSNY923981512141605131111100 POO2W60    112240820 DMUA   075      S            P
+BX         NTY                                                                  
+LOKKBY    0816 0816          TB                                                 
+LIRNFD    0823H0824      08240824         T                                     
+LIUPHOLND 0827H0828      08280828         T                                     
+LIORRELL  0831 0831H     08310831         T                                     
+LIPBRT    0834 0834H     08340834         T           1                         
+CRWIGANWL OO2W60    112225110 DMUA   075      S                                 
+LIWIGANWL 0839H0841H     084008412        T                                     
+LIHINDLEY 0846 0846H     08460846         T                                     
+LICRWNSTJ           0847H00000000                                               
+LIDAISYH  0850 0851      08500851         T                                     
+LIHAGFOLD 0853H0854      08540854         T                                     
+LIATHERTN 0856 0857      08560857         T                                     
+LIWALKDEN 0902 0902H     09020902         T                                     
+LIMRSD    0905H0906      09060906         T                                     
+LISWNT    0908 0909      09080909         T           2  H                      
+LISLFDCT  0916H0917H     091709171        T                                     
+LISLFDORD 0919H0920H     09200920         T             1                       
+LIMNCRDST           0923 00000000   SL                   H                      
+CRMNCRVIC OO2W60    112220110 DMUA   075      S                                 
+LIMNCRVIC 0925 0929      092509294        T                                     
+LIMILESPL           0932 00000000                                               
+LIPHILPK1           0932H00000000                                               
+LIBAGLYFJ           0933H00000000                                               
+LIASHTMNJ           0937 00000000                                               
+LIASHONUL 0938 0939      09380939         T                                     
+LTSBYD    0943 09455     TF                                                     

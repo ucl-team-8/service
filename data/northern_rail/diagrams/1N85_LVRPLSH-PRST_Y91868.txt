@@ -1,0 +1,27 @@
+BSNY918681602151604011111100 PXX1N85    112249820 DMUA   075      S            P
+BX         NTY                                                                  
+LOLVRPLSH 2147 21471  SL     TB                                                 
+LIEDGH    2150H2151      215121511        T                                     
+LIEDGHSB            2152 00000000                                               
+LIBOOTLBJ           2152H00000000                                               
+LIWVRTTEC 2153 2153H     215321532        T                                     
+LIOLIVEMJ           2154H00000000                                               
+LIBROADGR 2156 2156H     21562156         T                                     
+LIROBY    2159H2200      22002200         T                                     
+LIHUYTON  2201H2202H     220222022        T                                     
+LIHUYTJUN           2203 00000000                                               
+LIPRESCOT 2206H2207      22072207         T                                     
+LIECPK    2209 2209H     22092209         T                                     
+LITHHT    2211H2212      22122212         T                                     
+LISTHLNSC 2215 2216      221522161        T                                     
+LIGARW    2222H2223      22232223         T                                     
+LIBRYN    2225H2226      22262226         T                                     
+LISPRBJN            2230 00000000   UDS                                         
+LIWIGASJN           2231 00000000   DPL                                         
+LIWIGANNW 2232H2238      223322386  FL    T                                     
+LIBALSHWL           2247H00000000   SL                                          
+LIEUXT    2249 2249H     22492249         T                                     
+LIEUXTONJ           2251H00000000                                               
+LILEYLAND 2254 2254H     22542254         T           2                         
+LIFRNGTNC           2259 00000000                                               
+LTPRST    2302 23021     TF                                                     

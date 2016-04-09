@@ -1,0 +1,6 @@
+BSNY932141512151605130111100 PEE5J44    112220821 DMUA   075                   P
+BX         NTY                                                                  
+LOMNCRVIC 0047 00005  FL     TBRM                                               
+LIMILESPL           0050 00000000                                               
+LITHRPSBJ           0051H00000000                                               
+LTNWTNHDD 0054 0000      TF                                                     
