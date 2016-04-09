@@ -1,0 +1,35 @@
+BSNY911081512141605131111100 POO2H12    111870820 DMUS   075      S            P
+BX         NTY                                                                  
+LOLEEDS   0529 05295B B      TB                                                 
+LILEEDSWJ           0530 00000000   DH                                          
+LIARMLJCN           0531H00000000                                               
+LIAPERLYJ           0537 00000000                                               
+LISHPYDJN           0540 00000000                                               
+LISHPY    0541 0542      054105422        T                                     
+LISAIR    0544 0544H     054405442        T                                     
+LIBNGY    0548 0549      054805492        T                                     
+LICFLATTS 0550H0551      055105512        T                                     
+LIKEIGHLY 0555 0556      055505562        T                                     
+LISTEETON 0600 0600H     060006002        T                                     
+LICONONLY 0604H0605H     060506052        T           1                         
+CRSKPT    OO2H124941121151900 DMUS   075      S S                               
+LISKPT    0611H0615      061206154        T                                     
+LIHELIFLD 0626H0627H     06270627         T             1                       
+LISETTLEJ           0632H00000000                                               
+LISETTLE  0635 0636      06350636         T                                     
+LIHTNRIBL           0644 00000000                                               
+LIRIBLHED 0650 0651      06500651         T                                     
+LIBLEMOR            0654 00000000                                               
+LIGARSDLE 0705 0706      07050706         T                                     
+LIKSTP    0718 0718H     07180718         T                                     
+LIAPBY    0730 0732      07300732         T                                     
+LINWBIKTH           0738H00000000                                               
+LINWBICUL           0741 00000000                                               
+LILWBY    0745 0746      07450746         T                                     
+LILAZKRKO 0751 0751H     07510751         T                                     
+LIARMTHWT 0758H0759H     07590759         T                                     
+LILOWHXSB           0801H00000000                                               
+LIHOWEACS           0805 00000000                     2  H2                     
+LIPETLBGJ           0814 00000000                                               
+LICARLLRJ           0815H00000000                                               
+LTCARLILE 0817 08176     TF                                                     

@@ -1,0 +1,19 @@
+BSNY932111602161605130111100 PEE5J19    112974820 DMUA   075                   P
+BX         NTY                                                                  
+LOPRSTNCS 0036 0000          TB                                                 
+LIPRSTSHL 0038 0041      00000000         OPRM          2                       
+LIPRST    0045 0048      000000003  SL    OPC         2                         
+LIFRNGTNC           0052 00000000                     2                         
+LIEUXTONJ           0058 00000000                                               
+LIBALSHWL           0100 00000000   FL                                          
+LIWIGANNW           0109H000000001                                              
+LIWIGANSJ           0110H00000000                                               
+LICRWNSTJ           0115 00000000                                               
+LIWALKDEN           0124 00000000                     2                         
+LISLFDCT            0134 00000000UB                      H                      
+LISLFDORD           0136 00000000                                               
+LIMNCRDST           0136H00000000   FL                                          
+LIMNCRVIC 0138 0139      000000006        C                                     
+LIMILESPL           0143H00000000                                               
+LITHRPSBJ           0146H00000000                                               
+LTNWTNHDD 0148H0000      TF                                                     

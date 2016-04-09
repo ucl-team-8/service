@@ -1,0 +1,11 @@
+BSNY913201512141605131111100 POO2H66    112226110 DMUA   075      S            P
+BX         NTY                                                                  
+LOMNCRPIC 1623 16233  EL     TB                                                 
+LIARDWCKJ           1625 00000000                                               
+LIASHBRYS           1626H00000000                                               
+LIREDISHN 1630 1630H     16301630         T                                     
+LIBRNGTN  1633H1634      16341634         T                                     
+LIBREDBRY 1636H1637      16371637         T                                     
+LIROMILEY 1639H1640      164016402        T                                     
+LIMARPLWJ           1642 00000000                                               
+LTMARPLE  1643 16442     TF                                                     

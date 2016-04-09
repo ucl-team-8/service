@@ -1,0 +1,31 @@
+BSNY918241512141605131111100 POO2N50    112242110 DMUS   075      S            P
+BX         NTY                                                                  
+LOBLKB    1720 17202         TB                                                 
+LIBLKBDJN           1721H00000000                                               
+LIACRNGTN 1727 1728      172717281        T                                     
+LIROSG    1734H1735      173517351        T                                     
+LIGANNOWJ           1736H00000000                                               
+LIBURNMR  1738 1739      173817392        T                                     
+LICOPYPIT           1746H00000000                                               
+LISTNSHJN           1753H00000000                                               
+LITODMRDN 1755 1756      175517561        T                                     
+LILITLBRO 1802H1803H     180318031        T                                     
+LISMBG    1805H1806      180618061        T                                     
+LIRCHDLEJ           1808H00000000                                               
+LIRCHDALE 1809H1810H     181018103        T                                     
+LICSTL    1813 1813H     18131813         T                                     
+LICSTLTEJ           1814H00000000                                               
+LIMLSHILL 1817H1818H     18181818         T                                     
+LIVTRLWKS           1820 00000000                     2                         
+LITHRPSBJ           1824H00000000                       1                       
+LIMILESPL           1826H00000000   FL                  1                       
+CRMNCRVIC OO2N50    112223820 DMUS   075      S                                 
+LIMNCRVIC 1830 1834      183018345        T                                     
+LIMNCRDST           1835H00000000                                               
+LISLFDORD 1837 1837H     18371837         T                                     
+LISLFDCT  1840 1841      184018412        T                                     
+LIBOLTON  1852 1853      185218531        T                                     
+LIHITW    1857H1859      18581859         T                                     
+LIBRMCRSS 1901H1902H     19021902         T             2                       
+LIDARWEN  1915H1917H     19161917         T X                                   
+LTBLKB   21925 19253     TF                                                     

@@ -1,0 +1,13 @@
+BSNY901741512141605131111100 POO2A01    121794000 DMUA   075      S            P
+BX         NTY                                                                  
+LOCHHL    0708 0708          TB                                                 
+LIALNMOTH 0719H0720H     072007201        T                                     
+LIWNGTJN  0723H0732      00000000         A                                     
+LIACKLNGT 0738H0739      07390739         T                                     
+LIWDRNGTN 0745H0746H     07460746         T                                     
+LIPEGSWD  0752 0752H     07520752         T                                     
+LIMRPTHRP 0755H0756H     075607561        T                                     
+LICRMLNGT 0804H0805      08050805         T           1                         
+LIHTONSJN           0813H00000000                                               
+LIMANORS  0815H0816H     08160816         T                                     
+LTNWCSTLE 0819 08211     TF                                                     

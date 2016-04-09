@@ -1,0 +1,16 @@
+BSNY909681512141605131111100 POO2F77    112225110 DMUS   075      S            P
+BX         NTY                                                                  
+LOMNCRVIC 1845 18455  FL     TB                                                 
+LIMNCRDST           1846H00000000                                               
+LISLFDORD 1847H1848      18481848         T              H                      
+LISLFDCT  1851 1852      185118522        T                                     
+LISWNT    1858 1858H     18581858         T                                     
+LIMRSD    1900H1901      19011901         T                                     
+LIWALKDEN 1904 1904H     19041904         T                                     
+LIATHERTN 1909H1910H     19101910         T                                     
+LIHAGFOLD 1912H1913      19131913         T                                     
+LIDAISYH  1915H1916      19161916         T                                     
+LICRWNSTJ           1919 00000000                                               
+LIHINDLEY 1920 1920H     19201920         T                                     
+LIINCE    1923 1923H     19231923         T           2                         
+LTWIGANWL 1928 19301     TF                                                     

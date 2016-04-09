@@ -1,0 +1,11 @@
+BSNY925711512141605131111100 PEE5D47    121799000 DMUA   075                   P
+BX         NTY                                                                  
+LODLTN    1936 00004A        TB                                                 
+LIFYHLSJN           1948 00000000                                               
+LITURSDLJ           1950 00000000                                               
+LIDRHM              1956 00000000DM                                             
+LIBRTLYJN           2003 00000000                       5                       
+LIKEBGSJN           2011H00000000                       1                       
+LINWCSTLE 2014H2024      000000004  SL    OP                                    
+LIHTONSJN           2030 00000000                                               
+LTHTONTMD 2034 0000      TF                                                     

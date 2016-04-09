@@ -1,0 +1,14 @@
+BSNY912561512141605131111100 POO2H51    112226110 DMUA   075      S            P
+BX         NTY                                                                  
+LOROHL    1923 1923          TB                                                 
+LIMARPLWJ           1926 00000000                                               
+LIROMILEY 1927H1928      19281928         T                                     
+LIWOODLEY 1931 1932      19311932         T                                     
+LIHYDEC   1934H1935      19351935         T                                     
+LIHYDEJ             1938 00000000                                               
+LIGIDB    1940H1941H     194119411        T                                     
+LIFRFD    1944 1944H     19441944         T                                     
+LIGORTON  1946H1947H     19471947   ML    T                                     
+LIASHBRYS           1949H00000000                                               
+LIARDWCKJ           1951 00000000   EL                                          
+LTMNCRPIC 1954 19565  EL TF                                                     

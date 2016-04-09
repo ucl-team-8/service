@@ -1,0 +1,35 @@
+BSNY917421602151605131111100 POO2N14    122350000 DMUA   075      S            P
+BX         NTY                                                                  
+LOBLCKS   1821 18211         TB                                                 
+LIBLCKPB  1822H1823      182318231        T                                     
+LISQUIRES 1825 1825H     182518251        T                                     
+LISTAS    1828H1829H     182918291        T                                     
+LIANSDELL 1832H1833      183318331        T                                     
+LILYTHAM  1835H1836H     183618361        T                                     
+LIMSSD    1840H1841H     184118411        T           1                         
+LIKIRKMNJ           1846H00000000                                               
+LIKIRKHAM 1847H1848H     184818482        T                                     
+LIPRSTNFJ           1856H00000000   BL                                          
+LIPRST    1858 1900      185819002  SL    T                                     
+LIFRNGTNC           1902H00000000                                               
+LILSTH    1905 1905H     190519052        T                                     
+LILSTHJN            1906H00000000                                               
+LIBMBRBDG 1908 1909      190819092        T                                     
+LIPLSNGTN 1916 1916H     191619161        R                                     
+LICHTR    1919 1920      191919201        T                                     
+LIMLHL    1922 1922H     192219221        T             2H                      
+LIBLKB    1928 1929      192819292        T                                     
+LIBLKBDJN           1930H00000000                                               
+LIRISHTON 1933H1934      193419341        T                                     
+LICHOS    1936H1937      193719372        T                                     
+LIACRNGTN 1939H1940H     194019401        T                                     
+LIHUNCOAT 1944H1945      194519452        T                                     
+LIHAPTON  1947H1948      194819482        R                                     
+LIROSG    1950H1951H     195119511        T                                     
+LIGANNOWJ           1953 00000000                                               
+LIBURNLYB 1954 1954H     195419541        R                                     
+LIBURNLYC 1956H1957H     195719571        T                                     
+LIBRIERFL 2001H2002      200220021        T                                     
+LINLSN    2004H2005H     200520051        T           2                         
+LICHAFRSS 2008H2008H     00000000         OP                                    
+LTCOLNE   2012 20131     TF                                                     

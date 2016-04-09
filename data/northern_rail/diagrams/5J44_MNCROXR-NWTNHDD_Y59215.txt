@@ -1,0 +1,13 @@
+BSNY592151512141605121111000 PEE5J44    112233820 DMUS   075                   P
+BX         NTY                                                                  
+LOMNCROXR 2225 00003         TB                                                 
+LIMNCRDGT           2226 000000002                                              
+LICFLDJN            2226H00000000                                               
+LIORDSLLJ           2227H00000000                                               
+LISLFDCT  2229 2235      000000002        RM                                    
+LIORDSLLJ2          2236H00000000                                               
+LIMNCRDST           2239 00000000   SL                                          
+LIMNCRVIC 2240H2243H     000000004  FL    C                                     
+LIMILESPL           2247 00000000                                               
+LITHRPSBJ           2248 00000000                                               
+LTNWTNHDD 2250 0000      TF                                                     

@@ -1,0 +1,13 @@
+BSNY927911512141605131111100 PEE5J48    112224820 DMUS   075                   P
+BX         NTY                                                                  
+LOMNCROXR 1910 00005         TB                                                 
+LIMNCRDGT           1911 000000002                                              
+LICFLDJN            1912 00000000                                               
+LIORDSLLJ           1913H00000000                       7                       
+LISLFDCT  1922 1928      00000000UB       OPRM                                  
+LISLFDORD           1930 00000000         A                                     
+LIMNCRDST           1930H00000000   FL                  1                       
+LIMNCRVIC 1933 1949      000000005        -U                                    
+LIMILESPL           1952 00000000                                               
+LITHRPSBJ           1954 00000000                                               
+LTNWTNHDD 1956 0000      TF                                                     

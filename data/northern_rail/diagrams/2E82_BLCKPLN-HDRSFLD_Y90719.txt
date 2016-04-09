@@ -1,0 +1,38 @@
+BSNY907191602151604011111100 POO2E823977112355820 DMUA   075      S S          P
+BX         NTY                                                                  
+LOBLCKPLN 1821 18215         TB                                                 
+LILAYTON  1824 1824H     182418241        T                                     
+LILAYTCLX           1826 00000000                                               
+LIPLTNLFY 1828 1829      182818292        T                                     
+LIPLTNT67           1833 00000000                                               
+LIKIRKMNJ           1836 00000000                     1                         
+LIKIRKHAM 1838 1839      183818392        T              H                      
+LIPRSTNFJ           1847H00000000   FL                                          
+LIPRST    1849 1852      184918524  FL    T                                     
+LILEYLAND 1857 1857H     18571857         T                                     
+LIEUXTONJ           1900 00000000                                               
+LICHORBUK 1901H1902      19021902         T                                     
+LICHORLEY 1905H1906H     19061906         T                                     
+LIADNL    1910H1911      19111911         T                                     
+LIBLRD    1914 1914H     19141914         T                                     
+LIHORWICH 1917H1918H     19181918         T                                     
+LILOSTCKP 1921H1922      192219222        T                                     
+LILOSTCKJ           1922H00000000                                               
+LIBOLTON  1926H1927H     192719273        T           2                         
+LISLFDCT  1939H1940H     194019401        T                                     
+LISLFDORD 1942H1944      19431944         T                                     
+LIMNCRDST           1945H00000000   SL                                          
+CRMNCRVIC OO2E823977112220821 DMUA   075      S S                               
+LIMNCRVIC 1947 1957      194719574        T                                     
+LIMILESPL           2000H00000000                                               
+LIPHILPK1           2001 00000000                                               
+LIBAGLYFJ           2002 00000000                                               
+LIASHTMNJ           2005H00000000                                               
+LIASHONUL 2006H2007      20072007         T                                     
+LISBYD    2011 2012      201120124        T                                     
+LIMOSSLEY 2016 2016H     20162016         T                                     
+LIGFLD    2020 2020H     20202020         T                H                    
+LIDIGGLEJ           2024 00000000                                               
+LIMRSN    2028H2029      202920291        T                                     
+LISLTHWTE 2032H2033H     20332033         T           1                         
+LTHDRSFLD 2040 20424B    TF                                                     

@@ -1,0 +1,15 @@
+BSNY911941512141605131111100 POO2H35    111870820 EMU333 100      S            P
+BX         NTY                                                                  
+LOSKPT    1117 11172         TB                                                 
+LICONONLY 1121H1122H     112211221        T                                     
+LISTEETON 1126H1127      112711271        T                                     
+LIKEIGHLY 1130H1131H     113111311        T                                     
+LICFLATTS 1134H1135      113511351        T                                     
+LIBNGY    1136H1137H     113711371        T                                     
+LISAIR    1141H1142H     114211421        T                                     
+LISHPY    1144 1145      114411451        T                                     
+LISHPYDJN           1146 00000000                        H                      
+LIAPERLYJ           1149H00000000                     1                         
+LIARMLJCN           1155 00000000   UH                                          
+LILEEDSWJ           1156H00000000   A                                           
+LTLEEDS   1158 11592C    TF                                                     

@@ -1,0 +1,14 @@
+BSNY923671512141605131111100 POO2W23    111838821ZDMUS   075      S            P
+BX         NTY                                                                  
+LOSCARBRO 1757 17574         TB                                                 
+LISEAMER  1801H1802H     18021802         T                                     
+LIFILEY   1811H1812H     18121812         T                                     
+LIHUNMNBY 1816H1817H     18171817         T                                     
+LIBEMPTON 1826H1827      18271827         T               1                     
+LIBRDLNGT 1834 1841      183418415        T                                     
+LINAFERTN 1851H1852H     18521852         T                                     
+LIDRIFILD 1856 1857      18561857         T                                     
+LIHTNCRNS 1901H1902H     19021902         T                                     
+LIBEVERLY 1911 1912      191119121        T                                     
+LICTTGHM  1917H1918H     19181918         T           2 2                       
+LTHULL    1929 19305     TF                                                     

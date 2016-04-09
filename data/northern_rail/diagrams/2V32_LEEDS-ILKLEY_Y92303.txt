@@ -1,0 +1,11 @@
+BSNY923031512141605131111100 POO2V32    111819020 EMU333 100      S            P
+BX         NTY                                                                  
+LOLEEDS   1302 13022C B      TB                                                 
+LILEEDSWJ           1303 00000000   DH                                          
+LIARMLJCN           1304H00000000                                               
+LIAPERLYJ           1309 00000000                                               
+LIGUISELY 1313 1314      131313141        T                                     
+LIMENSTON 1316H1317      131713171        T                                     
+LIBURLYIW 1319 1320      131913201        T                                     
+LIBNRHYDN 1323 1323H     132313231        T           1   1                     
+LTILKLEY  1329 13292     TF                                                     

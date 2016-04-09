@@ -1,0 +1,24 @@
+BSNY924401512141605131111100 POO2Y51    121869000 DMUS   075      S            P
+BX         NTY                                                                  
+LOLANCSTR 0707 07075         TB                                                 
+LIMORCMSJ           0710 00000000                                               
+LICRNFNJN           0715 00000000                                               
+LICRNF    0716 0718      07160718         T                                     
+LIWENNGTN 0731 0731H     07310731         T                                     
+LIBNTHAM  0736H0737H     07370737         T                                     
+LICLPM    0743 0743H     07430743         T                                     
+LIGGLSWCK 0751H0752H     07520752         T           1                         
+LISETTLEJ           0756H00000000                                               
+LILPRESTN 0800 0800H     08000800         T                                     
+LIHELIFLD 0802H0803H     08030803         T                                     
+LIGRGRAVE 0811 0811H     08110811         T           2   2                     
+LISKPT    0820H0826      082108262        T             1                       
+LIKEIGHLY 0836 0837      083608371        T                                     
+LIBNGY    0841 0842      084108421        T                                     
+LISHPY    0846 0848      084608471        T                                     
+LISHPYDJN           0849 00000000                                               
+LIAPERLYJ           0852H00000000                     2                         
+LIARMLJCN           0859 00000000   US                                          
+LIWHRDJN            0900 00000000   C                     2                     
+LILEEDSWJ           0902H00000000   C                                           
+LTLEEDS   0904 09049B    TF                                                     

@@ -1,0 +1,26 @@
+BSNY922011512141605131111100 POO2S49    112226820 DMUA   075      S            P
+BX         NTY                                                                  
+LOSHEFFLD 1614 16142C        TB                                                 
+LIDORESNJ           1620 00000000                                               
+LIDORE    1621 1621H     16211621         T                                     
+LIDOREWJ            1622H00000000                                               
+LITOTLYTE           1623 00000000                                               
+LIGRNDLFD 1628 1628H     162816281        T                                     
+LIHATHRSG 1631H1632      163216321        T                                     
+LIBAMFORD 1635 1636      16351636         T                                     
+LIHOPD    1639 1639H     163916391        T                                     
+LIERLESDG           1641H00000000                                               
+LIEDALE   1646H1647H     164716471        T                                     
+LICHNLYEJ           1653 00000000                                               
+LICHNLYNJ           1653H00000000                                               
+LICHNLY   1655 1655H     165516551        T                                     
+LINWMILSJ           1659 00000000                                               
+LINWMILSC 1701H1702H     170217021        T                                     
+LIMARPLE  1707 1707H     170717071        T                                     
+LIMARPLWJ           1709 00000000                                               
+LIROMILEY 1710H1711      17111711         T                                     
+LIBREDBRY 1713H1714      17141714         T                                     
+LIREDISHN           1717H00000000                     2                         
+LIASHBRYS           1723 00000000                                               
+LIARDWCKJ           1725 00000000   EL                                          
+LTMNCRPIC 1728 17313  EL TF                                                     

@@ -1,0 +1,15 @@
+BSNY927841512141605131111100 PEE5J34    112228820 DMUS   075                   P
+BX         NTY                                                                  
+LOSTKP    0907 00004  SL    HTB                                                 
+LIHTNOJN            0909 00000000                                               
+LIASBRDGE           0910 00000000                                               
+LIDNTOSTJ           0914 00000000                                               
+LIDNTONJN           0915 00000000                       8                       
+LIASHTMNJ           0928H00000000                                               
+LIBAGLYFJ           0931H00000000                     1                         
+LIPHILPK1           0933H00000000                                               
+LIMILESPL           0934 00000000   SL                                          
+LIMNCRVIC 0938 0944      000000001  FL    OPA                                   
+LIMILESPL2          0947 00000000                                               
+LITHRPSBJ           0948H00000000                                               
+LTNWTNHDD 0951 0000      TF                                                     

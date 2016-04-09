@@ -1,0 +1,5 @@
+BSNY928101512141605131111100 PEE5J56    112349820 DMUS   075                   P
+BX         NTY                                                                  
+LOCLITHRO 1021 00001         TB                                                 
+LICLITHJN 1023 1034      00000000         RM                                    
+LTCLITHRO21036 00001     TF                                                     

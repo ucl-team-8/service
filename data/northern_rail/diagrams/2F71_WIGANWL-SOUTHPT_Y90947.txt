@@ -1,0 +1,12 @@
+BSNY909471512141605131111100 POO2F71    112224820 DMUS   075      S            P
+BX         NTY                                                                  
+LOWIGANWL 0637 06373         TB                                                 
+LIGATHRST 0641 0641H     06410641         T                                     
+LIAPLYBDG 0644H0645      06450645         T                                     
+LIPARBOLD 0648H0649      06490649         T                                     
+LIHOSCAR  0651H0652      06520652         T                                     
+LIBRSCGHB 0654H0655      06550655         T                                     
+LINEWLANE 0657 0657H     06570657         T                                     
+LIBESCRLA 0700H0701      07010701         T                                     
+LIMEOLSCP 0705H0706      07060706         T           2                         
+LTSOUTHPT 0713 07155     TF                                                     

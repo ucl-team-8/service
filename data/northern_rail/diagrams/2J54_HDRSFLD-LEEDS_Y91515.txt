@@ -1,0 +1,15 @@
+BSNY915151512141605131111100 POO2J54    111874020 DMUA   075      S            P
+BX         NTY                                                                  
+LOHDRSFLD 2001 20014A        TB                                                 
+LIDEIGHTN 2004 2004H     200420041        T                                     
+LIHETNLEJ           2007 00000000                                               
+LIMIRFILD 2008H2009H     200920091        T                                     
+LIMIRFEJN           2011 00000000                                               
+LIRTHP    2012 2012H     20122012         T                                     
+LIDWBY    2015H2020H     20162020         T                                     
+LIBATLEY  2023 2023H     20232023         T                                     
+LIMRLY    2028H2029H     20292029         T                                     
+LICOTNGLY 2032H2033      20332033         T           1                         
+LIWHRDJN            2038 00000000   E                                           
+LILEEDSWJ           2038H00000000   E                                           
+LTLEEDS   2040 204212D   TF                                                     

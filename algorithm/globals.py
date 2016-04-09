@@ -52,7 +52,7 @@ class Segment:
 
     def __init__(self):
         self.id = self.newid()
-        self.unit = None
+        # self.unit = None  # We do not have a unit anymore
         self.cif_uid = None
         self.gps_car_id = None
         self.headcode = None
@@ -61,8 +61,7 @@ class Segment:
         self.matching = []
 
     def __repr__(self):
-        string = 'Segment: unit= {0}'.format(self.unit)
-        string += ', gps_car_id= {0}'.format(self.gps_car_id)
+        string = 'Segment: gps_car_id= {0}'.format(self.gps_car_id)
         string += ', cif_uid= {0}'.format(self.cif_uid)
         string += ', headcode= {0}'.format(self.headcode)
         string += ', isplanned= {0}'.format(self.isPlanned)
@@ -71,7 +70,6 @@ class Segment:
 
     def gps(self, gps_report):
         self.gps_car_id = gps_report['gps_car_id']
-        self.unit = db_queries.getUnitFromCarId(gps_report['gps_car_id'])
         self.matching.append({
             'gps': gps_report,
             'trust': None,

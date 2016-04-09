@@ -1,0 +1,14 @@
+BSNY920371512141605131111100 POO2R37    111807820 DMUA   075      S            P
+BX         NTY                                                                  
+LOSHEFFLD 1929 19291A        TB                                                 
+LINNRYMLJ           1930H00000000                                               
+LIWNCOJN            1933H00000000                                               
+LIMEADWHL 1934 1935      193419352        T                                     
+LIROTHHJN           1938 00000000                                               
+LIROTHCEN 1940 1941      194019412        T                                     
+LIALDWRKJ           1945 00000000                                               
+LISWINTN  1948H1949H     19491949         T                                     
+LIMEXBRGH 1951H1952H     19521952         T                                     
+LICONBRGH 1956 1957      19561957         T                                     
+LIDONCHJN           2000H00000000                     1  H2                     
+LTDONC    2007 20078     TF                                                     

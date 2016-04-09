@@ -1,0 +1,27 @@
+BSNY912221512141605131111100 POO2H447611112299820 DMUA   075      S S          P
+BX         NTY                                                                  
+LOLVRPLSH 0927 09279  FL     TB                                                 
+LIEDGH              0931 000000003                                              
+LIEDGHSB            0931H00000000                                               
+LIWVRTREJ           0933 00000000                                               
+LIMSLH    0934H0935      093509351        T                                     
+LIWALERTN 0937 0937H     093709371        T                                     
+LIALERTN  0940 0940H     094009401        T                                     
+LIHUNTXWJ           0941H00000000   UML                                         
+LIHUNTSX            0943 000000002                                              
+LIHOUGHGR 0946H0947      09470947         T                                     
+LIWIDNES  0950 0950H     09500950         T                                     
+CRWRGT    OO2H447611112236820 DMUA   075      S S                               
+LIWRGT    0958 0959      095809591        T                                     
+LIPADGATE 1001H1002      10021002         T                                     
+LIBIRCHWD 1004H1005      10051005         T                                     
+LIGLAZBRK 1009H1010      10101010         T                                     
+LIGLAZBKE           1011 00000000                                               
+LIIRLAM   1012H1013H     10131013         T                                     
+LIFLIXTON 1017 1017H     10171017         T                                     
+LICHASNRD 1019 1019H     10191019         T                                     
+LIURMSTON 1021 1022      10211022         T           2                         
+LITRFDPEJ           1028 00000000                        H                      
+LICFLDJN            1031H00000000                                               
+LIMNCRDGT 1032 1032H     103010301        T                                     
+LTMNCROXR 1034 10355     TF                                                     

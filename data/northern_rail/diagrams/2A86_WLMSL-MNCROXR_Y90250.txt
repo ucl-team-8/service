@@ -1,0 +1,16 @@
+BSNY902501512141605131111100 POO2A86    112233820 EMU323 090      S            P
+BX         NTY                                                                  
+LOWLMSL   2156 21561         TB                                                 
+LIHLDGSJ            2159H00000000                                               
+LIHLDGWJ            2200H00000000                     1 2H                      
+LIMNCRIAP 2207 2211      220722112A       T                                     
+LIHLDGWJ 2          2212H00000000                                               
+LIHLDG    2214 2214H     221422141        T                                     
+LIGATLEY  2217 2217H     22172217         T                                     
+LIEDIDBRY 2219H2220      22202220         T                                     
+LIBAGE    2221H2222      22222222         T                                     
+LIMLDTHRD 2223H2224      22242224         T           1                         
+LISLDLJN            2227 00000000   SL                                          
+LIARDWCKJ           2229 00000000                          H                    
+LIMNCRPIC 2232 2234      2233223414    SL T                                     
+LTMNCROXR 2236 22384     TF                                                     

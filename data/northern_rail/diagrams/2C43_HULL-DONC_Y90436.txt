@@ -1,0 +1,17 @@
+BSNY904361512141605131111100 POO2C43    111808920 DMUS   075      S            P
+BX         NTY                                                                  
+LOHULL    1123 11235         TB                                                 
+LIHESSLRD           1126H00000000                                               
+LIHESSLE  1129H1130      11301130         T                                     
+LIFERRIBY 1134 1135      11341135   SL    T                                     
+LIBROUGH  1139H1140H     11401140         T                                     
+LIBRFT    1145H1146      11461146         T                                     
+LIGLBRDYK 1149H1150H     11501150         T                                     
+LIGOOLE   1159H1201      120012012        T                                     
+CRTHORNEN OO2C43    111816820 DMUS   075      S                                 
+LITHORNEN 1209 1209H     12091209         T                                     
+LITHORNEJ           1212 00000000                                               
+LIHTFLASF 1214H1215H     12151215         T                                     
+LIKKSNDAL 1219H1220      12201220         T                                     
+LIBTLYJN            1223H00000000                     2   2                     
+LTDONC    1230 12301     TF                                                     

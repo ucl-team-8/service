@@ -1,0 +1,27 @@
+BSNY922191512141605131111100 POO2S59    112226820 DMUA   075      S            P
+BX         NTY                                                                  
+LOSHEFFLD 1914 19145A        TB                                                 
+LIDORESNJ           1920 00000000                                               
+LIDORE    1921 1921H     19211921         T                                     
+LIDOREWJ            1922H00000000                                               
+LITOTLYTE           1923 00000000                                               
+LIGRNDLFD 1928 1929      192819291        T                                     
+LIHATHRSG 1932 1932H     193219321        T                                     
+LIBAMFORD 1935H1936H     19361936         T                                     
+LIHOPD    1939H1940      194019401        T                                     
+LIERLESDG           1942 00000000                                               
+LIEDALE   1947 1948      194719481        T                                     
+LICHNLYEJ           1953H00000000                                               
+LICHNLYNJ           1954 00000000                                               
+LICHNLY   1955H1956      195619561        T                                     
+LINWMILSJ           1959H00000000                                               
+LINWMILSC 2002 2003      200220031        T                                     
+LIMARPLE  2007H2008H     200820081        T                                     
+LIMARPLWJ           2010 00000000                                               
+LIROMILEY 2011H2012H     20122012         T                                     
+LIBREDBRY 2015 2015H     20152015         T                                     
+LIBRNGTN  2017H2018H     20182018         T                                     
+LIREDISHN 2021 2021H     20212021         T           1                         
+LIASHBRYS           2026H00000000                     1                         
+LIARDWCKJ           2029 00000000   EL                                          
+LTMNCRPIC 2032 20333  EL TF                                                     

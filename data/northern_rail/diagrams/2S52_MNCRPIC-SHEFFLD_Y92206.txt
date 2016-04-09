@@ -1,0 +1,27 @@
+BSNY922061512141605131111100 POO2S52    112226820 DMUA   075      S            P
+BX         NTY                                                                  
+LOMNCRPIC 1750 17501  EL     TB                                                 
+LIARDWCKJ           1752 00000000                                               
+LIASHBRYS           1753H00000000                                               
+LIREDISHN 1757 1757H     17571757         T                                     
+LIBRNGTN  1800H1801H     18011801         T                                     
+LIBREDBRY 1804 1804H     18041804         T                                     
+LIROMILEY 1807 1807H     180718072        T                                     
+LIMARPLWJ           1809H00000000                                               
+LIMARPLE  1810H1811H     181118112        T                                     
+LINWMILSC 1816H1817H     181718172        T                                     
+LINWMILSJ           1820 00000000                                               
+LICHNLY   1823 1823H     182318232        T                                     
+LICHNLYNJ           1825H00000000                                               
+LICHNLYEJ           1826 00000000                                               
+LIEDALE   1832 1833      183218332        T                                     
+LIERLESDG           1837 00000000                                               
+LIHOPD    1838H1839      183918392        T                                     
+LIBAMFORD 1841H1842H     18421842         T                                     
+LIHATHRSG 1845H1846      184618462        T                                     
+LIGRNDLFD 1849 1850      184918502        T           2                         
+LITOTLYTE           1856H00000000                                               
+LIDOREWJ            1857 00000000                                               
+LIDORE    1857H1858H     18581858         T                                     
+LIDORESNJ           1859H00000000                       1                       
+LTSHEFFLD 1906 19085A    TF                                                     

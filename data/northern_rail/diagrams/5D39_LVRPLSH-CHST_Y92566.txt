@@ -1,0 +1,21 @@
+BSNY925661512141605131111100 PEE5D39    122291000 DMUS   075                   P
+BX         NTY                                                                  
+LOLVRPLSH 1342 00002  SL     TB                                                 
+LIEDGH              1345H000000003                                              
+LIEDGHSB            1346 00000000                                               
+LIBOOTLBJ           1346H00000000                                               
+LIOLIVEMJ           1347H00000000                       1H                      
+LIHUYTON            1351 00000000                                               
+LIHUYTJUN           1351H00000000                                               
+LIRHIL              1354H00000000                                               
+LISTHLNSJ           1357 000000001                      5H                      
+LIERLSTWN           1406 000000003                    1                         
+LIWINWCKJ           1409 00000000   FL                                          
+LIDALAMBR           1412 00000000                                               
+LIWRGTNBQ           1413 000000002                                              
+LIACGJN             1415 00000000                                               
+LIRUNCRNE           1418 00000000                                               
+LIFRDSHMJ           1420 00000000                                               
+LIHELSBY            1424 000000001                                              
+LIMIKLTRF           1428 00000000                     2 3                       
+LTCHST    1438 00005     TF                                                     

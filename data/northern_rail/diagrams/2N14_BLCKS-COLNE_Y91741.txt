@@ -1,0 +1,35 @@
+BSNY917411512141605131111100 POO2N14    122350000 DMUA   075      S            P
+BX         NTY                                                                  
+LOBLCKS   1320 13201         TB                                                 
+LIBLCKPB  1321H1322      132213221        T                                     
+LISQUIRES 1324 1324H     132413241        T                                     
+LISTAS    1327H1328H     132813281        T                                     
+LIANSDELL 1331H1332      133213321        T                                     
+LILYTHAM  1334H1335H     133513351        T                                     
+LIMSSD    1339H1340H     134013401        T           1                         
+LIKIRKMNJ           1346 00000000                                               
+LIKIRKHAM 1347 1349      134813492        T                                     
+LIPRSTNFJ           1357 00000000   BL                                          
+LIPRST    1358H1400H     135914002  SL    T                                     
+LIFRNGTNC           1403 00000000                                               
+LILSTH    1405H1406      140614062        T                                     
+LILSTHJN            1407 00000000                                               
+LIBMBRBDG 1408H1409H     140914092        T                                     
+LIPLSNGTN 1416H1417      141714171        R                                     
+LICHTR    1419H1420H     142014201        T                                     
+LIMLHL    1422H1423      142314231        T                                     
+LIBLKB    1426 1427      142614272        T                                     
+LIBLKBDJN           1428H00000000                                               
+LIRISHTON 1431H1432      143214321        T                                     
+LICHOS    1434H1435      143514352        T                                     
+LIACRNGTN 1437H1438H     143814381        T                                     
+LIHUNCOAT 1442H1443      144314432        T                                     
+LIHAPTON  1445H1446      144614462        R                                     
+LIROSG    1448H1449H     144914491        T                                     
+LIGANNOWJ           1451 00000000                                               
+LIBURNLYB 1452 1452H     145214521        R                                     
+LIBURNLYC 1454H1455H     145514551        T                                     
+LIBRIERFL 1459H1500      150015001        T                                     
+LINLSN    1502H1503H     150315031        T           2                         
+LICHAFRSS 1506H1506H     00000000         OP                                    
+LTCOLNE   1510 15111     TF                                                     

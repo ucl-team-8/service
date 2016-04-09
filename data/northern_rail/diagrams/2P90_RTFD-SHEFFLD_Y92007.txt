@@ -1,0 +1,16 @@
+BSNY920071512141605131111100 POO2P90    111804920 DMUS   075      S            P
+BX         NTY                                                                  
+LORTFD    2245 22452         TB                                                 
+LITHRMWJN           2248 00000000                         1                     
+LIWORKSOP 2257 2258      225722581        T                                     
+LISHRKSEJ           2300 00000000                                               
+LISHRKSKS 2301H2302      23022302         T                                     
+LIBRCLEJN           2304 00000000                                               
+LIKVTNPK  2307 2308      23072308         T                                     
+LIKVTNBDG 2310H2311      23112311         T                                     
+LIWDHOUSJ           2315H00000000                                               
+LIWDHOUSE 2316H2317H     23172317         T                                     
+LIDARNALL 2322H2323      23232323         T                                     
+LIWDBRNJN           2325 00000000                     1   1H                    
+LINNRYMLJ           2329 00000000                                               
+LTSHEFFLD 2331 23316A    TF                                                     

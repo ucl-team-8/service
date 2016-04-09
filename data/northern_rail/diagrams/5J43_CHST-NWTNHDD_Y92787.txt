@@ -1,0 +1,22 @@
+BSNY927871512141605121111000 PEE5J43    112229820 DMUS   075                   P
+BX         NTY                                                                  
+LOCHST    2035 00006         TB                                                 
+LIMIKLTRF           2040 00000000                                               
+LIHELSBY            2043H000000002                                              
+LIFRDSHMJ           2048H00000000                                               
+LIRUNCRNE           2050H00000000                     1                         
+LIACGJN             2055 00000000   OL                                          
+LIWRGTWOJ           2056H00000000                                               
+LIWRGTNBQ           2058 000000003  SL                                          
+LIWINWCKJ           2102 00000000                                               
+LIERLSTWN           2104H000000004        A                                     
+LINWTNLW            2105H00000000                                               
+LIPKSDJT            2106H00000000                                               
+LIASTLEY            2111 00000000                                               
+LIECCLES            2115 00000000                     2                         
+LIORDSLLJ           2120 00000000                                               
+LIMNCRDST           2122H00000000   FL                  1                       
+LIMNCRVIC 2125 2130      000000005        OP                                    
+LIMILESPL           2133 00000000                                               
+LITHRPSBJ           2134H00000000                                               
+LTNWTNHDD 2137 0000      TF                                                     

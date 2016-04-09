@@ -1,0 +1,15 @@
+BSNY907231512141605131111100 POO2E86    112220821 DMUA   075      S            P
+BX         NTY                                                                  
+LOMNCRVIC 2157 21575  SL     TB                                                 
+LIMILESPL           2200H00000000                                               
+LIPHILPK1           2201 00000000                                               
+LIBAGLYFJ           2202 00000000                                               
+LIASHTMNJ           2205H00000000                                               
+LIASHONUL 2206H2207      22072207         T                                     
+LISBYD    2211 2212      221122124        T                                     
+LIMOSSLEY 2216 2216H     22162216         T                                     
+LIGFLD    2220 2220H     22202220         T                H                    
+LIDIGGLEJ           2224 00000000                                               
+LIMRSN    2228H2229      222922291        T                                     
+LISLTHWTE 2232H2233H     22332233         T           1                         
+LTHDRSFLD 2240 22424     TF                                                     

@@ -1,0 +1,12 @@
+BSNY900821512141605131111100 PXX1J02    112225110 DMUA   075      S            P
+BX         NTY                                                                  
+LOWIGANNW 0759 07592         TB                                                 
+LIWIGANSJ           0800 00000000                                               
+LICRWNSTJ           0804H00000000                                               
+LIDAISYH  0807 0807H     08070807         T                                     
+LIATHERTN 0811 0812      08110812         T                                     
+LIWALKDEN 0817 0818      08170818         T           2                         
+LISLFDCT  0829 0830      082908301        T                                     
+LISLFDORD 0832 0833H     08320833         T                                     
+LIMNCRDST           0835 00000000   FL                                          
+LTMNCRVIC 0837 08395     TF                                                     

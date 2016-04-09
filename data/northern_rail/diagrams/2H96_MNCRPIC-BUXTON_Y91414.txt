@@ -1,0 +1,20 @@
+BSNY914141512141605131111100 POO2H96    112228820 DMUS   075      S            P
+BX         NTY                                                                  
+LOMNCRPIC 1449 144910 SL     TB                                                 
+LIARDWCKJ           1451H00000000                                               
+LISLDLJN            1453H00000000                                               
+LILVHM    1454H1455      145514551        T                                     
+LIHTCP    1457H1458      145814581        T                                     
+LIHTNOJN            1459H00000000                                               
+LISTKP    1501 1502      15011502         T                                     
+LISTKPE1            1503 00000000                                               
+LIDAVNPRT 1505 1506      150515061        T                                     
+LIWMOR    1507H1508      150815081        T                                     
+LIHAZL    1510 1511      151015111        T                                     
+LIDISLEY  1517H1518      151815181        T                                     
+LINWMILSN 1521 1522      152115221        T                                     
+LIFURNESV 1524 1524H     15241524         T                                     
+LIWHALYBG 1527 1527H     152715271        T                                     
+LICHEF    1534 1535      153415351        T                                     
+LIDVHL    1539H1540      154015401        T           2                         
+LTBUXTON  1548 15492     TF                                                     

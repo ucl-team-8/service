@@ -1,0 +1,10 @@
+BSNY919241512141605131111100 POO2P20    111818620 EMU321 100      S            P
+BX         NTY                                                                  
+LOLEEDS   0832 08329B D      TB                                                 
+LILEEDSWJ           0833 00000000   D                                           
+LIWHRDJN            0833H00000000   DS                                          
+LIARMLJCN           0834H00000000                                               
+LIAPERLYJ           0839 00000000                                               
+LISHPYDJN           0842 00000000                                               
+LISHPY    0843 0844      084308444        T           1   1                     
+LTBRADFS  0852 08523     TF                                                     

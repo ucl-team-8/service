@@ -1,0 +1,26 @@
+BSNY913841512141605131111100 POO2H83    112230110 EMU323 090      S            P
+BX         NTY                                                                  
+LOMNCRPIC 1546 15461  EL     TB                                                 
+LIARDWCKJ           1548 00000000                                               
+LIASHBRYS 1549H1550      15501550         T              H                      
+LIGIDB    1555 1555H     155515552        T                                     
+LIHYDEJ             1557 00000000                                               
+LIFLWRYFD 1558 1558H     155815582        T                                     
+LINWTH    1600 1600H     16001600         T                                     
+LIGODLY   1602 1602H     16021602         T                                     
+LIHATRSLY 1604 1604H     16041604         T                                     
+LIBRBM    1606H1607      16071607         T           1 1H                      
+LIDNTG    1613H1614      161416142        T                                     
+LIGLSP    1617 1620      16171620         T                                     
+LIHADFILD 1626 1629      16271629         T                                     
+LIDNTG   21631 1631H     163116311        T                                     
+LIBRBM   21635 1635H     16351635         T                                     
+LIHATRSLY21637H1638      16381638         T                                     
+LIGODLY  21639H1640      16401640         T                                     
+LINWTH   21641H1642      16421642         T                                     
+LIFLWRYFD21643H1644      164416441        T                                     
+LIHYDEJ  2          1645 00000000                                               
+LIGIDB   21646H1647      164716471        T           1 3H                      
+LIASHBRYS21656 1656H     16541654         T                                     
+LIARDWCKJ2          1658H00000000   EL                   H                      
+LTMNCRPIC21702 17022  EL TF                                                     

@@ -1,0 +1,7 @@
+BSNY928691512141605131111100 PEE5N22    112228110 DMUS   075                   P
+BX         NTY                                                                  
+LOSTKP    0800 00003  FL     TB                                                 
+LISTKPVIA 0802 0810      00000000         RM                                    
+LISTKP   2          0811 000000002  SL                  1                       
+LISTKPE1            0813H00000000                     1 6                       
+LTHAZL    0826 00002     TF                                                     

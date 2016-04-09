@@ -1,0 +1,30 @@
+BSNY923571512141605131111100 POO2W16    111807820 DMUS   075      S S          P
+BX         NTY                                                                  
+LOSHEFFLD 0741 07411A        TB                                                 
+LINNRYMLJ           0742H00000000                                               
+LIWNCOJN            0745H00000000                                               
+LIMEADWHL 0746 0747      074607472        T             1H                      
+LIROTHHJN           0751H00000000                                               
+LIROTHCEN 0753H0754H     075407542        T                                     
+LIALDWRKJ           0758H00000000                                               
+LISWINTN  0802 0803      08020803         T                                     
+LIMEXBRGH 0805 0806      08050806         T                                     
+LICONBRGH 0809H0810      08100810         T                                     
+LIDONCHJN           0813H00000000                     1   1H                    
+CRDONC    OO2W16    111808920 DMUS   075      S S                               
+LIDONC    0819 0824      081908243B       T                                     
+LIBTLYJN            0826H00000000                                               
+LIHTFLASF           0831H00000000                        H H                    
+LITHORNEJ           0834 00000000                                               
+LIGOOLE   0843 0844      084308441        T                H                    
+LIGLBRDYK           0851H00000000                                               
+LIBROUGH  0857 0858      08570858         T           2                         
+LIHESSLRD           0908H00000000                                               
+CRHULL    OO2W16    111838821 DMUS   075      S S                               
+LIHULL    0912 0916      091309167        T                                     
+LICTTGHM  0923 0923H     09230923         T                                     
+LIBEVERLY 0929 0930      092909302        T                                     
+LIHTNCRNS 0938H0939      09390939         T                                     
+LIDRIFILD 0943H0944H     09440944         T                                     
+LINAFERTN 0948 0948H     09480948         T           2                         
+LTBRDLNGT 1001H10026     TF                                                     

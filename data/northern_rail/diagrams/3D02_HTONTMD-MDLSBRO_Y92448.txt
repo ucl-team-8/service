@@ -1,0 +1,20 @@
+BSNY924481512141605131111100 PEE3D02    121799000 DMUA   075                   P
+BX         NTY                                                                  
+LOHTONTMD 0501 0000        2HTB                                                 
+LIHTONSJN           0508 00000000   ML                                          
+LINWCSTLE 0511 0518      000000001        -DRM                                  
+LIHLBDGJN           0519H00000000                                               
+LIGRNSFDJ           0520 00000000                                               
+LIKEBGEJN           0520H00000000                                               
+LIKEBGSJN           0521 00000000                                               
+LIBRTLYJN           0525 00000000                                               
+LIDRHM              0533 000000001                                              
+LITURSDLJ           0539 00000000                                               
+LIFYHLSJN           0541 00000000                     1                         
+LIDLTN    0552 0555      00000000UML      OP                                    
+LIDINSDAL           0600 000000002                                              
+LIEGLSCLF           0606 000000002                                              
+LISTOCCJN           0608 00000000                                               
+LIBOWSFLD           0609 00000000                                               
+LITABY              0610 000000002                    1                         
+LTMDLSBRO 0616 00002     TF                                                     

@@ -1,0 +1,11 @@
+BSNY922421512141605131111100 POO2T938140111837920 DMUE   090      S S          P
+BX         NTY                                                                  
+LOYORK    2123 21236  LSL    TB                                                 
+LICOLTONJ           2128H00000000   LSL                                         
+LICHFN    2134 2135      213421353        T                                     
+LIMCKLFLD 2141H2142H     214221422        T                                     
+LIEGRFRTH 2145H2146H     214621462        T                                     
+LIGARFRTH 2148 2149      214821492        T                                     
+LICSGT    2153 2154      215321542        T                                     
+LINEVLWJN           2157H00000000                                               
+LTLEEDS   2201 220311D   TF                                                     

@@ -1,0 +1,27 @@
+BSNY921281512141605131111100 POO2S16    112226820 DMUA   075      S            P
+BX         NTY                                                                  
+LOMNCRPIC 0849 08491  EL     TB                                                 
+LIARDWCKJ           0851 00000000                                               
+LIASHBRYS           0852H00000000                                               
+LIREDISHN 0856 0856H     08560856         T                                     
+LIBRNGTN  0859H0900      09000900         T                                     
+LIBREDBRY 0902H0903      09030903         T                                     
+LIROMILEY 0905H0906H     090609062        T                                     
+LIMARPLWJ           0908H00000000                                               
+LIMARPLE  0909H0910      091009102        T                                     
+LINWMILSC 0915 0916      091509162        T                                     
+LINWMILSJ           0918H00000000                                               
+LICHNLY   0923 0923H     092309232        T                                     
+LICHNLYNJ           0925H00000000                                               
+LICHNLYEJ           0926 00000000                                               
+LIEDALE   0932 0933      093209332        T                                     
+LIERLESDG           0937 00000000                                               
+LIHOPD    0938H0939      093909392        T                                     
+LIBAMFORD 0941H0942H     09420942         T                                     
+LIHATHRSG 0945H0946      094609462        T                                     
+LIGRNDLFD 0949 0949H     094909492        T           2                         
+LITOTLYTE           0956 00000000                                               
+LIDOREWJ            0956H00000000                                               
+LIDORE    0957 0958      09570958         T                                     
+LIDORESNJ           0959 00000000                                               
+LTSHEFFLD 1004 10062C    TF                                                     

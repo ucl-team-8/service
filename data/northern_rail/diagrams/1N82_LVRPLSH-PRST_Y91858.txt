@@ -1,0 +1,27 @@
+BSNY918581512141605131111100 PXX1N82    112249820 DMUS   075      S            P
+BX         NTY                                                                  
+LOLVRPLSH 1800 18002  SL     TB                                                 
+LIEDGH    1803H1804      180418041        T                                     
+LIEDGHSB            1805 00000000                                               
+LIBOOTLBJ           1805H00000000                                               
+LIWVRTTEC 1806 1806H     180618062        T                                     
+LIOLIVEMJ           1807H00000000                                               
+LIBROADGR 1809 1809H     18091809         T                                     
+LIROBY    1812H1813      18131813         T                                     
+LIHUYTON  1814H1815H     18151815         T                                     
+LIHUYTJUN           1816 00000000                                               
+LIPRESCOT 1819H1820      18201820         T                                     
+LIECPK    1822 1822H     18221822         T                                     
+LITHHT    1824H1825      18251825         T                                     
+LISTHLNSC 1828 1829      182818291        T                                     
+LIGARW    1835H1836      18361836         T                                     
+LIBRYN    1838H1839      18391839         T           2                         
+LISPRBJN            1845 00000000   UDS                                         
+LIWIGASJN           1846 00000000   DPL                                         
+LIWIGANNW 1847H1851H     184818516  FL    T                                     
+LIBALSHWL           1900 00000000   SL                                          
+LIEUXT    1901H1902H     19021902         T                                     
+LIEUXTONJ           1904H00000000                                               
+LILEYLAND 1907 1907H     19071907         T             1                       
+LIFRNGTNC           1911 00000000                     2  H                      
+LTPRST    1916 19161     TF                                                     

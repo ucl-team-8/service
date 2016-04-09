@@ -1,0 +1,20 @@
+BSNY909761512141605131111100 POO2F80    111825820 DMUS   075      S            P
+BX         NTY                                                                  
+LODONC    0530 05307         TB                                                 
+LIBTLYJN            0532H00000000                                               
+LIHTFLASF           0537H00000000                                               
+LITHORNEJ           0539H00000000                     1                         
+CRSCNTHRP OO2F80    121826000 DMUS   075      S                                 
+LISCNTHRP 0557H0600      055806001        T                                     
+LISCNTAPP           0605 00000000                                               
+LIELSHAM            0610 00000000                                               
+LIWRAWBYJ           0612H00000000   FL                                          
+LIBNTBY   0613H0614      061406142        T                                     
+LIBKBY              0620 00000000                                               
+LIHABRO   0622H0623H     06230623         T                                     
+LISBROUGH 0628H0629      06290629         T                                     
+LIHEALING 0631 0632      06310632         T                                     
+LIGTCOATS 0634H0635      06350635         T           3   2                     
+LIGRMSBYT 0643H0644H     064406441        T                                     
+LIGRMSBYD 0646H0647      06470647         T                                     
+LTCLTHRPS 0652 06541     TF                                                     

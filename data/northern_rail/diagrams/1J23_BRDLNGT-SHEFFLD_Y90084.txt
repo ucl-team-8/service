@@ -1,0 +1,27 @@
+BSNY900841512141605131111100 PXX1J23    111838821 DMUS   075      S S          P
+BX         NTY                                                                  
+LOBRDLNGT 0808 08086         TB                                                 
+LINAFERTN 0818H0819H     08190819         T                                     
+LIDRIFILD 0823 0824      08230824         T                                     
+LIHTNCRNS 0828H0829H     08290829         T                                     
+LIBEVERLY 0838 0839      083808391        T                                     
+LICTTGHM  0844H0845H     08450845         T           2                         
+CRHULL    XX1J23    111808920 DMUS   075      S S                               
+LIHULL    0854 0857      085508573        T                                     
+LIHESSLRD           0900H00000000                                               
+LIBROUGH  0908 0909      09080909         T                                     
+LIGLBRDYK           0916 00000000                                               
+LIGOOLE   0923H0924H     092409242        T                                     
+LITHORNEJ           0933H00000000                       1                       
+LIHTFLASF           0936H00000000                                               
+LIBTLYJN            0941H00000000                     2 2                       
+LIDONC    0948 0950      094909504        T                                     
+LIDONCHJN           0953 00000000                                               
+LIMEXBRGH           0958H00000000                                               
+LISWINTN            1000 00000000                                               
+LIALDWRKJ           1002 00000000                         2                     
+LIROTHHJN           1007 00000000                                               
+LIMEADWHL 1009 1010      100910101        T                                     
+LIWNCOJN            1010H00000000                     1                         
+LINNRYMLJ           1015 00000000                                               
+LTSHEFFLD 1017 10194A    TF                                                     

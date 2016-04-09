@@ -1,0 +1,12 @@
+BSNY906501512141605131111100 POO2D68    111821020 EMU333 100      S            P
+BX         NTY                                                                  
+LOBRADFS  1616 16161         TB                                                 
+LIFRZNGHL 1619 1620      161916201        T                                     
+LISHPY    1623 1624      162316243        T                                     
+LISHPYDJN           1625 00000000                                               
+LIBAILDON 1626H1627      162716271        T                                     
+LIGUISELY 1631H1632H     163216321        T                                     
+LIMENSTON 1635 1635H     163516351        T                                     
+LIBURLYIW 1637H1638H     163816381        T                                     
+LIBNRHYDN 1641H1642      164216421        T           1                         
+LTILKLEY  1646 16471     TF                                                     

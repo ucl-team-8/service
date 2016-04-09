@@ -1,0 +1,26 @@
+BSNY930341512141605121111000 PXX1F956429112248822 DMUS   075      S S          P
+BX         NTY                                                                  
+LOMNCRIAP 2137 21372B        TB                                                 
+LIHLDGWJ            2139 00000000                                               
+LIHLDG              2140 000000001                                              
+LISLDLJN            2145H00000000   SL                                          
+LIARDWCKJ           2147H00000000                       2                       
+LIMNCRPIC 2152 2155      2152215514    SL T                                     
+LIMNCROXR 2156H2159      215721592        T                                     
+LIMNCRDGT           2200 000000002                                              
+LICFLDJN            2200H00000000                                               
+LIORDSLLJ           2201H00000000                        H                      
+LIECCLES            2205H00000000                                               
+LIASTLEY            2210 00000000                                               
+LIPKSDJT            2215 00000000                                               
+LINWTNLW  2216H2217H     22172217         T                                     
+LIERLSTWN           2219 000000002                                              
+LISTHLNSJ 2222 2222H     222222222        T                                     
+LIRHIL              2226H00000000                                               
+LIHUYTJUN           2229 00000000                                               
+LIOLIVEMJ           2231H00000000                                               
+LIWVRTTEC 2232H2233      223322331        T                                     
+LIBOOTLBJ           2234 00000000                                               
+LIEDGHSB            2234H00000000   SL                                          
+LIEDGH              2235 000000002                    2   1                     
+LTLVRPLSH 2242 22434     TF                                                     

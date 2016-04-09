@@ -1,0 +1,6 @@
+BSNY927821512141605131111100 PEE5J27    121831000 DMUS   075                   P
+BX         NTY                                                                  
+LONEVLTMD 1231 0000          TB                                                 
+LINEVLWJN           1233 00000000   GL                                          
+LIMRLNJN  1238 1243H     00000000         OPA                                   
+LTLEEDS   1246H000012C   TF                                                     

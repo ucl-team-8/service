@@ -1,0 +1,13 @@
+BSNY904721512141605121111000 POO2C64    111830820 DMUS   075      S            P
+BX         NTY                                                                  
+LOLEEDS   2332 23323B B      TB                                                 
+LILEEDSWJ           2333 00000000   DH                                          
+LIARMLJCN           2334H00000000                                               
+LIBRLEYPK 2336 2337      23362337         T                                     
+LIHEDNGLY 2339H2340      23402340         T                                     
+LIHSFT    2344H2345H     234523452        T                                     
+LIWEETON  2353 2353H     23532353         T                                     
+LIRIGTON            2356 00000000                                               
+LIPANNAL  2358H2359H     23592359         T                                     
+LIHRNBPK  0004H0005      00040004         T           2   1                     
+LTHAGT    0011H00121     TF                                                     

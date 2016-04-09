@@ -1,0 +1,27 @@
+BSNY921681512141605131111100 POO2S33    112226820 DMUA   075      S            P
+BX         NTY                                                                  
+LOSHEFFLD 1214 12142C        TB                                                 
+LIDORESNJ           1220 00000000                                               
+LIDORE    1221 1221H     12211221         T                                     
+LIDOREWJ            1222H00000000                                               
+LITOTLYTE           1223 00000000                                               
+LIGRNDLFD 1228 1229      122812291        T                                     
+LIHATHRSG 1232 1232H     123212321        T                                     
+LIBAMFORD 1235H1236H     12361236         T                                     
+LIHOPD    1239H1240      124012401        T                                     
+LIERLESDG           1242 00000000                                               
+LIEDALE   1247 1248      124712481        T                                     
+LICHNLYEJ           1253H00000000                                               
+LICHNLYNJ           1254 00000000                                               
+LICHNLY   1255H1256      125612561        T                                     
+LINWMILSJ           1259H00000000                                               
+LINWMILSC 1302 1303H     130213031        T                                     
+LIMARPLE  1308 1309      130813091        T                                     
+LIMARPLWJ           1310H00000000                                               
+LIROMILEY 1312 1313      13121313         T                                     
+LIBREDBRY 1315H1316      13161316         T                                     
+LIBRNGTN  1318 1319      13181319         T                                     
+LIREDISHN 1321H1322      13221322         T           1                         
+LIASHBRYS           1327 00000000                     1                         
+LIARDWCKJ           1329H00000000   EL                                          
+LTMNCRPIC 1333 13341  EL TF                                                     

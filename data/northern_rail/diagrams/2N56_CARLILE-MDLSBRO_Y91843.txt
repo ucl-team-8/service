@@ -1,0 +1,43 @@
+BSNY918431512141605131111100 POO2N561075121793000ZDMUA   075      S S          P
+BX         NTY                                                                  
+LOCARLILE 1941 19415         TB                                                 
+LICARLLRJ           1942H00000000                                               
+LIPETLBGJ           1943H00000000                                               
+LIWETHCOR           1947H00000000                                               
+LIBRMPTNF           1954 00000000                                               
+LILOWRWSB           1959 00000000                                               
+LIHLTWHST 2009 2010      20092010         T                                     
+LIHYDB              2019H00000000                                               
+LIHEXHAM  2027 2028      202720281        T                                     
+LICRBG    2032 2032H     20322032         T                                     
+LIRIDNGML 2036 2037      20362037         T                                     
+LISTCKSFL 2040H2041      20412041         T                                     
+LIPRUDHOE 2044H2045H     20452045         T                                     
+LIWYLAM   2049H2050      20502050         T                                     
+LIBLAYDON           2054H00000000                                               
+LIGTSHDMC 2058 2059      205820591        T                                     
+LINRWDJN            2102 00000000                     2  H                      
+LIKEBGSJN           2106H00000000   SL                                          
+LIKEBGNJN           2107 00000000                                               
+CRNWCSTLE OO2N561075111792920ZDMUA   075      S S                               
+LINWCSTLE 2109 2118      211221184        T                                     
+LIHLBDGJN           2119H00000000                                               
+LIPKLNJN            2121H00000000                                               
+LIHEWORTH 2124 2125      21242125         T                                     
+LIPELAW             2127 00000000                                               
+LIBRWHINS           2130 00000000                     1                         
+LISNDRLND 2137 2138H     213721381        T                                     
+LIRYHPGRN           2141H00000000                                               
+LISEAHAM  2145H2146      214621461        T                                     
+LIHORD148           2153H00000000                                               
+LIHRTLEPL 2201 2203      220122031        T                                     
+LISETNCRW 2207 2207H     220722071        T                                     
+LIGREATHM           2210 00000000                                               
+LIBLNGHM  2213H2214H     221422141        T                                     
+LIBLNGHMJ           2216 00000000                                               
+LINORTONS           2218H00000000                                               
+LISTOCTON 2221 2221H     222122211        T                                     
+LIHRTBJN            2223 00000000                                               
+LIBOWSFLD           2224H00000000                     2  H1                     
+LITABY    2229H2230H     223022302        T                                     
+LTMDLSBRO 2235 22362     TF                                                     

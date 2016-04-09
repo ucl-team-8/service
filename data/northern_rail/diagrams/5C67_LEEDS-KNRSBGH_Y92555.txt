@@ -1,0 +1,14 @@
+BSNY925551512141605131111100 PEE5C67    111830820 DMUA   075                   P
+BX         NTY                                                                  
+LOLEEDS   0613 00009C B      TB                                                 
+LILEEDSWJ           0614 00000000   B                                           
+LILEED631 0614H0617H     00000000   A     RM                                    
+LILEEDSWJ2          0618 00000000   A                                           
+LILEEDS  20619H0709      000000003B B     -U                                    
+LILEEDSWJ3          0710 00000000   DH                                          
+LIARMLJCN           0711H00000000                                               
+LIHSFT              0717 000000002                                              
+LIRIGTON            0724H00000000                       6                       
+LIHAGT    0738 0739      000000001        C                                     
+LISTARBCK           0741H000000002                    2                         
+LTKNRSBGH 0747 00002     TF                                                     

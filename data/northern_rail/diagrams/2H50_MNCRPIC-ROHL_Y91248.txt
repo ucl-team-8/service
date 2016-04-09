@@ -1,0 +1,14 @@
+BSNY912481512141605131111100 POO2H50    112226110 DMUS   075      S            P
+BX         NTY                                                                  
+LOMNCRPIC 1405 14052  EL     TB                                                 
+LIARDWCKJ           1407 00000000                                               
+LIASHBRYS           1408H00000000                                               
+LIGORTON  1410H1411      14111411         T                                     
+LIGIDB    1415 1416      141514162        T                                     
+LIHYDEJ             1418H00000000                                               
+LIHYDEN   1419H1420      14201420         T                                     
+LIHYDEC   1422 1423      14221423         T                                     
+LIWOODLEY 1425H1426      14261426         T                                     
+LIROMILEY 1429 1430      14291430         T                                     
+LIMARPLWJ           1432 00000000                                               
+LTROHL    1435 1436      TF                                                     

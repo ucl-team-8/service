@@ -1,0 +1,28 @@
+BSNY905771512151605130111100 POO2D40    112229820 DMUA   075      S            P
+BX         NTY                                                                  
+LOMNCRPIC 0618 061810 SL     TB                                                 
+LIARDWCKJ           0620H00000000                        H                      
+LISLDLJN            0623 00000000   FL                                          
+LIHTNOJN            0625H00000000                                               
+LISTKP    0627 0628      062706282        T                                     
+LISTKPE2            0629H00000000                                               
+LISTKPCVJ           0632 00000000                                               
+LINTHNSHJ           0633H00000000                                               
+LINTHNDNJ           0634H00000000                                               
+LIDENSGTJ           0640H00000000                                               
+LINAVGTNR 0641H0642      06420642         T                                     
+LIALTRNHM 0643H0644H     06440644         T                                     
+LIHALE    0646H0647H     06470647         T                                     
+LIASHLEY  0650 0650H     06500650         T                                     
+LIMOBERLY 0653 0653H     06530653         T                                     
+LIKNUTSFD 0657H0658H     06580658         T                                     
+LIPLUMLEY 0702 0703      07020703         T                                     
+LIPLUMSB            0704H00000000                                               
+LILSTG    0706 0706H     07060706         T           2                         
+LINTHWICH 0711 0712      07110712         T                                     
+LIGBNK    0716 0717      07160717         T                                     
+LICUDNGTN 0721H0722H     07220722         T                                     
+LIDELAMER 0726H0727      07270727         T                                     
+LIMLDSWTH 0731 0732      07310732         T           1                         
+LIMIKLTRF           0738 00000000                                               
+LTCHST    0743 07436     TF                                                     

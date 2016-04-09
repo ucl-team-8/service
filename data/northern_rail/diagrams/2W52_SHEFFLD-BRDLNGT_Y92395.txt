@@ -1,0 +1,30 @@
+BSNY923951512141605131111100 POO2W52    111808920 DMUS   075      S S          P
+BX         NTY                                                                  
+LOSHEFFLD 2000 20001A        TB                                                 
+LINNRYMLJ           2001H00000000                                               
+LIWNCOJN            2004H00000000                                               
+LIMEADWHL 2005 2006      200520062        T                                     
+LIROTHHJN           2009 00000000                                               
+LIROTHCEN 2011 2012      201120122        T               2                     
+LIALDWRKJ           2018H00000000                                               
+LISWINTN  2022 2022H     20222022         T                                     
+LIMEXBRGH 2024H2025H     20252025         T                                     
+LICONBRGH 2029 2029H     20292029         T                                     
+LIDONCHJN           2033 00000000                     1                         
+LIDONC    2037 2044      203720448        T                                     
+LISHFTHLJ           2048H00000000                                               
+LITEMPLHJ           2056 00000000                                               
+LISELBY   2101 2102      210121021        T               1                     
+LIGLBRDYK 2116 2116H     21162116         T                                     
+LIBROUGH  2123H2124H     21242124         T                                     
+LIFERRIBY 2128H2129      21292129         T                                     
+LIHESSLE  2132H2133H     21332133         T           2                         
+LIHESSLRD           2139H00000000                         1                     
+CRHULL    OO2W52    111838821 DMUS   075      S S                               
+LIHULL    2144 2148      214421487        T                                     
+LICTTGHM  2155 2155H     21552155         T                                     
+LIBEVERLY 2201 2202      220122022        T                                     
+LIHTNCRNS 2210H2211      22112211         T                                     
+LIDRIFILD 2215H2216H     22162216         T                                     
+LINAFERTN 2220 2220H     22202220         T           2                         
+LTBRDLNGT 2233H22346     TF                                                     

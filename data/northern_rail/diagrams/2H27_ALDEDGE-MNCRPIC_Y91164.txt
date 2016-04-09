@@ -1,0 +1,15 @@
+BSNY911641512141605131111100 POO2H27    112232820 EMU323 090      S            P
+BX         NTY                                                                  
+LOALDEDGE 1450 1450          TB                                                 
+LIWLMSL   1452H1453      145314533        T                                     
+LIHNDFRTH 1455H1456      14561456         T           1                         
+LICHDH    1500 1500H     150015001        T                                     
+LIADSWDRD           1501H00000000   SL                                          
+LISTKPE1            1503 00000000                                               
+LISTKP    1504H1505H     150515054        T                                     
+LIHTNOJN            1507 00000000                                               
+LIHTCP    1508H1509      150915092        T                                     
+LILVHM    1511H1512      151215122        T                                     
+LISLDLJN            1513 00000000   FL                  1                       
+LIARDWCKJ           1516 00000000                       1                       
+LTMNCRPIC 1520 15218  FL TF                                                     

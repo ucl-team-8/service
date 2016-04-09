@@ -1,0 +1,18 @@
+BSNY903011512141605131111100 POO2B30    111824820 EMU321 100      S S          P
+BX         NTY                                                                  
+LODONC    1922 19226         TB                                                 
+LIBTLYSY  1925 1925H     192519252        T                                     
+LIADWICK  1928H1929H     192919292        T                                     
+LIADWICKJ           1930H00000000                                               
+LISELMSAL 1934H1935      193519352        T                                     
+LISKIRBYJ           1936H00000000                                               
+LIHEMSWTH 1940H1945      00000000         A                                     
+LIFITZWLM 1947 1948      194719482        T                                     
+LIHAREPKJ           1951 00000000                                               
+LISABR    1953 1953H     195319532        T                                     
+LIWKFLDWG 1957 1958      195719582        T                                     
+LIOUTWOOD 2002 2002H     200220022        T           1                         
+LICOPHWJN           2010H00000000   CHC               1                         
+LIWHRDJN            2012 00000000   E                   1                       
+LILEEDSWJ           2013H00000000   E                                           
+LTLEEDS   2015 201611D   TF                                                     

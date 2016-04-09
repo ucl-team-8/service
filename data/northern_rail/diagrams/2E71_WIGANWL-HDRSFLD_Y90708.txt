@@ -1,0 +1,28 @@
+BSNY907081512141605131111100 POO2E71    112225110 DMUA   075      S            P
+BX         NTY                                                                  
+LOWIGANWL 0607 06072         TB                                                 
+LIINCE    0609H0610      06100610         T                                     
+LIHINDLEY 0613 0613H     06130613         T                                     
+LICRWNSTJ           0614H00000000                                               
+LIDAISYH  0617 0618      06170618         T                                     
+LIHAGFOLD 0620H0621      06210621         T                                     
+LIATHERTN 0623 0624      06230624         T                                     
+LIWALKDEN 0629 0629H     06290629         T                                     
+LIMRSD    0632H0633      06330633         T                                     
+LISWNT    0635 0636      06350636         T           2 2H                      
+LISLFDCT  0645H0646H     064606461        T                                     
+LISLFDORD 0648H0649H     06490649         T                                     
+LIMNCRDST           0651 00000000   SL                    2                     
+CRMNCRVIC OO2E71    112220821 DMUA   075      S                                 
+LIMNCRVIC 0654H0657      065506573        T                                     
+LIMILESPL           0700H00000000                                               
+LIPHILPK1           0701 00000000                                               
+LIBAGLYFJ           0702 00000000                                               
+LIASHTMNJ           0705H00000000                                               
+LIASHONUL 0706H0707      07070707         T                                     
+LISBYD    0711 0712      071107124        T                                     
+LIMOSSLEY 0716 0716H     07160716         T                                     
+LIGFLD    0720 0720H     07200720         T                H                    
+LIDIGGLEJ           0724 00000000                                               
+LIMRSN              0728 000000001                    1  H                      
+LTHDRSFLD 0736 07384B    TF                                                     

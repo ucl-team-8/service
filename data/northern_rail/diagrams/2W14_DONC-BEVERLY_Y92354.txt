@@ -1,0 +1,20 @@
+BSNY923541512141605131111100 POO2W14    111816820ZDMUS   075      S            P
+BX         NTY                                                                  
+LODONC    0728 07281         TB                                                 
+LIBTLYJN            0730H00000000                                               
+LIKKSNDAL 0733H0734      07340734         T                                     
+LIHTFLASF 0738 0739      07380739         T                                     
+LITHORNEJ           0741H00000000                                               
+CRTHORNEN OO2W14    111808920ZDMUS   075      S                                 
+LITHORNEN 0744 0744H     07440744         T                                     
+LIGOOLE   0752H0753H     075307531        T                                     
+LISLTMRSH 0757H0758      07580758         T               1                     
+LIGLBRDYK 0804 0805      08040805         T                                     
+LIBROUGH  0812 0813      08120813         T                                     
+LIFERRIBY 0817 0817H     08170817         T                                     
+LIHESSLE  0821 0822      08210822         T           2                         
+LIHESSLRD           0828 00000000                         1                     
+CRHULL    OO2W14    111838821ZDMUS   075      S                                 
+LIHULL    0832H0837      083308377        T                                     
+LICTTGHM  0844 0844H     08440844         T                                     
+LTBEVERLY 0850 08502     TF                                                     

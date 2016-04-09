@@ -1,0 +1,17 @@
+BSNY915301512141605131111100 POO2J50    112349820 DMUS   075      S            P
+BX         NTY                                                                  
+LOCLITHRO 1746 17461         TB                                                 
+LIWHALLEY 1751H1752      175217521        T                                     
+LILGHO    1756 1757      175617571        T                                     
+LIRMSWILP 1801 1801H     180118011        T                                     
+LIBLKBDJN           1805H00000000   UEL                                         
+LIBLKB    1807H1808H     180818082        T                                     
+LIDARWEN  1815H1817      18161817         T                                     
+LIENTWISL 1823H1824      18241824         R                                     
+LIBRMCRSS 1829 1829H     18291829         T                                     
+LIHITW    1831H1832      18321832         T                                     
+LIBOLTON  1836H1838      183718381        T           2                         
+LISLFDCT  1850 1851      185018511        T                                     
+LISLFDORD 1853 1853H     18531853         T                                     
+LIMNCRDST           1855 00000000   FL                                          
+LTMNCRVIC 1857 18585     TF                                                     

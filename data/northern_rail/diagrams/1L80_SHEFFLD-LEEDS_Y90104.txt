@@ -1,0 +1,17 @@
+BSNY901041512141605131111100 PXX1L80    121853000 DMUE   090      S S          P
+BX         NTY                                                                  
+LOSHEFFLD 1050 10503A        TB                                                 
+LINNRYMLJ           1051H00000000                        H                      
+LIWNCOJN            1055 00000000                                               
+LIMEADWHL 1055H1056H     105610564        T                                     
+LIECLSFLW           1100 00000000                        H                      
+LIBNSLY   1110H1112      111111122        T                                     
+LIWOLEYCS           1117 00000000                                               
+LIHORBRYJ           1122 00000000   SL                                          
+LIWKFLDKG 1126H1128      112711281        T                                     
+LIALTFTJN           1132H00000000                                               
+LIMETHLYJ           1134 00000000                                               
+LISTRTJN            1138 00000000                     2   2                     
+LIESJLEDS           1144H00000000   UM                  2                       
+LILEEDSWJ           1147H00000000   F                                           
+LTLEEDS   1149 114917B   TF                                                     

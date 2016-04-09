@@ -1,0 +1,11 @@
+BSNY931341512141605121111000 PEE5D53    121799000 DMUA   075                   P
+BX         NTY                                                                  
+LOMDLSBRO 2049 00001         TB                                                 
+LIMDLSSDG 2050 2100      00000000         RMA                                   
+LIMDLSBRO2          2101 000000001                                              
+LITABY              2105H000000001                                              
+LIBOWSFLD           2107 00000000                        H                      
+LISTOCCJN           2108H00000000                       4                       
+LIEGLSCLF           2114 000000001                      2                       
+LIDINSDAL           2122 000000001                      2H                      
+LTDLTN    2130H00003     TF                                                     

@@ -1,0 +1,28 @@
+BSNY931131512141605121111000 POO2R35    111804920 DMUA   075      S            P
+BX         NTY                                                                  
+LORTFDLL  1814 18143         TB                                                 
+LITHRMWJN           1815H00000000                         1                     
+LIWORKSOP 1824H1825H     182518251        T                                     
+LISHRKSEJ           1827 00000000                                               
+LISHRKSKS 1828H1829      18291829         T                                     
+LIBRCLEJN           1830H00000000                                               
+LIKVTNPK  1833H1834H     18341834         T                                     
+LIKVTNBDG 1837 1837H     18371837         T                                     
+LIWDHOUSJ           1842 00000000                                               
+LIWDHOUSE 1843 1844      18431844         T                                     
+LIDARNALL 1849 1849H     18491849         T                                     
+LIWDBRNJN           1851H00000000                     1   1H                    
+LINNRYMLJ           1855H00000000                                               
+CRSHEFFLD OO2R35    111807820 DMUA   075      S                                 
+LISHEFFLD 1857H1900H     185819001B       T                                     
+LINNRYMLJ2          1902 00000000                                               
+LIWNCOJN            1905 00000000                                               
+LIMEADWHL 1905H1906H     190619062        T                                     
+LIROTHHJN           1909H00000000                                               
+LIROTHCEN 1911H1912H     191219122        T                                     
+LIALDWRKJ           1916H00000000                                               
+LISWINTN  1920 1920H     19201920         T                                     
+LIMEXBRGH 1922H1923H     19231923         T                                     
+LICONBRGH 1927 1927H     19271927         T                                     
+LIDONCHJN           1931 00000000                     1                         
+LTDONC    1935 19365     TF                                                     

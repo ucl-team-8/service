@@ -1,0 +1,27 @@
+BSNY918291512141605131111100 POO2N511085121793000 DMUA   075      S S          P
+BX         NTY                                                                  
+LONWCSTLE 1925 19255         TB                                                 
+LIHLBDGJN           1926H00000000                                               
+LIGRNSFDJ           1927 00000000                                               
+LIKEBGEJN           1927H00000000                                               
+LIKEBGSJN           1928 00000000                        H                      
+LINRWDJN            1930H00000000                                               
+LIGTSHDMC 1933H1934H     193419342        T                                     
+LIBLAYDON           1937H00000000                                               
+LIWYLAM   1942 1942H     19421942         T                                     
+LIPRUDHOE 1946 1947      19461947         T                                     
+LISTCKSFL 1951 1951H     19511951         T                                     
+LIRIDNGML 1955 1956      19551956         T                                     
+LICRBG    1959H2000      20002000         T                                     
+LIHEXHAM  2004H2005H     200520052        T                                     
+LIHYDB    2014 2015      20142015         T                                     
+LIBRDNML  2020H2021      20212021         T                                     
+LIHLTWHST 2027H2028H     20282028         T                                     
+LILOWRWSB           2039H00000000                                               
+LIBRMPTNC 2043H2044      20442044         T                                     
+LIBRMPTNF           2045H00000000                                               
+LIWETHCOR           2051H00000000                                               
+LIWETHERL 2052 2053      20522053         T           2                         
+LIPETLBGJ           2059 00000000                                               
+LICARLLRJ           2100 00000000                                               
+LTCARLILE 2102 21035     TF                                                     

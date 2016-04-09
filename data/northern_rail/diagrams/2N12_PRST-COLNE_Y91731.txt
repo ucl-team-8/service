@@ -1,0 +1,12 @@
+BSNY917311512141605131111100 POO2N12    122350000 DMUA   075      S            P
+BX         NTY                                                                  
+LOPRST    0440 04402  SL     TB                                                 
+LIFRNGTNC           0442H00000000                                               
+LILSTHJN            0445 00000000                                               
+LIBLKB    0456 0457      045604572        T                                     
+LIBLKBDJN           0458H00000000                                               
+LIACRNGTN 0504 0504H     050405041        T           1                         
+LIGANNOWJ           0512 00000000                                               
+LIBURNLYC 0514H0515      051505151        T                                     
+LICHAFRSS 0521 0521      00000000         OP                                    
+LTCOLNE   0524 05261     TF                                                     

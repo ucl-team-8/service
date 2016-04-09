@@ -1,0 +1,4 @@
+BSNY984231512141605121111000 PEE5C43    122358000 DMUS   075                   P
+BX         NTY                                                                  
+LOBAROWCS 1628 0000          TB                                                 
+LTBAROW   1631 00001     TF                                                     

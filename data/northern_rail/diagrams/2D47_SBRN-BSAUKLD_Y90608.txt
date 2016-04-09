@@ -1,0 +1,23 @@
+BSNY906081512141605131111100 POO2D47    121801000ZDMUA   075      S            P
+BX         NTY                                                                  
+LOSBRN    1730 17301         TB                                                 
+LISBRNWJN           1732 00000000                                               
+LIMRSK    1734 1734H     173417341        T                                     
+LILONGBCK 1736 1737      173617371        T                                     
+LIREDCARE 1739H1740      174017401        T                                     
+LIREDCARC 1742 1743      174217431        T                                     
+LISTHBANK 1749H1750      175017501        T                                     
+LIGUSBROJ           1753H00000000                                               
+LIMDLSBRO 1754H1755H     175517551        T                                     
+LITABY    1800 1800H     180018001        T                                     
+LIBOWSFLD           1802H00000000                                               
+LISTOCCJN           1803H00000000                                               
+LIEGLSCLF 1805 1806      180518061        T                                     
+LIALLENSW 1808 1808H     180818081        T                                     
+LIDINSDAL 1814 1815      181418151        T           1   2                     
+LIDLTN    1824 1832      182418324A       T                                     
+LINTRD    1834H1835      183518351        T                                     
+LIHGHNGTN 1842H1843H     18431843         T                                     
+LINWTA    1846 1846H     184618462        T                                     
+LISHDN    1850 1851      185018512        T                                     
+LTBSAUKLD 1856 18581     TF                                                     

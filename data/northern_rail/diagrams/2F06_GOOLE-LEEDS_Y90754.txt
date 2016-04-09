@@ -1,0 +1,20 @@
+BSNY907541512141605131111100 POO2F06    111841820 DMUA   075      S            P
+BX         NTY                                                                  
+LOGOOLE   0706 07062         TB                                                 
+LIGOOLPGJ           0707 00000000                                               
+LIRAWCLIF 0712H0713      07130713         T                                     
+LISNAITH  0717H0718H     07180718         T                                     
+LIHENSALL 0724H0725      07250725         T               1                     
+LIWHTBDGE 0729 0730      07290730         T               1                     
+LIKNTNGLY 0737H0738H     073807381        T                                     
+LIKNTNGWJ           0739 00000000                                               
+LIPTFTMHL 0742 0743      074207431        T                                     
+LIGLASHTN 0747 0748      074707481        T                                     
+LICASTLFD 0752 0755      075207551        T                                     
+LIWHWDJN            0757H00000000                                               
+LIMETHLYJ           0800 00000000                                               
+LIWDLESFD 0803H0804H     080408041        T                                     
+LISTRTJN            0808 00000000                     1   1                     
+LIESJLEDS           0812H00000000   DM                                          
+LILEEDSWJ           0813H00000000   E                                           
+LTLEEDS   0815 081615A   TF                                                     

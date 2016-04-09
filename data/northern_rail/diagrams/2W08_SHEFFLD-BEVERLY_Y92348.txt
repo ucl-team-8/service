@@ -1,0 +1,33 @@
+BSNY923481512141605131111100 POO2W08    111807820ZDMUS   075      S S          P
+BX         NTY                                                                  
+LOSHEFFLD 0529 05292B        TB                                                 
+LINNRYMLJ           0530H00000000                                               
+LIWNCOJN            0533H00000000                                               
+LIMEADWHL 0534 0535      053405352        T                                     
+LIROTHHJN           0538 00000000                                               
+LIROTHCEN 0540 0541      054005412        T                                     
+LIALDWRKJ           0545 00000000                                               
+LISWINTN  0548H0549      05490549         T                                     
+LIMEXBRGH 0551 0552      05510552         T                                     
+LICONBRGH 0555H0556      05560556         T           1   2                     
+LIDONCHJN           0602H00000000                                               
+CRDONC    OO2W08    111816820ZDMUS   075      S S                               
+LIDONC    0605H0610      060606103B       T             1                       
+LIBTLYJN            0613H00000000                                               
+LIKKSNDAL 0616H0617      06170617         T                                     
+LIHTFLASF 0621 0622      06210622         T                                     
+LITHORNEJ           0624H00000000                                               
+CRTHORNEN OO2W08    111808920ZDMUS   075      S S                               
+LITHORNEN 0627 0627H     06270627         T                                     
+LIGOOLE   0635H0636H     063606361        T                                     
+LISLTMRSH 0640H0641      06410641         T              H1                     
+LIGLBRDYK 0647H0648H     06480648         T                                     
+LIBRFT    0652 0652H     06520652         T                                     
+LIBROUGH  0657H0658H     06580658         T                                     
+LIFERRIBY 0702H0703      07030703         T                                     
+LIHESSLE  0706H0707H     07070707         T           2                         
+LIHESSLRD           0713H00000000                         1                     
+CRHULL    OO2W08    111838821ZDMUS   075      S S                               
+LIHULL    0718 0736      071807367        T                                     
+LICTTGHM  0743 0743H     07430743         T                                     
+LTBEVERLY 0749 07492     TF                                                     

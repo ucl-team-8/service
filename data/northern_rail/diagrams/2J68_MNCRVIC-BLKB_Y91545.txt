@@ -1,0 +1,22 @@
+BSNY915451512141605131111100 POO2J68    112242110 DMUA   075      S            P
+BX         NTY                                                                  
+LOMNCRVIC 0550 05506  FL     TB                                                 
+LIMILESPL           0552H00000000                       1                       
+LITHRPSBJ           0554H00000000                                               
+LIVTRLWKS           0557 00000000                                               
+LIMLSHILL 0559 0600      05590600         T             2H                      
+LICSTLTEJ           0606 00000000                                               
+LICSTL    0607 0607H     06070607         T                                     
+LIRCHDALE 0610H0611H     061106111        T                                     
+LIRCHDLEJ           0612H00000000                                               
+LISMBG    0615 0615H     061506152        T                                     
+LILITLBRO 0618 0619      061806192        T                                     
+LITODMRDN 0625H0626H     062606262        T                                     
+LISTNSHJN           0629 00000000                                               
+LICOPYPIT           0635 00000000                                               
+LIBURNMR  0642 0643      064206431        T             1                       
+LIGANNOWJ           0645H00000000                       1                       
+LIROSG    0647H0648      064806482        T             3H                      
+LIACRNGTN 0658 0659      065806592        T           2                         
+LIBLKBDJN           0709 00000000   UEL                                         
+LTBLKB    0711 07122     TF                                                     

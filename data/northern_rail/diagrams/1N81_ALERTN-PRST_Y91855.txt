@@ -1,0 +1,32 @@
+BSNY918551512141605131111100 PXX1N81    112299820 DMUA   075      S            P
+BX         NTY                                                                  
+LOALERTN  1702 17022  SL     TB                                                 
+LIWVRTREJ           1707H00000000   FL                                          
+LIEDGHSB            1709 00000000                                               
+LIEDGH              1710 000000004                                              
+CRLVRPLSH XX1N81    112249820 DMUA   075      S                                 
+LILVRPLSH 1714 1732      171617325  SL    T                                     
+LIEDGH   21735H1736      173617361        T                                     
+LIEDGHSB 2          1737 00000000                                               
+LIBOOTLBJ           1737H00000000                                               
+LIWVRTTEC 1738 1738H     173817382        T                                     
+LIOLIVEMJ           1739H00000000                                               
+LIBROADGR 1741 1741H     17411741         T                                     
+LIROBY    1744H1745      17451745         T                                     
+LIHUYTON  1746H1747H     17471747         T                                     
+LIHUYTJUN           1748 00000000                                               
+LIPRESCOT 1751H1752      17521752         T                                     
+LIECPK    1754 1754H     17541754         T                                     
+LITHHT    1756H1757      17571757         T                                     
+LISTHLNSC 1800 1801      180018011        T                                     
+LIGARW    1807H1808H     18081808         T                                     
+LIBRYN    1811 1811H     18111811         T                                     
+LISPRBJN            1815H00000000   UDS                                         
+LIWIGASJN           1817 00000000   DPL                                         
+LIWIGANNW 1819 1827      181918276  FL    T                                     
+LIBALSHWL           1835H00000000   SL                2                         
+LIEUXT    1839 1840      18391840         T                                     
+LIEUXTONJ           1842 00000000                                               
+LILEYLAND 1844H1845      18451845         T                                     
+LIFRNGTNC           1847H00000000                                               
+LTPRST    1850 18502     TF                                                     

@@ -1,0 +1,28 @@
+BSNY905971512141605131111100 POO2D44    112229820 DMUA   075      S            P
+BX         NTY                                                                  
+LOMNCRPIC 1817 18174  FL     TB                                                 
+LIARDWCKJ           1819 00000000                       1H                      
+LISLDLJN            1822H00000000                                               
+LIHTNOJN            1825 00000000                                               
+LISTKP    1826H1829H     182718292        T                                     
+LISTKPE2            1831 00000000                                               
+LISTKPCVJ           1833H00000000                                               
+LINTHNSHJ           1835 00000000                                               
+LINTHNDNJ           1836 00000000                                               
+LIDENSGTJ           1842 00000000                                               
+LINAVGTNR 1843 1843H     18431843         T                                     
+LIALTRNHM 1845 1846      18451846         T                                     
+LIHALE    1848 1849      18481849         T                                     
+LIASHLEY  1851H1852      18521852         T                                     
+LIMOBERLY 1854H1855      18551855         T                                     
+LIKNUTSFD 1859 1900      18591900         T                                     
+LIPLUMLEY 1903H1904H     19041904         T                                     
+LIPLUMSB            1906 00000000                                               
+LILSTG    1907H1908      19081908         T           2                         
+LINTHWICH 1912H1913H     19131913         T                                     
+LIGBNK    1917H1918H     19181918         T                                     
+LICUDNGTN 1923 1924      19231924         T                                     
+LIDELAMER 1928 1928H     19281928         T                                     
+LIMLDSWTH 1932H1933H     19331933         T           1                         
+LIMIKLTRF           1939H00000000                                               
+LTCHST    1944H19451     TF                                                     

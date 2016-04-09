@@ -1,0 +1,7 @@
+BSNY902001512141605131111100 POO2A21    121794000 DMUA   075      S            P
+BX         NTY                                                                  
+LOMRPTHRP 1749 17491         TB                                                 
+LICRMLNGT 1757 1757H     17571757         T           1   2                     
+LIHTONSJN           1808 00000000         X                                     
+LIMANORS  1810 1811      18101811         T                                     
+LTNWCSTLE 1813H18151     TF                                                     

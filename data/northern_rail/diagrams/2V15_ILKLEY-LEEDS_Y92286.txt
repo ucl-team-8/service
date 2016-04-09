@@ -1,0 +1,12 @@
+BSNY922861512141605131111100 POO2V15    111819020 EMU333 100      S            P
+BX         NTY                                                                  
+LOILKLEY  0838 08382         TB                                                 
+LIBNRHYDN 0840 0840H     084008402        T                                     
+LIBURLYIW 0844H0845H     084508452        T                                     
+LIMENSTON 0848 0849      084808492        T                                     
+LIGUISELY 0851H0852H     085208522        T             1                       
+LIAPERLYJ           0857 00000000                                               
+LIKRKSLFR 0900 0901      00000000         N           1   1H                    
+LIARMLJCN           0906 00000000   UH                                          
+LILEEDSWJ           0907H00000000   A                                           
+LTLEEDS   0909 09092B    TF                                                     

@@ -1,0 +1,28 @@
+BSNY916901512141605131111100 POO2M565734111871821 DMUS   075      S S          P
+BX         NTY                                                                  
+LOLEEDS   1651 165111BD      TB                                                 
+LILEEDSWJ           1652 00000000   D                                           
+LIWHRDJN            1652H00000000                                               
+LIHOLBJCN           1653 00000000                                               
+LIBRMLYSR 1658 1658H     165816581        T                                     
+LINPUD    1702 1703      170217031        T                                     
+LIMLLNJN            1709H00000000                                               
+LIBRADIN  1711 1714      171117144        T                                     
+LIMLLNJN 2          1715H00000000                                               
+LIHLFX    1725H1726H     172617261        T                                     
+LIMLNRYDJ           1731 00000000                                               
+LISWRBBDG 1732H1733      173317331        T                                     
+LIMYTHLMR 1738 1739      173817391        T                                     
+LIHBDNBDG 1741H1742      174217421        T                                     
+LIHALRYDJ           1747 00000000                                               
+LITODMRDN 1748H1749H     174917491        T                                     
+LIWDEN    1752 1752H     175217521        T                                     
+LILITLBRO 1758 1759      175817591        T                                     
+LISMBG    1801 1801H     180118011        T                                     
+LIRCHDLEJ           1804 00000000                                               
+LIRCHDALE 1805 1806      180518063        T                                     
+LICSTLTEJ           1808H00000000                                               
+LIVTRLWKS           1812 00000000                     2                         
+LITHRPSBJ           1816H00000000                                               
+LIMILESPL           1817H00000000   FL                                          
+LTMNCRVIC 1821 18232     TF                                                     

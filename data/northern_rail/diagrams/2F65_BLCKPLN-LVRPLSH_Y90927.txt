@@ -1,0 +1,26 @@
+BSNY909271512141605131111100 POO2F65    112249820 DMUS   075      S            P
+BX         NTY                                                                  
+LOBLCKPLN 1803 18034         TB                                                 
+LILAYTCLX           1806H00000000                                               
+LIPLTNLFY 1808H1809      180918092        T                                     
+LIPLTNT67           1813 00000000                                               
+LIKIRKMNJ           1816 00000000                     1                         
+LIKIRKHAM 1818 1819      181818192        T                                     
+LIPRSTNFJ           1827 00000000   BL                                          
+LIPRST    1828H1830H     182918302  SL    T                                     
+LIFRNGTNC           1832H00000000                                               
+LILEYLAND 1835H1836      18361836         T                                     
+LIEUXTONJ           1838H00000000                                               
+LIEUXT    1840 1840H     18401840         T                                     
+LIBALSHWL           1842 00000000   FL                                          
+LIWIGANNW 1849H1850H     185018504        T                                     
+LIWIGASJN           1852 00000000                                               
+LISPRBJN            1853H00000000                                               
+LISTHLNSC 1905 1906      190519062        T                                     
+LIHUYTJUN           1913H00000000                                               
+LIHUYTON  1914 1915      191419152        T           2                         
+LIOLIVEMJ           1920H00000000                                               
+LIBOOTLBJ           1921H00000000                                               
+LIEDGHSB            1922 00000000   SL                                          
+LIEDGH              1922H000000002                      2                       
+LTLVRPLSH 1929 19294     TF                                                     

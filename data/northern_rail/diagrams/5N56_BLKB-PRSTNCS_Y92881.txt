@@ -1,0 +1,9 @@
+BSNY928811602151605131111100 PEE5N56    122350000 DMUA   075                   P
+BX         NTY                                                                  
+LOBLKB    2347 00004         TB                                                 
+LILSTHJN            2356 00000000                     2 1                       
+LIFRNGTNC           0002H00000000   SL                                          
+LIPRSTRJN           0004 00000000                                               
+LIPRST    0006 0008      000000001        C                                     
+LIPRSTSHL 0010 0015      00000000         OPRM-U                                
+LTPRSTNCS 0017 0000      TF                                                     

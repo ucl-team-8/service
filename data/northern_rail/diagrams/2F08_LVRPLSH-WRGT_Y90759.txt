@@ -1,0 +1,16 @@
+BSNY907591512141605131111100 POO2F08    112299820 DMUA   075      S            P
+BX         NTY                                                                  
+LOLVRPLSH 1955 19559  FL     TB                                                 
+LIEDGH    1959 1959H     195919593        T                                     
+LIEDGHSB            2000H00000000                                               
+LIWVRTREJ           2002 00000000                                               
+LIMSLH    2003H2004      200420041        T                                     
+LIWALERTN 2006 2006H     200620061        T                                     
+LIALERTN  2009 2009H     200920091        T              H                      
+LIHUNTXWJ           2011 00000000   UML                                         
+LIHUNTSX  2013 2013H     201320132        T                                     
+LIHALW    2015H2016      20162016         T                                     
+LIHOUGHGR 2019H2020      20202020         T                                     
+LIWIDNES  2023 2023H     20232023         T                                     
+LISANKEY  2028 2028H     20282028         T                                     
+LTWRGT    2033 20341     TF                                                     

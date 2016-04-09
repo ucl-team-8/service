@@ -1,0 +1,17 @@
+BSNY912211512141605131111100 POO2H44    112236820 DMUA   075      S            P
+BX         NTY                                                                  
+LOWRGT    0723 07231         TB                                                 
+LIPADGATE 0725H0726      07260726         T                                     
+LIBIRCHWD 0728H0729H     07290729         T                                     
+LIGLAZBRK 0734 0734H     07340734         T                                     
+LIGLAZBKE           0735H00000000                                               
+LIIRLAM   0737 0738      07370738         T                                     
+LIFLIXTON 0741H0742      07420742         T                                     
+LICHASNRD 0743H0744      07440744         T                                     
+LIURMSTON 0745H0746H     07460746         T                                     
+LIHMPHRYP 0748H0749      07490749         T                                     
+LITRFDPK  0751 0752      07510752         T           2                         
+LITRFDPEJ           0756 00000000                                               
+LICFLDJN            0759 00000000                                               
+LIMNCRDGT 0759H0800H     075907591        T                                     
+LTMNCROXR 0802 08035     TF                                                     

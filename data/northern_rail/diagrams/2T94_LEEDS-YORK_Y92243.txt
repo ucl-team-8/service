@@ -1,0 +1,12 @@
+BSNY922431512141605131111100 POO2T948141111837920 DMUE   090      S S          P
+BX         NTY                                                                  
+LOLEEDS   1752 17527B        TB                                                 
+LINEVLWJN           1754H00000000                                               
+LICSGT    1758 1759      175817591        T                                     
+LIGARFRTH 1803 1804      180318041        T                                     
+LIEGRFRTH 1805H1806H     180618061        T                                     
+LIMCKLFLD           1808H000000001                                              
+LICHFN    1813 1814      181318144  NNL   T                                     
+LIULESKLF 1817 1818      18171818         T               1                     
+LICOLTONJ           1823 00000000                                               
+LTYORK    1829 18301     TF                                                     

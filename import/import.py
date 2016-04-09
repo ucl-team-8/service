@@ -1,6 +1,7 @@
 from flask import Flask
 from flask.ext.sqlalchemy import SQLAlchemy
 import xml.etree.ElementTree as ET
+import argparse
 import datetime
 import math
 import sys
@@ -16,6 +17,15 @@ from models import *
 from app_db import db
 
 
+# Parsing arguments for which dataset to import
+
+parser = argparse.ArgumentParser(description='Import dataset.')
+parser.add_argument('folder', type=str, nargs='?', default='northern_rail', help='Folder containing data.')
+
+args = parser.parse_args()
+
+# Conversion
+
 def convert_to(datatype, value, *args, **kwargs):
     try:
         return datatype(value, *args, **kwargs)
@@ -23,24 +33,13 @@ def convert_to(datatype, value, *args, **kwargs):
         return None
 
 
-# File handling
-def open_file(filename):
-    f = open(os.path.dirname(os.path.dirname(os.path.abspath(__file__))) + filename, 'rb')
-    return f
-
-
 # Date handling
 
 def parse_date(date_string, date_format, time_only=False):
-    if date_string == '' or date_string == '    ':
+    if date_string.strip() == '':
         return None
-
-    date = datetime.datetime.strptime(date_string, date_format)
-
-    if time_only:
-        return date.replace(day=17, month=3, year=2015)
     else:
-        return date
+        return datetime.datetime.strptime(date_string, date_format)
 
 
 # Extracting data from files
@@ -98,13 +97,14 @@ gps_column_map = {
 def parse_gps(file):
     events = parse_xml(file)
     rows = [map_columns(gps_column_map, event) for event in events]
+    rows = filter(lambda row: row['gps_car_id'] != "NOTSET", rows)
     for row in rows:
         row['event_time'] = parse_date(row['event_time'], "%Y-%m-%dT%H:%M:%S")
     return rows
 
 # Schedule
 
-schedule_column_map = {
+allocations_column_map = {
     'Unit': 'unit',
     'headcode': 'headcode',
     'origin_loc': 'origin_location',
@@ -113,12 +113,11 @@ schedule_column_map = {
 }
 
 
-def parse_schedule(file):
+def parse_allocations(file):
     reader = csv.DictReader(file)
-    rows = [map_columns(schedule_column_map, row) for row in reader]
-    rows = filter(lambda row: len(row['unit']) <= 4, rows)
+    rows = [map_columns(allocations_column_map, row) for row in reader]
     for row in rows:
-        row['origin_departure'] = parse_date(row['origin_departure'], '%H:%M:%S', time_only=True)
+        row['origin_departure'] = parse_date(row['origin_departure'], '%d/%m/%Y %H:%M')
     return rows
 
 # Unit to GPS
@@ -235,7 +234,7 @@ def parseDiagramStops(f, service):
 # directory and extracts the data from them
 def parseDiagrams():
     stops = []
-    for filename in glob.glob(os.path.join(parentdir + '/data/diagrams', '*.txt')):
+    for filename in glob.glob(os.path.join(parentdir, 'data', args.folder, 'diagrams', '*.txt')):
         f = open(filename, 'r')
         service = parseDiagramHeader(f.readline())
         service = DiagramService(**service)
@@ -262,14 +261,25 @@ def delete_data():
         db.session.query(model).delete()
     db.session.commit()
 
+# File handling
+
+def open_file(filename):
+    path = os.path.join('data', filename)
+    project_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    f = open(os.path.join(project_path, path), 'rb')
+    return f
+
+def open_extract_file(filename):
+    path = os.path.join(args.folder, filename)
+    return open_file(path)
 
 def open_files():
     return {
-        'schedule': open_file('/data/schedule.csv'),
-        'unit_to_gps': open_file('/data/unit_to_gps.csv'),
-        'trust': open_file('/data/trustData.xml'),
-        'gpsData': open_file('/data/gpsData.xml'),
-        'locations': open_file('/data/locations.tsv')
+        'allocations': open_extract_file('allocations.csv'),
+        # 'unit_to_gps': open_extract_file('unit_to_gps.csv'),
+        'trust': open_extract_file('trustData.xml'),
+        'gpsData': open_extract_file('gpsData.xml'),
+        'locations': open_file('locations.tsv')
     }
 
 
@@ -290,11 +300,11 @@ def main():
     print("Importing GPS data...")
     store_rows(parse_gps(files['gpsData']), GPS)
 
-    print("Importing Schedule data...")
-    store_rows(parse_schedule(files['schedule']), Schedule)
+    print("Importing Allocations data...")
+    store_rows(parse_allocations(files['allocations']), Schedule)
 
-    print("Importing Unit to GPS data...")
-    store_rows(parse_unit_to_gps(files['unit_to_gps']), UnitToGPSMapping)
+    # print("Importing Unit to GPS data...")
+    # store_rows(parse_unit_to_gps(files['unit_to_gps']), UnitToGPSMapping)
 
     print("Importing Locations data...")
     store_rows(parse_locations(files['locations']), GeographicalLocation)

@@ -1,0 +1,15 @@
+BSNY914431512141605131111100 POO2J08    112224110 DMUA   075      S            P
+BX         NTY                                                                  
+LOWIGANWL 1624 16242         TB                                                 
+LIHINDLEY 1628H1629      16291629         T                                     
+LICRWNSTJ           1630 00000000                                               
+LIWSTHOTN 1633 1633H     16331633         T                                     
+LILOSTCKJ           1637 00000000                                               
+LIBOLTON  1641 1642      164116423        T                                     
+LIMSGT    1644H1645      16451645         T                                     
+LIFRNW    1646H1647      16471647         T                                     
+LIKEARSLY 1648H1649      16491649         T           2                         
+LISLFDCT  1659H1700H     170017001        T                                     
+LISLFDORD 1702H1703      17031703         T                                     
+LIMNCRDST           1704H00000000   FL                                          
+LTMNCRVIC 1706 17086     TF                                                     

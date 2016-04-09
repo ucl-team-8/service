@@ -1,0 +1,31 @@
+BSNY901311512141605131111100 PXX1W36    111808920 DMUS   075      S S          P
+BX         NTY                                                                  
+LOSHEFFLD 1141 11413A        TB                                                 
+LINNRYMLJ           1142H00000000                                               
+LIWNCOJN            1145H00000000                                               
+LIMEADWHL 1146 1147      114611472        T                                     
+LIROTHHJN           1149H00000000                                               
+LIALDWRKJ           1152H00000000                         1                     
+LISWINTN            1155 00000000                                               
+LIMEXBRGH           1156H00000000                       1H                      
+LIDONCHJN           1203 00000000                     1 6H1                     
+LIDONC    1214H1219      121512194        T                                     
+LIBTLYJN            1221H00000000                                               
+LIHTFLASF           1226H00000000                                               
+LITHORNEJ           1228 00000000                                               
+LIGOOLE   1237 1238      123712381        T               1                     
+LIGLBRDYK           1246 00000000                                               
+LIBROUGH  1251H1252H     12521252         T           2                         
+LIHESSLRD           1303 00000000                         1                     
+CRHULL    XX1W36    111838821 DMUS   075      S S                               
+LIHULL    1307H1314      130813147        T                                     
+LICTTGHM  1321 1321H     13211321         T                                     
+LIBEVERLY 1327 1328      132713282        T                                     
+LIDRIFILD 1339H1340H     13401340         T                                     
+CRBRDLNGT XX1W36    111838821 DMUS   075      S S                               
+LIBRDLNGT 1353 1406H     135314064        T                                     
+LIBEMPTON 1412H1413      14131413         T                                     
+LIHUNMNBY 1422H1423H     14231423         T                                     
+LIFILEY   1427H1428H     14281428         T           2                         
+LISEAMER  1439 1440      14391440         T                                     
+LTSCARBRO 1445 14464     TF                                                     

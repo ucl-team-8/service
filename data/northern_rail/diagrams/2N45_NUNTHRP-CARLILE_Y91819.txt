@@ -1,0 +1,52 @@
+BSNY918191512141605131111100 POO2N457894121800000 DMUA   075      S S          P
+BX         NTY                                                                  
+LONUNTHRP 1616 16162         TB                                                 
+LIGYPSYLA 1617H1618      161816181        T                                     
+LIMARTON  1620 1620H     162016201        T                                     
+LIJAMCOK  1622H1623H     162316231        T           1   1                     
+LIGUSBROJ           1628 00000000                                               
+CRMDLSBRO OO2N457894111792920 DMUA   075      S S                               
+LIMDLSBRO 1629 1632      163016321        T                                     
+LITABY    1636H1637      163716371        T             1                       
+LIBOWSFLD           1640 00000000                                               
+LIHRTBJN            1641 00000000                                               
+LISTOCTON 1643 1644      164316442        T                                     
+LINORTONS           1647 00000000                                               
+LIBLNGHMJ           1649H00000000                                               
+LIBLNGHM  1650H1651      165116512        T                                     
+LIGREATHM           1654 00000000                                               
+LISETNCRW 1656H1657H     165716572        T                                     
+LIHRTLEPL 1701H1703      170217031        T                                     
+LIHORD137           1711H00000000                                               
+LISEAHAM  1718 1718H     171817182        T                                     
+LIRYHPGRN           1722H00000000                     2                         
+LISNDRLND 1728 1730      172817304        T             1 2                     
+LIBRWHINS           1739 00000000                                               
+LIPELAW             1742 00000000                                               
+LIHEWORTH 1743 1744      17411742         T                                     
+LIPKLNJN            1746H00000000                        H                      
+LIHLBDGJN           1749 00000000                                               
+CRNWCSTLE OO2N457894121793000 DMUA   075      S S                               
+LINWCSTLE 1751 1754      175117546  SL    T                                     
+LIKEBGNJN           1755H00000000                                               
+LIKEBGSJN           1756 00000000                                               
+LINRWDJN            1758 00000000                                               
+LIGTSHDMC 1801 1802      180118022        T                                     
+LIBLAYDON           1805 00000000                                               
+LIWYLAM   1809H1810      18101810         T                                     
+LIPRUDHOE 1813H1814H     18141814         T                                     
+LISTCKSFL 1818H1819      18191819         T                                     
+LIRIDNGML 1822H1823H     18231823         T                                     
+LICRBG    1827 1827H     18271827         T                                     
+LIHEXHAM  1832 1833      183218332        T                                     
+LIHYDB    1841H1842      18421842         T                                     
+LIBRDNML  1847H1848H     18481848         T                                     
+LIHLTWHST 1855 1855H     18551855         T                                     
+LILOWRWSB           1906H00000000                                               
+LIBRMPTNC 1910H1911H     19111911         T                                     
+LIBRMPTNF           1913 00000000                        H                      
+LIWETHCOR           1919H00000000                                               
+LIWETHERL 1920 1920H     19201920         T           2                         
+LIPETLBGJ           1926H00000000                                               
+LICARLLRJ           1927H00000000                        H                      
+LTCARLILE 1930 19325     TF                                                     

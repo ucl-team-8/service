@@ -1,0 +1,21 @@
+BSNY906491512141605131111100 POO2D67    121800000 DMUA   075      S            P
+BX         NTY                                                                  
+LOWTBY    1919 19191         TB                                                 
+LIRUSWARP 1922 1923H     19221923         T                                     
+LISLEGHTS 1927H1928      19281928         T                                     
+LIGROSMNT 1935 1936      19351936         T                                     
+LIEGTON   1939 1939H     19391939         T                                     
+LIGLAISDL 1943 1946      19431946         T                                     
+LILEALHLM 1950H1951      19511951         T                                     
+LIDANBY   1957 1957H     19571957         T                                     
+LICTNM    2000 2000H     20002000         T                                     
+LICOMONDL 2003H2004      20042004         T                                     
+LIKLDL    2010H2011      20112011         T                                     
+LIBTRSBY  2015H2020H     20162020         T                                     
+LIGTAYTON 2025 2025H     20252025         T                                     
+LINUNTHRP 2031H2032H     203220321        T                                     
+LIGYPSYLA 2034 2034H     203420341        T                                     
+LIMARTON  2036H2037      203720371        T                                     
+LIJAMCOK  2039 2040      203920401        T           1                         
+LIGUSBROJ           2043H00000000                                               
+LTMDLSBRO 2044H20451     TF                                                     

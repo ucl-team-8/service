@@ -1,0 +1,26 @@
+BSNY918841512141605131111100 POO2N976030112355820 DMUS   075      S S          P
+BX         NTY                                                                  
+LOMNCRVIC 1723 17235  FL     TB                                                 
+LIMNCRDST           1724H00000000                                               
+LISLFDORD 1725H1726H     17261726         T                                     
+LISLFDCT  1729 1730H     172917302        T                                     
+LIBOLTON  1740 1741      174017414        T                                     
+LILOSTCKJ           1745 00000000                                               
+LILOSTCKP 1745H1746      174617461        T                                     
+LIHORWICH 1749H1750      17501750         T                                     
+LIBLRD    1752H1753      17531753         T                                     
+LIADNL    1756 1757      17561757         T                                     
+LICHORLEY 1801 1802      18011802         T                                     
+LICHORBUK 1805 1805H     18051805         T           2                         
+LIEUXTONJ           1809 00000000   SL                                          
+LILEYLAND 1811H1812      18121812         T                                     
+LIFRNGTNC           1814H00000000                                               
+LIPRST    1817 1819      181718191  SL    T                                     
+LIPRSTNFJ           1820 00000000                                               
+LIKIRKHAM 1828 1828H     182818281        T                                     
+LIKIRKMNJ           1830 00000000                                               
+LIKIRKM51           1833 00000000                                               
+LIPLTNLFY 1836 1836H     183618361        T                                     
+LILAYTCLX           1838H00000000                                               
+LILAYTON  1840 1840H     18401840         T           1                         
+LTBLCKPLN 1845 18473     TF                                                     

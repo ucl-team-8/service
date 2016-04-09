@@ -1,0 +1,11 @@
+BSNY929341512141605131111100 PEE5P61    111825820 DMUS   075                   P
+BX         NTY                                                                  
+LOGRMSBYT 0746 00003         TB                                                 
+LISBROUGH           0750 00000000                                               
+LIHABRO             0755 00000000                                               
+LIBKBY              0756H00000000   ML                                          
+LIBNTBY             0801H000000003  FL                                          
+LIWRAWBYJ           0802H00000000                                               
+LIELSHAM            0805 00000000                                               
+LISCNTAPP           0810 00000000                     1                         
+LTSCNTHRP 0816 00002     TF                                                     

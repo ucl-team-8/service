@@ -1,0 +1,19 @@
+BSNY915871512141605131111100 POO2K20    112232820 DMUA   075      S S          P
+BX         NTY                                                                  
+LOMNCRPIC 0607 06077  FL     TB                                                 
+LIARDWCKJ           0609 00000000                                               
+LISLDLJN            0611 00000000   SL                                          
+LILVHM    0612 0612H     061206121        T                                     
+LIHTCP    0615 0615H     061506151        T                                     
+LIHTNOJN            0617 00000000                                               
+LISTKP    0618H0620H     061906201        T                                     
+LISTKPE1            0621H00000000                       1H                      
+LIADSWDRD           0624 00000000                                               
+LICHDH    0625H0626      062606262        T                                     
+LIHNDFRTH 0630 0630H     06300630         T                                     
+LIWLMSL   0633 0634      063306344        T                                     
+LIALDEDGE 0637 0637H     06370637         T                                     
+LIHCHP    0647 0647H     06470647         T                                     
+LISBCH    0652H0653      065306531  FL    T                                     
+LICREWSBG           0657H00000000                     1                         
+LTCREWE   0701 07031     TF                                                     

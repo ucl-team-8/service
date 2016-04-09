@@ -1,0 +1,10 @@
+BSNY929621512141605131111100 PEE5S07    112226820 DMUA   075                   P
+BX         NTY                                                                  
+LOSTKPCS  0552 0000          TB                                                 
+LISTKPVIA 0557 0601      00000000   FL    RM                                    
+LISTKP    0602 0604      000000001  SL    OPA                                   
+LISTKPE1            0605H00000000                     2                         
+LIHAZL              0612 000000001                                              
+LIHAZLGHJ           0613 00000000                                               
+LINWMILSJ 0620 0624      00000000         RM                                    
+LTNWMILSC 0627 00001     TF                                                     

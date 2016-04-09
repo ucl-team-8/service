@@ -1,0 +1,5 @@
+BSNY926051512141605131111100 PEE5F06    112974820 DMUE   090                   P
+BX         NTY                                                                  
+LOMNCRVIC 1515 00004         TB                                                 
+LIMNCRVRS 1518 1622      00000000         OPRM                                  
+LTMNCRVIC21625 00004     TF                                                     

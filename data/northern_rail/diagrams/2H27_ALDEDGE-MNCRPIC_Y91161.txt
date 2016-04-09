@@ -1,0 +1,13 @@
+BSNY911611512141605131111100 POO2H27    112232820 DMUS   075      S            P
+BX         NTY                                                                  
+LOALDEDGE 0730 0730          TB                                                 
+LIWLMSL   0732H0733H     073307333        T                                     
+LIHNDFRTH 0736H0737      07370737         T           1                         
+LICHDH    0741H0742H     074207421        T                                     
+LIADSWDRD           0744 00000000   SL                                          
+LISTKPE1            0745H00000000                                               
+LISTKP    0747 0748      074707484        T                                     
+LIHTNOJN            0749H00000000                                               
+LISLDLJN            0752H00000000   FL                                          
+LIARDWCKJ           0754 00000000                                               
+LTMNCRPIC 0757 07594  FL TF                                                     

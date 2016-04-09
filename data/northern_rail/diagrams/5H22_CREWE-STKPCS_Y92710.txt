@@ -1,0 +1,13 @@
+BSNY927101512141605131111100 PEE5H22    112232820 EMU323 090                   P
+BX         NTY                                                                  
+LOCREWE   1817 00001         TB                                                 
+LICREWSBG           1819H00000000   FL                                          
+LISBCH              1823 000000002                                              
+LIALDEDGE           1832 00000000                                               
+LIWLMSL             1834 000000003                    1 3                       
+LICHDH              1841 000000001                      2                       
+LIADSWDRD           1844 00000000   SL                                          
+LISTKPE1            1846 00000000                                               
+LISTKP    1848 1856      00000000DG       OPA                                   
+LISTKPVIA 1857 1901      00000000         RM                                    
+LTSTKPCS  1906 0000      TF                                                     

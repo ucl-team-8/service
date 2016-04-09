@@ -1,0 +1,36 @@
+BSNY917701512141605131111100 POO2N22    112228110 DMUS   075      S            P
+BX         NTY                                                                  
+LOHAZL    0836 08362         TB                                                 
+LIWMOR    0838 0838H     083808382        T                                     
+LIDAVNPRT 0840 0840H     084008402        T                                     
+LISTKPE1            0842H00000000   FL                                          
+LISTKP    0844 0847      084408473  SL    T                                     
+LIHTNOJN            0848H00000000                                               
+LIHTCP    0850 0850H     085008502        T                                     
+LILVHM    0853 0853H     085308532        T                                     
+LISLDLJN            0854H00000000                        H                      
+LIARDWCKJ           0857 00000000                                               
+CRMNCRPIC OO2N22    112355820 DMUS   075      S                                 
+LIMNCRPIC 0859H0902H     0900090214    SL T                                     
+LIMNCROXR 0904 0907      090409072        T                                     
+LIMNCRDGT 0908H0909      090909092        T                                     
+LICFLDJN            0909H00000000                                               
+LIORDSLLJ           0910H00000000                                               
+LISLFDCT  0912 0913      091209132        T             1                       
+LIBOLTON  0923H0924H     092409244        T                                     
+LILOSTCKJ           0928H00000000                                               
+LILOSTCKP 0929 0930      092909301        T                                     
+LIHORWICH 0933H0934      09340934         T                                     
+LICHORLEY 0941 0942      09410942         T                                     
+LICHORBUK 0945 0945H     09450945         T           2 1                       
+LIEUXTONJ           0950 00000000   SL                                          
+LILEYLAND 0952H0953      09530953         T                                     
+LIFRNGTNC           0955H00000000                                               
+LIPRST    0958 1000      100010001  SL    T                                     
+LIPRSTNFJ           1001 00000000                                               
+LIKIRKHAM 1009 1010      100910101        T                                     
+LIKIRKMNJ           1011H00000000                                               
+LIKIRKM51           1014H00000000                                               
+LIPLTNLFY 1017H1018      101810181        T                                     
+LILAYTCLX           1020 00000000                     1                         
+LTBLCKPLN 1025 10254     TF                                                     

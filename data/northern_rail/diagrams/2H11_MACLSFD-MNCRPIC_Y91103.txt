@@ -1,0 +1,17 @@
+BSNY911031512141605131111100 POO2H11    112231820 EMU323 090      S            P
+BX         NTY                                                                  
+LOMACLSFD 0622 06223         TB                                                 
+LIPSBY    0626 0626H     06260626         T                                     
+LIADLC    0629 0629H     06290629         T                                     
+LIPOYNTON 0632H0633      06330633         T                                     
+LIBMHL    0635 0635H     06350635         T                                     
+LICHDH    0637H0638H     063806383        T                                     
+LIADSWDRD           0639H00000000   SL                                          
+LISTKPE1            0641 00000000                                               
+LISTKP    0642H0643H     064306434        T                                     
+LIHTNOJN            0645 00000000                                               
+LIHTCP    0646H0647      064706472        T                                     
+LILVHM    0649H0650      065006502        T                                     
+LISLDLJN            0651 00000000   FL                   H                      
+LIARDWCKJ           0653 00000000                                               
+LTMNCRPIC 0656 06584  FL TF                                                     

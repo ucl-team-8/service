@@ -1,0 +1,16 @@
+BSNY920481512141605131111100 POO2R54    111807820 DMUS   075      S            P
+BX         NTY                                                                  
+LOADWICK  0729 07291         TB                                                 
+LIBTLYSY  0732H0733      073307331        T                                     
+LIDONC    0737 0739      073707394        T                                     
+LIDONCHJN           0742 00000000                                               
+LICONBRGH 0745H0746H     07460746         T                                     
+LIMEXBRGH 0749H0750H     07500750         T                                     
+LISWINTN  0753 0754      07530754         T                                     
+LIALDWRKJ           0757 00000000                                               
+LIROTHCEN 0800H0801H     080108011        T                                     
+LIROTHHJN           0803H00000000                                               
+LIMEADWHL 0806 0807      080608071        T                                     
+LIWNCOJN            0807H00000000                     1                         
+LINNRYMLJ           0812 00000000                                               
+LTSHEFFLD 0814 08184A    TF                                                     

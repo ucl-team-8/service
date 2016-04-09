@@ -1,0 +1,19 @@
+BSNY924351512141605131111100 POO2W89    111868820 DMUS   075      S            P
+BX         NTY                                                                  
+LOLEEDS   1935 193512BD      TB                                                 
+LILEEDSWJ           1936 00000000   D                                           
+LIWHRDJN            1936H00000000                                               
+LIHOLBJCN           1937 00000000                                               
+LIBRMLYSR 1942 1942H     194219421        T                                     
+LINPUD    1946 1947      194619471        T                                     
+LIMLLNJN            1953H00000000                                               
+LIBRADIN  1955 2000      195520003        T                                     
+LIMLLNJN 2          2001H00000000                         1                     
+LIHLFX    2012H2020      201320201        T                                     
+LIDYCLJN            2022H00000000                       1H                      
+LIGRTLNDJ           2026H00000000                       1                       
+LIELLAND            2028H00000000                                               
+LIBRHOUSE 2032 2032H     203220321        T           1                         
+LIBRLYWJN           2036 00000000                                               
+LIBRLYJN            2038H00000000                                               
+LTHDRSFLD 2044 20444A    TF                                                     

@@ -1,0 +1,13 @@
+BSNY909391512141605131111100 POO2F68    111822820 DMUS   075      S            P
+BX         NTY                                                                  
+LOKNTNGLY 1053 10531         TB                                                 
+LIKNTNGWJ           1053H00000000                                               
+LIPTFTMHL 1056H1057      105710571        T                                     
+LIPTFTTSF 1059 1100      105911001        T                                     
+LIFTHRSTN 1103 1103H     110311031        T                                     
+LISTHS    1106H1107H     110711071        T                                     
+LICRFTNEJ           1110H00000000                                               
+LICRFTNWJ           1111H00000000                                               
+LIOKNSHWJ           1112H00000000                                               
+LICLDBDGJ           1114 00000000                     1  H1                     
+LTWKFLDKG 1118 11183     TF                                                     

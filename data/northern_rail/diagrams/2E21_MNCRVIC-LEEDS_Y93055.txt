@@ -1,0 +1,26 @@
+BSNY930551512141605121111000 POO2E214511111871821 DMUS   075      S S          P
+BX         NTY                                                                  
+LOMNCRVIC 1745 17451  FL     TB                                                 
+LIMILESPL           1748 00000000                                               
+LITHRPSBJ           1749 00000000                                               
+LIVTRLWKS           1751H00000000                                               
+LIMLSHILL 1753H1754      17541754         T                                     
+LICSTLTEJ           1757H00000000                                               
+LICSTL    1758H1759      17591759         T                                     
+LIRCHDALE 1802 1803      180218031        T                                     
+LIRCHDLEJ           1804 00000000                                               
+LILITLBRO 1808 1808H     180818082        T                                     
+LITODMRDN 1815 1816      181518162        T                                     
+LIHALRYDJ           1817H00000000                                               
+LIHBDNBDG 1822 1823      182218232        T                                     
+LIMLNRYDJ           1829H00000000                                               
+LIHLFX    1834H1835H     183518352        T           2                         
+LIMLLNJN            1847H00000000                                               
+LIBRADIN  1849 1852      184918524        T                                     
+LIMLLNJN 2          1853H00000000                                               
+LINPUD    1900 1900H     190019002        T                                     
+LIBRMLYSR 1903H1904H     190419042        T               1                     
+LIHOLBJCN           1909H00000000                                               
+LIWHRDJN            1910 00000000   C                                           
+LILEEDSWJ           1910H00000000   C                                           
+LTLEEDS   1912 19149D    TF                                                     

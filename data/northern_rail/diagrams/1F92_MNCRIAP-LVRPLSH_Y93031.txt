@@ -1,0 +1,32 @@
+BSNY930311512141605121111000 PXX1F926419112248822 DMUS   075      S S          P
+BX         NTY                                                                  
+LOMNCRIAP 0735 07352A        TB                                                 
+LIHLDGWJ            0737 00000000                                               
+LIHLDG    0738H0739      073907391        T                                     
+LIGATLEY  0741H0742      07420742         T                                     
+LIEDIDBRY 0744H0745      07450745         T                                     
+LISLDLJN            0749H00000000   SL                                          
+LIARDWCKJ           0751 00000000                       1                       
+LIMNCRPIC 0754H0756H     0755075614    SL T                                     
+LIMNCROXR 0758 0759H     075807592        T                                     
+LIMNCRDGT           0800H000000002                                              
+LICFLDJN            0801 00000000                                               
+LIORDSLLJ           0802 00000000                                               
+LIECCLES            0805H00000000                                               
+LIASTLEY            0810 00000000                                               
+LIPKSDJT            0815 00000000                       2                       
+LINWTNLW  0818H0820H     08190820         T                                     
+LIERLSTWN           0822 000000002                                              
+LISTHLNSJ 0825 0825H     082508252        T                                     
+LILEGR    0828 0828H     082808282        T                                     
+LIRHIL    0832 0833      08320833         T                                     
+LIWHISTON 0835H0836      083608361        T                                     
+LIHUYTJUN           0838H00000000                                               
+LIHUYTON  0839 0840      083908401        T                                     
+LIBROADGR 0843H0844      08440844         T                                     
+LIOLIVEMJ           0845H00000000                                               
+LIWVRTTEC 0846H0847      084708471        T                                     
+LIBOOTLBJ           0848 00000000                     2                         
+LIEDGHSB            0850H00000000   SL                                          
+LIEDGH              0851 000000002                      4                       
+LTLVRPLSH 0859 08594     TF                                                     

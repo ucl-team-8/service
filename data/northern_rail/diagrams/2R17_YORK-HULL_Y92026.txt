@@ -1,0 +1,14 @@
+BSNY920261512141605131111100 POO2R17    121806000 DMUE   090      S            P
+BX         NTY                                                                  
+LOYORK    2229 22291  NNL    TB                                                 
+LICOLTONJ           2234H00000000                                               
+LIHAMBLNJ           2241 00000000                                               
+LIHAMBLEJ           2242 00000000                                               
+LISELBY   2247 2249H     224722491        T                                     
+LIHOWDEN  2257H2258H     22582258         T                                     
+LIGLBRDYK 2304 2305      23042305         T                                     
+LIBROUGH  2311H2312H     23122312         T                                     
+LIFERRIBY 2316H2317H     23172317         T                                     
+LIHESSLE  2321 2322      23212322         T           1                         
+LIHESSLRD           2326H00000000                     1                         
+LTHULL    2331 23352     TF                                                     

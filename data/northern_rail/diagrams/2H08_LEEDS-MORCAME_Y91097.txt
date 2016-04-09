@@ -1,0 +1,26 @@
+BSNY910971512141605131111100 POO2H08    121869000 DMUA   075      S            P
+BX         NTY                                                                  
+LOLEEDS   0818 08186B B      TB                                                 
+LILEEDSWJ           0819 00000000   DH                                          
+LIARMLJCN           0820H00000000                                               
+LIAPERLYJ           0826 00000000                                               
+LISHPYDJN           0829 00000000                                               
+LISHPY    0830 0831      083008312        T                                     
+LIBNGY    0835H0836      083608362        T                                     
+LIKEIGHLY 0840H0841H     084108412        T           2                         
+LISKPT    0853H0855H     085508553        T                                     
+LIGRGRAVE 0900H0901      09010901         T                                     
+LIHELIFLD 0909 0910      09090910         T                                     
+LILPRESTN 0912H0913      09130913         T                                     
+LISETTLEJ           0916 00000000                                               
+LIGGLSWCK 0919H0920      09200920         T                                     
+LICLPM    0927H0928H     09280928         T                                     
+LIBNTHAM  0934 0934H     09340934         T                                     
+LIWENNGTN 0939 0940      09390940         T           2                         
+LICRNF    0955H0956      09560956         T                                     
+LICRNFNJN           0956H00000000                                               
+LIMORCMSJ           1001 00000000                                               
+LILANCSTR 1005 1021      100810215        T                                     
+LIMORCMSJ2          1024H00000000                                               
+LIBARELA  1026H1027H     102710271  DUM   T                                     
+LTMORCAME 1031 10321     TF                                                     

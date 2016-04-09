@@ -1,0 +1,27 @@
+BSNY912171512141605131111100 POO2H427606112299820 DMUA   075      S S          P
+BX         NTY                                                                  
+LOLVRPLSH 1627 16279  FL     TB                                                 
+LIEDGH              1631 000000003                                              
+LIEDGHSB            1631H00000000                                               
+LIWVRTREJ           1633 00000000                                               
+LIMSLH    1634H1635      163516351        T                                     
+LIWALERTN 1637 1637H     163716371        T                                     
+LIALERTN  1640 1640H     164016401        T                                     
+LIHUNTXWJ           1641H00000000   UML                                         
+LIHUNTSX            1643 000000002                                              
+LIHOUGHGR 1646H1647      16471647         T                                     
+LIWIDNES  1650 1650H     16501650         T                                     
+CRWRGT    OO2H427606112236820 DMUA   075      S S                               
+LIWRGT    1658 1659      165816591        T                                     
+LIPADGATE 1701H1702      17021702         T                                     
+LIBIRCHWD 1704H1705      17051705         T                                     
+LIGLAZBKE           1709 00000000                                               
+LIIRLAM   1710H1711H     17111711         T                                     
+LIFLIXTON 1715 1715H     17151715         T                                     
+LIURMSTON 1718 1719      17181719         T                                     
+LIHMPHRYP 1721 1721H     17211721         T                                     
+LITRFDPK  1723H1724      17241724         T           2                         
+LITRFDPEJ           1728 00000000                        H                      
+LICFLDJN            1731H00000000                                               
+LIMNCRDGT 1732 1732H     173217321        T                                     
+LTMNCROXR 1734 17355     TF                                                     

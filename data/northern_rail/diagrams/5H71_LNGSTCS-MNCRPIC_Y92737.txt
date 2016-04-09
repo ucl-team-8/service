@@ -1,0 +1,6 @@
+BSNY927371512141605131111100 PEE5H71    112230110 EMU323 090                   P
+BX         NTY                                                                  
+LOLNGSTCS 0455 0000          TB                                                 
+LILNGSTN  0500 0500      00000000   GL    OPA                                   
+LIARDWCKJ           0503 00000000   EL                                          
+LTMNCRPIC 0506 00001  EL TF                                                     

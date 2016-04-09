@@ -1,0 +1,21 @@
+BSNY923521512141605131111100 POO2W12    111808920 DMUS   075      S            P
+BX         NTY                                                                  
+LOGLBRDYK 0739 0739          TB                                                 
+LIBRFT    0742H0743      07430743         T                                     
+LIBROUGH  0748 0749      07480749         T                                     
+LIFERRIBY 0753 0753H     07530753         T                                     
+LIHESSLE  0757 0758      07570758         T           2                         
+LIHESSLRD           0804 00000000                         1                     
+CRHULL    OO2W12    111838821 DMUS   075      S                                 
+LIHULL    0808H0814      081108146        T                                     
+LICTTGHM  0821 0821H     08210821         T                                     
+LIBEVERLY 0827 0828      082708282        T                                     
+LIHTNCRNS 0836H0837      08370837         T                                     
+LIDRIFILD 0841H0842H     08420842         T                                     
+LINAFERTN 0846 0846H     08460846         T                                     
+LIBRDLNGT 0857 0900      085709004        T                                     
+LIBEMPTON 0906 0906H     09060906         T                                     
+LIHUNMNBY 0916 0917      09160917         T                                     
+LIFILEY   0921 0922      09210922         T           2                         
+LISEAMER  0932H0933H     09330933         T                                     
+LTSCARBRO 0938H09402     TF                                                     

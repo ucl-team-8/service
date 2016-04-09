@@ -1,0 +1,14 @@
+BSNY929571512151605130111100 PEE5S02    112226820 DMUS   075                   P
+BX         NTY                                                                  
+LONWTNHDD 0456 0000          TB                                                 
+LITHRPSBJ           0458 00000000   ML                                          
+LIBREWRYS           0500 00000000                                               
+LIPHILPK1           0503 00000000                                               
+LIPHILPK2           0504 00000000                                               
+LIASHBRYS           0509 00000000                                               
+LIGIDB              0513 000000002                                              
+LIGIDBURL 0515H0526H     00000000         RM                                    
+LIGIDB   2          0529 000000001                      3                       
+LIASHBRYS2          0535H00000000                                               
+LIARDWCKJ           0537 00000000   FL                                          
+LTMNCRPIC 0540 00007  FL TF                                                     

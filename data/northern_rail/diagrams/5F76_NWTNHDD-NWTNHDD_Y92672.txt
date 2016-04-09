@@ -1,0 +1,11 @@
+BSNY926721512141605131111100 PEE5F76    112974820 DMUA   075                   P
+BX         NTY                                                                  
+LONWTNHDD 1311 0000          TB                                                 
+LIVTRLWKS           1318 00000000                                               
+LICSTLTEJ           1322 00000000                                               
+LIRCHDALE 1325 1325      000000001        OP                                    
+LIRCHDLEJ 1327 1331      00000000         OPRM                                  
+LIRCHDALE21333 1333      000000003        OP                                    
+LICSTLTEJ2          1336 00000000                                               
+LIVTRLWKS2          1339H00000000                     2                         
+LTNWTNHDD21346 0000      TF                                                     

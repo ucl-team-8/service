@@ -1,0 +1,6 @@
+BSNY905051512141605131111100 POO2C76    122352000 DMUS   075      S            P
+BX         NTY                                                                  
+LOMORCAME 1238 12381  DUM    TB                                                 
+LIBARELA  1241H1242      124212421        T                                     
+LIMORCMSJ           1244 00000000                                               
+LTLANCSTR 1248 12492     TF                                                     

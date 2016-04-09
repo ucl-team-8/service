@@ -1,0 +1,14 @@
+BSNY903851512141605131111100 POO2C31    122358000ZDMUS   075      S            P
+BX         NTY                                                                  
+LOWHITHVN 0624 0624          TB                                                 
+LIPARTON  0627H0627H     06270627         R                                     
+LIPARTNNJ           0631H00000000                                               
+LIHNGT    0635H0635H     06350635         R                                     
+LIWKNT    0639H0642      06400642         T                                     
+LIFLIMBY  0646H0646H     06460646         R                                     
+LIMPRT    0649H0650      06500650         T                                     
+LIASPTRIA 0659H0659H     06590659         R                                     
+LIWIGTON  0711 0711H     07110711         T                                     
+LIDALSTON 0720 0720      07200720         R           2                         
+LICARLCUR           0727H00000000                                               
+LTCARLILE 0732 07332     TF                                                     

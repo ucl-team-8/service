@@ -1,0 +1,27 @@
+BSNY900591512141605131111100 PXX1F916416112248822 DMUS   075      S S          P
+BX         NTY                                                                  
+LOMNCRIAP 0640 06401A        TB                                                 
+LIHLDGWJ            0642 00000000                                               
+LIHLDG              0643 000000001                                              
+LISLDLJN            0648H00000000   SL                                          
+LIARDWCKJ           0650H00000000                                               
+LIMNCRPIC 0653 0655      0653065514    SL T                                     
+LIMNCROXR 0656H0658H     065706582        T                                     
+LIMNCRDGT           0659H000000002                                              
+LICFLDJN            0700 00000000                        H                      
+LIORDSLLJ           0701H00000000                                               
+LIECCLES            0705 00000000                                               
+LIASTLEY            0709H00000000                                               
+LIPKSDJT            0714H00000000                                               
+LINWTNLW  0716 0717      07160716         T             1                       
+LIERLSTWN           0719H000000002                                              
+LISTHLNSJ 0722H0723H     072207222        T                                     
+LIRHIL    0728 0729      07270728         T                                     
+LIHUYTJUN           0732H00000000                                               
+LIHUYTON  0733 0734      073207331        T                                     
+LIOLIVEMJ           0737H00000000                                               
+LIWVRTTEC 0738H0739      073807381        T                                     
+LIBOOTLBJ           0740 00000000                                               
+LIEDGHSB            0740H00000000   SL                                          
+LIEDGH              0741 000000002                    2                         
+LTLVRPLSH 0747 07474     TF                                                     

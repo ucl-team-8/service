@@ -1,0 +1,15 @@
+BSNY912931512141605131111100 POO2H57    112226110 DMUA   075      S            P
+BX         NTY                                                                  
+LOROHL    1754 1753          TB                                                 
+LIMARPLWJ           1757 00000000                                               
+LIROMILEY 1758H1759      17581758         T                                     
+LIWOODLEY 1802 1802H     18011801         T                                     
+LIHYDEC   1805 1805H     18041804         T                                     
+LIHYDEN   1807H1808      18071807         T                                     
+LIHYDEJ             1809 00000000                                               
+LIGIDB    1811H1812      181118111        T                                     
+LIFRFD    1814H1815      18141814         T                                     
+LIGORTON  1817 1817H     18161816   ML    T             2                       
+LIASHBRYS           1821H00000000                                               
+LIARDWCKJ           1823 00000000   EL                                          
+LTMNCRPIC 1826 18263  EL TF                                                     

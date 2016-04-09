@@ -1,0 +1,12 @@
+BSNY908551512141605131111100 POO2F41    112236820 DMUA   075      S            P
+BX         NTY                                                                  
+LOMNCRPIC 0647 064714        TB                                                 
+LIMNCROXR 0648H0650      064906502        T                                     
+LIMNCRDGT           0651 000000002                                              
+LICFLDJN            0651H00000000                                               
+LITRFDPEJ           0654 00000000                                               
+LIURMSTON 0657 0658      06570658         T                                     
+LIIRLAM   0702H0703      07030703         T                                     
+LIGLAZBKE           0704H00000000                                               
+LIBIRCHWD 0708 0708H     07080708         T           1                         
+LTWRGT    0714 07162     TF                                                     

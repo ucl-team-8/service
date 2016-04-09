@@ -1,0 +1,17 @@
+BSNY904471512141605131111100 POO2C47    122354000ZD  140 075      S            P
+BX         NTY                                                                  
+LOPRST    1004 10045         TB                                                 
+LIGSTANG            1013H00000000                                               
+LILANCSTR 1024H1025H     102510253        T                                     
+LIMORCMSJ           1028H00000000                                               
+LICRNFNJN           1032 00000000                                               
+LICRNF    1034 1035      10341035         T                                     
+LISDAL    1040H1041H     10411041         T                                     
+LIARNSIDE 1046 1047      10461047         T                                     
+LIGOVS    1052H1053H     10531053         T                                     
+LIKTBK    1057 1058      10571058         T                                     
+LICARK    1102 1103      11021103         T                                     
+LIULVRSTN 1110H1111H     11111111         T                                     
+LIDALTON  1119H1120H     11201120         T                                     
+LIDALTONJ           1122 00000000                     2                         
+LTBAROW   1133 11331     TF                                                     

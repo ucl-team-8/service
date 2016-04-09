@@ -1,0 +1,23 @@
+BSNY931081512141605121111000 POO2N93    112355820 DMUS   075      S            P
+BX         NTY                                                                  
+LOMNCRVIC 2317 23176  FL     TB                                                 
+LIMNCRDST           2318H00000000                                               
+LISLFDORD           2319 00000000                                               
+LISLFDCT  2321 2322      232123222        T                                     
+LIWALKDEN           2330 00000000                       2                       
+LICRWNSTJ           2341 00000000                                               
+LIWIGANSJ           2346 00000000                        H                      
+LIWIGANNW 2347H2353      000000001  FL    A                                     
+LIBALSHWL           0004H00000000   SL                2                         
+LIEUXTONJ           0008H00000000                                               
+LILEYLAND 0011 0011H     00110011         T                                     
+LIFRNGTNC           0014 00000000                       2H                      
+LIPRST    0019 0023      001900231  SL    T                                     
+LIPRSTNFJ           0024 00000000                                               
+LIKIRKHAM 0032 0032H     003200321        T                                     
+LIKIRKMNJ           0034 00000000                                               
+LIKIRKM51           0037 00000000                                               
+LIPLTNLFY 0040 0040H     004000401        T                                     
+LILAYTCLX           0042H00000000                                               
+LILAYTON  0044 0044H     00440044         T           1                         
+LTBLCKPLN 0049 00494     TF                                                     

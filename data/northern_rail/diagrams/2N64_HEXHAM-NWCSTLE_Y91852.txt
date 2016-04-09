@@ -1,0 +1,14 @@
+BSNY918521512141605131111100 POO2N64    121796000 DMUS   075      S            P
+BX         NTY                                                                  
+LOHEXHAM  2322 23222         TB                                                 
+LICRBG    2326H2327      23272327         T                                     
+LIRIDNGML 2330H2331H     23312331         T                                     
+LISTCKSFL 2335 2335H     23352335         T                                     
+LIPRUDHOE 2339 2340      23392340         T                                     
+LIWYLAM   2344 2344H     23442344         T                                     
+LIBLAYDON           2349 00000000                                               
+LIGTSHDMC 2352H2353H     235323531        T                                     
+LINRWDJN            2356H00000000                     2                         
+LIKEBGSJN           0001 00000000   SL                                          
+LIKEBGNJN           0002 00000000                                               
+LTNWCSTLE 0003 00045     TF                                                     

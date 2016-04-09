@@ -1,0 +1,29 @@
+BSNY904531512141605131111100 POO2C49    122358000 D  140 075      S            P
+BX         NTY                                                                  
+LOBAROW   1138 11383         TB                                                 
+LIPSTH              1145 00000000                                               
+LIASKAM   1149 1150      11491150         T                                     
+LIKRKBYIF 1155 1156      11551156         R                                     
+LIFOXFILD 1200 1201      12001201         R                                     
+LIGREENRD 1205H1206H     12061206         R                                     
+LIMLLM    1212 1213      12121213         T                                     
+LISILCRFT 1218 1219      12181219         R                                     
+LIBOOTLE  1226H1227H     12271227         R                                     
+LIRGLS    1233H1234H     12341234         T                                     
+LIDRIGG   1238 1239      12381239         R                                     
+LISEASCAL 1242H1243H     12431243         T                                     
+LISELAFLD 1247 1248      12471248         T                                     
+LISTBEES  1258 1259      12581259         T                                     
+LICRCK    1305 1306      13051306         R                                     
+LIWHITHVN 1308H1310H     13091310         T                                     
+LIPARTON  1314H1315H     13151315         R                                     
+LIPARTNNJ           1320 00000000                                               
+LIHNGT    1325 1326      13251326         R                                     
+LIWKNT    1330 1331H     13301331         T                                     
+LIFLIMBY  1337 1338      13371338         R                                     
+LIMPRT    1341 1342      13411342         T                                     
+LIASPTRIA 1352H1353H     13531353         R                                     
+LIWIGTON  1404H1405H     14051405         T                                     
+LIDALSTON 1414H1415      14151415         R           2                         
+LICARLCUR           1421H00000000                                               
+LTCARLILE 1426 14283     TF                                                     

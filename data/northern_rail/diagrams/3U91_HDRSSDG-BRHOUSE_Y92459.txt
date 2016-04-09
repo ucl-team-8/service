@@ -1,0 +1,9 @@
+BSNY924591512141605131111100 PEE3U91    111868820 DMUS   075                   P
+BX         NTY                                                                  
+LOHDRSSDG 0621 0000          TB                                                 
+LIHDRS771 0622 0625      00000000         RM                                    
+LIHDRSFLD 0626 0636      000000004A       C RM                                  
+LIBRLYJN            0640H00000000                                               
+LIBRLYWJN           0643 00000000                                               
+LIGRTLNDJ 0648 0651      00000000         RM                                    
+LTBRHOUSE 0656 00001     TF                                                     

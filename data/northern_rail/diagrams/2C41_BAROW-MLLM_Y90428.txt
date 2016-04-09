@@ -1,0 +1,9 @@
+BSNY904281512141605131111100 POO2C41    122358000 DMUS   075      S            P
+BX         NTY                                                                  
+LOBAROW   2130 21302         TB                                                 
+LIPSTH              2136H00000000                                               
+LIASKAM   2139H2140      21402140         T                                     
+LIKRKBYIF 2144 2144      21442144         R                                     
+LIFOXFILD 2147H2147H     21472147         R                                     
+LIGREENRD 2151 2151      21512151         R           1                         
+LTMLLM    2158 2200      TF                                                     

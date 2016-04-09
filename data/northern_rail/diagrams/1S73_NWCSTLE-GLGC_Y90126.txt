@@ -1,0 +1,46 @@
+BSNY901261512141605121111000 PXX1S73    121793000 DMUS   075      S            P
+BX         NTY                                                                  
+LONWCSTLE 1716 171610 SL     TB                                                 
+LIKEBGNJN           1717H00000000                                               
+LIKEBGSJN           1718 00000000                                               
+LINRWDJN            1720 00000000                                               
+LIGTSHDMC 1723 1724H     172317242        T                                     
+LIBLAYDON           1727H00000000                                               
+LIWYLAM   1732 1733      17321733         T                                     
+LIPRUDHOE 1736H1737H     17371737         T               1                     
+LIHEXHAM  1749H1750H     175017502        T                                     
+LIHYDB    1759 1800      17591800         T                                     
+LIBRDNML  1805H1806      18061806         T                                     
+LIHLTWHST 1812H1813H     18131813         T                                     
+LILOWRWSB           1824 00000000                                               
+LIBRMPTNC 1828 1828H     18281828         T                                     
+LIBRMPTNF           1830 00000000                                               
+LIWETHCOR           1836 00000000                                               
+LIWETHERL 1836H1837H     18371837         T           2                         
+LIPETLBGJ           1844 00000000                       3                       
+LICARLLRJ           1848 00000000                        H                      
+CRCARLILE XX1S73    123579003 DMUS   075      S                                 
+LICARLILE 1850 1917H     185219173        T                                     
+LIGRETNAJ           1926H00000000                                               
+LIGRETGRN 1928 1928H     19281928         T                                     
+LIANNAN   1936H1937      19371937         T           2                         
+LIDUMFRES 1954 1955H     195419551        T                                     
+LIHLYW              1959H00000000                                               
+LITHIL              2009 00000000                                               
+LISANQHAR 2021 2021H     20212021         T                                     
+LIKRKC    2026 2026H     20262026         T                                     
+LINWCMNCK 2035 2035H     20352035         T                                     
+LIACHILCK 2043H2044      20442044         T                                     
+LIMAUCHLN           2049 00000000                     2                         
+LIKILMRNK 2100H2101H     210121013        T                                     
+LIKLMAURS 2105 2105H     21052105         T                                     
+LILCHRDGJ           2109H00000000                                               
+LISTEWRTN 2110H2111      211121111        T                                     
+LIDNLP    2115 2115H     211521151        T                                     
+LILUGTON            2118H00000000                                               
+LIBRHD    2125H2126      212621262        T                                     
+LIBUSBYJ            2130 00000000                     2                         
+LIMRHSSJ            2134H00000000                                               
+LIMRHSNJ            2135 00000000                                               
+LIGLGCBSJ           2137 00000000   4B                                          
+LTGLGC    2139 21395     TF                                                     

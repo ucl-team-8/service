@@ -1,0 +1,39 @@
+BSNY909661512141605131111100 POO2F77    112242110 DMUA   075      S            P
+BX         NTY                                                                  
+LOBLKB    0615 06152         TB                                                 
+LIBLKBDJN           0616H00000000                                               
+LIACRNGTN 0622 0623      062206231        T                                     
+LIROSG    0629H0630      063006301        T                                     
+LIGANNOWJ           0631H00000000                                               
+LIBURNMR  0633 0634      063306342        T                                     
+LICOPYPIT           0641H00000000                                               
+LISTNSHJN           0648H00000000                                               
+LITODMRDN 0650 0651      065006511        T                                     
+LIWDEN    0653H0654      065406541        T                                     
+LILITLBRO 0659H0700H     070007001        T                                     
+LISMBG    0702H0703      070307031        T                                     
+LIRCHDLEJ           0705H00000000                                               
+LIRCHDALE 0706H0707H     070707073        T                                     
+LICSTL    0710 0710H     07100710         T                                     
+LICSTLTEJ           0711H00000000                                               
+LIMLSHILL 0714H0715H     07150715         T                                     
+LIVTRLWKS           0717 00000000                                               
+LIMSTN    0718 0718H     07180718         T           2                         
+LITHRPSBJ           0723H00000000                                               
+LIMILESPL           0724H00000000   FL                  3                       
+CRMNCRVIC OO2F77    112225820 DMUA   075      S                                 
+LIMNCRVIC 0730 0738      073207385        T                                     
+LIMNCRDST           0739H00000000                                               
+LISLFDORD 0740H0741H     07410741         T                                     
+LISLFDCT  0744 0745      074407452        T                                     
+LIWALKDEN 0753 0753H     07530753         T                                     
+LIATHERTN 0758H0759      07590759         T                                     
+LIDAISYH  0802 0802H     08020802         T                                     
+LICRWNSTJ           0805H00000000                                               
+LIHINDLEY 0806H0807      08070807         T                                     
+LIWIGANWL 0811H0813H     081208131        T                                     
+LIGATHRST 0817H0818      08180818         T                                     
+LIAPLYBDG 0821 0822      08210822         T                                     
+LIPARBOLD 0825H0826      08260826         T                                     
+LIBRSCGHB 0830 0831      08300831         T           2                         
+LTSOUTHPT 0845 08465     TF                                                     

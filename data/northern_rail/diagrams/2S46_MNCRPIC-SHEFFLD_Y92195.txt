@@ -1,0 +1,28 @@
+BSNY921951512141605131111100 POO2S46    112226820 DMUA   075      S            P
+BX         NTY                                                                  
+LOMNCRPIC 1649 16492  EL     TB                                                 
+LIARDWCKJ           1651 00000000                                               
+LIASHBRYS 1652H1653      16531653         T                                     
+LIREDISHN 1657H1658      16581658         T                                     
+LIBRNGTN  1701 1701H     17011701         T                                     
+LIBREDBRY 1704 1704H     17041704         T                                     
+LIROMILEY 1707 1707H     170717072        T                                     
+LIMARPLWJ           1709H00000000                                               
+LIMARPLE  1710H1711H     171117112        T                                     
+LISTRINES 1715 1715H     171517152        T                                     
+LINWMILSC 1718H1719H     171917192        T                                     
+LINWMILSJ           1722 00000000                                               
+LICHNLY   1725 1725H     172517252        T                                     
+LICHNLYNJ           1727H00000000                                               
+LICHNLYEJ           1728 00000000                                               
+LIEDALE   1734 1734H     173417342        T                                     
+LIERLESDG           1738H00000000                                               
+LIHOPD    1740 1740H     174017402        T                                     
+LIBAMFORD 1743 1744      17431744         T                                     
+LIHATHRSG 1747 1747H     174717472        T                                     
+LIGRNDLFD 1750H1751H     175117512        T                                     
+LITOTLYTE           1756 00000000                     2H                        
+LIDOREWJ            1759 00000000                                               
+LIDORE    1759H1800      18001800         T                                     
+LIDORESNJ           1801 00000000                                               
+LTSHEFFLD 1806 18085     TF                                                     

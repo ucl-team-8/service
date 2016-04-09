@@ -1,0 +1,37 @@
+BSNY916341512141605131111100 POO2L128890111804920 DMUA   075      S S          P
+BX         NTY                                                                  
+LOWORKSOP 0630 06302         TB                                                 
+LISHRKSEJ           0632 00000000                                               
+LISHRKSKS 0633H0634      06340634         T                                     
+LIBRCLEJN           0636 00000000                                               
+LIKVTNPK  0639 0640      06390640         T                                     
+LIKVTNBDG 0642H0643      06430643         T                                     
+LIWDHOUSJ           0647H00000000                                               
+LIWDHOUSE 0648H0649H     06490649         T                                     
+LIDARNALL 0654H0655      06550655         T                                     
+LIWDBRNJN           0657 00000000                     1                         
+LINNRYMLJ           0659H00000000                                               
+CRSHEFFLD OO2L128890111802820 DMUA   075      S S                               
+LISHEFFLD 0701H0706      070307063B       T                                     
+LINNRYMLJ2          0707H00000000                                               
+LIWNCOJN            0710H00000000                                               
+LIMEADWHL 0711 0712      071107124        T                                     
+LIECLSFLW           0715H00000000                                               
+LICHPLTWN 0717H0718      07180718         T                                     
+LIELSC    0722H0723H     07230723         T                                     
+LIWOMBWEL 0726H0727      07270727         T                                     
+LIBNSLY   0732 0733      073207332        T                                     
+LIDRTN    0737H0738      07380738         T                                     
+LIWOLEYCS           0739H00000000                                               
+LIHORBRYJ           0744H00000000   SL                                          
+LIWKFLDKG 0749 0750      074907501        T                                     
+LINORMNTN 0754 0755      075407551        T                                     
+LIALTFTJN           0756H00000000                                               
+LICASTLFD 0800 0803      080008031        T                                     
+LIWHWDJN            0805H00000000                                               
+LIMETHLYJ           0808 00000000                                               
+LIWDLESFD 0811H0812H     081208121        T                                     
+LISTRTJN            0816 00000000                     2                         
+LIESJLEDS           0820H00000000   UM                                          
+LILEEDSWJ           0821H00000000   F                                           
+LTLEEDS   0823 082517A   TF                                                     

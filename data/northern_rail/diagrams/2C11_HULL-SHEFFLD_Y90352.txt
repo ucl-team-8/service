@@ -1,0 +1,29 @@
+BSNY903521512141605131111100 POO2C11    111808920 DMUS   075      S S          P
+BX         NTY                                                                  
+LOHULL    0641 06412         TB                                                 
+LIHESSLRD           0644H00000000                                               
+LIHESSLE  0647H0648      06480648         T                                     
+LIFERRIBY 0652 0653      06520653   SL    T                                     
+LIBROUGH  0657H0658H     06580658         T                                     
+LIGLBRDYK 0705H0706      07060706         T                                     
+LISLTMRSH 0711 0712      07110712         T                                     
+LIGOOLE   0716 0717      071607172        T                                     
+CRTHORNEN OO2C11    111816820 DMUS   075      S S                               
+LITHORNEN 0725 0725H     07250725         T                                     
+LITHORNEJ           0728 00000000                                               
+LIHTFLASF 0730H0731H     07310731         T                                     
+LIKKSNDAL 0735H0736      07360736         T                                     
+LIBTLYJN            0739H00000000                     2  H2                     
+CRDONC    OO2C11    111807820 DMUS   075      S S                               
+LIDONC    0746H0748H     074707483B       T                                     
+LIDONCHJN           0751H00000000                                               
+LICONBRGH 0755 0756      07550756         T                                     
+LIMEXBRGH 0759 0759H     07590759         T                                     
+LISWINTN  0802 0803      08020803         T                                     
+LIALDWRKJ           0806 00000000                         4                     
+LIROTHCEN 0813H0815H     081408151        T                                     
+LIROTHHJN           0817H00000000                                               
+LIMEADWHL 0820 0825      082008251        T                                     
+LIWNCOJN            0825H00000000                     1                         
+LINNRYMLJ           0830 00000000                       1                       
+LTSHEFFLD 0833 08333B    TF                                                     

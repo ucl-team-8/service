@@ -1,0 +1,28 @@
+BSNY901381601181605131111100 PXX1W50    111808920 DMUS   075      S S          P
+BX         NTY                                                                  
+LOSHEFFLD 1841 18413A        TB                                                 
+LINNRYMLJ           1842H00000000                                               
+LIWNCOJN            1845H00000000                                               
+LIMEADWHL 1846 1847      184618472        T                                     
+LIROTHHJN           1849H00000000                                               
+LIALDWRKJ           1852H00000000                       3 1                     
+LISWINTN            1858 00000000                                               
+LIMEXBRGH           1859H00000000                       1                       
+LIDONCHJN           1905H00000000                     1  H1                     
+LIDONC    1911 1917      191119173B       T                                     
+LIBTLYJN            1919H00000000                                               
+LIHTFLASF           1924H00000000                       1                       
+LITHORNEJ           1927H00000000                                               
+LIGOOLE   1936H1937H     193719371        T             2 1                     
+LIGLBRDYK           1947H00000000                                               
+LIBROUGH  1953 1954      19531954         T           2                         
+LIHESSLRD           2004H00000000                                               
+CRHULL    XX1W50    111838821 DMUS   075      S S                               
+LIHULL    2008 2014      200920146        T                                     
+LICTTGHM  2021 2021H     20212021         T                                     
+LIBEVERLY 2027 2028      202720282        T                                     
+LIARRAM   2032 2032H     20322032         T                                     
+LIHTNCRNS 2038H2039H     20392039         T                                     
+LIDRIFILD 2044 2045      20442045         T                                     
+LINAFERTN 2048H2049      20492049         T           2                         
+LTBRDLNGT 2102 21026     TF                                                     

@@ -1,0 +1,21 @@
+BSNY920781512141605131111100 POO2R92    111838821 DMUS   075      S            P
+BX         NTY                                                                  
+LOBEVERLY 0636 06361         TB                                                 
+LICTTGHM  0641H0642H     06420642         T           1   1                     
+CRHULL    OO2R92    121806000 DMUS   075      S                                 
+LIHULL    0651 0707      065107072        T                                     
+LIHESSLRD           0710H00000000                        H                      
+LIBROUGH  0718H0719H     07190719         T                                     
+LIGLBRDYK 0726H0727      07270727         T                                     
+LIESTRNGT 0730H0731H     07310731         T                                     
+LIHOWDEN  0735H0736      07360736         T                                     
+LIWRESSLE 0740 0740H     07400740         T                                     
+LISELBY   0747H0748H     074807482        T                                     
+LIHAMBLEJ           0753H00000000                                               
+LIHAMBLWJ           0754H00000000                     2                         
+LIGSCGNWJ           0759 00000000                        H                      
+LISHBN    0802H0803      08030803         T               1                     
+LICHFN              0807 000000002  NNL                                         
+LIULESKLF 0809 0810      08090810         T                                     
+LICOLTONJ           0814 00000000   NNL                  H                      
+LTYORK    0820 08217     TF                                                     

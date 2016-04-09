@@ -1,0 +1,29 @@
+BSNY924421512141605131111100 POO2Y57    122352000 DMUA   075      S            P
+BX         NTY                                                                  
+LOHEYSHBR 1317 1317   DUH    TB                                                 
+LIMORCJGF 1326H1328H     00000000         OP                                    
+CRMORCAME OO2Y57    121869000 DMUA   075      S                                 
+LIMORCAME 1329H1333H     13301333         T                                     
+LIBARELA  1337 1338      133713382        T                                     
+LIMORCMSJ           1340 00000000                                               
+LILANCSTR 1344 1349      134413495        T                                     
+LIMORCMSJ2          1352 00000000                                               
+LICRNFNJN           1357 00000000                                               
+LICRNF    1358 1359      13581359         T                                     
+LIWENNGTN 1412 1412H     14121412         T                                     
+LIBNTHAM  1417H1418H     14181418         T                                     
+LICLPM    1424H1425      14251425         T                                     
+LIGGLSWCK 1433 1434      14331434         T                                     
+LISETTLEJ           1437 00000000                                               
+LILPRESTN 1440H1441      14411441         T                                     
+LIHELIFLD 1443H1444H     14441444         T                                     
+LIGRGRAVE 1452 1453      14521453         T           2 2 1                     
+LISKPT    1503 1510      150315102        T                                     
+LIKEIGHLY 1519 1520      152015201        T                                     
+LIBNGY    1524 1525      152515251        T                                     
+LISHPY    1529H1530H     153015301        T                                     
+LISHPYDJN           1531H00000000                                               
+LIAPERLYJ           1535 00000000                     2   1                     
+LIARMLJCN           1542H00000000   UH                                          
+LILEEDSWJ           1544 00000000   A                                           
+LTLEEDS   1545H15472C    TF                                                     

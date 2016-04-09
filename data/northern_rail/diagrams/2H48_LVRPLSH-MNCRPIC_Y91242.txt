@@ -1,0 +1,24 @@
+BSNY912421512141605121111000 POO2H48    112299820 DMUA   075      S S          P
+BX         NTY                                                                  
+LOLVRPLSH 2338 23381  SL     TB                                                 
+LIEDGH    2341H2342      234223422        T                                     
+LIEDGHSB            2343H00000000   FL                                          
+LIWVRTREJ           2345 00000000                                               
+LIMSLH    2346H2347      234723471        T                                     
+LIWALERTN 2349 2349H     234923491        T                                     
+LIALERTN  2352 2353      235223531        T                                     
+LIHUNTXWJ           2354 00000000   UML                                         
+LIHUNTSX  2356 2356H     235623562        T                                     
+LIHALW    2358H2359      23592359         T                                     
+LIHOUGHGR 0002H0003      00030003         T                                     
+LIWIDNES  0006 0006H     00060006         T                                     
+LISANKEY  0011 0011H     00110011         T                                     
+CRWRGT    OO2H48    112236820 DMUA   075      S S                               
+LIWRGT    0016 0017      001600171        T                                     
+LIBIRCHWD           0020H00000000                                               
+LIGLAZBKE           0023 00000000                                               
+LITRFDPEJ           0029 00000000                     2                         
+LICFLDJN            0034 00000000                                               
+LIMNCRDGT           0034H000000001                                              
+LIMNCROXR           0035H000000004                                              
+LTMNCRPIC 0037 003913    TF                                                     

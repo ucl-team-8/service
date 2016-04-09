@@ -1,0 +1,26 @@
+BSNY920041512141605131111100 POO2P85    111807820 DMUS   075      S            P
+BX         NTY                                                                  
+LODONC    2003 20035         TB          1                                      
+LIDONCHJN           2007H00000000                                               
+LICONBRGH 2011 2012      20112012         T                                     
+LIMEXBRGH 2015 2015H     20152015         T                                     
+LISWINTN  2018 2018H     20182018         T                                     
+LIALDWRKJ           2021H00000000                      H  1H                    
+LIROTHCEN 2027 2028      202720281        T                                     
+LIROTHHJN           2030 00000000                                               
+LIMEADWHL 2032H2033H     203320331        T                                     
+LIWNCOJN            2034 00000000                      H                        
+LINNRYMLJ           2038 00000000                                               
+CRSHEFFLD OO2P85    111804920 DMUS   075      S                                 
+LISHEFFLD 2040 2045      204020454A       T                                     
+LINNRYMLJ2          2046H00000000                                               
+LIWDBRNJN           2048H00000000                                               
+LIDARNALL 2050 2050H     20502050         T                                     
+LIWDHOUSE 2055 2056      20552056         T                                     
+LIWDHOUSJ           2057 00000000                                               
+LIKVTNBDG 2102H2103      21032103         T                                     
+LIKVTNPK  2105H2106H     21062106         T                                     
+LIBRCLEJN           2109 00000000                                               
+LISHRKSKS 2110H2111      21112111         T                                     
+LISHRKSEJ           2113 00000000                     2   1                     
+LTWORKSOP 2118 21182     TF                                                     

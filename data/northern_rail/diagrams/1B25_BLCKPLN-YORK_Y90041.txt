@@ -1,0 +1,38 @@
+BSNY900411512141605131111100 PXX1B256389121737000 DMUE   090      S S          P
+BX         NTY                                                                  
+LOBLCKPLN 1411 14116         TB                                                 
+LILAYTCLX           1414H00000000                                               
+LIPLTNLFY 1416H1417H     141714172        T                                     
+LIPLTNT67           1421H00000000                                               
+LIKIRKMNJ           1424 00000000                     1                         
+LIPRSTNFJ           1433 00000000   BL                                          
+LIPRST    1434H1437H     143514372  SL    T                                     
+LIFRNGTNC           1440 00000000                                               
+LILSTHJN            1442H00000000                       1                       
+LIBLKB    1454 1455      145514551        T                                     
+LIBLKBDJN           1456H00000000                                               
+LIACRNGTN 1502 1503      150215031        T                                     
+LIGANNOWJ           1509H00000000                                               
+LIBURNMR  1511 1512      151115122        T                                     
+LICOPYPIT           1519 00000000                     2                         
+LIHALRYDJ           1528H00000000                                               
+LIHBDNBDG 1533 1534      153315342        T                                     
+LIMLNRYDJ           1540H00000000                         1H                    
+LIHLFX    1546H1547H     154715472        T           2                         
+LIMLLNJN            1559H00000000                                               
+LIBRADIN  1601 1604      160116041        T                                     
+LIMLLNJN 2          1605H00000000                                               
+LINPUD    1611H1612H     161216122        T               1H                    
+LIHOLBJCN           1619H00000000                                               
+LIWHRDJN            1620 00000000   C                                           
+LILEEDSWJ           1620H00000000   C                                           
+CRLEEDS   XX1B256389111837920 DMUE   090      S S                               
+LILEEDS   1622 1625      162216259D       T                                     
+LINEVLWJN           1627H00000000                                               
+LICSGT    1631 1632      163116321        T                                     
+LIGARFRTH 1636 1637      163616371        T                                     
+LIEGRFRTH 1638H1639H     163916391        T                                     
+LIMCKLFLD 1642 1643      164216431        T                                     
+LICHFN    1648 1649      164816494  LSL   T                                     
+LICOLTONJ           1654H00000000   LSL                   1                     
+LTYORK    1701 17037     TF                                                     

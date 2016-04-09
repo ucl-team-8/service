@@ -1,0 +1,22 @@
+BSNY920021512141605131111100 POO2P821055111804920 DMUS   075      S S          P
+BX         NTY                                                                  
+LOLINCLNC 1943 19435         TB                                                 
+LIWHOLMSJ           1945 00000000                                               
+LISAXILBY 1951H1952      19521952         T             1H                      
+LIGBGHLRD 2005 2006      20052006         T                                     
+LIGBROTJ            2007H00000000                                               
+LICLRBROJ           2013 00000000                        H                      
+LIRTFDLL  2018H2019H     201920193        T                                     
+LITHRMWJN           2021 00000000                         1                     
+LIWORKSOP 2030 2031      203020311        T                                     
+LISHRKSEJ           2033 00000000                                               
+LISHRKSKS 2034H2035      20352035         T                                     
+LIBRCLEJN           2037 00000000                                               
+LIKVTNPK  2040 2041      20402041         T                                     
+LIKVTNBDG 2043H2044      20442044         T                                     
+LIWDHOUSJ           2048H00000000                                               
+LIWDHOUSE 2050 2051      20502051         T                                     
+LIDARNALL 2055H2056      20562056         T                                     
+LIWDBRNJN           2058 00000000                     1                         
+LINNRYMLJ           2100H00000000                                               
+LTSHEFFLD 2102H21058A    TF                                                     

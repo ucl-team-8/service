@@ -1,0 +1,27 @@
+BSNY930361512141605121111000 PXX1H436448112248822 DMUS   075      S S          P
+BX         NTY                                                                  
+LOLVRPLSH 0716 07161  SL     TB                                                 
+LIEDGH              0719H000000001                                              
+LIEDGHSB            0720 00000000                                               
+LIBOOTLBJ           0720H00000000                                               
+LIWVRTTEC 0721 0721H     072107212        T                                     
+LIOLIVEMJ           0722H00000000                                               
+LIHUYTJUN           0725 00000000                                               
+LIRHIL              0728 00000000                                               
+LILEGR    0730 0730H     073007301        T                                     
+LISTHLNSJ 0733 0733H     073307331        T                                     
+LIERLSTWN           0737 000000001                                              
+LINWTNLW  0738H0739H     07390739         T                                     
+LIPKSDJT            0742 00000000                                               
+LIASTLEY            0746H00000000                                               
+LIECCLES            0750H00000000                     2                         
+LIORDSLLJ           0755H00000000                                               
+LICFLDJN            0756H00000000                                               
+LIMNCRDGT           0757 000000001                                              
+LIMNCROXR 0758 0800      075808004        T                                     
+LIMNCRPIC 0802 0804      0802080413 SL    T                                     
+LIARDWCKJ           0805H00000000                       1H                      
+LISLDLJN            0809 00000000                       1H                      
+LIHLDG              0816 000000002                      1H                      
+LIHLDGWJ            0818H00000000                                               
+LTMNCRIAP 0821 08222A    TF                                                     

@@ -1,0 +1,29 @@
+BSNY912371512141605131111100 POO2H485435112299820 DMUA   075      S S          P
+BX         NTY                                                                  
+LOLVRPLSH 0745 07456  FL     TB                                                 
+LIEDGH              0749 000000003                                              
+LIEDGHSB            0749H00000000                                               
+LIWVRTREJ           0751 00000000   SL                                          
+LIMSLH    0753 0753H     075307533        T                                     
+LIWALERTN 0755H0756      075607563        T             1                       
+LIALERTN  0759H0801      080008011        T                                     
+LIHUNTXWJ           0802 00000000   UML                                         
+LIHUNTSX  0804 0804H     080408042        T                                     
+LIHALW    0806H0807      08070807         T                                     
+LIHOUGHGR 0810H0811      08110811         T                                     
+LIWIDNES  0814 0815      08140815         T                                     
+LISANKEY  0819H0820      08200820         T                                     
+CRWRGT    OO2H485435112236820 DMUA   075      S S                               
+LIWRGT    0824H0825H     082508251        T                                     
+LIBIRCHWD 0829H0830H     08300830         T                                     
+LIGLAZBKE           0834H00000000                                               
+LIIRLAM   0836 0837      08360837         T                                     
+LIFLIXTON 0840H0841      08410841         T                                     
+LICHASNRD 0842H0843H     08430843         T                                     
+LIURMSTON 0845 0846      08450846         T                                     
+LIHMPHRYP 0848 0849      08480849         T                                     
+LITRFDPK  0851 0852      08510852         T           2                         
+LITRFDPEJ           0856 00000000                                               
+LICFLDJN            0859 00000000                                               
+LIMNCRDGT 0859H0900H     090009001        T                                     
+LTMNCROXR 0902 09045     TF                                                     

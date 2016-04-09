@@ -1,0 +1,34 @@
+BSNY914171603071605131111100 POO2H96    121151900 DMUS   075      S            P
+BX         NTY                                                                  
+LOLEEDS   1806 18062C B      TB                                                 
+LILEEDSWJ           1807 00000000   DH                                          
+LIARMLJCN           1808H00000000                                               
+LIAPERLYJ           1814 00000000                                               
+LISHPYDJN           1817 00000000                                               
+LISHPY    1818 1819      181818182        T                                     
+LIBNGY    1823 1824      182318242        T                                     
+LIKEIGHLY 1828H1829H     182918292        T                                     
+LISTEETON 1833H1834H     183418342        T           2                         
+LISKPT    1843H1846      184518463        T                                     
+LIGRGRAVE 1851 1851H     18511851         T                                     
+LIHELIFLD 1859 1900      18591900         T                                     
+LILPRESTN 1902 1902H     19021902         T                                     
+LISETTLEJ           1905 00000000                                               
+LISETTLE  1907H1908H     19081908         T                                     
+LIHTNRIBL 1916H1917      19171917         T                                     
+LIRIBLHED 1924 1925      19241925         T                                     
+LIBLEMOR            1928 00000000                                               
+LIDENT    1934 1934H     19341934         T                                     
+LIGARSDLE 1939 1940      19391940         T                                     
+LIKSTP    1952 1952H     19521952         T                                     
+LIAPBY    2004 2005      20042005         T                                     
+LINWBIKTH           2011H00000000                                               
+LINWBICUL           2014 00000000                                               
+LILWBY    2018 2019      20182019         T                                     
+LILAZKRKO 2024 2024H     20242024         T                                     
+LIARMTHWT 2031H2032H     20322032         T                                     
+LILOWHXSB           2034H00000000                         1                     
+LIHOWEACS           2039 00000000                     2                         
+LIPETLBGJ           2045H00000000                                               
+LICARLLRJ           2046H00000000                                               
+LTCARLILE 2048 20526     TF                                                     

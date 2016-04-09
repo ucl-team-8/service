@@ -1,0 +1,6 @@
+BSNY927151512141605131111100 PEE5H25    121831000 EMU333 100                   P
+BX         NTY                                                                  
+LOLEEDS   0933 00009D        TB                                                 
+LIMRLNJN            0936 00000000   GL    X                                     
+LINEVLWJN           0939 00000000                                               
+LTNEVLTMD 0943 0000      TF                                                     

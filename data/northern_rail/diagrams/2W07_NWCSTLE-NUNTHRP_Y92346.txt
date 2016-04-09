@@ -1,0 +1,29 @@
+BSNY923461512141604011111100 POO2W07    111792920 DMUA   075      S            P
+BX         NTY                                                                  
+LONWCSTLE 0730 07305         TB                                                 
+LIHLBDGJN           0731H00000000                                               
+LIPKLNJN            0733H00000000                                               
+LIHEWORTH 0736 0737      07360737         T                                     
+LIPELAW             0739 00000000                                               
+LIBRWHINS           0742 00000000                     1                         
+LISNDRLND 0749 0750H     074907501        T                                     
+LIRYHPGRN           0753H00000000                                               
+LISEAHAM  0757H0758      075807581        T                                     
+LIHORD148           0805H00000000                                               
+LIHRTLEPL 0813 0815      081308151        T                                     
+LISETNCRW 0819 0819H     081908191        T                                     
+LIGREATHM           0822 00000000                                               
+LIBLNGHM  0825H0826H     082608261        T                                     
+LIBLNGHMJ           0828 00000000                                               
+LINORTONS           0830H00000000                                               
+LISTOCTON 0833 0833H     083308331        T                                     
+LIHRTBJN            0835 00000000                                               
+LIBOWSFLD           0836H00000000                                               
+LITABY    0838 0839      083808392        T               1                     
+CRMDLSBRO OO2W07    121800000 DMUA   075      S                                 
+LIMDLSBRO 0844H0849      084608492        T                                     
+LIGUSBROJ           0850 00000000                                               
+LIJAMCOK  0852H0853H     085308531        T                                     
+LIMARTON  0855H0856      085608561        T                                     
+LIGYPSYLA 0858H0859      085908591        T                                     
+LTNUNTHRP 0901 09042     TF                                                     

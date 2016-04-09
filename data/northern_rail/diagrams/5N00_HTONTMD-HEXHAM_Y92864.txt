@@ -1,0 +1,13 @@
+BSNY928641512141605131111100 PEE5N00    121799000 DMUA   075                   P
+BX         NTY                                                                  
+LOHTONTMD 0521 0000          TB-D                                               
+LIHTONSJN           0525 00000000   SL                                          
+LINWCSTLE 0531 0539      000000008        -D                                    
+LIKEBGNJN           0540H00000000                                               
+LIKEBGSJN           0541 00000000                                               
+LINRWDJN            0543 00000000                                               
+LIGTSHDMC           0545H000000002                                              
+LIBLAYDON           0548 00000000                                               
+LIWYLAM             0552 00000000                                               
+LIPRUDHOE           0554H00000000                     2                         
+LTHEXHAM  0607 00002     TF                                                     

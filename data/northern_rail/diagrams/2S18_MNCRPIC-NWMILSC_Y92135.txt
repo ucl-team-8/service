@@ -1,0 +1,14 @@
+BSNY921351512141605131111100 POO2S18    112226820 DMUS   075      S            P
+BX         NTY                                                                  
+LOMNCRPIC 0950 09491  EL     TB                                                 
+LIARDWCKJ           0952 00000000                                               
+LIASHBRYS           0953H00000000                                               
+LIRYDRBRW 0956 0956H     09560956         T                                     
+LIREDISHN 0958H0959      09590959         T                                     
+LIBRNGTN  1002 1002H     10021002         T                                     
+LIBREDBRY 1005 1005H     10051005         T                                     
+LIROMILEY 1008 1008H     100810082        T                                     
+LIMARPLWJ           1010H00000000                                               
+LIMARPLE  1011H1012      101210122        T                                     
+LISTRINES 1015H1016      101610162        T                                     
+LTNWMILSC 1019 10202     TF                                                     

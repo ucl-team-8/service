@@ -53,7 +53,7 @@ export function locationsDatatypes(d) {
 }
 
 export function getLocations() {
-  return get("csv", "/static/data/locations_east_coast_extract.csv").then((data) => {
+  return get("csv", "/static/data/locations_northern_rail_extract.csv").then((data) => {
     data.forEach(locationsDatatypes);
     return data;
   });

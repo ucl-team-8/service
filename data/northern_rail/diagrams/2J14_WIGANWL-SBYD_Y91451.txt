@@ -1,0 +1,17 @@
+BSNY914511512141605131111100 POO2J14    112224110 DMUA   075      S            P
+BX         NTY                                                                  
+LOWIGANWL 1245 12452         TB                                                 
+LICRWNSTJ           1249H00000000                                               
+LILOSTCKJ           1255 00000000                                               
+LIBOLTON  1259 1300      125913003        T           2                         
+LISLFDCT  1312 1313      131213131        T                                     
+LISLFDORD 1315 1316      13151316         T                                     
+LIMNCRDST           1317H00000000   SL                                          
+CRMNCRVIC OO2J14    112220110 DMUA   075      S                                 
+LIMNCRVIC 1319 1329      131913294        T                                     
+LIMILESPL           1332 00000000                                               
+LIPHILPK1           1332H00000000                                               
+LIBAGLYFJ           1333H00000000                                               
+LIASHTMNJ           1337 00000000                                               
+LIASHONUL 1338 1339      13381339         T                                     
+LTSBYD    1343 13455     TF                                                     

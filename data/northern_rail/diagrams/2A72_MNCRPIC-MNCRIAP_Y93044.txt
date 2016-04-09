@@ -1,0 +1,12 @@
+BSNY930441512141605121111000 POO2A72    112233110 EMU323 090      S            P
+BX         NTY                                                                  
+LOMNCRPIC 0714 07149  SL     TB                                                 
+LIARDWCKJ           0716H00000000                                               
+LISLDLJN            0718H00000000                                               
+LIMLDTHRD 0720H0721      07210721         T                                     
+LIBAGE    0722H0723      07230723         T                                     
+LIEDIDBRY 0724H0725      07250725         T                                     
+LIGATLEY  0727 0727H     07270727         T                                     
+LIHLDG    0730 0730H     073007302        T                H                    
+LIHLDGWJ            0732H00000000                       3H                      
+LTMNCRIAP 0739 07392A    TF                                                     

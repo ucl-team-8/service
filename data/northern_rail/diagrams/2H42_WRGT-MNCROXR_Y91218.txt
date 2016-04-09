@@ -1,0 +1,17 @@
+BSNY912181512141605131111100 POO2H42    112236820 DMUA   075      S            P
+BX         NTY                                                                  
+LOWRGT    1956 19561         TB                                                 
+LIPADGATE 1958H1959      19591959         T                                     
+LIBIRCHWD 2001H2002      20022002         T                                     
+LIGLAZBRK 2006H2007      20072007         T                                     
+LIGLAZBKE           2008 00000000                                               
+LIIRLAM   2009H2010H     20102010         T                                     
+LIFLIXTON 2014 2014H     20142014         T                                     
+LICHASNRD 2016 2016H     20162016         T                                     
+LIURMSTON 2018 2019      20182019         T                                     
+LIHMPHRYP 2021 2021H     20212021         T                                     
+LITRFDPK  2023H2024      20242024         T           2                         
+LITRFDPEJ           2028 00000000                        H                      
+LICFLDJN            2031H00000000                                               
+LIMNCRDGT 2032 2032H     203020301        T                                     
+LTMNCROXR 2034 20355     TF                                                     

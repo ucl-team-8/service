@@ -1,0 +1,27 @@
+BSNY918691512141605131111100 PXX1N86    112249820 DMUA   075      S            P
+BX         NTY                                                                  
+LOLVRPLSH 2302 23029  SL     TB                                                 
+LIEDGH    2305H2306      230623061        T                                     
+LIEDGHSB            2307 00000000                                               
+LIBOOTLBJ           2307H00000000                                               
+LIWVRTTEC 2308 2308H     230823082        T                                     
+LIOLIVEMJ           2309H00000000                                               
+LIBROADGR 2311 2311H     23112311         T                                     
+LIROBY    2314H2315      23152315         T                                     
+LIHUYTON  2316H2317H     23172317         T                                     
+LIHUYTJUN           2318 00000000                                               
+LIPRESCOT 2321H2322      23222322         T                                     
+LIECPK    2324 2324H     23242324         T                                     
+LITHHT    2326H2327      23272327         T                                     
+LISTHLNSC 2330 2331      233023311        T                                     
+LIGARW    2337H2338      23382338         T                                     
+LIBRYN    2340H2341      23412341         T                                     
+LISPRBJN            2345 00000000   FL                                          
+LIWIGASJN           2346 00000000                                               
+LIWIGANNW 2347H2348H     234823485        T                                     
+LIBALSHWL           2357 00000000   SL                                          
+LIEUXT    2358H2359      23592359         T           2                         
+LIEUXTONJ           0003 00000000                                               
+LILEYLAND 0005H0006      00060006         T                                     
+LIFRNGTNC           0008H00000000                                               
+LTPRST    0011 00131     TF                                                     

@@ -31,7 +31,7 @@ class TestSimulation(unittest.TestCase):
         # Test for no events
         fetched = self.simulation.fetchEvents(GPS, None)
         self.assertIsNotNone(fetched)
-        self.assertLessEqual(len(fetched), 100) 
+        self.assertLessEqual(len(fetched), 100)
 
         # Test for more than one event (up to 100)
         # Is it supposed to handle 1 record? Currently Doesn't
@@ -133,20 +133,12 @@ class TestGeoDist(unittest.TestCase):
 
 class TestDBQueries(unittest.TestCase):
     def test_isPlanned1(self):
-        result = db_queries.isPlanned('BN09', '5D02')
+        result = db_queries.isPlanned('82215', '5D02')
         self.assertEqual(result, True)
 
     def test_isPlanned2(self):
         result = db_queries.isPlanned('BN30', '5A04')
         self.assertEqual(result, False)
-
-    def testGetUnitFromCarId1(self):
-        result = db_queries.getUnitFromCarId('82200')
-        self.assertEqual(result, 'BN20')
-
-    def testGetUnitFromCarId2(self):
-        result = db_queries.getUnitFromCarId('82217')
-        self.assertEqual(result, 'BN28')
 
     def testDiagramServiceByUnit1(self):
         result = db_queries.getDiagramServiceByHeadcode('0P04')
@@ -168,7 +160,7 @@ class TestDBQueries(unittest.TestCase):
         self.assertEqual(station_type, 'LO')
 
     def testcif_uidFromUnit1(self):
-        result = db_queries.cif_uidFromUnitAndHeadcode('BN21', '5E06')
+        result = db_queries.cif_uidFromUnitAndHeadcode('82227', '5E06')
         self.assertEqual(result, 'Y62392')
 
     def testcif_uidFromUnit2(self):

@@ -1,0 +1,31 @@
+BSNY904031512141605131111100 POO2C35    122358000 DMUS   075      S            P
+BX         NTY                                                                  
+LOBAROW   0651 06512         TB                                                 
+LIPSTH              0657H00000000                                               
+LIASKAM   0700H0701      07010701         T                                     
+LIKRKBYIF 0705 0705H     07050705         R                                     
+LIFOXFILD 0709 0709H     07090709         R                                     
+LIGREENRD 0713 0713H     07130713         R                                     
+LIMLLM    0718H0719H     07190719         T                                     
+LISILCRFT 0724 0724H     07240724         R                                     
+LIBOOTLE  0731 0731H     07310731         R                                     
+LIRGLS    0737 0737H     07370737         T                                     
+LIDRIGG   0740H0741      07410741         R                                     
+LISEASCAL 0744 0744H     07440744         T                                     
+LISELAFLD 0749H0751      07500751         T                                     
+LIBRYSTNS 0754H0754H     07540754         R                                     
+LINETHRTN 0757 0757      07570757         R                                     
+LISTBEES  0801 0801H     08010801         T                                     
+LICRCK    0806H0806H     08060806         R                                     
+LIWHITHVN 0809H0812      08100812         T                                     
+LIPARTON  0815H0815H     08150815         R                                     
+LIPARTNNJ           0819H00000000                                               
+LIHNGT    0823H0823H     08230823         R                                     
+LIWKNT    0828 0831      08280831         T                                     
+LIFLIMBY  0835H0835H     08350835         R                                     
+LIMPRT    0838H0839      08390839         T                                     
+LIASPTRIA 0848H0848H     08480848         R                                     
+LIWIGTON  0900 0900H     09000900         T                                     
+LIDALSTON 0909 0909      09090909         R           2 3                       
+LICARLCUR           0920 00000000                                               
+LTCARLILE 0924 09252     TF                                                     

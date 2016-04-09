@@ -1,0 +1,8 @@
+BSNY929371512141605131111100 PEE5Q09    121151900 EMU333 100                   P
+BX         NTY                                                                  
+LOSKPTBCS 0252 0000          TB                                                 
+LISKPT    0304 0308      000000002  USM   OP                                    
+LISKPT549 0310 0314      00000000         RM                                    
+LISKPT   20316 0319      000000004        RM                                    
+LISKPTDSS 0321 0652      00000000         A                                     
+LTSKPT   30654 00004     TFC                                                    

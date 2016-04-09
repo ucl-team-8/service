@@ -1,0 +1,15 @@
+BSNY904151512141605131111100 POO2C38    122358000 DMUS   075      S            P
+BX         NTY                                                                  
+LOSELAFLD 0906 0906          TB                                                 
+LISEASCAL 0909 0909H     09090909         T                                     
+LIDRIGG   0912H0912H     09120912         R                                     
+LIRGLS    0915H0916      09160916         T                                     
+LIBOOTLE  0921H0921H     09210921         R                                     
+LISILCRFT 0928 0928      09280928         R                                     
+LIMLLM    0934 0935      09340935         T                                     
+LIGREENRD 0939 0939      09390939         R                                     
+LIFOXFILD 0942H0942H     09420942         R                                     
+LIKRKBYIF 0946H0946H     09460946         R                                     
+LIASKAM   0951 0951H     09510951         T                                     
+LIPSTH              0955H00000000                                               
+LTBAROW   1004 10042     TF                                                     

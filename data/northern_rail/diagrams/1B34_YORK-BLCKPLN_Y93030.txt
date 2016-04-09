@@ -1,0 +1,38 @@
+BSNY930301512141605121111000 PXX1B346403111837920ZDMUE   090      S S          P
+BX         NTY                                                                  
+LOYORK    1827 18277  LSL    TB                                                 
+LICOLTONJ           1832H00000000   LSL                                         
+LICHFN              1836H00000000TL                                             
+LIMCKLFLD 1841 1842      184118422        T                                     
+LIEGRFRTH 1845 1846      184518462        T                                     
+LIGARFRTH 1847H1848H     184818482        T                                     
+LICSGT    1852H1853H     185318532        T                                     
+LINEVLWJN           1857 00000000                         2                     
+CRLEEDS   XX1B346403121737000ZDMUE   090      S S                               
+LILEEDS   1902 1905      1902190511AD     T                                     
+LILEEDSWJ           1906 00000000   D                                           
+LIWHRDJN            1906H00000000                                               
+LIHOLBJCN           1907 00000000                                               
+LINPUD    1913H1914H     191419141        T             1                       
+LIMLLNJN            1922 00000000                                               
+LIBRADIN  1923H1926H     192419261        T                                     
+LIMLLNJN 2          1928 00000000                                               
+LIHLFX    1937H1938H     193819381        T                                     
+LIMLNRYDJ           1943 00000000                         2                     
+LIHBDNBDG 1951H1952H     195219521        T                                     
+LIHALRYDJ           1957H00000000                                               
+LICOPYPIT           2004 00000000                                               
+LIBURNMR  2011 2012      201120121        T                                     
+LIGANNOWJ           2013H00000000                                               
+LIACRNGTN 2020 2021      202020212        T                                     
+LIBLKBDJN           2027 00000000   UEL                                         
+LIBLKB    2028H2030      202920304        T                                     
+LILSTHJN            2039 00000000                     2                         
+LIFRNGTNC           2044 00000000   SL                                          
+LIPRST    2046H2048H     204720481  SL    T                                     
+LIPRSTNFJ           2049H00000000                                               
+LIKIRKMNJ           2058H00000000                                               
+LIKIRKM51           2101H00000000                                               
+LIPLTNLFY 2104H2105H     210521051        T                                     
+LILAYTCLX           2107H00000000                     1                         
+LTBLCKPLN 2112 21156     TF                                                     

@@ -1,0 +1,18 @@
+BSNY928831512141605131111100 PEE5N58    122350000 DMUS   075                   P
+BX         NTY                                                                  
+LONWTNHDD 0415 0000          TB                                                 
+LITHRPSBJ           0417 00000000                                               
+LIMILESPL           0418H00000000   FL                                          
+LIMNCRVIC 0421H0423H     000000005        C                                     
+LIMNCRDST           0425 00000000                                               
+LISLFDORD           0425H00000000                                               
+LISLFDCT            0427 000000002                                              
+LIWALKDEN           0434 00000000                                               
+LICRWNSTJ           0443 00000000                                               
+LIWIGANSJ           0447H00000000                     1H                        
+LIWIGANNW           0450 000000001  FL                                          
+LIBALSHWL           0500H00000000   SL                                          
+LIEUXTONJ           0502H00000000                     2                         
+LIFRNGTNC           0508H00000000                       6                       
+LIPRSTRJN           0516 00000000   FL                                          
+LTPRST    0518 00003C    TF                                                     

@@ -1,0 +1,26 @@
+BSNY924431512141605131111100 POO2Y61    121869000 DMUA   075      S            P
+BX         NTY                                                                  
+LOLANCSTR 1605 16055         TB                                                 
+LIMORCMSJ           1608H00000000                                               
+LIBARELA  1610H1611H     161116111  DUM   T                                     
+LIMORCAME 1615 1619      161516191        T                                     
+LIBARELA 21622H1623      162316231        T                                     
+LIHESTBNK           1626H00000000                                               
+LICRNFNJN           1630H00000000                                               
+LICRNF    1631H1632H     16321632         T                                     
+LIWENNGTN 1645H1646H     16461646         T                                     
+LIBNTHAM  1651H1652H     16521652         T                                     
+LICLPM    1658H1659H     16591659         T                                     
+LIGGLSWCK 1707H1708H     17081708         T           1                         
+LISETTLEJ           1712H00000000                                               
+LILPRESTN 1716 1716H     17161716         T                                     
+LIHELIFLD 1719 1720      17191720         T                                     
+LIGRGRAVE 1727H1728H     17281728         T           2   1                     
+LISKPT    1736H1739H     173717392        T                                     
+LIKEIGHLY 1748H1750      174917501        T             1                       
+LISHPY    1757H1758H     175817581        T                                     
+LISHPYDJN           1759H00000000                                               
+LIAPERLYJ           1803 00000000                     2                         
+LIARMLJCN           1809H00000000   UH                                          
+LILEEDSWJ           1811 00000000   A                                           
+LTLEEDS   1812H18151C    TF                                                     

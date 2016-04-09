@@ -1,0 +1,15 @@
+BSNY915961512141605131111100 POO2K22    112232820 EMU323 090      S            P
+BX         NTY                                                                  
+LOMNCRPIC 0938 09385  FL     TB                                                 
+LIARDWCKJ           0940 00000000                                               
+LISLDLJN            0942 00000000   SL                                          
+LILVHM    0943 0943H     094309431        T                                     
+LIHTCP    0946 0946H     094609461        T                                     
+LIHTNOJN            0948 00000000                                               
+LISTKP    0949H0951      095009511        T              H                      
+LISTKPE1            0952H00000000                                               
+LIADSWDRD           0953H00000000                                               
+LICHDH    0955 0955H     095509552        T                                     
+LIHNDFRTH 0959 0959H     09590959         T                                     
+LIWLMSL   1001H1002      100210024        T           1                         
+LTALDEDGE 1006 1008      TF                                                     

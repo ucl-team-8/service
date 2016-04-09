@@ -41,7 +41,6 @@ The data structure of a segment can be found in [globals.py](algorithm/globals.p
 These are all of the data structures:
 
 **Segment:**
-- unit - *String*
 - cif_uid - *String*
 - gps_car_id - *String*
 - headcode - *String*

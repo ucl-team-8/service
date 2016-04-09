@@ -1,0 +1,41 @@
+BSNY915321512141605131111100 POO2J62    112240820 DMUA   075      S            P
+BX         NTY                                                                  
+LOKKBY    1244 1244          TB                                                 
+LIRNFD    1251H1252      12521252         T                                     
+LIUPHOLND 1255H1256      12561256         T                                     
+LIORRELL  1259 1259H     12591259         T                                     
+LIPBRT    1302 1302H     13021302         T           1                         
+CRWIGANWL OO2J62    112225110 DMUA   075      S                                 
+LIWIGANWL 1307H1309H     130813092        T                                     
+LIHINDLEY 1314 1314H     13141314         T                                     
+LICRWNSTJ           1315H00000000                                               
+LIDAISYH  1318 1318H     13181318         T                                     
+LIHAGFOLD 1321 1321H     13211321         T                                     
+LIATHERTN 1323H1324      13241324         T                                     
+LIWALKDEN 1329 1329H     13291329         T                                     
+LIMRSD    1332H1333      13331333         T                                     
+LISWNT    1335 1335H     13351335         T           2  H                      
+LISLFDCT  1343 1344      134313441        T                                     
+LISLFDORD 1346 1347      13461347         T               1                     
+LIMNCRDST           1349H00000000   FL                                          
+CRMNCRVIC OO2J62    112242110 DMUA   075      S                                 
+LIMNCRVIC 1351 1356      135113566        T                                     
+LIMILESPL           1358H00000000                                               
+LITHRPSBJ           1359H00000000                                               
+LIVTRLWKS           1402 00000000                                               
+LIMLSHILL 1404 1405      14041405         T                                     
+LICSTLTEJ           1408H00000000                                               
+LICSTL    1409H1410      14101410         T                                     
+LIRCHDALE 1413 1414      141314141        T                                     
+LIRCHDLEJ           1415 00000000                                               
+LISMBG    1417H1418      141814182        T                                     
+LILITLBRO 1420H1421H     142114212        T                                     
+LITODMRDN 1428 1429      142814292        T                                     
+LISTNSHJN           1431H00000000                                               
+LICOPYPIT           1437H00000000                                               
+LIBURNMR  1444H1445H     144514451        T             2                       
+LIGANNOWJ           1449 00000000                                               
+LIROSG    1450 1451      145014512        T             1H                      
+LIACRNGTN 1459 1500H     145915002        T           2 1                       
+LIBLKBDJN           1509H00000000   UEL                                         
+LTBLKB    1511 15111     TF                                                     

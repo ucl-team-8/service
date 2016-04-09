@@ -1,0 +1,16 @@
+BSNY905221512141605131111100 POO2C85    111808920ZDMUS   075      S            P
+BX         NTY                                                                  
+LOHULL    1925 19254         TB                                                 
+LIHESSLRD           1928H00000000                                               
+LIHESSLE  1931H1932      19321932         T                                     
+LIFERRIBY 1936 1937      19361937   SL    T                                     
+LIBROUGH  1941H1942H     19421942         T                                     
+LIGLBRDYK 1949H1950      19501950         T                                     
+LIGOOLE   1959 2001      195920012        T                                     
+CRTHORNEN OO2C85    111816820ZDMUS   075      S                                 
+LITHORNEN 2009 2009H     20092009         T                                     
+LITHORNEJ           2012 00000000                                               
+LIHTFLASF 2014H2015H     20152015         T                                     
+LIKKSNDAL 2019H2020      20202020         T                                     
+LIBTLYJN            2023H00000000                     2 2 2                     
+LTDONC    2032 20321     TF                                                     

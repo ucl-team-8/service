@@ -1,0 +1,11 @@
+BSNY928771512141605131111100 PEE5N50    111792920 DMUA   075                   P
+BX         NTY                                                                  
+LONUNTHRP 2106 00002     1   TB                                                 
+LIGUSBROJ           2112 00000000                                               
+LIMDLSBRO 2113 2115      000000001        OPC                                   
+LITABY              2119H000000001                                              
+LIBOWSFLD           2121 00000000                                               
+LISTOCCJN           2122 00000000                                               
+LIEGLSCLF           2123H000000001                                              
+LIDINSDAL           2129H000000001                    1    H                    
+LTDLTN    2137 00002     TF                                                     

@@ -1,0 +1,11 @@
+BSNY927061602151605131111100 PEE5H15    112231820 EMU323 090                   P
+BX         NTY                                                                  
+LOLNGSTCS 0609 0000          TB                                                 
+LILNGSGHT 0614 0618      00000000   FL    OP                                    
+LISLDLJN            0619 00000000                                               
+LIHTNOJN            0621H00000000                                               
+LISTKP    0623 0624      000000002        OP                                    
+LISTKPE1            0625 00000000                       3                       
+LIADSWDRD           0629 00000000                                               
+LICHDH              0630 000000004                                              
+LTMACLSFD 0639 00003     TF                                                     
