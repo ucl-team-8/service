@@ -20,7 +20,7 @@ from app_db import db
 # Parsing arguments for which dataset to import
 
 parser = argparse.ArgumentParser(description='Import dataset.')
-parser.add_argument('folder', type=str, help='Folder containing data.')
+parser.add_argument('folder', type=str, nargs='?', default='northern_rail', help='Folder containing data.')
 
 args = parser.parse_args()
 
