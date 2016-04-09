@@ -164,8 +164,3 @@ class SimulateRealTime(threading.Thread):
                 print("Finished simulating the environment")
                 break
         cleanerThread.stop()
-
-
-if __name__ == "__main__":
-    temp = SimulateRealTime(globals.speedup)
-    temp.start()

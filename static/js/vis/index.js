@@ -90,9 +90,11 @@ Promise.all([
 
   window.addEventListener("keydown", function(event) {
     if (event.keyCode == 37) {
+      if(i == 0) i = segments.length;
       plotSegment(segments[--i]);
       event.preventDefault();
     } else if (event.keyCode == 39) {
+      if(i == segments.length - 1) i = -1;
       plotSegment(segments[++i]);
       event.preventDefault();
     }

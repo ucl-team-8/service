@@ -7,6 +7,7 @@
 # to the segments, it might be better to run it every 10 min?
 
 import geo_distance
+import filter_gps
 import db_queries
 import socket_io
 import globals
@@ -48,10 +49,34 @@ def removeSegments():
             del globals.segments[key]
 
 
+# Removes any gps reports from the
+# segment because we do not want
+# different gps_car_id's in the same
+# segment
+def removeGPSReports(segment, gps_car_id):
+    # Making sure that we do not add
+    # the gps_report to this segment again
+    segment.gps_car_id = gps_car_id
+    length = len(segment.matching)
+    i = 0
+    while i < length:
+        match = segment.matching[i]
+        if match['gps'] is not None:
+            filter_gps.addGPS(match['gps'])
+            if match['trust'] is None:
+                del segment.matching[i]
+                length -= 1
+                i -= 1
+            else:
+                match['gps'] = None
+        i += 1
+
 # Combines the segments from i to j and
 # store all of the reports in i
 def combineSegments(segments, i, j):
     for k in range(i + 1, j + 1):
+        if segments[k].gps_car_id != segments[i].gps_car_id:
+            removeGPSReports(segments[k], segments[i].gps_car_id)
         segments[i].matching.extend(segments[k].matching)
         segments[k].remove = True
     segments[i].matching.sort(key=lambda x: getReportTime(x), reverse=False)
@@ -78,7 +103,10 @@ def joinSegmentsHelper(segments, i):
     for j in range(i + 1, len(segments)):
         jmatching = countMatching(segments[j])
         if segments[i].gps_car_id == segments[j].gps_car_id:
-            combineSegments(segments, i, j)
+            time_diff = abs(getReportTime(segments[i].matching[-1]) -
+                getReportTime(segments[j].matching[-1]))
+            if time_diff < globals.min_time:
+                combineSegments(segments, i, j)
         else:
             stops_in_between += jmatching
             if stops_in_between > globals.min_matching:

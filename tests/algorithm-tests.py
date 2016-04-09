@@ -1,6 +1,6 @@
 import unittest
 import os
-
+import json
 parentdir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.sys.path.insert(0, parentdir + '/algorithm')
 
@@ -11,12 +11,65 @@ import datetime
 import globals
 import cleaner
 
+import simrealtime
+import app
+from models import GPS
+
+
 tolerance = 0.001
+
 coord1 = {'latitude': 52.2296756, 'longitude': 21.0122287}
 coord2 = {'latitude': 52.406374, 'longitude': 16.9251681}
 coord3 = {'latitude': 57.4774160525352, 'longitude': -4.46815579590345}
 coord4 = {'latitude': 51.6909417951552, 'longitude': -3.40287716811208}
 
+class TestSimulation(unittest.TestCase):
+
+    simulation = simrealtime.SimulateRealTime(1000)
+
+    def testFetchEvents(self):
+        # Test for no events
+        fetched = self.simulation.fetchEvents(GPS, None)
+        self.assertIsNotNone(fetched)
+        self.assertLessEqual(len(fetched), 100) 
+
+        # Test for more than one event (up to 100)
+        # Is it supposed to handle 1 record? Currently Doesn't
+        randRecs = [ x.as_dict() for x in app.db.session.query(GPS).filter(GPS.tiploc=='KNGX').all()]
+        newFetched = self.simulation.fetchEvents(GPS, randRecs)
+        self.assertLessEqual(newFetched[0]['event_time'], newFetched[1]['event_time'])
+
+class TestEndPoints(unittest.TestCase):
+
+    def setUp(self):
+        app.app.config['TESTING'] = True
+        self.testApp = app.app.test_client()
+
+    def get(self, resource):
+        return self.testApp.get(resource)
+
+    def checkDict(self, response):
+        return isinstance(json.loads(response.data), dict)
+
+    def testSegments(self):
+        response = self.get('/data/segments.json')
+        self.assertEqual(response.status_code, 200)
+        self.assertTrue(self.checkDict(response))
+
+    def testGPS(self):
+        response = self.get('/events/gps.json')
+        self.assertEqual(response.status_code, 200)
+        self.assertTrue(self.checkDict(response))
+
+    def testTrust(self):
+        response = self.get('/events/trust.json')
+        self.assertEqual(response.status_code, 200)
+        self.assertTrue(self.checkDict(response))
+
+    def testSchedule(self):
+        response = self.get('/data/schedule.json')
+        self.assertEqual(response.status_code, 200)
+        self.assertTrue(self.checkDict(response))
 
 # Test class for cleaner
 class Simulation():

@@ -45,9 +45,9 @@ db_lock = threading.RLock()
 global io_lock
 io_lock = threading.RLock()
 
+
 # The overall layout of how segment should look
 class Segment:
-
     newid = itertools.count().next
 
     def __init__(self):
@@ -114,6 +114,11 @@ tolerance = {
 # trust it to be an actual segment
 global min_matching
 min_matching = 3
+
+# The maximum time that can be between 2 segment
+# for interpolation
+global min_time
+min_time = datetime.timedelta(minutes=30)
 
 # Determines how fast the simulation runs
 global speedup
