@@ -103,9 +103,9 @@ def createNewSegment(report):
 # Time in seconds and distance in km
 global tolerance
 tolerance = {
-    'time': datetime.timedelta(minutes=15),
-    'distance': 10,
-    'minutes': 15
+    'time': datetime.timedelta(minutes=10),
+    'distance': 5,
+    'minutes': 10
 }
 
 # Represents the amount of minimum matching
@@ -122,4 +122,4 @@ speedup = 5000
 # The amount of threads in the threadpool
 # that add events to the segments
 global workers
-workers = 5
+workers = 10
