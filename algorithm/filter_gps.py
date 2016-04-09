@@ -3,6 +3,7 @@
 
 import geo_distance
 import db_queries
+import socket_io
 import datetime
 import globals
 
@@ -41,12 +42,12 @@ def findClosestSegment(segments, gps_report):
     closest = {'segment': None, 'time_diff': datetime.timedelta(days=1)}
     # First checks empty segments because it might be a rolling stock starting to run
     # another service
-    for segment in segments:
+    for segment in segments.values():
         if segment.gps_car_id is None:
             segment.matching.sort(key=lambda x: x['trust']['event_time'], reverse=False)
             checkTimeDiff(segment, gps_report, closest)
     if closest['segment'] is None:
-        for segment in segments:
+        for segment in segments.values():
             segment.matching.sort(
                     key=lambda x: getTimeFromMatching(x), reverse=False)
             if segment.gps_car_id == gps_report['gps_car_id']:
@@ -57,7 +58,7 @@ def findClosestSegment(segments, gps_report):
 # Finds the closest segment with the same gps_car_id
 def findClosestGPSSegment(segments, gps_report):
     closest = {'segment': None, 'time_diff': datetime.timedelta(days=1)}
-    for segment in segments:
+    for segment in segments.values():
         segment.matching.sort(
                 key=lambda x: getTimeFromMatching(x), reverse=False)
         if segment.gps_car_id == gps_report['gps_car_id']:
@@ -96,14 +97,9 @@ def checkNonMatchingTrust(segment, gps_report):
         if segment.gps_car_id is None:
            segment.gps_car_id = gps_report['gps_car_id']
            segment.isPlanned = db_queries.isPlanned(segment.gps_car_id, segment.headcode)
+        socket_io.emitSegment('update', segment)
         return True
     return False
-
-
-def createNewSegment(gps_report):
-    segment = globals.Segment()
-    segment.gps(gps_report)
-    globals.segments.append(segment)
 
 
 # This function adds the gps report to a segment
@@ -113,15 +109,16 @@ def addGPS(gps_report):
     globals.lock.acquire()
     segment = findClosestSegment(globals.segments, gps_report)
     if segment is None:
-        createNewSegment(gps_report)
+        globals.createNewSegment(gps_report)
     elif not checkNonMatchingTrust(segment, gps_report):
         segment = findClosestGPSSegment(globals.segments, gps_report)
         if segment is None:
-            createNewSegment(gps_report)
-        elif not checkNonMatchingTrust(segment, gps_report):
+            globals.createNewSegment(gps_report)
+        else:
             segment.matching.append({
                 'gps': gps_report,
                 'trust': None,
                 'dist_error': None
             })
+            socket_io.emitSegment('update', segment)
     globals.lock.release()

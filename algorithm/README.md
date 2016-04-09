@@ -14,6 +14,11 @@ Since we want to simulate a real-time environment, the thread sleeps for `(next.
 
 The code also gets the next 100 reports once the gps or the trust queue gets too small. The reason we only hold a 100 reports in memory is because of scalability. If we want to test the segment generation with more reports, we will eventually not be able to hold all of them in memory.
 
+On top of all of this, there is also a cleaner thread. This thread is responsible for going through all of the segments every x amount of time and find segments that have not been updated for a while. After finding those segments, we remove them from the `segments` variable and add them to another variable, called `old_segments`. The reason we do this is because the `addGPS`, `addTrust` and the `interpolate` functions loop through all of the segments quite often. However we know that the
+probability of those functions adding a report to a segment that has not been updated for more than 3 hours is close to 0.
+
+Hence instead keeping having to loop through those 'useless' segments, we filter them out. That way we still have access to all of the segments if we need to but we improve the performance of our algorithm slightly.
+
 ### Submitting for processing
 Until now, we have treated submitting for processing as a high level concept to make the overall concept of real-time easier to understand but it is also an essential part of the simulation.
 
@@ -139,3 +144,10 @@ We can see that in the middle, there is a very short segment with only 1 stop an
 ![figure 2](../static/images/readmefig2.png)
 
 The second step then checks if there are any segments, without a headcode yet that might be running the same service as another rolling stock. If it finds such a segment, it adds all of the matching trust report to the appropriate gps reports.
+
+Finally, after analyzing the data output from the algorithm, we noticed that there were a lot of segments with only trust reports. But these trust reports could have been added to another segment with both gps reports and trust reports. As you can see below. Imagine the red circles are gps reports and the blue circles are trust reports. We can clearly see that the trust reports in the right segment can be added into the left segment. However because of the nature of our algorithm, if a new trust report does not find a match in the left segment, it will be added into the right segment.
+
+![figure 3](../static/images/readmefig3.png)
+
+We carefully considered changing the algorithm to make up for this flaw. But this small flaw was not worth the time that we would spent redesigning and reimplementing a large part of the algorithm. Therefore we decided that we could solve this issue in the interpolation stage.
+After performing all of the processing, mentioned above, the algorithm also checks if there is a segment with no `gps_car_id`. If there is, it tries to insert the trust reports in that segment into another segment with the same headcode.

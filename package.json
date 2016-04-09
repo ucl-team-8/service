@@ -30,7 +30,8 @@
       "leaflet": "github:Leaflet/Leaflet@^0.7.7",
       "lodash": "npm:lodash@^4.5.0",
       "moment": "npm:moment@^2.10.6",
-      "q": "npm:q@^1.4.1"
+      "q": "npm:q@^1.4.1",
+      "socketio": "npm:socket.io-client@^1.4.5"
     },
     "devDependencies": {
       "babel": "npm:babel-core@^5.8.24",

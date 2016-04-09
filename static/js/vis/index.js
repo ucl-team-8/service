@@ -1,9 +1,10 @@
 import _ from "lodash";
 import d3 from "d3";
 import L from "leaflet";
+import io from "socketio";
 
 import RouteMap from "./map/route-map";
-import { getSegments, getLocations } from "./utils/data";
+import { getSegment, getSegments, getLocations } from "./utils/data";
 import updateReports from "./reports/update-reports";
 import noOverlap from "./utils/no-overlap-time-scale";
 
@@ -13,6 +14,8 @@ IMPORTANT: All the code in this file is sort of hacked together and you probably
 shouldn't add functionality here, instead make a new module or something.
 
 */
+
+
 
 let transportLayer = new L.TileLayer("http://{s}.tile.thunderforest.com/transport/{z}/{x}/{y}.png")
     .setOpacity(0.15);
@@ -26,17 +29,56 @@ let reportsContainer = d3.select(".reports-svg");
 
 let routeMap = new RouteMap({ map });
 
+let segments = [];
+let i = 0;
+
+var socket = io.connect('http://' + document.domain + ':' + location.port);
+socket.on('connect', function() {
+  console.log("Connected");
+  socket.emit('connection', {data: 'I\'m connected!'});
+});
+
+socket.on('update', function(data) {
+  data = JSON.parse(data);
+  let index = getSegmentWithId(data.id);
+  if(index == -1) {
+    // TODO: Segment with id was not found, something is broken
+  } else {
+    segments[index] = getSegment(data);
+    if(index == i) {
+      plotSegment(segments[i]);
+    }
+  }
+});
+
+// The data is the id
+socket.on('delete', function(data) {
+  data = JSON.parse(data);
+  let index = getSegmentWithId(data);
+  if(index != -1) {
+    segments.splice(index, 1);
+    if(index == i) {
+      if(i === 0) plotSegment(segments[++i]);
+      else plotSegment(segments[--i]);
+    }
+  }
+});
+
+socket.on('new', function(data) {
+  data = JSON.parse(data);
+  segments.push(getSegment(data));
+});
+
 window.locations = {};
 
 Promise.all([
   getSegments(),
   getLocations()
-]).then(([segments, locations]) => {
+]).then(([segments1, locations]) => {
 
   window.locations = _.keyBy(locations, "tiploc");
 
-  let i = 0;
-  segments = _.sortBy(segments, "headcode");
+  segments = _.sortBy(segments1, "headcode");
     //.filter(segment => segment.headcode && segment.gps_car_id);
   console.log(segments);
 
@@ -68,7 +110,9 @@ let serviceContainer = reports.append("g");
 let unitContainer = reports.append("g").attr("transform", "translate(150,0)");
 
 function plotSegment(segment) {
-  console.log(`Plotting headcode:${segment.headcode || "_"} gps_car_id:${segment.gps_car_id || "_"}`, segment);
+  try {
+    console.log(`Plotting headcode:${segment.headcode || "_"} gps_car_id:${segment.gps_car_id || "_"}`, segment);
+  } catch(exception) { /* Do nothing */ }
   let serviceStops = getServiceStopsFromSegment(segment);
   let unitStops = getUnitStopsFromSegment(segment);
   routeMap.plotServices([serviceStops]);
@@ -118,4 +162,13 @@ function getUnitStopsFromSegment(segment) {
     .compact()
     .sortBy(d => d.event_time)
     .value();
+}
+
+function getSegmentWithId(id) {
+  for(let i = 0; i < segments.length; i++) {
+    if(segments[i].id == id) {
+      return i;
+    }
+  }
+  return -1;
 }

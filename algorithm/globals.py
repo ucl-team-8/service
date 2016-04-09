@@ -1,12 +1,30 @@
 # File with all of the globals
 import db_queries
 import threading
+import socket_io
+import itertools
 import datetime
 
 # Currently only stored in memory, will also store in
 # database
 global segments
-segments = []
+segments = {}
+
+# Stores all of the old segments that
+# we do not need to consider for processing
+# anymore
+global old_segments
+old_segments = {}
+
+# Variable used to check if a segment
+# can be moved from the segments variable
+# to the old_segments variable
+global is_old
+is_old = datetime.timedelta(hours=3)
+
+# How often the cleaning thread runs
+global clean_time
+clean_time = datetime.timedelta(minutes=15)
 
 # This is to how many matches in matching
 # the algorithm looks back at when trying
@@ -22,10 +40,18 @@ lock = threading.RLock()
 global db_lock
 db_lock = threading.RLock()
 
+# Used whenever emmiting
+# with socketio
+global io_lock
+io_lock = threading.RLock()
+
 
 # The overall layout of how segment should look
 class Segment:
+    newid = itertools.count().next
+
     def __init__(self):
+        self.id = self.newid()
         # self.unit = None  # We do not have a unit anymore
         self.cif_uid = None
         self.gps_car_id = None
@@ -60,6 +86,18 @@ class Segment:
         })
 
 
+# Creates a new segment and stores
+# it in the global
+def createNewSegment(report):
+    segment = Segment()
+    if 'planned_pass' in report.keys():  # Trust has planned pass
+        segment.trust(report)
+    else:
+        segment.gps(report)
+    segments[segment.id] = segment
+    socket_io.emitSegment('new', segment)
+
+
 # Time in seconds and distance in km
 global tolerance
 tolerance = {
@@ -87,4 +125,4 @@ speedup = 5000
 # The amount of threads in the threadpool
 # that add events to the segments
 global workers
-workers = 5
+workers = 10
