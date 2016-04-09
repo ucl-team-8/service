@@ -205,13 +205,12 @@ def inTimeLimit(segment, trust):
 # Deletes all of the matches in the
 # matches variable from the given segment
 def deleteReports(segment):
-    segment.matching = filter(lambda x: not x['delete'], segment.matching)
+    segment.matching = filter(lambda x: not x['delete'],
+        segment.matching[-globals.backmatches:]) + segment.matching[:-globals.backmatches]
     if len(segment.matching) == 0:
         socket_io.emitSegment('delete', segment.id)
         del globals.segments[segment.id]
     else:
-        for match in segment.matching:
-            del match['delete']
         socket_io.emitSegment('update', segment)
 
 
@@ -282,11 +281,6 @@ def matchingEmptyTrust(segment, empty_segment):
                             'trust': empty_match['trust']
                         })
                         empty_match['delete'] = True
-            if inTimeLimit(segment, empty_match['trust']):
-                potential_matches.append({
-                    'trust': empty_match['trust']
-                })
-                empty_match['delete'] = True
 
     checkEmptyMatches(segment, empty_segment, potential_matches)
     globals.lock.release()
