@@ -1,6 +1,7 @@
 from flask import Flask
 from flask.ext.sqlalchemy import SQLAlchemy
 import xml.etree.ElementTree as ET
+import argparse
 import datetime
 import math
 import sys
@@ -16,17 +17,20 @@ from models import *
 from app_db import db
 
 
+# Parsing arguments for which dataset to import
+
+parser = argparse.ArgumentParser(description='Import dataset.')
+parser.add_argument('folder', type=str, help='Folder containing data.')
+
+args = parser.parse_args()
+
+# Conversion
+
 def convert_to(datatype, value, *args, **kwargs):
     try:
         return datatype(value, *args, **kwargs)
     except:
         return None
-
-
-# File handling
-def open_file(filename):
-    f = open(os.path.dirname(os.path.dirname(os.path.abspath(__file__))) + filename, 'rb')
-    return f
 
 
 # Date handling
@@ -262,14 +266,25 @@ def delete_data():
         db.session.query(model).delete()
     db.session.commit()
 
+# File handling
+
+def open_file(filename):
+    path = os.path.join('data', filename)
+    project_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    f = open(os.path.join(project_path, path), 'rb')
+    return f
+
+def open_extract_file(filename):
+    path = os.path.join(args.folder, filename)
+    return open_file(path)
 
 def open_files():
     return {
-        'schedule': open_file('/data/schedule.csv'),
-        'unit_to_gps': open_file('/data/unit_to_gps.csv'),
-        'trust': open_file('/data/trustData.xml'),
-        'gpsData': open_file('/data/gpsData.xml'),
-        'locations': open_file('/data/locations.tsv')
+        'schedule': open_extract_file('schedule.csv'),
+        'unit_to_gps': open_extract_file('unit_to_gps.csv'),
+        'trust': open_extract_file('trustData.xml'),
+        'gpsData': open_extract_file('gpsData.xml'),
+        'locations': open_file('locations.tsv')
     }
 
 
