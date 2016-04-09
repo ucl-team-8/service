@@ -95,8 +95,7 @@ def checkNonMatchingTrust(segment, gps_report):
         closest['match']['dist_error'] = dist_error
         if segment.gps_car_id is None:
            segment.gps_car_id = gps_report['gps_car_id']
-           segment.unit = db_queries.getUnitFromCarId(segment.gps_car_id)
-           segment.isPlanned = db_queries.isPlanned(segment.unit, segment.headcode)
+           segment.isPlanned = db_queries.isPlanned(segment.gps_car_id, segment.headcode)
         return True
     return False
 

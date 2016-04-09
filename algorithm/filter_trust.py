@@ -57,8 +57,8 @@ def filterPotentialSegments(segments, trust):
 def filterByGeniusAllocations(segments, trust):
     potential_segments = []
     for segment in segments:
-        if segment.unit is not None:
-            if segment.isPlanned or db_queries.isPlanned(segment.unit, trust['headcode']):
+        if segment.gps_car_id is not None:
+            if segment.isPlanned or db_queries.isPlanned(segment.gps_car_id, trust['headcode']):
                 potential_segments.append(segment)
     if len(potential_segments) > 0:
         return potential_segments
@@ -224,7 +224,7 @@ def getBestStop(segments1, trust, with_seq):
             if segment.headcode is None:
                 segment.headcode = trust['headcode']
                 segment.cif_uid = db_queries.cif_uidFromHeadcode(trust['headcode'])
-                segment.isPlanned = db_queries.isPlanned(segment.unit, trust['headcode'])
+                segment.isPlanned = db_queries.isPlanned(segment.gps_car_id, trust['headcode'])
             return True
     return False
 

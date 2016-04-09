@@ -8,12 +8,12 @@ os.sys.path.insert(0, parentdir)
 from models import *
 
 
-# Function that check if a unit was supposed
+# Function that check if a gps_car_id was supposed
 # to run a service with the headcode
-def isPlanned(unit, headcode):
+def isPlanned(gps_car_id, headcode):
     globals.db_lock.acquire()
     result = db.session.query(Schedule).filter(and_(
-        Schedule.unit == unit, Schedule.headcode == headcode
+        Schedule.unit == gps_car_id, Schedule.headcode == headcode
     ))
     globals.db_lock.release()
     try:
@@ -25,8 +25,10 @@ def isPlanned(unit, headcode):
 
 # Gets the unit from a gps_car_id by querying
 # the UnitToGPSMapping table
+# NOT USING THIS FUNCTION ANYMORE
 def getUnitFromCarId(gps_car_id):
     globals.db_lock.acquire()
+    print("WARNING - This function should not be used!")
     result = db.session.query(UnitToGPSMapping).filter(
         UnitToGPSMapping.gps_car_id == gps_car_id)
     globals.db_lock.release()
@@ -37,7 +39,7 @@ def getUnitFromCarId(gps_car_id):
 
 
 # Gets the diagram_service row for a
-# particular unit
+# particular headcode
 def getDiagramServiceByHeadcode(headcode):
     globals.db_lock.acquire()
     result = db.session.query(DiagramService).filter(
@@ -70,6 +72,7 @@ def getDiagramStopsByHeadcode(headcode):
 
 
 # Gets the cif_uid from the Schedule using unit and headcode
+# NOT IN USE
 def cif_uidFromUnitAndHeadcode(unit, headcode):
     globals.db_lock.acquire()
     result = db.session.query(Schedule).filter(and_(
