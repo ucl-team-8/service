@@ -4,6 +4,7 @@ import os
 parentdir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.sys.path.insert(0, parentdir + '/algorithm')
 
+import interpolating
 import geo_distance
 import db_queries
 import datetime
@@ -16,13 +17,14 @@ coord2 = {'latitude': 52.406374, 'longitude': 16.9251681}
 coord3 = {'latitude': 57.4774160525352, 'longitude': -4.46815579590345}
 coord4 = {'latitude': 51.6909417951552, 'longitude': -3.40287716811208}
 
+
 # Test class for cleaner
 class Simulation():
     def __init__(self, gps, trust):
         self.records = {'gps': gps, 'trust': trust}
 
 old = datetime.datetime.now() - globals.is_old
-now= datetime.datetime.now()
+now = datetime.datetime.now()
 
 now_dict = {'event_time': now}
 old_dict = {'event_time': old}
@@ -36,16 +38,23 @@ sim6 = Simulation([], [now_dict])
 
 
 newSegment1 = globals.Segment()
+newSegment1.headcode = '1A00'
 newSegment1.matching.append({'trust': {'event_time': now}, 'gps': None})
 
 newSegment2 = globals.Segment()
 newSegment2.matching.append({'gps': {'event_time': now}, 'trust': None})
 
 oldSegment1 = globals.Segment()
+oldSegment1.headcode = '1A00'
 oldSegment1.matching.append({'trust': {'event_time': old}, 'gps': None})
 
 oldSegment2 = globals.Segment()
 oldSegment2.matching.append({'gps': {'event_time': old}, 'trust': None})
+
+matchingSegment1 = globals.Segment()
+matchingSegment1.headcode = '1A00'
+matchingSegment1.matching.append({'gps': {'event_time': old}, 'trust': {'event_time': old}})
+matchingSegment1.matching.append({'gps': {'event_time': now}, 'trust': None})
 
 
 class TestGeoDist(unittest.TestCase):
@@ -180,6 +189,77 @@ class TestCleaner(unittest.TestCase):
     def testCheckIfOld4(self):
         result = cleaner.checkIfOld(oldSegment2, now)
         self.assertEqual(result, True)
+
+
+class TestInterpolating(unittest.TestCase):
+    def setUp(self):
+        globals.segments = {}
+        globals.old_segments = {}
+
+    def testCountMatching1(self):
+        result = interpolating.countMatching(matchingSegment1)
+        self.assertEqual(result, 1)
+
+    def testCountMatching2(self):
+        result = interpolating.countMatching(oldSegment1)
+        self.assertEqual(result, 0)
+
+    def testSegmentsWithHeadcode1(self):
+        globals.segments['0'] = newSegment1
+        globals.segments['1'] = newSegment2
+        globals.segments['2'] = oldSegment1
+        globals.segments['3'] = oldSegment2
+        result = interpolating.getSegmentsWithHeadcode('1A00')
+        self.assertEqual(len(result), 2)
+
+    def testSegmentsWithHeadcode2(self):
+        globals.segments['0'] = newSegment1
+        globals.segments['1'] = newSegment2
+        globals.segments['2'] = oldSegment2
+        result = interpolating.getSegmentsWithHeadcode('1A00')
+        self.assertEqual(len(result), 1)
+
+    def testSegmentsWithHeadcode3(self):
+        globals.segments['0'] = newSegment1
+        globals.segments['1'] = newSegment2
+        globals.segments['2'] = oldSegment2
+        result = interpolating.getSegmentsWithHeadcode('1A01')
+        self.assertEqual(len(result), 0)
+
+    def testSegmentsWithHeadcode4(self):
+        globals.segments['0'] = newSegment1
+        globals.segments['1'] = newSegment2
+        globals.segments['2'] = oldSegment2
+        result = interpolating.getSegmentsWithHeadcode(None)
+        self.assertEqual(len(result), 2)
+
+    def testGetReportTime1(self):
+        result = interpolating.getReportTime(newSegment1.matching[0])
+        self.assertEqual(result, now)
+
+    def testGetReportTime2(self):
+        result = interpolating.getReportTime(newSegment2.matching[0])
+        self.assertEqual(result, now)
+
+    def testGetReportTime3(self):
+        result = interpolating.getReportTime(oldSegment1.matching[0])
+        self.assertEqual(result, old)
+
+    def testGetReportTime4(self):
+        result = interpolating.getReportTime(oldSegment2.matching[0])
+        self.assertEqual(result, old)
+
+    def testGetReportTime5(self):
+        result = interpolating.getReportTime(matchingSegment1.matching[0])
+        self.assertEqual(result, old)
+
+    def testInTimeLimit1(self):
+        result = interpolating.inTimeLimit(matchingSegment1, {'event_time': now - globals.is_old/2})
+        self.assertEqual(result, True)
+
+    def testInTimeLimit2(self):
+        result = interpolating.inTimeLimit(oldSegment1, {'event_time': now})
+        self.assertEqual(result, False)
 
 
 if __name__ == "__main__":
