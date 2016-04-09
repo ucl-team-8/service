@@ -71,6 +71,7 @@ def removeGPSReports(segment, gps_car_id):
                 match['gps'] = None
         i += 1
 
+
 # Combines the segments from i to j and
 # store all of the reports in i
 def combineSegments(segments, i, j):
@@ -173,6 +174,7 @@ def checkPotentialMatches(segment, potential_matches):
 # and a segment without a headcode and see if they are both
 # potentially running the same service
 def matchingSegments(segment, empty_segment):
+    globals.lock.acquire()
     potential_matches = []
     next_index = 0
     segment.matching.sort(key=lambda x: getReportTime(x), reverse=False)
@@ -188,6 +190,109 @@ def matchingSegments(segment, empty_segment):
                         'trust': match['trust']
                     })
     checkPotentialMatches(empty_segment, potential_matches)
+    globals.lock.release()
+
+
+# Checks if a report in a match happens between
+# the first and last event in the segment
+def inTimeLimit(segment, trust):
+    # We know that segment is sorted
+    after = trust['event_time'] > getReportTime(segment.matching[0])
+    before = trust['event_time'] < getReportTime(segment.matching[-1])
+    return before and after
+
+
+# Deletes all of the matches in the
+# matches variable from the given segment
+def deleteReports(segment):
+    segment.matching = filter(lambda x: not x['delete'], segment.matching)
+    if len(segment.matching) == 0:
+        socket_io.emitSegment('delete', segment.id)
+        del globals.segments[segment.id]
+    else:
+        for match in segment.matching:
+            del match['delete']
+        socket_io.emitSegment('update', segment)
+
+
+# If you have enough empty matches, joins them
+def checkEmptyMatches(segment, empty_segment, potential_matches):
+    if len(potential_matches) > globals.min_matching:
+        for match in potential_matches:
+            if 'index' in match:  # It can match to a gps
+                dist_error = geo_distance.calculateDistance(
+                    match['trust']['tiploc'], segment.matching[match['index']]['gps']['tiploc'])
+                segment.matching[match['index']]['trust'] = match['trust']
+                segment.matching[match['index']]['dist_error'] = dist_error
+            else:
+                segment.matching.append({
+                    'dist_err': None,
+                    'gps': None,
+                    'trust': match['trust']
+                })
+        socket_io.emitSegment('update', segment)
+        deleteReports(empty_segment)
+
+
+# We get a segment with both a gps_car_id
+# and a headcode in the segment parameter.
+# On the other hand, the empty_segment does
+# not have a gps_car_id but it does have the
+# same headcode. This function tries to insert
+# the trust reports in the empty_segment into
+# the segment parameter
+
+# We go over the matching and see if they fall within the time
+# interval. If they do, we try to find a match.
+# If we do (increment min_matching and store match)
+# else if we do not, we try to find a gps report that
+# already has a match (and increment min_matching)
+# If we have more min_matching, we add the matches
+# and append the non matching
+def matchingEmptyTrust(segment, empty_segment):
+    globals.lock.acquire()
+    segment.matching.sort(key=lambda x: getReportTime(x), reverse=False)
+    empty_segment.matching.sort(key=lambda x: getReportTime(x), reverse=False)
+    potential_matches = []
+    for i, match in enumerate(segment.matching):
+        for j, empty_match in enumerate(empty_segment.matching):
+            empty_match['delete'] = False
+            if match['gps'] is not None:
+                if match['trust'] is None:
+                    if isMatching(match['gps'], empty_match['trust']):
+                        potential_matches.append({
+                            'index': i,
+                            'trust': empty_match['trust']
+                        })
+                        empty_match['delete'] = True
+                else:  # If the gps already has a matching trust
+                    # The matching can still be inserted
+                    if isMatching(match['gps'], empty_match['trust']):
+                        potential_matches.append({
+                            'trust': empty_match['trust']
+                        })
+                        empty_match['delete'] = True
+            if inTimeLimit(segment, empty_match['trust']):
+                potential_matches.append({
+                    'trust': empty_match['trust']
+                })
+                empty_match['delete'] = True
+
+    checkEmptyMatches(segment, empty_segment, potential_matches)
+    globals.lock.release()
+
+
+# Finds all of the segments with a
+# particular headcode, then splits the
+# ones that have a gps_car_id and
+# the others that do not.
+def insertEmptyMatchingTrust(headcode):
+    segments = getSegmentsWithHeadcode(headcode)
+    empty_segments = filter(lambda x: x.gps_car_id is None, segments)
+    segments = filter(lambda x: x.gps_car_id is not None, segments)
+    for segment in segments:
+        for empty_segment in empty_segments:
+            matchingEmptyTrust(segment, empty_segment)
 
 
 # Checks if there are 2 rolling stock that might be running
@@ -206,3 +311,4 @@ def interpolate(headcode):
     segments = getSegmentsWithHeadcode(headcode)
     joinSegments(segments)
     runningSameService(headcode)
+    insertEmptyMatchingTrust(headcode)
