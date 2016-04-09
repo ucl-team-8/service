@@ -275,7 +275,7 @@ def open_extract_file(filename):
 def open_files():
     return {
         'allocations': open_extract_file('allocations.csv'),
-        'unit_to_gps': open_extract_file('unit_to_gps.csv'),
+        # 'unit_to_gps': open_extract_file('unit_to_gps.csv'),
         'trust': open_extract_file('trustData.xml'),
         'gpsData': open_extract_file('gpsData.xml'),
         'locations': open_file('locations.tsv')
@@ -302,8 +302,8 @@ def main():
     print("Importing Allocations data...")
     store_rows(parse_allocations(files['allocations']), Schedule)
 
-    print("Importing Unit to GPS data...")
-    store_rows(parse_unit_to_gps(files['unit_to_gps']), UnitToGPSMapping)
+    # print("Importing Unit to GPS data...")
+    # store_rows(parse_unit_to_gps(files['unit_to_gps']), UnitToGPSMapping)
 
     print("Importing Locations data...")
     store_rows(parse_locations(files['locations']), GeographicalLocation)
