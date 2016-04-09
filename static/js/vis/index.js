@@ -59,7 +59,7 @@ socket.on('delete', function(data) {
     segments.splice(index, 1);
     if(index == i) {
       if(i === 0) plotSegment(segments[++i]);
-      else plotsegment(segmnts[--i]);
+      else plotSegment(segments[--i]);
     }
   }
 });
@@ -108,7 +108,9 @@ let serviceContainer = reports.append("g");
 let unitContainer = reports.append("g").attr("transform", "translate(150,0)");
 
 function plotSegment(segment) {
-  console.log(`Plotting headcode:${segment.headcode || "_"} gps_car_id:${segment.gps_car_id || "_"}`, segment);
+  try {
+    console.log(`Plotting headcode:${segment.headcode || "_"} gps_car_id:${segment.gps_car_id || "_"}`, segment);
+  } catch(exception) { /* Do nothing */ }
   let serviceStops = getServiceStopsFromSegment(segment);
   let unitStops = getUnitStopsFromSegment(segment);
   routeMap.plotServices([serviceStops]);
