@@ -1,7 +1,7 @@
 import env
 from app_db import db
 from windowed_query import windowed_query
-from models import Trust, GPS
+from models import Trust, GPS, EventMatching, ServiceMatching
 
 class Simulator:
 
@@ -48,3 +48,8 @@ class Simulator:
                 self.consumer.consume_trust(next_trust)
                 self.set_now(next_trust.event_time)
                 next_trust = self.get_next_trust()
+
+    def clear_tables(self):
+        db.session.query(EventMatching).delete()
+        db.session.query(ServiceMatching).delete()
+        db.session.commit()

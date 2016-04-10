@@ -79,9 +79,6 @@ if __name__ == "__main__":
 
     # app.run()
 
-    db.session.query(EventMatching).delete()
-    db.session.query(ServiceMatching).delete()
-    db.session.commit()
-
+    simulator.clear_tables()
     simulator.simulate()
     matcher.run()
