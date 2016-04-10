@@ -26,7 +26,6 @@ class Matcher:
         self.run_if_ready()
 
     def __get_matching_props(self, trust, gps):
-        time_error = diff_seconds(trust.event_time, gps.event_time) / 60.0
         return {
             'headcode': trust.headcode,
             'origin_location': trust.origin_location,
@@ -34,7 +33,8 @@ class Matcher:
             'gps_car_id': gps.gps_car_id,
             'trust_id': trust.id,
             'gps_id': gps.id,
-            'time_error': time_error
+            'trust_event_time': trust.event_time,
+            'gps_event_time': gps.event_time
         }
 
     def run_if_ready(self):
@@ -72,7 +72,14 @@ class Matcher:
             origin_departure=origin_departure,
             gps_car_id=gps_car_id)
 
-        time_errors = [m.time_error for m in event_matchings]
+        trust_times = [m.trust_event_time for m in event_matchings]
+        gps_times = [m.gps_event_time for m in event_matchings]
+
+        all_times = trust_times + gps_times
+        start = min(all_times)
+        end = max(all_times)
+
+        time_errors = [diff_seconds(a, b) / 60.0 for a, b in zip(trust_times, gps_times)]
 
         service_matching = ServiceMatching(
             headcode=headcode,
@@ -81,7 +88,9 @@ class Matcher:
             gps_car_id=gps_car_id,
             total_matching=len(time_errors),
             median_time_error=median(time_errors),
-            variance_time_error=variance(time_errors)
+            variance_time_error=variance(time_errors),
+            start=start,
+            end=end
         )
 
         return service_matching

@@ -145,8 +145,9 @@ class EventMatching(db.Model):
     trust = db.relationship("Trust")
     gps = db.relationship("GPS")
 
-    # Time difference between trust & gps
-    time_error = db.Column(db.Float, nullable=False)
+    # Event times (stored directly for quicker access)
+    trust_event_time = db.Column(db.DateTime, nullable=False)
+    gps_event_time = db.Column(db.DateTime, nullable=False)
 
     def __repr__(self):
         return '<EventMatching headcode={0}, origin_location={1}, gps_car_id={2}'.format(self.headcode, self.origin_location, self.gps_car_id)
@@ -179,6 +180,9 @@ class ServiceMatching(db.Model):
     total_matching = db.Column(db.Integer, nullable=False)
     median_time_error = db.Column(db.Float, nullable=False)
     variance_time_error = db.Column(db.Float, nullable=False)
+
+    start = db.Column(db.DateTime, nullable=False)
+    end = db.Column(db.DateTime, nullable=False)
 
 service_matching_service_index = db.Index('service_matching_service_lookup',
          ServiceMatching.headcode,
