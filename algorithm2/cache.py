@@ -1,10 +1,7 @@
 import env
 import bisect
 from datetime import timedelta
-
-# datetime difference in seconds
-def sec_diff(a, b):
-    return (a - b).total_seconds()
+from utils import diff_seconds
 
 class Cache:
 
@@ -40,7 +37,7 @@ class Cache:
         times.insert(index, time)
 
     # gets all the events that happened at tiploc within specified minutes of
-    # the given time 
+    # the given time
     def get_within(self, tiploc, time, minutes):
 
         if tiploc not in self.cache:
@@ -51,14 +48,14 @@ class Cache:
         length = len(times)
         i = length - 1
 
-        while i >= 0 and abs(sec_diff(times[i], time)) > seconds:
+        while i >= 0 and abs(diff_seconds(times[i], time)) > seconds:
             i -= 1
         end = i + 1
 
         if end == 0:
             return []
 
-        while i >= 0 and abs(sec_diff(times[i], time)) <= seconds:
+        while i >= 0 and abs(diff_seconds(times[i], time)) <= seconds:
             i -= 1
         start = i + 1
 

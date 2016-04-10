@@ -7,4 +7,7 @@ global retention_minutes
 retention_minutes = 30
 
 global within_minutes
-within_minutes = 10
+within_minutes = 5
+
+global run_delay
+run_delay = 30

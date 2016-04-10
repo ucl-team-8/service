@@ -26,12 +26,10 @@ def trainMap():
 
 @app.route("/events/trust.json")
 def trust():
-    globals.db_lock.acquire()
     records = db.session.query(Trust, Schedule, UnitToGPSMapping).\
               outerjoin(Schedule, and_(Trust.headcode==Schedule.headcode,
                                        Trust.origin_departure==Schedule.origin_departure)).\
               outerjoin(UnitToGPSMapping, Schedule.unit==UnitToGPSMapping.unit)
-    globals.db_lock.release()
     def extract_dict(record):
         trust, schedule, mapping = record
         result = trust.as_dict()
@@ -44,9 +42,7 @@ def trust():
 
 @app.route("/events/gps.json")
 def gps():
-    globals.db_lock.acquire()
     records = db.session.query(GPS).filter(func.length(GPS.gps_car_id) == 5)
-    globals.db_lock.release()
 
     def extract_dict(record):
         result = record.as_dict()
@@ -57,10 +53,8 @@ def gps():
 
 @app.route("/data/schedule.json")
 def schedule():
-    globals.db_lock.acquire()
     records = db.session.query(Schedule, UnitToGPSMapping).\
               outerjoin(UnitToGPSMapping, Schedule.unit==UnitToGPSMapping.unit)
-    globals.db_lock.release()
 
     def extract_dict(record):
         schedule, mapping = record
@@ -82,5 +76,8 @@ consumer = Consumer(matcher=matcher)
 simulator = Simulator(consumer=consumer)
 
 if __name__ == "__main__":
+    db.session.query(EventMatching).delete()
+    db.session.commit()
     simulator.simulate()
+    matcher.run()
     # app.run()
