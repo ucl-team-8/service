@@ -146,7 +146,7 @@ class EventMatching(db.Model):
     gps = db.relationship("GPS")
 
     # Time difference between trust & gps
-    time_error = db.Column(db.Float)
+    time_error = db.Column(db.Float, nullable=False)
 
     def __repr__(self):
         return '<EventMatching headcode={0}, origin_location={1}, gps_car_id={2}'.format(self.headcode, self.origin_location, self.gps_car_id)
@@ -161,3 +161,29 @@ event_matching_service_index = db.Index('event_matching_service_lookup',
 
 event_matching_unit_index = db.Index('event_matching_unit_lookup',
          EventMatching.gps_car_id)
+
+class ServiceMatching(db.Model):
+    __tablename__ = 'service_matching'
+
+    # Note composite primary key below, since we only want a single matching for
+    # a service and unit
+
+    # Service identifier
+    headcode = db.Column(db.String(20), primary_key=True)
+    origin_location = db.Column(db.String(20), primary_key=True)
+    origin_departure = db.Column(db.DateTime, primary_key=True)
+
+    # Rolling stock identifier
+    gps_car_id = db.Column(db.String(20), primary_key=True)
+
+    total_matching = db.Column(db.Integer, nullable=False)
+    median_time_error = db.Column(db.Float, nullable=False)
+    variance_time_error = db.Column(db.Float, nullable=False)
+
+service_matching_service_index = db.Index('service_matching_service_lookup',
+         ServiceMatching.headcode,
+         ServiceMatching.origin_location,
+         ServiceMatching.origin_departure)
+
+service_matching_unit_index = db.Index('service_matching_unit_lookup',
+         ServiceMatching.gps_car_id)
