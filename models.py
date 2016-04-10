@@ -148,6 +148,12 @@ class EventMatching(db.Model):
     # Time difference between trust & gps
     time_error = db.Column(db.Float)
 
+    def __repr__(self):
+        return '<EventMatching headcode={0}, origin_location={1}, gps_car_id={2}'.format(self.headcode, self.origin_location, self.gps_car_id)
+
+    def as_dict(self):
+        return {c.name: getattr(self, c.name) for c in self.__table__.columns}
+
 event_matching_service_index = db.Index('event_matching_service_lookup',
          EventMatching.headcode,
          EventMatching.origin_location,
