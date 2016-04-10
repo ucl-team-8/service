@@ -56,6 +56,7 @@ class Simulator:
                 self.set_now(next_trust.event_time)
                 next_trust = self.get_next_trust()
 
+        # run the matcher at the very end
         self.matcher.run()
 
     def clear_tables(self):
