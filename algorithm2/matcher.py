@@ -15,7 +15,7 @@ class Matcher:
         self.last_run = env.now
 
     def save_event_matchings(self):
-        db.session.bulk_insert_mappings(EventMatching, self.queue.pop_rows())
+        db.session.bulk_insert_mappings(EventMatching, self.queue.pop_new_rows())
         db.session.commit()
 
     def save_service_matchings(self):
