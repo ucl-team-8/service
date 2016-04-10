@@ -19,6 +19,11 @@ class Trust(db.Model):
     def as_dict(self):
         return {c.name: getattr(self, c.name) for c in self.__table__.columns}
 
+db.Index('trust_service_lookup',
+         Trust.headcode,
+         Trust.origin_location,
+         Trust.origin_departure)
+
 
 class Schedule(db.Model):
     __tablename__ = 'schedule'
@@ -39,7 +44,7 @@ class Schedule(db.Model):
 class GPS(db.Model):
     __tablename__ = 'gps'
     id = db.Column(db.Integer, primary_key=True)
-    gps_car_id = db.Column(db.String(20))
+    gps_car_id = db.Column(db.String(20), index=True)
     event_type = db.Column(db.String(5))
     tiploc = db.Column(db.String(20))
     event_time = db.Column(db.DateTime)
@@ -121,3 +126,32 @@ class DiagramStop(db.Model):
 
     def as_dict(self):
         return {c.name: getattr(self, c.name) for c in self.__table__.columns}
+
+class EventMatching(db.Model):
+    __tablename__ = 'event_matching'
+    id = db.Column(db.Integer, primary_key=True)
+
+    # Service identifier
+    headcode = db.Column(db.String(20))
+    origin_location = db.Column(db.String(20))
+    origin_departure = db.Column(db.DateTime)
+
+    # Rolling stock identifier
+    gps_car_id = db.Column(db.String(20))
+
+    # References to the actual events
+    trust_id = db.Column(db.Integer, db.ForeignKey('trust.id'), nullable=False)
+    gps_id = db.Column(db.Integer, db.ForeignKey('gps.id'), nullable=False)
+    trust = db.relationship("Trust")
+    gps = db.relationship("GPS")
+
+    # Time difference between trust & gps
+    time_error = db.Column(db.Float)
+
+event_matching_service_index = db.Index('event_matching_service_lookup',
+         EventMatching.headcode,
+         EventMatching.origin_location,
+         EventMatching.origin_departure)
+
+event_matching_unit_index = db.Index('event_matching_unit_lookup',
+         EventMatching.gps_car_id)
