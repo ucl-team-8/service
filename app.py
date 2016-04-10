@@ -5,9 +5,10 @@ import sys
 import os
 
 from models import *
-from algorithm2.simulator import Simulator
-from algorithm2.consumer import Consumer
+from algorithm2.matcher_queue import MatcherQueue
 from algorithm2.matcher import Matcher
+from algorithm2.consumer import Consumer
+from algorithm2.simulator import Simulator
 
 @app.route("/")
 def hello():
@@ -71,9 +72,10 @@ def handle_message(message):
     print("Client connected")
 
 
-matcher = Matcher()
-consumer = Consumer(matcher=matcher)
-simulator = Simulator(consumer=consumer)
+queue = MatcherQueue()
+matcher = Matcher(queue=queue)
+consumer = Consumer(queue=queue)
+simulator = Simulator(consumer=consumer, matcher=matcher)
 
 if __name__ == "__main__":
 
@@ -81,4 +83,3 @@ if __name__ == "__main__":
 
     simulator.clear_tables()
     simulator.simulate()
-    matcher.run()

@@ -15,5 +15,5 @@ global within_minutes
 within_minutes = 5
 
 # minutes between running the service matching algorithm
-global run_delay
-run_delay = 30
+global matcher_interval
+matcher_interval = 30

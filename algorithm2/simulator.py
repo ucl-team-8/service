@@ -2,11 +2,14 @@ import env
 from app_db import db
 from windowed_query import windowed_query
 from models import Trust, GPS, EventMatching, ServiceMatching
+from datetime import timedelta
 
 class Simulator:
 
-    def __init__(self, consumer):
+    def __init__(self, consumer, matcher):
         self.consumer = consumer
+        self.matcher = matcher
+        self.interval = timedelta(minutes=env.matcher_interval)
         self.windowed_gps = windowed_query(db.session.query(GPS), GPS.event_time, 1000)
         self.windowed_trust = windowed_query(db.session.query(Trust), Trust.event_time, 1000)
 
@@ -28,6 +31,10 @@ class Simulator:
 
     def set_now(self, date):
         env.now = date
+        # "simulating" running the matcher at intervals
+        # in production this would be some kind of scheduled task
+        if env.now - self.matcher.last_run > self.interval:
+            self.matcher.run()
 
     def simulate(self):
 
@@ -48,6 +55,8 @@ class Simulator:
                 self.consumer.consume_trust(next_trust)
                 self.set_now(next_trust.event_time)
                 next_trust = self.get_next_trust()
+
+        self.matcher.run()
 
     def clear_tables(self):
         db.session.query(EventMatching).delete()

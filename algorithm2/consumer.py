@@ -3,8 +3,8 @@ from cache import Cache
 
 class Consumer:
 
-    def __init__(self, matcher):
-        self.matcher = matcher
+    def __init__(self, queue):
+        self.queue = queue
         self.gps_cache = Cache(env.retention_minutes)
         self.trust_cache = Cache(env.retention_minutes)
 
@@ -19,7 +19,7 @@ class Consumer:
                                    tiploc, time, env.within_minutes)
 
         for gps in close_gps_reports:
-            self.matcher.add(trust, gps)
+            self.queue.add(trust, gps)
 
 
     def consume_gps(self, gps):
@@ -33,4 +33,4 @@ class Consumer:
                                    tiploc, time, env.within_minutes)
 
         for trust in close_trust_reports:
-            self.matcher.add(trust, gps)
+            self.queue.add(trust, gps)
