@@ -26,15 +26,15 @@ def trainMap():
 
 @app.route("/events/trust.json")
 def trust():
-    records = db.session.query(Trust, Schedule, UnitToGPSMapping).\
+    records = db.session.query(Trust, Schedule).\
               outerjoin(Schedule, and_(Trust.headcode==Schedule.headcode,
-                                       Trust.origin_departure==Schedule.origin_departure)).\
-              outerjoin(UnitToGPSMapping, Schedule.unit==UnitToGPSMapping.unit)
+                                       Trust.origin_departure==Schedule.origin_departure,
+                                       Trust.origin_location==Schedule.origin_location))
     def extract_dict(record):
-        trust, schedule, mapping = record
+        trust, schedule = record
         result = trust.as_dict()
-        if mapping:
-            result['gps_car_id'] = mapping.gps_car_id
+        if schedule:
+            result['gps_car_id'] = schedule.unit
         return result
 
     return jsonify(result=map(extract_dict, records))
@@ -42,7 +42,7 @@ def trust():
 
 @app.route("/events/gps.json")
 def gps():
-    records = db.session.query(GPS).filter(func.length(GPS.gps_car_id) == 5)
+    records = db.session.query(GPS)
 
     def extract_dict(record):
         result = record.as_dict()
@@ -76,8 +76,12 @@ consumer = Consumer(matcher=matcher)
 simulator = Simulator(consumer=consumer)
 
 if __name__ == "__main__":
+
+    # app.run()
+
     db.session.query(EventMatching).delete()
+    db.session.query(ServiceMatching).delete()
     db.session.commit()
+
     simulator.simulate()
     matcher.run()
-    # app.run()
