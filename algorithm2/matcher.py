@@ -1,8 +1,8 @@
 from app_db import db
 import env
-from models import EventMatching
+from models import EventMatching, ServiceMatching
 from datetime import timedelta
-from utils import diff_seconds
+from utils import diff_seconds, median, variance
 
 class Matcher:
 
@@ -26,7 +26,7 @@ class Matcher:
         self.run_if_ready()
 
     def __get_matching_props(self, trust, gps):
-        time_error = diff_seconds(trust.event_time, gps.event_time) / 60
+        time_error = diff_seconds(trust.event_time, gps.event_time) / 60.0
         return {
             'headcode': trust.headcode,
             'origin_location': trust.origin_location,
@@ -52,4 +52,36 @@ class Matcher:
         self.new_rows = []
 
     def run_algorithm(self):
+        for service, unit in self.changed:
+            headcode, origin_location, origin_departure = service
+            gps_car_id = unit
+            service_matching = self.get_service_matching(
+                headcode,
+                origin_location,
+                origin_departure,
+                gps_car_id)
+            db.session.merge(service_matching)
+        db.session.commit()
         self.changed = set()
+
+    def get_service_matching(self, headcode, origin_location, origin_departure, gps_car_id):
+
+        event_matchings = db.session.query(EventMatching).filter_by(
+            headcode=headcode,
+            origin_location=origin_location,
+            origin_departure=origin_departure,
+            gps_car_id=gps_car_id)
+
+        time_errors = [m.time_error for m in event_matchings]
+
+        service_matching = ServiceMatching(
+            headcode=headcode,
+            origin_location=origin_location,
+            origin_departure=origin_departure,
+            gps_car_id=gps_car_id,
+            total_matching=len(time_errors),
+            median_time_error=median(time_errors),
+            variance_time_error=variance(time_errors)
+        )
+
+        return service_matching
