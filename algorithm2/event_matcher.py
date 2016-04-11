@@ -1,5 +1,5 @@
 import env
-from cache import Cache
+from tiploc_cache import TiplocCache
 
 class EventMatcher:
     """Consumes TRUST & GPS reports. This is where the reports first come from
@@ -13,8 +13,8 @@ class EventMatcher:
 
     def __init__(self, queue):
         self.queue = queue
-        self.gps_cache = Cache(env.retention_minutes)
-        self.trust_cache = Cache(env.retention_minutes)
+        self.gps_cache = TiplocCache(env.retention_minutes)
+        self.trust_cache = TiplocCache(env.retention_minutes)
 
     def match_trust(self, trust):
 

@@ -3,7 +3,7 @@ import bisect
 from datetime import timedelta
 from utils import diff_seconds
 
-class Cache:
+class TiplocCache:
     """Caches reports for a given length of time (retention_minutes).
 
     Very efficiently finds cached reports at a tiploc within a given time
