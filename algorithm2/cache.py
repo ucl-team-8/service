@@ -50,8 +50,6 @@ class Cache:
         reports.insert(index, report)
         times.insert(index, time)
 
-    # gets all the events that occurred at tiploc within specified minutes of
-    # the given time
     def get_within(self, tiploc, time, minutes):
         """Returns all reports at a tiploc that occurred within the given
         minutes of the given time.
