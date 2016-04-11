@@ -106,8 +106,12 @@ let reports = reportsContainer.append("g")
     .attr("class", "reports")
     .attr("transform", `translate(${padding.left}, ${padding.top})`);
 
-let serviceContainer = reports.append("g");
-let unitContainer = reports.append("g").attr("transform", "translate(150,0)");
+let serviceContainer = reports.append("g")
+    .classed("trust", true);
+
+let unitContainer = reports.append("g")
+    .attr("transform", "translate(150,0)")
+    .classed("gps", true);
 
 function plotSegment(segment) {
   try {
