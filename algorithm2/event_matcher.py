@@ -11,8 +11,9 @@ class EventMatcher:
 
     """
 
-    def __init__(self, queue):
+    def __init__(self, queue, matchings):
         self.queue = queue
+        self.matchings = matchings
         self.gps_cache = TiplocCache(env.retention_minutes)
         self.trust_cache = TiplocCache(env.retention_minutes)
 
@@ -20,6 +21,11 @@ class EventMatcher:
 
         tiploc = trust.tiploc
         time = trust.event_time
+
+        service = (trust.headcode,
+                   trust.origin_location,
+                   trust.origin_departure)
+        self.matchings.seen_service(service)
 
         self.trust_cache.add(tiploc, time, trust)
 
@@ -34,6 +40,9 @@ class EventMatcher:
 
         tiploc = gps.tiploc
         time = gps.event_time
+
+        unit = gps.gps_car_id
+        self.matchings.seen_unit(unit)
 
         self.gps_cache.add(tiploc, time, gps)
 
