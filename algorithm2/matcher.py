@@ -31,7 +31,6 @@ class Matcher:
             db.session.merge(service_matching)
         db.session.commit()
         # TODO: socketio notify each changed
-        self.changed = set()
 
     def get_service_matching(self, headcode, origin_location, origin_departure, gps_car_id):
 
