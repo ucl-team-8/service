@@ -8,8 +8,9 @@ from models import *
 
 from algorithm2.allocations import Allocations
 from algorithm2.matcher_queue import MatcherQueue
-from algorithm2.socket_manager import SocketManager
 from algorithm2.event_matcher import EventMatcher
+from algorithm2.socket_manager import SocketManager
+from algorithm2.matchings import Matchings
 from algorithm2.service_matcher import ServiceMatcher
 from algorithm2.simulator import Simulator
 
@@ -76,8 +77,16 @@ def handle_message(message):
 
 
 queue = MatcherQueue()
-service_matcher = ServiceMatcher(queue=queue)
-event_matcher = EventMatcher(queue=queue)
+allocations = Allocations()
+socket_manager = SocketManager(socketio)
+matchings = Matchings(allocations=allocations)
+
+event_matcher = EventMatcher(queue=queue,
+                             matchings=matchings)
+
+service_matcher = ServiceMatcher(queue=queue,
+                                 matchings=matchings)
+
 simulator = Simulator(event_matcher=event_matcher,
                       service_matcher=service_matcher)
 
