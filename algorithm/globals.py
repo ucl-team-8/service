@@ -56,16 +56,20 @@ class Segment:
         self.cif_uid = None
         self.gps_car_id = None
         self.headcode = None
+        self.origin_location = None
+        self.origin_departure = None
         self.isPlanned = False
         self.remove = False
         self.matching = []
 
     def __repr__(self):
-        string = 'Segment: gps_car_id= {0}'.format(self.gps_car_id)
-        string += ', cif_uid= {0}'.format(self.cif_uid)
-        string += ', headcode= {0}'.format(self.headcode)
-        string += ', isplanned= {0}'.format(self.isPlanned)
-        string += ', matching= {0}'.format(self.matching)
+        string = 'Segment: gps_car_id: {0}'.format(self.gps_car_id)
+        string += ', cif_uid: {0}'.format(self.cif_uid)
+        string += ', headcode: {0}'.format(self.headcode)
+        string += ', origin_location: {0}'.format(self.origin_location)
+        string += ', origin_departure: {0}'.format(self.origin_departure)
+        string += ', isplanned: {0}'.format(self.isPlanned)
+        string += ', matching: {0}'.format(self.matching)
         return string
 
     def gps(self, gps_report):
@@ -79,6 +83,8 @@ class Segment:
     def trust(self, trust_report):
         self.headcode = trust_report['headcode']
         self.cif_uid = db_queries.cif_uidFromHeadcode(self.headcode)
+        self.origin_location = trust_report['origin_location']
+        self.origin_departure = trust_report['origin_departure']
         self.matching.append({
             'gps': None,
             'trust': trust_report,

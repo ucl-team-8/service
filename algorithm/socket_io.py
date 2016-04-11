@@ -14,6 +14,8 @@ def jsonSegment(segment):
     # to change the event_time objects in the
     # segment to strings
     segment1 = deepcopy(segment).__dict__
+    if segment1['origin_departure'] is not None:
+        segment1['origin_departure'] = segment1['origin_departure'].strftime('%a, %d %b %Y %H:%M:%S GMT')
     for match in segment1['matching']:
         if match['gps'] is not None:
             match['gps']['event_time'] = match['gps']['event_time'].strftime('%a, %d %b %Y %H:%M:%S GMT')

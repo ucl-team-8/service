@@ -74,5 +74,3 @@ class Cleaner(threading.Thread):
                 if checkIfOld(segment, current_time):
                     moveToOldSegment(segment)
             globals.lock.release()
-
-

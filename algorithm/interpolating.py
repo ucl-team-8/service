@@ -164,6 +164,8 @@ def checkPotentialMatches(segment, potential_matches):
         globals.lock.acquire()
         segment.headcode = potential_matches[0]['trust']['headcode']
         segment.cif_uid = db_queries.cif_uidFromHeadcode(segment.headcode)
+        segment.origin_location = potential_matches[0]['trust']['origin_location']
+        segment.origin_departure = potential_matches[0]['trust']['origin_departure']
         for match in potential_matches:
             segment.matching[match['index']]['trust'] = match['trust']
         socket_io.emitSegment('update', segment)
@@ -217,7 +219,6 @@ def deleteReports(segment):
 # If you have enough empty matches, joins them
 def checkEmptyMatches(segment, empty_segment, potential_matches):
     if len(potential_matches) > globals.min_matching:
-
         for i, match in enumerate(potential_matches):
             if 'index' in match:  # It can match to a gps
                 dist_error = geo_distance.calculateDistance(

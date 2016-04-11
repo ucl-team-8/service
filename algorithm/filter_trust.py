@@ -217,6 +217,8 @@ def getBestStop(segments1, trust, with_seq):
                 segment.headcode = trust['headcode']
                 segment.cif_uid = db_queries.cif_uidFromHeadcode(trust['headcode'])
                 segment.isPlanned = db_queries.isPlanned(segment.gps_car_id, trust['headcode'])
+                segment.origin_location = trust['origin_location']
+                segment.origin_departure = trust['origin_departure']
             socket_io.emitSegment('update', segment)
             return True
     return False
