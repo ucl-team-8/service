@@ -9,6 +9,7 @@ import noOverlap from "./utils/no-overlap-time-scale";
 import renderSegments from "./reports/render";
 import renderServices from "./services/render";
 import {
+  getServiceFromSegment,
   getServicesFromSegments,
   getSegmentsMatchingService
 } from "./utils/segments";
