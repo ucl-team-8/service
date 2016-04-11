@@ -82,15 +82,21 @@ let segmentsContainer = d3.select(".segments-container");
 let servicesContainer = d3.select(".services-container");
 
 function render() {
+  rerenderServices();
+  rerenderSegments();
+}
 
+function rerenderServices() {
+  let selected = window.selected;
   let segments = window.segments;
   let services = getServicesFromSegments(segments);
+  services = _.sortBy(services, d => d.headcode);
+  renderServices(servicesContainer.node(), services, selected);
+}
+
+function rerenderSegments() {
   let selected = window.selected;
   let serviceSegments = getSegmentsMatchingService(segments, selected);
-
-  services = _.sortBy(services, d => d.headcode);
-
-  renderServices(servicesContainer.node(), services, selected);
   renderSegments(segmentsContainer.node(), serviceSegments, routeMap);
 }
 
@@ -113,9 +119,10 @@ socket.on('update', function(data) {
     // TODO: Segment with id was not found, something is broken
   } else {
     segments[index] = getSegment(data);
-    // if(index == i) {
-    //   plotSegment(segments[i]);
-    // }
+    let service = getServiceFromSegment(segments[index]);
+    if (_.isEqual(service, window.selected)) {
+      rerenderSegments();
+    }
   }
 });
 
@@ -124,11 +131,11 @@ socket.on('delete', function(data) {
   data = JSON.parse(data);
   let index = getSegmentWithId(data);
   if(index != -1) {
-    segments.splice(index, 1);
-    // if(index == i) {
-    //   if(i === 0) plotSegment(segments[++i]);
-    //   else plotSegment(segments[--i]);
-    // }
+    let segment = segments.splice(index, 1)[0];
+    let service = getServiceFromSegment(segment);
+    if (_.isEqual(service, window.selected)) {
+      rerenderSegments();
+    }
   }
 });
 
