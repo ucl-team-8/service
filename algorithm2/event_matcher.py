@@ -1,13 +1,13 @@
 import env
 from cache import Cache
 
-class Consumer:
+class EventMatcher:
     """Consumes TRUST & GPS reports. This is where the reports first come from
     the stream.
 
     Reports that arrive are matched with reports that occurred at the same
     tiploc within a given interval (env.within_minutes). The matchings are added
-    to the queue to be processed later by the Matcher.
+    to the queue to be processed later by the ServiceMatcher.
 
     """
 
@@ -16,7 +16,7 @@ class Consumer:
         self.gps_cache = Cache(env.retention_minutes)
         self.trust_cache = Cache(env.retention_minutes)
 
-    def consume_trust(self, trust):
+    def match_trust(self, trust):
 
         tiploc = trust.tiploc
         time = trust.event_time
@@ -30,7 +30,7 @@ class Consumer:
             self.queue.add(trust, gps)
 
 
-    def consume_gps(self, gps):
+    def match_gps(self, gps):
 
         tiploc = gps.tiploc
         time = gps.event_time

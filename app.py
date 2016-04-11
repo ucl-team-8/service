@@ -5,9 +5,12 @@ import sys
 import os
 
 from models import *
+
+from algorithm2.allocations import Allocations
 from algorithm2.matcher_queue import MatcherQueue
-from algorithm2.matcher import Matcher
-from algorithm2.consumer import Consumer
+from algorithm2.socket_manager import SocketManager
+from algorithm2.event_matcher import EventMatcher
+from algorithm2.service_matcher import ServiceMatcher
 from algorithm2.simulator import Simulator
 
 @app.route("/")
@@ -73,9 +76,10 @@ def handle_message(message):
 
 
 queue = MatcherQueue()
-matcher = Matcher(queue=queue)
-consumer = Consumer(queue=queue)
-simulator = Simulator(consumer=consumer, matcher=matcher)
+service_matcher = ServiceMatcher(queue=queue)
+event_matcher = EventMatcher(queue=queue)
+simulator = Simulator(event_matcher=event_matcher,
+                      service_matcher=service_matcher)
 
 if __name__ == "__main__":
 

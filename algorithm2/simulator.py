@@ -6,9 +6,9 @@ from datetime import timedelta
 
 class Simulator:
 
-    def __init__(self, consumer, matcher):
-        self.consumer = consumer
-        self.matcher = matcher
+    def __init__(self, event_matcher, service_matcher):
+        self.event_matcher = event_matcher
+        self.service_matcher = service_matcher
         self.interval = timedelta(minutes=env.matcher_interval)
         self.windowed_gps = windowed_query(db.session.query(GPS), GPS.event_time, 1000)
         self.windowed_trust = windowed_query(db.session.query(Trust), Trust.event_time, 1000)
@@ -31,10 +31,10 @@ class Simulator:
 
     def set_now(self, date):
         env.now = date
-        # "simulating" running the matcher at intervals
+        # "simulating" running the service matcher at intervals
         # in production this would be some kind of scheduled task
-        if env.now - self.matcher.last_run > self.interval:
-            self.matcher.run()
+        if env.now - self.service_matcher.last_run > self.interval:
+            self.service_matcher.run()
 
     def simulate(self):
 
@@ -47,17 +47,17 @@ class Simulator:
             if next_gps is not None and ((next_trust is None) or \
                 next_gps.event_time < next_trust.event_time):
 
-                self.consumer.consume_gps(next_gps)
+                self.event_matcher.match_gps(next_gps)
                 self.set_now(next_gps.event_time)
                 next_gps = self.get_next_gps()
 
             else:
-                self.consumer.consume_trust(next_trust)
+                self.event_matcher.match_trust(next_trust)
                 self.set_now(next_trust.event_time)
                 next_trust = self.get_next_trust()
 
         # run the matcher at the very end
-        self.matcher.run()
+        self.service_matcher.run()
 
     def clear_tables(self):
         db.session.query(EventMatching).delete()

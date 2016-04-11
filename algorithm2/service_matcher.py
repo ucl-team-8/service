@@ -3,10 +3,10 @@ import env
 from models import EventMatching, ServiceMatching
 from utils import diff_seconds, median, variance
 
-class Matcher:
+class ServiceMatcher:
     """This class does 2 things:
 
-    1. Takes event matchings from the queue and adds them to the database.
+    1. Inserts event matchings from the queue to the database.
     2. Takes the primary keys of the service matchings (from the queue) that
        need to be updated, updates them and stores them in the database.
 
