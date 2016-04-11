@@ -34,21 +34,18 @@ class ServiceMatcher:
         """
         changed_matchings = self.queue.pop_changed_matchings()
         for service, unit in changed_matchings:
-            headcode, origin_location, origin_departure = service
-            gps_car_id = unit
-            service_matching = self.get_service_matching(
-                headcode,
-                origin_location,
-                origin_departure,
-                gps_car_id)
+            service_matching = self.get_service_matching(service, unit)
             db.session.merge(service_matching)
         db.session.commit()
         # TODO: socketio notify each changed
 
-    def get_service_matching(self, headcode, origin_location, origin_departure, gps_car_id):
+    def get_service_matching(self, service, unit):
         """Returns an instance of ServiceMatching (a table row essentially) with
         all the fields calculated and populated.
         """
+
+        headcode, origin_location, origin_departure = service
+        gps_car_id = unit
 
         event_matchings = db.session.query(EventMatching).filter_by(
             headcode=headcode,
