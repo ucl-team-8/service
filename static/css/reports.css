@@ -2,6 +2,15 @@
   overflow: scroll;
 }
 
+.segments-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.segment {
+  border-right: 1px solid #ccc;
+}
+
 .report circle {
   fill: white;
   stroke: #b8b8b8;

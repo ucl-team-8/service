@@ -1,13 +1,14 @@
 import d3 from "d3";
-import noOverlap from "../utils/no-overlap-time-scale";
 
-export default function updateReports(container, scale, data) {
+export default function renderReports(container, scale, data) {
 
-  let offset = 50;
+  container = d3.select(container);
 
+  let leftOffset = 40;
   let timeFormat = d3.time.format("%H:%M");
-
   let dataWithPositions = scale.positions(data, d => d.event_time);
+
+  // Drawing the bar
 
   let positions = dataWithPositions.map(d => d.pos);
   let top = d3.min(positions);
@@ -16,14 +17,16 @@ export default function updateReports(container, scale, data) {
   let bar = container.select(".bar");
 
   if (bar.empty()) {
-      bar = container.append("line");
+      bar = container.append("line")
+        .attr("class", "bar");
   }
 
-  bar.attr("class", "bar")
-    .attr("x1", offset)
-    .attr("x2", offset)
+  bar.attr("x1", leftOffset)
+    .attr("x2", leftOffset)
     .attr("y1", top)
     .attr("y2", bottom);
+
+  // Drawing the reports (circles)
 
   let reports = container.selectAll(".report")
       .data(dataWithPositions, d => d.id);
@@ -33,13 +36,13 @@ export default function updateReports(container, scale, data) {
       .attr("class", "report");
 
   newReports.append("circle")
-      .attr("cx", offset)
+      .attr("cx", leftOffset)
       .attr("cy", 0)
       .attr("r", 4);
 
   let newLabels = newReports.append("text")
       .attr("y", 0)
-      .attr("x", offset + 8)
+      .attr("x", leftOffset + 8)
       .attr("dy", ".35em");
 
   newLabels.append("tspan")
@@ -53,7 +56,7 @@ export default function updateReports(container, scale, data) {
   newReports.append("text")
       .attr("class", "time")
       .attr("y", 0)
-      .attr("x", offset - 8)
+      .attr("x", leftOffset - 8)
       .attr("dy", ".35em")
       .text(d => timeFormat(d.event_time));
 
