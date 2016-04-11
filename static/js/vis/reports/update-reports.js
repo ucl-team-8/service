@@ -3,8 +3,9 @@ import noOverlap from "../utils/no-overlap-time-scale";
 
 export default function updateReports(container, scale, data) {
 
-  let timeFormat = d3.time.format("%H:%M:%S");
   let offset = 50;
+
+  let timeFormat = d3.time.format("%H:%M");
 
   let dataWithPositions = scale.positions(data, d => d.event_time);
 
