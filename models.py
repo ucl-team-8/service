@@ -184,6 +184,15 @@ class ServiceMatching(db.Model):
     start = db.Column(db.DateTime, nullable=False)
     end = db.Column(db.DateTime, nullable=False)
 
+    def __repr__(self):
+        return '<ServiceMatching headcode={0}, origin_location={1}, gps_car_id={2}'.format(
+            self.headcode,
+            self.origin_location,
+            self.gps_car_id)
+
+    def as_dict(self):
+        return {c.name: getattr(self, c.name) for c in self.__table__.columns}
+
 service_matching_service_index = db.Index('service_matching_service_lookup',
          ServiceMatching.headcode,
          ServiceMatching.origin_location,
