@@ -11,6 +11,10 @@
   border-right: 1px solid #ccc;
 }
 
+.segment:last-child {
+  border-right: none;
+}
+
 .report circle {
   fill: white;
   stroke: #b8b8b8;
