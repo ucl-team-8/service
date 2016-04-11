@@ -2,6 +2,14 @@ import env
 from cache import Cache
 
 class Consumer:
+    """Consumes TRUST & GPS reports. This is where the reports first come from
+    the stream.
+
+    Reports that arrive are matched with reports that occurred at the same
+    tiploc within a given interval (env.within_minutes). The matchings are added
+    to the queue to be processed later by the Matcher.
+
+    """
 
     def __init__(self, queue):
         self.queue = queue

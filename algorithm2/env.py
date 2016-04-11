@@ -5,8 +5,8 @@ global now
 now = datetime.fromtimestamp(0) # initialise with epoch time
 
 # minutes events are stored in cache
-# this is so we can match a report that occurred some time ago, but the system
-# only received it now
+# this is bigger so we can match a report that occurred some time ago, but the
+# system only received it now
 global retention_minutes
 retention_minutes = 30
 

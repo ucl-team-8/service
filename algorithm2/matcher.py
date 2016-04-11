@@ -4,6 +4,13 @@ from models import EventMatching, ServiceMatching
 from utils import diff_seconds, median, variance
 
 class Matcher:
+    """This class does 2 things:
+
+    1. Takes event matchings from the queue and adds them to the database.
+    2. Takes the primary keys of the service matchings (from the queue) that
+       need to be updated, updates them and stores them in the database.
+
+    """
 
     def __init__(self, queue):
         self.queue = queue
@@ -15,10 +22,16 @@ class Matcher:
         self.last_run = env.now
 
     def save_event_matchings(self):
+        """Takes all queued rows from the MatcherQueue and adds them to the
+        database.
+        """
         db.session.bulk_insert_mappings(EventMatching, self.queue.pop_new_rows())
         db.session.commit()
 
     def save_service_matchings(self):
+        """Takes the primary keys of the service matchings (from the queue) that
+           need to be updated, updates them and stores them in the database.
+        """
         changed_matchings = self.queue.pop_changed_matchings()
         for service, unit in changed_matchings:
             headcode, origin_location, origin_departure = service
@@ -33,6 +46,9 @@ class Matcher:
         # TODO: socketio notify each changed
 
     def get_service_matching(self, headcode, origin_location, origin_departure, gps_car_id):
+        """Returns an instance of ServiceMatching (a table row essentially) with
+        all the fields calculated and populated.
+        """
 
         event_matchings = db.session.query(EventMatching).filter_by(
             headcode=headcode,

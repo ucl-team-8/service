@@ -1,8 +1,8 @@
 import sqlalchemy
 from sqlalchemy import and_, func
 
-# Efficient way to get "slices" of queries without storing the whole result in
-# memory.
+# Efficient way to incrementally get "slices" of queries without storing the
+# whole result in memory.
 # Borrowed from SQLAlchemy Usage Recipes:
 # https://bitbucket.org/zzzeek/sqlalchemy/wiki/UsageRecipes/WindowedRangeQuery
 

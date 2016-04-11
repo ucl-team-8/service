@@ -1,5 +1,15 @@
 
 class MatcherQueue:
+    """Temporarily stores event matchings (trust->gps) passed from the Consumer.
+
+    The event matchings are stored as dictionaries, with the fields of
+    EventMatching table as keys, ready to be inserted into the database.
+
+    Also stores the primary keys of the service matchings (service->unit, see
+    ServiceMatching) that need to be updated. The updating is done by the
+    Matcher.
+
+    """
 
     def __init__(self):
         self.new_rows = []
