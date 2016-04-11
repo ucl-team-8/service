@@ -47,7 +47,7 @@ class Cache:
         # inserted while keeping the list sorted
         index = bisect.bisect_right(self.timestamps[tiploc], time)
 
-        reports.insert(index, instance)
+        reports.insert(index, report)
         times.insert(index, time)
 
     # gets all the events that occurred at tiploc within specified minutes of
