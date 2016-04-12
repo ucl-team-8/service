@@ -41,7 +41,7 @@ class Matchings:
     def get_all_units(self):
         return self.units.keys()
 
-    def unlikely_match(self, service_matching_props):
+    def is_unlikely_match(self, service_matching_props):
         """Given a dictionary (representing a ServiceMatching row) it returns
         whether it's a *remotely* likely a match.
 

@@ -42,7 +42,7 @@ class ServiceMatcher:
         for service, unit in changed_matchings:
             service_matching = self.get_service_matching_props(service, unit)
             # ignore service matching if unlikely matching
-            if self.matchings.unlikely_match(service_matching):
+            if self.matchings.is_unlikely_match(service_matching):
                 continue
             # otherwise add it to update or insert list
             if get_service_matching(service, unit):
