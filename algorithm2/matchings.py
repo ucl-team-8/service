@@ -55,8 +55,6 @@ class Matchings:
         return s['total_matching'] < 2 or \
                abs(corrected_error) > 3.0
 
-    # TODO: the two methods below should be refactored into one.
-
     def get_matchings(self):
         """The final pass of the matching algorithm that decides which service
         was ran by each unit.
