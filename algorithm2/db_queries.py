@@ -22,6 +22,9 @@ def get_service_matching(service, unit):
     primary_key = service + (unit,)
     return db_session.query(ServiceMatching).get(primary_key)
 
+def get_service_matchings_for_unit(unit):
+    return db_session.query(ServiceMatching).filter_by(gps_car_id=unit)
+
 # TODO: finish this
 # def get_service_maching_existing_keys(pkeys):
 #     db_session.query(
