@@ -7,7 +7,7 @@ class MatcherQueue:
 
     Also stores the primary keys of the service matchings (service->unit, see
     ServiceMatching) that need to be updated. The updating is done by the
-    Matcher.
+    ServiceMatcher.
 
     """
 
