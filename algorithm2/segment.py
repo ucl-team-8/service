@@ -1,10 +1,9 @@
-from sqlalchemy.sql import and_
-from app_db import db
-from db_queries import get_event_matchings
+from sqlalchemy import and_
+from db_queries import db_session, get_event_matchings
 from models import Trust, GPS, ServiceMatching, EventMatching
 
 def from_service_matching_pkey(pkey):
-    service_matching = db.session.query(ServiceMatching).get(pkey)
+    service_matching = db_session.query(ServiceMatching).get(pkey)
     if service_matching is not None:
         return from_service_matching(service_matching)
 
@@ -17,7 +16,7 @@ def from_service_matching(service_matching):
     start = service_matching.start
     end = service_matching.end
 
-    trust_reports = db.session.query(Trust).filter_by(
+    trust_reports = db_session.query(Trust).filter_by(
         headcode=headcode,
         origin_location=origin_location,
         origin_departure=origin_departure
@@ -26,7 +25,7 @@ def from_service_matching(service_matching):
         Trust.event_time <= end)
     )
 
-    gps_reports = db.session.query(GPS).filter_by(
+    gps_reports = db_session.query(GPS).filter_by(
         gps_car_id=gps_car_id
     ).filter(and_(
         GPS.event_time >= start,

@@ -6,14 +6,6 @@ import os
 
 from models import *
 
-from algorithm2.allocations import Allocations
-from algorithm2.matcher_queue import MatcherQueue
-from algorithm2.event_matcher import EventMatcher
-from algorithm2.socket_manager import SocketManager
-from algorithm2.matchings import Matchings
-from algorithm2.service_matcher import ServiceMatcher
-from algorithm2.simulator import Simulator
-
 @app.route("/")
 def hello():
     return render_template('visualisation.html')
@@ -70,29 +62,16 @@ def schedule():
 
     return jsonify(result=map(extract_dict, records))
 
-
-@socketio.on('connection')
-def handle_message(message):
-    print("Client connected")
-
-
-queue = MatcherQueue()
-allocations = Allocations()
-socket_manager = SocketManager(socketio)
-matchings = Matchings(allocations=allocations)
-
-event_matcher = EventMatcher(queue=queue,
-                             matchings=matchings)
-
-service_matcher = ServiceMatcher(queue=queue,
-                                 matchings=matchings)
-
-simulator = Simulator(event_matcher=event_matcher,
-                      service_matcher=service_matcher)
+# @socketio.on('connection')
+# def handle_message(message):
+#     print("Client connected")
 
 if __name__ == "__main__":
-
-    # app.run()
-
-    simulator.clear_tables()
-    simulator.simulate()
+    # when the server is restarting, the environment variable is set to 'true'
+    # this is to avoid running the algorithm again after a restart
+    if os.environ.get('WERKZEUG_RUN_MAIN') != 'true':
+        from algorithm2.simulator import Simulator
+        simulator = Simulator()
+        simulator.deamon = True
+        simulator.start()
+    app.run()

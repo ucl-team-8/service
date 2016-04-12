@@ -1,6 +1,6 @@
 import copy
-from app_db import db
 from models import Schedule
+from db_queries import db_session
 
 class Allocations:
 
@@ -18,7 +18,7 @@ class Allocations:
 
     def __get_allocations(self):
 
-        query = db.session.query(Schedule).all()
+        query = db_session.query(Schedule).all()
         allocations = dict()
 
         for alloc in query:

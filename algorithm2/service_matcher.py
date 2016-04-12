@@ -1,8 +1,7 @@
-from app_db import db
-from db_queries import get_event_matchings, get_service_matching
 import env
+from db_queries import db_session, get_event_matchings, get_service_matching
 from models import EventMatching, ServiceMatching
-from utils import diff_seconds, median, variance
+from utils import diff_seconds, median, iqr
 
 class ServiceMatcher:
     """This class does 2 things:
@@ -13,21 +12,20 @@ class ServiceMatcher:
 
     """
 
-    def __init__(self, queue):
+    def __init__(self, queue, matchings):
         self.queue = queue
-        self.last_run = env.now
+        self.matchings = matchings
 
     def run(self):
         self.save_event_matchings()
         self.save_service_matchings()
-        self.last_run = env.now
 
     def save_event_matchings(self):
         """Takes all queued rows from the MatcherQueue and adds them to the
         database.
         """
-        db.session.bulk_insert_mappings(EventMatching, self.queue.pop_new_rows())
-        db.session.commit()
+        db_session.bulk_insert_mappings(EventMatching, self.queue.pop_new_rows())
+        db_session.commit()
 
     def save_service_matchings(self):
         """Takes the primary keys of the service matchings (from the queue) that
@@ -42,17 +40,20 @@ class ServiceMatcher:
         # single query, rather than querying for each one.
 
         for service, unit in changed_matchings:
-
             service_matching = self.get_service_matching_props(service, unit)
+            # ignore service matching if unlikely matching
+            if self.matchings.unlikely_match(service_matching):
+                continue
+            # otherwise add it to update or insert list
             if get_service_matching(service, unit):
                 update.append(service_matching)
             else:
                 insert.append(service_matching)
 
-        db.session.bulk_insert_mappings(ServiceMatching, insert)
-        db.session.bulk_update_mappings(ServiceMatching, update)
+        db_session.bulk_insert_mappings(ServiceMatching, insert)
+        db_session.bulk_update_mappings(ServiceMatching, update)
 
-        db.session.commit()
+        db_session.commit()
 
         # TODO: socketio notify each changed
 
@@ -66,23 +67,28 @@ class ServiceMatcher:
 
         event_matchings = get_event_matchings(service, unit)
 
+        # getting the start and the end
         trust_times = [m.trust_event_time for m in event_matchings]
         gps_times = [m.gps_event_time for m in event_matchings]
-
         all_times = trust_times + gps_times
         start = min(all_times)
         end = max(all_times)
 
         time_errors = [diff_seconds(a, b) / 60.0 for a, b in zip(trust_times, gps_times)]
 
+        # we only want the unique trust events (they can repeat in matchings)
+        total_matching = len(set(m.trust_id for m in event_matchings))
+        total_for_service = self.matchings.get_total_for_service(service)
+
         return {
             'headcode': headcode,
             'origin_location': origin_location,
             'origin_departure': origin_departure,
             'gps_car_id': gps_car_id,
-            'total_matching': len(time_errors),
             'median_time_error': median(time_errors),
-            'variance_time_error': variance(time_errors),
+            'iqr_time_error': iqr(time_errors),
+            'total_matching': total_matching,
+            'matched_over_total': float(total_matching) / total_for_service,
             'start': start,
             'end': end
         }
