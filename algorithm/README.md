@@ -103,7 +103,7 @@ The functions in [filter_gps.py](filter_gps.py) and [filter_trust.py](filter_tru
 This part attempts to explain the reasoning behind the algorithm described above.
 
 #### Adding GPS reports
-There are a lot more gps reports than trust reports. Therefore most of the time, the algorithm will add gps reports to an existing segment without finding a matching trust report. It does this is by first finding a segment with the same headcode and the most recent gps report.
+There are a lot more gps reports than trust reports. Therefore most of the time, the algorithm will add gps reports to an existing segment without finding a matching trust report. It does this is by first finding a segment with the same gps_car_id and the most recent gps report.
 
 
 For instance if we have two segments, each with a gps_car_id '15068'. The first segment represents the time when the rolling stock ran service '1A02' and the second segment represents a different service that it is currently running. We want to add the newest report to the segment that the rolling stock is currently running and we select it by finding the segment with the most recent gps report.
