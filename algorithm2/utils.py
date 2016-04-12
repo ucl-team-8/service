@@ -1,4 +1,5 @@
 from math import sqrt, floor, ceil
+from collections import defaultdict
 
 # datetime difference in seconds
 def diff_seconds(a, b):
@@ -47,3 +48,23 @@ def stddev(list):
 # http://stackoverflow.com/a/3721301/1775517
 def time_intervals_overlap(t1start, t1end, t2start, t2end):
     return (t1start <= t2start <= t1end) or (t2start <= t1start <= t2end)
+
+def pkey_from_service_matching(service_matching):
+    return (service_matching.headcode,
+            service_matching.origin_location,
+            service_matching.origin_departure,
+            service_matching.gps_car_id)
+
+def pkey_from_service_matching_props(service_matching_props):
+    return (service_matching_props['headcode'],
+            service_matching_props['origin_location'],
+            service_matching_props['origin_departure'],
+            service_matching_props['gps_car_id'])
+
+def convert_matchings(matchings):
+    """Converts between unit matchings and service matchings."""
+    converted = defaultdict(set)
+    for key, values in matchings.iteritems():
+        for value in values:
+            converted[value].add(key)
+    return dict(converted)

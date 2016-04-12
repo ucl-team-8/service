@@ -1,6 +1,7 @@
 from flask import render_template, jsonify
 from sqlalchemy.sql import func, and_
-from app_db import app, db, socketio
+from app_db import app, db, socketio, dispatcher
+import app_socketio
 import sys
 import os
 
@@ -62,16 +63,13 @@ def schedule():
 
     return jsonify(result=map(extract_dict, records))
 
-# @socketio.on('connection')
-# def handle_message(message):
-#     print("Client connected")
 
 if __name__ == "__main__":
     # when the server is restarting, the environment variable is set to 'true'
     # this is to avoid running the algorithm again after a restart
     if os.environ.get('WERKZEUG_RUN_MAIN') != 'true':
         from algorithm2.simulator import Simulator
-        simulator = Simulator()
+        simulator = Simulator(dispatcher=dispatcher)
         simulator.deamon = True
         simulator.start()
     app.run(use_reloader=False)

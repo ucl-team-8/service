@@ -24,14 +24,14 @@ class MatcherQueue:
                    trust.origin_location,
                    trust.origin_departure)
         unit = gps.gps_car_id
-        self.changed_service_matchings.add((service, unit))
+        self.changed_service_matchings.add(service + (unit,))
 
     def pop_event_matching_rows(self):
         event_matching_rows = self.event_matching_rows
         self.event_matching_rows = []
         return event_matching_rows
 
-    def pop_changed_service_matchings(self):
+    def pop_changed_service_matchings_keys(self):
         changed_service_matchings = self.changed_service_matchings
         self.changed_service_matchings = set()
         return changed_service_matchings

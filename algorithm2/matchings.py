@@ -1,45 +1,16 @@
 import env
+from db_queries import get_service_matchings_for_unit
+from utils import time_intervals_overlap, convert_matchings
 from collections import defaultdict
 
 class Matchings:
 
-    def __init__(self, allocations):
+    def __init__(self, allocations, tracker):
         self.allocations = allocations
-        # dictionary with service/unit as key and number of reports as value
-        # essentially stores number of events per service/unit
-        # the service key is a tuple of (headcode, origin_location, origin_departure)
-        self.services = dict()
-        self.units = dict()
+        self.tracker = tracker
 
-    def seen_service(self, service):
-        if service not in self.services:
-            self.services[service] = 1
-        else:
-            self.services[service] += 1
-
-    def seen_unit(self, unit):
-        if unit not in self.units:
-            self.units[unit] = 1
-        else:
-            self.units[unit] += 1
-
-    def get_total_for_service(self, service):
-        if service in self.services:
-            return self.services[service]
-        else:
-            return 0
-
-    def get_total_for_unit(self, unit):
-        if unit in self.units:
-            return self.units[unit]
-        else:
-            return 0
-
-    def get_all_services(self):
-        return self.services.keys()
-
-    def get_all_units(self):
-        return self.units.keys()
+    def get_corrected_error(self, error):
+        return error - env.trust_delay
 
     def is_unlikely_match(self, service_matching_props):
         """Given a dictionary (representing a ServiceMatching row) it returns
@@ -50,16 +21,52 @@ class Matchings:
 
         """
         s = service_matching_props
-        service = (s['headcode'], s['origin_location'], s['origin_departure'])
-        corrected_error = s['median_time_error'] - env.trust_delay
+        corrected_error = self.get_corrected_error(s['median_time_error'])
         return s['total_matching'] < 2 or \
-               abs(corrected_error) > 3.0
+               abs(corrected_error) > 1.5
+
+    def is_likely_match(self, service_matching_props):
+        s = service_matching_props
+        corrected_error = self.get_corrected_error(s['median_time_error'])
+        if s['total_matching'] <= 2:
+            return False
+        elif s['total_matching'] <= 3:
+            return True if abs(corrected_error) < 0.75 and s['iqr_time_error'] < 2.5 else False
+        elif abs(corrected_error) < 1.0 and s['iqr_time_error'] < 3.0:
+            return True
+        else:
+            return False
 
     def get_matchings(self):
         """The final pass of the matching algorithm that decides which service
         was ran by each unit.
         """
-        pass
+        unit_matchings = dict()
+
+        for unit in self.tracker.get_all_units():
+
+            service_matchings = list(get_service_matchings_for_unit(unit))
+            service_matchings = filter(lambda s: self.is_likely_match(s.as_dict()), service_matchings)
+            service_matchings = sorted(service_matchings,
+                                       key=lambda s: abs(self.get_corrected_error(s.median_time_error)))
+
+            true_matches = set()
+
+            for s in service_matchings:
+
+                overlaps_with_existing = any(
+                    self.service_matchings_overlap(s,x) for x in true_matches)
+
+                if s.total_matching > 3 and not overlaps_with_existing:
+                    true_matches.add(s)
+
+            unit_matchings[unit] = set((s.headcode, s.origin_location, s.origin_departure) for s in true_matches)
+
+        return convert_matchings(unit_matchings)
+
+
+    def service_matchings_overlap(self, s1, s2):
+        return time_intervals_overlap(s1.start, s1.end, s2.start, s2.end)
 
     def get_matchings_diff(self, proposed):
         """Gets a dictionary of proposed allocations (output of `get_matchings`)
@@ -72,7 +79,9 @@ class Matchings:
 
         """
         acc = defaultdict(dict)
-        for service, proposed_units in proposed.iteritems():
+
+        for service in self.tracker.get_all_services():
+            proposed_units = proposed[service] if service in proposed else set()
             allocated_units = self.allocations.get_units_for_service(service)
 
             # unplanned are those that we think are good matchings, but are not
@@ -82,15 +91,14 @@ class Matchings:
             # mismatching are those that are in the (genius) allocations, but
             # the algorithm didn't allocate them
             mismatching_units = allocated_units - proposed_units
-            mismatching_units = [unit for unit in mismatching_units if self.get_total_for_unit(unit) > 4]
+            mismatching_units = [unit for unit in mismatching_units if self.tracker.get_total_for_unit(unit) > 10]
             # TODO: check if gps_car_id is "busy" during the time the allocated
             # service was running, if it isn't then likely we didn't have enough
-            # data to detect it was running it 
-
+            # data to detect it was running it
 
             if unplanned_units: # if not empty
                 acc[service]['unplanned'] = unplanned_units
             if mismatching_units:
                 acc[service]['mismatched'] = mismatching_units
 
-        return acc
+        return dict(acc)

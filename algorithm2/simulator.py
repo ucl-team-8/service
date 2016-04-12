@@ -3,34 +3,39 @@ import threading
 from db_queries import db_session
 from windowed_query import windowed_query
 from models import Trust, GPS, EventMatching, ServiceMatching
-from datetime import timedelta
+from datetime import datetime, timedelta
 
 class Simulator(threading.Thread):
 
     last_run = None
+    last_time_interval_update = None
 
-    def __init__(self):
+    def __init__(self, dispatcher):
         threading.Thread.__init__(self)
 
         from allocations import Allocations
         from matcher_queue import MatcherQueue
         from event_matcher import EventMatcher
-        from socket_manager import SocketManager
+        from tracker import Tracker
         from matchings import Matchings
         from service_matcher import ServiceMatcher
 
         queue = MatcherQueue()
         allocations = Allocations()
-        # socket_manager = SocketManager(socketio)
-        matchings = Matchings(allocations=allocations)
+        tracker = Tracker()
+        matchings = Matchings(allocations=allocations,
+                              tracker=tracker)
         event_matcher = EventMatcher(queue=queue,
-                                     matchings=matchings)
+                                     tracker=tracker)
         service_matcher = ServiceMatcher(queue=queue,
+                                         tracker=tracker,
                                          matchings=matchings)
 
+        self.dispatcher = dispatcher
         self.event_matcher = event_matcher
         self.service_matcher = service_matcher
-        self.interval = timedelta(minutes=env.matcher_interval)
+        self.time_update_interval = timedelta(milliseconds=env.time_update_interval)
+        self.matching_interval = timedelta(minutes=env.matcher_interval)
         self.windowed_gps = windowed_query(db_session.query(GPS), GPS.event_time, 1000)
         self.windowed_trust = windowed_query(db_session.query(Trust), Trust.event_time, 1000)
 
@@ -52,11 +57,18 @@ class Simulator(threading.Thread):
 
     def set_now(self, date):
         env.now = date
+        # time interval update
+        # if self.last_time_interval_update is None:
+        #     self.last_time_interval_update = datetime.now()
+        # if datetime.now() - self.last_time_interval_update > self.time_update_interval:
+        #     self.dispatcher.dispatch('time', env.now.isoformat())
+        #     self.last_time_interval_update = datetime.now()
+        # algorithm run interval
         if self.last_run is None:
             self.last_run = env.now
         # "simulating" running the service matcher at intervals
         # in production this would be some kind of scheduled task
-        if env.now - self.last_run > self.interval:
+        if env.now - self.last_run > self.matching_interval:
             self.service_matcher.run()
             self.last_run = env.now
 
@@ -82,6 +94,7 @@ class Simulator(threading.Thread):
 
         # run the matcher at the very end
         self.service_matcher.run()
+        # self.dispatcher.dispatch('time', env.now.isoformat())
         print("Finished matching.")
 
     def clear_tables(self):

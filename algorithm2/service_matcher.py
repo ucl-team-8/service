@@ -1,7 +1,7 @@
 import env
-from db_queries import db_session, get_event_matchings, get_service_matching
+from db_queries import db_session, get_event_matchings, get_service_matching, get_service_matchings_by_keys
 from models import EventMatching, ServiceMatching
-from utils import diff_seconds, median, iqr
+from utils import diff_seconds, median, iqr, pkey_from_service_matching, pkey_from_service_matching_props
 
 class ServiceMatcher:
     """This class does 2 things:
@@ -12,9 +12,10 @@ class ServiceMatcher:
 
     """
 
-    def __init__(self, queue, matchings):
+    def __init__(self, queue, matchings, tracker):
         self.queue = queue
         self.matchings = matchings
+        self.tracker = tracker
 
     def run(self):
         self.save_event_matchings()
@@ -32,26 +33,41 @@ class ServiceMatcher:
            need to be updated, updates them and stores them in the database.
         """
 
-        changed_matchings = self.queue.pop_changed_service_matchings()
+        changed_keys = self.queue.pop_changed_service_matchings_keys()
 
-        insert, update = [], []
+        insert, update, delete = [], [], []
 
         # TODO: can be more efficient if it gets existing primary keys with a
         # single query, rather than querying for each one.
 
-        for service, unit in changed_matchings:
+        existing = get_service_matchings_by_keys(changed_keys)
+        existing_keys = set(map(pkey_from_service_matching, existing))
+
+        for pkey in changed_keys:
+            service = pkey[0:3]
+            unit = pkey[3]
+            exists = pkey in existing_keys
             service_matching = self.get_service_matching_props(service, unit)
-            # ignore service matching if unlikely matching
-            if self.matchings.is_unlikely_match(service_matching):
-                continue
+            # delete service matching if unlikely matching
+            if self.matchings.is_unlikely_match(service_matching) and exists:
+                delete.append(service_matching)
             # otherwise add it to update or insert list
-            if get_service_matching(service, unit):
+            elif exists:
                 update.append(service_matching)
             else:
                 insert.append(service_matching)
 
+        # insert
         db_session.bulk_insert_mappings(ServiceMatching, insert)
+
+        # update
         db_session.bulk_update_mappings(ServiceMatching, update)
+
+        # delete
+        delete_keys = set(pkey_from_service_matching_props(props) for props in delete)
+        # if it's not empty
+        if delete_keys:
+            get_service_matchings_by_keys(delete_keys).delete()
 
         db_session.commit()
 
@@ -78,7 +94,7 @@ class ServiceMatcher:
 
         # we only want the unique trust events (they can repeat in matchings)
         total_matching = len(set(m.trust_id for m in event_matchings))
-        total_for_service = self.matchings.get_total_for_service(service)
+        total_for_service = self.tracker.get_total_for_service(service)
 
         return {
             'headcode': headcode,
