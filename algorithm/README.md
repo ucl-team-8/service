@@ -150,3 +150,8 @@ Finally, after analyzing the data output from the algorithm, we noticed that the
 
 We carefully considered changing the algorithm to make up for this flaw. But this small flaw was not worth the time that we would spent redesigning and reimplementing a large part of the algorithm. Therefore we decided that we could solve this issue in the interpolation stage.
 After performing all of the processing, mentioned above, the algorithm also checks if there is a segment with no `gps_car_id`. If there is, it tries to insert the trust reports in that segment into another segment with the same headcode.
+
+## Misc
+
+#### Command for killing background threads using python
+```kill -9 $(ps aux| grep '[p]ython app.py'| awk '{print $2}')```
