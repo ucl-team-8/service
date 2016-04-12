@@ -91,16 +91,3 @@ class Matchings:
                 acc[service]['mismatched'] = mismatching_units
 
         return acc
-
-    # def get_mismatching(self, proposed_mismatching):
-    #     """Gets a dictionary of allocations containing units that didn't match
-    #     the service (according to the algorithm) and out of those, it returns
-    #     the ones that were planned (in allocations).
-    #     """
-    #     mismatching = dict()
-    #     for service, proposed_mismatching_units in proposed_mismatching.iteritems():
-    #         allocated_units = self.allocations.get_units_for_service(service)
-    #         mismatching_units = proposed_mismatching_units.intersection(allocated_units)
-    #         if mismatching_units: # if not empty
-    #             mismatching[service] = mismatching_units
-    #     return mismatching
