@@ -115,9 +115,6 @@ However we want to create another segment as soon as that rolling stock starts r
 There are some other special cases where for example it does not find a potential segment. In those cases, the algorithm will often create a new segment. This is often found when for example a rolling stock starts running.
 
 
-There are some other special cases where for example it does not find a potential segment. In those cases, the algorithm will often create a new segment. This is often found when for example a rolling stock starts running.
-
-
 At the same time, we continue to receive trust reports. In the beginning, we do some very similar processing. We go through the segments and filter out the ones with the same headcode as a report. However if we do not find one, that is an indication that this service just started running. In this case, we either look for a segment that does not have a headcode yet and look for a potential matching gps report. If we find a potential match, we add the trust report to that segment. But if we do not find one,
 we simply create a new segment.
 
