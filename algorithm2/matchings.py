@@ -5,6 +5,9 @@ class Matchings:
 
     def __init__(self, allocations):
         self.allocations = allocations
+        # dictionary with service/unit as key and number of reports as value
+        # essentially stores number of events per service/unit
+        # the service key is a tuple of (headcode, origin_location, origin_departure)
         self.services = dict()
         self.units = dict()
 
@@ -40,7 +43,7 @@ class Matchings:
 
     def unlikely_match(self, service_matching_props):
         """Given a dictionary (representing a ServiceMatching row) it returns
-        whether it's a remotely likely match.
+        whether it's a *remotely* likely a match.
 
         Used by the service_matcher to decide whether it's worth storing it in
         the database.
@@ -55,11 +58,20 @@ class Matchings:
     # TODO: the two methods below should be refactored into one.
 
     def get_matchings(self):
-
+        """The final pass of the matching algorithm that decides which service
+        was ran by each unit.
+        """
+        pass
 
     def get_matchings_diff(self, proposed):
-        """Gets a dictionary of proposed allocations and returns the ones that
-        were proposed but not planned in allocations.
+        """Gets a dictionary of proposed allocations (output of `get_matchings`)
+        and returns the:
+
+        - unplanned allocations that the algorithm allocated but are not in the
+          genius allocations
+        - mismatched allocations that the algorithm didn't allocate but *are* in
+          the genius allocations
+
         """
         acc = defaultdict(dict)
         for service, proposed_units in proposed.iteritems():
