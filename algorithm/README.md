@@ -4,6 +4,8 @@
 The [simrealtime.py](simrealtime.py) file creates a new thread that simulates a real time environment by querying the database for trust and gps reports and calling the appropriate functions when it gets a new report.
 
 ### General overview
+
+#### How does it simulate real time?
 When you create a SimulateRealTime object and call start, a new thread will be initialized and it will start simulating a real time environment.
 
 The way it does it is by storing the next 100 gps and the next 100 trust reports in the self.records variable. You can imagine it like having 2 queues, one with trust reports and one with gps reports.
@@ -14,6 +16,7 @@ Since we want to simulate a real-time environment, the thread sleeps for `(next.
 
 The code also gets the next 100 reports once the gps or the trust queue gets too small. The reason we only hold a 100 reports in memory is because of scalability. If we want to test the segment generation with more reports, we will eventually not be able to hold all of them in memory.
 
+#### Cleanup thread
 On top of all of this, there is also a cleaner thread. This thread is responsible for going through all of the segments every x amount of time and find segments that have not been updated for a while. After finding those segments, we remove them from the `segments` variable and add them to another variable, called `old_segments`. The reason we do this is because the `addGPS`, `addTrust` and the `interpolate` functions loop through all of the segments quite often. However we know that the
 probability of those functions adding a report to a segment that has not been updated for more than 3 hours is close to 0.
 
@@ -36,7 +39,7 @@ Additionally, since SQLAlchemy is not thread safe from default, we are currently
 What the algorithm currently does is creating segments from all of the reports that are coming in.
 We define a segment to be a a set of consecutive gps reports, with their matching trust reports. However the gps and trust reports in one given segment can only be from 1 rolling stock and service respectively.
 
-The data structure of a segment can be found in [globals.py](algorithm/globals.py). At the moment, all of the segments are stored in memory but eventually they will be stored in the database.
+The data structure of a segment can be found in [globals.py](globals.py). At the moment, all of the segments are stored in memory but eventually they will be stored in the database.
 
 These are all of the data structures:
 
@@ -75,9 +78,9 @@ These are all of the data structures:
 
 
 ## Constructing segments
-There are 2 main files that are responsible for creating the segments: [filter_gps.py](algorithm/filter_gps.py) and [filter_trust.py](algorithm/filter_trust.py). Both add or change segments using a different algorithm.
+There are 2 main files that are responsible for creating the segments: [filter_gps.py](filter_gps.py) and [filter_trust.py](filter_trust.py). Both add or change segments using a different algorithm.
 
-The functions in [filter_gps.py](algorithm/filter_gps.py) and [filter_trust.py](algorithm/filter_trust.py) are executed by a threadpool.
+The functions in [filter_gps.py](filter_gps.py) and [filter_trust.py](filter_trust.py) are executed by a threadpool.
 
 ### Adding gps reports to a segment
 1. Goes through the segments and finds the most recent one with the same gps_car_id.
