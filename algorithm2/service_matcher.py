@@ -58,8 +58,8 @@ class ServiceMatcher:
         # TODO: socketio notify each changed
 
     def get_service_matching_props(self, service, unit):
-        """Returns an instance of ServiceMatching (a table row essentially) with
-        all the fields calculated and populated.
+        """Returns an ia dict of fields for ServiceMatching (a table row
+        essentially) with all the required fields calculated and populated.
         """
 
         headcode, origin_location, origin_departure = service
