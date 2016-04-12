@@ -102,7 +102,7 @@ The functions in [filter_gps.py](filter_gps.py) and [filter_trust.py](filter_tru
 ### Heuristics
 This part attempts to explain the reasoning behind the algorithm described above.
 
-
+#### Adding GPS reports
 There are a lot more gps reports than trust reports. Therefore most of the time, the algorithm will add gps reports to an existing segment without finding a matching trust report. It does this is by first finding a segment with the same headcode and the most recent gps report.
 
 
@@ -114,7 +114,7 @@ However we want to create a new segment as soon as that rolling stock starts run
 
 There are some other special cases where for example it does not find a potential segment. In those cases, the algorithm will often create a new segment. This is often found when for example a rolling stock starts running.
 
-
+#### Adding TRUST reports
 At the same time, we continue to receive trust reports. In the beginning, we do some very similar processing. We go through the segments and filter out the ones with the same headcode as the report. However if we do not find one, that is an indication that this service just started running. In this case, we either look for a segment that does not have a headcode, and look for a matching gps report. If we find a potential match, we add the trust report to that segment. But if we do not find one, we simply create a new segment.
 
 
