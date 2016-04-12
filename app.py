@@ -188,4 +188,4 @@ simulation = None
 if __name__ == "__main__":
     simulation = simrealtime.SimulateRealTime(globals.speedup)
     simulation.start()
-    app.run()
+    app.run(use_reloader=False)
