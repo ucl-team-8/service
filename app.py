@@ -74,4 +74,4 @@ if __name__ == "__main__":
         simulator = Simulator()
         simulator.deamon = True
         simulator.start()
-    app.run()
+    app.run(use_reloader=False)
