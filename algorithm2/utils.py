@@ -43,3 +43,7 @@ def variance(lst):
 
 def stddev(list):
     return sqrt(variance(lst))
+
+# http://stackoverflow.com/a/3721301/1775517
+def time_intervals_overlap(t1start, t1end, t2start, t2end):
+    return (t1start <= t2start <= t1end) or (t2start <= t1start <= t2end)
