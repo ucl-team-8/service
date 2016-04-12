@@ -78,27 +78,33 @@ class Matchings:
           the genius allocations
 
         """
-        acc = defaultdict(dict)
+        matchings = defaultdict(dict)
 
         for service in self.tracker.get_all_services():
             proposed_units = proposed[service] if service in proposed else set()
             allocated_units = self.allocations.get_units_for_service(service)
 
-            # unplanned are those that we think are good matchings, but are not
-            # in the (genius) allocations
-            unplanned_units = proposed_units - allocated_units
+            # correct are those that we think are good matchings and are also in
+            # the allocations
+            correct_units = proposed_units.intersection(allocated_units)
 
-            # mismatching are those that are in the (genius) allocations, but
-            # the algorithm didn't allocate them
-            mismatching_units = allocated_units - proposed_units
-            mismatching_units = [unit for unit in mismatching_units if self.tracker.get_total_for_unit(unit) > 10]
+            # additional are those that we think are good matchings, but are not
+            # in the (genius) allocations
+            additional_units = proposed_units - allocated_units
+
+            # incorrect are those that are in the (genius) allocations, but
+            # the algorithm doesn't think they're good matchings
+            incorrect_units = allocated_units - proposed_units
+            incorrect_units = [unit for unit in incorrect_units if self.tracker.get_total_for_unit(unit) > 10]
             # TODO: check if gps_car_id is "busy" during the time the allocated
             # service was running, if it isn't then likely we didn't have enough
             # data to detect it was running it
 
-            if unplanned_units: # if not empty
-                acc[service]['unplanned'] = unplanned_units
-            if mismatching_units:
-                acc[service]['mismatched'] = mismatching_units
+            if correct_units: # if not empty
+                matchings[service]['correct'] = correct_units
+            if additional_units:
+                matchings[service]['additional'] = additional_units
+            if incorrect_units:
+                matchings[service]['incorrect'] = incorrect_units
 
-        return dict(acc)
+        return dict(matchings)
