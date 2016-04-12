@@ -177,9 +177,11 @@ class ServiceMatching(db.Model):
     # Rolling stock identifier
     gps_car_id = db.Column(db.String(20), primary_key=True)
 
-    total_matching = db.Column(db.Integer, nullable=False)
     median_time_error = db.Column(db.Float, nullable=False)
-    variance_time_error = db.Column(db.Float, nullable=False)
+    iqr_time_error = db.Column(db.Float, nullable=False)
+
+    total_matching = db.Column(db.Integer, nullable=False)
+    matched_over_total = db.Column(db.Float, nullable=False)
 
     start = db.Column(db.DateTime, nullable=False)
     end = db.Column(db.DateTime, nullable=False)
