@@ -12,13 +12,13 @@ class MatcherQueue:
     """
 
     def __init__(self):
-        self.new_rows = []
+        self.event_matching_rows = []
         self.changed_matchings = set()
 
     def add(self, trust, gps):
 
         row = self.__get_matching_props(trust, gps)
-        self.new_rows.append(row)
+        self.event_matching_rows.append(row)
 
         service = (trust.headcode,
                    trust.origin_location,
@@ -26,10 +26,10 @@ class MatcherQueue:
         unit = gps.gps_car_id
         self.changed_matchings.add((service, unit))
 
-    def pop_new_rows(self):
-        new_rows = self.new_rows
-        self.new_rows = []
-        return new_rows
+    def pop_event_matching_rows(self):
+        event_matching_rows = self.event_matching_rows
+        self.event_matching_rows = []
+        return event_matching_rows
 
     def pop_changed_matchings(self):
         changed_matchings = self.changed_matchings

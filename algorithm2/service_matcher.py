@@ -24,7 +24,7 @@ class ServiceMatcher:
         """Takes all queued rows from the MatcherQueue and adds them to the
         database.
         """
-        db_session.bulk_insert_mappings(EventMatching, self.queue.pop_new_rows())
+        db_session.bulk_insert_mappings(EventMatching, self.queue.pop_event_matching_rows())
         db_session.commit()
 
     def save_service_matchings(self):
