@@ -47,15 +47,18 @@ class ServiceMatcher:
             service = pkey[0:3]
             unit = pkey[3]
             exists = pkey in existing_keys
-            service_matching = self.get_service_matching_props(service, unit)
+            service_matching_props = self.get_service_matching_props(service, unit)
+
             # delete service matching if unlikely matching
-            if self.matchings.is_unlikely_match(service_matching) and exists:
-                delete.append(service_matching)
+            if self.matchings.is_unlikely_match(service_matching_props):
+                if exists:
+                    delete.append(service_matching_props)
             # otherwise add it to update or insert list
             elif exists:
-                update.append(service_matching)
+                update.append(service_matching_props)
             else:
-                insert.append(service_matching)
+                insert.append(service_matching_props)
+
 
         # insert
         db_session.bulk_insert_mappings(ServiceMatching, insert)
