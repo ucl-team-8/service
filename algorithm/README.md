@@ -6,7 +6,7 @@ The [simrealtime.py](algorithm/simrealtime.py) file creates a new thread that si
 ### General overview
 When you create a SimulateRealTime object and call start, a new thread will be initialized and it will start simulating a real time environment.
 
-The way it does it is by storing the next 100 gps and the next 100 trust reports in the self.records variable. You can image it to be like having 2 queues, one with trust reports and one with gps reports.
+The way it does it is by storing the next 100 gps and the next 100 trust reports in the self.records variable. You can imagine it like having 2 queues, one with trust reports and one with gps reports.
 
 Next, the thread starts off by checking the first value in the gps queue and the first value in the trust queue. We compare the time stamps on the reports and store the oldest one in the `current` variable, take it out of the queue and submit it to be processed. After that, we compare the first value in the gps queue and the trust queue and choose the oldest one again and store it in the `next` variable.
 
