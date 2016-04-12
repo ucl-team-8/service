@@ -1,7 +1,7 @@
 # How does the algorithm work?
 
 ## Simulating realtime
-The [simrealtime.py](algorithm/simrealtime.py) file creates a new thread that simulates a real time environment by querying the database for trust and gps reports and calling the appropriate functions when it gets a new report.
+The [simrealtime.py](simrealtime.py) file creates a new thread that simulates a real time environment by querying the database for trust and gps reports and calling the appropriate functions when it gets a new report.
 
 ### General overview
 When you create a SimulateRealTime object and call start, a new thread will be initialized and it will start simulating a real time environment.
