@@ -79,9 +79,14 @@ class Matchings:
             # in the (genius) allocations
             unplanned_units = proposed_units - allocated_units
 
-            # mismatching are those
+            # mismatching are those that are in the (genius) allocations, but
+            # the algorithm didn't allocate them
             mismatching_units = allocated_units - proposed_units
             mismatching_units = [unit for unit in mismatching_units if self.get_total_for_unit(unit) > 4]
+            # TODO: check if gps_car_id is "busy" during the time the allocated
+            # service was running, if it isn't then likely we didn't have enough
+            # data to detect it was running it 
+
 
             if unplanned_units: # if not empty
                 acc[service]['unplanned'] = unplanned_units
