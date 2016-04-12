@@ -13,7 +13,7 @@ class MatcherQueue:
 
     def __init__(self):
         self.event_matching_rows = []
-        self.changed_matchings = set()
+        self.changed_service_matchings = set()
 
     def add(self, trust, gps):
 
@@ -24,17 +24,17 @@ class MatcherQueue:
                    trust.origin_location,
                    trust.origin_departure)
         unit = gps.gps_car_id
-        self.changed_matchings.add((service, unit))
+        self.changed_service_matchings.add((service, unit))
 
     def pop_event_matching_rows(self):
         event_matching_rows = self.event_matching_rows
         self.event_matching_rows = []
         return event_matching_rows
 
-    def pop_changed_matchings(self):
-        changed_matchings = self.changed_matchings
-        self.changed_matchings = set()
-        return changed_matchings
+    def pop_changed_service_matchings(self):
+        changed_service_matchings = self.changed_service_matchings
+        self.changed_service_matchings = set()
+        return changed_service_matchings
 
     def __get_matching_props(self, trust, gps):
         return {

@@ -32,7 +32,7 @@ class ServiceMatcher:
            need to be updated, updates them and stores them in the database.
         """
 
-        changed_matchings = self.queue.pop_changed_matchings()
+        changed_matchings = self.queue.pop_changed_service_matchings()
 
         insert, update = [], []
 
