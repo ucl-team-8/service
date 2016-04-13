@@ -40,9 +40,9 @@ class Dispatcher:
             if topic not in self.listeners:
                 return
             print("dispatching to", topic)
-            for sid in self.listeners[topic]:
-                self.socketio.emit(topic, *args, room=sid)
-            # self.socketio.emit(topic, *args)
+            # for sid in self.listeners[topic]:
+            #     self.socketio.emit(topic, *args, room=sid)
+            self.socketio.emit(topic, *args)
 
     def dispatch_service(self, service, segments):
         print('dispatching service', service)
