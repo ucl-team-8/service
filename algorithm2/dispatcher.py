@@ -32,5 +32,6 @@ class Dispatcher:
         print("dispatching to", topic)
         if topic not in self.listeners:
             return
-        for sid in self.listeners[topic]:
-            self.socketio.emit(topic, *args, room=sid)
+        # for sid in self.listeners[topic]:
+        #     self.socketio.emit(topic, *args, room=sid)
+        self.socketio.emit(topic, *args)
