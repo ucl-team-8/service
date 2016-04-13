@@ -40,6 +40,12 @@ class Schedule(db.Model):
     def as_dict(self):
         return {c.name: getattr(self, c.name) for c in self.__table__.columns}
 
+db.Index('schedule_service_matching_lookup',
+         Schedule.headcode,
+         Schedule.origin_location,
+         Schedule.origin_departure,
+         Schedule.unit)
+
 
 class GPS(db.Model):
     __tablename__ = 'gps'
@@ -76,8 +82,8 @@ class GeographicalLocation(db.Model):
     description = db.Column(db.String(50))
     easting = db.Column(db.Integer)
     northing = db.Column(db.Integer)
-    latitude = db.Column(db.Float(precision=32))
-    longitude = db.Column(db.Float(precision=32))
+    latitude = db.Column(db.Float)
+    longitude = db.Column(db.Float)
     type = db.Column(db.String(20))
     is_cif_stop = db.Column(db.Boolean)
     cif_stop_count = db.Column(db.Integer)
@@ -181,7 +187,7 @@ class ServiceMatching(db.Model):
     iqr_time_error = db.Column(db.Float, nullable=False)
 
     total_matching = db.Column(db.Integer, nullable=False)
-    matched_over_total = db.Column(db.Float, nullable=False)
+    total_missed_in_between = db.Column(db.Integer, nullable=False)
 
     start = db.Column(db.DateTime, nullable=False)
     end = db.Column(db.DateTime, nullable=False)
