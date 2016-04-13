@@ -2,6 +2,7 @@ import _ from "lodash";
 import d3 from "d3";
 import L from "leaflet";
 import io from "socketio";
+import moment from "moment";
 
 import {
   getSegment,
@@ -9,6 +10,7 @@ import {
   getLocations,
   parseSegment,
   parseMatching,
+  parseDate,
   serializeDate
 } from "./utils/data";
 
@@ -57,6 +59,16 @@ window.routeMap = routeMap;
 
 
 /* =============================================================================
+   Time
+ */
+
+let timeElem = d3.select(".current-time");
+let timeFormat = date => moment(date).format("ddd, D MMM YYYY HH:mm");
+
+window.updateTime = (time) => timeElem.text(timeFormat(time));
+
+
+/* =============================================================================
    Rendering segments
  */
 
@@ -88,11 +100,11 @@ function rerenderSegments() {
   renderSegments(segmentsContainer.node(), serviceSegments, routeMap);
 }
 
-let socket = io();
-
 /* =============================================================================
    Algorithm 2
  */
+
+let socket = io();
 
 window.socket = socket;
 
@@ -118,7 +130,7 @@ socket.on('segments', function(segments) {
 });
 
 socket.on('time', function(time) {
-  console.log("time", time);
+  updateTime(parseDate(time));
 });
 
 function subscribe(service) {
