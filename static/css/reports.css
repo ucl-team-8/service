@@ -12,7 +12,11 @@
 }
 
 .segment:hover {
-  background: #f9f9f9;
+  background: #fafafa;
+}
+
+.segment.type-service {
+  border-right: 3px solid #ddd;
 }
 
 .segment:last-child {
@@ -21,6 +25,35 @@
 
 .segment .header {
   height: 40px !important;
+  text-align: center;
+}
+
+.header .heading {
+  display: block;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #444;
+  text-transform: uppercase;
+  margin: 1em 0 .6em;
+}
+
+.header .explanation {
+  font-size: 1.2em;
+  color: #999;
+}
+
+.header .explanation .matched,
+.type-added .heading, .type-unchanged .heading {
+  color: #17952F;
+}
+
+.header .explanation .not-matched,
+.type-removed .heading {
+  color: #AC1F1F;
+}
+
+.header .explanation b {
+  color: #777;
 }
 
 .report circle {
