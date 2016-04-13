@@ -5,24 +5,24 @@ class Dispatcher:
         self.socketio = socketio
         self.listeners = dict()
 
-    def subscribe(self, topic, socket):
-        print("subscribing", socket, "to", topic)
+    def subscribe(self, topic, sid):
+        print("subscribing", sid, "to", topic)
         if topic not in self.listeners:
             self.listeners[topic] = set()
         listeners = self.listeners[topic]
-        listeners.add(socket)
+        listeners.add(sid)
 
-    def unsubscribe(self, topic, socket):
-        print("unsubscribing", socket, "from", topic)
+    def unsubscribe(self, topic, sid):
+        print("unsubscribing", sid, "from", topic)
         if topic not in self.listeners:
             return
         listeners = self.listeners[topic]
-        listeners.discard(socket)
+        listeners.discard(sid)
 
-    def unsubscribe_from_all(self, socket):
-        print("unsubscribing", socket, "from all")
+    def unsubscribe_from_all(self, sid):
+        print("unsubscribing", sid, "from all")
         for topic in self.listeners:
-            self.listeners[topic].remove(socket)
+            self.listeners[topic].remove(sid)
 
     def has_listeners(self, topic):
         return topic in self.listeners and \
