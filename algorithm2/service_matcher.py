@@ -107,7 +107,7 @@ class ServiceMatcher:
             'median_time_error': median(time_errors),
             'iqr_time_error': iqr(time_errors),
             'total_matching': total_matching,
-            'matched_over_total': float(total_matching) / total_for_service,
+            'total_missed_in_between': total_for_service - total_matching,
             'start': start,
             'end': end
         }
