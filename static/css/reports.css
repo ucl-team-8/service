@@ -9,6 +9,7 @@
 
 .segment {
   border-right: 1px solid #ccc;
+  flex: 0;
 }
 
 .segment:hover {
@@ -24,7 +25,8 @@
 }
 
 .segment .header {
-  height: 40px !important;
+  height: 60px !important;
+  padding: 0 15px;
   text-align: center;
 }
 
@@ -53,7 +55,7 @@
 }
 
 .header .explanation b {
-  color: #777;
+  color: #555;
 }
 
 .report circle {

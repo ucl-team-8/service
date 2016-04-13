@@ -2,7 +2,7 @@ import d3 from "d3";
 import renderReports from "./render-reports";
 
 let widthOfItem = 120;
-let padding = { top: 40, bottom: 20, left: 25, right: 20 };
+let padding = { top: 20, bottom: 20, left: 25, right: 20 };
 
 export default function renderSegment(container, scale, data, routeMap) {
 
