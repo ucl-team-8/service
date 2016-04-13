@@ -139,13 +139,25 @@ function subscribe(service) {
   socket.emit('subscribe', serviceKey);
 }
 
-window.select = (service) => {
+function unsubscribe(service) {
   let serviceKey = getServiceKey(service);
-  window.selected = serviceKey;
+  serviceKey.origin_departure = serializeDate(serviceKey.origin_departure);
+  socket.emit('unsubscribe', serviceKey);
+}
+
+window.select = (service) => {
+
+  if (window.selected) {
+    let oldServiceKey = getServiceKey(window.selected);
+    unsubscribe(oldServiceKey);
+  }
+
+  let serviceKey = getServiceKey(service);
   console.log("selecting", serviceKey);
+  window.selected = serviceKey;
   subscribe(serviceKey);
-  routeMap.plot([]);
   rerenderSegments();
+  routeMap.plot([]);
 }
 
 

@@ -31,14 +31,14 @@ def subscribe(service_dict):
     dispatcher.dispatch_service(service, segments)
 
 @socketio.on('unsubscribe')
-def unsubscribe(service):
-    service_key = get_service_key(service)
-    dispatcher.unsubscribe(service_key, request.sid)
+def unsubscribe(service_dict):
+    service = get_service_key(service_dict)
+    dispatcher.unsubscribe(service, request.sid)
 
 @socketio.on('disconnect')
 def ondisconnect():
     print("Client disconnected")
-    # dispatcher.unsubscribe_from_all(request.sid)
+    dispatcher.unsubscribe_from_all(request.sid)
 
 def get_matchings():
     env.matchings_lock.acquire()
