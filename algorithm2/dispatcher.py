@@ -23,7 +23,7 @@ class Dispatcher:
     def unsubscribe_from_all(self, sid):
         print("unsubscribing", sid, "from all")
         for topic in self.listeners:
-            self.listeners[topic].remove(sid)
+            self.listeners[topic].discard(sid)
 
     def has_listeners(self, topic):
         return topic in self.listeners and \
