@@ -91,7 +91,6 @@ def serialize_matchings(matchings_diff):
 def get_service_key(service_dict):
     origin_departure = service_dict['origin_departure']
     if not isinstance(origin_departure, datetime):
-        print(origin_departure)
         origin_departure = iso_to_date(origin_departure)
     return (service_dict['headcode'],
             service_dict['origin_location'],
