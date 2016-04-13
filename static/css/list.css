@@ -1,0 +1,74 @@
+.services-container {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+  background: #f6f6f6;
+  overflow-y: scroll;
+  border-right: 3px solid #ddd;
+}
+
+.label {
+  font-size: 1.2em;
+  background: #ddd;
+  color: #555;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: .25em .65em;
+}
+
+.service {
+  font-size: 1.2em;
+  line-height: 1.1;
+  padding: .75em;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background 200ms linear;
+}
+
+.service.selected,
+.service.selected:hover {
+  background-color: #ebebeb;
+}
+
+.service:hover {
+  background: rgba(255,255,255,.25);
+}
+
+.service .metadata {
+  flex: 1;
+}
+
+.service .matchings {
+  flex: 0;
+}
+
+.service .matchings span {
+  background: rgba(0,0,0,.3);
+  border-radius: 100px;
+  color: white;
+  padding: 2px 5px;
+}
+
+.service .departure {
+  color: rgba(0,0,0,.5);
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.service .origin {
+  font-weight: 700;
+}
+
+.service h3 {
+  font-weight: 400;
+  margin: .2em 0 0;
+  color: rgba(0,0,0,.5);
+}
+
+.service .headcode {
+  color: black;
+  font-weight: bold;
+}

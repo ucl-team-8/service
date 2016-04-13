@@ -1,5 +1,7 @@
 #map {
   background: white;
+  flex: 1;
+  border-right: 3px solid #ddd;
 }
 
 .trust .route-section {

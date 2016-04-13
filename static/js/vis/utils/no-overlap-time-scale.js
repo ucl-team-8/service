@@ -102,9 +102,10 @@ function compactScales(scales) {
     let pixelsPerMinute = scales[i].pixelsPerMinute;
     let numberOfEvents = 1;
     let end;
-    while (scales[i] && scales[i].pixelsPerMinute === pixelsPerMinute) {
-      end = scales[i].domain[1];
-      numberOfEvents++;
+    let scale;
+    while ((scale = scales[i]) && scale.pixelsPerMinute === pixelsPerMinute) {
+      end = scale.domain[1];
+      numberOfEvents += scale.numberOfEvents ? scale.numberOfEvents - 1 : 1;
       i++;
     }
     compact.push({
@@ -133,7 +134,7 @@ function scaleFromScales(minGap, scales) {
       let domainEnd = scale.domain[1];
       let dy;
       if (scale.pixelsPerMinute === Infinity) {
-        dy = minGap * scale.numberOfEvents;
+        dy = minGap * (scale.numberOfEvents - 1);
         exceptions[+domainStart] = y;
       } else {
         let minutes = (domainEnd - domainStart) / (1000 * 60);

@@ -90,6 +90,14 @@ export default class RouteMap {
   }
 
   /*
+  */
+  plot(items) {
+    let [services, units] = _.partition(items, item => item.type == "trust")
+    this.plotServices(services.map(d => d.reports));
+    this.plotUnits(units.map(d => d.reports));
+  }
+
+  /*
   Given a Date object, it grays out all the stops that happened in the future.
   Pass `null` to reset.
   */
