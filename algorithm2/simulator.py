@@ -4,6 +4,7 @@ from db_queries import db_session
 from windowed_query import windowed_query
 from models import Trust, GPS, EventMatching, ServiceMatching
 from datetime import datetime, timedelta
+from utils import date_to_iso, serialize_matchings
 
 class Simulator(threading.Thread):
 
@@ -31,6 +32,7 @@ class Simulator(threading.Thread):
                                          tracker=tracker,
                                          matchings=matchings)
 
+        self.matchings = matchings
         self.dispatcher = dispatcher
         self.event_matcher = event_matcher
         self.service_matcher = service_matcher
@@ -57,19 +59,13 @@ class Simulator(threading.Thread):
 
     def set_now(self, date):
         env.now = date
-        # time interval update
-        # if self.last_time_interval_update is None:
-        #     self.last_time_interval_update = datetime.now()
-        # if datetime.now() - self.last_time_interval_update > self.time_update_interval:
-        #     self.dispatcher.dispatch('time', env.now.isoformat())
-        #     self.last_time_interval_update = datetime.now()
         # algorithm run interval
         if self.last_run is None:
             self.last_run = env.now
         # "simulating" running the service matcher at intervals
         # in production this would be some kind of scheduled task
         if env.now - self.last_run > self.matching_interval:
-            self.service_matcher.run()
+            self.run_algorithm()
             self.last_run = env.now
 
     def simulate(self):
@@ -93,8 +89,7 @@ class Simulator(threading.Thread):
                 next_trust = self.get_next_trust()
 
         # run the matcher at the very end
-        self.service_matcher.run()
-        # self.dispatcher.dispatch('time', env.now.isoformat())
+        self.run_algorithm()
         print("Finished matching.")
 
     def clear_tables(self):
@@ -105,3 +100,19 @@ class Simulator(threading.Thread):
     def run(self):
         self.clear_tables()
         self.simulate()
+
+    def run_algorithm(self):
+        self.service_matcher.run()
+        matchings = self.save_matchings_in_global()
+        self.dispatcher.dispatch('matchings', serialize_matchings(matchings))
+        self.dispatcher.dispatch('time', date_to_iso(env.now))
+        # TODO: return segments
+        # for service in matchings:
+        #     self.dispatcher.dispatch(service, )
+
+    def save_matchings_in_global(self):
+        all_matchings = self.matchings.get_all_matchings()
+        matchings_diff = self.matchings.get_matchings_diff(all_matchings)
+        with env.matchings_lock:
+            env.matchings = matchings_diff
+        return matchings_diff

@@ -71,3 +71,15 @@ def convert_matchings(matchings):
 
 def date_to_iso(date):
     return date.strftime('%a, %d %b %Y %H:%M:%S GMT')
+
+def serialize_matchings(matchings_diff):
+    json = list()
+    for service, units in matchings_diff.iteritems():
+        headcode, origin_location, origin_departure = service
+        json.append({
+            'headcode': headcode,
+            'origin_location': origin_location,
+            'origin_departure': date_to_iso(origin_departure),
+            'units': { key: list(units) for key, units in units.iteritems() }
+        })
+    return json

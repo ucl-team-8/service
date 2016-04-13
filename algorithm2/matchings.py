@@ -12,7 +12,9 @@ class Matchings:
     def get_corrected_error(self, error):
         return error - env.trust_delay
 
+    # TODO: just use `not is_likely_match` here?
     def is_unlikely_match(self, service_matching_props):
+        return False
         """Given a dictionary (representing a ServiceMatching row) it returns
         whether it's a *remotely* likely a match.
 
@@ -57,7 +59,7 @@ class Matchings:
                 overlaps_with_existing = any(
                     self.service_matchings_overlap(s,x) for x in true_matches)
 
-                if s.total_matching > 3 and not overlaps_with_existing:
+                if not overlaps_with_existing:
                     true_matches.add(s)
 
             unit_matchings[unit] = set((s.headcode, s.origin_location, s.origin_departure) for s in true_matches)
@@ -108,17 +110,3 @@ class Matchings:
                 matchings[service]['removed'] = removed_units
 
         return dict(matchings)
-
-    def serialize_matchings_diff(self, matchings_diff):
-        json = list()
-        for service, units in matchings_diff.iteritems():
-            headcode, origin_location, origin_departure = service
-            json.append({
-                'service': {
-                    'headcode': headcode,
-                    'origin_location': origin_location,
-                    'origin_departure': date_to_iso(origin_departure)
-                },
-                'units': { key: list(units) for key, units in units.iteritems() }
-            })
-        return json

@@ -20,7 +20,6 @@ class ServiceMatcher:
     def run(self):
         self.save_event_matchings()
         self.save_service_matchings()
-        self.save_matchings_in_global()
 
     def save_event_matchings(self):
         """Takes all queued rows from the MatcherQueue and adds them to the
@@ -75,8 +74,6 @@ class ServiceMatcher:
 
         db_session.commit()
 
-        # TODO: socketio notify each changed
-
     def get_service_matching_props(self, service, unit):
         """Returns an ia dict of fields for ServiceMatching (a table row
         essentially) with all the required fields calculated and populated.
@@ -112,11 +109,3 @@ class ServiceMatcher:
             'start': start,
             'end': end
         }
-
-    def save_matchings_in_global(self):
-        all_matchings = self.matchings.get_all_matchings()
-        matchings_diff = self.matchings.get_matchings_diff(all_matchings)
-        serialized = self.matchings.serialize_matchings_diff(matchings_diff)
-        env.matchings_lock.acquire()
-        env.matchings = serialized
-        env.matchings_lock.release()
