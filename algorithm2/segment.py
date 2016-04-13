@@ -1,3 +1,4 @@
+import env
 from sqlalchemy import and_
 from db_queries import db_session, get_event_matchings, get_service_matchings_by_keys
 from models import Trust, GPS, ServiceMatching, EventMatching
@@ -76,6 +77,8 @@ def get_service_segment(service):
         headcode=service[0],
         origin_location=service[1],
         origin_departure=service[2]
+    ).filter(
+        Trust.event_time <= env.now
     )
 
     return {
