@@ -17,7 +17,6 @@ export default function render(container, data, selected) {
       .classed("selected", d => sameService(d, window.selected))
       .on("click", d => {
         window.select(d);
-        window.render();
       });
 
 }
