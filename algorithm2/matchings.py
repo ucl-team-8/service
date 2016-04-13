@@ -95,7 +95,7 @@ class Matchings:
             # removed are those that are in the (genius) allocations, but
             # the algorithm doesn't think they're good matchings
             removed_units = allocated_units - proposed_units
-            removed_units = [unit for unit in removed_units if self.tracker.get_total_for_unit(unit) > 10]
+            removed_units = set(unit for unit in removed_units if self.tracker.get_total_for_unit(unit) > 10)
             # TODO: check if gps_car_id is "busy" during the time the allocated
             # service was running, if it isn't then likely we didn't have enough
             # data to detect it was running it
