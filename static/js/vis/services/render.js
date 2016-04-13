@@ -13,6 +13,8 @@ export default function render(container, data, selected) {
   services.enter().append("div")
       .attr("class", "service");
 
+  services.exit().remove()
+
   services.html(d => d.headcode != null ? template(d) : noServiceTemplate(d))
       .classed("selected", d => sameService(d, window.selected))
       .on("click", d => {
