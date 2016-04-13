@@ -156,7 +156,7 @@ window.select = (service) => {
   console.log("selecting", serviceKey);
   window.selected = serviceKey;
   subscribe(serviceKey);
-  rerenderSegments();
+  render();
   routeMap.plot([]);
 }
 
