@@ -1,6 +1,7 @@
 body {
   display: flex;
   align-items: stretch;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 .container {
@@ -14,17 +15,18 @@ body {
   left: 0;
 }
 
-.map-pane {
+.left-pane {
   display: flex;
-  flex: 1;
+  flex: 2;
+  max-width: 22em;
 }
 
-#map {
-  flex: 1;
+.middle-pane {
+  display: flex;
+  flex: 4;
 }
 
-.reports-pane {
-  flex: 1;
-  overflow: scroll;
-  cursor: default;
+.right-pane {
+  display: flex;
+  flex: 6;
 }
