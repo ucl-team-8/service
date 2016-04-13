@@ -84,27 +84,27 @@ class Matchings:
             proposed_units = proposed[service] if service in proposed else set()
             allocated_units = self.allocations.get_units_for_service(service)
 
-            # correct are those that we think are good matchings and are also in
+            # unchanged are those that we think are good matchings and are also in
             # the allocations
-            correct_units = proposed_units.intersection(allocated_units)
+            unchanged_units = proposed_units.intersection(allocated_units)
 
-            # additional are those that we think are good matchings, but are not
+            # added are those that we think are good matchings, but are not
             # in the (genius) allocations
-            additional_units = proposed_units - allocated_units
+            added_units = proposed_units - allocated_units
 
-            # incorrect are those that are in the (genius) allocations, but
+            # removed are those that are in the (genius) allocations, but
             # the algorithm doesn't think they're good matchings
-            incorrect_units = allocated_units - proposed_units
-            incorrect_units = [unit for unit in incorrect_units if self.tracker.get_total_for_unit(unit) > 10]
+            removed_units = allocated_units - proposed_units
+            removed_units = [unit for unit in removed_units if self.tracker.get_total_for_unit(unit) > 10]
             # TODO: check if gps_car_id is "busy" during the time the allocated
             # service was running, if it isn't then likely we didn't have enough
             # data to detect it was running it
 
-            if correct_units: # if not empty
-                matchings[service]['correct'] = correct_units
-            if additional_units:
-                matchings[service]['additional'] = additional_units
-            if incorrect_units:
-                matchings[service]['incorrect'] = incorrect_units
+            if unchanged_units: # if not empty
+                matchings[service]['unchanged'] = unchanged_units
+            if added_units:
+                matchings[service]['added'] = added_units
+            if removed_units:
+                matchings[service]['removed'] = removed_units
 
         return dict(matchings)
