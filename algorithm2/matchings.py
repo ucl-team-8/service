@@ -1,6 +1,6 @@
 import env
 from db_queries import get_service_matchings_for_unit
-from utils import time_intervals_overlap, convert_matchings
+from utils import time_intervals_overlap, convert_matchings, date_to_iso
 from collections import defaultdict
 
 class Matchings:
@@ -37,7 +37,7 @@ class Matchings:
         else:
             return False
 
-    def get_matchings(self):
+    def get_all_matchings(self):
         """The final pass of the matching algorithm that decides which service
         was ran by each unit.
         """
@@ -108,3 +108,17 @@ class Matchings:
                 matchings[service]['removed'] = removed_units
 
         return dict(matchings)
+
+    def serialize_matchings_diff(self, matchings_diff):
+        json = list()
+        for service, units in matchings_diff.iteritems():
+            headcode, origin_location, origin_departure = service
+            json.append({
+                'service': {
+                    'headcode': headcode,
+                    'origin_location': origin_location,
+                    'origin_departure': date_to_iso(origin_departure)
+                },
+                'units': { key: list(units) for key, units in units.iteritems() }
+            })
+        return json

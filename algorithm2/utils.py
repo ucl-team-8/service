@@ -68,3 +68,6 @@ def convert_matchings(matchings):
         for value in values:
             converted[value].add(key)
     return dict(converted)
+
+def date_to_iso(date):
+    return date.strftime('%a, %d %b %Y %H:%M:%S GMT')

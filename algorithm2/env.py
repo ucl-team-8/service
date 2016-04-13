@@ -1,3 +1,4 @@
+import threading
 from datetime import datetime
 
 # effectively replaces datetime.now() since we simulate the passing of time
@@ -22,3 +23,9 @@ time_update_interval = 250
 # seen at: https://docs.google.com/spreadsheets/d/135owXzmhCaDOe5XLyhkLKTc3FnH_OZTId3x_7aEtPE4/
 # this sort of means that on average, trust reports come 0.55min earlier than gps
 trust_delay = -0.55
+
+global matchings
+matchings = dict()
+
+global matchings_lock
+matchings_lock = threading.RLock()
