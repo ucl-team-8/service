@@ -1,3 +1,4 @@
+import env
 
 class Dispatcher:
 
@@ -29,9 +30,13 @@ class Dispatcher:
                len(self.listeners[topic]) > 0
 
     def dispatch(self, topic, *args):
-        print("dispatching to", topic)
         if topic not in self.listeners:
             return
-        # for sid in self.listeners[topic]:
-        #     self.socketio.emit(topic, *args, room=sid)
-        self.socketio.emit(topic, *args)
+        print("dispatching to", topic)
+        for sid in self.listeners[topic]:
+            self.socketio.emit(topic, *args, room=sid)
+        # self.socketio.emit(topic, *args)
+
+    def dispatch_service(self, service, segments):
+        print('dispatching service', service)
+        self.socketio.emit('segments', segments)

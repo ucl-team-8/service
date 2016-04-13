@@ -3,16 +3,26 @@ import d3 from "d3";
 import L from "leaflet";
 import io from "socketio";
 
-import RouteMap from "./map/route-map";
-import { getSegment, getSegments, getLocations } from "./utils/data";
-import noOverlap from "./utils/no-overlap-time-scale";
-import renderSegments from "./reports/render";
-import renderServices from "./services/render";
 import {
-  getServiceFromSegment,
+  getSegment,
+  getSegments,
+  getLocations,
+  parseSegment,
+  parseMatching,
+  serializeDate
+} from "./utils/data";
+
+import {
+  getServiceKey,
   getServicesFromSegments,
   getSegmentsMatchingService
 } from "./utils/segments";
+
+import RouteMap from "./map/route-map";
+import noOverlap from "./utils/no-overlap-time-scale";
+import sameService from "./utils/same-service";
+import renderSegments from "./reports/render";
+import renderServices from "./services/render";
 
 /*
 
@@ -28,6 +38,7 @@ shouldn't add functionality here, instead make a new module or something.
 window.render = render;
 window.locations = {};
 window.segments = [];
+window.matchings = [];
 window.selected;
 
 /* =============================================================================
@@ -49,17 +60,10 @@ window.routeMap = routeMap;
    Rendering segments
  */
 
-Promise.all([
-  getSegments(),
-  getLocations()
-]).then(([segments, locations]) => {
-
-  window.locations = _.keyBy(locations, "tiploc");
-  window.segments = _.sortBy(segments, "headcode");
-
-  render();
-
-});
+// getSegments().then(segments => {
+//   window.segments = _.sortBy(segments, "headcode");
+//   render();
+// });
 
 let segmentsContainer = d3.select(".segments-container");
 let servicesContainer = d3.select(".services-container");
@@ -72,28 +76,70 @@ function render() {
 function rerenderServices() {
   let selected = window.selected;
   let segments = window.segments;
-  let services = getServicesFromSegments(segments);
+  // let services = getServicesFromSegments(segments);
+  let services = window.matchings;
   services = _.sortBy(services, d => d.headcode);
   renderServices(servicesContainer.node(), services, selected);
 }
 
 function rerenderSegments() {
   let selected = window.selected;
-  let serviceSegments = getSegmentsMatchingService(segments, selected);
+  let serviceSegments = getSegmentsMatchingService(window.segments, selected);
   renderSegments(segmentsContainer.node(), serviceSegments, routeMap);
+}
+
+let socket = io();
+
+/* =============================================================================
+   Algorithm 2
+ */
+
+window.socket = socket;
+
+socket.on('connect', function() {
+  console.log("Connected");
+  if (window.selected) subscribe(window.selected);
+});
+
+socket.on('locations', function(locations) {
+  window.locations = _.keyBy(locations, "tiploc");
+});
+
+socket.on('matchings', function(matchings) {
+  console.log("matchings update");
+  window.matchings = matchings.map(parseMatching);
+  rerenderServices()
+});
+
+socket.on('segments', function(segments) {
+  console.log("segments update new");
+  window.segments = segments.map(parseSegment);
+  rerenderSegments();
+});
+
+socket.on('time', function(time) {
+  console.log("time", time);
+});
+
+function subscribe(service) {
+  let serviceKey = getServiceKey(service);
+  serviceKey.origin_departure = serializeDate(serviceKey.origin_departure);
+  socket.emit('subscribe', serviceKey);
+}
+
+window.select = (service) => {
+  let serviceKey = getServiceKey(service);
+  window.selected = serviceKey;
+  console.log("selecting", serviceKey);
+  subscribe(serviceKey);
+  routeMap.plot([]);
+  rerenderSegments();
 }
 
 
 /* =============================================================================
-   Socket segment synchronisation
+   Algorithm 1 - Socket segment synchronisation
  */
-
-let socket = io.connect('http://' + document.domain + ':' + location.port);
-
-socket.on('connect', function() {
-  console.log("Connected");
-  socket.emit('connection', {data: 'I\'m connected!'});
-});
 
 socket.on('update', function(data) {
   data = JSON.parse(data);
@@ -102,7 +148,7 @@ socket.on('update', function(data) {
     // TODO: Segment with id was not found, something is broken
   } else {
     segments[index] = getSegment(data);
-    let service = getServiceFromSegment(segments[index]);
+    let service = getServiceKey(segments[index]);
     if (_.isEqual(service, window.selected)) {
       rerenderSegments();
     }
@@ -115,7 +161,7 @@ socket.on('delete', function(data) {
   let index = getSegmentWithId(data);
   if(index != -1) {
     let segment = segments.splice(index, 1)[0];
-    let service = getServiceFromSegment(segment);
+    let service = getServiceKey(segment);
     if (_.isEqual(service, window.selected)) {
       rerenderSegments();
     }

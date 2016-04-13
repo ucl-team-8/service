@@ -26,21 +26,22 @@ export default function render(container, segments, routeMap) {
 
   segmentContainers.exit().remove();
 
-
   let scale = getScaleFromSegments(segments);
 
-  window.scale = scale;
-
   segmentContainers.each(function(segment) {
-    let trust = getServiceStopsFromSegment(segment);
-    let gps = getUnitStopsFromSegment(segment);
-    let data = [{
-      type: "trust",
-      reports: trust
-    }, {
-      type: "gps",
-      reports: gps
-    }];
+    let data = [];
+    if (segment.trust && segment.trust.length) {
+      data.push({
+        type: "trust",
+        reports: segment.trust
+      });
+    }
+    if (segment.gps && segment.gps.length) {
+      data.push({
+        type: "gps",
+        reports: segment.gps
+      });
+    }
     renderSegment(this, scale, data, routeMap);
   });
 

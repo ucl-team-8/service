@@ -15,5 +15,5 @@ export function tiplocToPoint(map, tiploc) {
 
 export function tiplocHasLocation(tiploc) {
   let l = window.locations[tiploc];
-  return !!(l && l.latitude != 0);
+  return !!(l && l.latitude != null && l.latitude != 0);
 }

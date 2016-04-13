@@ -1,9 +1,12 @@
 import d3 from "d3";
 import moment from "moment";
+import sameService from "../utils/same-service";
 
 export default function render(container, data, selected) {
 
   container = d3.select(container);
+
+  data = _.sortBy(data, service => [!(service.units.added || service.units.removed), service.headcode]);
 
   let services = container.selectAll(".service").data(data);
 
@@ -11,9 +14,9 @@ export default function render(container, data, selected) {
       .attr("class", "service");
 
   services.html(d => d.headcode != null ? template(d) : noServiceTemplate(d))
-      .classed("selected", d => _.isEqual(d, selected))
+      .classed("selected", d => sameService(d, window.selected))
       .on("click", d => {
-        window.selected = d;
+        window.select(d);
         window.render();
       });
 
@@ -33,9 +36,9 @@ let template = (d) => `
       <span class="headcode">${d.headcode}</span>
     </h3>
   </div>
-  <!--<div class="matchings">
-    <span>${d.count || ""}</span>
-  </div>-->`
+  <div class="matchings">
+    ${matchingsTemplate(d.units)}
+  </div>`
 
 let noServiceTemplate = (d) => `
   <div class="metadata">
@@ -47,3 +50,12 @@ let noServiceTemplate = (d) => `
       <span class="headcode">Without service</span>
     </h3>
   </div>`
+
+
+let matchingsTemplate = (d) => {
+  let tmp = "";
+  if (d.added) tmp += `<span class="added">${d.added.length}</span>`;
+  if (d.unchanged) tmp += `<span class="unchanged">${d.unchanged.length}</span>`;
+  if (d.removed) tmp += `<span class="removed">${d.removed.length}</span>`;
+  return tmp;
+}

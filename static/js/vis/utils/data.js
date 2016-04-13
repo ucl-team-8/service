@@ -1,3 +1,5 @@
+import moment from "moment";
+import _ from "lodash";
 import get from "./d3-request-promise";
 
 /*
@@ -10,12 +12,21 @@ return the processed data.
 
 */
 
+export function parseDate(string) {
+  return moment(string, "YYYY-MM-DDTHH:mm:ss").toDate();
+}
+
+export function serializeDate(date) {
+  return moment(date).format("YYYY-MM-DDTHH:mm:ss");
+}
+
 // -----------------------------------------------------------------------------
 
 export function trustDatatypes(d) {
-  d.event_time = new Date(d.event_time);
-  d.origin_departure = new Date(d.origin_departure);
+  d.event_time = parseDate(d.event_time);
+  d.origin_departure = parseDate(d.origin_departure);
   d.tiploc = d.tiploc.trim();
+  return d;
 }
 
 export function getTrust() {
@@ -26,10 +37,16 @@ export function getTrust() {
   });
 }
 
+export function parseTrust(reports) {
+  reports.forEach(trustDatatypes);
+  return reports;
+}
+
 // -----------------------------------------------------------------------------
 
 export function gpsDatatypes(d) {
-  d.event_time = new Date(d.event_time);
+  d.event_time = parseDate(d.event_time);
+  return d;
 }
 
 export function getGPS() {
@@ -38,6 +55,11 @@ export function getGPS() {
     data.forEach(gpsDatatypes);
     return data;
   });
+}
+
+export function parseGPS(reports) {
+  reports.forEach(gpsDatatypes);
+  return reports;
 }
 
 // -----------------------------------------------------------------------------
@@ -50,17 +72,21 @@ export function locationsDatatypes(d) {
   d.longitude = Number(d.longitude);
   d.easting = Number(d.easting);
   d.northing = Number(d.northing);
+  return d;
 }
 
 export function getLocations() {
-  return get("csv", "/static/data/locations_northern_rail_extract.csv").then((data) => {
-    data.forEach(locationsDatatypes);
-    return data;
-  });
+  return get("csv", "/static/data/locations_northern_rail_extract.csv").then(parseLocations);
+}
+
+export function parseLocations(locations) {
+  locations.forEach(locationsDatatypes);
+  return locations;
 }
 
 // -----------------------------------------------------------------------------
 
+// old segments
 export function getSegment(segment) {
   segment.matching.forEach(stop => {
     if (stop.trust) trustDatatypes(stop.trust);
@@ -75,4 +101,21 @@ export function getSegments() {
     data.forEach(segment => getSegment(segment));
     return data;
   });
+}
+
+// new segments
+export function parseSegment(segment) {
+  if (segment.origin_departure) segment.origin_departure = parseDate(segment.origin_departure);
+  if (segment.start) segment.start = parseDate(segment.start);
+  if (segment.end) segment.end = parseDate(segment.end);
+  segment.trust.forEach(trustDatatypes);
+  segment.gps.forEach(gpsDatatypes);
+  segment.trust = _.sortBy(segment.trust, "event_time");
+  segment.gps = _.sortBy(segment.gps, "event_time");
+  return segment;
+}
+
+export function parseMatching(matching) {
+  if (matching.origin_departure) matching.origin_departure = parseDate(matching.origin_departure);
+  return matching;
 }

@@ -45,11 +45,32 @@
   flex: 0;
 }
 
-.service .matchings span {
-  background: rgba(0,0,0,.3);
-  border-radius: 100px;
+.matchings span {
+  background: #A1A1A1;
   color: white;
   padding: 2px 5px;
+  margin-right: 1px;
+}
+
+.matchings span:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding-left: 6px;
+}
+
+.matchings span:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-right: 6px;
+  margin-right: 0;
+}
+
+.matchings span.added {
+  background: #87C686;
+}
+
+.matchings span.removed {
+  background: #b96b6e;
 }
 
 .service .departure {

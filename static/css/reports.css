@@ -11,8 +11,16 @@
   border-right: 1px solid #ccc;
 }
 
+.segment:hover {
+  background: #f9f9f9;
+}
+
 .segment:last-child {
   border-right: none;
+}
+
+.segment .header {
+  height: 40px !important;
 }
 
 .report circle {

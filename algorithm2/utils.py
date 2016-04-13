@@ -1,5 +1,6 @@
 from math import sqrt, floor, ceil
 from collections import defaultdict
+from datetime import datetime
 
 # datetime difference in seconds
 def diff_seconds(a, b):
@@ -70,7 +71,10 @@ def convert_matchings(matchings):
     return dict(converted)
 
 def date_to_iso(date):
-    return date.strftime('%a, %d %b %Y %H:%M:%S GMT')
+    return date.strftime('%Y-%m-%dT%H:%M:%S')
+
+def iso_to_date(string):
+    return datetime.strptime(string, '%Y-%m-%dT%H:%M:%S')
 
 def serialize_matchings(matchings_diff):
     json = list()
@@ -83,3 +87,19 @@ def serialize_matchings(matchings_diff):
             'units': { key: list(units) for key, units in units.iteritems() }
         })
     return json
+
+def get_service_key(service_dict):
+    origin_departure = service_dict['origin_departure']
+    if not isinstance(origin_departure, datetime):
+        print(origin_departure)
+        origin_departure = iso_to_date(origin_departure)
+    return (service_dict['headcode'],
+            service_dict['origin_location'],
+            origin_departure)
+
+def get_service_dict(service_key):
+    return {
+        'headcode': service_key[0],
+        'origin_location': service_key[1],
+        'origin_departure': service_key[2]
+    }

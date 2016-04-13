@@ -205,6 +205,9 @@ export default function(collections) {
   };
 
   noOverlap.build = function(collections) {
+    if (!_.every(collections, times => _.every(times, _.isDate))) {
+      throw new Error("noOverlap.build() received non-date object.");
+    }
     let pass = collections
       .map(events => events.sort())
       .map(events => calcScales(pixelsPerMinute, minGap, maxGap, events))
