@@ -257,7 +257,7 @@ def store_rows(rows, model):
 
 
 def delete_data():
-    for model in [Trust, Schedule, GPS, UnitToGPSMapping, GeographicalLocation, DiagramStop, DiagramService]:
+    for model in [ServiceMatching, EventMatching, Trust, Schedule, GPS, UnitToGPSMapping, GeographicalLocation, DiagramStop, DiagramService]:
         db.session.query(model).delete()
     db.session.commit()
 
