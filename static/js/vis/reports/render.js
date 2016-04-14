@@ -10,7 +10,8 @@ const TEXT = {
   service: "All stops for the service selected.",
   added: "<b class='matched'>Matched</b> but <b>wasn't planned</b>",
   unchanged: "<b class='matched'>Matched</b> and was <b>planned</b>",
-  removed: "<b>Planned</b>, but <b class='not-matched'>didn't match</b>"
+  removed: "<b>Planned</b>, but <b class='not-matched'>didn't match</b>",
+  no_data: "<b>Planned</b>, but there is <b class='insufficient-data'>insufficient data</b>"
 }
 
 export default function render(container, segments, routeMap) {
