@@ -28,7 +28,11 @@ def from_service_matching(service_matching):
         trust=trust_reports,
         gps=gps_reports,
         start=matching['start'],
-        end=matching['end'])
+        end=matching['end'],
+        total_matching=matching['total_matching'],
+        total_missed_in_between=matching['total_missed_in_between'],
+        median_time_error=matching['median_time_error'],
+        iqr_time_error=matching['iqr_time_error'])
 
 def from_matchings_diff(service, unit_matchings_diff):
     all_segments = []
