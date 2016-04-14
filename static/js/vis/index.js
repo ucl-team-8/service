@@ -42,6 +42,7 @@ window.locations = {};
 window.segments = [];
 window.matchings = [];
 window.selected;
+window.service_search;
 
 /* =============================================================================
    Map
@@ -66,6 +67,20 @@ let timeElem = d3.select(".current-time");
 let timeFormat = date => moment(date).format("ddd, D MMM YYYY HH:mm");
 
 window.updateTime = (time) => timeElem.text(timeFormat(time));
+
+/* =============================================================================
+   Service search
+ */
+
+d3.select(".service-search input").on("input", function() {
+  serviceSearch(this.value);
+});
+
+function serviceSearch(query) {
+  window.service_search = query;
+  rerenderServices();
+}
+
 
 
 /* =============================================================================

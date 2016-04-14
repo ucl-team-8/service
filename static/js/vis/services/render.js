@@ -8,6 +8,18 @@ export default function render(container, data, selected) {
 
   data = _.sortBy(data, service => [!(service.units.added || service.units.removed), service.headcode]);
 
+  if (window.service_search) {
+    let q = window.service_search.toLowerCase();
+    data = data.filter(matching => {
+      let units = _.flatten(_.values(matching.units));
+      let keywords = [
+        matching.headcode,
+        matching.origin_location
+      ].concat(units);
+      return _.some(keywords, keyword => keyword.toLowerCase().indexOf(q) > -1);
+    });
+  }
+
   let services = container.selectAll(".service").data(data);
 
   services.enter().append("div")

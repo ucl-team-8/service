@@ -17,6 +17,19 @@
   padding: .25em .65em;
 }
 
+.service-search {
+  margin: 0;
+}
+
+.service-search input {
+  width: 100%;
+  font-size: 1.4em;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  padding: 7px;
+  outline: none;
+}
+
 .service {
   font-size: 1.2em;
   line-height: 1.1;
