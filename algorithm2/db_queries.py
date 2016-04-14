@@ -57,9 +57,7 @@ def get_service_matchings_for_unit(unit):
     return q
 
 def get_service_matchings_by_keys(pkeys):
-    if not pkeys:
-        q = db_session.query(ServiceMatching).filter(sqlalchemy.sql.false()).all()
-        db_session.close()
+    if not pkeys: return []
     pkey_predicates = map(construct_pkey_predicate, pkeys)
     q = db_session.query(ServiceMatching).filter(
         or_(*pkey_predicates)
