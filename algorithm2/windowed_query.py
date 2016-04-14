@@ -58,3 +58,4 @@ def windowed_query(q, column, windowsize):
                                         column, windowsize):
         for row in q.filter(whereclause).order_by(column):
             yield row
+    q.session.close()

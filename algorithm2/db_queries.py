@@ -52,16 +52,18 @@ def get_service_matching(service, unit):
     return q
 
 def get_service_matchings_for_unit(unit):
-    q = db_session.query(ServiceMatching).filter_by(gps_car_id=unit)
+    q = db_session.query(ServiceMatching).filter_by(gps_car_id=unit).all()
     db_session.close()
     return q
 
 def get_service_matchings_by_keys(pkeys):
-    if not pkeys: return db_session.query(ServiceMatching).filter(sqlalchemy.sql.false())
+    if not pkeys:
+        q = db_session.query(ServiceMatching).filter(sqlalchemy.sql.false()).all()
+        db_session.close()
     pkey_predicates = map(construct_pkey_predicate, pkeys)
     q = db_session.query(ServiceMatching).filter(
         or_(*pkey_predicates)
-    )
+    ).all()
     db_session.close()
     return q
 
