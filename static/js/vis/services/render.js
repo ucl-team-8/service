@@ -11,12 +11,8 @@ export default function render(container, data, selected) {
   if (window.service_search) {
     let q = window.service_search.toLowerCase();
     data = data.filter(matching => {
-      let units = _.flatten(_.values(matching.units));
-      let keywords = [
-        matching.headcode,
-        matching.origin_location
-      ].concat(units);
-      return _.some(keywords, keyword => keyword.toLowerCase().indexOf(q) > -1);
+      let keywords = extractKeywords(matching);
+      return _.some(keywords, keyword => keyword.indexOf(q) > -1);
     });
   }
 
@@ -33,6 +29,16 @@ export default function render(container, data, selected) {
         window.select(d);
       });
 
+}
+
+function extractKeywords(matching) {
+  let units = _.flatten(_.values(matching.units));
+  let unit_types = _.flatten(_.keys(matching.units));
+  let keywords = [
+    matching.headcode,
+    matching.origin_location
+  ].concat(units).concat(unit_types);
+  return keywords.map(k => k.toLowerCase());
 }
 
 function formatDate(date) {
