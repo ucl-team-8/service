@@ -33,8 +33,8 @@ class Matchings:
         if s['total_matching'] <= 2:
             return False
         elif s['total_matching'] <= 5:
-            return True if abs(corrected_error) < 0.75 and s['iqr_time_error'] < 1.5 else False
-        elif abs(corrected_error) < 1.0 and s['iqr_time_error'] < 3.0:
+            return True if abs(corrected_error) < 0.75 and s['iqr_time_error'] < 1.0 else False
+        elif abs(corrected_error) < 0.75 and s['iqr_time_error'] < 2.5 and (s['total_missed_in_between'] / s['total_matching']) < 0.6:
             return True
         else:
             return False
