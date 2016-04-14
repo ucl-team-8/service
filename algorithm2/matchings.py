@@ -30,11 +30,12 @@ class Matchings:
     def is_likely_match(self, service_matching_props):
         s = service_matching_props
         corrected_error = self.get_corrected_error(s['median_time_error'])
+        missed_over_total = s['total_missed_in_between'] / s['total_matching']
         if s['total_matching'] <= 2:
             return False
         elif s['total_matching'] <= 5:
-            return True if abs(corrected_error) < 0.75 and s['iqr_time_error'] < 1.0 else False
-        elif abs(corrected_error) < 0.75 and s['iqr_time_error'] < 2.5 and (s['total_missed_in_between'] / s['total_matching']) < 0.6:
+            return True if abs(corrected_error) < 0.75 and s['iqr_time_error'] < 2.0 and missed_over_total < 0.8 else False
+        elif abs(corrected_error) < 0.75 and s['iqr_time_error'] < 2.5 and missed_over_total < 0.6:
             return True
         else:
             return False
