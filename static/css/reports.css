@@ -24,14 +24,13 @@
 }
 
 .segment .header {
-  height: 60px !important;
-  padding: 0 15px;
+  height: 6em !important;
+  padding: 0 1.5em;
   text-align: center;
   line-height: 1.2;
 }
 
 .header .heading {
-  display: block;
   font-size: 1.5em;
   font-weight: bold;
   color: #444;
@@ -39,18 +38,31 @@
   margin: 1em 0 .6em;
 }
 
+.heading span {
+  padding: .23em .5em;
+  border-radius: 2em;
+}
+
 .header .explanation {
   font-size: 1.2em;
   color: #999;
 }
 
-.header .explanation .matched,
-.type-added .heading, .type-unchanged .heading {
+.type-added .heading span, .type-unchanged .heading span {
+  background: #17952F;
+  color: white;
+}
+
+.type-removed .heading span {
+  background: #AC1F1F;
+  color: white;
+}
+
+.header .explanation .matched {
   color: #17952F;
 }
 
-.header .explanation .not-matched,
-.type-removed .heading {
+.header .explanation .not-matched {
   color: #AC1F1F;
 }
 

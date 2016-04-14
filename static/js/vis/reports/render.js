@@ -37,14 +37,15 @@ export default function render(container, segments, routeMap) {
 
   let header = segmentContainers.select(".header").html("");
 
-  header.append("span")
+  header.append("div")
       .attr("class", "heading")
+    .append("span")
       .text(d => d.type === "service" ? d.headcode : d.gps_car_id)
       .on("click", d => {
         if (d.type !== "service") window.serviceSearchAndUpdate(d.gps_car_id);
       });
 
-  header.append("span")
+  header.append("div")
       .attr("class", "explanation")
       .html(d => TEXT[d.type]);
 
