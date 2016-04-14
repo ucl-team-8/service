@@ -93,7 +93,7 @@ function serviceSearch(query) {
 // });
 
 let segmentsContainer = d3.select(".segments-container");
-let servicesContainer = d3.select(".services-container");
+let servicesContainer = d3.select(".services-container .services");
 
 function render() {
   rerenderServices();

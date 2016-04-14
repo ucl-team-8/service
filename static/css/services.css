@@ -6,6 +6,8 @@
   background: #f6f6f6;
   overflow-y: scroll;
   border-right: 3px solid #ddd;
+  display: flex;
+  flex-direction: column;
 }
 
 .label {
@@ -15,10 +17,12 @@
   font-weight: bold;
   text-transform: uppercase;
   padding: .25em .65em;
+  flex: 0;
 }
 
 .service-search {
   margin: 0;
+  flex: 0;
 }
 
 .service-search input {
@@ -28,6 +32,11 @@
   border-bottom: 1px solid #ccc;
   padding: 7px;
   outline: none;
+}
+
+.services {
+  flex: 1;
+  overflow: scroll;
 }
 
 .service {
