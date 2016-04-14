@@ -67,8 +67,14 @@ let noServiceTemplate = (d) => `
 
 let matchingsTemplate = (d) => {
   let tmp = "";
+  // combine no_data and unchanged in the same "unchanged" field
+  let no_data = d.no_data ? d.no_data.length : 0;
+  let unchanged = d.unchanged ? d.unchanged.length : 0;
+  let count = no_data + unchanged;
+
   if (d.added) tmp += `<span class="added">${d.added.length}</span>`;
-  if (d.unchanged) tmp += `<span class="unchanged">${d.unchanged.length}</span>`;
+  if (count) tmp += `<span class="unchanged">${count}</span>`;
   if (d.removed) tmp += `<span class="removed">${d.removed.length}</span>`;
+
   return tmp;
 }
