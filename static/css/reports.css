@@ -12,6 +12,7 @@
 .segment {
   border-right: 1px solid #ccc;
   flex: 0;
+  min-height: 100%;
 }
 
 .segment:hover {
