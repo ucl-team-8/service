@@ -61,7 +61,7 @@ def from_matchings_diff(service, unit_matchings_diff):
             if not diff_type == 'no_data':
                 service = pkey[0:3]
                 trust_reports = get_trust_reports(service, end=env.now)
-                event_times = map(lambda s: s['event_time'], trust_reports)
+                event_times = map(lambda s: s.event_time, trust_reports)
                 start = min(event_times)
                 end = max(event_times)
                 gps_reports = get_gps_reports(gps_car_id, start, end)
