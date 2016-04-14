@@ -97,10 +97,12 @@ class Matchings:
             # removed are those that are in the (genius) allocations, but
             # the algorithm doesn't think they're good matchings
             removed_units = allocated_units - proposed_units
-            removed_units = set(unit for unit in removed_units if self.tracker.get_total_for_unit(unit) > 10)
-            # TODO: check if gps_car_id is "busy" during the time the allocated
-            # service was running, if it isn't then likely we didn't have enough
-            # data to detect it was running it
+
+            # no_data_units are the units we don't have enough data about
+            no_data_units = set(unit for unit in removed_units if self.tracker.get_total_for_unit(unit) < 5)
+
+            # discard no_data_units
+            removed_units -= no_data_units
 
             if unchanged_units: # if not empty
                 matchings[service]['unchanged'] = unchanged_units
@@ -108,5 +110,8 @@ class Matchings:
                 matchings[service]['added'] = added_units
             if removed_units:
                 matchings[service]['removed'] = removed_units
+            if no_data_units:
+                matchings[service]['no_data'] = no_data_units
+
 
         return dict(matchings)
