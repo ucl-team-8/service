@@ -58,7 +58,7 @@ class Matchings:
 
                 # detects of any existing matches overlap for more than `env.max_overlap`
                 overlaps_with_existing = any(
-                    self.service_matchings_overlap(s,x) > env.max_overlap for x in true_matches)
+                    self.overlaps_significantly(s,x) for x in true_matches)
 
                 if not overlaps_with_existing:
                     true_matches.add(s)
@@ -67,6 +67,10 @@ class Matchings:
 
         return convert_matchings(unit_matchings)
 
+    def overlaps_significantly(self, s1, s2):
+        overlap = self.service_matchings_overlap(s1, s2)
+        return overlap > env.max_overlap or \
+               (s1.start <= s2.start == s1.end >= s2.end)
 
     def service_matchings_overlap(self, s1, s2):
         return get_interval_overlap(s1.start, s1.end, s2.start, s2.end)
