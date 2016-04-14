@@ -51,11 +51,6 @@ class TestEndPoints(unittest.TestCase):
     def checkDict(self, response):
         return isinstance(json.loads(response.data), dict)
 
-    def testSegments(self):
-        response = self.get('/data/segments.json')
-        self.assertEqual(response.status_code, 200)
-        self.assertTrue(self.checkDict(response))
-
     def testGPS(self):
         response = self.get('/events/gps.json')
         self.assertEqual(response.status_code, 200)

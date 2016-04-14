@@ -1,46 +1,28 @@
 import _ from "lodash";
 import noOverlap from "./no-overlap-time-scale";
+import sameService from "./same-service";
 
-export function getServiceStopsFromSegment(segment) {
-  return _(segment.matching)
-    .map(d => d.trust)
-    .compact()
-    .sortBy(d => d.event_time)
-    .value();
-}
-
-export function getUnitStopsFromSegment(segment) {
-  return _(segment.matching)
-    .map(d => d.gps)
-    .compact()
-    .sortBy(d => d.event_time)
-    .value();
-}
-
-export function getServiceFromSegment(segment) {
+export function getServiceKey(segment) {
   return _.pick(segment, ["headcode", "origin_location", "origin_departure"]);
 }
 
 export function getServicesFromSegments(segments) {
   return _(segments)
-    .map(getServiceFromSegment)
+    .map(getServiceKey)
     .uniqWith(_.isEqual)
     .value();
 }
 
 export function getSegmentsMatchingService(segments, service) {
-  return segments.filter(segment => {
-    let s = getServiceFromSegment(segment);
-    return _.isEqual(s, service);
-  });
+  return segments.filter(s => sameService(s, service));
 }
 
 export function getScaleFromSegments(segments) {
 
   let routes = _.flatten(segments.map(segment => {
     return [
-      getServiceStopsFromSegment(segment),
-      getUnitStopsFromSegment(segment)
+      segment.trust,
+      segment.gps
     ]
   }));
 

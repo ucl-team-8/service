@@ -2,11 +2,17 @@ import d3 from "d3";
 import renderReports from "./render-reports";
 
 let widthOfItem = 120;
-let padding = { top: 40, bottom: 20, left: 25, right: 20 };
+let padding = { top: 20, bottom: 30, left: 25, right: 20 };
 
 export default function renderSegment(container, scale, data, routeMap) {
 
   container = d3.select(container);
+
+  data = _.orderBy(data, segment => [
+    segment.type == "service",
+    segment.type == "added",
+    segment.type == "removed"
+  ], ["desc", "desc", "desc"]);
 
   let width = data.length * widthOfItem + padding.left + padding.right;
   let height = d3.max(scale.range()) + padding.top + padding.bottom;

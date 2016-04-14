@@ -19,6 +19,11 @@ class Trust(db.Model):
     def as_dict(self):
         return {c.name: getattr(self, c.name) for c in self.__table__.columns}
 
+db.Index('trust_service_lookup',
+         Trust.headcode,
+         Trust.origin_location,
+         Trust.origin_departure)
+
 
 class Schedule(db.Model):
     __tablename__ = 'schedule'
@@ -35,11 +40,17 @@ class Schedule(db.Model):
     def as_dict(self):
         return {c.name: getattr(self, c.name) for c in self.__table__.columns}
 
+db.Index('schedule_service_matching_lookup',
+         Schedule.headcode,
+         Schedule.origin_location,
+         Schedule.origin_departure,
+         Schedule.unit)
+
 
 class GPS(db.Model):
     __tablename__ = 'gps'
     id = db.Column(db.Integer, primary_key=True)
-    gps_car_id = db.Column(db.String(20))
+    gps_car_id = db.Column(db.String(20), index=True)
     event_type = db.Column(db.String(5))
     tiploc = db.Column(db.String(20))
     event_time = db.Column(db.DateTime)
@@ -71,8 +82,8 @@ class GeographicalLocation(db.Model):
     description = db.Column(db.String(50))
     easting = db.Column(db.Integer)
     northing = db.Column(db.Integer)
-    latitude = db.Column(db.Float(precision=32))
-    longitude = db.Column(db.Float(precision=32))
+    latitude = db.Column(db.Float)
+    longitude = db.Column(db.Float)
     type = db.Column(db.String(20))
     is_cif_stop = db.Column(db.Boolean)
     cif_stop_count = db.Column(db.Integer)
@@ -121,3 +132,79 @@ class DiagramStop(db.Model):
 
     def as_dict(self):
         return {c.name: getattr(self, c.name) for c in self.__table__.columns}
+
+class EventMatching(db.Model):
+    __tablename__ = 'event_matching'
+    id = db.Column(db.Integer, primary_key=True)
+
+    # Service identifier
+    headcode = db.Column(db.String(20))
+    origin_location = db.Column(db.String(20))
+    origin_departure = db.Column(db.DateTime)
+
+    # Rolling stock identifier
+    gps_car_id = db.Column(db.String(20))
+
+    # References to the actual events
+    trust_id = db.Column(db.Integer, db.ForeignKey('trust.id'), nullable=False)
+    gps_id = db.Column(db.Integer, db.ForeignKey('gps.id'), nullable=False)
+    trust = db.relationship("Trust")
+    gps = db.relationship("GPS")
+
+    # Event times (stored directly for quicker access)
+    trust_event_time = db.Column(db.DateTime, nullable=False)
+    gps_event_time = db.Column(db.DateTime, nullable=False)
+
+    def __repr__(self):
+        return '<EventMatching headcode={0}, origin_location={1}, gps_car_id={2}'.format(self.headcode, self.origin_location, self.gps_car_id)
+
+    def as_dict(self):
+        return {c.name: getattr(self, c.name) for c in self.__table__.columns}
+
+event_matching_service_index = db.Index('event_matching_service_lookup',
+         EventMatching.headcode,
+         EventMatching.origin_location,
+         EventMatching.origin_departure)
+
+event_matching_unit_index = db.Index('event_matching_unit_lookup',
+         EventMatching.gps_car_id)
+
+class ServiceMatching(db.Model):
+    __tablename__ = 'service_matching'
+
+    # Note composite primary key below, since we only want a single matching for
+    # a service and unit
+
+    # Service identifier
+    headcode = db.Column(db.String(20), primary_key=True)
+    origin_location = db.Column(db.String(20), primary_key=True)
+    origin_departure = db.Column(db.DateTime, primary_key=True)
+
+    # Rolling stock identifier
+    gps_car_id = db.Column(db.String(20), primary_key=True)
+
+    median_time_error = db.Column(db.Float, nullable=False)
+    iqr_time_error = db.Column(db.Float, nullable=False)
+
+    total_matching = db.Column(db.Integer, nullable=False)
+    total_missed_in_between = db.Column(db.Integer, nullable=False)
+
+    start = db.Column(db.DateTime, nullable=False)
+    end = db.Column(db.DateTime, nullable=False)
+
+    def __repr__(self):
+        return '<ServiceMatching headcode={0}, origin_location={1}, gps_car_id={2}'.format(
+            self.headcode,
+            self.origin_location,
+            self.gps_car_id)
+
+    def as_dict(self):
+        return {c.name: getattr(self, c.name) for c in self.__table__.columns}
+
+service_matching_service_index = db.Index('service_matching_service_lookup',
+         ServiceMatching.headcode,
+         ServiceMatching.origin_location,
+         ServiceMatching.origin_departure)
+
+service_matching_unit_index = db.Index('service_matching_unit_lookup',
+         ServiceMatching.gps_car_id)

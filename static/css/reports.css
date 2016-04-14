@@ -5,14 +5,61 @@
 .segments-container {
   display: flex;
   align-items: flex-start;
+  min-height: 100%;
+  cursor: default;
 }
 
 .segment {
   border-right: 1px solid #ccc;
+  flex: 0;
+  min-height: 100%;
+}
+
+.segment:hover {
+  background: #fafafa;
+}
+
+.segment.type-service {
+  border-right: 3px solid #ddd;
 }
 
 .segment:last-child {
   border-right: none;
+}
+
+.segment .header {
+  height: 60px !important;
+  padding: 0 15px;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.header .heading {
+  display: block;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #444;
+  text-transform: uppercase;
+  margin: 1em 0 .6em;
+}
+
+.header .explanation {
+  font-size: 1.2em;
+  color: #999;
+}
+
+.header .explanation .matched,
+.type-added .heading, .type-unchanged .heading {
+  color: #17952F;
+}
+
+.header .explanation .not-matched,
+.type-removed .heading {
+  color: #AC1F1F;
+}
+
+.header .explanation b {
+  color: #555;
 }
 
 .report circle {
