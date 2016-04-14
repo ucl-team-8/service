@@ -150,4 +150,8 @@ export default class RouteMap {
     this.svg.remove();
   }
 
+  isEmpty() {
+    return this.units.length === 0 && this.services.length === 0;
+  }
+
 }

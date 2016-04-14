@@ -146,8 +146,12 @@ socket.on('matchings', function(matchings) {
 
 socket.on('segments', function(segments) {
   console.log("segments update new");
-  window.segments = segments.map(parseSegment);
+  segments = window.segments = segments.map(parseSegment);
   rerenderSegments();
+  if (routeMap.isEmpty()) {
+    let serviceSegment = _.find(segments, { type: "service" });
+    if (serviceSegment) routeMap.plotServices([serviceSegment.trust]);
+  }
 });
 
 socket.on('time', function(time) {
