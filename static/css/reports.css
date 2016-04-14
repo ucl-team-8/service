@@ -6,6 +6,7 @@
   display: flex;
   align-items: flex-start;
   min-height: 100%;
+  cursor: default;
 }
 
 .segment {
@@ -29,6 +30,7 @@
   height: 60px !important;
   padding: 0 15px;
   text-align: center;
+  line-height: 1.2;
 }
 
 .header .heading {
