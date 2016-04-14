@@ -32,8 +32,8 @@ class Matchings:
         corrected_error = self.get_corrected_error(s['median_time_error'])
         if s['total_matching'] <= 2:
             return False
-        elif s['total_matching'] <= 3:
-            return True if abs(corrected_error) < 0.75 and s['iqr_time_error'] < 2.5 else False
+        elif s['total_matching'] <= 5:
+            return True if abs(corrected_error) < 0.75 and s['iqr_time_error'] < 1.5 else False
         elif abs(corrected_error) < 1.0 and s['iqr_time_error'] < 3.0:
             return True
         else:
@@ -50,7 +50,7 @@ class Matchings:
             service_matchings = list(get_service_matchings_for_unit(unit))
             service_matchings = filter(lambda s: self.is_likely_match(s.as_dict()), service_matchings)
             service_matchings = sorted(service_matchings,
-                                       key=lambda s: abs(self.get_corrected_error(s.median_time_error)))
+                                       key=lambda s: s.total_matching, reverse=True)
 
             true_matches = set()
 
