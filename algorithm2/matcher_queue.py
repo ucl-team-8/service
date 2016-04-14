@@ -1,6 +1,6 @@
 
 class MatcherQueue:
-    """Temporarily stores event matchings (trust->gps) passed from the Consumer.
+    """Temporarily stores event matchings (trust->gps) passed from the EventMatcher.
 
     The event matchings are stored as dictionaries, with the fields of
     EventMatching table as keys, ready to be inserted into the database.
