@@ -5,6 +5,7 @@
 .segments-container {
   display: flex;
   align-items: flex-start;
+  min-height: 100%;
 }
 
 .segment {
