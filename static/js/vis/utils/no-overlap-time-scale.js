@@ -76,8 +76,8 @@ function combineScales(defaultPixelsPerMinute, collections) {
   if (scales.length == 0) return output;
   if (scales.length == 1) return scales;
   let domainStart = getDomainStart(scales);
-  let domainEnd;
-  while (domainEnd = getNextStop(domainStart, scales)) {
+  let domainEnd = getNextStop(domainStart, scales) || domainStart;
+  do {
     let sameTime = getMaxAtSameTime(domainStart, scales);
     if (sameTime) output.push(sameTime);
     let candidates = getScalesCovering([domainStart, domainEnd], scales);
@@ -90,7 +90,7 @@ function combineScales(defaultPixelsPerMinute, collections) {
       pixelsPerMinute
     });
     domainStart = domainEnd;
-  }
+  } while (domainEnd = getNextStop(domainStart, scales));
   return output;
 }
 
