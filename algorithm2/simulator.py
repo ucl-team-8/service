@@ -97,6 +97,7 @@ class Simulator(threading.Thread):
         db_session.query(EventMatching).delete()
         db_session.query(ServiceMatching).delete()
         db_session.commit()
+        db_session.close()
 
     def run(self):
         self.clear_tables()

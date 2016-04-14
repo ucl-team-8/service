@@ -6,6 +6,7 @@ from utils import date_to_iso, get_service_key
 
 def from_service_matching_pkey(pkey):
     service_matching = db_session.query(ServiceMatching).get(pkey)
+    db_session.close()
     if service_matching is not None:
         return from_service_matching(service_matching)
 
@@ -23,14 +24,16 @@ def from_service_matching(service_matching):
     ).filter(and_(
         Trust.event_time >= segment['start'],
         Trust.event_time <= segment['end'])
-    )
+    ).all()
 
     gps_reports = db_session.query(GPS).filter_by(
         gps_car_id=gps_car_id
     ).filter(and_(
         GPS.event_time >= segment['start'],
         GPS.event_time <= segment['end'])
-    )
+    ).all()
+
+    db_session.close()
 
     matchings = get_event_matchings(service, gps_car_id)
 
@@ -79,7 +82,9 @@ def get_service_segment(service):
         origin_departure=service[2]
     ).filter(
         Trust.event_time <= env.now
-    )
+    ).all()
+
+    db_session.close()
 
     return {
         'headcode': headcode,

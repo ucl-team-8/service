@@ -27,6 +27,7 @@ class ServiceMatcher:
         """
         db_session.bulk_insert_mappings(EventMatching, self.queue.pop_event_matching_rows())
         db_session.commit()
+        db_session.close()
 
     def save_service_matchings(self):
         """Takes the primary keys of the service matchings (from the queue) that
@@ -73,6 +74,7 @@ class ServiceMatcher:
             get_service_matchings_by_keys(delete_keys).delete()
 
         db_session.commit()
+        db_session.close()
 
     def get_service_matching_props(self, service, unit):
         """Returns an ia dict of fields for ServiceMatching (a table row

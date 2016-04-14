@@ -32,6 +32,9 @@ class Allocations:
         """
 
         query = db_session.query(Schedule).all()
+
+        db_session.close()
+
         service_allocations = dict()
         unit_allocations = dict()
 
