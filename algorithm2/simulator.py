@@ -37,7 +37,6 @@ class Simulator(threading.Thread):
         self.dispatcher = dispatcher
         self.event_matcher = event_matcher
         self.service_matcher = service_matcher
-        self.time_update_interval = timedelta(milliseconds=env.time_update_interval)
         self.matching_interval = timedelta(minutes=env.matcher_interval)
         self.windowed_gps = windowed_query(db_session.query(GPS), GPS.event_time, 1000)
         self.windowed_trust = windowed_query(db_session.query(Trust), Trust.event_time, 1000)
