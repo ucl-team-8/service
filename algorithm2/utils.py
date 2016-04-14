@@ -102,3 +102,6 @@ def get_service_dict(service_key):
         'origin_location': service_key[1],
         'origin_departure': service_key[2]
     }
+
+def get_matching_key(matching_dict):
+    return get_service_key(matching_dict) + (matching_dict['gps_car_id'], )
