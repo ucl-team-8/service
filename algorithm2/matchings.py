@@ -1,6 +1,6 @@
 import env
 from db_queries import get_service_matchings_for_unit
-from utils import time_intervals_overlap, convert_matchings, date_to_iso
+from utils import get_interval_overlap, time_intervals_overlap, convert_matchings, date_to_iso
 from collections import defaultdict
 
 class Matchings:
@@ -56,8 +56,9 @@ class Matchings:
 
             for s in service_matchings:
 
+                # detects of any existing matches overlap for more than `env.max_overlap`
                 overlaps_with_existing = any(
-                    self.service_matchings_overlap(s,x) for x in true_matches)
+                    self.service_matchings_overlap(s,x) > env.max_overlap for x in true_matches)
 
                 if not overlaps_with_existing:
                     true_matches.add(s)
@@ -68,7 +69,7 @@ class Matchings:
 
 
     def service_matchings_overlap(self, s1, s2):
-        return time_intervals_overlap(s1.start, s1.end, s2.start, s2.end)
+        return get_interval_overlap(s1.start, s1.end, s2.start, s2.end)
 
     def get_matchings_diff(self, proposed):
         """Gets a dictionary of proposed allocations (output of `get_matchings`)
