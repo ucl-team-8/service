@@ -86,9 +86,14 @@ class Matchings:
           the genius allocations
 
         """
-        matchings = defaultdict(dict)
+        matchings = dict()
 
         for service in self.tracker.get_all_services():
+
+            # insert service in matchings
+            matchings[service] = dict()
+
+            # get proposed units (from algorithm) and allocated (from allocations)
             proposed_units = proposed[service] if service in proposed else set()
             allocated_units = self.allocations.get_units_for_service(service)
 
@@ -135,4 +140,4 @@ class Matchings:
                 matchings[service]['no_data'] = no_data_units
 
 
-        return dict(matchings)
+        return matchings
