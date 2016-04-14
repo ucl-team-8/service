@@ -66,7 +66,7 @@ def pkey_from_service_matching_props(service_matching_props):
             service_matching_props['origin_departure'],
             service_matching_props['gps_car_id'])
 
-def convert_matchings(matchings):
+def flip_matchings(matchings):
     """Converts between unit matchings and service matchings."""
     converted = defaultdict(set)
     for key, values in matchings.iteritems():

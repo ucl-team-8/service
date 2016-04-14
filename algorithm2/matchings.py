@@ -1,6 +1,6 @@
 import env
 from db_queries import get_service_matchings_for_unit
-from utils import get_interval_overlap, time_intervals_overlap, convert_matchings, date_to_iso
+from utils import get_interval_overlap, time_intervals_overlap, flip_matchings, date_to_iso
 from collections import defaultdict
 
 class Matchings:
@@ -66,7 +66,9 @@ class Matchings:
 
             unit_matchings[unit] = set((s.headcode, s.origin_location, s.origin_departure) for s in true_matches)
 
-        return convert_matchings(unit_matchings)
+        service_matchings = flip_matchings(unit_matchings)
+
+        return service_matchings
 
     def overlaps_significantly(self, s1, s2):
         overlap = self.service_matchings_overlap(s1, s2)
