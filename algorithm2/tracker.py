@@ -43,3 +43,21 @@ class Tracker:
 
     def get_all_units(self):
         return set(self.units.keys())
+
+    def get_service_time_range(self, service):
+        if service in self.services:
+            return {
+                'start': self.services[service]['first_seen'],
+                'end': self.services[service]['last_seen']
+            }
+        else:
+            return None
+
+    def get_unit_time_range(self, unit):
+        if unit in self.units:
+            return {
+                'start': self.units[unit]['first_seen'],
+                'end': self.units[unit]['last_seen']
+            }
+        else:
+            return None

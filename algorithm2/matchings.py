@@ -99,7 +99,22 @@ class Matchings:
             removed_units = allocated_units - proposed_units
 
             # no_data_units are the units we don't have enough data about
-            no_data_units = set(unit for unit in removed_units if self.tracker.get_total_for_unit(unit) < 5)
+            no_data_units = set()
+            service_time_range = self.tracker.get_service_time_range(service)
+            # check to see if we the first and last report we received from the
+            # unit are within the time the service was running
+            for unit in removed_units:
+                unit_time_range = self.tracker.get_unit_time_range(unit)
+                # if there is no time range, we never received an event from unit
+                if not unit_time_range:
+                    no_data_units.add(unit)
+                    continue
+                overlap = time_intervals_overlap(service_time_range['start'],
+                                              service_time_range['end'],
+                                              unit_time_range['start'],
+                                              unit_time_range['end'])
+                if not overlap:
+                    no_data_units.add(unit)
 
             # discard no_data_units
             removed_units -= no_data_units
