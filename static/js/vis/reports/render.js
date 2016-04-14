@@ -7,7 +7,7 @@ import {
 } from "../utils/segments";
 
 const TEXT = {
-  service: "All stops for the service selected.",
+  service: "All reports for the service selected.",
   added: "<b class='matched'>Matched</b> but <b>wasn't planned</b>",
   unchanged: "<b class='matched'>Matched</b> and was <b>planned</b>",
   removed: "<b>Planned</b>, but <b class='not-matched'>didn't match</b>",
@@ -39,7 +39,7 @@ export default function render(container, segments, routeMap) {
 
   header.append("span")
       .attr("class", "heading")
-      .text(d => d.type === "service" ? "The service" : d.gps_car_id);
+      .text(d => d.type === "service" ? d.headcode : d.gps_car_id);
 
   header.append("span")
       .attr("class", "explanation")
