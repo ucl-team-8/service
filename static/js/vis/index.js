@@ -72,7 +72,9 @@ window.updateTime = (time) => timeElem.text(timeFormat(time));
    Service search
  */
 
-d3.select(".service-search input").on("input", function() {
+let searchInput = d3.select(".service-search input");
+
+searchInput.on("input", function() {
   serviceSearch(this.value);
 });
 
@@ -81,6 +83,10 @@ function serviceSearch(query) {
   rerenderServices();
 }
 
+window.serviceSearchAndUpdate = function(query) {
+  serviceSearch(query);
+  searchInput.node().value = query;
+};
 
 
 /* =============================================================================

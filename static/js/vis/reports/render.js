@@ -39,7 +39,10 @@ export default function render(container, segments, routeMap) {
 
   header.append("span")
       .attr("class", "heading")
-      .text(d => d.type === "service" ? d.headcode : d.gps_car_id);
+      .text(d => d.type === "service" ? d.headcode : d.gps_car_id)
+      .on("click", d => {
+        if (d.type !== "service") window.serviceSearchAndUpdate(d.gps_car_id);
+      });
 
   header.append("span")
       .attr("class", "explanation")
