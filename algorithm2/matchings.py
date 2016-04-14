@@ -2,6 +2,7 @@ import env
 from db_queries import get_service_matchings_for_unit
 from utils import get_interval_overlap, time_intervals_overlap, flip_matchings, date_to_iso
 from collections import defaultdict
+from datetime import timedelta
 
 class Matchings:
 
@@ -28,14 +29,23 @@ class Matchings:
                abs(corrected_error) > 1.5
 
     def is_likely_match(self, service_matching_props):
+
         s = service_matching_props
         corrected_error = self.get_corrected_error(s['median_time_error'])
-        missed_over_total = s['total_missed_in_between'] / s['total_matching']
-        if s['total_matching'] <= 2:
+        interval = s['end'] - s['start']
+
+        if s['total_matching'] <= 2 or interval < timedelta(minutes=5):
             return False
         elif s['total_matching'] <= 5:
-            return True if abs(corrected_error) < 0.75 and s['iqr_time_error'] < 2.0 and missed_over_total < 0.8 else False
-        elif abs(corrected_error) < 0.75 and s['iqr_time_error'] < 2.5 and missed_over_total < 0.6:
+            if abs(corrected_error) < 0.75:
+                if s['iqr_time_error'] < 1.5 or \
+                  (s['iqr_time_error'] < 2.5 and interval > timedelta(minutes=10)):
+                    return True
+                else:
+                    return False
+            else:
+                return False
+        elif abs(corrected_error) < 0.75 and s['iqr_time_error'] < 2.5:
             return True
         else:
             return False
