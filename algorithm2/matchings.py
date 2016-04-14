@@ -1,6 +1,6 @@
 import env
 from db_queries import get_service_matchings_for_unit
-from utils import time_intervals_overlap, convert_matchings, date_to_iso
+from utils import get_interval_overlap, time_intervals_overlap, convert_matchings, date_to_iso
 from collections import defaultdict
 
 class Matchings:
@@ -30,11 +30,12 @@ class Matchings:
     def is_likely_match(self, service_matching_props):
         s = service_matching_props
         corrected_error = self.get_corrected_error(s['median_time_error'])
+        missed_over_total = s['total_missed_in_between'] / s['total_matching']
         if s['total_matching'] <= 2:
             return False
         elif s['total_matching'] <= 5:
-            return True if abs(corrected_error) < 0.75 and s['iqr_time_error'] < 1.5 else False
-        elif abs(corrected_error) < 1.0 and s['iqr_time_error'] < 3.0:
+            return True if abs(corrected_error) < 0.75 and s['iqr_time_error'] < 2.0 and missed_over_total < 0.8 else False
+        elif abs(corrected_error) < 0.75 and s['iqr_time_error'] < 2.5 and missed_over_total < 0.6:
             return True
         else:
             return False
@@ -56,8 +57,9 @@ class Matchings:
 
             for s in service_matchings:
 
+                # detects of any existing matches overlap for more than `env.max_overlap`
                 overlaps_with_existing = any(
-                    self.service_matchings_overlap(s,x) for x in true_matches)
+                    self.overlaps_significantly(s,x) for x in true_matches)
 
                 if not overlaps_with_existing:
                     true_matches.add(s)
@@ -66,9 +68,13 @@ class Matchings:
 
         return convert_matchings(unit_matchings)
 
+    def overlaps_significantly(self, s1, s2):
+        overlap = self.service_matchings_overlap(s1, s2)
+        return overlap > env.max_overlap or \
+               (s1.start <= s2.start == s1.end >= s2.end)
 
     def service_matchings_overlap(self, s1, s2):
-        return time_intervals_overlap(s1.start, s1.end, s2.start, s2.end)
+        return get_interval_overlap(s1.start, s1.end, s2.start, s2.end)
 
     def get_matchings_diff(self, proposed):
         """Gets a dictionary of proposed allocations (output of `get_matchings`)
@@ -97,10 +103,27 @@ class Matchings:
             # removed are those that are in the (genius) allocations, but
             # the algorithm doesn't think they're good matchings
             removed_units = allocated_units - proposed_units
-            removed_units = set(unit for unit in removed_units if self.tracker.get_total_for_unit(unit) > 10)
-            # TODO: check if gps_car_id is "busy" during the time the allocated
-            # service was running, if it isn't then likely we didn't have enough
-            # data to detect it was running it
+
+            # no_data_units are the units we don't have enough data about
+            no_data_units = set()
+            service_time_range = self.tracker.get_service_time_range(service)
+            # check to see if we the first and last report we received from the
+            # unit are within the time the service was running
+            for unit in removed_units:
+                unit_time_range = self.tracker.get_unit_time_range(unit)
+                # if there is no time range, we never received an event from unit
+                if not unit_time_range:
+                    no_data_units.add(unit)
+                    continue
+                overlap = time_intervals_overlap(service_time_range['start'],
+                                              service_time_range['end'],
+                                              unit_time_range['start'],
+                                              unit_time_range['end'])
+                if not overlap:
+                    no_data_units.add(unit)
+
+            # discard no_data_units
+            removed_units -= no_data_units
 
             if unchanged_units: # if not empty
                 matchings[service]['unchanged'] = unchanged_units
@@ -108,5 +131,8 @@ class Matchings:
                 matchings[service]['added'] = added_units
             if removed_units:
                 matchings[service]['removed'] = removed_units
+            if no_data_units:
+                matchings[service]['no_data'] = no_data_units
+
 
         return dict(matchings)

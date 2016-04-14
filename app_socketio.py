@@ -25,7 +25,7 @@ def subscribe(service_dict):
 
     if service in matchings:
         unit_matchings_diff = matchings[service]
-        segments = segment.from_matchings_diff(service, unit_matchings_diff)
+        segments = segment.from_matchings_diff_serialized(service, unit_matchings_diff)
 
     dispatcher.subscribe(service, request.sid)
     dispatcher.dispatch_service(service, segments)

@@ -5,7 +5,7 @@ from windowed_query import windowed_query
 from models import Trust, GPS, EventMatching, ServiceMatching
 from datetime import datetime, timedelta
 from utils import date_to_iso, serialize_matchings
-from segment import from_matchings_diff
+from segment import from_matchings_diff_serialized
 
 class Simulator(threading.Thread):
 
@@ -37,7 +37,6 @@ class Simulator(threading.Thread):
         self.dispatcher = dispatcher
         self.event_matcher = event_matcher
         self.service_matcher = service_matcher
-        self.time_update_interval = timedelta(milliseconds=env.time_update_interval)
         self.matching_interval = timedelta(minutes=env.matcher_interval)
         self.windowed_gps = windowed_query(db_session.query(GPS), GPS.event_time, 1000)
         self.windowed_trust = windowed_query(db_session.query(Trust), Trust.event_time, 1000)
@@ -110,7 +109,7 @@ class Simulator(threading.Thread):
         self.dispatcher.dispatch('matchings', serialize_matchings(matchings))
         for service, unit_matchings_diff in matchings.iteritems():
             if not self.dispatcher.has_listeners(service): continue
-            segments = from_matchings_diff(service, unit_matchings_diff)
+            segments = from_matchings_diff_serialized(service, unit_matchings_diff)
             self.dispatcher.dispatch_service(service, segments)
 
     def save_matchings_in_global(self):

@@ -11,12 +11,8 @@ export default function render(container, data, selected) {
   if (window.service_search) {
     let q = window.service_search.toLowerCase();
     data = data.filter(matching => {
-      let units = _.flatten(_.values(matching.units));
-      let keywords = [
-        matching.headcode,
-        matching.origin_location
-      ].concat(units);
-      return _.some(keywords, keyword => keyword.toLowerCase().indexOf(q) > -1);
+      let keywords = extractKeywords(matching);
+      return _.some(keywords, keyword => keyword.indexOf(q) > -1);
     });
   }
 
@@ -33,6 +29,16 @@ export default function render(container, data, selected) {
         window.select(d);
       });
 
+}
+
+function extractKeywords(matching) {
+  let units = _.flatten(_.values(matching.units));
+  let unit_types = _.flatten(_.keys(matching.units));
+  let keywords = [
+    matching.headcode,
+    matching.origin_location
+  ].concat(units).concat(unit_types);
+  return keywords.map(k => k.toLowerCase());
 }
 
 function formatDate(date) {
@@ -67,8 +73,14 @@ let noServiceTemplate = (d) => `
 
 let matchingsTemplate = (d) => {
   let tmp = "";
+  // combine no_data and unchanged in the same "unchanged" field
+  let no_data = d.no_data ? d.no_data.length : 0;
+  let unchanged = d.unchanged ? d.unchanged.length : 0;
+  let count = no_data + unchanged;
+
   if (d.added) tmp += `<span class="added">${d.added.length}</span>`;
-  if (d.unchanged) tmp += `<span class="unchanged">${d.unchanged.length}</span>`;
+  if (count) tmp += `<span class="unchanged">${count}</span>`;
   if (d.removed) tmp += `<span class="removed">${d.removed.length}</span>`;
+
   return tmp;
 }

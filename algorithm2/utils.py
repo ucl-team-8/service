@@ -50,6 +50,10 @@ def stddev(list):
 def time_intervals_overlap(t1start, t1end, t2start, t2end):
     return (t1start <= t2start <= t1end) or (t2start <= t1start <= t2end)
 
+def get_interval_overlap(t1start, t1end, t2start, t2end):
+    minutes = min(t1end - t2start, t2end - t1start).total_seconds() / 60
+    return minutes if minutes > 0 else 0
+
 def pkey_from_service_matching(service_matching):
     return (service_matching.headcode,
             service_matching.origin_location,
@@ -102,3 +106,6 @@ def get_service_dict(service_key):
         'origin_location': service_key[1],
         'origin_departure': service_key[2]
     }
+
+def get_matching_key(matching_dict):
+    return get_service_key(matching_dict) + (matching_dict['gps_car_id'], )
