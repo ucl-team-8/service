@@ -25,7 +25,7 @@ class ServiceMatcher:
         """Takes all queued rows from the MatcherQueue and adds them to the
         database.
         """
-        db_session.bulk_insert_mappings(EventMatching, self.queue.pop_event_matching_rows())
+        db_session.bulk_insert_mappings(EventMatching, self.queue.pop_event_matchings())
         db_session.commit()
         db_session.close()
 

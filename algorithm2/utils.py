@@ -109,3 +109,6 @@ def get_service_dict(service_key):
 
 def get_matching_key(matching_dict):
     return get_service_key(matching_dict) + (matching_dict['gps_car_id'], )
+
+def flatten(lst):
+    return [item for sublist in lst for item in sublist]
