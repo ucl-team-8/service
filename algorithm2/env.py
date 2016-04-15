@@ -22,7 +22,7 @@ matcher_interval = 30
 # the average of mean_time_error for planned (allocated) services as can be
 # seen at: https://docs.google.com/spreadsheets/d/135owXzmhCaDOe5XLyhkLKTc3FnH_OZTId3x_7aEtPE4/
 # this sort of means that on average, trust reports come 0.55min earlier than gps
-trust_delay = -0.55
+trust_delay = -0.5
 
 global matchings
 matchings = dict()
