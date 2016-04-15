@@ -187,7 +187,6 @@ class ServiceMatching(db.Model):
     variance_time_error = db.Column(db.Float, nullable=False)
 
     total_matching = db.Column(db.Integer, nullable=False)
-    total_missed_in_between = db.Column(db.Integer, nullable=False)
 
     start = db.Column(db.DateTime, nullable=False)
     end = db.Column(db.DateTime, nullable=False)

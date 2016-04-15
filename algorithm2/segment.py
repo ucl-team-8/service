@@ -30,7 +30,6 @@ def from_service_matching(service_matching):
         start=matching['start'],
         end=matching['end'],
         total_matching=matching['total_matching'],
-        total_missed_in_between=matching['total_missed_in_between'],
         mean_time_error=matching['mean_time_error'],
         variance_time_error=matching['variance_time_error'])
 
