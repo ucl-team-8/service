@@ -31,7 +31,7 @@ export function getScaleFromSegments(segments) {
   let scale = noOverlap()
       .minGap(12)
       .maxGap(50)
-      .pixelsPerMinute(5)
+      .pixelsPerMinute(6)
       .build(eventTimes);
 
   return scale;
