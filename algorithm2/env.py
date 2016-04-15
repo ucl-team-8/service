@@ -24,6 +24,9 @@ matcher_interval = 30
 # this sort of means that on average, trust reports come 0.55min earlier than gps
 trust_delay = -0.5
 
+def get_corrected_error(error):
+    return error - trust_delay
+
 global matchings
 matchings = dict()
 

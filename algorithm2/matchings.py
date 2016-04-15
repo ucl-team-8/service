@@ -10,9 +10,6 @@ class Matchings:
         self.allocations = allocations
         self.tracker = tracker
 
-    def get_corrected_error(self, error):
-        return error - env.trust_delay
-
     # TODO: just use `not is_likely_match` here?
     def is_unlikely_match(self, service_matching_props):
         """Given a dictionary (representing a ServiceMatching row) it returns
@@ -24,7 +21,7 @@ class Matchings:
         """
         return False
         # s = service_matching_props
-        # corrected_error = self.get_corrected_error(s['mean_time_error'])
+        # corrected_error = env.get_corrected_error(s['mean_time_error'])
         # return s['total_matching'] < 2 or \
         #        abs(corrected_error) > 1.5
 
@@ -38,7 +35,7 @@ class Matchings:
             return True
 
         interval = s['end'] - s['start']
-        corrected_error = self.get_corrected_error(s['mean_time_error'])
+        corrected_error = env.get_corrected_error(s['mean_time_error'])
         matched_over_total = float(s['total_matching']) / self.tracker.get_total_for_service(service)
 
         low_error_if_few_reports = s['total_matching'] > 5 or (s['variance_time_error'] < 2.0 and abs(corrected_error) < 1.0)
@@ -55,7 +52,7 @@ class Matchings:
         s = service_matching_props
         service = get_service_key(service_matching_props)
         unit = s['gps_car_id']
-        corrected_error = self.get_corrected_error(s['mean_time_error'])
+        corrected_error = env.get_corrected_error(s['mean_time_error'])
 
         was_planned = self.allocations.was_planned(service, unit)
 
