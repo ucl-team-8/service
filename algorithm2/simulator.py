@@ -2,7 +2,7 @@ import env
 import threading
 from db_queries import db_session
 from windowed_query import windowed_query
-from models import Trust, GPS, EventMatching, ServiceMatching
+from models import Trust, GPS, ServiceMatching
 from datetime import datetime, timedelta
 from utils import date_to_iso, serialize_matchings
 from segment import from_matchings_diff_serialized
@@ -93,7 +93,6 @@ class Simulator(threading.Thread):
         print("Finished matching.")
 
     def clear_tables(self):
-        db_session.query(EventMatching).delete()
         db_session.query(ServiceMatching).delete()
         db_session.commit()
         db_session.close()

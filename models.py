@@ -133,41 +133,6 @@ class DiagramStop(db.Model):
     def as_dict(self):
         return {c.name: getattr(self, c.name) for c in self.__table__.columns}
 
-class EventMatching(db.Model):
-    __tablename__ = 'event_matching'
-    id = db.Column(db.Integer, primary_key=True)
-
-    # Service identifier
-    headcode = db.Column(db.String(20))
-    origin_location = db.Column(db.String(20))
-    origin_departure = db.Column(db.DateTime)
-
-    # Rolling stock identifier
-    gps_car_id = db.Column(db.String(20))
-
-    # References to the actual events
-    trust_id = db.Column(db.Integer, db.ForeignKey('trust.id'), nullable=False)
-    gps_id = db.Column(db.Integer, db.ForeignKey('gps.id'), nullable=False)
-    trust = db.relationship("Trust")
-    gps = db.relationship("GPS")
-
-    # Event times (stored directly for quicker access)
-    trust_event_time = db.Column(db.DateTime, nullable=False)
-    gps_event_time = db.Column(db.DateTime, nullable=False)
-
-    def __repr__(self):
-        return '<EventMatching headcode={0}, origin_location={1}, gps_car_id={2}'.format(self.headcode, self.origin_location, self.gps_car_id)
-
-    def as_dict(self):
-        return {c.name: getattr(self, c.name) for c in self.__table__.columns}
-
-event_matching_service_index = db.Index('event_matching_service_lookup',
-         EventMatching.headcode,
-         EventMatching.origin_location,
-         EventMatching.origin_departure)
-
-event_matching_unit_index = db.Index('event_matching_unit_lookup',
-         EventMatching.gps_car_id)
 
 class ServiceMatching(db.Model):
     __tablename__ = 'service_matching'
