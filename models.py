@@ -183,8 +183,8 @@ class ServiceMatching(db.Model):
     # Rolling stock identifier
     gps_car_id = db.Column(db.String(20), primary_key=True)
 
-    median_time_error = db.Column(db.Float, nullable=False)
-    iqr_time_error = db.Column(db.Float, nullable=False)
+    mean_time_error = db.Column(db.Float, nullable=False)
+    variance_time_error = db.Column(db.Float, nullable=False)
 
     total_matching = db.Column(db.Integer, nullable=False)
     total_missed_in_between = db.Column(db.Integer, nullable=False)
