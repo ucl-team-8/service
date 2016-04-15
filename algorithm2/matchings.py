@@ -132,6 +132,9 @@ class Matchings:
                 if not unit_time_range:
                     no_data_units.add(unit)
                     continue
+                # TODO but not really: to make this more accurate, we need to
+                # check in the database whether a gps event occurred during the
+                # time the service was running
                 overlap = time_intervals_overlap(service_time_range['start'],
                                               service_time_range['end'],
                                               unit_time_range['start'],
