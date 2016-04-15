@@ -1,7 +1,7 @@
 import env
 from sqlalchemy import and_
-from db_queries import db_session, get_event_matchings, get_service_matchings_by_keys, get_trust_reports, get_gps_reports
-from models import Trust, GPS, ServiceMatching, EventMatching
+from db_queries import db_session, get_service_matchings_by_keys, get_trust_reports, get_gps_reports
+from models import Trust, GPS, ServiceMatching
 from utils import date_to_iso, iso_to_date, get_service_key, get_matching_key
 
 def from_service_matching_pkey(pkey):
@@ -31,8 +31,8 @@ def from_service_matching(service_matching):
         end=matching['end'],
         total_matching=matching['total_matching'],
         total_missed_in_between=matching['total_missed_in_between'],
-        median_time_error=matching['median_time_error'],
-        iqr_time_error=matching['iqr_time_error'])
+        mean_time_error=matching['mean_time_error'],
+        variance_time_error=matching['variance_time_error'])
 
 def from_matchings_diff(service, unit_matchings_diff):
     all_segments = []

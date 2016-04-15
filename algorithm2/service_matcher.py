@@ -1,7 +1,7 @@
 import env
 from db_queries import db_session, get_event_matchings, get_service_matching, get_service_matchings_by_keys
 from models import EventMatching, ServiceMatching
-from utils import diff_seconds, median, iqr, pkey_from_service_matching, pkey_from_service_matching_props
+from utils import diff_seconds, average, variance, pkey_from_service_matching, pkey_from_service_matching_props
 
 class ServiceMatcher:
     """This class does 2 things:
@@ -104,8 +104,8 @@ class ServiceMatcher:
             'origin_location': origin_location,
             'origin_departure': origin_departure,
             'gps_car_id': gps_car_id,
-            'median_time_error': median(time_errors),
-            'iqr_time_error': iqr(time_errors),
+            'mean_time_error': average(time_errors),
+            'variance_time_error': variance(time_errors),
             'total_matching': total_matching,
             'total_missed_in_between': total_for_service - total_matching,
             'start': start,
