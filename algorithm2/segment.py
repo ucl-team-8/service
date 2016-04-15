@@ -20,7 +20,7 @@ def from_service_matching(service_matching):
     trust_reports = get_trust_reports(service, start=matching['start'], end=matching['end'])
     gps_reports = get_gps_reports(gps_car_id, start=matching['start'], end=matching['end'])
 
-    return get_segment_blueprint(
+    return get_segment_template(
         headcode=matching['headcode'],
         origin_location=matching['origin_location'],
         origin_departure=matching['origin_departure'],
@@ -57,7 +57,7 @@ def from_matchings_diff(service, unit_matchings_diff):
         not_found_pkeys = pkeys - found_pkeys
         for pkey in not_found_pkeys:
             headcode, origin_location, origin_departure, gps_car_id = pkey
-            segment = get_segment_blueprint(headcode=headcode,
+            segment = get_segment_template(headcode=headcode,
                                             origin_location=origin_location,
                                             origin_departure=origin_departure,
                                             gps_car_id=gps_car_id,
@@ -84,14 +84,14 @@ def from_matchings_diff_serialized(service, unit_matchings_diff):
 def get_service_segment(service):
     headcode, origin_location, origin_departure = service
     trust_reports = get_trust_reports(service, end=env.now)
-    return get_segment_blueprint(
+    return get_segment_template(
         headcode=headcode,
         origin_location=origin_location,
         origin_departure=origin_departure,
         trust=trust_reports,
         type='service')
 
-def get_segment_blueprint(**props):
+def get_segment_template(**props):
     segment = {
       'headcode': None,
       'origin_location': None,
