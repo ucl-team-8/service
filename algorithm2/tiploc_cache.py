@@ -1,7 +1,7 @@
 import env
 import bisect
 from datetime import timedelta
-from utils import diff_seconds
+from utils import diff_minutes
 
 class TiplocCache:
     """Caches reports for a given length of time (retention_minutes).
@@ -58,19 +58,18 @@ class TiplocCache:
         if tiploc not in self.reports:
             return []
 
-        seconds = minutes * 60
         times = self.timestamps[tiploc]
         length = len(times)
         i = length - 1
 
-        while i >= 0 and abs(diff_seconds(times[i], time)) > seconds:
+        while i >= 0 and abs(diff_minutes(times[i], time)) > minutes:
             i -= 1
         end = i + 1
 
         if end == 0:
             return []
 
-        while i >= 0 and abs(diff_seconds(times[i], time)) <= seconds:
+        while i >= 0 and abs(diff_minutes(times[i], time)) <= minutes:
             i -= 1
         start = i + 1
 

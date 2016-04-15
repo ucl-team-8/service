@@ -1,7 +1,7 @@
 import env
 from db_queries import db_session, get_service_matchings_by_keys
 from models import ServiceMatching
-from utils import diff_seconds, average, variance, pkey_from_service_matching, pkey_from_service_matching_props, combine_stats
+from utils import diff_minutes, average, variance, pkey_from_service_matching, pkey_from_service_matching_props, combine_stats
 
 class ServiceMatcher:
     """Pprocesses event matchings from the queue and creates/updates service
@@ -67,7 +67,7 @@ class ServiceMatcher:
         start = min(all_times)
         end = max(all_times)
 
-        time_errors = [diff_seconds(a, b) / 60.0 for a, b in zip(trust_times, gps_times)]
+        time_errors = [diff_minutes(a, b) for a, b in zip(trust_times, gps_times)]
 
         return {
             'headcode': headcode,
@@ -103,7 +103,7 @@ class ServiceMatcher:
         filtered = []
 
         def sorting_key(m):
-            error = diff_seconds(m['trust_event_time'], m['gps_event_time']) / 60.0
+            error = diff_minutes(m['trust_event_time'], m['gps_event_time'])
             return abs(env.get_corrected_error(error))
 
         event_matchings = sorted(event_matchings, key=sorting_key)

@@ -2,9 +2,9 @@ from math import sqrt, floor, ceil
 from collections import defaultdict
 from datetime import datetime
 
-# datetime difference in seconds
-def diff_seconds(a, b):
-    return (a - b).total_seconds()
+# datetime difference in minutes
+def diff_minutes(a, b):
+    return (a - b).total_seconds() / 60.0
 
 def average(lst):
     return sum(lst) / len(lst)
