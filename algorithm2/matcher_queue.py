@@ -1,5 +1,5 @@
 from collections import defaultdict
-from utils import get_service_key, flatten
+from utils import get_service_key
 
 class MatcherQueue:
     """Temporarily stores event matchings (trust->gps) passed from the EventMatcher.
@@ -24,21 +24,12 @@ class MatcherQueue:
         self.event_matchings[key].append(event_matching)
 
     def pop_event_matchings(self):
-        event_matchings = flatten(self.event_matchings.values())
-        # self.event_matchings = defaultdict(list)
-        return event_matchings
-
-    def pop_changed_service_matchings_keys(self):
-        changed_service_matchings = set(self.event_matchings.keys())
+        event_matchings = dict(self.event_matchings)
         self.event_matchings = defaultdict(list)
-        return changed_service_matchings
+        return event_matchings
 
     def __get_event_matching_props(self, trust, gps):
         return {
-            'headcode': trust['headcode'],
-            'origin_location': trust['origin_location'],
-            'origin_departure': trust['origin_departure'],
-            'gps_car_id': gps['gps_car_id'],
             'trust_id': trust['id'],
             'gps_id': gps['id'],
             'trust_event_time': trust['event_time'],

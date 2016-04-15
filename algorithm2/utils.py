@@ -46,6 +46,27 @@ def variance(lst):
 def stddev(list):
     return sqrt(variance(lst))
 
+def combine_stats(a, b):
+    """Combines the mean and variance for two samples"""
+
+    m, mean_m, var_m = a
+    n, mean_n, var_n = b
+
+    t_m = mean_m * m
+    t_n = mean_n * n
+
+    total = m + n
+    mean = float(t_m + t_n) / (total)
+
+    s_m = var_m * m
+    s_n = var_n * n
+
+    s_mn = s_m + s_n + (float(m) / (n * (total))) * ((float(n) / m) * t_m - t_n) ** 2
+
+    variance = float(s_mn) / total
+
+    return (total, mean, variance)
+
 # http://stackoverflow.com/a/3721301/1775517
 def time_intervals_overlap(t1start, t1end, t2start, t2end):
     return (t1start <= t2start <= t1end) or (t2start <= t1start <= t2end)
