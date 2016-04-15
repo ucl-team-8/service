@@ -55,8 +55,10 @@ def get_locations():
     tiplocs.update([x[0] for x in trust_tiplocs])
     tiplocs.update([x[0] for x in gps_tiplocs])
 
-    records = GeographicalLocation.query.filter(
+    records = db.session.query(GeographicalLocation).filter(
         GeographicalLocation.tiploc.in_(tiplocs)
-    )
+    ).all()
+
+    db.session.close()
 
     return [r.as_dict() for r in records]
