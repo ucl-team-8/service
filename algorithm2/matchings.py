@@ -1,6 +1,6 @@
 import env
 from db_queries import get_service_matchings_for_unit
-from utils import get_interval_overlap, time_intervals_overlap, flip_matchings, date_to_iso
+from utils import get_interval_overlap, time_intervals_overlap, flip_matchings, date_to_iso, get_service_key
 from collections import defaultdict
 from datetime import timedelta
 
@@ -31,10 +31,14 @@ class Matchings:
     def is_likely_match(self, service_matching_props):
 
         s = service_matching_props
+        service = get_service_key(service_matching_props)
+        unit = s['gps_car_id']
         corrected_error = self.get_corrected_error(s['median_time_error'])
         interval = s['end'] - s['start']
 
-        if s['total_matching'] < 2 or \
+        if self.allocations.was_planned(service, unit):
+            return True
+        elif s['total_matching'] < 2 or \
            interval < timedelta(minutes=5) or \
            abs(corrected_error) > 1.0:
             return False
@@ -55,14 +59,21 @@ class Matchings:
         """
         unit_matchings = dict()
 
+        def sorting_key(s):
+            service = get_service_key(s)
+            unit = s['gps_car_id']
+            was_planned = self.allocations.was_planned(service, unit)
+            corrected_error = self.get_corrected_error(s['median_time_error'])
+            return (was_planned, s['total_matching'] / 8, -abs(corrected_error))
+
         for unit in self.tracker.get_all_units():
 
-            service_matchings = list(get_service_matchings_for_unit(unit))
-            service_matchings = filter(lambda s: self.is_likely_match(s.as_dict()), service_matchings)
-            service_matchings = sorted(service_matchings,
-                                       key=lambda s: s.total_matching, reverse=True)
+            service_matchings = get_service_matchings_for_unit(unit)
+            service_matchings = [s.as_dict() for s in service_matchings]
+            service_matchings = filter(lambda s: self.is_likely_match(s), service_matchings)
+            service_matchings = sorted(service_matchings, key=sorting_key, reverse=True)
 
-            true_matches = set()
+            true_matches = list()
 
             for s in service_matchings:
 
@@ -71,21 +82,18 @@ class Matchings:
                     self.overlaps_significantly(s,x) for x in true_matches)
 
                 if not overlaps_with_existing:
-                    true_matches.add(s)
+                    true_matches.append(s)
 
-            unit_matchings[unit] = set((s.headcode, s.origin_location, s.origin_departure) for s in true_matches)
+            unit_matchings[unit] = map(get_service_key, true_matches)
 
         service_matchings = flip_matchings(unit_matchings)
 
         return service_matchings
 
     def overlaps_significantly(self, s1, s2):
-        overlap = self.service_matchings_overlap(s1, s2)
-        return overlap > env.max_overlap or \
-               (s1.start <= s2.start == s1.end >= s2.end)
-
-    def service_matchings_overlap(self, s1, s2):
-        return get_interval_overlap(s1.start, s1.end, s2.start, s2.end)
+        overlap = get_interval_overlap(s1['start'], s1['end'], s2['start'], s2['end'])
+        one_is_inside_the_other = s1['start'] <= s2['start'] == s1['end'] >= s2['end']
+        return overlap > env.max_overlap or one_is_inside_the_other
 
     def get_matchings_diff(self, proposed):
         """Gets a dictionary of proposed allocations (output of `get_matchings`)
