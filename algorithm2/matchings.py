@@ -40,12 +40,15 @@ class Matchings:
         interval = s['end'] - s['start']
         corrected_error = self.get_corrected_error(s['mean_time_error'])
         matched_over_total = float(s['total_matching']) / self.tracker.get_total_for_service(service)
+
+        low_error_if_few_reports = s['total_matching'] > 5 or (s['variance_time_error'] < 2.0 and abs(corrected_error) < 1.0)
         insignificant = matched_over_total < 0.35 and interval < timedelta(minutes=15)
 
-        return s['total_matching'] > 1 and \
+        return s['total_matching'] > 2 and \
                s['variance_time_error'] < 6.0 and \
                abs(corrected_error) < 1.5 and \
-               (not insignificant)
+               low_error_if_few_reports and \
+               not insignificant
 
     def get_match_score(self, service_matching_props):
 
