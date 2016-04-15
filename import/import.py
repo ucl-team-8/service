@@ -311,11 +311,11 @@ def main():
 
     close_files(files)
 
-    print("Importing Diagram data...")
-    stops = parseDiagrams()
-
-    print("Importing Diagram Stops data...")
-    store_rows(stops, DiagramStop)
+    # print("Importing Diagram data...")
+    # stops = parseDiagrams()
+    #
+    # print("Importing Diagram Stops data...")
+    # store_rows(stops, DiagramStop)
 
     print("\nSuccessfully imported all data.\n")
 
