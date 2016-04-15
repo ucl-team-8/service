@@ -57,9 +57,9 @@ class ServiceMatcher:
 
     def generate_from_event_matchings(self, pkey, event_matchings):
 
-        headcode, origin_location, origin_departure, gps_car_id = pkey
+        event_matchings = self.filter_closest_matchings(event_matchings)
 
-        total_matching = len(event_matchings)
+        headcode, origin_location, origin_departure, gps_car_id = pkey
 
         trust_times = [m['trust_event_time'] for m in event_matchings]
         gps_times = [m['gps_event_time'] for m in event_matchings]
@@ -76,7 +76,7 @@ class ServiceMatcher:
             'gps_car_id': gps_car_id,
             'mean_time_error': average(time_errors),
             'variance_time_error': variance(time_errors),
-            'total_matching': total_matching,
+            'total_matching': len(event_matchings),
             'start': start,
             'end': end
         }
@@ -98,6 +98,23 @@ class ServiceMatcher:
 
         return combined
 
-    def filter_closest_matchings(event_matchings):
-        # TODO
-        return event_matchings
+    def filter_closest_matchings(self, event_matchings):
+
+        filtered = []
+
+        def sorting_key(m):
+            error = diff_seconds(m['trust_event_time'], m['gps_event_time']) / 60.0
+            return abs(env.get_corrected_error(error))
+
+        event_matchings = sorted(event_matchings, key=sorting_key)
+
+        seen_trust = set()
+        seen_gps = set()
+
+        for m in event_matchings:
+            if m['trust_id'] not in seen_trust and m['gps_id'] not in seen_gps:
+                filtered.append(m)
+            seen_trust.add(m['trust_id'])
+            seen_gps.add(m['gps_id'])
+
+        return filtered
