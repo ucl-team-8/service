@@ -79,12 +79,12 @@ class Simulator(threading.Thread):
             if next_gps is not None and ((next_trust is None) or \
                 next_gps.event_time < next_trust.event_time):
 
-                self.event_matcher.match_gps(next_gps)
+                self.event_matcher.match_gps(next_gps.as_dict())
                 self.set_now(next_gps.event_time)
                 next_gps = self.get_next_gps()
 
             else:
-                self.event_matcher.match_trust(next_trust)
+                self.event_matcher.match_trust(next_trust.as_dict())
                 self.set_now(next_trust.event_time)
                 next_trust = self.get_next_trust()
 

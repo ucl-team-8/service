@@ -1,3 +1,4 @@
+from utils import get_service_key
 
 class MatcherQueue:
     """Temporarily stores event matchings (trust->gps) passed from the EventMatcher.
@@ -20,10 +21,8 @@ class MatcherQueue:
         row = self.__get_matching_props(trust, gps)
         self.event_matching_rows.append(row)
 
-        service = (trust.headcode,
-                   trust.origin_location,
-                   trust.origin_departure)
-        unit = gps.gps_car_id
+        service = get_service_key(trust)
+        unit = gps['gps_car_id']
         self.changed_service_matchings.add(service + (unit,))
 
     def pop_event_matching_rows(self):
@@ -38,12 +37,12 @@ class MatcherQueue:
 
     def __get_matching_props(self, trust, gps):
         return {
-            'headcode': trust.headcode,
-            'origin_location': trust.origin_location,
-            'origin_departure': trust.origin_departure,
-            'gps_car_id': gps.gps_car_id,
-            'trust_id': trust.id,
-            'gps_id': gps.id,
-            'trust_event_time': trust.event_time,
-            'gps_event_time': gps.event_time
+            'headcode': trust['headcode'],
+            'origin_location': trust['origin_location'],
+            'origin_departure': trust['origin_departure'],
+            'gps_car_id': gps['gps_car_id'],
+            'trust_id': trust['id'],
+            'gps_id': gps['id'],
+            'trust_event_time': trust['event_time'],
+            'gps_event_time': gps['event_time']
         }
