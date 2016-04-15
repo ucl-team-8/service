@@ -71,7 +71,8 @@ class ServiceMatcher:
         delete_keys = set(pkey_from_service_matching_props(props) for props in delete)
         # if it's not empty
         if delete_keys:
-            get_service_matchings_by_keys(delete_keys).delete()
+            service_matchings = get_service_matchings_by_keys(delete_keys)
+            db_session.query(service_matchings).delete()
 
         db_session.commit()
         db_session.close()
