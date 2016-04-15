@@ -34,18 +34,17 @@ class Matchings:
         corrected_error = self.get_corrected_error(s['median_time_error'])
         interval = s['end'] - s['start']
 
-        if s['total_matching'] <= 2 or interval < timedelta(minutes=5):
+        if s['total_matching'] < 2 or \
+           interval < timedelta(minutes=5) or \
+           abs(corrected_error) > 1.0:
             return False
         elif s['total_matching'] <= 5:
-            if abs(corrected_error) < 0.75:
-                if s['iqr_time_error'] < 1.5 or \
-                  (s['iqr_time_error'] < 2.5 and interval > timedelta(minutes=10)):
-                    return True
-                else:
-                    return False
+            if s['iqr_time_error'] < 1.5 or \
+              (s['iqr_time_error'] < 3.5 and interval > timedelta(minutes=10)):
+                return True
             else:
                 return False
-        elif abs(corrected_error) < 0.75 and s['iqr_time_error'] < 2.5:
+        elif s['iqr_time_error'] < 2.5:
             return True
         else:
             return False
