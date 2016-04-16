@@ -27,6 +27,12 @@ class Allocations:
         else:
             return copy.deepcopy(self.unit_allocations[unit])
 
+    def was_planned(self, service, unit):
+        if service not in self.service_allocations:
+            return False
+        else:
+            return unit in self.service_allocations[service]
+
     def __get_allocations(self):
         """Retrieves the allocations from the database.
         """

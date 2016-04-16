@@ -1,6 +1,6 @@
 import env
 from db_queries import get_service_matchings_for_unit
-from utils import get_interval_overlap, time_intervals_overlap, flip_matchings, date_to_iso
+from utils import get_interval_overlap, time_intervals_overlap, flip_matchings, date_to_iso, get_service_key
 from collections import defaultdict
 from datetime import timedelta
 
@@ -10,44 +10,60 @@ class Matchings:
         self.allocations = allocations
         self.tracker = tracker
 
-    def get_corrected_error(self, error):
-        return error - env.trust_delay
-
-    # TODO: just use `not is_likely_match` here?
-    def is_unlikely_match(self, service_matching_props):
-        return False
-        """Given a dictionary (representing a ServiceMatching row) it returns
-        whether it's a *remotely* likely a match.
-
-        Used by the service_matcher to decide whether it's worth storing it in
-        the database.
-
-        """
-        s = service_matching_props
-        corrected_error = self.get_corrected_error(s['median_time_error'])
-        return s['total_matching'] < 2 or \
-               abs(corrected_error) > 1.5
-
     def is_likely_match(self, service_matching_props):
 
         s = service_matching_props
-        corrected_error = self.get_corrected_error(s['median_time_error'])
-        interval = s['end'] - s['start']
+        service = get_service_key(s)
+        unit = s['gps_car_id']
 
-        if s['total_matching'] < 2 or \
-           interval < timedelta(minutes=5) or \
-           abs(corrected_error) > 1.0:
-            return False
-        elif s['total_matching'] <= 5:
-            if s['iqr_time_error'] < 1.5 or \
-              (s['iqr_time_error'] < 3.5 and interval > timedelta(minutes=10)):
-                return True
-            else:
-                return False
-        elif s['iqr_time_error'] < 2.5:
+        if self.allocations.was_planned(service, unit):
             return True
-        else:
-            return False
+
+        interval = s['end'] - s['start']
+        corrected_error = env.get_corrected_error(s['mean_time_error'])
+        matched_over_total = float(s['total_matching']) / self.tracker.get_total_for_service(service)
+
+        low_error_if_few_reports = s['total_matching'] > 5 or (s['variance_time_error'] < 2.0 and abs(corrected_error) < 1.0)
+        insignificant = matched_over_total < 0.35 and interval < timedelta(minutes=15)
+
+        return s['total_matching'] > 2 and \
+               s['variance_time_error'] < 6.0 and \
+               abs(corrected_error) < 1.5 and \
+               low_error_if_few_reports and \
+               not insignificant
+
+    def get_match_score(self, service_matching_props):
+
+        s = service_matching_props
+        service = get_service_key(service_matching_props)
+        unit = s['gps_car_id']
+        corrected_error = env.get_corrected_error(s['mean_time_error'])
+
+        was_planned = self.allocations.was_planned(service, unit)
+
+        close_match = s['total_matching'] > 8 and \
+                      abs(corrected_error) < 1.0 and \
+                      s['variance_time_error'] < 2.0
+
+        # intentionally coerces to int to form buckets
+        total_matching_score = int(s['total_matching'] / 5)
+
+        error_score = int(abs(corrected_error) / 0.4)
+
+        matched_over_total = float(s['total_matching']) / self.tracker.get_total_for_service(service)
+        matched_over_total_score = int(matched_over_total / 0.25) # 4 buckets essentially
+
+        meets_low = s['variance_time_error'] < 3.0 or \
+                   (s['variance_time_error'] < 5.0 and s['total_matching'] < 6)
+
+        return (
+            -int(was_planned),              # descending
+            -int(close_match),              # descending
+            -int(total_matching_score),     # descending
+            int(error_score),               # ascending
+            -int(matched_over_total_score), # descending
+            -int(meets_low)                 # descending
+        )
 
     def get_all_matchings(self):
         """The final pass of the matching algorithm that decides which service
@@ -57,12 +73,12 @@ class Matchings:
 
         for unit in self.tracker.get_all_units():
 
-            service_matchings = list(get_service_matchings_for_unit(unit))
-            service_matchings = filter(lambda s: self.is_likely_match(s.as_dict()), service_matchings)
-            service_matchings = sorted(service_matchings,
-                                       key=lambda s: s.total_matching, reverse=True)
+            service_matchings = get_service_matchings_for_unit(unit)
+            service_matchings = [s.as_dict() for s in service_matchings]
+            service_matchings = filter(lambda s: self.is_likely_match(s), service_matchings)
+            service_matchings = sorted(service_matchings, key=self.get_match_score)
 
-            true_matches = set()
+            true_matches = list()
 
             for s in service_matchings:
 
@@ -71,21 +87,18 @@ class Matchings:
                     self.overlaps_significantly(s,x) for x in true_matches)
 
                 if not overlaps_with_existing:
-                    true_matches.add(s)
+                    true_matches.append(s)
 
-            unit_matchings[unit] = set((s.headcode, s.origin_location, s.origin_departure) for s in true_matches)
+            unit_matchings[unit] = map(get_service_key, true_matches)
 
         service_matchings = flip_matchings(unit_matchings)
 
         return service_matchings
 
     def overlaps_significantly(self, s1, s2):
-        overlap = self.service_matchings_overlap(s1, s2)
-        return overlap > env.max_overlap or \
-               (s1.start <= s2.start == s1.end >= s2.end)
-
-    def service_matchings_overlap(self, s1, s2):
-        return get_interval_overlap(s1.start, s1.end, s2.start, s2.end)
+        overlap = get_interval_overlap(s1['start'], s1['end'], s2['start'], s2['end'])
+        one_is_inside_the_other = s1['start'] <= s2['start'] == s1['end'] >= s2['end']
+        return overlap > env.max_overlap or one_is_inside_the_other
 
     def get_matchings_diff(self, proposed):
         """Gets a dictionary of proposed allocations (output of `get_matchings`)

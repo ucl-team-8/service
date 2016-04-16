@@ -1,5 +1,6 @@
 import env
 from tiploc_cache import TiplocCache
+from utils import get_service_key
 
 class EventMatcher:
     """Consumes TRUST & GPS reports. This is where the reports first come from
@@ -19,12 +20,10 @@ class EventMatcher:
 
     def match_trust(self, trust):
 
-        tiploc = trust.tiploc
-        time = trust.event_time
+        tiploc = trust['tiploc']
+        time = trust['event_time']
 
-        service = (trust.headcode,
-                   trust.origin_location,
-                   trust.origin_departure)
+        service = get_service_key(trust)
         self.tracker.seen_service(service)
 
         self.trust_cache.add(tiploc, time, trust)
@@ -38,10 +37,10 @@ class EventMatcher:
 
     def match_gps(self, gps):
 
-        tiploc = gps.tiploc
-        time = gps.event_time
+        tiploc = gps['tiploc']
+        time = gps['event_time']
 
-        unit = gps.gps_car_id
+        unit = gps['gps_car_id']
         self.tracker.seen_unit(unit)
 
         self.gps_cache.add(tiploc, time, gps)

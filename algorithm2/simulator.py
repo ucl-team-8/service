@@ -2,7 +2,7 @@ import env
 import threading
 from db_queries import db_session
 from windowed_query import windowed_query
-from models import Trust, GPS, EventMatching, ServiceMatching
+from models import Trust, GPS, ServiceMatching
 from datetime import datetime, timedelta
 from utils import date_to_iso, serialize_matchings
 from segment import from_matchings_diff_serialized
@@ -79,12 +79,12 @@ class Simulator(threading.Thread):
             if next_gps is not None and ((next_trust is None) or \
                 next_gps.event_time < next_trust.event_time):
 
-                self.event_matcher.match_gps(next_gps)
+                self.event_matcher.match_gps(next_gps.as_dict())
                 self.set_now(next_gps.event_time)
                 next_gps = self.get_next_gps()
 
             else:
-                self.event_matcher.match_trust(next_trust)
+                self.event_matcher.match_trust(next_trust.as_dict())
                 self.set_now(next_trust.event_time)
                 next_trust = self.get_next_trust()
 
@@ -93,7 +93,6 @@ class Simulator(threading.Thread):
         print("Finished matching.")
 
     def clear_tables(self):
-        db_session.query(EventMatching).delete()
         db_session.query(ServiceMatching).delete()
         db_session.commit()
         db_session.close()

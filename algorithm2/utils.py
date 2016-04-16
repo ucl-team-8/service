@@ -2,9 +2,9 @@ from math import sqrt, floor, ceil
 from collections import defaultdict
 from datetime import datetime
 
-# datetime difference in seconds
-def diff_seconds(a, b):
-    return (a - b).total_seconds()
+# datetime difference in minutes
+def diff_minutes(a, b):
+    return (a - b).total_seconds() / 60.0
 
 def average(lst):
     return sum(lst) / len(lst)
@@ -45,6 +45,27 @@ def variance(lst):
 
 def stddev(list):
     return sqrt(variance(lst))
+
+def combine_stats(a, b):
+    """Combines the mean and variance for two samples"""
+
+    m, mean_m, var_m = a
+    n, mean_n, var_n = b
+
+    t_m = mean_m * m
+    t_n = mean_n * n
+
+    total = m + n
+    mean = float(t_m + t_n) / (total)
+
+    s_m = var_m * m
+    s_n = var_n * n
+
+    s_mn = s_m + s_n + (float(m) / (n * (total))) * ((float(n) / m) * t_m - t_n) ** 2
+
+    variance = float(s_mn) / total
+
+    return (total, mean, variance)
 
 # http://stackoverflow.com/a/3721301/1775517
 def time_intervals_overlap(t1start, t1end, t2start, t2end):
@@ -109,3 +130,6 @@ def get_service_dict(service_key):
 
 def get_matching_key(matching_dict):
     return get_service_key(matching_dict) + (matching_dict['gps_car_id'], )
+
+def flatten(lst):
+    return [item for sublist in lst for item in sublist]

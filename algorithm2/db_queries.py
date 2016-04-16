@@ -1,7 +1,7 @@
 from app_db import app
 import sqlalchemy.sql
 from sqlalchemy.sql import and_, or_
-from models import Trust, GPS, EventMatching, ServiceMatching
+from models import Trust, GPS, ServiceMatching
 
 from sqlalchemy import create_engine
 from sqlalchemy.orm import scoped_session, sessionmaker
@@ -33,17 +33,6 @@ def get_gps_reports(gps_car_id, start=None, end=None):
     ).filter(*predicates).all()
     db_session.close()
     return gps_reports
-
-def get_event_matchings(service, unit):
-    headcode, origin_location, origin_departure = service
-    gps_car_id = unit
-    q = db_session.query(EventMatching).filter_by(
-        headcode=headcode,
-        origin_location=origin_location,
-        origin_departure=origin_departure,
-        gps_car_id=gps_car_id).all()
-    db_session.close()
-    return q
 
 def get_service_matching(service, unit):
     primary_key = service + (unit,)
