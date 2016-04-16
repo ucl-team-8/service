@@ -10,21 +10,6 @@ class Matchings:
         self.allocations = allocations
         self.tracker = tracker
 
-    # TODO: just use `not is_likely_match` here?
-    def is_unlikely_match(self, service_matching_props):
-        """Given a dictionary (representing a ServiceMatching row) it returns
-        whether it's a *remotely* likely a match.
-
-        Used by the service_matcher to decide whether it's worth storing it in
-        the database.
-
-        """
-        return False
-        # s = service_matching_props
-        # corrected_error = env.get_corrected_error(s['mean_time_error'])
-        # return s['total_matching'] < 2 or \
-        #        abs(corrected_error) > 1.5
-
     def is_likely_match(self, service_matching_props):
 
         s = service_matching_props
