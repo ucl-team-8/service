@@ -9,10 +9,8 @@ class ServiceMatcher:
 
     """
 
-    def __init__(self, queue, matchings, tracker):
+    def __init__(self, queue):
         self.queue = queue
-        self.matchings = matchings
-        self.tracker = tracker
 
     def run(self):
         self.save_matchings()
