@@ -21,12 +21,11 @@ class ServiceMatcher:
         """
 
         new_matchings = self.queue.pop_event_matchings()
-
-        # changed_keys = self.queue.pop_changed_service_matchings_keys()
         changed_keys = set(new_matchings.keys())
 
         existing_matchings = get_service_matchings_by_keys(changed_keys)
         existing_keys = set(map(pkey_from_service_matching, existing_matchings))
+        
         new_keys = changed_keys - existing_keys
 
         insert, update = [], []
