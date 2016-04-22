@@ -7,10 +7,12 @@ import os
 
 from models import *
 
+def extract_dict(record):
+    return record.as_dict()
+
 @app.route("/visualisation")
 def hello():
     return render_template('visualisation.html')
-
 
 @app.route("/basic-algorithm")
 def basic_algorithm():
@@ -41,26 +43,12 @@ def trust():
 @app.route("/events/gps.json")
 def gps():
     records = db.session.query(GPS)
-
-    def extract_dict(record):
-        result = record.as_dict()
-        return result
-
     return jsonify(result=map(extract_dict, records))
 
 
-@app.route("/data/schedule.json")
-def schedule():
-    records = db.session.query(Schedule, UnitToGPSMapping).\
-              outerjoin(UnitToGPSMapping, Schedule.unit==UnitToGPSMapping.unit)
-
-    def extract_dict(record):
-        schedule, mapping = record
-        result = schedule.as_dict()
-        if mapping:
-            result['gps_car_id'] = mapping.gps_car_id
-        return result
-
+@app.route("/data/allocations.json")
+def allocations():
+    records = db.session.query(Schedule)
     return jsonify(result=map(extract_dict, records))
 
 
