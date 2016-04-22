@@ -26,12 +26,6 @@ import sameService from "./utils/same-service";
 import renderSegments from "./reports/render";
 import renderServices from "./services/render";
 
-/*
-
-IMPORTANT: All the code in this file is sort of hacked together and you probably
-shouldn't add functionality here, instead make a new module or something.
-
-*/
 
 /* =============================================================================
    Globals
