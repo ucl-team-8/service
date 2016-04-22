@@ -78,18 +78,18 @@ class Matchings:
             service_matchings = filter(lambda s: self.is_likely_match(s), service_matchings)
             service_matchings = sorted(service_matchings, key=self.get_match_score)
 
-            true_matches = list()
+            likely_matches = list()
 
             for s in service_matchings:
 
                 # detects of any existing matches overlap for more than `env.max_overlap`
                 overlaps_with_existing = any(
-                    self.overlaps_significantly(s,x) for x in true_matches)
+                    self.overlaps_significantly(s,x) for x in likely_matches)
 
                 if not overlaps_with_existing:
-                    true_matches.append(s)
+                    likely_matches.append(s)
 
-            unit_matchings[unit] = map(get_service_key, true_matches)
+            unit_matchings[unit] = map(get_service_key, likely_matches)
 
         service_matchings = flip_matchings(unit_matchings)
 
