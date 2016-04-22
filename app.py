@@ -7,7 +7,7 @@ import os
 
 from models import *
 
-@app.route("/")
+@app.route("/visualisation")
 def hello():
     return render_template('visualisation.html')
 
@@ -17,9 +17,9 @@ def basic_algorithm():
     return render_template("basic-algorithm.html")
 
 
-@app.route("/map")
+@app.route("/")
 def trainMap():
-    return render_template("map.html")
+    return render_template("live.html")
 
 
 @app.route("/events/trust.json")

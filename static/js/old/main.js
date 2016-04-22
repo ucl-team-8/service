@@ -1,6 +1,6 @@
 import d3 from "d3";
 import _ from "lodash";
-import noOverlap from "./vis/utils/no-overlap-time-scale";
+import noOverlap from "../live/utils/no-overlap-time-scale";
 
 let notMatched = [];
 var data = window.data || {};
