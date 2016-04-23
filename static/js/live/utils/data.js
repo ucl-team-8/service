@@ -23,9 +23,9 @@ export function serializeDate(date) {
 // -----------------------------------------------------------------------------
 
 export function trustDatatypes(d) {
-  d.event_time = parseDate(d.event_time);
-  d.origin_departure = parseDate(d.origin_departure);
-  d.tiploc = d.tiploc.trim();
+  if (d.event_time) d.event_time = parseDate(d.event_time);
+  if (d.origin_departure) d.origin_departure = parseDate(d.origin_departure);
+  if (d.tiploc) d.tiploc = d.tiploc.trim();
   return d;
 }
 
@@ -45,7 +45,7 @@ export function parseTrust(reports) {
 // -----------------------------------------------------------------------------
 
 export function gpsDatatypes(d) {
-  d.event_time = parseDate(d.event_time);
+  if (d.event_time) d.event_time = parseDate(d.event_time);
   return d;
 }
 
@@ -64,19 +64,69 @@ export function parseGPS(reports) {
 
 // -----------------------------------------------------------------------------
 
+export function serviceDatatypes(d) {
+  d.origin_departure = parseDate(d.origin_departure);
+  d.reports = parseTrust(d.reports);
+  return d;
+}
+
+export function getServices() {
+  return get("json", "/data/services.json").then((data) => {
+    data = data.result;
+    data.forEach(serviceDatatypes);
+    return data;
+  });
+}
+
+// -----------------------------------------------------------------------------
+
+export function unitDatatypes(d) {
+  d.reports = parseGPS(d.reports);
+  return d;
+}
+
+export function getUnits() {
+  return get("json", "/data/units.json").then((data) => {
+    data = data.result;
+    data.forEach(unitDatatypes);
+    return data;
+  });
+}
+
+// -----------------------------------------------------------------------------
+
+export function augmentedDatatypes(d) {
+  d.origin_departure = parseDate(d.origin_departure);
+  d.units.forEach(parseSegment)
+  return d;
+}
+
+export function getAugmented() {
+  return get("json", "/data/augmented_matchings.json").then((data) => {
+    data = data.result;
+    data.forEach(augmentedDatatypes);
+    return data;
+  });
+}
+
+// -----------------------------------------------------------------------------
+
 export function locationsDatatypes(d) {
-  d.cif_pass_count = Number(d.cif_pass_count);
-  d.cif_stop_count = Number(d.cif_stop_count);
-  d.is_cif_stop = Boolean(d.is_cif_stop);
-  d.latitude = Number(d.latitude);
-  d.longitude = Number(d.longitude);
-  d.easting = Number(d.easting);
-  d.northing = Number(d.northing);
+  if (d.cif_pass_count) d.cif_pass_count = Number(d.cif_pass_count);
+  if (d.cif_stop_count) d.cif_stop_count = Number(d.cif_stop_count);
+  if (d.is_cif_stop) d.is_cif_stop = Boolean(d.is_cif_stop);
+  if (d.latitude) d.latitude = Number(d.latitude);
+  if (d.longitude) d.longitude = Number(d.longitude);
+  if (d.easting) d.easting = Number(d.easting);
+  if (d.northing) d.northing = Number(d.northing);
   return d;
 }
 
 export function getLocations() {
-  return get("csv", "/static/data/locations_northern_rail_extract.csv").then(parseLocations);
+  return get("json", "/data/locations.json").then((data) => {
+    data = data.result;
+    return parseLocations(data);
+  });
 }
 
 export function parseLocations(locations) {
@@ -108,10 +158,14 @@ export function parseSegment(segment) {
   if (segment.origin_departure) segment.origin_departure = parseDate(segment.origin_departure);
   if (segment.start) segment.start = parseDate(segment.start);
   if (segment.end) segment.end = parseDate(segment.end);
-  segment.trust.forEach(trustDatatypes);
-  segment.gps.forEach(gpsDatatypes);
-  segment.trust = _.sortBy(segment.trust, "event_time");
-  segment.gps = _.sortBy(segment.gps, "event_time");
+  if (segment.trust) {
+    segment.trust.forEach(trustDatatypes);
+    segment.trust = _.sortBy(segment.trust, "event_time");
+  }
+  if (segment.gps) {
+    segment.gps.forEach(gpsDatatypes);
+    segment.gps = _.sortBy(segment.gps, "event_time");
+  }
   return segment;
 }
 

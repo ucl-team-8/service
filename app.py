@@ -1,6 +1,8 @@
 from flask import render_template, jsonify
 from sqlalchemy.sql import func, and_
 from app_db import app, db, socketio, dispatcher
+from collections import defaultdict
+from algorithm2.segment import serialize_segment
 import app_socketio
 import sys
 import os
@@ -45,11 +47,54 @@ def gps():
     records = db.session.query(GPS)
     return jsonify(result=map(extract_dict, records))
 
-
 @app.route("/data/allocations.json")
 def allocations():
     records = db.session.query(Schedule)
     return jsonify(result=map(extract_dict, records))
+
+@app.route("/data/services.json")
+def services():
+    records = db.session.query(Trust)
+    reports = map(extract_dict, records)
+    services = defaultdict(list)
+    for r in reports:
+        key = (r['headcode'], r['origin_location'], r['origin_departure'])
+        value = {key: r[key] for key in r if key in ['id', 'event_time', 'event_type', 'tiploc']}
+        services[key].append(value)
+    result = list()
+    for key, reports in services.iteritems():
+        result.append({
+            'headcode': key[0],
+            'origin_location': key[1],
+            'origin_departure': key[2],
+            'reports': reports
+        })
+    return jsonify(result=map(serialize_segment, result))
+
+@app.route("/data/units.json")
+def units():
+    records = db.session.query(GPS)
+    reports = map(extract_dict, records)
+    units = defaultdict(list)
+    for r in reports:
+        key = r['gps_car_id']
+        value = {key: r[key] for key in r if key in ['id', 'event_time', 'event_type', 'tiploc']}
+        units[key].append(value)
+    result = list()
+    for key, reports in units.iteritems():
+        result.append({
+            'gps_car_id': key,
+            'reports': reports
+        })
+    return jsonify(result=map(serialize_segment, result))
+
+@app.route("/data/augmented_matchings.json")
+def augmented_matchings():
+    return jsonify(result=app_socketio.get_augmented_matchings())
+
+@app.route("/data/locations.json")
+def locations():
+    return jsonify(result=app_socketio.get_locations())
 
 
 if __name__ == "__main__":

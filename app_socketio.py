@@ -46,6 +46,19 @@ def get_matchings():
     env.matchings_lock.release()
     return matchings
 
+def get_augmented_matchings():
+    matchings = get_matchings()
+    json = list()
+    for service, units_diff in matchings.iteritems():
+        headcode, origin_location, origin_departure = service
+        json.append({
+            'headcode': headcode,
+            'origin_location': origin_location,
+            'origin_departure': date_to_iso(origin_departure),
+            'units': segment.from_matchings_diff_serialized(service, units_diff)
+        })
+    return json
+
 def get_locations():
 
     trust_tiplocs = db.session.query(Trust.tiploc).all()
@@ -55,10 +68,21 @@ def get_locations():
     tiplocs.update([x[0] for x in trust_tiplocs])
     tiplocs.update([x[0] for x in gps_tiplocs])
 
-    records = db.session.query(GeographicalLocation).filter(
+    records = db.session.query(
+        GeographicalLocation.tiploc,
+        GeographicalLocation.longitude,
+        GeographicalLocation.latitude
+    ).filter(
         GeographicalLocation.tiploc.in_(tiplocs)
     ).all()
 
     db.session.close()
 
-    return [r.as_dict() for r in records]
+    return map(tiploc_json, records)
+
+def tiploc_json(r):
+    return {
+        'tiploc': r[0],
+        'longitude': r[1],
+        'latitude': r[2]
+    }

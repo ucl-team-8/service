@@ -102,12 +102,12 @@ class Simulator(threading.Thread):
     def run_algorithm(self):
         self.service_matcher.run()
         matchings = self.save_matchings_in_global()
-        self.dispatcher.dispatch('time', date_to_iso(env.now))
-        self.dispatcher.dispatch('matchings', serialize_matchings(matchings))
-        for service, unit_matchings_diff in matchings.iteritems():
-            if not self.dispatcher.has_listeners(service): continue
-            segments = from_matchings_diff_serialized(service, unit_matchings_diff)
-            self.dispatcher.dispatch_service(service, segments)
+        # self.dispatcher.dispatch('time', date_to_iso(env.now))
+        # self.dispatcher.dispatch('matchings', serialize_matchings(matchings))
+        # for service, unit_matchings_diff in matchings.iteritems():
+        #     if not self.dispatcher.has_listeners(service): continue
+        #     segments = from_matchings_diff_serialized(service, unit_matchings_diff)
+        #     self.dispatcher.dispatch_service(service, segments)
 
     def save_matchings_in_global(self):
         all_matchings = self.matchings.get_all_matchings()

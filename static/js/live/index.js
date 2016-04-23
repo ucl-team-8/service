@@ -11,7 +11,10 @@ import {
   parseSegment,
   parseMatching,
   parseDate,
-  serializeDate
+  serializeDate,
+  getServices,
+  getUnits,
+  getAugmented
 } from "./utils/data";
 
 import {
@@ -26,6 +29,11 @@ import sameService from "./utils/same-service";
 import renderSegments from "./reports/render";
 import renderServices from "./services/render";
 
+import {
+  getMatchingsFromAugmented,
+  getSegmentsFromSelected
+} from "./utils/static";
+
 
 /* =============================================================================
    Globals
@@ -37,6 +45,27 @@ window.segments = [];
 window.matchings = [];
 window.selected;
 window.service_search;
+
+
+/* =============================================================================
+   Static extract handling
+ */
+
+Promise.all([
+  getServices(),
+  getUnits(),
+  getLocations(),
+  getAugmented()
+]).then(([services, units, locations, augmented]) => {
+  window.services = services;
+  window.units = units;
+  window.matchings = getMatchingsFromAugmented(augmented);
+  window.augmented = augmented;
+  window.locations = _.keyBy(locations, "tiploc");
+  render();
+})
+
+
 
 /* =============================================================================
    Map
@@ -111,7 +140,8 @@ function rerenderServices() {
 
 function rerenderSegments() {
   let selected = window.selected;
-  let serviceSegments = getSegmentsMatchingService(window.segments, selected);
+  // let serviceSegments = getSegmentsMatchingService(window.segments, selected);
+  let serviceSegments = getSegmentsFromSelected(selected);
   renderSegments(segmentsContainer.node(), serviceSegments, routeMap);
 }
 
@@ -119,64 +149,65 @@ function rerenderSegments() {
    Algorithm 2
  */
 
-let socket = io();
-
-window.socket = socket;
-
-socket.on('connect', function() {
-  console.log("Connected");
-  if (window.selected) subscribe(window.selected);
-});
-
-socket.on('locations', function(locations) {
-  window.locations = _.keyBy(locations, "tiploc");
-});
-
-socket.on('matchings', function(matchings) {
-  console.log("matchings update");
-  window.matchings = matchings.map(parseMatching);
-  rerenderServices()
-});
-
-socket.on('segments', function(segments) {
-  console.log("segments update new");
-  segments = window.segments = segments.map(parseSegment);
-  rerenderSegments();
-  if (routeMap.isEmpty()) {
-    let serviceSegment = _.find(segments, { type: "service" });
-    if (serviceSegment) routeMap.plotServices([serviceSegment.trust]);
-  }
-});
-
-socket.on('time', function(time) {
-  updateTime(parseDate(time));
-});
-
-function subscribe(service) {
-  let serviceKey = getServiceKey(service);
-  serviceKey.origin_departure = serializeDate(serviceKey.origin_departure);
-  socket.emit('subscribe', serviceKey);
-}
-
-function unsubscribe(service) {
-  let serviceKey = getServiceKey(service);
-  serviceKey.origin_departure = serializeDate(serviceKey.origin_departure);
-  socket.emit('unsubscribe', serviceKey);
-}
+// let socket = io();
+//
+// window.socket = socket;
+//
+// socket.on('connect', function() {
+//   console.log("Connected");
+//   if (window.selected) subscribe(window.selected);
+// });
+//
+// socket.on('locations', function(locations) {
+//   window.locations = _.keyBy(locations, "tiploc");
+// });
+//
+// socket.on('matchings', function(matchings) {
+//   console.log("matchings update");
+//   console.log(matchings);
+//   window.matchings = matchings.map(parseMatching);
+//   rerenderServices()
+// });
+//
+// socket.on('segments', function(segments) {
+//   console.log("segments update new");
+//   segments = window.segments = segments.map(parseSegment);
+//   rerenderSegments();
+//   if (routeMap.isEmpty()) {
+//     let serviceSegment = _.find(segments, { type: "service" });
+//     if (serviceSegment) routeMap.plotServices([serviceSegment.trust]);
+//   }
+// });
+//
+// socket.on('time', function(time) {
+//   updateTime(parseDate(time));
+// });
+//
+// function subscribe(service) {
+//   let serviceKey = getServiceKey(service);
+//   serviceKey.origin_departure = serializeDate(serviceKey.origin_departure);
+//   socket.emit('subscribe', serviceKey);
+// }
+//
+// function unsubscribe(service) {
+//   let serviceKey = getServiceKey(service);
+//   serviceKey.origin_departure = serializeDate(serviceKey.origin_departure);
+//   socket.emit('unsubscribe', serviceKey);
+// }
 
 window.select = (service) => {
 
-  if (window.selected) {
-    let oldServiceKey = getServiceKey(window.selected);
-    unsubscribe(oldServiceKey);
-  }
+  // if (window.selected) {
+  //   let oldServiceKey = getServiceKey(window.selected);
+  //   unsubscribe(oldServiceKey);
+  // }
 
   let serviceKey = getServiceKey(service);
   console.log("selecting", serviceKey);
   window.selected = serviceKey;
-  subscribe(serviceKey);
+  // subscribe(serviceKey);
   render();
-  routeMap.plot([]);
+  // routeMap.plot([]);
 }
 
 
@@ -184,38 +215,38 @@ window.select = (service) => {
    Algorithm 1 - Socket segment synchronisation
  */
 
-socket.on('update', function(data) {
-  data = JSON.parse(data);
-  let index = getSegmentWithId(data.id);
-  if(index == -1) {
-    // TODO: Segment with id was not found, something is broken
-  } else {
-    segments[index] = getSegment(data);
-    let service = getServiceKey(segments[index]);
-    if (_.isEqual(service, window.selected)) {
-      rerenderSegments();
-    }
-  }
-});
-
-// The data is the id
-socket.on('delete', function(data) {
-  data = JSON.parse(data);
-  let index = getSegmentWithId(data);
-  if(index != -1) {
-    let segment = segments.splice(index, 1)[0];
-    let service = getServiceKey(segment);
-    if (_.isEqual(service, window.selected)) {
-      rerenderSegments();
-    }
-  }
-});
-
-socket.on('new', function(data) {
-  data = JSON.parse(data);
-  segments.push(getSegment(data));
-});
-
-function getSegmentWithId(id) {
-  return _.findIndex(segments, d => d.id === id);
-}
+// socket.on('update', function(data) {
+//   data = JSON.parse(data);
+//   let index = getSegmentWithId(data.id);
+//   if(index == -1) {
+//     // TODO: Segment with id was not found, something is broken
+//   } else {
+//     segments[index] = getSegment(data);
+//     let service = getServiceKey(segments[index]);
+//     if (_.isEqual(service, window.selected)) {
+//       rerenderSegments();
+//     }
+//   }
+// });
+//
+// // The data is the id
+// socket.on('delete', function(data) {
+//   data = JSON.parse(data);
+//   let index = getSegmentWithId(data);
+//   if(index != -1) {
+//     let segment = segments.splice(index, 1)[0];
+//     let service = getServiceKey(segment);
+//     if (_.isEqual(service, window.selected)) {
+//       rerenderSegments();
+//     }
+//   }
+// });
+//
+// socket.on('new', function(data) {
+//   data = JSON.parse(data);
+//   segments.push(getSegment(data));
+// });
+//
+// function getSegmentWithId(id) {
+//   return _.findIndex(segments, d => d.id === id);
+// }

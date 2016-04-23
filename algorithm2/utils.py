@@ -109,7 +109,7 @@ def serialize_matchings(matchings_diff):
             'headcode': headcode,
             'origin_location': origin_location,
             'origin_departure': date_to_iso(origin_departure),
-            'units': { key: list(units) for key, units in units.iteritems() }
+            'units': units
         })
     return json
 

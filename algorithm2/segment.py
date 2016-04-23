@@ -17,16 +17,16 @@ def from_service_matching(service_matching):
     service = get_service_key(matching)
     gps_car_id = matching['gps_car_id']
 
-    trust_reports = get_trust_reports(service, start=matching['start'], end=matching['end'])
-    gps_reports = get_gps_reports(gps_car_id, start=matching['start'], end=matching['end'])
+    # trust_reports = get_trust_reports(service, start=matching['start'], end=matching['end'])
+    # gps_reports = get_gps_reports(gps_car_id, start=matching['start'], end=matching['end'])
 
     return get_segment_template(
         headcode=matching['headcode'],
         origin_location=matching['origin_location'],
         origin_departure=matching['origin_departure'],
         gps_car_id=gps_car_id,
-        trust=trust_reports,
-        gps=gps_reports,
+        # trust=trust_reports,
+        # gps=gps_reports,
         start=matching['start'],
         end=matching['end'],
         total_matching=matching['total_matching'],
@@ -37,8 +37,8 @@ def from_matchings_diff(service, unit_matchings_diff):
     all_segments = []
 
     # first segment is the service alone
-    service_segment = get_service_segment(service)
-    all_segments.append(service_segment)
+    # service_segment = get_service_segment(service)
+    # all_segments.append(service_segment)
 
     # rest are with paired with units
     for diff_type, units in unit_matchings_diff.iteritems():
@@ -96,8 +96,8 @@ def get_segment_template(**props):
       'origin_location': None,
       'origin_departure': None,
       'gps_car_id': None,
-      'trust': [],
-      'gps': [],
+    #   'trust': [],
+    #   'gps': [],
       'start': None,
       'end': None,
       'type': None
@@ -113,10 +113,11 @@ def transform_fields(a_dict, fields, transform):
 
 def serialize_segment(segment):
     transform_fields(segment, ['origin_departure', 'start', 'end'], date_to_iso)
-    transform_fields(segment, ['trust', 'gps'], lambda x: map(serialize_report, x))
+    transform_fields(segment, ['trust', 'gps', 'reports'], lambda x: map(serialize_report, x))
     return segment
 
 def serialize_report(report):
-    report = report.as_dict()
+    if not isinstance(report, dict):
+        report = report.as_dict()
     transform_fields(report, ['origin_departure', 'event_time'], date_to_iso)
     return report
