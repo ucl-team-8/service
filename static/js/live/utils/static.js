@@ -43,7 +43,7 @@ function attachReports(segment) {
     if (segment.start && segment.end) {
       trust = trust.filter(d => d.event_time >= segment.start && d.event_time <= segment.end);
     }
-    segment.trust = trust;
+    segment.trust = _.sortBy(trust, "event_time");
   }
 
   if (segment.gps == null && unitKey) {
@@ -52,6 +52,6 @@ function attachReports(segment) {
     if (segment.start && segment.end) {
       gps = gps.filter(d => d.event_time >= segment.start && d.event_time <= segment.end);
     }
-    segment.gps = gps;
+    segment.gps = _.sortBy(gps, "event_time");
   }
 }
