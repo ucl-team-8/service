@@ -142,6 +142,10 @@ function rerenderSegments() {
   let selected = window.selected;
   // let serviceSegments = getSegmentsMatchingService(window.segments, selected);
   let serviceSegments = getSegmentsFromSelected(selected);
+  if (routeMap.isEmpty()) {
+    let serviceSegment = _.find(serviceSegments, { type: "service" });
+    if (serviceSegment) routeMap.plotServices([serviceSegment.trust]);
+  }
   renderSegments(segmentsContainer.node(), serviceSegments, routeMap);
 }
 
@@ -206,8 +210,8 @@ window.select = (service) => {
   console.log("selecting", serviceKey);
   window.selected = serviceKey;
   // subscribe(serviceKey);
+  routeMap.plot([]);
   render();
-  // routeMap.plot([]);
 }
 
 
