@@ -100,9 +100,7 @@ python import/import.py east_coast
 
 depending on which data set you would like to import.
 
-### Folder Structure
-
-The folder structure of the project is relatively straightforward.
+## Folder Structure
 
 ```
 .
