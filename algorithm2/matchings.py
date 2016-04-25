@@ -40,8 +40,6 @@ class Matchings:
         unit = s['gps_car_id']
         corrected_error = env.get_corrected_error(s['mean_time_error'])
 
-        was_planned = self.allocations.was_planned(service, unit)
-
         close_match = s['total_matching'] > 8 and \
                       abs(corrected_error) < 1.0 and \
                       s['variance_time_error'] < 2.0
@@ -58,7 +56,6 @@ class Matchings:
                    (s['variance_time_error'] < 5.0 and s['total_matching'] < 6)
 
         return (
-            -int(was_planned),              # descending
             -int(close_match),              # descending
             -int(total_matching_score),     # descending
             int(error_score),               # ascending
