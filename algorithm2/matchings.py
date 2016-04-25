@@ -9,6 +9,7 @@ class Matchings:
     def __init__(self, allocations, tracker):
         self.allocations = allocations
         self.tracker = tracker
+        self.unit_matchings = dict()
 
     def is_likely_match(self, service_matching_props):
 
@@ -65,13 +66,11 @@ class Matchings:
             -int(meets_low)                 # descending
         )
 
-    def get_all_matchings(self):
-        """The final pass of the matching algorithm that decides which service
-        was ran by each unit.
-        """
-        unit_matchings = dict()
+    def update_matchings_for(self, changed_keys):
 
-        for unit in self.tracker.get_all_units():
+        changed_units = set(k[3] for k in changed_keys)
+
+        for unit in changed_units:
 
             service_matchings = get_service_matchings_for_unit(unit)
             service_matchings = [s.as_dict() for s in service_matchings]
@@ -89,11 +88,13 @@ class Matchings:
                 if not overlaps_with_existing:
                     true_matches.append(s)
 
-            unit_matchings[unit] = map(get_service_key, true_matches)
+            self.unit_matchings[unit] = map(get_service_key, true_matches)
 
-        service_matchings = flip_matchings(unit_matchings)
-
-        return service_matchings
+    def get_all_matchings(self):
+        """The final pass of the matching algorithm that decides which service
+        was ran by each unit.
+        """
+        return flip_matchings(self.unit_matchings)
 
     def overlaps_significantly(self, s1, s2):
         overlap = get_interval_overlap(s1['start'], s1['end'], s2['start'], s2['end'])

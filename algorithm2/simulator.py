@@ -29,7 +29,8 @@ class Simulator(threading.Thread):
                               tracker=tracker)
         event_matcher = EventMatcher(queue=queue,
                                      tracker=tracker)
-        service_matcher = ServiceMatcher(queue=queue)
+        service_matcher = ServiceMatcher(queue=queue,
+                                         matchings=matchings)
 
         self.matchings = matchings
         self.dispatcher = dispatcher

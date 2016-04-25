@@ -9,11 +9,13 @@ class ServiceMatcher:
 
     """
 
-    def __init__(self, queue):
+    def __init__(self, queue, matchings):
         self.queue = queue
+        self.matchings = matchings
 
     def run(self):
-        self.save_matchings()
+        changed_keys = self.save_matchings()
+        self.matchings.update_matchings_for(changed_keys)
 
     def save_matchings(self):
         """Takes the primary keys of the service matchings (from the queue) that
@@ -25,7 +27,7 @@ class ServiceMatcher:
 
         existing_matchings = get_service_matchings_by_keys(changed_keys)
         existing_keys = set(map(pkey_from_service_matching, existing_matchings))
-        
+
         new_keys = changed_keys - existing_keys
 
         insert, update = [], []
@@ -51,6 +53,9 @@ class ServiceMatcher:
 
         db_session.commit()
         db_session.close()
+
+        # return the changed service matching keys
+        return changed_keys
 
     def generate_from_event_matchings(self, pkey, event_matchings):
 
