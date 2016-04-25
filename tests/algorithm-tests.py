@@ -135,24 +135,24 @@ class TestDBQueries(unittest.TestCase):
         result = db_queries.isPlanned('BN30', '5A04')
         self.assertEqual(result, False)
 
-    def testDiagramServiceByUnit1(self):
-        result = db_queries.getDiagramServiceByHeadcode('0P04')
-        self.assertEqual(result['cif_uid'], 'Y58236')
+    # def testDiagramServiceByUnit1(self):
+    #     result = db_queries.getDiagramServiceByHeadcode('0P04')
+    #     self.assertEqual(result['cif_uid'], 'Y58236')
 
     def testDiagramServiceByUnit2(self):
         result = db_queries.getDiagramServiceByHeadcode('0')
         self.assertEqual(result, None)
 
-    def testDiagramStopsByService(self):
-        temp = db_queries.getDiagramServiceByHeadcode('0P04')
-        result = db_queries.getDiagramStopsByService(temp)
-        station_type = result[0]['station_type']
-        self.assertEqual(station_type, 'LO')
+    # def testDiagramStopsByService(self):
+    #     temp = db_queries.getDiagramServiceByHeadcode('0P04')
+    #     result = db_queries.getDiagramStopsByService(temp)
+    #     station_type = result[0]['station_type']
+    #     self.assertEqual(station_type, 'LO')
 
-    def testGetDiagramStopsByH(self):
-        result = db_queries.getDiagramStopsByHeadcode('0P04')
-        station_type = result[0]['station_type']
-        self.assertEqual(station_type, 'LO')
+    # def testGetDiagramStopsByH(self):
+    #     result = db_queries.getDiagramStopsByHeadcode('0P04')
+    #     station_type = result[0]['station_type']
+    #     self.assertEqual(station_type, 'LO')
 
     def testcif_uidFromUnit1(self):
         result = db_queries.cif_uidFromUnitAndHeadcode('82227', '5E06')
@@ -166,13 +166,13 @@ class TestDBQueries(unittest.TestCase):
         result = db_queries.cif_uidFromUnitAndHeadcode('BN87', '0Z00')
         self.assertEqual(result, '')
 
-    def testcif_uidFromHeadcode1(self):
-        result = db_queries.cif_uidFromHeadcode('0B02')
-        self.assertEqual(result, 'Y57996')
+    # def testcif_uidFromHeadcode1(self):
+    #     result = db_queries.cif_uidFromHeadcode('0B02')
+    #     self.assertEqual(result, 'Y57996')
 
-    def testcif_uidFromHeadcode2(self):
-        result = db_queries.cif_uidFromHeadcode('1A00')
-        self.assertEqual(result, 'Y58484')
+    # def testcif_uidFromHeadcode2(self):
+    #     result = db_queries.cif_uidFromHeadcode('1A00')
+    #     self.assertEqual(result, 'Y58484')
 
     def testcif_uidFromHeadcode3(self):
         result = db_queries.cif_uidFromHeadcode('0')
