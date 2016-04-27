@@ -1,4 +1,4 @@
-# Atos Pattern Matching Algorithm [![Build Status](https://travis-ci.org/ucl-team-8/service.svg?branch=CI)](https://travis-ci.org/ucl-team-8/service)
+# Atos Pattern Matching Algorithm [![Build Status](https://travis-ci.org/ucl-team-8/service.svg?branch=master)](https://travis-ci.org/ucl-team-8/service)
 
 To get started, you will need to install [pip](https://pip.pypa.io/en/stable/installing/), [git](https://confluence.atlassian.com/bitbucket/set-up-git-744723531.html), [PostgreSQL](http://www.postgresql.org/download/) (and [brew](http://brew.sh/), if you're using a mac).
 
