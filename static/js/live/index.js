@@ -175,10 +175,14 @@ window.select = (service) => {
   console.log("selecting", serviceKey);
   window.selected = serviceKey;
   subscribe(serviceKey);
-  render();
+  rerenderSegments();
+  addSelectedClass();
   routeMap.plot([]);
 }
 
+function addSelectedClass() {
+  servicesContainer.selectAll(".service").classed("selected", d => sameService(d, window.selected));
+}
 
 /* =============================================================================
    Algorithm 1 - Socket segment synchronisation
